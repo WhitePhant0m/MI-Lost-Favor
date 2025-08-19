@@ -71,6 +71,11 @@
 					item: { count: 1, id: "kubejs:bronze_glass" }
 					type: "item"
 				}
+				{
+					id: "5380531495340BBD"
+					item: { count: 1, id: "kubejs:small_copper_fluid_container" }
+					type: "item"
+				}
 			]
 			x: 0.0d
 			y: -3.0d

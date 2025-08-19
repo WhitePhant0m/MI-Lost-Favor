@@ -104,6 +104,15 @@ ServerEvents.recipes(event => {
         "components"
     );
 
+    anvil_recipe(
+        [
+            [{ "tag": "c:plates/copper" }, 2],
+            [{ "tag": "c:bolts/copper" }, 4],
+        ],
+        [{ "id": 'kubejs:small_copper_fluid_container' }, 1],
+        "components"
+    );
+
 
 
     //#region mi stuff
