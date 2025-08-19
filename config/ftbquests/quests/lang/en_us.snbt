@@ -77,7 +77,7 @@
 	]
 	quest.0501BDB7ED850B47.quest_desc: [""]
 	quest.0528A7114DC06152.quest_desc: ["Gives a 1 to 2 ratio when chopping logs into planks, as opposed to the 1 to 1 in a crafting grid."]
-	quest.05C4AA05CA0E6F80.quest_desc: ["add rubber to recipe just so you couldn't craft them in early game, but still could easily made later?"]
+	quest.05C4AA05CA0E6F80.quest_desc: [""]
 	quest.06793C23D00355A7.quest_desc: ["Magnet? And configurable??? I'll take 2 please"]
 	quest.07B3FFC9267C5861.quest_desc: ["The Maledictus Pact Enhancer allows the creation of cursed items in the Hephaestus Forge. It can be found as loot in bastion treasure rooms with a chance of 18% per chest. "]
 	quest.07E78D29C898CE55.quest_desc: ["Wild sheep"]
@@ -742,6 +742,7 @@
 		""
 		"It can for example be used to charge a Creeper or to create an Arcane Crystal Obelisk. It it also needed to activate the Hephaestus Forge."
 	]
+	quest.6DD0AB27900F46E3.quest_desc: [""]
 	quest.6E57514B8D09F6D8.quest_desc: [
 		"nearby pets teleport with you"
 		""
@@ -842,10 +843,10 @@
 	task.0F25C68A335172FD.title: "Ore generattion"
 	task.15F67DE3803CCA6C.title: "Poison?"
 	task.15F9629F86649AB6.title: "How to setup your network"
-	task.1733FF25C74D58C6.title: "Any #sophisticatedstorage:all_storage"
 	task.274F98243AA9482F.title: "Animals breeding"
 	task.30EF11C70C08380B.title: "Enhancer Relics"
 	task.33FFDC1566305E62.title: "item/fluid transfer"
+	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.3B4C4E1225398BD9.title: "Black Hole"
 	task.4224A6EBD936625E.title: "Butcher?"
 	task.43199D58E9963367.title: "Any #c:ingots/silicon"

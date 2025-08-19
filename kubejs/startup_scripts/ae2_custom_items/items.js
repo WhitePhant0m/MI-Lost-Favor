@@ -6,8 +6,6 @@ StartupEvents.registry('item', event => {
 
     //cells
     event.create('cell_half').texture('ae2_custom_stuff:item/cell_half').maxStackSize(64)
-    event.create('small_copper_fluid_container').texture('ae2_custom_stuff:item/empty_fluid_cell').maxStackSize(64)
-    //I forgot that AE already has cell hulls and made those textures :P (but item cell looks like press, so who cares)
     event.create('cell_press').texture('ae2_custom_stuff:item/cell_press').maxStackSize(16)
 
     //MI automation tokens (disks)

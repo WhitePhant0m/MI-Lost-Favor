@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         event.remove({ id: id })
     })
 
-    //event.remove({ type: 'ae2:inscriber' })
+    event.remove({ type: 'ae2:inscriber' })
     //event.remove({ output: /ae2:.*item_storage_cell/ })
     /*
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⣀⠐⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀

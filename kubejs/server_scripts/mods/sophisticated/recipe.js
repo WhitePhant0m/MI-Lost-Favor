@@ -6,11 +6,18 @@ ServerEvents.recipes(event => {
 
     materials_for_replacing_to_plate.forEach(material => {
         const input = material === "diamond" ? material : `${material}_ingot`
-        const output = `modern_industrialization:${material}_plate`
+        const output = `modern_industrialization:${material}_plate`;
 
-            ;["sophisticatedstorage", "sophisticatedbackpacks"].forEach(mod => {
-                event.replaceInput({ mod: mod }, input, output)
-            })
+        ["sophisticatedstorage", "sophisticatedbackpacks"].forEach(mod => {
+            event.replaceInput({ mod: mod }, input, output)
+        })
+    });
+
+    ["sophisticatedstorage", "sophisticatedbackpacks"].forEach(mod => {
+        event.replaceInput({ mod: mod }, "minecraft:redstone_torch", "modern_industrialization:rubber_sheet")
     })
+
+
+    event.remove({id:/sophisticatedstorage:generic*/})
 
 })

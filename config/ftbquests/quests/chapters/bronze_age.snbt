@@ -53,7 +53,7 @@
 				id: "41C8354D477A8899"
 				type: "custom"
 			}]
-			shape: "gear"
+			shape: "rsquare"
 			size: 2.0d
 			tasks: [
 				{
@@ -1366,7 +1366,7 @@
 		{
 			dependencies: ["2B815502453269AF"]
 			id: "65DB2546A83972B8"
-			shape: "gear"
+			shape: "square"
 			size: 2.0d
 			tasks: [{
 				count: 2L
@@ -2725,8 +2725,8 @@
 			id: "05C4AA05CA0E6F80"
 			shape: "pentagon"
 			tasks: [{
-				id: "1733FF25C74D58C6"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(sophisticatedstorage:all_storage)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				id: "34DF3E12B2DABA4D"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(sophisticatedstorage:base_tier_wooden_storage)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 3.0d

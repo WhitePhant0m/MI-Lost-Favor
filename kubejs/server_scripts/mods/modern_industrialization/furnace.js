@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
     .itemIn('modern_industrialization:steel_upgrade')
     .itemIn('modern_industrialization:bronze_mi_furnace')
     .itemOut('modern_industrialization:steel_mi_furnace')
-
+    /*
     event.shaped('modern_industrialization:electric_mi_furnace', [
         'CAC',
         'CBC',
@@ -66,7 +66,8 @@ ServerEvents.recipes(event => {
     .itemIn("2x modern_industrialization:tin_cable")
     .itemIn("2x modern_industrialization:analog_circuit")
     .itemOut("modern_industrialization:electric_mi_furnace")
-    
+    */
+
     event.forEachRecipe({ type: 'minecraft:smelting' }, kubeRecipe => {
         let { originalRecipeResult: result, originalRecipeIngredients: ingredients } = kubeRecipe; 
         event.recipes.modern_industrialization.mi_furnace(2, 200).itemIn(ingredients).itemOut(result);

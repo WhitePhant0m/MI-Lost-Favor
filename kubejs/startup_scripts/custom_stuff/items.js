@@ -7,5 +7,6 @@ StartupEvents.registry('item', event => {
     event.create('cd_reader').texture('custom_stuff:item/cd_reader').maxStackSize(64)
     event.create('cd').texture('custom_stuff:item/cd').maxStackSize(8)
     event.create('lens').texture('custom_stuff:item/lens').maxStackSize(64)
+    event.create('small_copper_fluid_container').texture('custom_stuff:item/copper_fluid_container').maxStackSize(64)
 
 })

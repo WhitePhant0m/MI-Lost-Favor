@@ -22,7 +22,22 @@ ServerEvents.recipes(event => {
         })
         if (token != undefined){recipe.itemIn(token, 0)}
     }
-        
+
+    //MI stuff
+    assembler_recipe(
+        8, 200,
+        [
+            "4x modern_industrialization:tin_cable",
+            "modern_industrialization:portable_storage_unit",
+            "modern_industrialization:frostproof_machine_casing",
+            "kubejs:tempered_glass",
+        ],
+        ["modern_industrialization:basic_machine_hull"],
+    );
+
+
+
+    //IE stuff
     assembler_recipe(
         8, 200,
         [
@@ -56,5 +71,8 @@ ServerEvents.recipes(event => {
         ["immersiveengineering:component_electronic"],
     );
 
+    event.forEachRecipe({output:craft_removal_list}, r => {
+        event.remove({output: r.getOriginalRecipeResult()})
+    })
 
 })

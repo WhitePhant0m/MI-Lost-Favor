@@ -659,7 +659,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["0BCD76587F2DB00F"]
+			dependencies: [
+				"0BCD76587F2DB00F"
+				"1C00BD0399683CCA"
+			]
 			id: "6B792C2CCB0AEAB2"
 			shape: "diamond"
 			tasks: [{
@@ -902,15 +905,16 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["1C00BD0399683CCA"]
 			id: "2B42D796563B0125"
-			shape: "diamond"
+			shape: "heart"
 			tasks: [{
 				id: "55CEC1183D8B35DA"
 				item: { count: 1, id: "modern_industrialization:basic_upgrade" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.5d
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 }

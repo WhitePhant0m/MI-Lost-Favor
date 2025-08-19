@@ -54,6 +54,7 @@ ServerEvents.recipes(event => {
 
 
     //bronze_glass_recipes
+    /*
     event.shaped(
         Item.of('kubejs:bronze_glass', 8),
         [
@@ -94,7 +95,7 @@ ServerEvents.recipes(event => {
     .itemIn("4x #c:rods/bronze")
     .fluidIn("modern_industrialization:soldering_alloy" , 100)
     .itemOut('16x kubejs:bronze_machine_bit')
-
+    */
 
     event.custom({
             "type": "minecraft:crafting_shaped",

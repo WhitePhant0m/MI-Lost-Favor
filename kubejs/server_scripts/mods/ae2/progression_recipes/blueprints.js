@@ -33,52 +33,6 @@ ServerEvents.recipes(event => {
         craft_removal_list.push(output.item)
     }
 
-    // #region tokens
-    blueprint_recipe(
-        [
-            [{ "tag": "c:plates/aluminum" }, 2],
-            [{ "tag": "c:rods/certus_quartz" }, 4],
-            [{ "tag": "c:dusts/certus_quartz" }, 6],
-            [{ "tag": "c:dusts/fluix" }, 6]
-        ],
-        { "item": tier1token },
-        tier2bp
-    );
-
-    blueprint_recipe(
-        [
-            [{ "tag": "c:plates/aluminum" }, 2],
-            [{ "tag": "c:rods/certus_quartz" }, 4],
-            [{ "tag": "c:dusts/certus_quartz" }, 6],
-            [{ "tag": "c:dusts/gold" }, 6]
-        ],
-        { "item": tier2token },
-        tier3bp
-    );
-
-    blueprint_recipe(
-        [
-            [{ "tag": "c:plates/aluminum" }, 2],
-            [{ "tag": "c:rods/certus_quartz" }, 4],
-            [{ "tag": "c:dusts/certus_quartz" }, 6],
-            [{ "tag": "c:dusts/aluminum" }, 6]
-        ],
-        { "item": tier3token },
-        tier4bp
-    );
-
-    blueprint_recipe(
-        [
-            [{ "tag": "c:plates/aluminum" }, 2],
-            [{ "tag": "c:rods/certus_quartz" }, 4],
-            [{ "tag": "c:dusts/certus_quartz" }, 6],
-            [{ "tag": "c:dusts/shattered_singularity" }, 6]
-        ],
-        { "item": tier4token },
-        tier5bp
-    );
-    //#endregion
-
     // #region tier 1
     blueprint_recipe(
         [
@@ -102,7 +56,7 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
-            [{ "item": "ae2:certus_quartz_crystal" }, 4],
+            [{ "item": "ae2:fluix_crystal" }, 4],
             [{ "item": "ae2:terminal" }, 1],
             [{ "item": "minecraft:crafting_table" }, 1],
             [{ "item": "modern_industrialization:electronic_circuit" }, 1],
@@ -120,6 +74,18 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:copper_wire" }, 16]
         ],
         { "item": "ae2:charger" },
+        tier1bp
+    );
+
+    blueprint_recipe(
+        [
+            [{ "item": "modern_industrialization:certus_quartz_rod" }, 4],
+            [{ "item": "modern_industrialization:advanced_machine_hull" }, 1],
+            [{ "item": "modern_industrialization:electronic_circuit" }, 1],
+            [{ "item": "modern_industrialization:piston" }, 4],
+            [{ "item": "modern_industrialization:motor" }, 4]
+        ],
+        { "item": "ae2:inscriber" },
         tier1bp
     );
 
