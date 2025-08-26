@@ -1,16 +1,16 @@
-filename = 'the_bumblezone-7.10.0+1.21.1-neoforge.jar'
-name = 'The Bumblezone (NeoForge/Forge)'
+filename = 'the_bumblezone-7.10.1+1.21.1-neoforge.jar'
+name = 'The Bumblezone'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '9922c94d10095c5fb68c0b4ff3861630cfdff47c'
+hash = 'c8ed8629c0e2d9d2e42da3fdcc150acf72ffb090'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6689107
+file-id = 6919514
 project-id = 362479

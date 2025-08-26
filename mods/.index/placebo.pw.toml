@@ -1,4 +1,4 @@
-filename = 'Placebo-1.21.1-9.9.0.jar'
+filename = 'Placebo-1.21.1-9.9.1.jar'
 name = 'Placebo'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'c8ad4d7057b60943cd6b500215c633f81bf2ca56'
+hash = '1c2b8c38066d6f36209c5dadee25c184ef65202e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6751290
+file-id = 6926281
 project-id = 283644

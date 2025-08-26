@@ -1,16 +1,16 @@
-filename = 'GatewaysToEternity-1.21.1-5.0.4.jar'
-name = 'Gateways to Eternity'
+filename = 'GatewaysToEternity-1.21.1-5.1.0.jar'
+name = 'Gateways To Eternity'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '74db1f6c4e228fc5ab50d5f55a58b69360caa978'
+hash = 'f91a593378209f527fe81e731ca60fe8f8da2319'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6751514
+file-id = 6926284
 project-id = 417802

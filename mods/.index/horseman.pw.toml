@@ -1,4 +1,4 @@
-filename = 'horseman-neoforge-1.21.1-1.5.1.jar'
+filename = 'horseman-neoforge-1.21.1-1.5.2.1.jar'
 name = 'Horseman'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'c1fa991aeaf8d1e1b5300c9fe93b7317ced72127'
+hash = 'aa03feea4c3f0001bec963fa2ca4cdbebc454eac'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6828570
+file-id = 6905650
 project-id = 1082085

@@ -1,16 +1,16 @@
-filename = 'alltheleaks-0.1.27-beta+1.21.1-neoforge.jar'
-name = 'AllTheLeaks (Memory Leak Fix)'
+filename = 'alltheleaks-1.0.1+1.21.1-neoforge.jar'
+name = 'All The Leaks'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'a657db0e67c53ba9968b94985a9f4c4f81c66f51'
+hash = '968e919c7e4d1fda73121cafeb1f295599168f5b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6823583
+file-id = 6930692
 project-id = 1091339

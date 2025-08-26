@@ -1,4 +1,4 @@
-filename = 'amendments-1.21-1.2.24-neoforge.jar'
+filename = 'amendments-1.21-2.0.5-neoforge.jar'
 name = 'Amendments'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'b90eba9f8534ebc604b3ec45f71d332390bc8e77'
+hash = 'f8b688cbb0d6f8d62f175abd66e69823c8a18086'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6332372
+file-id = 6919475
 project-id = 896746

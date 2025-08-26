@@ -1,4 +1,4 @@
-filename = 'ars_controle-1.21.1-1.6.8.jar'
+filename = 'ars_controle-1.21.1-1.6.9.jar'
 name = 'Ars Controle'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '4495eeb0e81a62b6975f3047c096e0e90d77bd0e'
+hash = 'd2eace69174568ac5258e52dec8de4dd447aa1e4'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6681142
+file-id = 6917586
 project-id = 1061812

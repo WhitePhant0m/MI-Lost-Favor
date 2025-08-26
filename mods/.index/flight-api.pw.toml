@@ -1,4 +1,4 @@
-filename = 'flightapi-neoforge-1.0.4.jar'
+filename = 'flightapi-neoforge-1.1.1.jar'
 name = 'Flight API'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'e8f5f464bf469b67923af5697a8a614f6e9704e1'
+hash = '722ee6bd3793571591e47da88d479c63ed486f26'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6301121
+file-id = 6891762
 project-id = 1219748
