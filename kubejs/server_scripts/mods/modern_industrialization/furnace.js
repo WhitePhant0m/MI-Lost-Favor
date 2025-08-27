@@ -21,8 +21,7 @@ ServerEvents.recipes(event => {
         E: 'minecraft:furnace',
         R: 'modern_industrialization:fire_clay_bricks'
     })
-    */
-
+    
     event.recipes.modern_industrialization.assembler(8, 200)
     .itemIn("5x #c:plates/bronze")
     .itemIn("minecraft:furnace")
@@ -49,7 +48,6 @@ ServerEvents.recipes(event => {
     .itemIn('modern_industrialization:steel_upgrade')
     .itemIn('modern_industrialization:bronze_mi_furnace')
     .itemOut('modern_industrialization:steel_mi_furnace')
-    /*
     event.shaped('modern_industrialization:electric_mi_furnace', [
         'CAC',
         'CBC',

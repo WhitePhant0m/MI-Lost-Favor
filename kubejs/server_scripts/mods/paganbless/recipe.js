@@ -3,7 +3,6 @@ ServerEvents.recipes(event => {
     var craft_removal_list = []
 
     function packer_recipe(energy,time,inputs,outputs,token){
-        energy = energy + inputs.length * (energy / 4)
         var recipe = event.recipes.modern_industrialization.packer(energy, time);
         inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
         outputs.forEach((out) => {
@@ -30,7 +29,7 @@ ServerEvents.recipes(event => {
         let out = output[0].id || output.id || "#" + output[0].tag || "#" + output.tag
         craft_removal_list.push(out)
         out = output[1] + "x " + (output[0].tag ? "#" + output[0].tag : output[0].id)
-        packer_recipe(12,100,mi_inputs,[out])
+        packer_recipe(2,200,mi_inputs,[out])
     }
 
 
@@ -40,8 +39,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:rods/iron" }, 4],
             [{ "tag": "c:plates/iron" }, 4],
         ],
-        [{ "id": 'adfinders:mineral_finder' }, 1],
-        "components"
+        [{ "id": 'adfinders:mineral_finder' }, 1]
     );
 
     anvil_recipe(
@@ -50,8 +48,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:rods/bronze" }, 4],
             [{ "tag": "c:plates/bronze" }, 4],
         ],
-        [{ "id": 'adfinders:metal_finder' }, 1],
-        "components"
+        [{ "id": 'adfinders:metal_finder' }, 1]
     );
 
     anvil_recipe(
@@ -60,8 +57,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:rods/aluminum" }, 4],
             [{ "tag": "c:ingots/aluminum" }, 2],
         ],
-        [{ "id": 'hangglider:glider_framework' }, 1],
-        "components"
+        [{ "id": 'hangglider:glider_framework' }, 1]
     );
 
     anvil_recipe(
@@ -70,8 +66,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/iron" }, 4],
         ],
-        [{ "id": 'moderndynamics:inhibitor' }, 4],
-        "components"
+        [{ "id": 'moderndynamics:inhibitor' }, 4]
     );
 
     anvil_recipe(
@@ -80,8 +75,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/lead" }, 4],
         ],
-        [{ "id": 'moderndynamics:attractor' }, 2],
-        "components"
+        [{ "id": 'moderndynamics:attractor' }, 2]
     );
 
     anvil_recipe(
@@ -90,8 +84,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/redstone" }, 4],
         ],
-        [{ "id": 'moderndynamics:extractor' }, 2],
-        "components"
+        [{ "id": 'moderndynamics:extractor' }, 2]
     );
 
     anvil_recipe(
@@ -100,8 +93,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/lapis" }, 4],
         ],
-        [{ "id": 'moderndynamics:filter' }, 2],
-        "components"
+        [{ "id": 'moderndynamics:filter' }, 2]
     );
 
     anvil_recipe(
@@ -109,8 +101,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/copper" }, 2],
             [{ "tag": "c:bolts/copper" }, 4],
         ],
-        [{ "id": 'kubejs:small_copper_fluid_container' }, 1],
-        "components"
+        [{ "id": 'kubejs:small_copper_fluid_container' }, 1]
     );
 
 
@@ -123,8 +114,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:gears/bronze" }, 1],
             [{ "tag": "c:plates/bronze" }, 8],
         ],
-        [{ "id": 'modern_industrialization:bronze_machine_casing' }, 1],
-        "components"
+        [{ "id": 'modern_industrialization:bronze_machine_casing' }, 1]
     );
 
     anvil_recipe(
@@ -133,8 +123,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:gears/steel" }, 1],
             [{ "tag": "c:plates/steel" }, 8],
         ],
-        [{ "id": 'modern_industrialization:steel_machine_casing' }, 1],
-        "components"
+        [{ "id": 'modern_industrialization:steel_machine_casing' }, 1]
     );
 
     anvil_recipe(
@@ -143,8 +132,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:gears/titanium" }, 1],
             [{ "tag": "c:plates/titanium" }, 8],
         ],
-        [{ "id": 'modern_industrialization:solid_titanium_machine_casing' }, 1],
-        "components"
+        [{ "id": 'modern_industrialization:solid_titanium_machine_casing' }, 1]
     );
 
     anvil_recipe(
@@ -153,8 +141,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:gears/stainless_steel" }, 1],
             [{ "tag": "c:plates/stainless_steel" }, 8],
         ],
-        [{ "id": 'modern_industrialization:clean_stainless_steel_machine_casing' }, 1],
-        "components"
+        [{ "id": 'modern_industrialization:clean_stainless_steel_machine_casing' }, 1]
     );
 
     anvil_recipe(
@@ -163,8 +150,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:gears/aluminum" }, 1],
             [{ "tag": "c:plates/aluminum" }, 8],
         ],
-        [{ "id": 'modern_industrialization:frostproof_machine_casing' }, 1],
-        "components"
+        [{ "id": 'modern_industrialization:frostproof_machine_casing' }, 1]
     );
 
     anvil_recipe(
@@ -173,8 +159,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:fire_clay_bricks" }, 1],
             [{ "tag": "c:plates/bronze" }, 8],
         ],
-        [{ "id": 'modern_industrialization:bronze_plated_bricks' }, 1],
-        "components"
+        [{ "id": 'modern_industrialization:bronze_plated_bricks' }, 1]
     );
 
     anvil_recipe(
@@ -183,8 +168,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:rods/bronze" }, 1],
             [{ "tag": "c:plates/bronze" }, 2],
         ],
-        [{ "id": 'modern_industrialization:wrench' }, 1],
-        "components"
+        [{ "id": 'modern_industrialization:wrench' }, 1]
     );
 
     //#endregion

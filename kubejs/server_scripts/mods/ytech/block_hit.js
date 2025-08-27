@@ -32,10 +32,11 @@ ServerEvents.recipes(event => {
         recipe.result.count = output[1]
         event.custom(recipe)
         press_recipe(input, output)
-        unpacker_recipe(8,100,input,output)
+        unpacker_recipe(2,200,input,output)
     }
 
     block_hit_recipe({item:"modern_industrialization:bronze_machine_casing"}, [{id:"kubejs:bronze_machine_bit"}, 12], {tag : "minecraft:anvil"} )
     block_hit_recipe({item:"modern_industrialization:frostproof_machine_casing"}, [{id:"kubejs:basic_machine_bit"}, 12], {tag : "minecraft:anvil"} )
+    block_hit_recipe({item:"modern_industrialization:steel_machine_casing"}, [{id:"kubejs:steel_machine_bit"}, 12], {tag : "minecraft:anvil"} )
 
 })

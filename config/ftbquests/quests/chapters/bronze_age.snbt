@@ -1121,7 +1121,7 @@
 				item: { count: 1, id: "modern_industrialization:steel_boiler" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 11.0d
 			y: -0.5d
 		}
 		{
@@ -1255,7 +1255,7 @@
 				item: { count: 1, id: "extended_industrialization:steel_solar_boiler" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 8.0d
 			y: -0.5d
 		}
 		{
@@ -1370,13 +1370,13 @@
 		}
 		{
 			dependencies: ["2B815502453269AF"]
+			dependency_requirement: "one_completed"
 			id: "65DB2546A83972B8"
 			shape: "square"
 			size: 2.0d
 			tasks: [{
-				count: 2L
-				id: "539B91C960D1D407"
-				item: { count: 2, id: "modern_industrialization:steel_upgrade" }
+				id: "17139F795F5201F7"
+				item: { count: 1, id: "kubejs:steel_machine_bit" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -2599,8 +2599,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 3.0d
+			x: 13.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["65DB2546A83972B8"]
@@ -2619,7 +2619,7 @@
 				}
 			]
 			x: 13.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["65DB2546A83972B8"]
@@ -3265,6 +3265,32 @@
 			}]
 			x: 0.0d
 			y: 9.0d
+		}
+		{
+			dependencies: [
+				"6D6E72C5421174F4"
+				"65DB2546A83972B8"
+			]
+			id: "58CE6288033131D7"
+			tasks: [{
+				id: "71EEA32FE8C106B1"
+				item: { count: 1, id: "modern_industrialization:steel_upgrade" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["65DB2546A83972B8"]
+			id: "176194E5FAE8388B"
+			shape: "square"
+			tasks: [{
+				id: "1E0CC24F69A8EDC8"
+				item: { count: 1, id: "extended_industrialization:steel_composter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
 		}
 	]
 }

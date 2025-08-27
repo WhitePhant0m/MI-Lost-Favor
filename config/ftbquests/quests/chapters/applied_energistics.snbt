@@ -84,8 +84,8 @@
 			id: "0DF683DDB7246117"
 			shape: "octagon"
 			tasks: [{
-				id: "051CC4308E1836DC"
-				item: { count: 1, id: "pastel:bottle_of_fading" }
+				id: "1D0EC8F759AF3144"
+				item: { count: 1, id: "kubejs:disk_from_space" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -184,8 +184,8 @@
 			id: "7A1E51EF37A6ADFE"
 			shape: "octagon"
 			tasks: [{
-				id: "74A11C748B335834"
-				item: { count: 1, id: "pastel:liquid_crystal_bucket" }
+				id: "75F1C10044C7767F"
+				item: { count: 1, id: "kubejs:old_tablet" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -195,8 +195,8 @@
 			id: "02F9C9866E4ECB53"
 			shape: "octagon"
 			tasks: [{
-				id: "168B5FDD61F94C39"
-				item: { count: 1, id: "pastel:midnight_solution_bucket" }
+				id: "5D4DEE6E6618592A"
+				item: { count: 1, id: "kubejs:old_diary" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -206,8 +206,8 @@
 			id: "43BC2E23878BD134"
 			shape: "octagon"
 			tasks: [{
-				id: "518708CBDA2FD33D"
-				item: { count: 1, id: "pastel:bottle_of_ruin" }
+				id: "5C5F4560A5A93CEE"
+				item: { count: 1, id: "kubejs:holy_book_of_color" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -281,8 +281,8 @@
 			id: "4F5EB282EBA6477E"
 			shape: "octagon"
 			tasks: [{
-				id: "4A6896415EB75C76"
-				item: { count: 1, id: "pastel:dragonrot_bucket" }
+				id: "47E74B72B495E969"
+				item: { count: 1, id: "extendedae:entro_seed" }
 				type: "item"
 			}]
 			x: -4.5d

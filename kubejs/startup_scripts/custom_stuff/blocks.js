@@ -13,6 +13,4 @@ StartupEvents.registry('block', event => {
     .texture('custom_stuff:blocks/sheet_metal_texture')
     */
 
-
-
 })
