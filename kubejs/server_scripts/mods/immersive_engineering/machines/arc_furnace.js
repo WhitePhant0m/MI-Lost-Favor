@@ -70,7 +70,8 @@ ServerEvents.recipes(event => {
         [
             [{"item": "ae2:controller"}, 1],
             [{"item": "ae2:terminal"}, 1],
-            [{"item": "kubejs:blueprint_pack"}, 1]
+            [{"item": "kubejs:blueprint_pack"}, 1],
+            [{"item": "kubejs:disk_from_space"}, 1],
         ],
         500163,
         200,

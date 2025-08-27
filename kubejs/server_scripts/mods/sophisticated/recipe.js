@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         event.replaceInput({ mod: mod }, "minecraft:redstone_torch", "modern_industrialization:rubber_sheet")
     })
 
-
+    //WIP
     event.remove({id:/sophisticatedstorage:generic*/})
 
 })
