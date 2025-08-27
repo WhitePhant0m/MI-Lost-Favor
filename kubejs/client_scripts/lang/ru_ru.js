@@ -10,4 +10,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
+    event.add('item.kubejs.amber_visage', 'Янтарный Облик')
+    event.add('kubejs.press_button', 'Зажми ')
+    event.add('kubejs.for_details', 'для подробной информации')
+    event.add('kubejs.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
 })
