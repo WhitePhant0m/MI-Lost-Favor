@@ -11,5 +11,10 @@ FTBQuestsEvents.customReward('0DC887212398806D', event => {
 
 FTBQuestsEvents.customReward('41C8354D477A8899', event => {
     let player = event.entity;
-    event.server.runCommandSilent(`/astages add ${player.profile.name} tier_1_access_ore`)
+    let player_name = player.profile.name
+    event.server.runCommandSilent(`/astages add ${player_name} tier_1_access_ore`)
+    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate("milf.stage.tier_1_access_ore").string)
+    player.tell(Text.translate("milf.stage.tier_1_access_ore").color("#ac6cba").bold())
+
+    // event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3} 2 test fdsafds af` + Text.translate("milf.stage.tier_2_access_ore").string)
 });
