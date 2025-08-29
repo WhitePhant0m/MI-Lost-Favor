@@ -440,5 +440,27 @@
 			x: 13.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "1A20D55F90BEF2CA"
+			tasks: [{
+				id: "4830502175B6BB24"
+				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:devices_pouch" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "71814BF08821CDDA"
+			tasks: [{
+				id: "6AD5A230CBA1F7B8"
+				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:magical_pouch" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 2.5d
+		}
 	]
 }
