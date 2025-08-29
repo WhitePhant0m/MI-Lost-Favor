@@ -1,0 +1,47 @@
+#Time Formatting Settings
+[time]
+	#How Notification Timestamps are displayed.
+	#Follows SimpleDateFormat formatting: https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
+	#Default: "MM/dd/yy hh:mmaa"
+	timeFormatting="MM/dd/yy hh:mmaa"
+	
+#Pouch Slot Settings
+[pouch_slot]
+	#The position that the pouch slot will be placed at in the players inventory.
+	#Default: 76,43
+	slot=76,43
+	
+	#The position that the pouch slot will be placed at in the players creative inventory.
+	#Default: 126,19
+	creativeSlot=126,19
+	
+	#The offset that the pouch button should be placed at relative to the pouch slot position.
+	#Default: 8,-10
+	button=8,-10
+	
+#Pouch Overlay Settings
+[pouch_hud]
+	#Whether an overlay should be drawn on your HUD displaying your pouchs current money amount.
+	#Default: true
+	enabled=true
+	
+	#The corner of the screen that the overlay should be drawn on.
+	#Options: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	#Default: BOTTOM_LEFT
+	displayCorner=BOTTOM_LEFT
+	
+	#The position offset from the defined corner.
+	#Default: 5,-5
+	displayOffset=5,-5
+	
+	#Whether the pouchs contents should be displayed as a coin item, or as value text.
+	#Options: ITEMS_WIDE, ITEMS_NARROW, TEXT
+	#Default: ITEMS_WIDE
+	displayType=ITEMS_WIDE
+	
+#Debug Settings
+[debug]
+	#Whether DV Screens should render a white background for easier debugging & screenshots
+	#Default: false
+	debugScreenBG=false
+	
