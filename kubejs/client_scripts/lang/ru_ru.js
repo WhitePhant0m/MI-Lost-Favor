@@ -4,10 +4,13 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.entity.interact.part1', ' не хочет взаимодействовать с тобой')
     event.add('milf.text.entity.interact.part2', 'Что-то магическое запрещает вам использовать ')
     event.add('milf.text.block.interact.part0', 'Странная магия мешает вам использовать этот блок')
-    event.add('milf.stage.saturation', 'Эффект насыщения удалён')
-    event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
+    
     event.add('milf.stage.tier_1_access_ore', 'Unlocked: quartz / debris / emerald / diamond / lapis / gold / antimony / bauxite / lead / monazite / nickel / salt ore')
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
+    event.add('milf.stage.saturation', 'Вы потеряли насыщение!')
+    event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
+    event.add('milf.stage.early_mobs', 'Вы стали слышать странные звуки в ночи')
+    event.add('milf.stage.early_items', 'Вам доступна торговля с жителями, лутинг сундуков, взаимодействие с спавнерами')
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
     event.add('item.kubejs.amber_visage', 'Янтарный Облик')

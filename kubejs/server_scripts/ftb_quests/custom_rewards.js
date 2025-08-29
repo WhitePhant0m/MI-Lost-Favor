@@ -15,6 +15,32 @@ FTBQuestsEvents.customReward('41C8354D477A8899', event => {
     event.server.runCommandSilent(`/astages add ${player_name} tier_1_access_ore`)
     event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate("milf.stage.tier_1_access_ore").string)
     player.tell(Text.translate("milf.stage.tier_1_access_ore").color("#ac6cba").bold())
+});
 
-    // event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3} 2 test fdsafds af` + Text.translate("milf.stage.tier_2_access_ore").string)
+FTBQuestsEvents.customReward('0E7A91DD8F37AF4D', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+    let stage = "saturation"
+    event.server.runCommandSilent(`/astages add ${player_name} saturation`)
+    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}`).string)
+    player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
+});
+
+FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+    let stage = "early_mobs"
+    event.server.runCommandSilent(`/astages add ${player_name} early_mobs`)
+    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}`).string)
+    player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
+});
+
+FTBQuestsEvents.customReward('4002784F5F537B2D', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+    let stage = "early_items"
+
+    event.server.runCommandSilent(`/astages add ${player_name} early_items`)
+    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}`).string)
+    player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
 });

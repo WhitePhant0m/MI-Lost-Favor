@@ -176,6 +176,15 @@
 		{
 			dependencies: ["5634B70F205A9FB4"]
 			id: "6E680C846961BFE3"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "minecraft:rotten_flesh"
+				}
+				id: "0E7A91DD8F37AF4D"
+				team_reward: true
+				type: "custom"
+			}]
 			tasks: [{
 				id: "23A1CB41EDA3F5BF"
 				item: { count: 1, id: "minecraft:crafting_table" }
@@ -511,6 +520,15 @@
 				"0BF78D040CA973B7"
 			]
 			id: "71DD1AE71C4E1B9F"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "minecraft:zombie_head"
+				}
+				id: "74E5C7C4B8A33E55"
+				team_reward: true
+				type: "custom"
+			}]
 			tasks: [{
 				id: "477F8679058BDCCB"
 				item: { count: 1, id: "ytech:iron_bloom" }
@@ -536,6 +554,15 @@
 				"5477C20059FD00FF"
 			]
 			id: "1714360882474479"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "lootr:lootr_chest"
+				}
+				id: "4002784F5F537B2D"
+				team_reward: true
+				type: "custom"
+			}]
 			tasks: [{
 				id: "67DF4C19348071B9"
 				item: { count: 1, id: "minecraft:iron_ingot" }
@@ -1096,6 +1123,9 @@
 		}
 		{
 			dependencies: ["07E78D29C898CE55"]
+			icon: {
+				id: "pastel:sheep_head"
+			}
 			id: "0EA1539F81C66D74"
 			shape: "none"
 			tasks: [{
@@ -1160,16 +1190,6 @@
 			}]
 			x: 12.5d
 			y: -2.0d
-		}
-		{
-			id: "520739C950E9FD2F"
-			tasks: [{
-				id: "049032FC84C58058"
-				item: { components: { "patchouli:book": "caupona:book" }, count: 1, id: "patchouli:guide_book" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: 9.5d
 		}
 		{
 			dependencies: ["1F7DF0379C917C3B"]

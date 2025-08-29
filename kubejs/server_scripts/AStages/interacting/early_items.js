@@ -1,19 +1,19 @@
 const item_interact_block = [
-    { id: "lootr_chest", item: "lootr:lootr_chest" },
-    { id: "lootr_barrel", item: "lootr:lootr_barrel" },
-    { id: "lootr_shulker", item: "lootr:lootr_shulker" },
-    { id: "lootr_trapped_chest", item: "lootr:lootr_trapped_chest" },
-    { id: "blast_furnace", item: "minecraft:blast_furnace" },
-    { id: "crate", item: "immersiveengineering:crate" },
-    { id: "spawner", item: "minecraft:spawner" }
+    { id: "lootr_chest", item: "lootr:lootr_chest", stage: "early_items" },
+    { id: "lootr_barrel", item: "lootr:lootr_barrel", stage: "early_items" },
+    { id: "lootr_shulker", item: "lootr:lootr_shulker", stage: "early_items" },
+    { id: "lootr_trapped_chest", item: "lootr:lootr_trapped_chest", stage: "early_items" },
+    { id: "blast_furnace", item: "minecraft:blast_furnace", stage: "blast_furnace" },
+    { id: "crate", item: "immersiveengineering:crate", stage: "early_items" },
+    { id: "spawner", item: "minecraft:spawner", stage: "early_items" }
 ]
 
 const entity_interact_block = [
-    { id: "gatekeeper", entity: "eternal_starlight:the_gatekeeper", langKey: "entity.eternal_starlight.the_gatekeeper" },
-    { id: "villager", entity: "minecraft:villager", langKey: "entity.minecraft.villager" },
-    { id: "wandering_trader", entity: "minecraft:wandering_trader", langKey: "entity.minecraft.wandering_trader" },
-    { id: "armor_stand", entity: "minecraft:armor_stand", langKey: "entity.minecraft.armor_stand", customeText: "milf.text.entity.interact.part2" },
-    { id: "lootr_minecart", entity: "lootr:lootr_minecart", langKey: "entity.lootr.lootr_minecart", customeText: "milf.text.entity.interact.part2" },
+    { id: "gatekeeper", entity: "eternal_starlight:the_gatekeeper", langKey: "entity.eternal_starlight.the_gatekeeper", stage: "the_gatekeeper" },
+    { id: "villager", entity: "minecraft:villager", langKey: "entity.minecraft.villager", stage: "early_items" },
+    { id: "wandering_trader", entity: "minecraft:wandering_trader", langKey: "entity.minecraft.wandering_trader", stage: "early_items" },
+    { id: "armor_stand", entity: "minecraft:armor_stand", langKey: "entity.minecraft.armor_stand", customeText: "milf.text.entity.interact.part2", stage: "early_items" },
+    { id: "lootr_minecart", entity: "lootr:lootr_minecart", langKey: "entity.lootr.lootr_minecart", customeText: "milf.text.entity.interact.part2", stage: "early_items" },
 ]
 
 
@@ -45,7 +45,7 @@ item_interact_block.forEach(element => {
 
 entity_interact_block.forEach(element => {
     if (element.customeText) {
-        AStages.addRestrictionForMob(`astages/${element.id}`, "early_items", element.entity)
+        AStages.addRestrictionForMob(`astages/${element.id}`, element.stage, element.entity)
             .setInteractionMessage(() => Text.of(
                 [
                     Text.translate(element.customeText).gray(),
@@ -55,7 +55,7 @@ entity_interact_block.forEach(element => {
             .setCanBeRightClicked(false)
     }
     else {
-        AStages.addRestrictionForMob(`astages/${element.id}`, "early_items", element.entity)
+        AStages.addRestrictionForMob(`astages/${element.id}`, element.stage, element.entity)
             .setInteractionMessage(() => Text.of(
                 [
                     Text.translate("milf.text.entity.interact.part0").gray(),
@@ -65,5 +65,4 @@ entity_interact_block.forEach(element => {
             ))
             .setCanBeRightClicked(false)
     }
-
 });

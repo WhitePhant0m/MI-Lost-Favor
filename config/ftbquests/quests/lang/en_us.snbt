@@ -8,6 +8,7 @@
 	chapter.2B3E5D6E8B56E8BB.title: "Ars NOJDGIODHFIOSBV"
 	chapter.535EA14E4BC77614.title: "Applied Energistics"
 	chapter.561B8642F13079C1.title: "Bronze Age"
+	chapter.7CF76022186FB1FC.title: "Occultism"
 	chapter_group.414DFD996A564669.title: "Early"
 	chapter_group.4602108FDD7051BD.title: "Primitive"
 	chapter_group.786FFA1BEC14E223.title: "Midgame"
@@ -81,6 +82,7 @@
 	quest.06793C23D00355A7.quest_desc: ["Magnet? And configurable??? I'll take 2 please"]
 	quest.07B3FFC9267C5861.quest_desc: ["The Maledictus Pact Enhancer allows the creation of cursed items in the Hephaestus Forge. It can be found as loot in bastion treasure rooms with a chance of 18% per chest. "]
 	quest.07E78D29C898CE55.quest_desc: ["Wild sheep"]
+	quest.083BEEC631645C14.quest_desc: ["Summon Possessed Bee with Ihagan's Enthrallment and kill"]
 	quest.085A58908A521A63.quest_desc: [
 		"The ancients lacked vision. They stopped at just blends without realizing what these poisons can really do. I've felt the changes. Every night I feel the toxins pulsing in my blood. I'm changing, I feel much stronger, feel more alert. Its revelating."
 		""
@@ -111,6 +113,7 @@
 		"&6A&r&0t&r&6t&r&0e&r&6n&r&0t&r&6i&r&0o&r&6n&r&0!&r&6!&r&0!&r We are not responsible for all the lost limbs during this machine utilization!"
 	]
 	quest.0C1A0D4E0DF5CE9C.quest_desc: ["The Quantum Catcher can be used to capture and transport entities. To obtain it, you can combine Spawner Scrap and an Arcane Crystal Block in a Smithing Table"]
+	quest.0C6231CE410086A5.title: "Affrit Crusher"
 	quest.0C79F086A3EA30BA.quest_desc: [
 		"I've almost done it! The material that can be used to unlock the full potential of poison. I have formulated this concoction to prepare the final creation of the ultimate substance! But I'll need to enter the nether one more time."
 		"{@pagebreak}"
@@ -122,6 +125,7 @@
 		"• +2x Power Capacity"
 		"• +2x Recharge Rate"
 	]
+	quest.0D2D182AEBB7368B.title: "Afrit Crystallizer"
 	quest.0D70E9CF33C567A7.quest_desc: ["Drops from a poisoned llama."]
 	quest.0E432C3C0C5E9D1D.quest_desc: ["Fire Resistance (duh)"]
 	quest.0E4BFAA97BD15447.quest_desc: [
@@ -199,12 +203,19 @@
 		""
 		"Что еще более любопытно, так это то, что если мне в руки попадет зачарованная книга, которая переводится как «Refill», то содержимое моей пустой фляги будет пополняться, просто если я просплю всю ночь! Хотя у меня есть свои сомнения по поводу зачарования, я не могу отрицать его полезность в моих экспериментах!"
 	]
+	quest.16CEDB259696495B.quest_desc: [
+		"As with previous familiars and Possessed mobs, read about them in the book."
+		"{@pagebreak}"
+		"Как и с прошлыми фамильярами и одержимыми мобами, прочтите информацию о них в книге"
+	]
 	quest.16FC0392E5AA51D8.quest_desc: [
 		"There are some situations where covering your tracks will be STUPID. As such I have improved on my fatigue oil composition and with some enhancements from TOXIN, I have managed to create this cloudy gas that weakens and blinds in a small area."
 		"{@pagebreak}"
 		"Я усовершенствовал состав масла усталости с помощью токсина и получил смесь способную, при резком изменении внутренней энергии, взрываться газом со свойствами предшественника."
 	]
 	quest.172C44614A53FAAF.quest_desc: ["Place an extractor on an item or fluid pipe to allow it to extract from adjacent inventories."]
+	quest.18238251518B54D5.quest_desc: ["123"]
+	quest.18238251518B54D5.title: "Chimmera Familiar"
 	quest.188484018F12E3B9.quest_desc: [
 		"We won't stop at simple oils. We have many more possibilities FOR MORE POTENCY! Toxin has opened new doors to its potential. AND WE WILL USE THEM GRACIOUSLY!"
 		""
@@ -247,6 +258,11 @@
 	quest.1AE0400A3C0AF316.quest_desc: ["Looks OP for such an easy craft, so idk where to put it :p"]
 	quest.1BCEB13A38CE4D8E.quest_desc: ["позволяет искать руду в чанках"]
 	quest.1BFC38890CBCF4F4.quest_desc: ["The magnetized modifier can only be used on Boots. When boots with this modifier are equipped, the item pick-up range of the player will increase by one and a half blocks."]
+	quest.1C0F24C077FF849F.quest_desc: [
+		"You can find more rituals in the book; we only include the most useful ones!"
+		"{@pagebreak}"
+		"Больше ритуалов можно посмотреть в книге, мы добавляем только самые полезные!"
+	]
 	quest.1E195026745014C0.quest_desc: [
 		"Turns ingots into rods and rods into bolts when provided with lubricant"
 		""
@@ -319,6 +335,11 @@
 	quest.2BB85B5FB4A2E943.quest_desc: ["Grows in dark forests."]
 	quest.2CCA1CEC324FE789.quest_desc: ["Bends things with double the speed of compressor!"]
 	quest.2D26EA473D256B54.quest_desc: ["An upgraded variant that allows catching boss entities"]
+	quest.2E3381758862F44D.quest_desc: [
+		"up to 4"
+		"{@pagebreak}"
+		"До 4х"
+	]
 	quest.2E5638B2207FCCBF.quest_desc: [
 		"&lChalice (Filled)&r:"
 		"• +2x Power Capacity"
@@ -391,6 +412,7 @@
 		"{@pagebreak}"
 		"Теперь что касается пустых горшочков. Их можно заполнить, не меняя состав. Теперь, используя эту основу, я могу заполнять горшочки и даже патронаж!"
 	]
+	quest.3AB217EEA136075C.title: "Djinni Crusher"
 	quest.3B4BC79A5DE6EC7C.quest_desc: [
 		"The Machine Extender can be placed on top of a machine to \"extend\" it, giving more space for pipes to connect. Machine Extenders can be stacked."
 		""
@@ -539,6 +561,7 @@
 		""
 		"Чтобы зарядить болты в картридж, присядьте и используйте его. картридж будет захватывать различные болты в инвентаре, который определяется так же, как и стрелы при использовании лука. Он будет пытаться захватить болты из разных стаков. Если уникальных стаков недостаточно, он будет хватать одинаковые стаки. Затем мы можем загрузить Cyclebow, как и болты. Если я захочу вернуть болты из картриджа, мне нужно будет лишь присесть и использовать заполненный картридж."
 	]
+	quest.48BB521ECABF71BF.title: "Afrit Smelter"
 	quest.48D6F64AD6B17D08.quest_desc: [
 		"Next, I must heat it in a crucible to remove any impurities."
 		"{@pagebreak}"
@@ -629,6 +652,11 @@
 		"Какой бы моб ни был принесен в жертву для его получения, Пентакль будет вечно спавнить этого моба."
 	]
 	quest.5D07A7818DC2BC1B.quest_desc: ["Used to make coke coal and creosote"]
+	quest.5D5C49482E28ECD5.quest_desc: [
+		"Позволяет создавать улучшенные версии дробителей, плавителей и кристализаторов."
+		"{@pagebreak}"
+		"Allows you to create improved versions of crushers, melters, and crystallizers."
+	]
 	quest.5DDA25EB563D52A6.quest_desc: ["Redstone works quite differently when you use aluminum to transfer its signals, looks like the strength of the signal remains the same no matter the distance traveled, and you could do little adjustments inside relays to send different signal types, which opens great possibilities..."]
 	quest.5E6040C8BC8CAE0F.quest_desc: ["The Artisan Relic can be used as an Enhancer in the Hephaestus Forge. It will reduce the required Experience essence cost by 25%. With a chance of 18% it can be found in the chests of Armorer, Toolsmith, or Weaponsmith villager buildings.  "]
 	quest.5ECC8454B6CFAD89.quest_desc: [
@@ -691,6 +719,7 @@
 		""
 		"…"
 	]
+	quest.61E590BED7EE9DA4.quest_desc: ["sooo entity magnet?!"]
 	quest.624A33C4995164C4.quest_desc: ["Hot enough furnace to produce steel, as well as some other useful resources"]
 	quest.62D095FE0536F7B7.quest_desc: [
 		"Now that I have a much more durable leather, I only need a very durable metal. The strongest I can find to withstand the chemicals. That's when I came across ancient debris. It's quite fitting it is deep within the bowels of the Nether."
@@ -700,6 +729,11 @@
 		"Теперь, когда у меня есть гораздо более прочная кожа, мне нужен столь же прочный металл. Самый прочный, что я смогу найти. Вскоре, бродя по незеру, я наткнулся на древние обломки. Я изучил металл и раскрыл весь его потенциал."
 		""
 		"Пришло время расширить свой арсенал. И начну я с патронажа."
+	]
+	quest.63F9D18BD9BB214C.quest_desc: [
+		"As with previous familiars and Possessed mobs, read about them in the book."
+		"{@pagebreak}"
+		"Как и с прошлыми фамильярами и одержимыми мобами, прочтите информацию о них в книге"
 	]
 	quest.65A0E1BB560D5E14.quest_desc: ["Guess what a filter does! ;)"]
 	quest.6621095DCFF9AE0F.quest_desc: ["Crush ore and other things into powder, with increased yield!"]
@@ -729,6 +763,19 @@
 		""
 		"Can be used together with a Oil Pot Sash. Pots will dig ore in an area like grenades. The ores will have Fortune II applied to them."
 	]
+	quest.6B3078F8DB055448.quest_desc: [
+		"This ritual also unlocks many new Possession Rituals that allow you to summon rare mobs and obtain their rare drops. For example, you can summon a Shalker without spending a ton of time searching for and opening the End portal to obtain Shalker Shell."
+		""
+		"Read more about these rituals in the book!"
+		""
+		"We have also added quests for only some familiars; you can read about the others in the book."
+		"{@pagebreak}"
+		"Так же данный ритула открывает множество новых Ритуалов обладания которые позволяют призывать редких мобов и получить их редкий дроп, например, призвать шалкера не тратя тонну времени на поиск и открытие энда, для, например, панцирей шалкера."
+		""
+		"Более подробнее о таких ритуалах прочтите в книге!"
+		""
+		"Мы также добавили квесты только для некоторых фамильяров; о других вы можете прочитать в книге."
+	]
 	quest.6B56735FE657E8D0.quest_desc: ["даёт сурс за еду либо кидать либо класть на платформу. Вокруг 3х3 будет превращать землю в мицелий и выращивать грибы"]
 	quest.6CB0342958887169.quest_desc: ["Furnace, but better!"]
 	quest.6CE13F93E085DABB.quest_desc: ["The Edelwood Ladder can be climbed twice as fast as a vanilla Ladder"]
@@ -736,6 +783,11 @@
 		"Gathering the required essences for a ritual can be tedious - luckily Aureal can be automated with the help of Obelisks. When placed in one of the spots where normally a Pedestal would go, it will slowly fill up the Aureal bar in the Hephaestus Forge. "
 		""
 		"In order to create an Obelisk you'll have to place 2 Arcane Crystal Blocks on top of an Arcane Polished Darkstone Block. To complete the transformation, you'll have to once again use Mundabitur Dust. "
+	]
+	quest.6D569CD522298948.quest_desc: [
+		"It can be used instead of white chalk in rituals!"
+		"{@pagebreak}"
+		"Его можно использовать вместо белого мелка в ритуалах!"
 	]
 	quest.6D62B6D792D203BA.quest_desc: [
 		"Mundabitur Dust can be used to craft Arcane Gold Ingots or to transform various different things."
@@ -832,26 +884,45 @@
 		"Однако из-за его размеров его мощность была снижена. Чтобы компенсировать это, я создал специальные боеприпасы. Катализатор для масла. Если поместить болты в горшок с маслом, они могут покрыться маслом, применяя его эффект к пораженным целям. Имейте в виду, что некоторые масла не будут действовать на болты."
 	]
 	reward.0DC887212398806D.title: "New Quest Chapter"
+	reward.0E7A91DD8F37AF4D.title: "Desaturation"
+	reward.4002784F5F537B2D.title: "New interactions: chest looting, villagers, spawners, wandering trader"
 	reward.41C8354D477A8899.title: "Access to most ore"
+	reward.74E5C7C4B8A33E55.title: "New monsters"
+	task.0201D3254268522D.title: "Kandar's Open Conjure"
 	task.020311F4DEE019DA.title: "Any #ytech:tanning_racks"
 	task.03D27D995554C1F6.title: "Ancient?"
 	task.03FD4CFDF4EBC8D0.title: "Crushing"
+	task.04686380A3EF8E64.title: "Any #minecraft:vanilla_music_discs"
 	task.068F277A6EC195B3.title: "Ore veins?"
+	task.06C366B476A6A584.title: "Ronaza's Contract"
 	task.08836B7AEB5DF9AF.title: "Energy generation"
 	task.0CB11BEA448FFB96.title: "Ore generation"
 	task.0EB4593433321D21.title: "Any #c:saws"
 	task.0F25C68A335172FD.title: "Ore generattion"
+	task.1581CD219F02ED5C.title: "Fatma's Incentivized Attraction"
+	task.15E89B2E5578B3EF.title: "Any #minecraft:candles"
 	task.15F67DE3803CCA6C.title: "Poison?"
 	task.15F9629F86649AB6.title: "How to setup your network"
+	task.1733FF25C74D58C6.title: "Any #sophisticatedstorage:all_storage"
+	task.223A6719946C7ABC.title: "Any #c:chests"
 	task.274F98243AA9482F.title: "Animals breeding"
+	task.2E75F41D80DEB4FE.title: "Any #minecraft:logs"
+	task.3010BA0C77BD53FA.title: "Strigeor's Higher Binding"
 	task.30EF11C70C08380B.title: "Enhancer Relics"
 	task.33FFDC1566305E62.title: "item/fluid transfer"
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
+	task.3AC7749433FF53D8.title: "Abras' Conjure"
 	task.3B4C4E1225398BD9.title: "Black Hole"
+	task.3EF92E0D9F56CD52.title: "Ihagan's Enthrallment"
+	task.40EE6EFAE710D3F5.title: "Ophyx' Calling"
 	task.4224A6EBD936625E.title: "Butcher?"
 	task.43199D58E9963367.title: "Any #c:ingots/silicon"
 	task.46CE431166A44610.title: "Oil pot"
+	task.49AD79AA5693E79F.title: "Osorin's Unbound Calling"
+	task.4AA33BD44F51AF55.title: "Sevira's Permanent Confinement"
+	task.4B7415C6171EB8C4.title: "Any #c:rods/wooden"
 	task.4BBE7498A48891A8.title: "Any #forbidden_arcanus:blacksmith_gavel"
+	task.4E27A8371F4A90AB.title: "Any #c:stones"
 	task.4E4DCBBCBFA389BB.title: "Any #c:files"
 	task.4FE41B7B9F6AAEE7.title: "!"
 	task.55A9AB2E43857E14.title: "Any #minecraft:beds"
@@ -860,7 +931,11 @@
 	task.5D063D32D1C6BB2C.title: "Any #ytech:aqueducts"
 	task.5EC8E0E987CF862A.title: "More plants"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
+	task.64E7E65976B570B4.title: "Posuc's Convication"
 	task.6719AA6DDAB0F823.title: "Any #minecraft:anvil"
+	task.68DA7E9C5CC5E0FB.title: "Uphyxes Inverted Tower"
+	task.6B073DC5E1960334.title: "Odus' Open Convocation"
+	task.6E241CA073F70AD3.title: "Xeovrenth Adjure"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
 	task.73CEC69AE2924335.title: "Any #c:logs/archwood"
 	task.77C744B48E7A1B18.title: "Any #minecraft:beds"
