@@ -9,6 +9,12 @@
 	quests: [
 		{
 			dependencies: ["715BBA6DCDA1C2F1"]
+			icon: {
+				components: {
+					"modopedia:book": "enchanted:art_of_witchcraft"
+				}
+				id: "modopedia:book"
+			}
 			id: "6119BB732C330F74"
 			tasks: [{
 				id: "5E19E67EA0239B1A"
@@ -359,6 +365,7 @@
 		}
 		{
 			dependencies: ["6119BB732C330F74"]
+			hide_dependent_lines: true
 			id: "00504BDD52B7AF73"
 			tasks: [{
 				id: "6EE34CABD91026BF"
@@ -632,6 +639,161 @@
 			}]
 			x: 9.0d
 			y: 0.5d
+		}
+		{
+			id: "7CC9F88727D23AF6"
+			tasks: [{
+				id: "2905220DEDCE465F"
+				item: { count: 1, id: "enchanted:poppet" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7CC9F88727D23AF6"]
+			id: "1ACC5B02FFBB0292"
+			tasks: [{
+				id: "6F87820C2C3EA8CA"
+				item: { count: 1, id: "enchanted:poppet_shelf" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7CC9F88727D23AF6"]
+			id: "5BA28B2D3F0434AC"
+			tasks: [{
+				id: "0107BB8A6C3B46A6"
+				item: { count: 1, id: "enchanted:spinning_wheel" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"5BA28B2D3F0434AC"
+				"00504BDD52B7AF73"
+			]
+			id: "50D0BAF7BB169151"
+			tasks: [{
+				id: "2FD9C7170EFF4479"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "1CD45F6ABC752323"
+			tasks: [{
+				id: "0A09A5493D49F8FE"
+				item: { count: 1, id: "enchanted:infused_poppet" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "24FB677A0BC17397"
+			tasks: [{
+				id: "477C8C5C3D64FA0B"
+				item: { count: 1, id: "enchanted:sturdy_poppet" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "1A0B88015D2BD67B"
+			tasks: [{
+				id: "417B4224911D58C4"
+				item: { count: 1, id: "enchanted:armour_poppet" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "47067A0123E5B41E"
+			tasks: [{
+				id: "584C6A01916A1AF6"
+				item: { count: 1, id: "enchanted:earth_poppet" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "31C3B6C7575DCEE3"
+			tasks: [{
+				id: "37453A83B6C63ED1"
+				item: { count: 1, id: "enchanted:fire_poppet" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "5841B92E5E26FDC4"
+			tasks: [{
+				id: "77D0A31262D5E652"
+				item: { count: 1, id: "enchanted:hunger_poppet" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "4A142B8F89743A17"
+			tasks: [{
+				id: "16ADAF3C3A0B4D74"
+				item: { count: 1, id: "enchanted:magic_poppet" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "1862FB740D27A739"
+			tasks: [{
+				id: "3BC343E012857716"
+				item: { count: 1, id: "enchanted:water_poppet" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "5644C47D56EF391C"
+			tasks: [{
+				id: "68D2EE01206AC356"
+				item: { count: 1, id: "enchanted:void_poppet" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50D0BAF7BB169151"]
+			id: "1016FCCF4CB5AF2E"
+			tasks: [{
+				id: "5F075B5C5BF42CA3"
+				item: { count: 1, id: "enchanted:tool_poppet" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.5d
 		}
 	]
 }

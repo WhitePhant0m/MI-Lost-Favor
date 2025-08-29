@@ -1,10 +1,3 @@
-AStages.customizeStage('xaeromap')
-    .setAddTitle(Text.translatable('milf.stage.xaeromap').darkPurple()) 
-    .setAddChatMessage(Text.translatable('milf.stage.xaeromap').darkPurple())
-    .setFadeIn(20) // Default
-    .setFadeOut(20) // Default
-    .setStay(120) 
-
 AStageEvents.added("xaeromap", event => {
     event.player.tell("xaeromap")
     let player = event.entity;

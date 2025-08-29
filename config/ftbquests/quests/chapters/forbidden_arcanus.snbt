@@ -848,5 +848,16 @@
 			x: -6.0d
 			y: 12.0d
 		}
+		{
+			dependencies: ["3E6F9ACF7C710FA4"]
+			id: "3926D8DF461B4AC4"
+			tasks: [{
+				id: "4574917FC38BD5EA"
+				item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_5" }
+				type: "item"
+			}]
+			x: 21.5d
+			y: 3.0d
+		}
 	]
 }

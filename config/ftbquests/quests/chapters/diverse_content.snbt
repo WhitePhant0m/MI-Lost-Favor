@@ -88,12 +88,12 @@
 			tasks: [
 				{
 					id: "0AE82BD2BF8E934E"
-					item: { count: 1, id: "toolbelt:belt" }
+					item: { components: { "ftbquests:missing_item": "toolbelt:belt" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "5B8A850ECB84A09D"
-					item: { count: 1, id: "toolbelt:pouch" }
+					item: { components: { "ftbquests:missing_item": "toolbelt:pouch" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
@@ -395,6 +395,50 @@
 			}]
 			x: 10.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "26D87ADDEB56D868"
+			tasks: [{
+				id: "55FFAC49607A5502"
+				item: { count: 1, id: "solcarrot:food_book" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "4B4152C17573E98D"
+			tasks: [{
+				id: "7414C7BC8DE05E04"
+				item: { count: 1, id: "transmog:transmogrification_table" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "0EC60F3FB9DFB29E"
+			tasks: [{
+				id: "13145398B47D2CAB"
+				item: { count: 1, id: "transmog:void_fragment" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "3AA18F4C134E7ACB"
+			tasks: [{
+				id: "70C2DEAED078B45C"
+				item: { count: 1, id: "kubejs:amber_visage" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
 		}
 	]
 }
