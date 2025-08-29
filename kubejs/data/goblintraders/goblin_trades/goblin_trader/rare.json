@@ -1,0 +1,914 @@
+{
+  "replace": false,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "experience": 10,
+      "max_trades": 64,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:experience_bottle"
+      },
+      "payment_item": {
+        "count": {
+          "max": 10,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 10,
+      "max_trades": 2,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:name_tag"
+      },
+      "payment_item": {
+        "count": 16,
+        "id": "devices:bronze_coin"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 12
+        },
+        "id": "minecraft:paper"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 10,
+      "max_trades": 64,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:blue_ice"
+      },
+      "payment_item": {
+        "count": 4,
+        "id": "minecraft:packed_ice"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_11"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_13"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_cat"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_blocks"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_far"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_mall"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_mellohi"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_stal"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_strad"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_ward"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_wait"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_otherside"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_relic"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_precipice"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_creator"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:music_disc_creator_music_box"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:wayfinder_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:raiser_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:shaper_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:host_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:ward_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:silence_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:eye_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:bolt_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:flow_armor_trim_smithing_template"
+      },
+      "payment_item": {
+        "count": {
+          "max": 56,
+          "min": 32
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:angler_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:archer_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:arms_up_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:blade_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:brewer_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:burn_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:danger_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:explorer_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:flow_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:friend_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:guster_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:heart_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 4,
+          "min": 2
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:heartbreak_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:howl_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:miner_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:mourner_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:plenty_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:prize_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:scrape_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:sheaf_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 2
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:shelter_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:skull_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 100,
+      "max_trades": 1,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:snort_pottery_sherd"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:brick"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 8,
+          "min": 4
+        },
+        "id": "devices:bronze_coin"
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "replace": false,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "experience": 4,
+      "max_trades": 32,
+      "offer_item": {
+        "count": 2,
+        "id": "minecraft:gunpowder"
+      },
+      "payment_item": {
+        "count": 4,
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 10,
+      "offer_item": {
+        "count": 6,
+        "id": "minecraft:emerald"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:turtle_egg"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 10,
+      "max_trades": 4,
+      "offer_item": {
+        "count": 8,
+        "id": "minecraft:emerald"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:pufferfish_bucket"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 10,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:sponge"
+      },
+      "payment_item": {
+        "count": 16,
+        "id": "devices:bronze_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 10,
+      "max_trades": 2,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:anvil"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:damaged_anvil"
+      },
+      "secondary_payment_item": {
+        "count": 2,
+        "id": "minecraft:iron_ingot"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 10,
+      "max_trades": 2,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:anvil"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:chipped_anvil"
+      },
+      "secondary_payment_item": {
+        "count": 1,
+        "id": "minecraft:iron_ingot"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 4,
+      "max_trades": 64,
+      "offer_item": {
+        "count": 2,
+        "id": "minecraft:terracotta"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:clay"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 4,
+      "max_trades": 32,
+      "offer_item": {
+        "count": 2,
+        "id": "minecraft:book"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:leather"
+      },
+      "secondary_payment_item": {
+        "count": {
+          "max": 3,
+          "min": 2
+        },
+        "id": "minecraft:paper"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 4,
+      "max_trades": 20,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:emerald"
+      },
+      "payment_item": {
+        "count": 2,
+        "id": "minecraft:amethyst_shard"
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "replace": false,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "experience": 4,
+      "max_trades": 24,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:emerald"
+      },
+      "payment_item": {
+        "count": 8,
+        "id": "minecraft:apple"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 6,
+      "max_trades": 30,
+      "offer_item": {
+        "count": 2,
+        "id": "minecraft:iron_ingot"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:raw_iron"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 6,
+      "max_trades": 30,
+      "offer_item": {
+        "count": 3,
+        "id": "minecraft:gold_ingot"
+      },
+      "payment_item": {
+        "count": 2,
+        "id": "minecraft:raw_gold"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 6,
+      "max_trades": 30,
+      "offer_item": {
+        "count": 2,
+        "id": "minecraft:copper_ingot"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:raw_copper"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 4,
+      "max_trades": 24,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:coal"
+      },
+      "payment_item": {
+        "count": 4,
+        "id": "minecraft:rotten_flesh"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 4,
+      "max_trades": 32,
+      "offer_item": {
+        "count": 2,
+        "id": "minecraft:flint"
+      },
+      "payment_item": {
+        "count": 1,
+        "id": "minecraft:gravel"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 4,
+      "max_trades": 128,
+      "offer_item": {
+        "count": 1,
+        "id": "minecraft:emerald"
+      },
+      "payment_item": {
+        "count": {
+          "max": 32,
+          "min": 22
+        },
+        "id": "minecraft:cobblestone"
+      }
+    }
+  ]
+}
