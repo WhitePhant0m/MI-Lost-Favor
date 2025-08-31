@@ -15,6 +15,7 @@ PlayerEvents.tick(event => {
         player.removeEffect("xaerominimap:no_entity_radar_harmful")
         player.removeEffect("xaerominimap:no_minimap_harmful")
         player.removeEffect("xaerominimap:no_waypoints_harmful")
+        player.removeEffect("xaeroworldmap:no_world_map_harmful")
         return
     } 
     if (player.hasEffect('xaerominimap:no_cave_maps_harmful')) return
@@ -22,5 +23,5 @@ PlayerEvents.tick(event => {
     player.potionEffects.add("xaerominimap:no_entity_radar_harmful",-1)
     player.potionEffects.add("xaerominimap:no_minimap_harmful",-1)
     player.potionEffects.add("xaerominimap:no_waypoints_harmful",-1)
-    
+    player.potionEffects.add("xaeroworldmap:no_world_map_harmful",-1)    
 })
