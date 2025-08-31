@@ -344,6 +344,15 @@
 		{
 			dependencies: ["61380B958B86CBD5"]
 			id: "2B815502453269AF"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "lootr:lootr_chest"
+				}
+				id: "670CBE4973B6F390"
+				team_reward: true
+				type: "custom"
+			}]
 			shape: "diamond"
 			size: 1.0d
 			tasks: [{
