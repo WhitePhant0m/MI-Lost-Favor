@@ -462,5 +462,16 @@
 			x: -16.5d
 			y: 2.5d
 		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "7276E995F442FC3F"
+			tasks: [{
+				id: "6F7F8F01A93CB38E"
+				item: { count: 1, id: "smallships:oak_galley" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 3.5d
+		}
 	]
 }
