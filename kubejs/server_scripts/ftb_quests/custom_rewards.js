@@ -35,7 +35,7 @@ FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
     player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
 });
 
-FTBQuestsEvents.customReward('4002784F5F537B2D', event => {
+FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
     let player = event.entity;
     let player_name = player.profile.name
     let stage = "early_items"
