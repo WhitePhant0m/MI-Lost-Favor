@@ -83,8 +83,8 @@ MIMachineEvents.registerMachines(event => {
 
         event.simpleElectricCraftingMultiBlock(
             'Radio transcriber', 'radio_transcriber', RADIO_TRANSCRIBER, radioTranscriberShape,
-            event.progressBar(58, 33, 'enigma_arrow'),
-            itemInputs => itemInputs.addSlots(40, 35, 1, 1).addSlots(50, 55, 1, 1).addSlots(50, 15, 1, 1), itemOutputs => itemOutputs.addSlots(80, 35 ,1,1),
+            event.progressBar(58, 33, 'radio_tower_ui'),
+            itemInputs => itemInputs.addSlots(41, 35, 1, 1).addSlots(60, 55, 1, 1), itemOutputs => itemOutputs.addSlots(80, 35 ,1,1),
             fluidInputs => {}, fluidOutputs => {},
             'treated_wood_casing', 'enigma_overlays', true, false, false
         )

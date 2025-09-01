@@ -97,6 +97,32 @@ ServerEvents.recipes(event => {
     .itemOut('16x kubejs:bronze_machine_bit')
     */
 
+    event.shaped(
+        Item.of('kubejs:radio_tower_block', 8),
+        [
+            'ASA',
+            'S S', 
+            'ASA'
+        ],
+        {
+            A: '#c:plates/aluminum',
+            S: '#c:plates/stainless_steel', 
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:radio_tower_slab', 6),
+        [
+            '   ',
+            'BBB', 
+            '   '
+        ],
+        {
+            B: 'kubejs:radio_tower_block',
+        }
+    )
+
+
     event.custom({
             "type": "minecraft:crafting_shaped",
             "category": "misc",

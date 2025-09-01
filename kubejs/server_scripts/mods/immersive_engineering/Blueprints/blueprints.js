@@ -47,6 +47,17 @@ ServerEvents.recipes(event => {
         "components"
     );
 
+    blueprint_recipe(
+        [
+            [{ "tag": "c:wires/electrum" }, 2],
+            [{ "tag": "c:gems/quartz" }, 1],
+            [{ "tag": "c:dusts/redstone" }, 2],
+            [{ "item": "modern_industrialization:analog_circuit_board" }, 1]
+        ],
+        [{ "item": 'immersiveengineering:component_electronic' }, 2],
+        "components"
+    );
+
 
     //default recipes removal
     event.forEachRecipe({output:craft_removal_list}, r => {

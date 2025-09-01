@@ -727,14 +727,13 @@
 			]
 			id: "6BC434A6B44D825B"
 			shape: "octagon"
-			size: 3.0d
 			tasks: [{
 				id: "641D04E886E1F213"
 				item: { count: 1, id: "modern_industrialization:stainless_steel_ingot" }
 				type: "item"
 			}]
 			x: 2.0d
-			y: -18.0d
+			y: -17.0d
 		}
 		{
 			dependencies: [
@@ -915,6 +914,32 @@
 			}]
 			x: 3.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["6BC434A6B44D825B"]
+			icon: {
+				id: "immersiveengineering:radio_tower"
+			}
+			id: "7E24F689D7B678F9"
+			shape: "none"
+			size: 8.0d
+			tasks: [
+				{
+					id: "596EA046A3FDBAA1"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:radio_tower"
+					type: "observation"
+				}
+				{
+					id: "7C768955F53E02C5"
+					item: { count: 1, id: "immersiveengineering:radio_tower" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -21.0d
 		}
 	]
 }

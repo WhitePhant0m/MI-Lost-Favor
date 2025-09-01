@@ -17,7 +17,7 @@
 			y: 0.0d
 		}
 		{
-			id: "1EC1981231779B4D"
+			id: "32C183F451644FF7"
 			linked_quest: "5666EC7EBCE18EBA"
 			shape: "octagon"
 			x: -8.0d
@@ -38,10 +38,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"5666EC7EBCE18EBA"
-				"37E81A0F2015DFE9"
-			]
+			dependencies: ["5666EC7EBCE18EBA"]
 			id: "7460A2152BF3AEF2"
 			shape: "rsquare"
 			tasks: [{
@@ -264,7 +261,6 @@
 		{
 			dependencies: [
 				"1F905B94015D7B5F"
-				"4F5EB282EBA6477E"
 				"62D84921B93F2FAE"
 			]
 			id: "24D3487EB912CEA7"
@@ -278,15 +274,17 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["32BF1BBD35EF70BF"]
 			id: "4F5EB282EBA6477E"
-			shape: "octagon"
+			shape: "diamond"
 			tasks: [{
-				id: "47E74B72B495E969"
-				item: { count: 1, id: "extendedae:entro_seed" }
+				count: 8L
+				id: "2C35A3ADB811CD97"
+				item: { count: 1, id: "extendedae:entro_shard" }
 				type: "item"
 			}]
 			x: -4.5d
-			y: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -445,8 +443,8 @@
 				item: { count: 1, id: "extendedae:entro_crystal" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 7.0d
+			x: -5.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1359,7 +1357,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["61A0ED28655E9E09"]
+			dependencies: ["4F5EB282EBA6477E"]
 			id: "2DA95B811A8085F9"
 			shape: "diamond"
 			tasks: [{
@@ -1367,8 +1365,8 @@
 				item: { count: 1, id: "extendedae:entro_seed" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 7.5d
+			x: -4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["685FA68A7D47018E"]
@@ -1586,8 +1584,8 @@
 				item: { count: 1, id: "extendedae:circuit_cutter" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 6.0d
+			x: -3.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["0AB4145A720562AD"]
@@ -2166,6 +2164,16 @@
 			}]
 			x: -4.0d
 			y: -5.5d
+		}
+		{
+			id: "3BFF88D91BD73922"
+			tasks: [{
+				id: "3AB5D6B153B72844"
+				item: { count: 1, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
 		}
 	]
 }

@@ -3,8 +3,7 @@ ServerEvents.recipes(event => {
 
     var wrench = "modern_industrialization:wrench"
     let craft_removal_list = [
-        "modern_industrialization:electric_blast_furnace",
-        "modern_industrialization:electronic_circuit_board"
+       
     ]
 
     //#region Array functions

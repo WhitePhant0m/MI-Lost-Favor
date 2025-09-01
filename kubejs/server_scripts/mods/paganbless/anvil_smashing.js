@@ -62,6 +62,15 @@ ServerEvents.recipes(event => {
 
     anvil_recipe(
         [
+            [{ "item": "minecraft:amethyst_shard" }, 4],
+            [{ "item": "minecraft:ender_pearl" }, 4],
+            [{ "item": "minecraft:emerald" }, 1],
+        ],
+        [{ "id": 'waystones:warp_stone' }, 1]
+    );
+
+    anvil_recipe(
+        [
             [{ "tag": "c:bolts/iron" }, 4],
             [{ "tag": "c:plates/iron" }, 2],
             [{ "tag": "c:dusts/iron" }, 4],
@@ -124,6 +133,15 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/steel" }, 8],
         ],
         [{ "id": 'modern_industrialization:steel_machine_casing' }, 1]
+    );
+
+    anvil_recipe(
+        [
+            [{ "tag": "c:bolts/invar" }, 8],
+            [{ "tag": "c:gears/invar" }, 1],
+            [{ "tag": "c:plates/invar" }, 8],
+        ],
+        [{ "id": 'modern_industrialization:heatproof_machine_casing' }, 1]
     );
 
     anvil_recipe(

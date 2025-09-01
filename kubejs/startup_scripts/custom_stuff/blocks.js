@@ -1,16 +1,21 @@
 StartupEvents.registry('block', event => {
-    /*
-    event.create('bronze_sheet_metal') 
-    .item(i => i.maxStackSize(32))
-    .displayName('Bronze sheet machine bit') // Set a custom name
-    .soundType('wool') // Set a material (affects the sounds and some properties)
-    .hardness(1.0) // Set hardness (affects mining time)
+    
+    event.create('radio_tower_block') 
+    .item(i => i.maxStackSize(64))
+    .displayName('Radio tower block') 
+    .hardness(1.0) 
     .soundType("chain")
-    .tagBlock('kubejs:plate_block') // Tag the block with `#minecraft:my_custom_tag` (can have multiple tags)
-    .requiresTool(true) // Requires a tool or it won't drop (see tags below)
-    .tagBlock('minecraft:mineable/pickaxe') // or a pickaxe
-    .color(0, "#f5b323")
-    .texture('custom_stuff:blocks/sheet_metal_texture')
-    */
+    .requiresTool(true) 
+    .tagBlock('minecraft:mineable/pickaxe')
+    .texture('custom_stuff:blocks/radio_tower_block')
+
+    event.create('radio_tower_slab', "slab") 
+    .item(i => i.maxStackSize(64))
+    .displayName('Radio tower slab') 
+    .hardness(1.0) 
+    .soundType("chain")
+    .requiresTool(true) 
+    .tagBlock('minecraft:mineable/pickaxe')
+    .texture('custom_stuff:blocks/radio_tower_block')
 
 })

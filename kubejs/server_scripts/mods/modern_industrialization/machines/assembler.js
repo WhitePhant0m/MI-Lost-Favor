@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     let craft_removal_list = [
-
+        "modern_industrialization:electric_blast_furnace"
     ]
     
     function assembler_recipe(energy,time,inputs,outputs,fluids,token){
@@ -33,6 +33,18 @@ ServerEvents.recipes(event => {
             "kubejs:tempered_glass",
         ],
         ["modern_industrialization:basic_machine_hull"],
+    );
+
+    assembler_recipe(
+        8, 200,
+        [
+            "4x modern_industrialization:tin_cable",
+            "8x modern_industrialization:cupronickel_wire_magnetic",
+            "modern_industrialization:portable_storage_unit",
+            "modern_industrialization:heatproof_machine_casing",
+            "kubejs:tempered_glass",
+        ],
+        ["modern_industrialization:electric_blast_furnace"],
     );
 
 

@@ -17,5 +17,12 @@ StartupEvents.registry('item', event => {
     event.create('disk_from_space').texture('custom_stuff:item/disk_from_space').maxStackSize(1)
     event.create('holy_book_of_color').texture('custom_stuff:item/color_holy_book').maxStackSize(1)
 
+    event.create('punched_card').texture('custom_stuff:item/punched_card').maxStackSize(1)
+
+
+    //disks
+    event.create("engineer_disk").texture('custom_stuff:item/ie_disk').maxStackSize(1).displayName("Engineer's disk")
+
+
 
 })

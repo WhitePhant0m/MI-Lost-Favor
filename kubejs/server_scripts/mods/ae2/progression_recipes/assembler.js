@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     var tier5DefaultTime = 1600
 
     let craft_removal_list = [
-
+        "extendedae:quartz_blend"
     ]
 
     //main function, called in every helper function
@@ -646,6 +646,10 @@ ServerEvents.recipes(event => {
     // #region tier 4 recipes
         ae_processor("advanced_ae:printed_quantum_processor", "advanced_ae:quantum_processor", tier3token)
 
+    // #endregion
+
+    // #region tier 5 recipes
+        ae_processor("extendedae:concurrent_processor_print","extendedae:concurrent_processor", tier4token)
     // #endregion
 
     //default recipes removal
