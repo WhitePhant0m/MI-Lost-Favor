@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ type: 'ae2:inscriber' })
+    event.remove({ type: 'extendedae:circuit_cutter' })
     //event.remove({ output: /ae2:.*item_storage_cell/ })
     /*
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⣀⠐⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -32,13 +33,14 @@ ServerEvents.recipes(event => {
 
 
     const remove_by_output = [
-
+        "extendedae:ex_inscriber"
     ]
 
     remove_by_output.forEach(id => {
             event.remove({ output: id })
         })
 
+    /*
     event.custom({
         "type": "extendedae:circuit_cutter",
         "input": {
@@ -52,7 +54,6 @@ ServerEvents.recipes(event => {
         }
     })
 
-    /*
     event.custom({
         "type": "ae2:inscriber",
         "ingredients": {

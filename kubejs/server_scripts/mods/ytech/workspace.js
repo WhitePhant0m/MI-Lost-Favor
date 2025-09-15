@@ -81,7 +81,6 @@ ServerEvents.recipes(event => {
     }
 
     function packer_recipe(energy,time,inputs,outputs){
-        energy = energy + inputs.length * (energy / 4)
         var recipe = event.recipes.modern_industrialization.packer(energy, time);
         inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
         outputs.forEach((out) => {
@@ -116,10 +115,13 @@ ServerEvents.recipes(event => {
                     let regex = new RegExp(m[0],'g')
                     mats.push((amounts.match(regex) || []).length + "x " + m[1])
                 })
-                packer_recipe(8,400,mats,[output])
+                packer_recipe(4,400,mats,[output])
                 return;
             case steelBits:
                 mats.push("modern_industrialization:steel_machine_casing")
+                break;
+            case steelMaterialset:
+                mats.push("modern_industrialization:steel_machine_casing","immersiveengineering:fluid_pipe","kubejs:steel_infused_glass","kubejs:small_steel_fluid_container")
                 break;
             case basicMaterialset:
                 mats.push("modern_industrialization:basic_machine_hull")
@@ -335,7 +337,7 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //#region steel machines
-    var steelMaterialset = {M:'kubejs:steel_machine_bit', P:"immersiveengineering:fluid_pipe", G:'kubejs:steel_infused_glass', F:'kubejs:steel_fluid_container'}
+    var steelMaterialset = {M:'kubejs:steel_machine_bit', P:"immersiveengineering:fluid_pipe", G:'kubejs:steel_infused_glass', F:'kubejs:small_steel_fluid_container'}
     var steelUpgrade = {M:'kubejs:steel_machine_bit', P:"immersiveengineering:fluid_pipe", G:'kubejs:steel_infused_glass'}
     var steelBits = {M:'kubejs:steel_machine_bit'}
 
@@ -372,7 +374,51 @@ ServerEvents.recipes(event => {
     //composter
     steelMachineUpgrade("extended_industrialization:bronze_composter", "extended_industrialization:steel_composter")
 
-
+    //honey_extractor
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("M").layerSides("g"),
+            ['   ','   ','   '].layerAll("M").layerSides("G").layerFront("R").layerCentre(" "),
+            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+        ],
+        {R:"modern_industrialization:tin_rotor",g:"modern_industrialization:bronze_gear"},
+        'extended_industrialization:steel_honey_extractor', steelMaterialset
+    )
+    //wiremill
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("M").layerCorners("R"),
+            ['   ','   ','   '].layerAll("M").layerCorners("g").layerCentre(" ").layerFront("G"),
+            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+        ],
+        {R:"modern_industrialization:bronze_rotor",g:"modern_industrialization:bronze_gear"},
+        'modern_industrialization:steel_wiremill', steelMaterialset
+    )
+    //alloy_smelter
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("M").layerCorners("w"),
+            ['   ','   ','   '].layerAll("M").layerCorners("w").layerCentre("A").layerFront("G"),
+            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+        ],
+        {w:"modern_industrialization:cupronickel_wire",A:"ytech:primitive_alloy_smelter"},
+        'extended_industrialization:steel_alloy_smelter', steelMaterialset
+    )
+    //packer
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("M").layerCorners("g").layerCentre("p"),
+            ['   ','   ','   '].layerAll("M").layerCorners("g").layerSides("p").layerCentre(" ").layerFront("G"),
+            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+        ],
+        {g:"modern_industrialization:bronze_gear",p:"minecraft:piston"},
+        'modern_industrialization:steel_packer', steelMaterialset
+    )
+    //unpacker
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("M").layerCorners("g").layerCentre("p"),
+            ['   ','   ','   '].layerAll("M").layerCorners("g").layerSides("p").layerCentre(" ").layerFront("G"),
+            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+        ],
+        {g:"modern_industrialization:bronze_gear",p:"minecraft:sticky_piston"},
+        'modern_industrialization:steel_unpacker', steelMaterialset
+    )
     //tank
     workspace_recipe([
             ['   ','   ','   '].layerAll("M").layerCentre("G"),
@@ -397,7 +443,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
             ['   ','   ','   '].layerAll("M").layerCentre("h")
         ],
-        {p:"immersiveengineering:conveyor_basic",h:"minecraft:hopper",A:"moderndynamics:extractor"},
+        {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
         'modern_industrialization:steel_item_output_hatch', steelBits
     )
     //item_input
@@ -406,7 +452,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
             ['   ','   ','   '].layerAll("M").layerCentre("p")
         ],
-        {p:"immersiveengineering:conveyor_basic",h:"minecraft:hopper",A:"moderndynamics:attractor"},
+        {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
         'modern_industrialization:steel_item_input_hatch', steelBits
     )
     //fluid_output

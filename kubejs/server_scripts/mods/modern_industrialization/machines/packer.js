@@ -30,4 +30,11 @@ ServerEvents.recipes(event => {
     ae_press_recipes ("ae2:engineering_processor_press", "#c:ingots/aluminum", "ae2:printed_engineering_processor", tier3token)
     ae_press_recipes ("kubejs:core_press", "#c:plates/iron", "kubejs:core_hull", tier3token)
 
+    //tier 4
+    ae_press_recipes ("advanced_ae:quantum_processor_press", "advanced_ae:quantum_alloy", "advanced_ae:printed_quantum_processor", tier4token)
+    ae_press_recipes ("megacells:accumulation_processor_press", "megacells:sky_steel_ingot", "megacells:printed_accumulation_processor", tier4token)
+
+    //tier 5
+    //ae_press_recipes ("extendedae:concurrent_processor_press", "extendedae:entro_crystal", "extendedae:concurrent_processor_print", tier4token)
+
 })

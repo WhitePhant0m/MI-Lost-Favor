@@ -382,7 +382,7 @@
 		""
 		"Используя перегонный аппарат, мы можем изготавливать МИЛЫЕ ТОКСИЧНЫЕ ГОРШОЧКИ. Для самых мощных масел подходит только этот вариант. Простой глиняный горшочек трескался под воздействием токсина."
 	]
-	quest.19800DDEA270C24C.quest_desc: ["One of the most useful items in any situation. You can configure it via button to the top right of your character so it will refill whatever block you're holding straight from your system as vell as search thru your system to pick blocks via middle mouse"]
+	quest.19800DDEA270C24C.quest_desc: ["One of the most useful items in any situation. You can configure it via the button to the top right of your character so it will refill whatever block you're holding straight from your system as well as search through your system to pick blocks via the middle mouse button"]
 	quest.1987F8CE26632CC4.quest_desc: [
 		"Incenses are a neat block that spread herb-specific effects in a specific area."
 		""
@@ -957,6 +957,7 @@
 		""
 		"Генератор частиц позволяет &#FEECD6создавать&r большинство частиц из &#CAE4C8Minecraft&r'a, невероятные спецэффекты для любой &#9BB8EDпостройки&r!"
 	]
+	quest.433D4543F6EF194F.quest_desc: ["chunk loader"]
 	quest.437828558F9D018E.quest_desc: [
 		"&#9966CCAmethyst&r geodes can be found in the bottom layers of the underground. "
 		""

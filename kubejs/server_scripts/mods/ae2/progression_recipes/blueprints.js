@@ -206,6 +206,18 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
+            [{ "tag": "c:plates/stainless_steel" }, 4],
+            [{ "item": "modern_industrialization:certus_quartz_rod" }, 8],
+            [{ "item": "modern_industrialization:stainless_steel_ingot" }, 4],
+            [{ "item": "ae2:fluix_dust" }, 16],
+            [{ "item": "ae2:certus_quartz_dust" }, 2]
+        ],
+        { "item": "megacells:accumulation_processor_press" },
+        tier4bp
+    );
+
+    blueprint_recipe(
+        [
             [{ "tag": "c:plates/blastproof_alloy" }, 4],
             [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 8],
             [{ "item": "minecraft:piston" }, 32],
@@ -225,6 +237,32 @@ ServerEvents.recipes(event => {
         { "item": "advanced_ae:reaction_chamber" },
         tier4bp
     );
+    //#endregion
+
+    // #region tier 5
+
+    blueprint_recipe(
+        [
+            [{ "item": "pastel:pure_malachite" }, 4],
+            [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 8],
+            [{ "item": "pastel:moonstone_shard" }, 8],
+            [{ "item": "modern_industrialization:assembler" }, 1]
+        ],
+        { "item": "extendedae:crystal_assembler" },
+        tier5bp
+    );
+
+    blueprint_recipe(
+        [
+            [{ "item": "pastel:pure_malachite" }, 4],
+            [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 8],
+            [{ "item": "modern_industrialization:invar_rotary_blade" }, 4],
+            [{ "item": "modern_industrialization:electric_cutting_machine" }, 1]
+        ],
+        { "item": "extendedae:circuit_cutter" },
+        tier5bp
+    );
+
     //#endregion
 
     //default recipes removal
