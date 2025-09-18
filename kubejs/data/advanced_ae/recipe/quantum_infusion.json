@@ -1,0 +1,22 @@
+{
+    "type": "advanced_ae:reaction",
+    "input_energy": 20000,
+    "input_fluid": {
+        "amount": 2000,
+        "ingredient": {
+            "fluid": "pastel:dragonrot"
+        }
+    },
+    "input_items": [
+        {
+            "ingredient": {
+                "item": "ae2:singularity"
+            }
+        }
+    ],
+    "output": {
+        "#": 2000,
+        "#t": "ae2:f",
+        "id": "advanced_ae:quantum_infusion_source"
+    }
+}

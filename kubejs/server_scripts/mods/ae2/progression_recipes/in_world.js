@@ -1,6 +1,10 @@
 ServerEvents.recipes(event => {
 
 
+    let craft_removal_list = [
+
+    ]
+
     function ae2fluid_recipe(fluid,items,output){
         let recipe = {
             "type": "ae2:transform",
@@ -19,14 +23,22 @@ ServerEvents.recipes(event => {
             recipe.ingredients.push(i[0])
         });
         event.custom(recipe)
+        craft_removal_list.push(output[0])
     }
 
-    ae2fluid_recipe("pastel:liquid_crystal",
+    
+    ae2fluid_recipe("minecraft:water",
         [
-            [{ "item": "extendedae:entro_seed" }, 1],
-            [{ "item": "kubejs:quantum_blueprint" }, 1],
+            [{ "item": "ae2:charged_certus_quartz_crystal" }, 1],
+            [{ "tag": "c:gems/quartz" }, 1],
+            [{ "item": "minecraft:amethyst_shard" }, 1],
         ],
-        ["kubejs:divine_blueprint", 1]
+        ["ae2:fluix_crystal", 1]
     )
+    
+
+    event.forEachRecipe({output:craft_removal_list}, r => {
+        event.remove({output: r.getOriginalRecipeResult()})
+    })
 
 })

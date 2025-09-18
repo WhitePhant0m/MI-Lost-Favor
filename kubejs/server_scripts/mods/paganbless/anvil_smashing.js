@@ -105,6 +105,8 @@ ServerEvents.recipes(event => {
         [{ "id": 'moderndynamics:filter' }, 2]
     );
 
+    //#region mi stuff
+
     anvil_recipe(
         [
             [{ "tag": "c:plates/copper" }, 2],
@@ -113,9 +115,22 @@ ServerEvents.recipes(event => {
         [{ "id": 'kubejs:small_copper_fluid_container' }, 1]
     );
 
+    anvil_recipe(
+        [
+            [{ "tag": "c:plates/steel" }, 2],
+            [{ "tag": "c:bolts/steel" }, 4],
+        ],
+        [{ "id": 'kubejs:small_steel_fluid_container' }, 1]
+    );
 
-
-    //#region mi stuff
+    anvil_recipe(
+        [
+            [{ "item": "immersiveengineering:fluid_pipe" }, 5],
+            [{ "item": "kubejs:steel_infused_glass" }, 1],
+            [{ "item": "kubejs:steel_machine_bit" }, 12],
+        ],
+        [{ "id": 'modern_industrialization:steel_upgrade' }, 1]
+    );
 
     anvil_recipe(
         [

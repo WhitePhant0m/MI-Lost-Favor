@@ -144,7 +144,14 @@ ServerEvents.recipes(event => {
     });
 
 
-
+    event.shaped("kubejs:blank_blueprint", [
+        "   ",
+        "DDD",
+        "PPP"
+    ], {
+        D: "minecraft:blue_dye",
+        P: "minecraft:paper"
+    });
 
 
 
