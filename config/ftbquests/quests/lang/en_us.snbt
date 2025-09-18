@@ -9,6 +9,7 @@
 	chapter.2E7EECD4E8CF01EA.title: "Spectrum"
 	chapter.535EA14E4BC77614.title: "Applied Energistics"
 	chapter.561B8642F13079C1.title: "Bronze Age"
+	chapter.6DFA55A3EC367C34.title: "Hexerei"
 	chapter.7CF76022186FB1FC.title: "Occultism"
 	chapter_group.414DFD996A564669.title: "Early"
 	chapter_group.4602108FDD7051BD.title: "Primitive"
@@ -634,6 +635,7 @@
 		"{@pagebreak}"
 		"До 4х"
 	]
+	quest.2E52CA7586B64968.quest_desc: ["minecraft:jungle"]
 	quest.2E5638B2207FCCBF.quest_desc: [
 		"&lChalice (Filled)&r:"
 		"• +2x Power Capacity"
@@ -1151,6 +1153,7 @@
 		"{@pagebreak}"
 		"Выполняет простые арифметические операции над входными сигналами. Используйте ПКМ для изменения операции."
 	]
+	quest.4F3E70AAD31A62A8.quest_desc: ["minecraft:swamp"]
 	quest.50A70151E50EC5DC.quest_desc: ["Drops from bogged."]
 	quest.51355FDCB71F9048.quest_desc: [
 		"&#C6BCE9Quitoxic Reeds&r can be found in &#CAE4C8swamps&r!"
@@ -1210,6 +1213,7 @@
 	]
 	quest.591843445BE8DF11.quest_subtitle: "Weird, haven't noticed it before..."
 	quest.5984DB66549B9040.quest_desc: ["Poison."]
+	quest.59871CEFCCF15140.quest_desc: ["minecraft:birch_forest"]
 	quest.5A4BB58AB11D4B81.quest_desc: [
 		"The witch's oven is a modified furnace used to collect byproducts and fumes made from burning materials."
 		""
