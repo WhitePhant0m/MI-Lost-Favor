@@ -1,16 +1,16 @@
-filename = 'fancytoasts-neoforge-1.21+1-1.4.0.jar'
-name = 'Fancy Toasts | Better Advancements'
+filename = 'fancytoasts-neoforge-1.21+1-1.4.1.jar'
+name = 'FancyToasts'
 side = 'client'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '3d0b9964d5f01fa620bb937ba439fc1695f9e69a'
+hash = '43bafcae7dcb05d9902960f80cee5b0c4f58e0f1'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6930825
+file-id = 6999526
 project-id = 1326436

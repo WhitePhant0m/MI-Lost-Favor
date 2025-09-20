@@ -1,16 +1,16 @@
-filename = "XeKr's Decoration-1.21.1-NeoForge-1.1.5.jar"
-name = "XK's Decoration"
+filename = "XeKr's Decoration-1.21.1-NeoForge-1.1.6.jar"
+name = "XeKr's Decoration"
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'c4c1f94043c8eea73b52de39a4c6d5c2c2447b2e'
+hash = '6ca05ecec266afd515aee780024d9754f6e1d904'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6710779
+file-id = 6969897
 project-id = 497637

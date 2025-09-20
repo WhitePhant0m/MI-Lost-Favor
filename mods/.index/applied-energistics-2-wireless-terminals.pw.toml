@@ -1,4 +1,4 @@
-filename = 'ae2wtlib-19.2.5.jar'
+filename = 'ae2wtlib-19.2.6.jar'
 name = 'AE2WTLib'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'd04630f34452f813e481e65799204bdf0082a36d'
+hash = '282826608a79d4b1c29972919e7643f63e66e0c1'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6838039
+file-id = 6939030
 project-id = 459929

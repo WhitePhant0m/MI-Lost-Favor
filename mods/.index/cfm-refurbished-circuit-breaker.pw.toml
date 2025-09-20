@@ -1,16 +1,16 @@
-filename = 'cfm_circuit_breaker-1.0.0.jar'
-name = 'CFM Refurbished: Circuit Breaker'
+filename = 'cfm_wap-1.21.1-neoforge-1.2.0.jar'
+name = 'CFM Refurnished: Circuit Breaker'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
+x-prismlauncher-release-type = 'beta'
 
 [download]
-hash = '918bb4f35ac272445125a97e5d914cd495708be8'
+hash = '0878701f0fa59d8701d2420ca596a3b8bedc148a'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6064365
+file-id = 6935546
 project-id = 1170251

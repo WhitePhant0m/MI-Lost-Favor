@@ -1,16 +1,16 @@
-filename = 'gag-5.1.0.jar'
+filename = 'gag-5.1.1.jar'
 name = 'Gadgets Against Grind'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'c6aa6423fd122802a3193c49259277e109cca5f8'
+hash = '3bea33a6f447b414a2188bd74d96f521cc28b606'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6806266
+file-id = 6945014
 project-id = 694962

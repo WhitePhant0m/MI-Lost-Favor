@@ -1,4 +1,4 @@
-filename = 'extended-industrialization-1.15.2-1.21.1.jar'
+filename = 'extended-industrialization-1.15.8-1.21.1.jar'
 name = 'Extended Industrialization'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '1d01104aea387fd9dcda95045e5cbadf93b2d49d'
+hash = 'd735a0563d67f20beeac25a2133de1595204471e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6916539
+file-id = 7004455
 project-id = 1068418

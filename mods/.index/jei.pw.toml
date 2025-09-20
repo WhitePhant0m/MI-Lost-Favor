@@ -1,4 +1,4 @@
-filename = 'jei-1.21.1-neoforge-19.22.1.316.jar'
+filename = 'jei-1.21.1-neoforge-19.24.0.317.jar'
 name = 'Just Enough Items'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'beta'
 
 [download]
-hash = 'ad7cd1f890ef4924c62c39534d186396cde66868'
+hash = 'b6973a6f0879d82aea25387e3aa32958da011ae7'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6829086
+file-id = 7014282
 project-id = 238222

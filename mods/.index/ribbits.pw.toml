@@ -1,4 +1,4 @@
-filename = 'Ribbits-1.21.1-NeoForge-4.1.2.jar'
+filename = 'Ribbits-1.21.1-NeoForge-4.1.4.jar'
 name = 'Ribbits'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '3b19f9d342cbc7064132eb0bad4b2c38cfb2a34e'
+hash = '1ad756c32ed77a150e9c699884f59b1020dab721'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6492964
+file-id = 6988284
 project-id = 622967
