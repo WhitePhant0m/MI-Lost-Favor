@@ -1,0 +1,16 @@
+filename = 'fragmentum-neoforge-1.21.1-0.0.13.jar'
+name = 'Fragmentum (NeoForge)'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '28c7f5a14a0b25f395e275932235e97e9e27ffd9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5852645
+project-id = 1123977
