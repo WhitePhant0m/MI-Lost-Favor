@@ -1028,8 +1028,8 @@
 				item: { count: 1, id: "ae2:energy_card" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: 2.0d
+			x: 20.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -2286,8 +2286,8 @@
 				item: { count: 1, id: "megacells:compression_card" }
 				type: "item"
 			}]
-			x: 20.0d
-			y: 0.5d
+			x: 18.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["74966D61A3B62020"]

@@ -13,6 +13,10 @@ ServerEvents.recipes(event => {
             'ytech:bronze_block',
             'ytech:raw_galena_block',
             'ytech:raw_cassiterite_block',
+
+            "eccentrictome:tome",
+            "ytech:bone_needle",
+            "ytech:crushed_iron"
         ]
     })
 
@@ -79,5 +83,77 @@ ServerEvents.recipes(event => {
     event.replaceOutput({ output: 'ytech:tin_bolt' }, 'ytech:tin_bolt', 'modern_industrialization:tin_bolt')
     event.replaceOutput({ output: 'ytech:bronze_bolt' }, 'ytech:bronze_bolt', 'modern_industrialization:bronze_bolt')
 
+
+    event.custom({
+        "type": "ytech:remaining_shaped_crafting",
+        "category": "equipment",
+        "key": {
+            "#": {
+            "tag": "ytech:bone_needles"
+            },
+            "P": {
+            "item": "minecraft:paper"
+            },
+            "S": {
+            "tag": "ytech:leather_strips"
+            },
+            "B": {
+            "item": "minecraft:writable_book"
+            }
+        },
+        "pattern": [
+            "SP ",
+            "SB#",
+            "SP "
+        ],
+        "result": {
+            "count": 1,
+            "id": "map_atlases:atlas"
+        }
+    })
+
+    event.custom({
+        "type": "ytech:remaining_shaped_crafting",
+        "category": "equipment",
+        "key": {
+            "#": {
+            "tag": "ytech:bone_needles"
+            },
+            "S": {
+            "tag": "ytech:leather_strips"
+            },
+            "B": {
+            "item": "minecraft:writable_book"
+            }
+        },
+        "pattern": [
+            "SB ",
+            "SB#",
+            "SB "
+        ],
+        "result": {
+            "count": 1,
+            "id": "eccentrictome:tome"
+        }
+    })
+
+    event.custom({
+        "type": "ytech:remaining_shapeless_crafting",
+        "category": "misc",
+        "ingredients": [
+            {
+            "tag": "c:bricks"
+            },
+            {
+            "tag": "c:mortar_and_pestles"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "id": "modern_industrialization:brick_dust"
+        }
+    })
+
+    event.remove({type: "map_atlases:crafting_atlas"})
 
 })

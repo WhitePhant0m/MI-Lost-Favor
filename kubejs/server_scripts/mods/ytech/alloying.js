@@ -21,5 +21,6 @@ ServerEvents.recipes(event => {
     }
 
     alloying_recipe([{tag: "c:sands"},1],[{tag: "c:dusts/bronze"},1],[{id:"kubejs:bronze_glass"},2], 1000)
+    alloying_recipe([{tag: "c:cobblestones"},1],[{item: "ytech:pebble"},1],[{id:"minecraft:smooth_stone"},1], 800)
 
 })

@@ -88,7 +88,8 @@ ServerEvents.recipes(event => {
         })
     }
 
-    function workspace_recipe(grid, materials, output, materialset, tool){
+    function workspace_recipe(grid, materials, output, materialset, tool, nocompat){
+        nocompat = nocompat || false
         materialset = materialset || {}
         event.recipes.ytech.workspace_crafting(
             output,  // crafting result
@@ -99,45 +100,45 @@ ServerEvents.recipes(event => {
             Object.assign({}, materials, materialset) // ingredient mapping e.g.: {X: 'minecraft:andesite'}
         );
         craft_removal_list.push(output)
+        if (!nocompat) {
+            let mats = []
+            var amounts = grid[0].concat(grid[1],grid[2]).join("")
+            switch(materialset){
+                case bronzeMaterialset:
+                    mats.push("modern_industrialization:bronze_machine_casing","4x moderndynamics:fluid_pipe","kubejs:bronze_glass","kubejs:small_copper_fluid_container")
+                    break;
+                case bronzeBits:
+                    mats.push("modern_industrialization:bronze_machine_casing")
+                    break;
+                case steelUpgrade:
+                    mats.push("modern_industrialization:steel_upgrade")
+                    Object.entries(materials).forEach(m =>{
+                        let regex = new RegExp(m[0],'g')
+                        mats.push((amounts.match(regex) || []).length + "x " + m[1])
+                    })
+                    packer_recipe(4,400,mats,[output])
+                    return;
+                case steelBits:
+                    mats.push("modern_industrialization:steel_machine_casing")
+                    break;
+                case steelMaterialset:
+                    mats.push("modern_industrialization:steel_machine_casing","immersiveengineering:fluid_pipe","kubejs:steel_infused_glass","kubejs:small_steel_fluid_container")
+                    break;
+                case basicMaterialset:
+                    mats.push("modern_industrialization:basic_machine_hull")
+                    break;
+                case basicBits:
+                    mats.push("modern_industrialization:frostproof_machine_casing")
+                    break;
 
-        let mats = []
-        var amounts = grid[0].concat(grid[1],grid[2]).join("")
-        switch(materialset){
-            case bronzeMaterialset:
-                mats.push("modern_industrialization:bronze_machine_casing","4x moderndynamics:fluid_pipe","kubejs:bronze_glass","kubejs:small_copper_fluid_container")
-                break;
-            case bronzeBits:
-                mats.push("modern_industrialization:bronze_machine_casing")
-                break;
-            case steelUpgrade:
-                mats.push("modern_industrialization:steel_upgrade")
-                Object.entries(materials).forEach(m =>{
-                    let regex = new RegExp(m[0],'g')
-                    mats.push((amounts.match(regex) || []).length + "x " + m[1])
-                })
-                packer_recipe(4,400,mats,[output])
-                return;
-            case steelBits:
-                mats.push("modern_industrialization:steel_machine_casing")
-                break;
-            case steelMaterialset:
-                mats.push("modern_industrialization:steel_machine_casing","immersiveengineering:fluid_pipe","kubejs:steel_infused_glass","kubejs:small_steel_fluid_container")
-                break;
-            case basicMaterialset:
-                mats.push("modern_industrialization:basic_machine_hull")
-                break;
-            case basicBits:
-                mats.push("modern_industrialization:frostproof_machine_casing")
-                break;
-
+            }
+            Object.entries(materials).forEach(m =>{
+                let regex = new RegExp(m[0],'g')
+                mats.push((amounts.match(regex) || []).length + "x " + m[1])
+            })
+            //event.remove({ type: 'modern_industrialization:assembler', output: output})
+            assembler_recipe(8,400,mats,[output])
         }
-        Object.entries(materials).forEach(m =>{
-            let regex = new RegExp(m[0],'g')
-            mats.push((amounts.match(regex) || []).length + "x " + m[1])
-        })
-        //event.remove({ type: 'modern_industrialization:assembler', output: output})
-        assembler_recipe(8,400,mats,[output])
-        
     }
 
     //#region MI bronze machines
@@ -655,7 +656,8 @@ ServerEvents.recipes(event => {
     )
     //#endregion
     
-    //IE stuff
+    //#region misc
+
     workspace_recipe([
             ['WWW','WTW','WWW'],
             ['   ',' B ','   '].layerCorners("S"),
@@ -665,7 +667,6 @@ ServerEvents.recipes(event => {
         'immersiveengineering:craftingtable'
     )
 
-    //misc
     workspace_recipe([
             [' B ',' B ',' B '],
             ['   ',' I ','   '],
@@ -691,6 +692,44 @@ ServerEvents.recipes(event => {
         {I:'immersiveengineering:sheetmetal_steel',W:"immersiveengineering:treated_wood_horizontal",L:"immersiveengineering:logic_unit",c:"modern_industrialization:analog_circuit"},
         'modern_industrialization:enigma_machine', {} , "immersiveengineering:hammer"
     )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerCentre("E"),
+            ['   ','   ','   '].layerCorners("C").layerPlus("G"),
+            ['   ','   ','   '].layerAll("C")
+        ],
+        {E:'transmog:void_fragment',C:"pastel:citrine_block",G:"minecraft:glass"},
+        'transmog:transmogrification_table', {} , "kubejs:amber_visage", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '],
+            ['   ','   ','   '].layerCentre("S"),
+            ['   ','   ','   '].layerAll("C").layerPlus("s")
+        ],
+        {C:'minecraft:cobblestone',S:"minecraft:stick", s:"minecraft:cobblestone_slab"},
+        'toxony:mortar_pestle', {} , "ytech:sharp_flint", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '],
+            ['   ','   ','   '].layerSides("P").layerCorners("S"),
+            ['   ','   ','   '].layerAll("P").layerCentre("s")
+        ],
+        {P:'#minecraft:planks',S:"minecraft:stick",s:"#minecraft:wooden_slabs"},
+        'ytech:wooden_box', {} , "ytech:sharp_flint", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerCentre("L").layerSides("T"),
+            ['   ','   ','   '].layerCentre("L").layerSides("T"),
+            ['   ','   ','   '].layerAll("P")
+        ],
+        {P:'minecraft:cobblestone',L:"#minecraft:logs", T:"ytech:grass_twine"},
+        'ytech:tree_stump', {} , "ytech:sharp_flint", true
+    )
+
+    //#endregion
 
 
     event.forEachRecipe({output:craft_removal_list}, r => {

@@ -690,7 +690,6 @@
 	]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
 	quest.3375DE99A86D3CB4.quest_desc: ["Item pipes will normally prefer the closest inventory. An inhibitor increases the length of a connection by 1000 for pathfinding purposes, which makes item pipes avoid that connection if possible."]
-	quest.338029494A6F98B3.quest_desc: ["Only deer with antlers will drop them"]
 	quest.33D177C9C103372D.quest_desc: ["Allows you to throw oils. Can become handy in the future."]
 	quest.3439A90E9544512F.quest_desc: [
 		"Deep down below, you found a secure structure. There &lmust be a way&r to get into it, if not now, maybe later. You better remember this place."
@@ -1636,7 +1635,6 @@
 		"Это сложное устройство похоже на своего двоюродного брата - арбалет. Однако благодаря обширным исследованиям и инженерным разработкам мне удалось свести его к одноручному арбалету, который может сделать два дополнительных выстрела, прежде чем его нужно будет заряжать."
 	]
 	quest.7787ABAA319FB651.quest_desc: ["Breaks and pickups blocks, can be enchanted with any pickaxe enchantment"]
-	quest.77E388F4525884E8.quest_desc: [""]
 	quest.787735496233A905.quest_desc: ["When drunk it will grant 35 Aureal to the player. It can also be used to input Aureal into the Hephaestus Forge."]
 	quest.7930264A840C4BDB.quest_desc: [
 		"One of the most important blocks for further progression. Learn more about how to use it by reading the Spectrum book!"
@@ -1687,6 +1685,7 @@
 	task.0E23718424EB6584.title: "Any #milf:polished_base_blocks"
 	task.0EB4593433321D21.title: "Any #c:saws"
 	task.0F25C68A335172FD.title: "Ore generattion"
+	task.0F74A9109F9CECEA.title: "Any #minecraft:wooden_slabs"
 	task.1581CD219F02ED5C.title: "Fatma's Incentivized Attraction"
 	task.15D15E5200247C44.title: "Gather some gem dust"
 	task.15E89B2E5578B3EF.title: "Any #minecraft:candles"
@@ -1696,6 +1695,7 @@
 	task.1733FF25C74D58C6.title: "Any #sophisticatedstorage:all_storage"
 	task.175E331625D7D0E8.title: "Any #milf:crest_base_blocks"
 	task.17EBE6D06902A269.title: "Any #milf:basic_gemstone_shards"
+	task.18A107EB956BD154.title: "Any #ytech:aqueducts"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
 	task.1DB3762470DC4D9D.title: "Any #milf:chiseled_base_blocks"
 	task.1FC975DB259AA8A8.title: "Any #milf:gemstone_lamp"
@@ -1711,6 +1711,7 @@
 	task.2E75F41D80DEB4FE.title: "Any #minecraft:logs"
 	task.3010BA0C77BD53FA.title: "Strigeor's Higher Binding"
 	task.30EF11C70C08380B.title: "Enhancer Relics"
+	task.3198AD11970AE4C5.title: "Any #minecraft:planks"
 	task.33FFDC1566305E62.title: "item/fluid transfer"
 	task.3460D0595D90DE40.title: "Any #milf:onyx_chiseled_block"
 	task.34A589CCA978ACEF.title: "Any #pastel:shimmerstone_lights"
@@ -1724,6 +1725,7 @@
 	task.42DC3FD183E10DD5.title: "*Click*"
 	task.43199D58E9963367.title: "Any #c:ingots/silicon"
 	task.4336D6754C458F76.title: "Any #milf:chiseled_gemstone_block"
+	task.43701FA5652D00DD.title: "Any #minecraft:planks"
 	task.453F9EE1BA955692.title: "Any #milf:azure_dike_trinkets"
 	task.469F4D4AC95FB48B.title: "Any #milf:polished_base_blocks"
 	task.46C57609C45C54C6.title: "Any #milf:fusion_shrine"
