@@ -1,0 +1,40 @@
+{
+    "ModSettings": {
+        "highlight_foused_items": {
+            "value": false
+        },
+        "enable_profiles": {
+            "value": false
+        },
+        "enable_auto_refill": {
+            "value": false
+        },
+        "first_run": false
+    },
+    "GuiSettings": {
+        "enable_profiles_ui": {
+            "value": false
+        },
+        "enable_profiles_announcement": false,
+        "show_continuous_crafting_checkbox": {
+            "value": false
+        },
+        "continuous_crafting_checkbox_value": "UNCHECKED",
+        "continuous_crafting_saved_value": false
+    },
+    "LockedSlotsSettings": {
+        "lock_slots_switch_config_modifier": {
+            "main": {
+                "keys": "LEFT_ALT,LEFT_SHIFT"
+            }
+        }
+    },
+    "AutoRefillSettings": {
+        "refill_before_tool_break": {
+            "value": false
+        },
+        "auto_refill_enable_indicator_icons": {
+            "value": false
+        }
+    }
+}
