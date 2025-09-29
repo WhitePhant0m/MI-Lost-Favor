@@ -1,0 +1,27 @@
+[milestones]
+	#Number of hearts you start out with.
+	# Default: 10
+	# Range: 0 ~ 1000
+	baseHearts = 10
+	#Number of hearts you gain for reaching a new milestone.
+	# Default: 2
+	# Range: 0 ~ 1000
+	heartsPerMilestone = 1
+	#A list of numbers of unique foods you need to eat to unlock each milestone, in ascending order. Naturally, adding more milestones lets you earn more hearts.
+	milestones = [2, 4, 6, 8, 10, 12, 14, 16]
+
+[filtering]
+	#Foods in this list won't affect the player's health nor show up in the food book.
+	blacklist = []
+	#When this list contains anything, the blacklist is ignored and instead only foods from here count.
+	whitelist = ['minecraft:enchanted_golden_apple', 'minecraft:golden_carrot', 'refurbished_furniture:meatlovers_pizza_slice', 'refurbished_furniture:vegetable_pizza_slice', 'refurbished_furniture:glow_berry_jam_toast', 'refurbished_furniture:sweet_berry_jam_toast', 'refurbished_furniture:cheese_toastie', 'refurbished_furniture:cheese_sandwich', 'occultism:sweet_honey_heart', 'occultism:beaver_nugget', 'pastel:rabbit_cream_pie', 'pastel:peach_cream', 'pastel:peaches_flambe', 'pastel:mellow_shallot_soup', 'pastel:meatloaf_sandwich', 'pastel:junket', 'pastel:hare_roast', 'pastel:golden_bristle_tea', 'pastel:cooked_lizard_meat', 'pastel:fishcake', 'pastel:faded_koi', 'pastel:cream_pastry', 'pastel:crawfish_cocktail', 'pastel:chauve_souris_au_vin', 'pastel:berliner', 'pastel:banyash', 'pastel:bagnun', 'pastel:dragonbone_broth', 'pastel:triple_meat_pot_stew', 'pastel:myceylon_pumpkin_pie', 'pastel:myceylon_apple_pie', 'pastel:demon_trifle', 'pastel:monster_trifle', 'pastel:salted_jaramel_trifle', 'pastel:jaramel_trifle', 'pastel:puff_tart', 'pastel:whispy_tart', 'pastel:weeping_tart', 'pastel:ashen_tart', 'pastel:salted_jaramel_tart', 'pastel:jaramel_tart', 'pastel:honey_pastry', 'pastel:enchanted_star_candy', 'pastel:enchanted_golden_carrot', 'pastel:bodacious_berry_bar', 'pastel:triple_meat_pot_pie', 'minecraft:rabbit_stew', 'minecraft:beetroot_soup', 'minecraft:mushroom_stew', 'minecraft:pumpkin_pie']
+	#The minimum hunger value foods need to provide in order to count for milestones, in half drumsticks.
+	# Default: 1
+	# Range: 0 ~ 1000
+	minimumFoodValue = 1
+
+[miscellaneous]
+	#Whether or not to reset the food list on death, effectively losing all bonus hearts.
+	resetOnDeath = false
+	#If true, eating foods outside of survival mode (e.g. creative/adventure) is not tracked and thus does not contribute towards progression.
+	limitProgressionToSurvival = true
