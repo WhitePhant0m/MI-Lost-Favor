@@ -632,8 +632,8 @@
 			dependencies: ["51BC2EDB324F7ECD"]
 			id: "51E3EA7E70ECE842"
 			tasks: [{
-				id: "2633449335A3BF55"
-				item: { count: 1, id: "modern_industrialization:copper_plate" }
+				id: "0B33E65E35652780"
+				item: { count: 1, id: "modern_industrialization:bronze_plate" }
 				type: "item"
 			}]
 			x: 18.5d
@@ -645,23 +645,23 @@
 			shape: "diamond"
 			tasks: [
 				{
-					id: "2A239D822403555C"
-					item: { count: 1, id: "ytech:copper_helmet" }
+					id: "0761B61AD4DE3832"
+					item: { count: 1, id: "ytech:bronze_boots" }
 					type: "item"
 				}
 				{
-					id: "00EFAE8A0D6501B9"
-					item: { count: 1, id: "ytech:copper_chestplate" }
+					id: "52A3A09E03AD73C2"
+					item: { count: 1, id: "ytech:bronze_leggings" }
 					type: "item"
 				}
 				{
-					id: "6CE18C8A232FAB0E"
-					item: { count: 1, id: "ytech:copper_leggings" }
+					id: "22A7F515285BA610"
+					item: { count: 1, id: "ytech:bronze_chestplate" }
 					type: "item"
 				}
 				{
-					id: "708E62A2585220CE"
-					item: { count: 1, id: "ytech:copper_boots" }
+					id: "39453D31A24DB52B"
+					item: { count: 1, id: "ytech:bronze_helmet" }
 					type: "item"
 				}
 			]
@@ -688,8 +688,8 @@
 			id: "3E3ED1063839E3F3"
 			shape: "diamond"
 			tasks: [{
-				id: "757DA6D4BED7F026"
-				item: { count: 1, id: "ytech:copper_shovel" }
+				id: "15CFA1FEF0F230FF"
+				item: { count: 1, id: "ytech:bronze_shovel" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -724,8 +724,8 @@
 			id: "29E7DCA048748C62"
 			shape: "diamond"
 			tasks: [{
-				id: "5F3DE75F85E11BCC"
-				item: { count: 1, id: "ytech:copper_mortar_and_pestle" }
+				id: "4BBC77DC47B56BC9"
+				item: { count: 1, id: "ytech:bronze_mortar_and_pestle" }
 				type: "item"
 			}]
 			x: 18.0d
@@ -736,8 +736,8 @@
 			id: "093E9ACE7175D801"
 			shape: "diamond"
 			tasks: [{
-				id: "5477472197BF0142"
-				item: { count: 1, id: "ytech:copper_shears" }
+				id: "7BB56B943092CBFC"
+				item: { count: 1, id: "ytech:bronze_shears" }
 				type: "item"
 			}]
 			x: 19.0d
@@ -748,8 +748,8 @@
 			id: "70B2FA270DF15C6A"
 			shape: "diamond"
 			tasks: [{
-				id: "1C49ADBBA09542FF"
-				item: { count: 1, id: "ytech:copper_spear" }
+				id: "41B4580B90966E61"
+				item: { count: 1, id: "ytech:bronze_spear" }
 				type: "item"
 			}]
 			x: 19.0d
