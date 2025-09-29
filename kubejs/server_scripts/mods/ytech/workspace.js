@@ -685,6 +685,14 @@ ServerEvents.recipes(event => {
         'modern_industrialization:forge_hammer', {} , "#c:hammers"
     )
     workspace_recipe([
+            ['   ',' B ','   '].layerCorners("I").layerSides("I"),
+            ['   ',' I ','   '],
+            [' B ','BBB',' B ']
+        ],
+        {B:'modern_industrialization:bronze_block', I:'#c:ingots/bronze'},
+        'ytech:bronze_anvil', {} , "#c:hammers"
+    )
+    workspace_recipe([
             ['   ','   ','   '].layerAll("I").layerCentre("W"),
             ['   ','   ','   '].layerAll("I").layerSides("W").layerFront("L").layerCentre("c"),
             ['   ','   ','   '].layerAll("I").layerCentre("W")
