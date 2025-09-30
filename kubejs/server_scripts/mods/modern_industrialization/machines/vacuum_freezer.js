@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
     vacuum_freezer_recipe(64,300,
         [["immersiveengineering:mold_plate", 0]],
         ["modern_industrialization:plastic_plate"],
-        [["modern_industrialization:polyethylene", 500]])
+        [["modern_industrialization:polyethylene", 500]]
+    )
 
 })

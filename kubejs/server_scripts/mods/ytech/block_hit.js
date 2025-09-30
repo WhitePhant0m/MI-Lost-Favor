@@ -39,4 +39,7 @@ ServerEvents.recipes(event => {
     block_hit_recipe({item:"modern_industrialization:frostproof_machine_casing"}, [{id:"kubejs:basic_machine_bit"}, 12], {tag : "minecraft:anvil"} )
     block_hit_recipe({item:"modern_industrialization:steel_machine_casing"}, [{id:"kubejs:steel_machine_bit"}, 12], {tag : "minecraft:anvil"} )
 
+    block_hit_recipe({tag:"c:cobblestones"}, [{id:"ytech:pebble"}, 4], {tag : "c:stones"} )
+
+
 })

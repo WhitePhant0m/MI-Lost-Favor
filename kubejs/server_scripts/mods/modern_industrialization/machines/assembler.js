@@ -83,6 +83,14 @@ ServerEvents.recipes(event => {
         ["immersiveengineering:component_electronic"],
     );
 
+    assembler_recipe(
+        8, 200,
+        [
+            "8x #c:cobblestones",
+        ],
+        ["minecraft:furnace"],
+    );
+
     event.forEachRecipe({output:craft_removal_list}, r => {
         event.remove({output: r.getOriginalRecipeResult()})
     })

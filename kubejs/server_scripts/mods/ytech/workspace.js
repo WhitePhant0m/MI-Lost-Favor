@@ -677,11 +677,11 @@ ServerEvents.recipes(event => {
     )
 
     workspace_recipe([
-            ['   ',' B ','   '].layerCorners("I").layerSides("I"),
-            ['   ',' I ','   '],
+            ['   ','   ','   '].layerAll("I"),
+            ['   ',' P ','   '],
             ['   ',' B ','   '].layerCorners("I").layerSides("I")
         ],
-        {B:'minecraft:iron_block', I:'#c:ingots/iron'},
+        {B:'minecraft:iron_block', I:'#c:ingots/iron',P:"minecraft:heavy_weighted_pressure_plate"},
         'modern_industrialization:forge_hammer', {} , "#c:hammers"
     )
     workspace_recipe([
@@ -735,6 +735,51 @@ ServerEvents.recipes(event => {
         ],
         {P:'minecraft:cobblestone',L:"#minecraft:logs", T:"ytech:grass_twine"},
         'ytech:tree_stump', {} , "ytech:sharp_flint", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerCorners("T").layerSides("P"),
+            ['   ','   ','   '].layerCorners("T").layerSides("P").layerFront(" "),
+            ['   ','   ','   '].layerAll("C").layerCentre("F")
+        ],
+        {P:'ytech:pebble', T:"ytech:grass_twine",F:"ytech:fire_pit", C:"#c:cobblestones"},
+        'minecraft:furnace', {} , "#c:hammers", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("P").layerCentre(" "),
+            ['   ','   ','   '].layerAll("P").layerCentre(" ").layerFront(" "),
+            ['   ','   ','   '].layerAll("C").layerCentre("F").layerFront("S")
+        ],
+        {P:'minecraft:brick',F:"ytech:fire_pit", C:"minecraft:bricks", S:"minecraft:brick_slab"},
+        'ytech:primitive_smelter', {} , "#c:hammers", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerSides("P"),
+            ['   ','   ','   '].layerSides("P"),
+            ['   ','   ','   '].layerSides("P")
+        ],
+        {P:'minecraft:brick'},
+        'ytech:brick_chimney', {} , "#c:hammers", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("P").layerSides("C").layerCentre(" "),
+            ['   ','   ','   '].layerAll("P").layerSides("C").layerCentre(" ").layerFront("S"),
+            ['   ','   ','   '].layerAll("C").layerCentre("F").layerFront("S")
+        ],
+        {P:'minecraft:brick',F:"ytech:fire_pit", C:"minecraft:bricks", S:"minecraft:brick_slab"},
+        'ytech:primitive_alloy_smelter', {} , "#c:hammers", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("F").layerCentre(" "),
+            ['   ','   ','   '].layerAll("P").layerCentre(" "),
+            ['   ','   ','   '].layerAll("F").layerCentre(" ")
+        ],
+        {P:'minecraft:brick', F:"modern_industrialization:fire_clay_brick"},
+        'ytech:reinforced_brick_chimney', {} , "#c:hammers", true
     )
 
     //#endregion
