@@ -1041,7 +1041,7 @@
 			shape: "square"
 			tasks: [{
 				id: "1BBBCB516D6667DA"
-				item: { count: 2, id: "pastel:mermaids_gem" }
+				item: { count: 1, id: "pastel:mermaids_gem" }
 				type: "item"
 			}]
 			x: 33.5d
@@ -1249,7 +1249,7 @@
 				{
 					count: 2L
 					id: "5B51F6F9E42BBC6C"
-					item: { count: 2, id: "pastel:topaz_chime" }
+					item: { count: 1, id: "pastel:topaz_chime" }
 					optional_task: true
 					type: "item"
 				}
@@ -1311,7 +1311,7 @@
 			tasks: [{
 				count: 4L
 				id: "7493F97FBC1549F0"
-				item: { count: 4, id: "pastel:block_flooder" }
+				item: { count: 1, id: "pastel:block_flooder" }
 				type: "item"
 			}]
 			x: 35.0d
@@ -1568,7 +1568,7 @@
 			tasks: [{
 				count: 4L
 				id: "647F9B29CDD93214"
-				item: { count: 4, id: "pastel:ender_splice" }
+				item: { count: 1, id: "pastel:ender_splice" }
 				type: "item"
 			}]
 			x: 35.5d
@@ -1752,14 +1752,14 @@
 				{
 					count: 6L
 					id: "26D2BCC359A1B71D"
-					item: { count: 6, id: "minecraft:lava_bucket" }
+					item: { count: 1, id: "minecraft:lava_bucket" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "3398A391FA1FF698"
-					item: { count: 2, id: "pastel:chiseled_polished_basalt" }
+					item: { count: 1, id: "pastel:chiseled_polished_basalt" }
 					optional_task: true
 					type: "item"
 				}
@@ -1990,7 +1990,7 @@
 				}
 				{
 					id: "62D043FEF1BBE553"
-					item: { count: 11, id: "pastel:resonance_shard" }
+					item: { count: 1, id: "pastel:resonance_shard" }
 					type: "item"
 				}
 			]
@@ -2058,7 +2058,7 @@
 			tasks: [{
 				count: 2L
 				id: "00B05524C55EE852"
-				item: { count: 2, id: "pastel:myceylon" }
+				item: { count: 1, id: "pastel:myceylon" }
 				type: "item"
 			}]
 			x: 55.0d
@@ -2128,7 +2128,7 @@
 			tasks: [{
 				count: 6L
 				id: "539A56C3C03E16F9"
-				item: { components: { "pastel:is_preview_item": { } }, count: 6, id: "pastel:night_salts" }
+				item: { components: { "pastel:is_preview_item": { } }, count: 1, id: "pastel:night_salts" }
 				type: "item"
 			}]
 			x: 59.5d
@@ -2230,7 +2230,7 @@
 			tasks: [{
 				count: 2L
 				id: "5FD9EB28561083C9"
-				item: { count: 2, id: "pastel:dragonbone_chunk" }
+				item: { count: 1, id: "pastel:dragonbone_chunk" }
 				type: "item"
 			}]
 			x: 65.0d
@@ -2279,7 +2279,7 @@
 			tasks: [{
 				count: 2L
 				id: "3B309EA647911146"
-				item: { count: 2, id: "pastel:paltaeria_fragments" }
+				item: { count: 1, id: "pastel:paltaeria_fragments" }
 				type: "item"
 			}]
 			x: 63.5d
@@ -2319,7 +2319,7 @@
 			tasks: [{
 				count: 3L
 				id: "3A0FF7433239C144"
-				item: { count: 3, id: "pastel:pure_malachite" }
+				item: { count: 1, id: "pastel:pure_malachite" }
 				type: "item"
 			}]
 			x: 65.0d
@@ -2334,7 +2334,7 @@
 			tasks: [{
 				count: 4L
 				id: "0EB445986B854662"
-				item: { count: 4, id: "pastel:pure_azurite" }
+				item: { count: 1, id: "pastel:pure_azurite" }
 				type: "item"
 			}]
 			x: 58.0d
@@ -2414,7 +2414,7 @@
 			shape: "square"
 			tasks: [{
 				id: "0739D700B608D827"
-				item: { count: 3, id: "pastel:resplendent_feather" }
+				item: { count: 1, id: "pastel:resplendent_feather" }
 				type: "item"
 			}]
 			x: 70.0d
@@ -2451,7 +2451,7 @@
 			tasks: [{
 				count: 4L
 				id: "6B045DD8E1D76DF7"
-				item: { count: 4, id: "pastel:pure_bloodstone" }
+				item: { count: 1, id: "pastel:pure_bloodstone" }
 				type: "item"
 			}]
 			x: 72.5d

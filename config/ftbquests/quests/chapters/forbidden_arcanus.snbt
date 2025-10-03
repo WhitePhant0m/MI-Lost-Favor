@@ -93,19 +93,19 @@
 				{
 					count: 48L
 					id: "622B7393D241F22D"
-					item: { count: 48, id: "forbidden_arcanus:polished_darkstone" }
+					item: { count: 1, id: "forbidden_arcanus:polished_darkstone" }
 					type: "item"
 				}
 				{
 					count: 9L
 					id: "0D4DA3A363879943"
-					item: { count: 9, id: "forbidden_arcanus:gilded_chiseled_polished_darkstone" }
+					item: { count: 1, id: "forbidden_arcanus:gilded_chiseled_polished_darkstone" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "505DD296745B8208"
-					item: { count: 4, id: "forbidden_arcanus:chiseled_arcane_polished_darkstone" }
+					item: { count: 1, id: "forbidden_arcanus:chiseled_arcane_polished_darkstone" }
 					type: "item"
 				}
 				{
@@ -654,13 +654,13 @@
 				{
 					count: 18L
 					id: "062D00DBCD3C731F"
-					item: { count: 18, id: "forbidden_arcanus:polished_darkstone_bricks" }
+					item: { count: 1, id: "forbidden_arcanus:polished_darkstone_bricks" }
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "3F8926EDF78CF267"
-					item: { count: 8, id: "forbidden_arcanus:polished_darkstone" }
+					item: { count: 1, id: "forbidden_arcanus:polished_darkstone" }
 					type: "item"
 				}
 				{
@@ -729,7 +729,7 @@
 			tasks: [{
 				count: 64L
 				id: "23EF1012E90338C3"
-				item: { count: 64, id: "forbidden_arcanus:corrupti_dust" }
+				item: { count: 1, id: "forbidden_arcanus:corrupti_dust" }
 				type: "item"
 			}]
 			x: 3.0d
@@ -753,7 +753,7 @@
 			id: "45D33F7CE141D969"
 			tasks: [{
 				id: "031BE8B71974B789"
-				item: { count: 4, id: "forbidden_arcanus:xpetrified_orb" }
+				item: { count: 1, id: "forbidden_arcanus:xpetrified_orb" }
 				type: "item"
 			}]
 			x: 2.5d

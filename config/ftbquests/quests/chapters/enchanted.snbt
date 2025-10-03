@@ -42,20 +42,8 @@
 					type: "item"
 				}
 				{
-					icon: {
-						id: "enchanted:witch_cauldron"
-					}
-					id: "598EFBC70FF0C1CA"
-					observe_type: 0
-					optional_task: true
-					timer: 0L
-					to_observe: "enchanted:witch_cauldron"
-					type: "observation"
-				}
-				{
 					id: "25FD99544D7F8731"
 					item: { count: 1, id: "enchanted:kettle" }
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -181,7 +169,7 @@
 			tasks: [{
 				count: 6L
 				id: "2072CAEDD8B3408E"
-				item: { count: 6, id: "enchanted:altar" }
+				item: { count: 1, id: "enchanted:altar" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -378,6 +366,7 @@
 		{
 			dependencies: ["75EE48FAB76C2F65"]
 			id: "7162B15B452A8B2E"
+			shape: "gear"
 			tasks: [{
 				id: "32DC852159813720"
 				item: { count: 1, id: "enchanted:attuned_stone" }
@@ -416,7 +405,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5A4BB58AB11D4B81"]
@@ -445,6 +434,7 @@
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "79AE7151ADF00D10"
+			shape: "diamond"
 			tasks: [{
 				id: "3C754AE9DE4359FC"
 				item: { count: 1, id: "enchanted:golden_chalk" }
@@ -456,199 +446,217 @@
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "5645E4DA993EDC3D"
+			shape: "diamond"
 			tasks: [{
 				id: "215384250716EE31"
 				item: { count: 1, id: "enchanted:ritual_chalk" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: -2.5d
+			x: 6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "49688ECB08702A0C"
+			shape: "diamond"
 			tasks: [{
 				id: "6A247E0C872418A3"
 				item: { count: 1, id: "enchanted:nether_chalk" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.5d
+			x: 6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "14BEA9C248D4F905"
+			shape: "diamond"
 			tasks: [{
 				id: "106104191E8AA15D"
 				item: { count: 1, id: "enchanted:otherwhere_chalk" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 7.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "3827371BD2D8A5BA"
+			shape: "gear"
 			tasks: [{
 				id: "1654AAB7BFA4BB6A"
 				item: { count: 1, id: "enchanted:mutandis" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.0d
+			x: 10.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "738CBBAADBF8F9AD"
+			shape: "gear"
 			tasks: [{
 				id: "0FCC850019D5A9AE"
 				item: { count: 1, id: "enchanted:mutandis_extremis" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: -1.0d
+			x: 10.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "7A7D8E8CF5FCC95F"
+			shape: "diamond"
 			tasks: [{
 				id: "7F6CB1A91D1974D7"
 				item: { count: 1, id: "enchanted:drop_of_luck" }
 				type: "item"
 			}]
 			x: 6.0d
-			y: 0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "49CF5D29C3F2F41F"
+			shape: "diamond"
 			tasks: [{
 				id: "2CBB3F07DB4275D7"
 				item: { count: 1, id: "enchanted:redstone_soup" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 0.5d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "41F553F6D1E972F3"
+			shape: "diamond"
 			tasks: [{
 				id: "495BD25D11647A56"
 				item: { count: 1, id: "enchanted:flying_ointment" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.5d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "1AD89AFB29A8F4CD"
+			shape: "diamond"
 			tasks: [{
 				id: "17C4B5C3CDA92AA0"
 				item: { count: 1, id: "enchanted:happenstance_oil" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.0d
+			x: 6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "2E1D968ED71189FC"
+			shape: "diamond"
 			tasks: [{
 				id: "667883D3912BCE93"
 				item: { count: 1, id: "enchanted:mystic_unguent" }
 				type: "item"
 			}]
 			x: 7.0d
-			y: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "5675F06579D212E5"
+			shape: "diamond"
 			tasks: [{
 				id: "6C2F5A01B36B208F"
 				item: { count: 1, id: "enchanted:spirit_of_otherwhere" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.0d
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "61E4533648649A0E"
+			shape: "diamond"
 			tasks: [{
 				id: "3AED6F05F977FC9F"
 				item: { count: 1, id: "enchanted:soul_of_the_world" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.0d
+			x: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "3A6E2FD141749F37"
+			shape: "diamond"
 			tasks: [{
 				id: "4DF9816627A10D50"
 				item: { count: 1, id: "enchanted:brew_of_love" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.0d
+			x: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "7D74A71B3564A73F"
+			shape: "diamond"
 			tasks: [{
 				id: "6227E8B8C344E81A"
 				item: { count: 1, id: "enchanted:brew_of_sprouting" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: 2.0d
+			x: 7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "6DA191273DA09E91"
+			shape: "diamond"
 			tasks: [{
 				id: "1FD01AA41A23A03A"
 				item: { count: 1, id: "enchanted:brew_of_the_depths" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 2.0d
+			x: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			id: "688EFD5CB725094A"
+			shape: "diamond"
 			tasks: [{
 				id: "69474E51BEE2C967"
 				item: { count: 1, id: "enchanted:brew_of_the_grotesque" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: 2.0d
+			x: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["41F553F6D1E972F3"]
 			id: "29CB9560ACB7437A"
+			shape: "diamond"
 			tasks: [{
 				id: "4546AD6813AE4FAD"
 				item: { count: 1, id: "enchanted:enchanted_broomstick" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 0.5d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
+			dependencies: ["7162B15B452A8B2E"]
 			id: "7CC9F88727D23AF6"
 			tasks: [{
 				id: "2905220DEDCE465F"
 				item: { count: 1, id: "enchanted:poppet" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 8.5d
+			x: -10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7CC9F88727D23AF6"]
@@ -658,8 +666,8 @@
 				item: { count: 1, id: "enchanted:poppet_shelf" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 8.5d
+			x: -11.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7CC9F88727D23AF6"]
@@ -669,8 +677,8 @@
 				item: { count: 1, id: "enchanted:spinning_wheel" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 10.0d
+			x: -10.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -682,8 +690,8 @@
 				id: "2FD9C7170EFF4479"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: 12.0d
+			x: -10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -693,8 +701,8 @@
 				item: { count: 1, id: "enchanted:infused_poppet" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 15.5d
+			x: -14.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -704,8 +712,8 @@
 				item: { count: 1, id: "enchanted:sturdy_poppet" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: 15.5d
+			x: -13.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -715,8 +723,8 @@
 				item: { count: 1, id: "enchanted:armour_poppet" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: 15.5d
+			x: -12.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -726,8 +734,8 @@
 				item: { count: 1, id: "enchanted:earth_poppet" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 15.5d
+			x: -11.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -737,8 +745,8 @@
 				item: { count: 1, id: "enchanted:fire_poppet" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 15.5d
+			x: -10.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -748,8 +756,8 @@
 				item: { count: 1, id: "enchanted:hunger_poppet" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 15.5d
+			x: -9.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -759,8 +767,8 @@
 				item: { count: 1, id: "enchanted:magic_poppet" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 15.5d
+			x: -8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -770,8 +778,8 @@
 				item: { count: 1, id: "enchanted:water_poppet" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 15.5d
+			x: -7.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -781,8 +789,8 @@
 				item: { count: 1, id: "enchanted:void_poppet" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 15.5d
+			x: -6.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -792,8 +800,141 @@
 				item: { count: 1, id: "enchanted:tool_poppet" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 15.5d
+			x: -5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["738CBBAADBF8F9AD"]
+			id: "28534F90FE9B1A19"
+			tasks: [{
+				id: "48D3B6F0B0B1AF6F"
+				item: { count: 1, id: "enchanted:blood_poppy" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3827371BD2D8A5BA"]
+			id: "631F38ADF34C57B6"
+			shape: "diamond"
+			tasks: [{
+				id: "6ED40B223D24308F"
+				item: { count: 1, id: "enchanted:rowan_sapling" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3827371BD2D8A5BA"]
+			id: "5504357597BD115A"
+			shape: "diamond"
+			tasks: [{
+				id: "63854894EF5206C6"
+				item: { count: 1, id: "enchanted:hawthorn_sapling" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3827371BD2D8A5BA"]
+			id: "247A04F9979837AB"
+			shape: "diamond"
+			tasks: [{
+				id: "7E95E5DA68089364"
+				item: { count: 1, id: "enchanted:alder_sapling" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3827371BD2D8A5BA"]
+			id: "55F61C465C30CF41"
+			shape: "diamond"
+			tasks: [{
+				id: "2EB667354DDF6036"
+				item: { count: 1, id: "enchanted:spanish_moss" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3827371BD2D8A5BA"]
+			id: "625AB3BA7F32CA10"
+			shape: "diamond"
+			tasks: [{
+				id: "632214BDD1BD6692"
+				item: { count: 1, id: "enchanted:glint_weed" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3827371BD2D8A5BA"]
+			id: "23159E27B4223AF1"
+			shape: "diamond"
+			tasks: [{
+				id: "76B9DF99F34702AB"
+				item: { count: 1, id: "enchanted:ember_moss" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5645E4DA993EDC3D"
+				"79AE7151ADF00D10"
+				"0E4BFAA97BD15447"
+			]
+			hide_dependency_lines: true
+			id: "3784CF017C0CB226"
+			shape: "gear"
+			tasks: [{
+				id: "46F1E0EC3589A44E"
+				item: { count: 1, id: "enchanted:attuned_stone_charged" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5645E4DA993EDC3D"
+				"7162B15B452A8B2E"
+			]
+			hide_dependency_lines: true
+			id: "55816F492AF21D36"
+			tasks: [
+				{
+					id: "78EC3125A644CB96"
+					item: { count: 1, id: "enchanted:circle_talisman" }
+					type: "item"
+				}
+				{
+					id: "109F89414643F7A0"
+					item: { count: 1, id: "minecraft:redstone" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3784CF017C0CB226"]
+			id: "71E39806A0B7D79D"
+			shape: "heart"
+			tasks: [{
+				id: "23F8EEA1AF4C1A9B"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -7.5d
 		}
 	]
 }

@@ -87,13 +87,13 @@
 			id: "09035004F4A9D2B9"
 			tasks: [
 				{
-					id: "0AE82BD2BF8E934E"
-					item: { components: { "ftbquests:missing_item": "toolbelt:belt" }, count: 1, id: "ftbquests:missing_item" }
+					id: "1766CE7B5026CCD8"
+					item: { count: 1, id: "toolbelt:belt" }
 					type: "item"
 				}
 				{
-					id: "5B8A850ECB84A09D"
-					item: { components: { "ftbquests:missing_item": "toolbelt:pouch" }, count: 1, id: "ftbquests:missing_item" }
+					id: "3ACC30C84CC66123"
+					item: { count: 1, id: "toolbelt:pouch" }
 					type: "item"
 				}
 			]
@@ -444,8 +444,8 @@
 			dependencies: ["3ACEAB25342B053C"]
 			id: "1A20D55F90BEF2CA"
 			tasks: [{
-				id: "4830502175B6BB24"
-				item: { components: { "ftbquests:missing_item": "devices:devices_pouch" }, count: 1, id: "ftbquests:missing_item" }
+				id: "0C5164401899ED10"
+				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:devices_pouch" }
 				type: "item"
 			}]
 			x: -16.5d
@@ -455,8 +455,8 @@
 			dependencies: ["3ACEAB25342B053C"]
 			id: "71814BF08821CDDA"
 			tasks: [{
-				id: "6AD5A230CBA1F7B8"
-				item: { components: { "ftbquests:missing_item": "devices:magical_pouch" }, count: 1, id: "ftbquests:missing_item" }
+				id: "11503E13734ECE32"
+				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:magical_pouch" }
 				type: "item"
 			}]
 			x: -16.5d
@@ -472,6 +472,39 @@
 			}]
 			x: -18.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "0C51C972B69C3F5C"
+			tasks: [{
+				id: "715C35246FA4ED86"
+				item: { count: 1, id: "cursedearth:cursed_earth" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "597FD60CF6435843"
+			tasks: [{
+				id: "4D1A3B0028833727"
+				item: { count: 1, id: "cursedearth:blessed_earth" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "7061E2DE2F1CC3C1"
+			tasks: [{
+				id: "3CF3686B823E38AE"
+				item: { count: 1, id: "cursedearth:blessed_flower" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.5d
 		}
 	]
 }

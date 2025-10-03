@@ -21,7 +21,7 @@
 			tasks: [{
 				count: 8L
 				id: "3474EA39DE0D2B02"
-				item: { count: 20, id: "minecraft:gravel" }
+				item: { count: 1, id: "minecraft:gravel" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -46,7 +46,7 @@
 			tasks: [{
 				count: 7L
 				id: "0F71C8F1CE5D6E67"
-				item: { count: 7, id: "ytech:grass_fibers" }
+				item: { count: 1, id: "ytech:grass_fibers" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -70,7 +70,7 @@
 			tasks: [{
 				count: 3L
 				id: "0C9203A4A33C6622"
-				item: { count: 3, id: "minecraft:stick" }
+				item: { count: 1, id: "minecraft:stick" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -83,7 +83,7 @@
 			tasks: [{
 				count: 5L
 				id: "0FDDA39521D92A05"
-				item: { count: 5, id: "ytech:pebble" }
+				item: { count: 1, id: "ytech:pebble" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -267,7 +267,7 @@
 			tasks: [{
 				count: 64L
 				id: "21C00B24B2880F30"
-				item: { count: 64, id: "ytech:unfired_brick" }
+				item: { count: 1, id: "ytech:unfired_brick" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -282,7 +282,7 @@
 			tasks: [{
 				count: 64L
 				id: "258E2FB9E0FD9D4A"
-				item: { count: 64, id: "minecraft:brick" }
+				item: { count: 1, id: "minecraft:brick" }
 				type: "item"
 			}]
 			x: 8.5d
@@ -306,13 +306,13 @@
 			tasks: [
 				{
 					id: "1ABAB1A1FCA7B3EA"
-					item: { count: 64, id: "ytech:primitive_smelter" }
+					item: { count: 1, id: "ytech:primitive_smelter" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "0D88315839CC85AD"
-					item: { count: 4, id: "ytech:brick_chimney" }
+					item: { count: 1, id: "ytech:brick_chimney" }
 					optional_task: true
 					type: "item"
 				}
@@ -1158,7 +1158,7 @@
 			tasks: [{
 				count: 8L
 				id: "1556EE602A077260"
-				item: { count: 8, id: "minecraft:cobblestone" }
+				item: { count: 1, id: "minecraft:cobblestone" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -1317,7 +1317,7 @@
 				{
 					count: 12L
 					id: "3BFEF06E1313D7DC"
-					item: { count: 3, id: "modern_industrialization:fire_clay_dust" }
+					item: { count: 1, id: "modern_industrialization:fire_clay_dust" }
 					optional_task: true
 					type: "item"
 				}

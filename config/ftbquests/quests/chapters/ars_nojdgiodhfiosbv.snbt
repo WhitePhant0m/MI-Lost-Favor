@@ -101,7 +101,7 @@
 			tasks: [{
 				count: 2L
 				id: "054AD9D33B1DD3F9"
-				item: { count: 2, id: "ars_nouveau:magebloom_crop" }
+				item: { count: 1, id: "ars_nouveau:magebloom_crop" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -293,7 +293,7 @@
 				{
 					count: 4L
 					id: "4406DC95B7A7D0DA"
-					item: { count: 4, id: "ars_nouveau:arcane_pedestal" }
+					item: { count: 1, id: "ars_nouveau:arcane_pedestal" }
 					type: "item"
 				}
 			]

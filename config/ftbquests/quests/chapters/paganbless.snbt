@@ -34,7 +34,7 @@
 			tasks: [{
 				count: 2L
 				id: "1BD432C9E725BF98"
-				item: { count: 2, id: "paganbless:black_thorn_log" }
+				item: { count: 1, id: "paganbless:black_thorn_log" }
 				type: "item"
 			}]
 			x: -1.5d

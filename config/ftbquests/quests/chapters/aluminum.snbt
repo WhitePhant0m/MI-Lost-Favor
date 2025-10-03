@@ -394,35 +394,35 @@
 				{
 					count: 5L
 					id: "58DBA3E7FE2DB9C5"
-					item: { count: 5, id: "immersiveengineering:steel_window" }
+					item: { count: 1, id: "immersiveengineering:steel_window" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 20L
 					id: "63D4AC24EAC8E5BA"
-					item: { count: 20, id: "immersiveengineering:steel_scaffolding_standard" }
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 9L
 					id: "6BC703E3B251DCEA"
-					item: { count: 9, id: "immersiveengineering:concrete" }
+					item: { count: 1, id: "immersiveengineering:concrete" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 3L
 					id: "3C86170E050D547B"
-					item: { count: 3, id: "immersiveengineering:light_engineering" }
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "3BB2AA58DC35ED47"
-					item: { count: 2, id: "immersiveengineering:resonanz_engineering" }
+					item: { count: 1, id: "immersiveengineering:resonanz_engineering" }
 					optional_task: true
 					type: "item"
 				}
@@ -435,7 +435,7 @@
 				{
 					count: 4L
 					id: "146E344A40A247BE"
-					item: { count: 4, id: "immersiveengineering:steel_fence" }
+					item: { count: 1, id: "immersiveengineering:steel_fence" }
 					optional_task: true
 					type: "item"
 				}
@@ -496,7 +496,7 @@
 				consume_items: true
 				count: 1024L
 				id: "46155F871ECB99A7"
-				item: { count: 64, id: "modern_industrialization:rubber_sheet" }
+				item: { count: 1, id: "modern_industrialization:rubber_sheet" }
 				type: "item"
 			}]
 			x: 5.0d

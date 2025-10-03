@@ -93,7 +93,7 @@
 				{
 					count: 8L
 					id: "0310A98B1D8001FD"
-					item: { count: 8, id: "malum:runewood_item_pedestal" }
+					item: { count: 1, id: "malum:runewood_item_pedestal" }
 					type: "item"
 				}
 			]
@@ -294,7 +294,7 @@
 			tasks: [{
 				count: 4L
 				id: "47C4603FE67887A5"
-				item: { count: 4, id: "malum:alchemical_calx" }
+				item: { count: 1, id: "malum:alchemical_calx" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -406,7 +406,7 @@
 			tasks: [{
 				count: 4L
 				id: "624B5E1A5B4934A7"
-				item: { count: 4, id: "malum:soulwoven_silk" }
+				item: { count: 1, id: "malum:soulwoven_silk" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -719,7 +719,7 @@
 			tasks: [{
 				count: 16L
 				id: "726CD47D1530D885"
-				item: { count: 16, id: "malum:twisted_rock" }
+				item: { count: 1, id: "malum:twisted_rock" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -831,7 +831,7 @@
 			tasks: [{
 				count: 2L
 				id: "6F5AEC901B858E93"
-				item: { count: 2, id: "malum:living_flesh" }
+				item: { count: 1, id: "malum:living_flesh" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -1638,7 +1638,7 @@
 				{
 					count: 4L
 					id: "0CF894C8B07CFE81"
-					item: { count: 4, id: "malum:runewood_log" }
+					item: { count: 1, id: "malum:runewood_log" }
 					type: "item"
 				}
 			]
@@ -1662,7 +1662,7 @@
 			tasks: [{
 				count: 6L
 				id: "71913060E73574FE"
-				item: { count: 6, id: "malum:blighted_gunk" }
+				item: { count: 1, id: "malum:blighted_gunk" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -1690,7 +1690,7 @@
 			tasks: [{
 				count: 16L
 				id: "097F3348E9435A41"
-				item: { count: 16, id: "malum:tainted_rock" }
+				item: { count: 1, id: "malum:tainted_rock" }
 				type: "item"
 			}]
 			x: 1.0d

@@ -23,7 +23,7 @@
 			tasks: [{
 				count: 37L
 				id: "1B131AA27BAE12BB"
-				item: { count: 37, id: "occultism:datura_seeds" }
+				item: { count: 1, id: "occultism:datura_seeds" }
 				type: "item"
 			}]
 			x: -7.0d
@@ -35,7 +35,7 @@
 			tasks: [{
 				count: 13L
 				id: "277AD159DEABAC6E"
-				item: { count: 13, id: "occultism:datura" }
+				item: { count: 1, id: "occultism:datura" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -74,7 +74,7 @@
 			tasks: [{
 				count: 10L
 				id: "71917C6CB5BEF427"
-				item: { count: 10, id: "occultism:tallow" }
+				item: { count: 1, id: "occultism:tallow" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -86,7 +86,7 @@
 			tasks: [{
 				count: 3L
 				id: "6AD68F6740255A61"
-				item: { count: 3, id: "occultism:otherstone" }
+				item: { count: 1, id: "occultism:otherstone" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -98,7 +98,7 @@
 			tasks: [{
 				count: 8L
 				id: "343CBA896058CD0B"
-				item: { count: 8, id: "occultism:otherworld_log" }
+				item: { count: 1, id: "occultism:otherworld_log" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -431,7 +431,7 @@
 				{
 					count: 2L
 					id: "644D6239F0AFE09E"
-					item: { count: 2, id: "minecraft:string" }
+					item: { count: 1, id: "minecraft:string" }
 					type: "item"
 				}
 				{
@@ -857,7 +857,7 @@
 				{
 					count: 5L
 					id: "3E3CE625E70AF09F"
-					item: { count: 5, id: "occultism:raw_iesnium" }
+					item: { count: 1, id: "occultism:raw_iesnium" }
 					type: "item"
 				}
 				{

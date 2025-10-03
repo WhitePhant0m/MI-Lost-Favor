@@ -49,8 +49,8 @@
 			dependencies: ["48D05EA6556FF501"]
 			id: "25A292F117ECA3E6"
 			tasks: [{
-				id: "1CE7019F68820614"
-				item: { count: 1, id: "toxony:mortar_pestle" }
+				id: "22F7C79AF3043B76"
+				item: { count: 1, id: "hexerei:pestle_and_mortar" }
 				type: "item"
 			}]
 			x: 0.0d
