@@ -1,16 +1,16 @@
-filename = 'Waves-1.21-1.5.1.jar'
-name = 'Coastal Waves'
+filename = 'Waves-1.21.x-1.6.jar'
+name = 'Waves'
 side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'c7b82386018cfb70ae2adc7391555ea4d9d24a21'
+hash = '744a47559d55f018f3906e3c03617d7f123764c2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6353971
+file-id = 7045750
 project-id = 1155936

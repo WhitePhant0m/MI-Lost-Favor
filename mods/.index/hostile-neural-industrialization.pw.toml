@@ -1,4 +1,4 @@
-filename = 'hostile_neural_industrialization-1.0.4-1.21.1.jar'
+filename = 'hostile_neural_industrialization-1.0.5-1.21.1.jar'
 name = 'Hostile Neural Industrialization'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '239326f730ec7b8af79607f8cb8cad8efeba8261'
+hash = '6123c7110ce13fd0bfac52abc24bc9246e31b733'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6961215
+file-id = 7024131
 project-id = 1312953

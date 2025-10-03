@@ -1,4 +1,4 @@
-filename = 'sounds-2.4.13.1+lts+1.21.1+neoforge.jar'
+filename = 'sounds-2.4.15+lts+1.21.1+neoforge.jar'
 name = 'Sounds'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'eaba2161deb801494bbc5be6bcc3479e4b1f14b1'
+hash = '8a40bfb0366bb967f2c5275f9b7331debf64540e'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6803821
+file-id = 7039679
 project-id = 925889

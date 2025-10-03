@@ -1,4 +1,4 @@
-filename = 'SmartBrainLib-neoforge-1.21.1-1.16.10.jar'
+filename = 'SmartBrainLib-neoforge-1.21.1-1.16.11.jar'
 name = 'SmartBrainLib'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '2c8f351d26bc01f16965e3b9898528275c6019f6'
+hash = '0310135a01eeceefbc7f1ab017498a65f3ad6836'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6762621
+file-id = 7055149
 project-id = 661293

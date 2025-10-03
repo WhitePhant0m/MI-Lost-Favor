@@ -1,4 +1,4 @@
-filename = 'companions-neoforge-1.21.1-1.1.1.jar'
+filename = 'companions-neoforge-1.21.1-1.1.2.jar'
 name = 'Companions!'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '79dfe7a0845d7a43f859b48fa7821056091011f2'
+hash = 'fa27d0e1e3e3cfaec9276338c2e46f58c8267c3d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6960860
+file-id = 7054233
 project-id = 1300341
