@@ -1,0 +1,6 @@
+{
+	"parent": "kubejs:block/ore_sample_6",
+	"textures": {
+		"ore": "minecraft:block/lapis_ore"
+	}
+}

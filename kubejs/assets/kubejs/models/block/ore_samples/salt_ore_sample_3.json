@@ -1,0 +1,6 @@
+{
+	"parent": "kubejs:block/ore_sample_3",
+	"textures": {
+		"ore": "modern_industrialization:block/salt_ore"
+	}
+}
