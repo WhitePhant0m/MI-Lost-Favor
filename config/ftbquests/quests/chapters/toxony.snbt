@@ -85,9 +85,8 @@
 			id: "10EEA65D3AC363CC"
 			shape: "diamond"
 			tasks: [{
-				count: 2L
 				id: "639B90480260D4FC"
-				item: { count: 2, id: "toxony:ocelot_mint" }
+				item: { count: 1, id: "toxony:ocelot_mint" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -130,9 +129,8 @@
 			id: "70798A5B74FDB203"
 			shape: "diamond"
 			tasks: [{
-				count: 3L
 				id: "550C9A154A2AD2C1"
-				item: { count: 3, id: "toxony:water_hemlock" }
+				item: { count: 1, id: "toxony:water_hemlock" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -146,9 +144,8 @@
 			id: "3A5FB1474CC41CED"
 			shape: "diamond"
 			tasks: [{
-				count: 5L
 				id: "33BBC4AB3CF1AB92"
-				item: { count: 5, id: "toxony:coldsnap" }
+				item: { count: 1, id: "toxony:coldsnap" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -161,9 +158,8 @@
 			id: "360B3C7F848E2965"
 			shape: "diamond"
 			tasks: [{
-				count: 4L
 				id: "57FBADA70C7756CB"
-				item: { count: 4, id: "toxony:bloodroot" }
+				item: { count: 1, id: "toxony:bloodroot" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -188,7 +184,7 @@
 			tasks: [{
 				count: 2L
 				id: "2D87199C040B3F04"
-				item: { count: 2, id: "toxony:venom_tooth" }
+				item: { count: 1, id: "toxony:venom_tooth" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -203,7 +199,7 @@
 			tasks: [{
 				count: 2L
 				id: "69A8E0D47B24F035"
-				item: { count: 2, id: "toxony:toxic_spit" }
+				item: { count: 1, id: "toxony:toxic_spit" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -269,13 +265,13 @@
 				{
 					count: 12L
 					id: "550C8588E5262C77"
-					item: { count: 12, id: "toxony:clay_oil_pot" }
+					item: { count: 1, id: "toxony:clay_oil_pot" }
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "6E19F7D40DFDD536"
-					item: { count: 12, id: "toxony:empty_oil_pot" }
+					item: { count: 1, id: "toxony:empty_oil_pot" }
 					type: "item"
 				}
 			]
@@ -441,7 +437,7 @@
 			tasks: [{
 				count: 18L
 				id: "427D74264DE880F2"
-				item: { count: 18, id: "toxony:bolt" }
+				item: { count: 1, id: "toxony:bolt" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -451,7 +447,7 @@
 			id: "4861D8CA259A874D"
 			tasks: [{
 				id: "07BBD9AC6FAF4B70"
-				item: { count: 2, id: "toxony:bolt_cartridge" }
+				item: { count: 1, id: "toxony:bolt_cartridge" }
 				type: "item"
 			}]
 			x: 3.5d
@@ -502,7 +498,7 @@
 				{
 					count: 12L
 					id: "7E3751BA6FE89A19"
-					item: { count: 12, id: "minecraft:blaze_powder" }
+					item: { count: 1, id: "minecraft:blaze_powder" }
 					type: "item"
 				}
 			]
@@ -742,7 +738,7 @@
 				item: { count: 1, id: "toxony:oil_base" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 20.5d
 		}
 		{
@@ -753,7 +749,7 @@
 				item: { count: 1, id: "toxony:toxic_leather" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 20.5d
 		}
 		{
@@ -818,6 +814,24 @@
 			}]
 			x: 0.0d
 			y: 27.0d
+		}
+		{
+			dependencies: ["714992905CA44375"]
+			id: "078401AAC8FB6799"
+			tasks: [
+				{
+					id: "5FF67A184D2EF4BE"
+					item: { count: 1, id: "toxony:affinity_fusion_mix" }
+					type: "item"
+				}
+				{
+					id: "1A2413BF74CAB6D6"
+					item: { count: 1, id: "toxony:affinity_unknown_substance" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 20.5d
 		}
 	]
 }
