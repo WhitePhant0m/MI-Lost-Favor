@@ -716,7 +716,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].layerAll("C").layerPlus("s")
         ],
         {C:'minecraft:cobblestone',S:"minecraft:stick", s:"minecraft:cobblestone_slab"},
-        'toxony:mortar_pestle', {} , "ytech:sharp_flint", true
+        'hexerei:pestle_and_mortar', {} , "ytech:sharp_flint", true
     )
 
     workspace_recipe([

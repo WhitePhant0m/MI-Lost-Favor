@@ -28,30 +28,16 @@ ServerEvents.recipes(event => {
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:assembler' })
     // event.remove({ output: /ae2:*/, type: 'modern_industrialization:electrolyzer' })
 
-
-
-    event.custom({
-        "type": "toxony:mortar_pestle",
-        "ingredients": [
-            {
-                "item": "clay_ball"
-            },
-            {
-                "item": "clay_ball"
-            },
-            {
-                "item": "modern_industrialization:brick_dust"
-            },
-            {
-                "item": "modern_industrialization:brick_dust"
-            }
+    customPestleAndMortarCraft(event, {
+        ingredients: [
+            { "item": "clay_ball" },
+            { "item": "clay_ball"},
+            { "item": "modern_industrialization:brick_dust"},
+            { "item": "modern_industrialization:brick_dust"},
         ],
-        "result": {
-            "count": 3,
-            "id": "modern_industrialization:fire_clay_dust"
-        }
+        output: "modern_industrialization:fire_clay_dust",
+        amount: 3,
     })
-
 
     //bronze_glass_recipes
     /*
