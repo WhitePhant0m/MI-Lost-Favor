@@ -1,0 +1,98 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hexerei"
+	group: ""
+	id: "6DFA55A3EC367C34"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6A2FCA07586ED280"
+			tasks: [{
+				id: "51173DA1477DA9F8"
+				item: { components: { "hexerei:book": { book: "hexerei:book_of_shadows", bookmarks: [ { color: "white", id: "", index: 0 }, { color: "white", id: "", index: 1 }, { color: "white", id: "", index: 2 }, { color: "white", id: "", index: 3 }, { color: "white", id: "", index: 4 }, { color: "white", id: "", index: 5 }, { color: "white", id: "", index: 6 }, { color: "white", id: "", index: 7 }, { color: "white", id: "", index: 8 }, { color: "white", id: "", index: 9 }, { color: "white", id: "", index: 10 }, { color: "white", id: "", index: 11 }, { color: "white", id: "", index: 12 }, { color: "white", id: "", index: 13 }, { color: "white", id: "", index: 14 }, { color: "white", id: "", index: 15 }, { color: "white", id: "", index: 16 }, { color: "white", id: "", index: 17 }, { color: "white", id: "", index: 18 }, { color: "white", id: "", index: 19 } ], chapter: 0, opened: 0b, page: 0, uuid: [I; 1974555292, -1205909360, -1100320342, -1275464202 ] } }, count: 1, id: "hexerei:book_of_shadows" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A2FCA07586ED280"]
+			id: "7E470E4F941A62BB"
+			tasks: [{
+				id: "2D7E038B8FF4407B"
+				item: { count: 1, id: "hexerei:mixing_cauldron" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A2FCA07586ED280"]
+			id: "4F3E70AAD31A62A8"
+			tasks: [{
+				id: "57782558C88124EE"
+				item: { count: 1, id: "hexerei:willow_sapling" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A2FCA07586ED280"]
+			id: "2E52CA7586B64968"
+			tasks: [{
+				id: "3CF784326CF546F9"
+				item: { count: 1, id: "hexerei:mahogany_sapling" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A2FCA07586ED280"]
+			id: "59871CEFCCF15140"
+			tasks: [{
+				id: "30BAD5F884637D4D"
+				item: { count: 1, id: "hexerei:witch_hazel_sapling" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2E52CA7586B64968"]
+			id: "2F8C776248EC39A4"
+			tasks: [{
+				id: "05C598D5F973C2D7"
+				item: { count: 1, id: "hexerei:book_of_shadows_altar" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F3E70AAD31A62A8"]
+			id: "22867AA942456658"
+			tasks: [{
+				id: "17BBD0C5FF732189"
+				item: { count: 1, id: "hexerei:willow_altar" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["59871CEFCCF15140"]
+			id: "1664E9D5D87BDF33"
+			tasks: [{
+				id: "1117E6A9269C1056"
+				item: { count: 1, id: "hexerei:witch_hazel_altar" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+	]
+}

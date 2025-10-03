@@ -4,7 +4,7 @@
 	filename: "diverse_content"
 	group: ""
 	id: "389198189DCA1A49"
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -445,7 +445,7 @@
 			id: "1A20D55F90BEF2CA"
 			tasks: [{
 				id: "4830502175B6BB24"
-				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:devices_pouch" }
+				item: { components: { "ftbquests:missing_item": "devices:devices_pouch" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -16.5d
@@ -456,7 +456,7 @@
 			id: "71814BF08821CDDA"
 			tasks: [{
 				id: "6AD5A230CBA1F7B8"
-				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:magical_pouch" }
+				item: { components: { "ftbquests:missing_item": "devices:magical_pouch" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -16.5d

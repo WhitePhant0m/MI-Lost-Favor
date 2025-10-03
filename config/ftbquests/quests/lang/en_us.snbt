@@ -1,4 +1,5 @@
 {
+	chapter.07BA71E5216DF573.title: "Malum"
 	chapter.0BA8A5647651177A.title: "Toxony"
 	chapter.0C8C4901311BE1A5.title: "enchanted"
 	chapter.0EF0C5F1BD4103BF.title: "paganbless"
@@ -47,6 +48,8 @@
 		"{@pagebreak}"
 		"Факел, канделябр или свеча могут стать эффективным средством для увеличения скорости перезарядки вашего алтаря."
 	]
+	quest.02196EDBFE8C5BA5.quest_desc: ["speed upgrade "]
+	quest.0237945A1F6F9132.quest_desc: ["убивая жителей или игроков есть шанс выбить эту душу"]
 	quest.026821F02D50FE0D.quest_desc: [
 		"It might look a bit overwhelming at first, but it's very straightforward once you get used to it. Each ritual has one main ingredient that goes into the big slot in the middle. The four slots surrounding it can be used for enhancers. Some enhancers are required to start certain rituals while many enhancers are optional and provide useful advantages such as reduced essence costs. "
 		""
@@ -174,6 +177,7 @@
 		"{@pagebreak}"
 		"ТОКСИЧНОЕ МАСЛО! Ещё более летучий и опасный вариант! Оно уже может приводить к летальному исходу. Я КАЖДОМУ дам попробовать моё невероятное творение!"
 	]
+	quest.0A8264D255BE5EF5.quest_desc: ["Душу в вторую руку пкм  по земле - ставит светящийся блок душ"]
 	quest.0B05E1DBD3F26E44.quest_subtitle: "Efficient!"
 	quest.0B37EB64F02A743F.quest_desc: [
 		"Enchant your boots with power. More power, more speed!"
@@ -211,6 +215,11 @@
 	]
 	quest.0D2D182AEBB7368B.title: "Afrit Crystallizer"
 	quest.0D70E9CF33C567A7.quest_desc: ["Drops from a poisoned llama."]
+	quest.0DBD3895EE949921.quest_desc: [
+		"Ах, вечный договор — это тяжелая ноша. Клятвы обладают большой силой и могут давать мощный эффект, но их недостатки — постоянные спутники. Эти договоры можно расторгнуть на жаровне, что позволяет вам решить, какую цену вы готовы заплатить."
+		""
+		"Чтобы отказаться от клятвы, соберите ее на жаровне, как вы делали вначале, но вместо этого используйте паракаузальное пламя, чтобы разжечь жаровню. Это сожжет договор, а не запишет его. Остальная часть процесса работает так же, включая слабость."
+	]
 	quest.0DC8007E71D86A99.quest_desc: [
 		"&#FEECD6Compacting Chest&r will try to compact all the items you put inside it in a 3x3, 2x2 or 1x1 pattern - this can be customized in the GUI."
 		"{@pagebreak}"
@@ -383,6 +392,15 @@
 		""
 		"Используя перегонный аппарат, мы можем изготавливать МИЛЫЕ ТОКСИЧНЫЕ ГОРШОЧКИ. Для самых мощных масел подходит только этот вариант. Простой глиняный горшочек трескался под воздействием токсина."
 	]
+	quest.19545E28C84E87B2.quest_desc: [
+		"Если предметы взлетели над алтарём - рецепт верный. "
+		""
+		"Добавь эзер чтобы запустить крафт, как только запустил - добавь свою кровь(можно добавить несколько игроков за один ритуал) в алтарь нажатием ПКМ, дальше жди."
+		""
+		"Так же можно добавить кровь любого другого существа, для этого нужно наложить на существо эффект слабости перед тем как зажечь жаровню."
+		""
+		"На игроке может быть максимум 2 проклятья. Так же его сложно снять."
+	]
 	quest.19800DDEA270C24C.quest_desc: ["One of the most useful items in any situation. You can configure it via the button to the top right of your character so it will refill whatever block you're holding straight from your system as well as search through your system to pick blocks via the middle mouse button"]
 	quest.1987F8CE26632CC4.quest_desc: [
 		"Incenses are a neat block that spread herb-specific effects in a specific area."
@@ -477,6 +495,7 @@
 		"{@pagebreak}"
 		"Может использоваться для добычи чистых ресурсов, а также некоторых хрупких блоков."
 	]
+	quest.1FC26CA207964E0D.quest_desc: ["5 арканы в тотем"]
 	quest.1FD668D64C10EA51.quest_desc: ["You can create a Block Hole by throwing Dark Matter together with Corrupti Dust on the ground. It will attract items and small entities like Arrows or Experience Orbs and delete them. Once it absorbed enough experience points, it will throw out a Xpetrified Orb."]
 	quest.203B742A5DB473FA.quest_desc: ["Simply smash a piece of flint against a stone to sharpen it"]
 	quest.2071CE16FAA3FDEE.quest_desc: [
@@ -528,6 +547,7 @@
 		"{@pagebreak}"
 		"Буквально — &#DEB3E0Красочная ячейка&r, храни краски в баночках!"
 	]
+	quest.244DB9331EEB5897.quest_desc: ["recolor armor"]
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a poisoned slime."]
 	quest.265CFAAE6154EAEF.quest_desc: ["IN black_langast"]
 	quest.26AAD3E138239666.quest_desc: ["с топ блоками 42 (21 за блоктипы)"]
@@ -645,6 +665,7 @@
 		"{@pagebreak}"
 		"Бесконечный дождь снежков"
 	]
+	quest.3047263251E42955.quest_desc: ["From Breeze with scythe"]
 	quest.3055F414B9F20508.quest_desc: [
 		"If I feel particularly HORRIBLE, then I may want to produce this regeneration oil pot. Fragrant and REVOLTING to the touch, it does the opposite of what most of my oils do, and as such would be quite appealing to doctors in the field."
 		"{@pagebreak}"
@@ -753,6 +774,7 @@
 		""
 		"&#ffb04fP.S. Если вы чувствуете что вам что-то непонятно, обратите внимание на ачивки мода! Почти весь контент открывается прогрессируя по ачивкам! Начиная от рецептов, до падающих звёзд с неба!&r"
 	]
+	quest.36A7954415EF0E4A.quest_desc: ["From flying mobs(ghast/phantom) with scythe"]
 	quest.36ABE0F50C03A3AC.quest_desc: [
 		"Creating a brew, infusion or potion is a simple process, requiring either a witch's cauldron or kettle."
 		""
@@ -939,6 +961,7 @@
 		"All the bronze machines use steam to operate"
 		"Automatically outputs steam from the top"
 	]
+	quest.430423172DB205F2.quest_subtitle: "Nitor?!"
 	quest.430D38FF55DB4445.quest_desc: [" Use it to apply a new Soulbound item modifier."]
 	quest.43141E73595BA04F.quest_desc: [
 		"A broom can be used to sweep chalk away quickly, without having to spend time erasing it."
@@ -972,6 +995,7 @@
 		""
 		"&#4B98C0Топаз&r жеоды находятся в высоких слоях шахт, можно сказать что их можно найти буквально на верхушках гор! "
 	]
+	quest.43EE44FBD36E1051.quest_desc: ["From skeletons(strat/skeleton/wither skeleton/bogged/) with scythe"]
 	quest.4411D3E177F394CE.quest_desc: [
 		"&lPlayer Skull&r:"
 		"• +2.5x Power Capacity"
@@ -1000,6 +1024,7 @@
 		"Each ME terminal as well as each cable has limited channels, each connected system element (such as import bus, storage bus etc.) takes one channel to operate, so you a little bit limited in that regard, but ME terminals could be stacked to provide more channels to operate."
 		"More info could be found iside ingame guide (Seriously, it's very good, with examples and pictures)"
 	]
+	quest.464E6E68F80377D1.quest_desc: ["Можно зачаровать, добавить описания того на что "]
 	quest.4662695201019F94.quest_desc: [
 		"Adding fume funnels to the left and right of your witch's oven can drastically improve it's yield."
 		""
@@ -1182,6 +1207,7 @@
 		""
 		"Данный блок очень сильно поможет вам в будущем!"
 	]
+	quest.538E3976DDFD9FBF.quest_desc: ["Отображает суммарное количество бафов в кузне"]
 	quest.53D189F7EF7CD121.quest_subtitle: "Perform the ritual!"
 	quest.53D226046704B4F5.quest_desc: ["Same as copper, but with a small chance to catch gold and iron."]
 	quest.552B1FFCECBD0652.quest_desc: ["A manual well. Produces different amounts of water in different biomes. Can be connected to a system of aqueducts"]
@@ -1223,6 +1249,7 @@
 		""
 		"В отличие от печи, эта печь не может перерабатывать руды. Поместите глиняный кувшин в центральный слот, чтобы собирать дым."
 	]
+	quest.5A518A86865E47EB.quest_desc: ["Показывает радиус работы тотемов"]
 	quest.5AEBD2E96FA53366.quest_desc: ["The fiery modifier can be applied to all tool items (Pickaxes, Shovels, Axes, Hoes) and will automatically smelt all mined blocks if they have a smelting recipe. "]
 	quest.5AEEF8055EA6AE88.quest_desc: ["Use a Splash Aureal Bottle on a normal soul for getting"]
 	quest.5C1A95780908F901.quest_desc: [
@@ -1240,6 +1267,7 @@
 		"{@pagebreak}"
 		"Используя Светящийся чернильный мешок(или &k&bLight Blue Ink&r&r), награждает носителя &#FEECD6ночным зрением&r! "
 	]
+	quest.5CD79C87448D8A51.quest_desc: ["Тут множество разных ритуалов можно делать, но это лучше прочитать в книге т.к. меняются только руны, самый важный ритуал из 5 арканы - даёт Soulwood sapling"]
 	quest.5D02CAC8B45A26C4.quest_desc: [
 		"The title speaks for itself. This machine places blocks upon recieving a &4redstone pulse&r."
 		"{@pagebreak}"
@@ -1583,6 +1611,12 @@
 		"{@pagebreak}"
 		"&#FEECD6Лампы&r испускают немного &#FEECD6света&r и понадобятся в будущем для улучшения ваших &#9BB8EDструктур!&r"
 	]
+	quest.72F7318B36C13A89.quest_desc: ["From enderman with scythe"]
+	quest.733E5E7E27403D28.quest_desc: [
+		"макс 4 "
+		""
+		"Увеличивает скорость крафта на алтаре на 25% за штуку."
+	]
 	quest.73908D0BD7473933.quest_desc: [
 		"A chalice may be placed on top of an altar to increase its power capacity. The chalice can be filled by using Redstone Soup on it."
 		""
@@ -1607,6 +1641,7 @@
 		""
 		"Ну… Или… Воспользуйтесь дробителем…"
 	]
+	quest.7411203C75645676.quest_desc: ["From undead(zombie/zoglin/husk/zombie villager/piglin) with scythe"]
 	quest.74D4C6332BC7AE9D.quest_desc: [
 		"Thaumic Footsteps"
 		"{@pagebreak}"
@@ -1744,6 +1779,7 @@
 	task.55A9AB2E43857E14.title: "Any #minecraft:beds"
 	task.5733CBC7B63AE4B4.title: "source generation"
 	task.5811DD77B7904989.title: "AE2WTlib"
+	task.587A56D8D8AFA800.title: "Any #malum:runewood_logs"
 	task.5D063D32D1C6BB2C.title: "Any #ytech:aqueducts"
 	task.5EC8E0E987CF862A.title: "More plants"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
@@ -1764,4 +1800,5 @@
 	task.78C5E8DD6BAEE398.title: "Any #milf:polished_gemstone_block"
 	task.7EECE34CF3EE7B8C.title: "Any #minecraft:logs"
 	task.7FA316644840FB37.title: "Any #milf:pillar_base_blocks"
+	task.7FAF7967D40C0369.title: "Malum"
 }
