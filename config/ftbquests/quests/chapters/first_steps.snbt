@@ -770,7 +770,7 @@
 		{
 			dependencies: ["203B742A5DB473FA"]
 			id: "631734759665B011"
-			shape: "diamond"
+			shape: "none"
 			tasks: [{
 				id: "7960731AC5535857"
 				item: { count: 1, id: "ytech:lion_man" }
@@ -1628,13 +1628,14 @@
 		{
 			dependencies: ["4A8953909A0D4CC0"]
 			id: "099181A23CEBA921"
+			shape: "none"
 			tasks: [{
 				id: "0F17E6C26316117B"
 				item: { count: 1, id: "minecraft:barrel" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -5.0d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["17A44FD7738F4496"]
@@ -1646,6 +1647,18 @@
 			}]
 			x: 8.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["389A4181732368E0"]
+			id: "6906D1AAB1D11C66"
+			shape: "none"
+			tasks: [{
+				id: "7861BD6A804DC604"
+				item: { count: 1, id: "woodenhopper:wooden_hopper" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
 		}
 	]
 }
