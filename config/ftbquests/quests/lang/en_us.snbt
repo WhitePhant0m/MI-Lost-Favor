@@ -513,6 +513,7 @@
 	quest.1FC26CA207964E0D.quest_desc: ["5 арканы в тотем"]
 	quest.1FD668D64C10EA51.quest_desc: ["You can create a Block Hole by throwing Dark Matter together with Corrupti Dust on the ground. It will attract items and small entities like Arrows or Experience Orbs and delete them. Once it absorbed enough experience points, it will throw out a Xpetrified Orb."]
 	quest.203B742A5DB473FA.quest_desc: ["Simply smash a piece of flint against a stone to sharpen it"]
+	quest.2050AE324A7E3ABC.quest_desc: ["позволяет не дамажить метлу в лаве "]
 	quest.2071CE16FAA3FDEE.quest_desc: [
 		"Bronze barrels can be used to store and move 32 stacks of one item. "
 		""
@@ -564,6 +565,7 @@
 	]
 	quest.244DB9331EEB5897.quest_desc: ["recolor armor"]
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a poisoned slime."]
+	quest.24D1B4E69FDDF397.quest_desc: ["декор, можно объединить с любым предметом чтобы отображать его"]
 	quest.265CFAAE6154EAEF.quest_desc: ["IN black_langast"]
 	quest.26AAD3E138239666.quest_desc: ["с топ блоками 42 (21 за блоктипы)"]
 	quest.26D3721A292E8E8C.quest_desc: [
@@ -639,6 +641,7 @@
 		""
 		"You can also buy from Wandering Trader"
 	]
+	quest.2BE901E1F516A6AE.quest_subtitle: "Golems?!"
 	quest.2CBD884256778D81.quest_desc: [
 		"Mixing &#C6BCE9colors&r seemed like such a simple and fun activity, but brown has, &#ff6600as always&r, &#ff6600ruined&r everything."
 		""
@@ -1457,6 +1460,7 @@
 		"{@pagebreak}"
 		"Как и с прошлыми фамильярами и одержимыми мобами, прочтите информацию о них в книге"
 	]
+	quest.644C38FE06C3047E.quest_desc: ["можно найти в джунглях и болотах в шахтах"]
 	quest.64F723F01C41DE4E.quest_desc: [
 		"Invisible lighting!"
 		""
@@ -1535,6 +1539,7 @@
 		""
 		"Can be used together with a Oil Pot Sash. Pots will dig ore in an area like grenades. The ores will have Fortune II applied to them."
 	]
+	quest.6AADBAB610C068F2.quest_desc: ["на метле можно уместить  2 игрока, можно красить имеет 9 слотов"]
 	quest.6B3078F8DB055448.quest_desc: [
 		"This ritual also unlocks many new Possession Rituals that allow you to summon rare mobs and obtain their rare drops. For example, you can summon a Shalker without spending a ton of time searching for and opening the End portal to obtain Shalker Shell."
 		""
@@ -1659,6 +1664,7 @@
 		"&#FEECD6Лампы&r испускают немного &#FEECD6света&r и понадобятся в будущем для улучшения ваших &#9BB8EDструктур!&r"
 	]
 	quest.72F7318B36C13A89.quest_desc: ["From enderman with scythe"]
+	quest.7334667E017F1A95.quest_desc: ["позволяет плавать и не спрыгивать с метлы под водой"]
 	quest.733E5E7E27403D28.quest_desc: [
 		"макс 4 "
 		""
@@ -1788,6 +1794,7 @@
 	task.25CB2D0B385D4533.title: "Spectrum?"
 	task.274F98243AA9482F.title: "Animals breeding"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"
+	task.2C236C4C499DB27A.title: "Any #hexerei:brooms"
 	task.2CD40379A7378211.title: "Any #milf:pillar_base_blocks"
 	task.2D505FCD743999D9.title: "Any #milf:chiseled_base_blocks"
 	task.2E27771C78B7E3E9.title: "Any #milf:phantom_frame"

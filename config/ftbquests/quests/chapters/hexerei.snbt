@@ -133,7 +133,7 @@
 				}
 			]
 			x: 4.5d
-			y: -2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -146,7 +146,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -5.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -159,7 +159,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -172,7 +172,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -5.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -185,7 +185,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -6.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -197,8 +197,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -7.0d
+			x: 4.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -211,7 +211,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -6.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -224,7 +224,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -6.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -237,7 +237,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -5.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -250,7 +250,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -4.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -263,7 +263,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -276,7 +276,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -4.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -289,7 +289,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -5.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -302,7 +302,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -5.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -313,7 +313,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -324,7 +324,359 @@
 				type: "item"
 			}]
 			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			id: "3D08CD4C845EB608"
+			tasks: [{
+				id: "2E325894011D68F2"
+				item: { count: 1, id: "hexerei:pestle_and_mortar" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D08CD4C845EB608"]
+			id: "78E2D79E9DD19B4E"
+			tasks: [{
+				id: "5521FFF3E0B02EDB"
+				item: { count: 1, id: "hexerei:seed_mixture" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["78E2D79E9DD19B4E"]
+			id: "7D27A5410B58B2FF"
+			tasks: [{
+				id: "46D5B658A2A3B759"
+				item: { count: 1, id: "hexerei:crow_flute" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["78E2D79E9DD19B4E"]
+			id: "2BE901E1F516A6AE"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "cosycritters:textures/particle/crow_left.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "7C44C15911DCE62E"
+				observe_type: 5
+				timer: 0L
+				to_observe: "hexerei:crow"
+				type: "observation"
+			}]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2BE901E1F516A6AE"]
+			id: "2D60FDAC08E2108E"
+			tasks: [{
+				id: "1B23C57985B77F46"
+				item: { components: { "minecraft:custom_data": { ButtonToggled: 0 } }, count: 1, id: "hexerei:coffer" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			id: "045AE6D4DF09EAE1"
+			tasks: [{
+				id: "5CCE8E0D99374015"
+				item: { count: 1, id: "hexerei:herb_jar" }
+				type: "item"
+			}]
+			x: 4.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			id: "7943319F97052FD4"
+			tasks: [{
+				id: "7BDF9049A62D73EB"
+				item: { count: 1, id: "hexerei:sage_burning_plate" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["7943319F97052FD4"]
+			id: "242C2C5E9BD41EE5"
+			tasks: [{
+				id: "5C2C4C666AE88C20"
+				item: { count: 1, id: "hexerei:sage_seed" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7943319F97052FD4"]
+			id: "46B94B0AB1C0F0E8"
+			tasks: [{
+				id: "3353A614698F2FA9"
+				item: { count: 1, id: "hexerei:herb_drying_rack" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"242C2C5E9BD41EE5"
+				"46B94B0AB1C0F0E8"
+			]
+			id: "54E38F55D7A23664"
+			tasks: [
+				{
+					id: "51F08E734E59EBF6"
+					item: { count: 1, id: "hexerei:sage_bundle" }
+					type: "item"
+				}
+				{
+					id: "78750CA08DAE314F"
+					item: { count: 1, id: "hexerei:dried_sage_bundle" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["54E38F55D7A23664"]
+			id: "7C082F9CC1474254"
+			shape: "heart"
+			tasks: [
+				{
+					id: "6A450BF11772DD17"
+					item: { count: 1, id: "magnumtorch:diamond_magnum_torch" }
+					type: "item"
+				}
+				{
+					id: "6DB27C8811207858"
+					item: { count: 1, id: "magnumtorch:emerald_magnum_torch" }
+					type: "item"
+				}
+				{
+					id: "35267213DDB430E2"
+					item: { count: 1, id: "magnumtorch:amethyst_magnum_torch" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6A2FCA07586ED280"]
+			id: "746ED760B3D00FBA"
+			shape: "heart"
+			tasks: [{
+				id: "278010852D956835"
+				item: { count: 1, id: "hexerei:dowsing_rod" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6819B4405CCB4CD6"]
+			id: "2518CA7E57223D3A"
+			tasks: [{
+				id: "2C236C4C499DB27A"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(hexerei:brooms)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "61FA00E88DCC1AAA"
+			tasks: [{
+				id: "28A724254FFCCFF8"
+				item: { count: 1, id: "hexerei:small_satchel" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["61FA00E88DCC1AAA"]
+			id: "4267AF82FA930181"
+			tasks: [{
+				id: "48842BF7EEF31EB4"
+				item: { count: 1, id: "hexerei:medium_satchel" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4267AF82FA930181"]
+			id: "4616D728BEAB517A"
+			tasks: [{
+				id: "2A71F2E818C10276"
+				item: { count: 1, id: "hexerei:ender_satchel" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4267AF82FA930181"]
+			id: "463617DF26CF2E45"
+			tasks: [{
+				id: "19FF715E5F99CD14"
+				item: { count: 1, id: "hexerei:replacer_satchel" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4267AF82FA930181"]
+			id: "017A93CB5A64E85F"
+			tasks: [{
+				id: "49899AE3FE92DFEC"
+				item: { count: 1, id: "hexerei:large_satchel" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "68C66411366AEECE"
+			tasks: [{
+				id: "3F31831F69A7A9DF"
+				item: { count: 1, id: "hexerei:gold_rings" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "24D1B4E69FDDF397"
+			tasks: [{
+				id: "3FA3DB562D1EB08D"
+				item: { count: 1, id: "hexerei:broom_keychain" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "2050AE324A7E3ABC"
+			tasks: [{
+				id: "5B9C4434029978C2"
+				item: { count: 1, id: "hexerei:broom_netherite_tip" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "7334667E017F1A95"
+			tasks: [{
+				id: "3AA577CCFE56022F"
+				item: { count: 1, id: "hexerei:broom_waterproof_tip" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "335F06CA16243A29"
+			tasks: [{
+				id: "09DC702233A035A4"
+				item: { count: 1, id: "hexerei:broom_brush" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "0AA47E26BF91853F"
+			tasks: [{
+				id: "24C5EC57DED98ADD"
+				item: { count: 1, id: "hexerei:herb_enhanced_broom_brush" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "6314CC0241F5DBEA"
+			tasks: [{
+				id: "23AD81E14497D93D"
+				item: { count: 1, id: "hexerei:moon_dust_brush" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "70FAA49F0C768E38"
+			shape: "octagon"
+			tasks: [{
+				id: "36947A0D895A7B55"
+				item: { count: 1, id: "hexerei:broom_thruster_brush" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2518CA7E57223D3A"]
+			id: "6AADBAB610C068F2"
+			tasks: [{
+				id: "5A54B83DD3B10800"
+				item: { count: 1, id: "hexerei:broom_seat" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			id: "76609965FDB6F131"
+			tasks: [{
+				id: "3AE243878CE3A18B"
+				item: { count: 1, id: "hexerei:warhammer" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["746ED760B3D00FBA"]
+			id: "644C38FE06C3047E"
+			tasks: [{
+				id: "0415DD46A572A48E"
+				item: { count: 1, id: "hexerei:selenite_shard" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
 		}
 	]
 }

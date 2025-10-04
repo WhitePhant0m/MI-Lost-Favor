@@ -212,7 +212,7 @@
 		{
 			dependencies: ["19F4ECE3B256B396"]
 			id: "3311BAD6D1B590DE"
-			shape: "diamond"
+			shape: "none"
 			tasks: [
 				{
 					id: "557225C23E234BB7"
@@ -241,7 +241,7 @@
 		{
 			dependencies: ["19F4ECE3B256B396"]
 			id: "745BE9DA293006D1"
-			shape: "diamond"
+			shape: "none"
 			tasks: [{
 				id: "29EB0056E87ABFC0"
 				item: { count: 1, id: "ytech:basket" }
@@ -758,7 +758,7 @@
 		{
 			dependencies: ["203B742A5DB473FA"]
 			id: "27F626308F9789EB"
-			shape: "diamond"
+			shape: "none"
 			tasks: [{
 				id: "268C4EF769167871"
 				item: { count: 1, id: "ytech:chlorite_bracelet" }
@@ -782,7 +782,7 @@
 		{
 			dependencies: ["203B742A5DB473FA"]
 			id: "48703AF710DE51F3"
-			shape: "diamond"
+			shape: "none"
 			tasks: [{
 				id: "456E3F0030BC2437"
 				item: { count: 1, id: "ytech:shell_beads" }
@@ -794,7 +794,7 @@
 		{
 			dependencies: ["203B742A5DB473FA"]
 			id: "1B43C41CFF7D5190"
-			shape: "diamond"
+			shape: "none"
 			tasks: [{
 				id: "2BB31D53729DC83B"
 				item: { count: 1, id: "ytech:venus_of_hohle_fels" }
@@ -806,7 +806,7 @@
 		{
 			dependencies: ["203B742A5DB473FA"]
 			id: "6A56AC616822818E"
-			shape: "diamond"
+			shape: "none"
 			tasks: [{
 				id: "6F3BDE1F340E46FE"
 				item: { count: 1, id: "ytech:wild_horse" }
@@ -1034,7 +1034,7 @@
 				}
 				type: "item"
 			}]
-			shape: "diamond"
+			shape: "none"
 			tasks: [{
 				id: "554FC37840711010"
 				item: { components: { "map_atlases:empty_maps": { vanilla: 9 }, "map_atlases:map_collection": { vanilla: [I; 8, 16, 23, 29, 34, 38, 41, 43, 44 ] } }, count: 1, id: "map_atlases:atlas" }
@@ -1058,7 +1058,7 @@
 		{
 			dependencies: ["19F4ECE3B256B396"]
 			id: "357CC2253FDA3DA1"
-			shape: "diamond"
+			shape: "none"
 			tasks: [{
 				id: "3E3CB7FA5387ECAF"
 				item: { count: 1, id: "eccentrictome:tome" }
