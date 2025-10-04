@@ -5,7 +5,11 @@ const item_interact_block = [
     { id: "lootr_trapped_chest", item: "lootr:lootr_trapped_chest", stage: "early_items" },
     { id: "blast_furnace", item: "minecraft:blast_furnace", stage: "blast_furnace" },
     { id: "crate", item: "immersiveengineering:crate", stage: "early_items" },
-    { id: "spawner", item: "minecraft:spawner", stage: "early_items" }
+    { id: "spawner", item: "minecraft:spawner", stage: "early_items" },
+    { id: "coffer", item: "hexerei:coffer", stage: "early_items" },
+    { id: "mahogany_chest", item: "hexerei:mahogany_chest", stage: "early_items" },
+    { id: "willow_chest", item: "hexerei:willow_chest", stage: "early_items" },
+    { id: "witch_hazel_chest", item: "hexerei:witch_hazel_chest", stage: "early_items" },
 ]
 
 const entity_interact_block = [
