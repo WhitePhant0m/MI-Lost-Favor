@@ -52,4 +52,15 @@ ServerEvents.recipes(event => {
         minTemp: 800
     })
 
+    ytechAlloyingCraft(event, {
+        inputItems:[
+            [{item: "modern_industrialization:iron_dust"}],
+            [{item: "modern_industrialization:coal_dust"}]
+        ],
+        outputItems:[
+            [{id:"ytech:iron_bloom"}]
+        ],
+        minTemp: 1250
+    })
+
 })
