@@ -156,4 +156,13 @@ ServerEvents.recipes(event => {
 
     event.remove({type: "map_atlases:crafting_atlas"})
 
+    event.shaped("2x ytech:crafting_workspace", [
+        "QQ ",
+        "WW ",
+        "   "
+    ], {
+        Q: "immersiveengineering:hemp_fiber",
+        W: "minecraft:stick"
+    });
+
 })
