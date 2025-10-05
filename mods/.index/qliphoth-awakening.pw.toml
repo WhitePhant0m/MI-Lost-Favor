@@ -1,4 +1,4 @@
-filename = 'fdbosses-2.0.3-1.21.1.jar'
+filename = 'fdbosses-2.0.4-1.21.1.jar'
 name = 'Qliphoth Awakening'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '161f53d4862b39262a3b1f4382cd1901060ec18b'
+hash = '8f0940d97fb00301a7e120c5828db9ba6c54c4bb'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6985713
+file-id = 7061812
 project-id = 1271707
