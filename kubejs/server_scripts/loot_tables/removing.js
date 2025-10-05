@@ -1,5 +1,5 @@
 LootJS.modifiers(event => {
-
+    // remove from all loot tables
     const removed_items = [
         /artifacts:.*/,
         /ars_additions:.*/,
@@ -50,12 +50,20 @@ LootJS.modifiers(event => {
         'ars_nouveau:ritual_conjure_island_desert', 
         'ars_nouveau:ritual_harvest', 
         'ars_nouveau:ritual_wilden_summon',
+        'minecraft:iron_nugget',
+        'minecraft:gold_nugget',
     ]
 
+    const remove_loot_tables = [
+        "immersiveengineering:chests/engineers_house",
+        "immersiveengineering:gameplay/hero_of_the_village/machinist",
+        "modern_industrialization:gameplay/hero_of_the_village/industrialist_gift",
+        "hexerei:chests/courier_package",
+    ]
 
     removed_items.forEach(item => {
         event
-        .addTableModifier(LootType.CHEST, LootType.ENTITY, LootType.FISHING)
+        .addTableModifier(LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC)
         .removeLoot(item)
     });
 
@@ -68,9 +76,9 @@ LootJS.modifiers(event => {
         event.addTableModifier("immersiveengineering:chests/engineers_house").removeLoot(item)
     })
     */
-    event.addTableModifier("immersiveengineering:chests/engineers_house").removeLoot(Ingredient.all)
-    event.addTableModifier("immersiveengineering:gameplay/hero_of_the_village/machinist").removeLoot(Ingredient.all)
-    event.addTableModifier("modern_industrialization:gameplay/hero_of_the_village/industrialist_gift").removeLoot(Ingredient.all)
+    remove_loot_tables.forEach(table => {
+        event.addTableModifier(table).removeLoot(Ingredient.all)
+    });
 
 
 })
