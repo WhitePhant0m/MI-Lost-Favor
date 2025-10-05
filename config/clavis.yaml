@@ -24,7 +24,8 @@ lootTableMultiplier:
     apotheosis:chests/spawner_valuable: 8.0
 # Minigame type by dimension.
 minigameType:
-    minecraft:dimension: clavis:overworld
+    minecraft:overworld: clavis:gear
+    minecraft:the_end: clavis:mirror
 # Additional value multipliers. Added on top of item value
 modifiers:
     # Added to the total multiplier if the item is equippable in curios or trinkets.
