@@ -480,6 +480,9 @@
 		}
 		{
 			dependencies: ["6A2FCA07586ED280"]
+			icon: {
+				id: "hexerei:dowsing_rod"
+			}
 			id: "746ED760B3D00FBA"
 			shape: "heart"
 			tasks: [{

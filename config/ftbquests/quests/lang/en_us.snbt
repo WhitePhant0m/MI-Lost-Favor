@@ -73,6 +73,11 @@
 		""
 		"Each ritual requires a different set of essences to start."
 	]
+	quest.0274D350ABE3F101.quest_desc: [
+		"Нужен чтобы указывать где пулли может добывать воду"
+		""
+		"Смотрит в низ - даёт больше воды, вверх - меньше. "
+	]
 	quest.02AE8C2723A731E7.quest_desc: [
 		"The acid was already potent. LETS MAKE IT MORE! Now with access to stronger ingredients, I can reformulate the acid oil using toxin. As such, the acid effect has been amplified, making it reduce armor strength even more, while gaining the ability to dissolve diamond level ores."
 		"{@pagebreak}"
@@ -1731,6 +1736,7 @@
 	]
 	quest.7A5F66121C4BCC2B.quest_desc: ["Charges items. That's it"]
 	quest.7AA3CDBC6B160F86.quest_desc: ["Free furnaces"]
+	quest.7BA71EB59BD9BC53.quest_desc: ["если с дрипстоуна капает вода в акведук, в нём генерист я вода"]
 	quest.7C1FCF3A76C6E4DA.quest_desc: [
 		"Those prickly leaves can only be acquired with shears"
 		"{@pagebreak}"
