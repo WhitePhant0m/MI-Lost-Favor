@@ -7,22 +7,22 @@ ServerEvents.recipes(event => {
         event.remove({output : r.originalRecipeResult.id})
     })
 
-    function wiremill_recipe(energy,time,inputs,outputs){
-        energy = energy || 3200
-        var recipe = event.recipes.modern_industrialization.wiremill(energy, time);
-        inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
-        outputs.forEach((out) => {recipe.itemOut(out)})
-    }
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:wiremill",
+        inputItems:[
+            [{item:"minecraft:short_grass"}]
+        ],
+        outputItems:[
+            [{item:"ytech:grass_twine"}]
+        ]
+    })
 
-    wiremill_recipe(2,100,
-        ["minecraft:short_grass"],
-        ["ytech:grass_twine"],
-    )
-
-    wiremill_recipe(2,100,
-        ["minecraft:tall_grass"],
-        ["2x ytech:grass_twine"],
-    )
-
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:wiremill",
+        inputItems:[
+            [{item:"minecraft:tall_grass"}]
+        ],
+        outputItems:[
+            [{item:"ytech:grass_twine"}, 2]
+        ]
+    })
 
 })

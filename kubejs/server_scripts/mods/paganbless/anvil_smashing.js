@@ -1,35 +1,38 @@
+/**
+ * Paganbless anvil smashing recipe
+ *  - `args`:
+ *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item
+ *      - `outputItems` : an array of arrays of the following structure : [{ id : name }, amount], items defaults to 1 item
+ *      - --------
+ *      - `removeRecipe`: self explanatory
+ *      - `compatOff`: doesn't add MI recipe if true
+*/
+const anvilSmashingCraft = (event, args) => {
+    let recipe = {
+        type: "paganbless:anvil_smashing",
+        ingredients: [],
+        result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
+    }
+    args.inputItems.forEach((input) => {recipe.ingredients.push(Object.assign({},input[0], {count:input[1] || 1}))})
+    if(!args.compatOff){
+        miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:packer",
+            inputItems:args.inputItems,
+            outputItems:[[{item:recipe.result.id}, recipe.result.count]]
+        })
+    }
+    if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}
+    event.custom(recipe)
+}
+
+
 ServerEvents.recipes(event => {
 
-    var craft_removal_list = []
-
-    function packer_recipe(energy,time,inputs,outputs,token){
-        var recipe = event.recipes.modern_industrialization.packer(energy, time);
-        inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
-        outputs.forEach((out) => {
-            recipe.itemOut(out)
-        })
-        if (token != undefined){recipe.itemIn(token, 0)}
-    }
-
     function anvil_recipe(inputs, output) {
-        let mi_inputs = []
-        let recipe = {
-            type: "paganbless:anvil_smashing",
-            ingredients: [],
-            result: output[0],
-        }
-        recipe.result.count = output[1] || 1
-        inputs.forEach(input => {
-            let i = input[0]
-            i.count = input[1]
-            recipe.ingredients.push(i);
-            mi_inputs.push(input[1] + "x " + (input[0].tag ? "#" + input[0].tag : input[0].item))
-        });
-        event.custom(recipe);
-        let out = output[0].id || output.id || "#" + output[0].tag || "#" + output.tag
-        craft_removal_list.push(out)
-        out = output[1] + "x " + (output[0].tag ? "#" + output[0].tag : output[0].id)
-        packer_recipe(2,200,mi_inputs,[out])
+        anvilSmashingCraft(event, {
+            inputItems: inputs,
+            outputItems: [output],
+            removeRecipe: true
+        })
     }
 
 
@@ -205,9 +208,5 @@ ServerEvents.recipes(event => {
     );
 
     //#endregion
-
-    event.forEachRecipe({output:craft_removal_list}, r => {
-        event.remove({output: r.getOriginalRecipeResult()})
-    })
 
 })

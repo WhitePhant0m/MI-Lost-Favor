@@ -1,12 +1,23 @@
 ServerEvents.recipes(event => {
 
-    event.recipes.modern_industrialization.mixer(8, 100)
-    .itemIn("#c:plates/aluminum")
-    .itemIn("#c:dusts/aluminum")
-    .itemOut("kubejs:cd")
+    miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{tag:"c:plates/aluminum"}],
+            [{tag:"c:dusts/aluminum"}],
+        ],
+        outputItems:[
+            [{item:"kubejs:cd"}]
+        ]
+    })
 
-    event.recipes.modern_industrialization.mixer(8, 600)
-    .itemIn("#c:dusts/diamond")
-    .itemIn("#c:nuggets/steel", 0)
-    .itemOut("4x modern_industrialization:diamond_tiny_dust")
+    miMachineCraft(event, {energy:8, time:600, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{tag:"c:dusts/diamond"}],
+            [{tag:"c:nuggets/steel"}],
+        ],
+        outputItems:[
+            [{item:"modern_industrialization:diamond_tiny_dust"}, 4]
+        ]
+    })
+    
 })

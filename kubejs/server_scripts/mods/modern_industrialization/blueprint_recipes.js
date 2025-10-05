@@ -1,27 +1,13 @@
 ServerEvents.recipes(event => {
-
-    let craft_removal_list = [
-        "modern_industrialization:steel_rod_magnetic"
-    ]
-
     let mibp = "MI components"
 
     function blueprint_recipe(inputs, output, bpCategory) {
-        let recipe = {
-            type: "immersiveengineering:blueprint",
-            inputs: [],
+        ieBlueprintCraft(event, {
+            inputItems: inputs,
+            outputItems: [[output]],
             category: bpCategory,
-            result: output
-        };
-        inputs.forEach(input => {
-            let i = {
-                basePredicate: input[0],
-                count: input[1]
-            };
-            recipe.inputs.push(i);
-        });
-        event.custom(recipe);
-        craft_removal_list.push(output.item)
+            removeRecipe: true
+        })
     }
 
     blueprint_recipe(
@@ -126,10 +112,5 @@ ServerEvents.recipes(event => {
         { "item": "modern_industrialization:invar_rotary_blade" },
         mibp
     );
-
-    //default recipes removal and adding assembler recipes
-    event.forEachRecipe({output:craft_removal_list}, r => {
-        event.remove({output: r.getOriginalRecipeResult(), type:"minecraft:crafting_shaped"})
-    })
 
 })

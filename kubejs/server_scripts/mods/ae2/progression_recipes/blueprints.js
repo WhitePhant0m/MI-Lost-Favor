@@ -11,26 +11,14 @@ ServerEvents.recipes(event => {
     var tier3token = "kubejs:automation_disk"
     var tier4token = "kubejs:quantum_disk"
 
-    let craft_removal_list = [
-
-    ]
-
     function blueprint_recipe(inputs, output, bpTier) {
-        let recipe = {
-            type: "immersiveengineering:blueprint",
-            inputs: [],
+        ieBlueprintCraft(event, {
+            inputItems: inputs,
+            outputItems: [[output]],
             category: bpTier,
-            result: output
-        };
-        inputs.forEach(input => {
-            let i = {
-                basePredicate: input[0],
-                count: input[1]
-            };
-            recipe.inputs.push(i);
-        });
-        event.custom(recipe);
-        craft_removal_list.push(output.item)
+            removeRecipe: true,
+            compatOff: true
+        })
     }
 
     // #region tier 1
@@ -264,10 +252,5 @@ ServerEvents.recipes(event => {
     );
 
     //#endregion
-
-    //default recipes removal
-    event.forEachRecipe({output:craft_removal_list}, r => {
-        event.remove({output: r.getOriginalRecipeResult()})
-    })
 
 });

@@ -1,27 +1,40 @@
+/**
+ * IE blueprint recipe
+ *  - `args`:
+ *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item
+ *      - `outputItems` : an array of arrays of the following structure : [{ item : name }, amount], items defaults to 1 item
+ *      - `category` : blueprint category
+ *      - --------
+ *      - `removeRecipe`: self explanatory
+ *      - `compatOff`: doesn't add MI recipe if true
+*/
+const ieBlueprintCraft = (event, args) => {
+    let recipe = {
+        type: "immersiveengineering:blueprint",
+        inputs: [],
+        category: args.category,
+        result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
+    }
+    args.inputItems.forEach((input) => {recipe.inputs.push(Object.assign({},{"basePredicate": input[0]}, {count:input[1] || 1}))})
+    if(!args.compatOff){
+        miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
+            inputItems:args.inputItems,
+            outputItems:[[{item:recipe.result.item}, recipe.result.count]]
+        })
+    }
+    if(args.removeRecipe){event.remove({output: args.outputItems[0][0].item})}
+    event.custom(recipe)
+}
+
 ServerEvents.recipes(event => {
 
-    let craft_removal_list = [
-
-    ]
-
-    function blueprint_recipe(inputs, output, bpType) {
-        let recipe = {
-            type: "immersiveengineering:blueprint",
-            inputs: [],
-            category: bpType,
-            result: {
-                basePredicate: output[0] || output,
-                count: output[1] || 1
-            }};
-        inputs.forEach(input => {
-            let i = {
-                basePredicate: input[0],
-                count: input[1]
-            };
-            recipe.inputs.push(i);
-        });
-        event.custom(recipe);
-        craft_removal_list.push(output[0].item || output.item || "#" + output[0].tag || "#" + output.tag)
+    function blueprint_recipe(inputs, output, bpCategory) {
+        ieBlueprintCraft(event, {
+            inputItems: inputs,
+            outputItems: [output],
+            category: bpCategory,
+            removeRecipe: true
+        })
     }
 
 
@@ -57,12 +70,6 @@ ServerEvents.recipes(event => {
         [{ "item": 'immersiveengineering:component_electronic' }, 2],
         "components"
     );
-
-
-    //default recipes removal
-    event.forEachRecipe({output:craft_removal_list}, r => {
-        event.remove({output: r.getOriginalRecipeResult()})
-    })
 
 })
 

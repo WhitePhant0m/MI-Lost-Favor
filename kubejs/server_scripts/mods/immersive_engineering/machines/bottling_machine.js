@@ -1,30 +1,42 @@
+/**
+ * IE bottling machine recipe
+ *  - `args`:
+ *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item (max 3)
+ *      - `outputItems` : an array of arrays of the following structure : [{ item : name }, amount], items defaults to 1 item (max 3)
+ *      - `inputFluids` : an array of arrays of the following structure : [{ fluid : name }, amount], fluid defaults to 1000mb item (max 1)
+ *      - --------
+ *      - `removeRecipe`: self explanatory
+ *      - `compatOff`: doesn't add MI recipe if true
+*/
+const ieBottlingMachineCraft = (event, args) => {
+    let recipe = {
+        type: "immersiveengineering:bottling_machine",
+        inputs: [],
+        results: [],
+        fluid: Object.assign({},args.inputFluids[0][0], {amount: args.inputFluids[0][1] || 1000}),
+    }
+    args.inputItems.forEach((input) => {recipe.inputs.push(Object.assign({},{"basePredicate": input[0]}, {count:input[1] || 1}))})
+    args.outputItems.forEach((out) => {recipe.results.push(Object.assign({},{"basePredicate": out[0]}, {count:out[1] || 1}))})
+    if(!args.compatOff){
+        miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:assembler",
+            inputItems:args.inputItems,
+            outputItems:args.outputItems,
+            inputFluids:args.inputFluids
+        })
+    }
+    if(args.removeRecipe){event.remove({output: args.outputItems[0][0].item})}
+    event.custom(recipe)
+}
+
 ServerEvents.recipes(event => {
 
     function bottling_recipe(inputs, fluid, outputs) {
-        let recipe = {
-            type: "immersiveengineering:bottling_machine",
-            inputs: [],
-            results: []
-        };
-        recipe.fluid = {
-            fluid : fluid[0],
-            amount : fluid[1]
-        }
-        inputs.forEach(input => {
-            let i = {
-                basePredicate: input[0],
-                count: input[1]
-            };
-            recipe.inputs.push(i);
-        });
-        outputs.forEach(output => {
-            let o = {
-                basePredicate: output[0],
-                count: output[1]
-            };
-            recipe.results.push(o);
-        });
-        event.custom(recipe);
+        ieBottlingMachineCraft(event, {
+            inputItems:inputs,
+            outputItems:outputs,
+            inputFluids:[[{fluid:fluid[0]}, fluid[1]]],
+            compatOff:true
+        })
     }
 
     function ae_processor (printedCircuit, output) {
