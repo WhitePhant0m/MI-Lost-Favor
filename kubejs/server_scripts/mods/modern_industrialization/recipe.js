@@ -1,3 +1,53 @@
+/**
+ * any MI machine recipe
+ *  - `args`: everything is optional
+ *      - `energy` : self explanatory, defaults to 8
+ *      - `time` : time in ticks (20 = 1sec), defaults to 100
+ *      - `machine` : mi machine name, defaults to modern_industrialization:chemical_reactor (has all inputs and outputs)
+ *      - `token` : will not be consumed, {item|tag : name}
+ *      - --------
+ *      - `multiplyEnergy`: more items = more energy
+ *      - `removeRecipe`: self explanatory
+ *      - --------
+ *      - `ins/outs` : each one accepts an array of arrays of the following structure : [{ tag|item|fluid : name }, amount, probability], items defaults to 1 item, fluids to 1000mb
+ *          - `inputItems`
+ *          - `outputItems`
+ *          - `inputFluids`
+ *          - `outputFluids`
+
+*/
+
+const miMachineCraft = (event, args) => {
+    const fluidsin = args.inputFluids || [];
+    const fluidsout = args.outputFluids || [];
+    const inputs = args.inputItems || [];
+    const outputs = args.outputItems || [];
+    const energy = args.multiplyEnergy ? args.energy + (inputs.length + fluids.length) * (energy / 4) : args.energy || 8
+    const time = args.time || 100
+
+    let recipe = {
+        "type" : args.machine || "modern_industrialization:chemical_reactor",
+        "eu" : energy,
+        "duration" : time,
+        "item_inputs" : [],
+        "item_outputs" : [],
+        "fluid_inputs" : [],
+        "fluid_outputs" : [],
+
+    }
+
+    inputs.forEach((input) => {recipe.item_inputs.push(Object.assign({}, input[0], {amount:input[1] || 1}, {probability:input[2]}))})
+    outputs.forEach((out) => {recipe.item_outputs.push(Object.assign({}, out[0], {amount:out[1] || 1}, {probability:out[2]}))})
+    fluidsin.forEach((input) => {recipe.fluid_inputs.push(Object.assign({}, input[0], {amount:input[1] || 1000} , {probability:input[2]}))})
+    fluidsout.forEach((out) => {recipe.fluid_outputs.push(Object.assign({}, out[0], {amount:out[1] || 1000}, {probability:out[2]}))})
+
+    if(args.removeRecipe){outputs.forEach((out) => {event.remove({output: out})})}
+    if(args.token){recipe.item_inputs.push(Object.assign({}, args.token, {amount:1}, {probability:0}))}
+    event.custom(recipe)
+};
+
+
+
 ServerEvents.recipes(event => {
     event.remove({
         output: [

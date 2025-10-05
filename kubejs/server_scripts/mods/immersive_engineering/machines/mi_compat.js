@@ -2,7 +2,10 @@ ServerEvents.tags('item', event => {
     var remove = [
         //item outputs that will not be converted
         /.*fine_wire/,
-        "modern_industrialization:diamond_tiny_dust"
+        "modern_industrialization:diamond_tiny_dust",
+        "modern_industrialization:blastproof_alloy_plate",
+        "minecraft:stick",
+        "minecraft:chain",
     ]
 
     remove.forEach(output => {
@@ -12,151 +15,68 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.recipes(event => {
     //macerator to crusher
-    event.remove({ type: 'immersiveengineering:crusher' })
-
     function crusher_mi(ingredients, result, miEnergy){
-
-        let input_type = "item"
-        let output_type = "item"
-        if (ingredients.get("tag") != null) {
-            input_type = "tag"
-        }
-        if (result.get(0).get("tag") != null) {
-            output_type = "tag"
-        }
-
-        var inputs = {}
-        inputs[input_type] = ingredients.get(input_type)
-        var outputs = {}
-        var basep = {}
-        basep[output_type] = result.get(0).get(output_type)
-        outputs.basePredicate = basep
-        outputs.count = result.get(0).get("amount")
-
-        var recipe = {}
-        recipe.type = "immersiveengineering:crusher"
-        recipe.energy = miEnergy
-        recipe.input = inputs
-        recipe.result = outputs
-
-        try{
-            result.get(1)
-            var sec = [{}]
-            var chance_outputs = {}
-            sec[0].chance = result.get(1).get("probability")
-            chance_outputs[output_type] = result.get(1).get(output_type)
-            sec[0].output = chance_outputs
-            recipe.secondaries = sec
-        }
-        catch(error){}
-
-        event.custom(recipe)
+        let output = []
+        result.forEach((out) => output.push([{item: out.item}, out.amount, out.probability]))
+        ieCrusherCraft(event, {
+            inputItems: ingredients.tag ? [[{tag:ingredients.tag}, ingredients.amount]] : [[{item:ingredients.item}, ingredients.amount]],
+            outputItems: output,
+            energy: miEnergy,
+            compatOff: true,
+        })
+        event.remove({ type: 'immersiveengineering:crusher', output:result[0].item})
 
     }
 
     event.forEachRecipe({ type: 'modern_industrialization:macerator', not : {output: "#kubejs:nocompat"}}, r => {
-        try{
-            let ingredients = r.json.get("item_inputs").get(0)
-            let outputs = r.json.get("item_outputs")
-            let energy = r.json.get("duration") * r.json.get("eu")
-            crusher_mi(ingredients, outputs, energy)
-        }
-        catch(error){}
-
+        const rjson = JSON.parse(r.json)
+        if(!Array.isArray(rjson.item_inputs)){rjson.item_inputs = [rjson.item_inputs]}
+        if(!Array.isArray(rjson.item_outputs)){rjson.item_outputs = [rjson.item_outputs]}
+        crusher_mi((rjson.item_inputs)[0], rjson.item_outputs, rjson.duration * rjson.eu)
     })
 
 
-    //press
+    //#region press
     function press_mi(ingredients, result, mold, miEnergy){
-        let input_type = "item"
-        let output_type = "item"
-        if (ingredients.get("tag") != null) {
-            input_type = "tag"
-        }
-        if (result.get("tag") != null) {
-            output_type = "tag"
-        }
-
-        var inputs = {}
-        var base_predicate_input = {}
-        base_predicate_input[input_type] = ingredients.get(input_type)
-        inputs.basePredicate = base_predicate_input
-        inputs.count = ingredients.get("amount")
-        var outputs = {}
-        var base_predicate_output = {}
-        base_predicate_output[output_type] = result.get(output_type)
-        outputs.basePredicate = base_predicate_output
-        outputs.count = result.get("amount")
-
-        var recipe = {}
-        recipe.type = "immersiveengineering:metal_press"
-        recipe.energy = miEnergy
-        recipe.mold = mold
-        recipe.input = inputs
-        recipe.result = outputs
-
-        event.custom(recipe)
-
+        iePressCraft(event, {
+            inputItems: ingredients.tag ? [[{tag:ingredients.tag}, ingredients.amount]] : [[{item:ingredients.item}, ingredients.amount]],
+            outputItems: [[{id:result.item}, result.amount]],
+            mold: {item : mold},
+            energy: miEnergy,
+            compatOff: true,
+        })
+        event.remove({ type: 'immersiveengineering:metal_press', output:result.item})
     }
 
-    //rods
-    event.forEachRecipe({ type: 'modern_industrialization:cutting_machine', not : {output: "#kubejs:nocompat"}, output:"#c:rods"}, r => {
-        try{
-            let ingredients = r.json.get("item_inputs").get(0)
-            let outputs = r.json.get("item_outputs").get(0)
-            let energy = r.json.get("duration") * r.json.get("eu")
-            press_mi(ingredients,outputs,'immersiveengineering:mold_rod',energy)
-        }
-        catch(error){}
-    })
     //plates
     event.forEachRecipe({ type: 'modern_industrialization:compressor', not : {output: "#kubejs:nocompat"}, output:"#c:plates"}, r => {
-        try{
-            let ingredients = r.json.get("item_inputs").get(0)
-            let outputs = r.json.get("item_outputs").get(0)
-            let energy = r.json.get("duration") * r.json.get("eu")
-            press_mi(ingredients,outputs,'immersiveengineering:mold_plate',energy)
-        }
-        catch(error){}
+        const rjson = JSON.parse(r.json)
+        press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_plate', (rjson.duration * rjson.eu))
     })
+    
+    //rods
+    event.forEachRecipe({ type: 'modern_industrialization:cutting_machine', not : {output: "#kubejs:nocompat"}, output:"#c:rods"}, r => {
+        const rjson = JSON.parse(r.json)
+        press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_rod', (rjson.duration * rjson.eu))
+    })
+
     //wires
     event.forEachRecipe({ type: 'modern_industrialization:wiremill', not : {output: "#kubejs:nocompat"}, output:"#c:wires"}, r => {
-        try{
-            let ingredients = r.json.get("item_inputs").get(0)
-            let outputs = r.json.get("item_outputs").get(0)
-            let energy = r.json.get("duration") * r.json.get("eu")
-            press_mi(ingredients,outputs,'immersiveengineering:mold_wire',energy)
-        }
-        catch(error){}
+        const rjson = JSON.parse(r.json)
+        press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_wire', (rjson.duration * rjson.eu))
     })
     //unpacker
     event.forEachRecipe({ type: 'modern_industrialization:unpacker', not : {output: "#kubejs:nocompat"}, output:["#c:ingots","#c:nuggets","#c:tiny_dusts"]}, r => {
-        try{
-            let ingredients = r.json.get("item_inputs").get(0)
-            let outputs = r.json.get("item_outputs").get(0)
-            let energy = r.json.get("duration") * r.json.get("eu")
-            press_mi(ingredients,outputs,'immersiveengineering:mold_unpacking',energy)
-        }
-        catch(error){}
+        const rjson = JSON.parse(r.json)
+        press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_unpacking', (rjson.duration * rjson.eu))
     })
-    //packer(blocks)
+    //packer
     event.forEachRecipe({ type: 'modern_industrialization:packer', not : {output: "#kubejs:nocompat"}}, r => {
-        try{
-            let ingredients = r.json.get("item_inputs").get(0)
-            let outputs = r.json.get("item_outputs").get(0)
-            let energy = r.json.get("duration") * r.json.get("eu")
-            if (ingredients.get("amount") == 9){
-                press_mi(ingredients,outputs,'immersiveengineering:mold_packing_9',energy)
-            }
-            else if (ingredients.get("amount") == 4){
-                try{
-                    r.json.get("item_inputs").get(1)
-                }
-                catch(error){
-                press_mi(ingredients,outputs,'immersiveengineering:mold_packing_4',energy)
-                }
-            }
-        }
-        catch(error){}
+        const rjson = JSON.parse(r.json)
+        if(!Array.isArray(rjson.item_inputs)){rjson.item_inputs = [rjson.item_inputs]}
+        if(!Array.isArray(rjson.item_outputs)){rjson.item_outputs = [rjson.item_outputs]}
+        if(rjson.item_inputs[0].amount == 9){press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_packing_9', (rjson.duration * rjson.eu))}
+        else if(!(rjson.item_inputs)[1]){press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_packing_4', (rjson.duration * rjson.eu))}
     })    
+    //#endregion
 })

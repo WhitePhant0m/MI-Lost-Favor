@@ -1,26 +1,55 @@
+/**
+ * Ytech alloying recipe
+ *  - `args`:
+ *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item
+ *      - `outputItems` : an array of arrays of the following structure : [{ id : name }, amount], items defaults to 1 item
+ *      - `minTemp` : defaults to 1000
+ *      - `smeltingTime` : defaults to 200
+ *      - --------
+ *      - `removeRecipe`: self explanatory
+ *      - `compatOff`: doesn't add MI recipe if true
+*/
+const ytechAlloyingCraft = (event, args) => {
+    let recipe = {
+        type: "ytech:alloying",
+        minTemp: args.minTemp || 1000,
+        smeltingTime: args.smeltingTime || 200,
+        ingredient1: {ingredient:args.inputItems[0][0], count:args.inputItems[0][1] || 1},
+        ingredient2: {ingredient:args.inputItems[1][0], count:args.inputItems[1][1] || 1},
+        result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
+    }
+    if(!args.compatOff){
+        miMachineCraft(event, {energy:4, time:200, machine:"extended_industrialization:alloy_smelter",
+            inputItems:args.inputItems,
+            outputItems:[[{item:recipe.result.id}, recipe.result.count]]
+        })
+    }
+    if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}
+    event.custom(recipe)
+}
+
 ServerEvents.recipes(event => {
 
-    function alloying_recipe(input1,input2,output,temp,time){
-        let recipe =
-            {
-                "type": "ytech:alloying",
-                "minTemp" : temp || 1250,
-                "smeltingTime": time || 200,
-                "result" : output[0],
-                "ingredient1" : {},
-                "ingredient2" : {}
+    ytechAlloyingCraft(event, {
+        inputItems:[
+            [{tag: "c:sands"}],
+            [{tag: "c:dusts/bronze"}]
+        ],
+        outputItems:[
+            [{id:"kubejs:bronze_glass"},2]
+        ],
+        minTemp: 1000
+    })
 
-            }
-        recipe.ingredient1.ingredient = input1[0]
-        recipe.ingredient1.count = input1[1]
-        recipe.ingredient2.ingredient = input2[0]
-        recipe.ingredient2.count = input2[1]
-
-        recipe.result.count = output[1]
-        event.custom(recipe)
-    }
-
-    alloying_recipe([{tag: "c:sands"},1],[{tag: "c:dusts/bronze"},1],[{id:"kubejs:bronze_glass"},2], 1000)
-    alloying_recipe([{tag: "c:cobblestones"},1],[{item: "ytech:pebble"},1],[{id:"minecraft:stone"},1], 800)
+    ytechAlloyingCraft(event, {
+        inputItems:[
+            [{tag: "c:cobblestones"}],
+            [{item: "ytech:pebble"}]
+        ],
+        outputItems:[
+            [{id:"minecraft:stone"}]
+        ],
+        minTemp: 800
+    })
 
 })

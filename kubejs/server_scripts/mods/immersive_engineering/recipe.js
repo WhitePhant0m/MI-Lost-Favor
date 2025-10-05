@@ -46,6 +46,8 @@ ServerEvents.recipes(event => {
         "immersiveengineering:arcfurnace/ore_uranium",
         "immersiveengineering:arcfurnace/raw_block_uranium",
         "immersiveengineering:arcfurnace/raw_ore_uranium",
+        "immersiveengineering:crusher/ore_quartz",
+        "immersiveengineering:crusher/ore_lapis",
     ]
 
     removing_by_recipe_id.forEach(id => {
