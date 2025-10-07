@@ -1,15 +1,15 @@
 /**
  * any MI machine recipe
  *  - `args`: everything is optional
- *      - `energy` : self explanatory, defaults to 8
+ *      - `energy` : energy|steam consumption/tick, defaults to 8; allowed machine tier depends on this `1-3` : bronze tier; `4-7` : steel tier; `8+` electric tier
  *      - `time` : time in ticks (20 = 1sec), defaults to 100
- *      - `machine` : mi machine name, defaults to modern_industrialization:chemical_reactor (has all inputs and outputs)
- *      - `token` : will not be consumed, {item|tag : name}
+ *      - `machine` : String - mi machine name, defaults to "modern_industrialization:chemical_reactor" (has all inputs and outputs)
+ *      - `token` : item that will not be consumed upon craft, {item|tag : name}
  *      - --------
- *      - `multiplyEnergy`: more items = more energy
- *      - `removeRecipe`: self explanatory
+ *      - `multiplyEnergy`: Boolean - (more items = more energy) if true: energy = energy + (inputs.length + fluids.length) * (energy / 4)
+ *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - --------
- *      - `ins/outs` : each one accepts an array of arrays of the following structure : [{ tag|item|fluid : name }, amount, probability], items defaults to 1 item, fluids to 1000mb
+ *      - `ins/outs` : Arrays - each element looks like this : [{ tag|item|fluid : name }, amount, probability], amount defaults to 1 for items and 1000 for fluids if not specified
  *          - `inputItems`
  *          - `outputItems`
  *          - `inputFluids`

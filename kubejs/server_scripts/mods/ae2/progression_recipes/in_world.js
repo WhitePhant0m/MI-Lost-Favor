@@ -1,12 +1,12 @@
 /**
  * AE in world fluid recipe
  *  - `args`:
- *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item
- *      - `outputItems` : an array of arrays of the following structure : [{ id : name }, amount], items defaults to 1 item (max 1)
- *      - `inputFluids` : an array of arrays of the following structure : [{ fluid : name }, amount], fluid defaults to 1000mb item (max 1)
+ *      - `inputItems` : Array (max ? elements) - each element looks like this : [{ tag|item : name }, amount], amount defaults to 1 if not specified
+ *      - `outputItems` : Array (max 1 elements) - each element looks like this : [{ id : name }, amount], amount defaults to 1 if not specified
+ *      - `inputFluids` : Array (max 1 elements) - each element looks like this : [{ fluid : name }]
  *      - --------
- *      - `removeRecipe`: self explanatory
- *      - `compatOff`: doesn't add MI and IE recipes if true (mixer)
+ *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
+ *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
 const aeInWorldRecipe = (event, args) => {
     let recipe = {

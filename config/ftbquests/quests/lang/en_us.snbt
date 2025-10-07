@@ -559,10 +559,6 @@
 		"Вы можете генерировать глину используя грязь и Жидкие кристаллы"
 	]
 	quest.235EC6F66B8527EE.quest_subtitle: "müd"
-	quest.236748177AF3DD3A.quest_desc: [
-		"Any leashable mob will work for this."
-		"You can install a \"SPEED UPGRADE\" to accelerate the milling. The upgrade is a speed potion."
-	]
 	quest.23D1FD73CC570350.quest_desc: [
 		"Used to store and transfer ink. The two ink containers equalize the amount of ink in them, so you can only really transfer half."
 		"{@pagebreak}"
@@ -1354,6 +1350,9 @@
 		"To power it, leash a mob to it."
 		""
 		"Some items can be processed more efficiently here, than by hand."
+		""
+		"Any leashable mob will work for this."
+		"You can install a \"SPEED UPGRADE\" to accelerate the milling. The upgrade is a speed potion."
 	]
 	quest.5F3B3C006860B496.quest_desc: ["Attracts items when powered"]
 	quest.5F750B9378BA292B.quest_desc: [""]
@@ -1790,7 +1789,6 @@
 	task.1733FF25C74D58C6.title: "Any #sophisticatedstorage:all_storage"
 	task.175E331625D7D0E8.title: "Any #milf:crest_base_blocks"
 	task.17EBE6D06902A269.title: "Any #milf:basic_gemstone_shards"
-	task.18A107EB956BD154.title: "Any #ytech:aqueducts"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
 	task.1DB3762470DC4D9D.title: "Any #milf:chiseled_base_blocks"
 	task.1FC975DB259AA8A8.title: "Any #milf:gemstone_lamp"

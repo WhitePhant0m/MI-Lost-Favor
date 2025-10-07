@@ -1,12 +1,12 @@
 /**
  * IE bottling machine recipe
  *  - `args`:
- *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item (max 3)
- *      - `outputItems` : an array of arrays of the following structure : [{ item : name }, amount], items defaults to 1 item (max 3)
- *      - `inputFluids` : an array of arrays of the following structure : [{ fluid : name }, amount], fluid defaults to 1000mb item (max 1)
+ *      - `inputItems` : Array (max 3 elements) - each element looks like this : [{ tag|item : name }, amount], amount defaults to 1 if not specified
+ *      - `outputItems` : Array (max 3 elements) - each element looks like this : [{ item : name }, amount], amount defaults to 1 if not specified
+ *      - `inputFluids` : Array (max 1 elements) - each element looks like this : [{ fluid : name }, amount], amount defaults to 1000 if not specified
  *      - --------
- *      - `removeRecipe`: self explanatory
- *      - `compatOff`: doesn't add MI recipe if true
+ *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
+ *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
 const ieBottlingMachineCraft = (event, args) => {
     let recipe = {
@@ -24,7 +24,7 @@ const ieBottlingMachineCraft = (event, args) => {
             inputFluids:args.inputFluids
         })
     }
-    if(args.removeRecipe){event.remove({output: args.outputItems[0][0].item})}
+    if(args.removeRecipe){args.outputItems.forEach((out) => event.remove({output: out[0].item}))}
     event.custom(recipe)
 }
 

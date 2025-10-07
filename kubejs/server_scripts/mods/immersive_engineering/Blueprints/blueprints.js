@@ -5,8 +5,8 @@
  *      - `outputItems` : an array of arrays of the following structure : [{ item : name }, amount], items defaults to 1 item
  *      - `category` : blueprint category
  *      - --------
- *      - `removeRecipe`: self explanatory
- *      - `compatOff`: doesn't add MI recipe if true
+ *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
+ *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
 const ieBlueprintCraft = (event, args) => {
     let recipe = {

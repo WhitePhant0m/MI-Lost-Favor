@@ -4,12 +4,12 @@
  *      - `energy` : self explanatory, defaults to 102400
  *      - `time` : time in ticks (20 = 1sec), defaults to 200
  *      - --------
- *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], defaults to 1 item
- *      - `outputItems` : an array of arrays of the following structure : [{ item : name }, amount, chance], defaults to 1 item
+ *      - `inputItems` : Array (max 5 elements) - each element looks like this : [{ tag|item : name }, amount], amount defaults to 1 if not specified
+ *      - `outputItems` : Array (max ? elements) - each element looks like this : [{ item : name }, amount], amount defaults to 1 if not specified
  *      - `slag` : true(1 slag) or an array of arrays of the following structure : [{ tag|item : name }, amount], defaults to 1 item 
  *      - --------
- *      - `removeRecipe`: self explanatory
- *      - `compatOff`: doesn't add MI recipe if true (blast_furnace)
+ *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
+ *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
 const ieArcFurnaceCraft = (event, args) => {
     let recipe = {

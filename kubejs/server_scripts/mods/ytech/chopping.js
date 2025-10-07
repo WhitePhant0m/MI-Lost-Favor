@@ -1,13 +1,13 @@
 /**
  * Ytech chopping recipe
  *  - `args`:
- *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }], (max 1)
- *      - `outputItems` : an array of arrays of the following structure : [{ id : name }, amount], items defaults to 1 item (max 1)
+ *      - `inputItems` : Array (max 1 elements) - each element looks like this : [{ tag|item : name }, amount], amount defaults to 1 if not specified
+ *      - `outputItems` : Array (max 1 elements) - each element looks like this : [{ id : name }, amount], amount defaults to 1 if not specified
  *      - `hitCount` : defaults to 3
  *      - `tool` : {item|tag : name}, defaults to {tag : "minecraft:axes"}
  *      - --------
- *      - `removeRecipe`: self explanatory
- *      - `compatOff`: doesn't add MI recipe if true
+ *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
+ *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
 const ytechChoppingCraft = (event, args) => {
     let recipe = {

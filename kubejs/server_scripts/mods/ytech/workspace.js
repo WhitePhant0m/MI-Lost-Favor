@@ -719,6 +719,8 @@ ServerEvents.recipes(event => {
         'hexerei:pestle_and_mortar', {} , "ytech:sharp_flint", true
     )
 
+    //#region YTech
+
     workspace_recipe([
             ['   ','   ','   '],
             ['   ','   ','   '].layerSides("P").layerCorners("S"),
@@ -781,6 +783,16 @@ ServerEvents.recipes(event => {
         {P:'minecraft:brick', F:"modern_industrialization:fire_clay_brick"},
         'ytech:reinforced_brick_chimney', {} , "#c:hammers", true
     )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("B").layerCentre("s").layerLeft("s").layerRight("s"),
+            ['   ','   ','   '].layerAll("S").layerBack("B").layerFront("B").layerCentre("A"),
+            ['   ','   ','   '].layerAll("B").layerCentre("s").layerLeft("s").layerRight("s")
+        ],
+        {B:'ytech:terracotta_bricks', A:"ytech:terracotta_aqueduct", S:"minecraft:stick", s:"ytech:terracotta_brick_slab"},
+        'ytech:aqueduct_valve', {} , "#c:hammers", true
+    )
+    //#endregion
 
     //#endregion
 

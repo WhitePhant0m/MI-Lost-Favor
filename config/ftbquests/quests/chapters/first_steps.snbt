@@ -253,6 +253,7 @@
 		{
 			dependencies: ["6E680C846961BFE3"]
 			id: "6823D5F00B44B271"
+			shape: "rsquare"
 			tasks: [{
 				id: "51ECCCD970B05A9C"
 				item: { count: 1, id: "ytech:brick_mold" }
@@ -264,6 +265,7 @@
 		{
 			dependencies: ["6823D5F00B44B271"]
 			id: "4085CB643DA032AF"
+			shape: "rsquare"
 			tasks: [{
 				count: 64L
 				id: "21C00B24B2880F30"
@@ -291,6 +293,7 @@
 		{
 			dependencies: ["315C6C30D4EFB4FB"]
 			id: "16E9CEC9B10725B7"
+			shape: "rsquare"
 			tasks: [{
 				id: "47B88E7DC5BDF56B"
 				item: { count: 1, id: "minecraft:furnace" }
@@ -818,6 +821,7 @@
 		{
 			dependencies: ["6E680C846961BFE3"]
 			id: "315C6C30D4EFB4FB"
+			shape: "rsquare"
 			tasks: [{
 				id: "64F69434BCF644C0"
 				item: { count: 1, id: "ytech:stone_hammer" }
@@ -832,11 +836,6 @@
 			shape: "diamond"
 			tasks: [
 				{
-					id: "17AE253FD7763E88"
-					item: { count: 1, id: "ytech:aqueduct_valve" }
-					type: "item"
-				}
-				{
 					id: "1ADA092396EF1F7A"
 					item: { count: 1, id: "ytech:aqueduct_hydrator" }
 					optional_task: true
@@ -846,11 +845,6 @@
 					id: "64AEF8180FB0AAFD"
 					item: { count: 1, id: "ytech:aqueduct_fertilizer" }
 					optional_task: true
-					type: "item"
-				}
-				{
-					id: "18A107EB956BD154"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ytech:aqueducts)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
@@ -881,8 +875,8 @@
 				item: { count: 1, id: "ytech:millstone" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 14.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4692844BA629A00B"]
@@ -931,16 +925,6 @@
 			}]
 			x: 4.0d
 			y: -3.5d
-		}
-		{
-			dependencies: ["5F151FBC5A68433F"]
-			id: "236748177AF3DD3A"
-			tasks: [{
-				id: "03FD4CFDF4EBC8D0"
-				type: "checkmark"
-			}]
-			x: 13.0d
-			y: -1.0d
 		}
 		{
 			dependencies: ["410F856A333A2FDF"]
@@ -1009,19 +993,16 @@
 			y: -8.0d
 		}
 		{
-			dependencies: [
-				"183336DC1AF8137B"
-				"31441E8DBE4B60D2"
-			]
+			dependencies: ["0ACD0476CE4CAED1"]
 			id: "552B1FFCECBD0652"
-			shape: "diamond"
+			shape: "circle"
 			tasks: [{
 				id: "6D2D1E62929B7E6D"
 				item: { count: 1, id: "ytech:well_pulley" }
 				type: "item"
 			}]
-			x: 20.0d
-			y: 2.5d
+			x: 8.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["19F4ECE3B256B396"]
@@ -1123,8 +1104,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 20.5d
-			y: 3.0d
+			x: 20.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["286CADEC3AB44CCE"]
@@ -1177,7 +1158,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["4A0DF37960C686FF"]
+			dependencies: ["4F564B5D36BE6DE8"]
 			id: "596449EE3EC10493"
 			tasks: [{
 				count: 8L
@@ -1185,7 +1166,7 @@
 				item: { count: 1, id: "minecraft:smooth_stone" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -1220,7 +1201,7 @@
 				item: { count: 1, id: "ceramicshears:ceramic_shears" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 0.0d
 		}
 		{
@@ -1232,7 +1213,7 @@
 				item: { count: 1, id: "minecraft:honeycomb" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -1244,7 +1225,7 @@
 				item: { count: 1, id: "ytech:beeswax" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -1256,7 +1237,7 @@
 				item: { count: 1, id: "ytech:axe_head_pattern" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: 1.0d
 		}
 		{
@@ -1268,7 +1249,7 @@
 				item: { count: 1, id: "ytech:pickaxe_head_pattern" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.0d
 			y: -1.5d
 		}
 		{
@@ -1280,7 +1261,7 @@
 				item: { count: 1, id: "ytech:hammer_head_pattern" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 1.0d
 			y: 1.5d
 		}
 		{
@@ -1292,7 +1273,7 @@
 				item: { count: 1, id: "ytech:sword_blade_pattern" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.5d
 			y: -1.0d
 		}
 		{
@@ -1658,19 +1639,19 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["552B1FFCECBD0652"]
 			id: "0274D350ABE3F101"
-			shape: "diamond"
+			shape: "heart"
 			tasks: [{
 				id: "4228CEFAF697E8BB"
 				item: { count: 1, id: "ytech:divining_rod" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 3.0d
+			x: 8.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["31441E8DBE4B60D2"]
@@ -1681,8 +1662,121 @@
 				item: { count: 1, id: "minecraft:pointed_dripstone" }
 				type: "item"
 			}]
-			x: 21.5d
+			x: 20.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["0194B16954142DC5"]
+			id: "7A4BF1F1B52D40F0"
+			shape: "rsquare"
+			tasks: [{
+				id: "2527F02B29EE901F"
+				item: { count: 1, id: "ytech:clay_bucket" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A4BF1F1B52D40F0"]
+			id: "720D418D6EC0EF49"
+			tasks: [{
+				id: "775EFC51020710BF"
+				item: { count: 1, id: "minecraft:packed_mud" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["720D418D6EC0EF49"]
+			id: "329A91823FE78F96"
+			tasks: [{
+				id: "7E33510D52017672"
+				item: { count: 1, id: "ytech:mudbrick_aqueduct" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["315C6C30D4EFB4FB"]
+			id: "2EEEC6F9C1EDBCB0"
+			shape: "circle"
+			tasks: [{
+				id: "531CED2BF5C25304"
+				item: { count: 1, id: "ytech:terracotta_aqueduct" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7A4BF1F1B52D40F0"]
+			id: "601FA84B53876508"
+			tasks: [{
+				id: "3649EF5594EEE18E"
+				item: { count: 1, id: "ytech:bread_dough" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["601FA84B53876508"]
+			id: "66363BB694CCAAC7"
+			tasks: [{
+				id: "14D13415071EEF6F"
+				item: { count: 1, id: "minecraft:bread" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2EEEC6F9C1EDBCB0"]
+			id: "0ACD0476CE4CAED1"
+			shape: "circle"
+			tasks: [{
+				id: "5102040796ED0872"
+				item: { count: 1, id: "ytech:aqueduct_valve" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0D3A5D8E30D4F371"]
+			id: "391002DBCA6CE6D1"
+			tasks: [{
+				id: "1EFF937D1AC64D31"
+				item: { count: 1, id: "ytech:stone_aqueduct" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A0DF37960C686FF"]
+			id: "4F564B5D36BE6DE8"
+			tasks: [{
+				id: "61702874102828A9"
+				item: { count: 1, id: "minecraft:stone" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F564B5D36BE6DE8"]
+			id: "0D3A5D8E30D4F371"
+			tasks: [{
+				id: "31F7D928A4EFF39D"
+				item: { count: 1, id: "minecraft:stone_bricks" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.0d
 		}
 	]
 }

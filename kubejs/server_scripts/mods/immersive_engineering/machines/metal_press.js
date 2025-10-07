@@ -1,13 +1,13 @@
 /**
  * IE metal press recipe
  *  - `args`:
- *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item
- *      - `outputItems` : an array of arrays of the following structure : [{ id : name }, amount], items defaults to 1 item
- *      - `mold` : mold {item: name}
+ *      - `inputItems` : Array (max 1 elements) - each element looks like this : [{ tag|item : name }, amount], amount defaults to 1 if not specified
+ *      - `outputItems` : Array (max 1 elements) - each element looks like this : [{ id : name }, amount], amount defaults to 1 if not specified
+ *      - `mold` : mold - {item: name}
  *      - `energy` : energy, defaults to 3200
  *      - --------
- *      - `removeRecipe`: self explanatory
- *      - `compatOff`: doesn't add MI recipe if true (machine type depends on the mold used)
+ *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
+ *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
 const iePressCraft = (event, args) => {
     let recipe = {

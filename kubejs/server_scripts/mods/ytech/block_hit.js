@@ -1,12 +1,12 @@
 /**
  * Ytech block hit recipe
  *  - `args`:
- *      - `inputItems` : an array of arrays of the following structure : [{ tag|item : name }, amount], items defaults to 1 item
- *      - `outputItems` : an array of arrays of the following structure : [{ id : name }, amount], items defaults to 1 item
- *      - `block` : {item|tag : name} defaults to {tag : "c:stones"}
+ *      - `inputItems` : Array (max 1 elements) - each element looks like this : [{ tag|item : name }, amount], amount defaults to 1 if not specified
+ *      - `outputItems` : Array (max 1 elements) - each element looks like this : [{ id : name }, amount], amount defaults to 1 if not specified
+ *      - `block` : {item|tag : name}, defaults to {tag : "c:stones"}
  *      - --------
- *      - `removeRecipe`: self explanatory
- *      - `compatOff`: doesn't add MI and IE recipes if true (unpacker and metal_press)
+ *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
+ *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
 const ytechBlockHitCraft = (event, args) => {
     let recipe = {
