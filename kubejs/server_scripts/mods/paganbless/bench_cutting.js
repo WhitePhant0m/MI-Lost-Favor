@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     }
 
 bench_cutting( 
-    [{ "tag": "minecraft:logs" }, 1],
+    [{ "tag": "minecraft:planks" }, 1],
     [{ "id": 'minecraft:stick' }, 3],
     {"tag": "minecraft:axes"}, 7, true
 )

@@ -43,4 +43,25 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    ytechChoppingCraft(event,{
+        inputItems:[[{item: "ytech:terracotta_bricks"}]],
+        outputItems:[[{id:"ytech:terracotta_aqueduct"}]],
+        tool: {tag : "c:hammers"},
+        removeRecipe:true
+    })
+
+    ytechChoppingCraft(event,{
+        inputItems:[[{item: "minecraft:mud_bricks"}]],
+        outputItems:[[{id:"ytech:mudbrick_aqueduct"}]],
+        tool: {tag : "c:hammers"},
+        removeRecipe:true
+    })
+
+    ytechChoppingCraft(event,{
+        inputItems:[[{item: "minecraft:stone_bricks"}]],
+        outputItems:[[{id:"ytech:stone_aqueduct"}]],
+        tool: {tag : "c:hammers"},
+        removeRecipe:true
+    })
+
 })
