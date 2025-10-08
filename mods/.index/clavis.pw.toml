@@ -1,4 +1,4 @@
-filename = 'Clavis-NEOFORGE-0.2.0+1.21.1.jar'
+filename = 'Clavis-NEOFORGE-0.2.2+1.21.1.jar'
 name = 'Clavis'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '2fd7921f5a6a51778c7a9eb4b0ee0fa7a74ff6d9'
+hash = '528f5de7ed76319ce2cbc500383fed21f533408a'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7020894
+file-id = 7074673
 project-id = 1296431

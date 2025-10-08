@@ -1,4 +1,4 @@
-filename = 'animal_pen-neoforge-1.21-1.6.0.jar'
+filename = 'animal_pen-neoforge-1.21-1.6.1.jar'
 name = 'Animal Pen'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '3b49f93457d5d71d922f5f381c6e66e11a00b213'
+hash = 'e5c9d45ed24fb659a5ce177294ed277698f47241'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7020000
+file-id = 7077757
 project-id = 1206722

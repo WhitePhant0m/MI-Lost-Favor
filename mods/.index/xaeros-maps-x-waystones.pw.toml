@@ -1,4 +1,4 @@
-filename = 'xaeromaps_waystones-1.0.3.jar'
+filename = 'xaeromaps_waystones-1.0.4.jar'
 name = "Xaero's Maps x Waystones"
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '62312c49a750d74158a41230bc7ee3dcda140123'
+hash = '3fd217978096cd6167fdf5b232acd2c82698e8fc'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7031226
+file-id = 7082973
 project-id = 1340197
