@@ -5,6 +5,7 @@
 	chapter.0EF0C5F1BD4103BF.title: "paganbless"
 	chapter.126830F3CB1F8DDD.title: "aluminum"
 	chapter.1DE9AF77B4D50480.title: "First steps"
+	chapter.231570DE6A7FCD52.title: "Traveling"
 	chapter.293EE18185540114.title: "Forbidden Arcanus"
 	chapter.2B3E5D6E8B56E8BB.title: "Ars NOJDGIODHFIOSBV"
 	chapter.2E7EECD4E8CF01EA.title: "Spectrum"
@@ -1128,6 +1129,7 @@
 		""
 		"Вокруг 3х3 камня будет превщарать камень в магму а потом в лаву "
 	]
+	quest.490D92E237AFBA82.quest_desc: ["с смесью получается торч который ускоряет рост растений"]
 	quest.4932A126EA1016F2.quest_desc: [
 		"To use the &5device&r, I simply hold it in my &ohand&r (or as a &lcharm&r on my person) and what will appear is a gauge that displays &euseful information&r about my bodies chemical composition. The &atoxicity&r gauge examines 3 important parts of my body. The &atoxins&r, my &ctolerance&r, and the &9thresholds&r I can reach!"
 		""
