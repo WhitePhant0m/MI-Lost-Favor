@@ -43,7 +43,7 @@ modifiers:
 qualityPenaltyPerHit: 0.2
 # Starting quality of a minigame.
 startingQuality: # 0.0 - 10.0
-    3.0
+    2.0
 # Determines whether or not losing the minigame unlocks the lock.
 unlocksAfterLosing: false
 # Clamps the difficulty to this value.
