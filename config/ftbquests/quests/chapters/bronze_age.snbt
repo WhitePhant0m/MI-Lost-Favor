@@ -1383,14 +1383,29 @@
 		{
 			dependencies: ["2B815502453269AF"]
 			dependency_requirement: "one_completed"
+			icon: {
+				id: "kubejs:steel_machine_bit"
+			}
 			id: "65DB2546A83972B8"
 			shape: "square"
 			size: 2.0d
-			tasks: [{
-				id: "17139F795F5201F7"
-				item: { count: 1, id: "kubejs:steel_machine_bit" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "17139F795F5201F7"
+					item: { count: 1, id: "kubejs:steel_machine_bit" }
+					type: "item"
+				}
+				{
+					id: "3F01535F6347CFA5"
+					item: { count: 1, id: "kubejs:small_steel_fluid_container" }
+					type: "item"
+				}
+				{
+					id: "28CA8FE75D300503"
+					item: { count: 1, id: "kubejs:steel_infused_glass" }
+					type: "item"
+				}
+			]
 			x: 9.5d
 			y: 3.0d
 		}
@@ -1603,10 +1618,7 @@
 			y: 16.5d
 		}
 		{
-			dependencies: [
-				"18173B817094E01A"
-				"4BFF5552EAD705B0"
-			]
+			dependencies: ["18173B817094E01A"]
 			id: "391F74795C3E2495"
 			tasks: [{
 				id: "67336DC48065D8D6"
@@ -1677,10 +1689,7 @@
 			y: 13.5d
 		}
 		{
-			dependencies: [
-				"7D9C31E5FE076F2C"
-				"6CA54239AFF1C9F6"
-			]
+			dependencies: ["7D9C31E5FE076F2C"]
 			hide_dependency_lines: true
 			id: "5842F95522AD1864"
 			tasks: [{
@@ -3037,7 +3046,10 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["7544F7FEAB3451BD"]
+			dependencies: [
+				"7544F7FEAB3451BD"
+				"0BCD76587F2DB00F"
+			]
 			hide_dependency_lines: true
 			id: "6852D3C3660C9385"
 			shape: "diamond"

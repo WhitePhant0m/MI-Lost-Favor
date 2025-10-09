@@ -9,17 +9,6 @@
 	quests: [
 		{
 			dependencies: ["3ACEAB25342B053C"]
-			id: "315C69C3AB743AD5"
-			tasks: [{
-				id: "4EA979AEC192E464"
-				item: { count: 1, id: "mechtrowel:mech_trowel" }
-				type: "item"
-			}]
-			x: -12.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
 			id: "47D368E38E50F477"
 			tasks: [{
 				id: "18D39897424A8A0C"
@@ -80,24 +69,6 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "09035004F4A9D2B9"
-			tasks: [
-				{
-					id: "1766CE7B5026CCD8"
-					item: { count: 1, id: "toolbelt:belt" }
-					type: "item"
-				}
-				{
-					id: "3ACC30C84CC66123"
-					item: { count: 1, id: "toolbelt:pouch" }
-					type: "item"
-				}
-			]
-			x: -7.5d
 			y: 3.5d
 		}
 		{
@@ -197,17 +168,6 @@
 			]
 			x: -3.0d
 			y: 2.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "0D78C5C92996EA5F"
-			tasks: [{
-				id: "48E049CD9D12837F"
-				item: { count: 1, id: "dummmmmmy:target_dummy" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -438,17 +398,6 @@
 			}]
 			x: -16.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "7276E995F442FC3F"
-			tasks: [{
-				id: "6F7F8F01A93CB38E"
-				item: { count: 1, id: "smallships:oak_galley" }
-				type: "item"
-			}]
-			x: -18.0d
-			y: 3.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]

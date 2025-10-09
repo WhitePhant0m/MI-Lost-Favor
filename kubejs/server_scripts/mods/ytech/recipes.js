@@ -16,7 +16,10 @@ ServerEvents.recipes(event => {
 
             "eccentrictome:tome",
             "ytech:bone_needle",
-            "ytech:crushed_iron"
+            "ytech:crushed_iron",
+            "dummmmmmy:target_dummy",
+            "toolbelt:belt",
+            "toolbelt:pouch"
         ]
     })
 
@@ -88,70 +91,93 @@ ServerEvents.recipes(event => {
         "type": "ytech:remaining_shaped_crafting",
         "category": "equipment",
         "key": {
-            "#": {
-            "tag": "ytech:bone_needles"
-            },
-            "P": {
-            "item": "minecraft:paper"
-            },
-            "S": {
-            "tag": "ytech:leather_strips"
-            },
-            "B": {
-            "item": "minecraft:writable_book"
-            }
+            "#": {"tag": "c:saws"},
+            "H": {"item": "minecraft:hay_block"},
+            "S": {"item": "minecraft:stick"},
+            "s": {"tag": "minecraft:wooden_slabs"},
+            "b": {"item":"ytech:wooden_bolt"}
         },
         "pattern": [
-            "SP ",
-            "SB#",
-            "SP "
+            "SHS",
+            "bHb",
+            "s#s"
         ],
-        "result": {
-            "count": 1,
-            "id": "map_atlases:atlas"
-        }
+        "result": {"count": 1, "id": "dummmmmmy:target_dummy"}
     })
 
     event.custom({
         "type": "ytech:remaining_shaped_crafting",
         "category": "equipment",
         "key": {
-            "#": {
-            "tag": "ytech:bone_needles"
-            },
-            "S": {
-            "tag": "ytech:leather_strips"
-            },
-            "B": {
-            "item": "minecraft:writable_book"
-            }
+            "#": {"tag": "ytech:bone_needles"},
+            "L": {"item": "minecraft:leather"},
+            "S": {"tag": "ytech:leather_strips"},
+        },
+        "pattern": [
+            "SLS",
+            "L#L",
+            "SSS"
+        ],
+        "result": {"count": 1, "id": "toolbelt:belt"}
+    })
+
+    event.custom({
+        "type": "ytech:remaining_shaped_crafting",
+        "category": "equipment",
+        "key": {
+            "#": {"tag": "ytech:bone_needles"},
+            "L": {"item": "minecraft:leather"},
+            "S": {"tag": "ytech:leather_strips"},
+        },
+        "pattern": [
+            "S#S",
+            "SSS",
+            " L "
+        ],
+        "result": {"count": 1, "id": "toolbelt:pouch"}
+    })
+
+    event.custom({
+        "type": "ytech:remaining_shaped_crafting",
+        "category": "equipment",
+        "key": {
+            "#": {"tag": "ytech:bone_needles"},
+            "P": {"item": "minecraft:paper"},
+            "S": {"tag": "ytech:leather_strips"},
+            "B": {"item": "minecraft:writable_book"}
+        },
+        "pattern": [
+            "SP ",
+            "SB#",
+            "SP "
+        ],
+        "result": {"count": 1, "id": "map_atlases:atlas"}
+    })
+
+    event.custom({
+        "type": "ytech:remaining_shaped_crafting",
+        "category": "equipment",
+        "key": {
+            "#": {"tag": "ytech:bone_needles"},
+            "S": {"tag": "ytech:leather_strips"},
+            "B": {"item": "minecraft:writable_book"}
         },
         "pattern": [
             "SB ",
             "SB#",
             "SB "
         ],
-        "result": {
-            "count": 1,
-            "id": "eccentrictome:tome"
-        }
+        "result": {"count": 1, "id": "eccentrictome:tome"}
     })
 
     event.custom({
         "type": "ytech:remaining_shapeless_crafting",
         "category": "misc",
         "ingredients": [
-            {
-            "tag": "c:bricks"
-            },
-            {
-            "tag": "c:mortar_and_pestles"
-            }
+            {"tag": "c:bricks"},
+            {"tag": "c:mortar_and_pestles"}
         ],
-        "result": {
-            "count": 1,
-            "id": "modern_industrialization:brick_dust"
-        }
+        "result": {"count": 1, "id": "modern_industrialization:brick_dust"}
     })
 
     event.remove({type: "map_atlases:crafting_atlas"})
