@@ -299,6 +299,24 @@ ServerEvents.recipes(event => {
         {c:"modern_industrialization:bronze_curved_plate",P:"modern_industrialization:bronze_plated_bricks",f:"modern_industrialization:bronze_macerator",C:"modern_industrialization:bronze_machine_casing_pipe"},
         'extended_industrialization:large_steam_macerator'
     )
+    //Large steam boiler
+    workspace_recipe([
+            ['   ','   ','   '].layerCorners("c").layerPlus("C").layerCentre("a"),
+            ['   ',' f ','   '].layerCorners("c").layerSides("C"),
+            ['   ','   ','   '].layerCorners("c").layerPlus("P")
+        ],
+        {c:"modern_industrialization:bronze_curved_plate",P:"modern_industrialization:fire_clay_bricks",f:"modern_industrialization:bronze_boiler",C:"modern_industrialization:bronze_plated_bricks",a:"modern_industrialization:analog_circuit"},
+        'modern_industrialization:large_steam_boiler'
+    )
+    //Steam farmer
+    workspace_recipe([
+            ['   ','   ','   '].layerCorners("c").layerPlus("C").layerCentre("a"),
+            ['   ',' f ','   '].layerCorners("c").layerSides("C"),
+            ['   ','   ','   '].layerCorners("c").layerPlus("P")
+        ],
+        {c:"modern_industrialization:bronze_curved_plate",P:"modern_industrialization:bronze_plated_bricks",f:"extended_industrialization:steel_combine",C:"modern_industrialization:bronze_machine_casing_pipe",a:"modern_industrialization:analog_circuit"},
+        'extended_industrialization:steam_farmer'
+    )
     //item_output
     workspace_recipe([
             ['   ','   ','   '].layerAll("M").layerCentre("p"),
@@ -473,6 +491,42 @@ ServerEvents.recipes(event => {
         ],
         {p:"immersiveengineering:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
         'modern_industrialization:steel_fluid_input_hatch', steelBits
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("M").layerPlus("P"),
+            ['   ','   ','   '].layerAll("M").layerSides("T").layerCentre(" "),
+            ['   ','   ','   '].layerAll("M").layerPlus("P")
+        ],
+        {P:"immersiveengineering:fluid_pipe",T:"modern_industrialization:steel_tank"},
+        'modern_industrialization:large_tank', steelBits
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("M").layerPlus("P"),
+            ['   ','   ','   '].layerAll("M").layerSides("P").layerCentre("T"),
+            ['   ','   ','   '].layerAll("M").layerPlus("P")
+        ],
+        {P:"immersiveengineering:fluid_pipe",T:"modern_industrialization:steel_tank"},
+        'modern_industrialization:large_tank_hatch', steelBits
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerSides("M").layerCentre("H"),
+            ['   ','   ','   '].layerSides("M").layerCentre("C"),
+            ['   ','   ','   '].layerSides("M").layerCentre("H")
+        ],
+        {H:"minecraft:hopper",C:"modern_industrialization:analog_circuit"},
+        'modern_industrialization:configurable_chest', steelBits
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("M").layerCentre("H"),
+            ['   ','   ','   '].layerAll("M").layerCorners("C").layerCentre("c"),
+            ['   ','   ','   '].layerAll("M").layerCentre("H")
+        ],
+        {H:"minecraft:hopper",C:"modern_industrialization:analog_circuit",c:"modern_industrialization:configurable_chest"},
+        'extended_industrialization:large_configurable_chest', steelBits
     )
 
 
@@ -717,6 +771,24 @@ ServerEvents.recipes(event => {
         ],
         {C:'minecraft:cobblestone',S:"minecraft:stick", s:"minecraft:cobblestone_slab"},
         'hexerei:pestle_and_mortar', {} , "ytech:sharp_flint", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("S").layerCentre("H"),
+            ['   ','   ','   '].layerAll("S").layerCentre("C").layerSides("B"),
+            ['   ','   ','   '].layerAll("S").layerCentre("H")
+        ],
+        {C:'modern_industrialization:analog_circuit',H:"minecraft:hopper", B:"#c:barrels", S:"#c:stones"},
+        'sophisticatedstorage:controller'
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("S").layerCentre("H"),
+            ['   ','   ','   '].layerAll("S").layerCentre("B").layerSides(" "),
+            ['   ','   ','   '].layerAll("S").layerCentre("H")
+        ],
+        {H:"minecraft:hopper", B:"#c:barrels", S:"#c:stones"},
+        'sophisticatedstorage:storage_io'
     )
 
     //#region YTech

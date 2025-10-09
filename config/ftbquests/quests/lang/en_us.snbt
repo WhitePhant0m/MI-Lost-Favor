@@ -1737,7 +1737,6 @@
 	]
 	quest.7A5F66121C4BCC2B.quest_desc: ["Charges items. That's it"]
 	quest.7AA3CDBC6B160F86.quest_desc: ["Free furnaces"]
-	quest.7BA71EB59BD9BC53.quest_desc: ["если с дрипстоуна капает вода в акведук, в нём генерист я вода"]
 	quest.7C1FCF3A76C6E4DA.quest_desc: [
 		"Those prickly leaves can only be acquired with shears"
 		"{@pagebreak}"
@@ -1830,6 +1829,7 @@
 	task.46CE431166A44610.title: "Oil pot"
 	task.46D24C3E78F3813B.title: "Any #milf:polished_base_blocks"
 	task.49AD79AA5693E79F.title: "Osorin's Unbound Calling"
+	task.49C1237D393FF8C9.title: "Any #smallships:ships"
 	task.4AA33BD44F51AF55.title: "Sevira's Permanent Confinement"
 	task.4B7415C6171EB8C4.title: "Any #c:rods/wooden"
 	task.4BBE7498A48891A8.title: "Any #forbidden_arcanus:blacksmith_gavel"

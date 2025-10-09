@@ -37,4 +37,28 @@ ServerEvents.recipes(event => {
     //tier 5
     //ae_press_recipes ("extendedae:concurrent_processor_press", "extendedae:entro_crystal", "extendedae:concurrent_processor_print", tier4token)
 
+
+    miMachineCraft(event, {energy:4, time:300, machine:"modern_industrialization:packer",
+        outputItems:[
+            [{item:"sophisticatedstorage:compacting_upgrade"}]
+        ],
+        inputItems:[
+            [{tag:"sophisticatedstorage:all_storage"}],
+            [{item:"minecraft:piston"}, 4],
+            [{item:"sophisticatedstorage:upgrade_base"}],
+        ],
+        removeRecipe:true
+    })
+
+    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+        outputItems:[
+            [{item:"sophisticatedstorage:advanced_compacting_upgrade"}]
+        ],
+        inputItems:[
+            [{tag:"sophisticatedstorage:all_storage"}],
+            [{item:"modern_industrialization:piston"}, 4],
+            [{item:"sophisticatedstorage:compacting_upgrade"}],
+        ],
+        removeRecipe:true
+    })
 })

@@ -37,4 +37,13 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineCraft(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
+        inputItems:[
+            [{tag:"modern_industrialization:iron_plate"}, 6],
+        ],
+        outputItems:[
+            [{item:"immersiveengineering:fluid_pipe"}, 8]
+        ]
+    })
+
 })
