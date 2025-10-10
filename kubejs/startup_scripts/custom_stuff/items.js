@@ -1,3 +1,28 @@
+const definitelyUniqueNameForIETemplatesList = [
+    'alloy_smelter',
+    'arcfurnace',
+    'assembler',
+    'auto_workbench',
+    'blast_furnace',
+    'bottling_machine',
+    'chunk_loader',
+    'coke_oven',
+    'crusher',
+    'diesel_generator',
+    'excavator_full',
+    'fermenter',
+    'improved_blast_furnace',
+    'lightning_rod',
+    'metal_press',
+    'mixer',
+    'radio_tower',
+    'refinery',
+    'sawmill',
+    'sheetmetal_tank',
+    'shelf',
+    'silo',
+    'squeezer'
+]
 StartupEvents.registry('item', event => {
     event.create('bronze_glass').texture('custom_stuff:item/bronze_glass').maxStackSize(8)
     event.create('steel_infused_glass').texture('custom_stuff:item/steel_infused_glass').maxStackSize(8)
@@ -24,7 +49,9 @@ StartupEvents.registry('item', event => {
 
     //disks
     event.create("engineer_disk").texture('custom_stuff:item/ie_disk').maxStackSize(1).displayName("Engineer's disk")
-
+    definitelyUniqueNameForIETemplatesList.forEach(name => {
+        event.create(`${name}_placer`).texture('custom_stuff:item/old_tablet').maxStackSize(1).tag("milf:placers")
+    });
 
 
 })
