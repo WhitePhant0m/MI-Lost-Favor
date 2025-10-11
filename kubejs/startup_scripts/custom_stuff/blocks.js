@@ -1,3 +1,29 @@
+const definitelyUniqueNameForIETemplatesList = [
+    'alloy_smelter',
+    'arcfurnace',
+    'assembler',
+    'auto_workbench',
+    'blast_furnace',
+    'bottling_machine',
+    'chunk_loader',
+    'coke_oven',
+    'crusher',
+    'diesel_generator',
+    'excavator_full',
+    'fermenter',
+    'improved_blast_furnace',
+    'lightning_rod',
+    'metal_press',
+    'mixer',
+    'radio_tower',
+    'refinery',
+    'sawmill',
+    'sheetmetal_tank',
+    'shelf',
+    'silo',
+    'squeezer'
+]
+global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime = []
 StartupEvents.registry('block', event => {
     
     event.create('radio_tower_block') 
@@ -18,4 +44,8 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:mineable/pickaxe')
     .texture('custom_stuff:blocks/radio_tower_block')
 
+    definitelyUniqueNameForIETemplatesList.forEach(name => {
+        event.create(`${name}_placer`).tagBlock("milf:placers")
+        global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime.push(`kubejs:${name}_placer`)
+    });
 })

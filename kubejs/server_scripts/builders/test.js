@@ -1,19 +1,41 @@
-/* let $ModelData = Java.loadClass("net.neoforged.neoforge.client.model.data.ModelData")
-let $ModelBlockRenderer = Java.loadClass("net.minecraft.client.renderer.block.ModelBlockRenderer")
-let $Minecraft = Java.loadClass("net.minecraft.client.Minecraft")
-let $OverlayTexture = Java.loadClass("net.minecraft.client.renderer.texture.OverlayTexture")
-let $RenderType = Java.loadClass("net.minecraft.client.renderer.RenderType") */
+/* const $BlockState = Java.loadClass("net.minecraft.world.level.block.state.BlockState")
+const $BlockPos = Java.loadClass("net.minecraft.core.BlockPos")
+const $ModelData = Java.loadClass("net.neoforged.neoforge.client.model.data.ModelData")
+const $ModelBlockRenderer = Java.loadClass("net.minecraft.client.renderer.block.ModelBlockRenderer")
+const $OverlayTexture = Java.loadClass("net.minecraft.client.renderer.texture.OverlayTexture")
+const $RenderType = Java.loadClass("net.minecraft.client.renderer.RenderType")
+const $PoseStack = Java.loadClass("com.mojang.blaze3d.vertex.PoseStack") */
 
 const $FTBChunksAPI = Java.loadClass("dev.ftb.mods.ftbchunks.api.FTBChunksAPI").api()
 const $ChunkDimPos = Java.loadClass("dev.ftb.mods.ftblibrary.math.ChunkDimPos")
-BlockEvents.rightClicked("kubejs:saeta_plush", event => {
-    /*  Client.getBlockRenderer().renderSingleBlock(
-        event.getBlock().getBlockState(), event.getBlock().getPos().offset(0,1,0), Client.renderBuffers().bufferSource(), 15728880, $OverlayTexture.NO_OVERLAY, $ModelData.EMPTY, $RenderType.SOLID
-    ) */
-    if(!event.player.getMainHandItem().getTags().toString().includes("milf:placers")) event.cancel()
+
+
+/* ServerEvents.tick(event =>{
+    try {
+        let camera = Client.getCameraEntity().getEyePosition()
+        let poseStackForRenderer = new $PoseStack()
+        MILFBlocksRenderer.forEach((blockState, pos) => {
+            poseStackForRenderer.translate(pos.x - camera.x,pos.y + 1 - camera.y, pos.z - camera.z)
+            Client.getBlockRenderer().renderSingleBlock(
+                blockState, poseStackForRenderer, Client.renderBuffers().bufferSource(), 15728880, $OverlayTexture.NO_OVERLAY, $ModelData.EMPTY, $RenderType.SOLID
+            ) 
+        })
+    } catch (error) {
+        console.log(error);
+    }
+})  */
+
+const placerBlocks = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime
+console.log(placerBlocks);
+
+BlockEvents.rightClicked(placerBlocks, event => {
+    if(event.getHand()=="OFF_HAND") event.cancel()
+    const blockPos = event.block.getPos()
+    const x = event.block.getX()
+    const y = event.block.getY()
+    const z = event.block.getZ()
     const chunkManager = $FTBChunksAPI.getManager()
     const currentChunk = chunkManager.getChunk($ChunkDimPos(event.player))
-
     for(let i = -1;i <= 1; i++){
         for(let k = -1;k <= 1; k++){
             if (chunkManager.getChunk($ChunkDimPos(event.player).offset(i,k))){
@@ -22,7 +44,7 @@ BlockEvents.rightClicked("kubejs:saeta_plush", event => {
             }
         }
     }
-    const templateName = event.player.getMainHandItem().getId().slice(7, -7)
+    const templateName = event.block.getId().toString().slice(7, -7)
     const template = NBTIO.read(`kubejs/data/immersiveengineering/structure/multiblocks/${templateName}.nbt`)
 
     const playerFacing = event.player.getHorizontalFacing()
@@ -39,10 +61,7 @@ BlockEvents.rightClicked("kubejs:saeta_plush", event => {
     const angle = angleToFacing[playerFacing]
     const angleRad = angle * (Math.PI / 180)
 
-    const blockPos = event.block.getPos()
-    const x = event.block.getX()
-    const y = event.block.getY()
-    const z = event.block.getZ()
+
 
 
     const structureVec3i = Vec3i(template.size[0], template.size[1], template.size[2])
@@ -52,7 +71,6 @@ BlockEvents.rightClicked("kubejs:saeta_plush", event => {
     const structureZ = structureVec3irotated.getZ()
 
     const air = 'minecraft:air'
-    let canPlace = true
 
     let xmin = 0
     let xmax = 0
@@ -74,19 +92,21 @@ BlockEvents.rightClicked("kubejs:saeta_plush", event => {
         zmax = structureZ - 1
     }
 
-    event.getLevel().setBlockAndUpdate(blockPos, air)
+    particleFrame("minecraft:wax_on", {x:x,y:y,z:z}, {x:structureX,y:structureY,z:structureZ})
 
     for(let xa = xmin; xa <= xmax; xa++){
         for(let ya = 0; ya <= structureY-1; ya++){
             for(let za = zmin; za <= zmax; za++){
+                if(xa == 0 && ya == 0 && za == 0) continue
                 if(event.level.getBlock(x + xa, y + ya, z + za) != air){
-                    event.player.drop("kubejs:saeta_plush", true)
                     event.player.tell([Text.gray('Not enough space to place this one')]);
                     event.cancel()
                 }
             }
         }
     }
+
+    if(!event.player.getMainHandItem().getTags().toString().includes("c:tools/wrench")) event.cancel()
 
     //{facing:`${String(template.palette.getCompound(state).getCompound("Properties").facing).slice(1, -1) || ""}`}
 
@@ -122,6 +142,47 @@ BlockEvents.rightClicked("kubejs:saeta_plush", event => {
     }
     function directionRelativeToPlayer(direction){
         return angleToFacing[(angleToFacing[direction] + angleToFacing[playerFacing]) % 360]
+    }
+    function particleFrame(type, startPos, size){
+        let xm = 0
+        let ym = 0
+        let zm = 0
+        let xmx = size.x
+        let ymx = size.y
+        let zmx = size.z
+
+        if(size.x < 0){
+            [xm,xmx] = [xmx,xm]
+            startPos.x += 1
+        }
+        if(size.z < 0){
+            [zm,zmx] = [zmx,zm]
+            startPos.z += 1
+        }
+        if(size.y < 0){[ym,ymx] = [ymx,ym]}
+        console.log([zmx,zm]);
+
+        for(let i = xm; i<= xmx; i += 0.1){
+            event.getLevel().spawnParticles(type, false, startPos.x + i, startPos.y, startPos.z, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x + size.x - i, startPos.y + size.y, startPos.z, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x + size.x - i, startPos.y, startPos.z + size.z, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x + i, startPos.y + size.y, startPos.z + size.z, 0, 0, 0, 1, 0)
+
+        }
+        for(let i = ym; i<= ymx; i += 0.1){
+            event.getLevel().spawnParticles(type, false, startPos.x, startPos.y + i, startPos.z, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x + size.x, startPos.y + size.y - i, startPos.z, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x + size.x, startPos.y + i, startPos.z + size.z, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x, startPos.y + size.y - i, startPos.z + size.z, 0, 0, 0, 1, 0)
+
+        }
+        for(let i = zm; i<= zmx; i += 0.1){
+            event.getLevel().spawnParticles(type, false, startPos.x, startPos.y, startPos.z + i, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x + size.x, startPos.y + size.y, startPos.z + i, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x + size.x, startPos.y, startPos.z + size.z - i, 0, 0, 0, 1, 0)
+            event.getLevel().spawnParticles(type, false, startPos.x, startPos.y + size.y, startPos.z + size.z - i, 0, 0, 0, 1, 0)
+
+        }
     }
 
 })
