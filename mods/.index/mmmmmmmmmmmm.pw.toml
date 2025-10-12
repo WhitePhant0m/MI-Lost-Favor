@@ -1,5 +1,5 @@
 filename = 'dummmmmmy-1.21-2.0.9-neoforge.jar'
-name = 'MmmMmmMmmMmm'
+name = 'MmmMmmMmmMmm (Target Dummy)'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

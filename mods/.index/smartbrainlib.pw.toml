@@ -1,5 +1,5 @@
 filename = 'SmartBrainLib-neoforge-1.21.1-1.16.11.jar'
-name = 'SmartBrainLib'
+name = 'SmartBrainLib (Forge/Fabric/Quilt)'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

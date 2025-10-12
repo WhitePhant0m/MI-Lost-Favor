@@ -2,7 +2,7 @@ filename = 'yeetusexperimentus-neoforge-87.0.0.jar'
 name = 'Yeetus Experimentus'
 side = 'client'
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.5', '1.21.6', '1.21.7' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.5', '1.21.6', '1.21.7', '1.21.8' ]
 x-prismlauncher-release-type = 'release'
 
 [download]

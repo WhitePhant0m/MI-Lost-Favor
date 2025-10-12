@@ -1,5 +1,5 @@
 filename = 'animal_pen-neoforge-1.21-1.6.1.jar'
-name = 'Animal Pen'
+name = 'Animal Pens'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

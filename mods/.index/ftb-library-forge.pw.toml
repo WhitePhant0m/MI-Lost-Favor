@@ -1,5 +1,5 @@
 filename = 'ftb-library-neoforge-2101.1.21.jar'
-name = 'FTB Library'
+name = 'FTB Library (Forge)'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

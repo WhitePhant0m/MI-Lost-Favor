@@ -1,5 +1,5 @@
 filename = 'alltheleaks-1.0.5+1.21.1-neoforge.jar'
-name = 'All The Leaks'
+name = 'AllTheLeaks (Memory Leak Fix)'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

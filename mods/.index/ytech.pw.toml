@@ -1,4 +1,4 @@
-filename = 'ytech-1.21.1-0.10.7.jar'
+filename = 'ytech-1.21.1-0.10.8.jar'
 name = 'YTech'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '2f95653f8244628f44e3cecc8ce6a2ec2db6bcf0'
+hash = 'b6b6997bb0561073b5616098e152a464066f5c59'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7065164
+file-id = 7094350
 project-id = 917366

@@ -1,5 +1,5 @@
 filename = 'particular-1.21.1-NeoForge-1.1.7.jar'
-name = 'Particular'
+name = 'Particular ✨ Reforged'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

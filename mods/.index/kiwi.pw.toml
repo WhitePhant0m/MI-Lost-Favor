@@ -1,5 +1,5 @@
 filename = 'Kiwi-1.21.1-NeoForge-15.7.5.jar'
-name = 'Kiwi Library'
+name = 'Kiwi 🥝 (Neo/Forge)'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

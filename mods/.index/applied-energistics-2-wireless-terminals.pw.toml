@@ -1,5 +1,5 @@
 filename = 'ae2wtlib-19.2.6.jar'
-name = 'AE2WTLib'
+name = 'Applied Energistics 2 Wireless Terminals'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

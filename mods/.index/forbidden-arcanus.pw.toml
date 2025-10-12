@@ -1,5 +1,5 @@
 filename = 'forbidden_arcanus-2.6.1.jar'
-name = 'Forbidden Arcanus'
+name = 'Forbidden and Arcanus'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

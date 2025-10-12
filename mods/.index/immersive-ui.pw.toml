@@ -1,5 +1,5 @@
 filename = 'ImmersiveUI-NEOFORGE-0.3.3+1.21.1.jar'
-name = 'ImmersiveUI'
+name = 'Immersive UI'
 side = 'client'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

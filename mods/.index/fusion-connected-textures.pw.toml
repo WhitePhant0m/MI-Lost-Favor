@@ -1,5 +1,5 @@
 filename = 'fusion-1.2.11b-neoforge-mc1.21.jar'
-name = 'Fusion'
+name = 'Fusion (Connected Textures)'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

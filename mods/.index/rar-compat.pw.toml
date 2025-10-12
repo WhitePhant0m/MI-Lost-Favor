@@ -1,5 +1,5 @@
 filename = 'rarcompat-1.21-0.9.7.jar'
-name = 'RAR-Compat'
+name = 'Relics: Artifacts Compat'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

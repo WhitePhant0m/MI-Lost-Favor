@@ -1,5 +1,5 @@
 filename = 'jei-1.21.1-neoforge-19.25.0.322.jar'
-name = 'Just Enough Items'
+name = 'Just Enough Items (JEI)'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

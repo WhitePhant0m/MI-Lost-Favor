@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '7cb0a59252f89770c602d85b574a3ab734c3374389198afcd37a08d8158a253b45c7de5003189e5bbeb42eb2cc8ff7dccb8a644e654de1c580806529cf2dcca0'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/jgzwYsAN/versions/DPwO66EL/malum-1.21.1-1.7.3.1.jar'
+hash = 'e838ccd28f4083439830363495db4609af3743c7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
 
-[update.modrinth]
-mod-id = 'jgzwYsAN'
-version = 'DPwO66EL'
+[update.curseforge]
+file-id = 6655805
+project-id = 484064

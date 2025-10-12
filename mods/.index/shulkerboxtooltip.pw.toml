@@ -1,5 +1,5 @@
 filename = 'shulkerboxtooltip-neoforge-5.1.7+1.21.1.jar'
-name = 'ShulkerBoxTooltip'
+name = 'Shulker Box Tooltip [Fabric/Forge/NeoForge]'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

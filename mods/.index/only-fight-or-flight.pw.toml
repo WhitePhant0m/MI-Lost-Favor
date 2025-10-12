@@ -1,5 +1,5 @@
 filename = 'onlyfightorflight-0.3.0-neoforge-1.21.1.jar'
-name = 'OnlyFightOrFlight'
+name = 'Only Fight Or Flight'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

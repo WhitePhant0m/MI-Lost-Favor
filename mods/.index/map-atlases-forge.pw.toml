@@ -1,5 +1,5 @@
 filename = 'map_atlases-1.21-6.3.6-neoforge.jar'
-name = 'Map Atlases'
+name = 'Map Atlases [Forge]'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

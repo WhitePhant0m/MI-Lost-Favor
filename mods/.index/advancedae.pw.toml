@@ -1,5 +1,5 @@
 filename = 'AdvancedAE-1.5.1-1.21.1.jar'
-name = 'Advanced AE'
+name = 'AdvancedAE'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

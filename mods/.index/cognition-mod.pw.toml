@@ -1,5 +1,5 @@
 filename = 'Cognition-v2.4.8-1.21.1.jar'
-name = 'Cognition'
+name = 'Cognition (Experience Obelisk)'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

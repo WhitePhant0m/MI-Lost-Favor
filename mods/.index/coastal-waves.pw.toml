@@ -1,5 +1,5 @@
 filename = 'Waves-1.21.x-1.6.jar'
-name = 'Waves'
+name = 'Coastal Waves'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

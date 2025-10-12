@@ -1,5 +1,5 @@
 filename = 'neruina-3.1.0+1.21.1-neoforge.jar'
-name = 'Neruina'
+name = 'Neruina - Ticking Entity Fixer'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1', '1.21.2', '1.21.3', '1.21.4' ]

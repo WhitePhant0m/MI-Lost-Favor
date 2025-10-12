@@ -1,5 +1,5 @@
 filename = 'sounds-2.4.15+lts+1.21.1+neoforge.jar'
-name = 'Sounds'
+name = 'Sound​s'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]

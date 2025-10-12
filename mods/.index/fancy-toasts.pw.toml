@@ -1,5 +1,5 @@
 filename = 'fancytoasts-neoforge-1.21.1-1.4.2.jar'
-name = 'FancyToasts'
+name = 'Fancy Toasts | Better Advancements'
 side = 'client'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]

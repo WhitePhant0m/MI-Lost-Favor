@@ -1,5 +1,5 @@
 filename = 'GatewaysToEternity-1.21.1-5.1.0.jar'
-name = 'Gateways To Eternity'
+name = 'Gateways to Eternity'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
