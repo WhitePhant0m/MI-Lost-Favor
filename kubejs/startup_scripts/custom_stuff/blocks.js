@@ -1,17 +1,18 @@
+let $BooleanProperty = Java.loadClass("net.minecraft.world.level.block.state.properties.BooleanProperty")
 const definitelyUniqueNameForIETemplatesList = [
-    'alloy_smelter',
+    //'alloy_smelter',
     'arcfurnace',
     'assembler',
     'auto_workbench',
-    'blast_furnace',
+    //'blast_furnace',
     'bottling_machine',
     'chunk_loader',
-    'coke_oven',
+    //'coke_oven',
     'crusher',
     'diesel_generator',
     'excavator_full',
     'fermenter',
-    'improved_blast_furnace',
+    //'improved_blast_furnace',
     'lightning_rod',
     'metal_press',
     'mixer',
@@ -44,8 +45,13 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:mineable/pickaxe')
     .texture('custom_stuff:blocks/radio_tower_block')
 
+    const enabledProperty = $BooleanProperty.create("enabled")
+
     definitelyUniqueNameForIETemplatesList.forEach(name => {
-        event.create(`${name}_placer`).tagBlock("milf:placers")
+        event.create(`${name}_placer`, "cardinal")
+        .tagBlock("milf:placers")
+        .property(enabledProperty)
+        .defaultState(state => state.cycle(enabledProperty))
         global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime.push(`kubejs:${name}_placer`)
     });
 })
