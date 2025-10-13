@@ -1,16 +1,16 @@
-filename = 'hardenedarmadillos-1.21.1-0.2.0.jar'
-name = 'Hardened Armadillos'
-side = 'both'
+filename = 'immersivethunder-neoforge-1.21.1-1.3.0.jar'
+name = 'ImmersiveThunder'
+side = 'client'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '1c9a37d6fe172580af5142c66b9157d21aa6c5f7'
+hash = '32a42967a5cb077a5689c7ed1e7f28c4e3bb9ccc'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 5939448
-project-id = 1001266
+file-id = 6711308
+project-id = 1220929
