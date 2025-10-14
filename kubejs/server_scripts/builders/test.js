@@ -1,6 +1,7 @@
 const $FTBChunksAPI = Java.loadClass("dev.ftb.mods.ftbchunks.api.FTBChunksAPI").api()
 const $ChunkDimPos = Java.loadClass("dev.ftb.mods.ftblibrary.math.ChunkDimPos")
 const placerBlocks = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime
+const boxBlocks = global.AnotherDefinitelyUniqueNameForBoxes
 
 const angleToFacing = {
     0:"east",90:"north",180:"west",270:"south",
@@ -43,8 +44,9 @@ BlockEvents.rightClicked(placerBlocks, event => {
     const structureX_block = structureVec3irotated_block.getX(), structureY_block = structureVec3irotated_block.getY(), structureZ_block = structureVec3irotated_block.getZ()
 
     const offsetVec3i = new Vec3i(1,0,0)
-    const blockPos_player = event.block.getPos().offset(rotateVec3i(offsetVec3i, angleRad))
-    const blockPos_block = event.block.getPos().offset(rotateVec3i(offsetVec3i, blockAngleRad))
+    const blockPos = event.block.getPos()
+    const blockPos_player = blockPos.offset(rotateVec3i(offsetVec3i, angleRad))
+    const blockPos_block = blockPos.offset(rotateVec3i(offsetVec3i, blockAngleRad))
 
     const x_player = blockPos_player.getX(), y_player = blockPos_player.getY(), z_player= blockPos_player.getZ()
     const x_block = blockPos_block.getX(), y_block = blockPos_block.getY(), z_block= blockPos_block.getZ()
@@ -64,9 +66,14 @@ BlockEvents.rightClicked(placerBlocks, event => {
 
     //#region preview logic
     if(event.player.mainHandItem.isEmpty()){
+        //console.log(`summon block_display ${event.block.getPos().getX()}.0 ${event.block.getPos().getY() + 1} ${event.block.getPos().getZ()}.0 {block_state:{Name:"minecraft:tuff"}}`);
+        //console.log(`data merge entity @e[type=block_display,x=${event.block.getPos().getX()},y=${event.block.getPos().getY() + 1},z=${event.block.getPos().getZ()}] {interpolation_duration:30,transformation:[[-0.98f,0f,0.198f,0f,0f,1f,0f,0f,-0.198f,0f,-0.98f,0f,0f,0f,0f,1f]],block_state:{Name:"minecraft:tuff"}}`);
+        //event.server.runCommandSilent(`summon block_display ${event.block.getPos().getX()}.0 ${event.block.getPos().getY() + 1} ${event.block.getPos().getZ()}.0 {block_state:{Name:"minecraft:tuff"}}`)
+        //event.server.runCommandSilent(`data merge entity @e[type=block_display,sort=nearest,x=${event.block.getPos().getX() + 0.5},y=${event.block.getPos().getY() + 1.5},z=${event.block.getPos().getZ() + 0.5},limit=1] {start_interpolation:0,interpolation_duration:300,Motion:[0.0,1.0,0.0],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[45f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]},block_state:{Name:"minecraft:dirt"}}`)
         if(event.player.isCrouching()){
-            event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_block < 0 ? x_block : x_block-1},y=${y_block-1},z=${structureZ_block < 0 ? z_block : z_block-1},dx=${structureX_block},dy=${structureY_block},dz=${structureZ_block}]`)
+            event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_block < 0 ? x_block+0.5 : x_block-0.5},y=${y_block-1},z=${structureZ_block < 0 ? z_block+0.5 : z_block-0.5},dx=${structureX_block},dy=${structureY_block},dz=${structureZ_block}]`)
             event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:false}))
+            event.server.runCommandSilent(`playsound block.bamboo.break block @p ${x_block} ${y_block} ${z_block}`)
             particleFrame("minecraft:instant_effect", {x:x_block,y:y_block,z:z_block}, {x:structureX_block,y:structureY_block,z:structureZ_block}, event)
             event.cancel()
         }
@@ -85,9 +92,13 @@ BlockEvents.rightClicked(placerBlocks, event => {
             particleFrame("minecraft:instant_effect", {x:x_player,y:y_player,z:z_player}, {x:structureX_player,y:structureY_player,z:structureZ_player}, event)
             event.cancel()
         }
-        if(event.block.getProperties().enabled == "true") event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_block < 0 ? x_block : x_block-1},y=${y_block-1},z=${structureZ_block < 0 ? z_block : z_block-1},dx=${structureX_block},dy=${structureY_block},dz=${structureZ_block}]`)
+        if(event.block.getProperties().enabled == "true"){
+            event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_block < 0 ? x_block+0.5 : x_block-0.5},y=${y_block-1},z=${structureZ_block < 0 ? z_block+0.5 : z_block-0.5},dx=${structureX_block},dy=${structureY_block},dz=${structureZ_block}]`)
+            particleFrame("minecraft:instant_effect", {x:x_block,y:y_block,z:z_block}, {x:structureX_block,y:structureY_block,z:structureZ_block}, event)
+        } 
         event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {facing:playerFacing}))
         event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:true}))
+        event.server.runCommandSilent(`playsound block.bamboo.hit block @p ${x_player} ${y_player} ${z_player}`)
         
         for(let i in template.blocks){        
             let pos = template.blocks.getCompound(i).pos;
@@ -97,19 +108,28 @@ BlockEvents.rightClicked(placerBlocks, event => {
             let blockID = String(template.palette.getCompound(state).Name).slice(1, -1)
             let blockProperties = template.palette.getCompound(state).getCompound("Properties")
             let realProperties = {
-                facing:`${directionRelativeToPlayer(String(blockProperties.facing).slice(1, -1)) || ""}`,
-                type:`${String(blockProperties.type).slice(1, -1) || ""}`,
+                facing:`${directionRelativeTo(String(blockProperties.facing).slice(1, -1), playerFacing) || ""}`,
+                type:`${blockProperties.get("type") != null ? String(blockProperties.get("type")).slice(1, -1) : ""}`,
                 multiblockslave:String(blockProperties.multiblockslave).slice(1, -1) === "true" ? true : false
             }
 
-            if (String(blockProperties.east).slice(1, -1) === "true") {realProperties[directionRelativeToPlayer("east")] = true}
-            if (String(blockProperties.west).slice(1, -1) === "true") {realProperties[directionRelativeToPlayer("west")] = true}
-            if (String(blockProperties.south).slice(1, -1) === "true") {realProperties[directionRelativeToPlayer("south")] = true}
-            if (String(blockProperties.north).slice(1, -1) === "true") {realProperties[directionRelativeToPlayer("north")] = true}
+            if (String(blockProperties.east).slice(1, -1) === "true") {realProperties[directionRelativeTo("east"), playerFacing] = true}
+            if (String(blockProperties.west).slice(1, -1) === "true") {realProperties[directionRelativeTo("west"), playerFacing] = true}
+            if (String(blockProperties.south).slice(1, -1) === "true") {realProperties[directionRelativeTo("south"), playerFacing] = true}
+            if (String(blockProperties.north).slice(1, -1) === "true") {realProperties[directionRelativeTo("north"), playerFacing] = true}
 
-            event.server.runCommandSilent(`summon block_display ${blockPos_player.offset(rotatedVec).getX()}.0 ${blockPos_player.offset(rotatedVec).getY()} ${blockPos_player.offset(rotatedVec).getZ()}.0 {Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(realProperties)}}}`)
+            //console.log(`summon block_display ${blockPos_player.offset(rotatedVec).getX()} ${blockPos_player.offset(rotatedVec).getY() + 0.5} ${blockPos_player.offset(rotatedVec).getZ()} {interpolation_duration:15,teleport_duration:25,Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(realProperties)}}}`);
+            event.server.runCommandSilent(`summon block_display ${blockPos_player.offset(rotatedVec).getX()} ${blockPos_player.offset(rotatedVec).getY() + 0.5} ${blockPos_player.offset(rotatedVec).getZ()} {interpolation_duration:15,teleport_duration:25,Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(realProperties)}}}`)
+            //event.server.runCommandSilent(`teleport @e[limit=1,sort=nearest,x=${blockPos_player.offset(rotatedVec).getX()},y=${blockPos_player.offset(rotatedVec).getY()},z=${blockPos_player.offset(rotatedVec).getZ()},type=block_display] ${blockPos_player.offset(rotatedVec).getX()} ${blockPos_player.offset(rotatedVec).getY() + 4} ${blockPos_player.offset(rotatedVec).getZ()}`)
+            //event.server.runCommandSilent(`data merge entity @e[limit=1,sort=nearest,x=${blockPos_player.offset(rotatedVec).getX()},y=${blockPos_player.offset(rotatedVec).getY()},z=${blockPos_player.offset(rotatedVec).getZ()},type=block_display] {interpolation_duration:15,teleport_duration:25,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.25f,-0.25f,-0.25f],scale:[0.5f,0.5f,0.5f]}}`)
+            //event.server.runCommandSilent(`teleport @e[limit=1,sort=nearest,x=${blockPos_player.offset(rotatedVec).getX()},y=${blockPos_player.offset(rotatedVec).getY()},z=${blockPos_player.offset(rotatedVec).getZ()},type=block_display] ${blockPos.getX() + 0.5} ${blockPos.getY() + 1.3} ${blockPos.getZ() + 0.5}`)
         }
         particleFrame("minecraft:wax_on", {x:x_player,y:y_player,z:z_player}, {x:structureX_player,y:structureY_player,z:structureZ_player}, event)
+        /*
+        event.server.scheduleInTicks(35, () =>{
+            //event.server.runCommandSilent(`teleport @e[x=${blockPos.getX()}.0,y=${blockPos.getY() + 1},z=${blockPos.getZ()}.0,type=block_display,distance=..0.8] ${blockPos.getX() + 0.5} ${blockPos.getY() + 0.5} ${blockPos.getZ() + 0.5} -180 90`)
+        })
+        */
     }
     //#endregion
 
@@ -144,32 +164,81 @@ BlockEvents.rightClicked(placerBlocks, event => {
             let blockID = String(template.palette.getCompound(state).Name).slice(1, -1)
             let blockProperties = template.palette.getCompound(state).getCompound("Properties")
             let realProperties = {
-                facing:`${directionRelativeToBlock(String(blockProperties.facing).slice(1, -1)) || ""}`,
+                facing:`${blockID != "immersiveengineering:fluid_pump" ? directionRelativeTo(String(blockProperties.facing).slice(1, -1), blockFacing) : "north" || ""}`,
                 type:`${String(blockProperties.type).slice(1, -1) || ""}`,
                 multiblockslave:String(blockProperties.multiblockslave).slice(1, -1) === "true" ? true : false
             }
 
-            if (String(blockProperties.east).slice(1, -1) === "true") {realProperties[directionRelativeToBlock("east")] = true}
-            if (String(blockProperties.west).slice(1, -1) === "true") {realProperties[directionRelativeToBlock("west")] = true}
-            if (String(blockProperties.south).slice(1, -1) === "true") {realProperties[directionRelativeToBlock("south")] = true}
-            if (String(blockProperties.north).slice(1, -1) === "true") {realProperties[directionRelativeToBlock("north")] = true}
+            if (String(blockProperties.east).slice(1, -1) === "true") {realProperties[directionRelativeTo("east", blockFacing)] = true}
+            if (String(blockProperties.west).slice(1, -1) === "true") {realProperties[directionRelativeTo("west", blockFacing)] = true}
+            if (String(blockProperties.south).slice(1, -1) === "true") {realProperties[directionRelativeTo("south", blockFacing)] = true}
+            if (String(blockProperties.north).slice(1, -1) === "true") {realProperties[directionRelativeTo("north", blockFacing)] = true}
 
             let block = Block.withProperties(blockID, realProperties)
             event.getLevel().setBlockAndUpdate(blockPos_block.offset(rotatedVec), block)
         }
-        event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:false}))
+        //console.log(event.block.id);
+        event.block.set(event.block.id.toString().slice(0,-7) + "_empty_box", Object.assign({}, event.block.getProperties(), {enabled:false}))
+        event.server.runCommandSilent(`playsound block.anvil.land block @p ${x_block} ${y_block} ${z_block}`)
     }
 
     //#endregion
+})
 
-    function directionRelativeToPlayer(direction){
-        if (direction === "down" || direction === "up") return direction
-        return angleToFacing[(angleToFacing[direction] + angleToFacing[playerFacing]) % 360]
+BlockEvents.rightClicked(boxBlocks, event => {
+    if(event.getHand()=="OFF_HAND") event.cancel()
+    if(!event.player.mainHandItem.isEmpty() || !event.player.isCrouching()) event.cancel()
+    const templateName = event.block.getId().toString().slice(7, -10)
+    const template = NBTIO.read(`kubejs/data/immersiveengineering/structure/multiblocks/${templateName}.nbt`)
+
+    const blockFacing = event.block.getProperties().facing
+
+    const blockAngle = angleToFacing[blockFacing]
+    const blockAngleRad = blockAngle * (Math.PI / 180)
+
+    const structureVec3i = Vec3i(template.size[0], template.size[1], template.size[2])
+    const structureVec3irotated_block = rotateVec3i(structureVec3i, blockAngleRad)
+    const structureX_block = structureVec3irotated_block.getX(), structureY_block = structureVec3irotated_block.getY(), structureZ_block = structureVec3irotated_block.getZ()
+
+    const offsetVec3i = new Vec3i(1,0,0)
+    const blockPos = event.block.getPos()
+    const blockPos_block = blockPos.offset(rotateVec3i(offsetVec3i, blockAngleRad))
+
+    const x_block = blockPos_block.getX(), y_block = blockPos_block.getY(), z_block = blockPos_block.getZ()
+    let canRemove = true
+
+    for(let i in template.blocks){        
+        let pos = template.blocks.getCompound(i).pos;
+        let vec3iPos = Vec3i(pos[0],pos[1],pos[2])
+        let rotatedVec = rotateVec3i(vec3iPos, blockAngleRad)
+        let state = template.blocks.getCompound(i).state;
+        let blockID = String(template.palette.getCompound(state).Name).slice(1, -1)
+        let blockProperties = template.palette.getCompound(state).getCompound("Properties")
+        let realProperties = {
+            facing:`${blockID != "immersiveengineering:fluid_pump" ? directionRelativeTo(String(blockProperties.facing).slice(1, -1), blockFacing) : "north" || ""}`,
+            type:`${String(blockProperties.type).slice(1, -1) || ""}`,
+            multiblockslave:String(blockProperties.multiblockslave).slice(1, -1) === "true" ? true : false
+        }
+
+        if (String(blockProperties.east).slice(1, -1) === "true") {realProperties[directionRelativeTo("east", blockFacing)] = true}
+        if (String(blockProperties.west).slice(1, -1) === "true") {realProperties[directionRelativeTo("west", blockFacing)] = true}
+        if (String(blockProperties.south).slice(1, -1) === "true") {realProperties[directionRelativeTo("south", blockFacing)] = true}
+        if (String(blockProperties.north).slice(1, -1) === "true") {realProperties[directionRelativeTo("north", blockFacing)] = true}
+
+        let block = Block.withProperties(blockID, realProperties)
+        if(event.getLevel().getBlock(blockPos_block.offset(rotatedVec)).getBlockState() != block) {
+            canRemove = false
+            event.getLevel().spawnParticles("minecraft:gust", false, blockPos_block.offset(rotatedVec).getX() + 0.5, blockPos_block.offset(rotatedVec).getY() + 0.5, blockPos_block.offset(rotatedVec).getZ() + 0.5, 0.2, 0.2, 0.2, 1, 0)
+        }
     }
-    function directionRelativeToBlock(direction){
-        if (direction === "down" || direction === "up") return direction
-        return angleToFacing[(angleToFacing[direction] + angleToFacing[blockFacing]) % 360]
+    if(!canRemove){
+        event.player.tell([Text.gray('Structure has to be exactly the same')]);
+        event.cancel()
     }
+    event.block.set(event.block.id.toString().slice(0,-10) + "_placer", Object.assign({}, event.block.getProperties(), {enabled:false}))
+    event.server.runCommandSilent(`fill ${x_block} ${y_block} ${z_block} ${x_block + structureX_block} ${y_block + structureY_block} ${z_block + structureZ_block} air replace`)
+    event.server.runCommandSilent(`playsound block.bamboo.break block @p ${x_block} ${y_block} ${z_block}`)
+    particleFrame("minecraft:instant_effect", {x:x_block,y:y_block,z:z_block}, {x:structureX_block,y:structureY_block,z:structureZ_block}, event)
 })
 
 function rotateVec3i(vec3i, angle){
@@ -211,6 +280,11 @@ function particleFrame(type, startPos, size, event){
         event.getLevel().spawnParticles(type, false, startPos.x, startPos.y + size.y, startPos.z + size.z - i, 0, 0, 0, 1, 0)
 
     }
+}
+
+function directionRelativeTo(direction, to){
+    if (direction === "down" || direction === "up") return direction
+    return angleToFacing[(angleToFacing[direction] + angleToFacing[to]) % 360]
 }
 
 BlockEvents.broken(placerBlocks, event => {

@@ -25,6 +25,8 @@ const definitelyUniqueNameForIETemplatesList = [
     'squeezer'
 ]
 global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime = []
+global.AnotherDefinitelyUniqueNameForBoxes = []
+
 StartupEvents.registry('block', event => {
     
     event.create('radio_tower_block') 
@@ -46,12 +48,30 @@ StartupEvents.registry('block', event => {
     .texture('custom_stuff:blocks/radio_tower_block')
 
     const enabledProperty = $BooleanProperty.create("enabled")
+    //event.create(`box_open`, "cardinal")
+    //event.create(`box_closed`, "cardinal")
 
     definitelyUniqueNameForIETemplatesList.forEach(name => {
         event.create(`${name}_placer`, "cardinal")
+        .defaultCutout()
+        .box(2, 0, 1, 14, 9, 15, true)
+        .soundType('bamboo')
         .tagBlock("milf:placers")
         .property(enabledProperty)
         .defaultState(state => state.cycle(enabledProperty))
+        .parentModel("kubejs:block/box_closed")
         global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime.push(`kubejs:${name}_placer`)
+
+        event.create(`${name}_empty_box`, "cardinal")
+        .defaultCutout()
+        .box(2, 0, 1, 14, 9, 15, true)
+        .soundType('bamboo')
+        .tagBlock("milf:empty_box")
+        .property(enabledProperty)
+        .defaultState(state => state.cycle(enabledProperty))
+        .parentModel("kubejs:block/box_open")
+        .noDrops()
+        global.AnotherDefinitelyUniqueNameForBoxes.push(`kubejs:${name}_empty_box`)
+
     });
 })
