@@ -1,7 +1,14 @@
 const $FTBChunksAPI = Java.loadClass("dev.ftb.mods.ftbchunks.api.FTBChunksAPI").api()
 const $ChunkDimPos = Java.loadClass("dev.ftb.mods.ftblibrary.math.ChunkDimPos")
-const placerBlocks = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime
-const boxBlocks = global.AnotherDefinitelyUniqueNameForBoxes
+const $ImmersiveMessage = Java.loadClass("toni.immersivemessages.api.ImmersiveMessage")
+const $ImmersiveFont = Java.loadClass("toni.immersivemessages.ImmersiveFont")
+const $ChatFormatting = Java.loadClass("net.minecraft.ChatFormatting")
+const $SoundEffect = Java.loadClass("toni.immersivemessages.api.SoundEffect")
+
+
+/**@type {Array<string>} */ const placerBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime)
+/**@type {Array<string>} */ const boxBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForBoxes)
+
 
 const angleToFacing = {
     0:"east",90:"north",180:"west",270:"south",
@@ -10,7 +17,6 @@ const angleToFacing = {
 
 BlockEvents.rightClicked(placerBlocks, event => {
     if(event.getHand()=="OFF_HAND") event.cancel()
-
     //#region FTB chunks stuff
     const chunkManager = $FTBChunksAPI.getManager()
     const currentChunk = chunkManager.getChunk($ChunkDimPos(event.player))
@@ -88,7 +94,9 @@ BlockEvents.rightClicked(placerBlocks, event => {
             }
         }
         if(!canPlace) {
-            event.player.tell([Text.gray('Not enough space to place this one')]);
+            sendImmersiveMessage(`Not enough space to place ${textAnimatorString("this", "bounce")} one`, event.getPlayer(), defaultNotificationStyle)
+            event.server.runCommandSilent(`playsound block.chain.break block @p ${x_player} ${y_player} ${z_player}`)
+            event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_player < 0 ? x_player+0.5 : x_player-0.5},y=${y_player-1},z=${structureZ_player < 0 ? z_player+0.5 : z_player-0.5},dx=${structureX_player},dy=${structureY_player},dz=${structureZ_player}]`)
             particleFrame("minecraft:instant_effect", {x:x_player,y:y_player,z:z_player}, {x:structureX_player,y:structureY_player,z:structureZ_player}, event)
             event.cancel()
         }
@@ -119,7 +127,7 @@ BlockEvents.rightClicked(placerBlocks, event => {
             if (String(blockProperties.north).slice(1, -1) === "true") {realProperties[directionRelativeTo("north"), playerFacing] = true}
 
             //console.log(`summon block_display ${blockPos_player.offset(rotatedVec).getX()} ${blockPos_player.offset(rotatedVec).getY() + 0.5} ${blockPos_player.offset(rotatedVec).getZ()} {interpolation_duration:15,teleport_duration:25,Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(realProperties)}}}`);
-            event.server.runCommandSilent(`summon block_display ${blockPos_player.offset(rotatedVec).getX()} ${blockPos_player.offset(rotatedVec).getY() + 0.5} ${blockPos_player.offset(rotatedVec).getZ()} {interpolation_duration:15,teleport_duration:25,Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(realProperties)}}}`)
+            if(blockID != air)event.server.runCommandSilent(`summon block_display ${blockPos_player.offset(rotatedVec).getX()} ${blockPos_player.offset(rotatedVec).getY() + 0.5} ${blockPos_player.offset(rotatedVec).getZ()} {interpolation_duration:15,teleport_duration:25,Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(realProperties)}}}`)
             //event.server.runCommandSilent(`teleport @e[limit=1,sort=nearest,x=${blockPos_player.offset(rotatedVec).getX()},y=${blockPos_player.offset(rotatedVec).getY()},z=${blockPos_player.offset(rotatedVec).getZ()},type=block_display] ${blockPos_player.offset(rotatedVec).getX()} ${blockPos_player.offset(rotatedVec).getY() + 4} ${blockPos_player.offset(rotatedVec).getZ()}`)
             //event.server.runCommandSilent(`data merge entity @e[limit=1,sort=nearest,x=${blockPos_player.offset(rotatedVec).getX()},y=${blockPos_player.offset(rotatedVec).getY()},z=${blockPos_player.offset(rotatedVec).getZ()},type=block_display] {interpolation_duration:15,teleport_duration:25,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.25f,-0.25f,-0.25f],scale:[0.5f,0.5f,0.5f]}}`)
             //event.server.runCommandSilent(`teleport @e[limit=1,sort=nearest,x=${blockPos_player.offset(rotatedVec).getX()},y=${blockPos_player.offset(rotatedVec).getY()},z=${blockPos_player.offset(rotatedVec).getZ()},type=block_display] ${blockPos.getX() + 0.5} ${blockPos.getY() + 1.3} ${blockPos.getZ() + 0.5}`)
@@ -136,7 +144,8 @@ BlockEvents.rightClicked(placerBlocks, event => {
     //#region placement logic
     else if(event.player.getMainHandItem().getTags().toString().includes("c:tools/wrench")){
         if(event.block.getProperties().enabled == "false"){
-            event.player.tell([Text.gray('You have to choose a valid direction first')]);
+            sendImmersiveMessage(`You have to choose a ${textAnimatorString("valid direction", "glitch")} first`, event.getPlayer(), defaultNotificationStyle)
+            //event.player.tell([Text.gray('You have to choose a valid direction first')]);
             event.cancel()
         }
         event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_block < 0 ? x_block : x_block-1},y=${y_block-1},z=${structureZ_block < 0 ? z_block : z_block-1},dx=${structureX_block},dy=${structureY_block},dz=${structureZ_block}]`)
@@ -152,7 +161,8 @@ BlockEvents.rightClicked(placerBlocks, event => {
             }
         }
         if(!canPlace) {
-            event.player.tell([Text.gray('Not enough space to place this one')]);
+            event.server.runCommandSilent(`playsound block.chain.break block @p ${x_block} ${y_block} ${z_block}`)
+            sendImmersiveMessage(`Not enough space to place ${textAnimatorString("this", "bounce")} one`, event.getPlayer(), defaultNotificationStyle)
             particleFrame("minecraft:instant_effect", {x:x_block,y:y_block,z:z_block}, {x:structureX_block,y:structureY_block,z:structureZ_block}, event)
             event.cancel()
         }
@@ -232,7 +242,8 @@ BlockEvents.rightClicked(boxBlocks, event => {
         }
     }
     if(!canRemove){
-        event.player.tell([Text.gray('Structure has to be exactly the same')]);
+        event.server.runCommandSilent(`playsound block.chain.break block @p ${x_block} ${y_block} ${z_block}`)
+        sendImmersiveMessage(`Structure has to be ${textAnimatorString("EXACTLY", "shake")} the same`, event.getPlayer(), defaultNotificationStyle)
         event.cancel()
     }
     event.block.set(event.block.id.toString().slice(0,-10) + "_placer", Object.assign({}, event.block.getProperties(), {enabled:false}))
@@ -243,6 +254,55 @@ BlockEvents.rightClicked(boxBlocks, event => {
 
 function rotateVec3i(vec3i, angle){
     return Vec3i(Math.round(vec3i.getX() * Math.cos(angle) + vec3i.getZ() * Math.sin(angle)), vec3i.getY(), Math.round(-vec3i.getX() * Math.sin(angle) + vec3i.getZ() * Math.cos(angle)))
+}
+
+function textAnimatorString(text, type){
+    return `<${type}>${text}</${type}>`
+} 
+
+function sendImmersiveMessage(text, player, args){
+    args = args || {}
+    let duration = args.duration || 2.2
+    let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, Component.info(Component.ofString(text)))
+    args.bold && message.bold()
+    args.italic && message.italic()
+    args.fadeIn && message.fadeIn(args.fadeIn)
+    args.fadeOut && message.fadeOut(args.fadeOut)
+    args.color && message["color(net.minecraft.ChatFormatting)"]($ChatFormatting.WHITE)
+    //args.font && message["font(toni.immersivemessages.ImmersiveFont)"]('minecrafter') // incompatible with Text Animator :(
+    args.x && message.x(args.x)
+    args.y && message.y(args.y)
+    args.anchor && message.anchor(args.anchor)
+    if(args.slideIn){
+        args.slideIn == "up" && message.slideUp()
+        args.slideIn == "down" && message.slideDown()
+        args.slideIn == "left" && message.slideLeft()
+        args.slideIn == "right" && message.slideRight()
+    }
+    if(args.slideOut){
+        args.slideOut == "up" && message.slideOutUp()
+        args.slideOut == "down" && message.slideOutDown()
+        args.slideOut == "left" && message.slideOutLeft()
+        args.slideOut == "right" && message.slideOutRight()
+    }
+    if(args.typewriter){
+        message.typewriter(args.typewriter.speed || 1, args.typewriter.centerAligned || false)
+        args.typewriter.sound && message.sound($SoundEffect[args.typewriter.sound])
+    }
+    if(args.background){
+        message.background()
+    }
+    message["sendServer(net.minecraft.server.level.ServerPlayer)"](player)
+}
+
+const defaultNotificationStyle = {
+    anchor:"CENTER_RIGHT",
+    slideIn:"right",
+    //slideOut:"right",
+    fadeIn:1,
+    fadeOut:0.3,
+    background:true,
+    y:140
 }
 
 function particleFrame(type, startPos, size, event){
@@ -305,7 +365,7 @@ BlockEvents.broken(placerBlocks, event => {
     const x_block = blockPos_block.getX(), y_block = blockPos_block.getY(), z_block= blockPos_block.getZ()
 
     if(event.block.getProperties().enabled == "true"){
-        event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_block < 0 ? x_block : x_block-1},y=${y_block-1},z=${structureZ_block < 0 ? z_block : z_block-1},dx=${structureX_block},dy=${structureY_block},dz=${structureZ_block}]`)
+        event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_block < 0 ? x_block+0.5 : x_block-0.5},y=${y_block-1},z=${structureZ_block < 0 ? z_block+0.5 : z_block-0.5},dx=${structureX_block},dy=${structureY_block},dz=${structureZ_block}]`)
         particleFrame("minecraft:instant_effect", {x:x_block,y:y_block,z:z_block}, {x:structureX_block,y:structureY_block,z:structureZ_block}, event)
     }
 })
