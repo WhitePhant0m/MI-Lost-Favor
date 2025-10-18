@@ -129,6 +129,7 @@
 		"• +2x Recharge Rate"
 	]
 	quest.0501BDB7ED850B47.quest_desc: [""]
+	quest.051773C85A4FB2DF.quest_subtitle: "Kill golem for get charm"
 	quest.0528A7114DC06152.quest_desc: ["Gives a 1 to 2 ratio when chopping logs into planks, as opposed to the 1 to 1 in a crafting grid."]
 	quest.056505A2F0A197CB.quest_desc: [
 		"Improve your final pedestal!"
@@ -1753,6 +1754,7 @@
 		"{@pagebreak}"
 		"Однако из-за его размеров его мощность была снижена. Чтобы компенсировать это, я создал специальные боеприпасы. Катализатор для масла. Если поместить болты в горшок с маслом, они могут покрыться маслом, применяя его эффект к пораженным целям. Имейте в виду, что некоторые масла не будут действовать на болты."
 	]
+	quest.7ED354CF6EFE61BC.quest_subtitle: "Linking tool"
 	reward.0DC887212398806D.title: "New Quest Chapter"
 	reward.0E7A91DD8F37AF4D.title: "Desaturation"
 	reward.4002784F5F537B2D.title: "New interactions: chest looting, villagers, spawners, wandering trader"
@@ -1790,6 +1792,7 @@
 	task.1733FF25C74D58C6.title: "Any #sophisticatedstorage:all_storage"
 	task.175E331625D7D0E8.title: "Any #milf:crest_base_blocks"
 	task.17EBE6D06902A269.title: "Any #milf:basic_gemstone_shards"
+	task.1858B5DCA97FF142.title: "Any #ars_nouveau:horn_food"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
 	task.1DB3762470DC4D9D.title: "Any #milf:chiseled_base_blocks"
 	task.1FC975DB259AA8A8.title: "Any #milf:gemstone_lamp"
@@ -1799,6 +1802,7 @@
 	task.25CB2D0B385D4533.title: "Spectrum?"
 	task.274F98243AA9482F.title: "Animals breeding"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"
+	task.2BE6D4D9E1298E99.title: "Any #minecraft:decorated_pot_sherds"
 	task.2C236C4C499DB27A.title: "Any #hexerei:brooms"
 	task.2CD40379A7378211.title: "Any #milf:pillar_base_blocks"
 	task.2D505FCD743999D9.title: "Any #milf:chiseled_base_blocks"
@@ -1847,6 +1851,7 @@
 	task.5EC8E0E987CF862A.title: "More plants"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
 	task.64E7E65976B570B4.title: "Posuc's Convication"
+	task.651818A1418ADDFB.title: "Any #minecraft:saplings"
 	task.6719AA6DDAB0F823.title: "Any #minecraft:anvil"
 	task.68DA7E9C5CC5E0FB.title: "Uphyxes Inverted Tower"
 	task.690983E33893CB82.title: "Any #milf:polished_slabs"

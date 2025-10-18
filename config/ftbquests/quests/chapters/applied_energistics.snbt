@@ -23,6 +23,13 @@
 			x: -8.0d
 			y: 0.0d
 		}
+		{
+			id: "08495798461A6163"
+			linked_quest: "2F024F23E23C206B"
+			shape: "diamond"
+			x: 7.5d
+			y: 1.0d
+		}
 	]
 	quests: [
 		{
@@ -2552,7 +2559,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -7.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["05AA83F6892D5158"]
@@ -2757,6 +2764,92 @@
 			}]
 			x: 11.0d
 			y: -0.5d
+		}
+		{
+			dependencies: [
+				"266E06BD92B2AAC6"
+				"3476E6DF114A1001"
+			]
+			id: "159755F6738E5A39"
+			shape: "diamond"
+			tasks: [{
+				id: "01A05DE7759EF613"
+				item: { count: 1, id: "arseng:source_storage_cell_1k" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"5DAC8321D77FDFA5"
+				"3476E6DF114A1001"
+			]
+			id: "2B46B04F60E7E90C"
+			tasks: [{
+				id: "69B50B7006503221"
+				item: { count: 1, id: "arseng:source_storage_cell_4k" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"32AFD9B0455030EE"
+				"3476E6DF114A1001"
+			]
+			id: "64B65C21C69C1BD1"
+			tasks: [{
+				id: "48AA56060264789A"
+				item: { count: 1, id: "arseng:source_storage_cell_16k" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7E42D08AC1807E2C"
+				"3476E6DF114A1001"
+			]
+			id: "03A48A5AB289BF0F"
+			tasks: [{
+				id: "48DDAB60D6485ADF"
+				item: { count: 1, id: "arseng:source_storage_cell_64k" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"037657CFBF2FA1C6"
+				"3476E6DF114A1001"
+			]
+			id: "608698F355E07096"
+			tasks: [{
+				id: "6BAB1E57CB245EC2"
+				item: { count: 1, id: "arseng:source_storage_cell_256k" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1BE0EC7CC3C84287"
+				"3476E6DF114A1001"
+			]
+			id: "00B21E570F73B2F5"
+			shape: "gear"
+			tasks: [{
+				id: "5BA10BEFACA93C84"
+				item: { count: 1, id: "arseng:source_acceptor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
 		}
 	]
 }

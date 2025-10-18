@@ -5,12 +5,20 @@
 	group: ""
 	id: "2E7EECD4E8CF01EA"
 	order_index: 9
-	quest_links: [{
-		id: "5E2A1DB5D0EF73B3"
-		linked_quest: "746ED760B3D00FBA"
-		x: 33.5d
-		y: -2.5d
-	}]
+	quest_links: [
+		{
+			id: "5E2A1DB5D0EF73B3"
+			linked_quest: "746ED760B3D00FBA"
+			x: 33.5d
+			y: -2.5d
+		}
+		{
+			id: "0E2DAC34F9B6D279"
+			linked_quest: "64D484797CA712B0"
+			x: 1.0d
+			y: 1.0d
+		}
+	]
 	quests: [
 		{
 			id: "3682A94D1B71ED30"
