@@ -31,28 +31,7 @@ global.AnotherDefinitelyUniqueNameForBoxes = global.AnotherDefinitelyUniqueNameF
 
 StartupEvents.registry('block', event => {
 
-
-    event.create('radio_tower_block') 
-    .item(i => i.maxStackSize(64))
-    .displayName('Radio tower block') 
-    .hardness(1.0) 
-    .soundType("chain")
-    .requiresTool(true) 
-    .tagBlock('minecraft:mineable/pickaxe')
-    .texture('custom_stuff:blocks/radio_tower_block')
-
-    event.create('radio_tower_slab', "slab") 
-    .item(i => i.maxStackSize(64))
-    .displayName('Radio tower slab') 
-    .hardness(1.0) 
-    .soundType("chain")
-    .requiresTool(true) 
-    .tagBlock('minecraft:mineable/pickaxe')
-    .texture('custom_stuff:blocks/radio_tower_block')
-
     const enabledProperty = $BooleanProperty.create("enabled")
-    //event.create(`box_open`, "cardinal")
-    //event.create(`box_closed`, "cardinal")
 
     definitelyUniqueNameForIETemplatesList.forEach(name => {
         const [nameString, itemName] = Array.isArray(name) ? [name[0], name[1]] : [name, name]
@@ -76,7 +55,28 @@ StartupEvents.registry('block', event => {
         .parentModel("kubejs:block/box_open")
         .noDrops()
         global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `immersiveengineering:${itemName}`
-
     });
+
+/*     definitelyUniqueNameForIETemplatesList.forEach(name => {
+        const [nameString, itemName] = Array.isArray(name) ? [name[0], name[1]] : [name, name]
+        const emiJsonPath = `kubejs/assets/emi/recipe/additions/${nameString}_placer.json`;
+        const left = {
+            "type": "item",
+            "id": `kubejs:${nameString}_placer`,
+            "remainder": `item:kubejs:${nameString}_empty_box`
+        }
+        const right = {
+            "type": "item",
+            "id": "immersiveengineering:hammer",
+            "chance": 0
+        }
+        const Json = {
+            "type": "emi:world_interaction",
+            "left":left,
+            "right":right,
+            "output": `item:immersiveengineering:${itemName}`
+        }
+        JsonIO.write(emiJsonPath, JSON.stringify(Json, null, 2))
+    }) */
 })
 

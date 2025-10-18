@@ -319,36 +319,36 @@ ServerEvents.recipes(event => {
     )
     //item_output
     workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("p"),
-            ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerAll("M").layerCentre("h")
+            ['   ','   ','   '].layerPlus("M").layerCentre("p"),
+            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
+            ['   ','   ','   '].layerPlus("M").layerCentre("h")
         ],
         {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
         'modern_industrialization:bronze_item_output_hatch', bronzeBits
     )
     //item_input
     workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerAll("M").layerCentre("p")
+            ['   ','   ','   '].layerPlus("M").layerCentre("h"),
+            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
+            ['   ','   ','   '].layerPlus("M").layerCentre("p")
         ],
         {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
         'modern_industrialization:bronze_item_input_hatch', bronzeBits
     )
     //fluid_output
     workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("p"),
-            ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerAll("M").layerCentre("h")
+            ['   ','   ','   '].layerPlus("M").layerCentre("p"),
+            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
+            ['   ','   ','   '].layerPlus("M").layerCentre("h")
         ],
         {p:"moderndynamics:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
         'modern_industrialization:bronze_fluid_output_hatch', bronzeBits
     )
     //fluid_input
     workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerAll("M").layerCentre("p")
+            ['   ','   ','   '].layerPlus("M").layerCentre("h"),
+            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
+            ['   ','   ','   '].layerPlus("M").layerCentre("p")
         ],
         {p:"moderndynamics:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
         'modern_industrialization:bronze_fluid_input_hatch', bronzeBits
@@ -458,36 +458,36 @@ ServerEvents.recipes(event => {
     )
     //item_output
     workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("p"),
-            ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerAll("M").layerCentre("h")
+            ['   ','   ','   '].layerPlus("M").layerCentre("p"),
+            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
+            ['   ','   ','   '].layerPlus("M").layerCentre("h")
         ],
         {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
         'modern_industrialization:steel_item_output_hatch', steelBits
     )
     //item_input
     workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerAll("M").layerCentre("p")
+            ['   ','   ','   '].layerPlus("M").layerCentre("h"),
+            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
+            ['   ','   ','   '].layerPlus("M").layerCentre("p")
         ],
         {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
         'modern_industrialization:steel_item_input_hatch', steelBits
     )
     //fluid_output
     workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("p"),
-            ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerAll("M").layerCentre("h")
+            ['   ','   ','   '].layerPlus("M").layerCentre("p"),
+            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
+            ['   ','   ','   '].layerPlus("M").layerCentre("h")
         ],
         {p:"immersiveengineering:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
         'modern_industrialization:steel_fluid_output_hatch', steelBits
     )
     //fluid_input
     workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerAll("M").layerCentre("p")
+            ['   ','   ','   '].layerPlus("M").layerCentre("h"),
+            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
+            ['   ','   ','   '].layerPlus("M").layerCentre("p")
         ],
         {p:"immersiveengineering:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
         'modern_industrialization:steel_fluid_input_hatch', steelBits

@@ -9,7 +9,6 @@ NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
 	event.registerBelowAll(ID.kjs("placers_tooltips"), (gui, delta) => global.renderBlockTooltips(gui, delta))
 })
 
-
 function textAnimatorString(text, type){
     return `<${type}>${text}</${type}>`
 }
@@ -27,8 +26,6 @@ const tooltipHeight = 44
 /**@type {Object} */ const placerBlocks = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime
 /**@type {Object} */ const boxBlocks = global.AnotherDefinitelyUniqueNameForBoxes
 
-console.log(placerBlocks);
-
 /**
  * @param {$GuiGraphics_} guiGraphics
  * @param {$DeltaTracker_} deltaTracker
@@ -39,16 +36,15 @@ global.renderBlockTooltips = (guiGraphics, deltaTracker) => {
 	const block = Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block
 	const clientTooltipComponents = block.hasTag("milf:placers") ? [
 		$ClientTooltipComponent.create(block.name.visualOrderText),
-		$ClientTooltipComponent.create(Component.info(Component.ofString(`Use any type of ${textAnimatorStringForEach("HAMMER", "bounce")} to build structure!`)).visualOrderText),
-		$ClientTooltipComponent.create(Component.info(Component.ofString(`Right click with an empty hand to preview`)).visualOrderText),
-		$ClientTooltipComponent.create(Component.info(Component.keybind("key.sneak").append(Component.ofString(` + RMB with an empty hand to remove preview`))).visualOrderText)
+		$ClientTooltipComponent.create(Component.info(Component.translatable(`milf.placers.gui1`)).visualOrderText),
+		$ClientTooltipComponent.create(Component.info(Component.translatable(`milf.placers.gui2`)).visualOrderText),
+		$ClientTooltipComponent.create(Component.info(Component.keybind("key.sneak").append(Component.translatable(`milf.placers.gui3`))).visualOrderText),
 	] : [
 		$ClientTooltipComponent.create(block.name.visualOrderText),
-		$ClientTooltipComponent.create(Component.info(Component.ofString(`You can still get your structure back!`)).visualOrderText),
-		$ClientTooltipComponent.create(Component.info(Component.ofString(`Just `).append(Component.keybind("key.sneak").append(Component.ofString(` + RMB with an empty hand to put it back`)))).visualOrderText),
-		$ClientTooltipComponent.create(Component.info(Component.ofString(`Attention, breaking this box will `).append(Component.red(Component.ofString(`${textAnimatorString("DESTROY", "glitch")}`))).append(Component.ofString(" it"))).visualOrderText),
+		$ClientTooltipComponent.create(Component.info(Component.translatable(`milf.empty_box.gui1`)).visualOrderText),
+		$ClientTooltipComponent.create(Component.info(Component.translatable(`milf.empty_box.gui2_1`).append(Component.keybind("key.sneak").append(Component.translatable(`milf.empty_box.gui2_2`)))).visualOrderText),
+		$ClientTooltipComponent.create(Component.info(Component.translatable(`milf.empty_box.gui3_1`).append(Component.red(Component.translatable(`milf.empty_box.gui3_2`))).append(Component.translatable("milf.empty_box.gui3_3"))).visualOrderText),
 	]
-	
 	let maxWidth = 0
 	clientTooltipComponents.forEach(c => {
 		const w = c.getWidth(Client.font)

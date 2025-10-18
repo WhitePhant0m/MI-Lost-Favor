@@ -42,6 +42,17 @@ ServerEvents.recipes(event => {
 
     ytechAlloyingCraft(event, {
         inputItems:[
+            [{tag: "c:sands"}],
+            [{tag: "c:dusts/steel"}]
+        ],
+        outputItems:[
+            [{id:"kubejs:steel_infused_glass"},2]
+        ],
+        minTemp: 1200
+    })
+
+    ytechAlloyingCraft(event, {
+        inputItems:[
             [{tag: "c:cobblestones"}],
             [{item: "ytech:pebble"}]
         ],

@@ -4,6 +4,7 @@ const $ImmersiveMessage = Java.loadClass("toni.immersivemessages.api.ImmersiveMe
 const $ImmersiveFont = Java.loadClass("toni.immersivemessages.ImmersiveFont")
 const $ChatFormatting = Java.loadClass("net.minecraft.ChatFormatting")
 const $SoundEffect = Java.loadClass("toni.immersivemessages.api.SoundEffect")
+const $ImmersiveMessagesManager = Java.loadClass("toni.immersivemessages.ImmersiveMessagesManager")
 
 
 /**@type {Array<string>} */ const placerBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime)
@@ -17,6 +18,7 @@ const angleToFacing = {
 
 BlockEvents.rightClicked(placerBlocks, event => {
     if(event.getHand()=="OFF_HAND") event.cancel()
+    
     //#region FTB chunks stuff
     const chunkManager = $FTBChunksAPI.getManager()
     const currentChunk = chunkManager.getChunk($ChunkDimPos(event.player))
@@ -94,7 +96,7 @@ BlockEvents.rightClicked(placerBlocks, event => {
             }
         }
         if(!canPlace) {
-            sendImmersiveMessage(`Not enough space to place ${textAnimatorString("this", "bounce")} one`, event.getPlayer(), defaultNotificationStyle)
+            sendImmersiveMessage(Text.translatable("milf.placers.notification1"), event.getPlayer(), defaultNotificationStyle, event)
             event.server.runCommandSilent(`playsound block.chain.break block @p ${x_player} ${y_player} ${z_player}`)
             event.server.runCommandSilent(`kill @e[type=block_display,x=${structureX_player < 0 ? x_player+0.5 : x_player-0.5},y=${y_player-1},z=${structureZ_player < 0 ? z_player+0.5 : z_player-0.5},dx=${structureX_player},dy=${structureY_player},dz=${structureZ_player}]`)
             particleFrame("minecraft:instant_effect", {x:x_player,y:y_player,z:z_player}, {x:structureX_player,y:structureY_player,z:structureZ_player}, event)
@@ -144,7 +146,7 @@ BlockEvents.rightClicked(placerBlocks, event => {
     //#region placement logic
     else if(event.player.getMainHandItem().getTags().toString().includes("c:tools/wrench")){
         if(event.block.getProperties().enabled == "false"){
-            sendImmersiveMessage(`You have to choose a ${textAnimatorString("valid direction", "glitch")} first`, event.getPlayer(), defaultNotificationStyle)
+            sendImmersiveMessage(Text.translatable("milf.placers.notification2"), event.getPlayer(), defaultNotificationStyle, event)
             //event.player.tell([Text.gray('You have to choose a valid direction first')]);
             event.cancel()
         }
@@ -162,7 +164,7 @@ BlockEvents.rightClicked(placerBlocks, event => {
         }
         if(!canPlace) {
             event.server.runCommandSilent(`playsound block.chain.break block @p ${x_block} ${y_block} ${z_block}`)
-            sendImmersiveMessage(`Not enough space to place ${textAnimatorString("this", "bounce")} one`, event.getPlayer(), defaultNotificationStyle)
+            sendImmersiveMessage(Text.translatable("milf.placers.notification1"), event.getPlayer(), defaultNotificationStyle, event)
             particleFrame("minecraft:instant_effect", {x:x_block,y:y_block,z:z_block}, {x:structureX_block,y:structureY_block,z:structureZ_block}, event)
             event.cancel()
         }
@@ -243,7 +245,7 @@ BlockEvents.rightClicked(boxBlocks, event => {
     }
     if(!canRemove){
         event.server.runCommandSilent(`playsound block.chain.break block @p ${x_block} ${y_block} ${z_block}`)
-        sendImmersiveMessage(`Structure has to be ${textAnimatorString("EXACTLY", "shake")} the same`, event.getPlayer(), defaultNotificationStyle)
+        sendImmersiveMessage(Text.translatable("milf.placers.notification3"), event.getPlayer(), defaultNotificationStyle, event)
         event.cancel()
     }
     event.block.set(event.block.id.toString().slice(0,-10) + "_placer", Object.assign({}, event.block.getProperties(), {enabled:false}))
@@ -260,10 +262,14 @@ function textAnimatorString(text, type){
     return `<${type}>${text}</${type}>`
 } 
 
-function sendImmersiveMessage(text, player, args){
+let messagesQueue = 0
+
+
+function sendImmersiveMessage(text, player, args, event){
+    if(messagesQueue != 0) return
     args = args || {}
     let duration = args.duration || 2.2
-    let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, Component.info(Component.ofString(text)))
+    let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, TextIcons.warn().append(TextIcons.smallSpace()).append(text))
     args.bold && message.bold()
     args.italic && message.italic()
     args.fadeIn && message.fadeIn(args.fadeIn)
@@ -293,6 +299,10 @@ function sendImmersiveMessage(text, player, args){
         message.background()
     }
     message["sendServer(net.minecraft.server.level.ServerPlayer)"](player)
+    if(args.queue){
+        messagesQueue++
+        /**@type {$MinecraftServer_} */(event.server).scheduleInTicks(duration * 20, _ => messagesQueue--)
+    }
 }
 
 const defaultNotificationStyle = {
@@ -302,7 +312,8 @@ const defaultNotificationStyle = {
     fadeIn:1,
     fadeOut:0.3,
     background:true,
-    y:140
+    y:140,
+    queue:true
 }
 
 function particleFrame(type, startPos, size, event){

@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:sheetmetal_tank_placer",
+		"remainder": "item:kubejs:sheetmetal_tank_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0.0
+	},
+	"output": "item:immersiveengineering:tank"
+}

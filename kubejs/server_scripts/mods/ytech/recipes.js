@@ -19,7 +19,8 @@ ServerEvents.recipes(event => {
             "ytech:crushed_iron",
             "dummmmmmy:target_dummy",
             "toolbelt:belt",
-            "toolbelt:pouch"
+            "toolbelt:pouch",
+            "minecraft:lead"
         ]
     })
 
@@ -135,6 +136,22 @@ ServerEvents.recipes(event => {
             " L "
         ],
         "result": {"count": 1, "id": "toolbelt:pouch"}
+    })
+
+    event.custom({
+        "type": "ytech:remaining_shaped_crafting",
+        "category": "equipment",
+        "key": {
+            "#": {"tag": "ytech:bone_needles"},
+            "N": {"item": "modern_industrialization:tin_nugget"},
+            "S": {"tag": "ytech:leather_strips"},
+        },
+        "pattern": [
+            "#S ",
+            "SN ",
+            "  S"
+        ],
+        "result": {"count": 1, "id": "minecraft:lead"}
     })
 
     event.custom({

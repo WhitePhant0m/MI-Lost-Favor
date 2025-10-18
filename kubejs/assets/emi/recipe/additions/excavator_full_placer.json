@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:excavator_full_placer",
+		"remainder": "item:kubejs:excavator_full_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0.0
+	},
+	"output": "item:immersiveengineering:excavator"
+}

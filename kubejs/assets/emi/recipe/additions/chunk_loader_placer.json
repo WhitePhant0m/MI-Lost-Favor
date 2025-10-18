@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:chunk_loader_placer",
+		"remainder": "item:kubejs:chunk_loader_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0.0
+	},
+	"output": "item:immersiveengineering:chunk_loader"
+}
