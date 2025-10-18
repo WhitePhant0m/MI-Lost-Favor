@@ -57,6 +57,8 @@ const early_mobs = [
     {id:"warped_forest_enderman", mob: "endermanoverhaul:warped_forest_enderman"},
     {id:"windswept_hills_enderman", mob: "endermanoverhaul:windswept_hills_enderman"},
     {id:"naga", mob: "mowziesmobs:naga"},
+    {id:"wither_skeleton", mob: "minecraft:wither_skeleton"},
+    {id:"ravager", mob: "minecraft:ravager"},
 ]
 
 early_mobs.forEach(mob => {
