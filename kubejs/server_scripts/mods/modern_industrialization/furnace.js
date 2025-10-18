@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
     .itemOut("minecraft:gold_ingot")
 
     const minecraft_metals_for_furnace = ['copper', 'gold', 'iron'];
-    const MI_metals_for_furnace = ['antimony', 'lead', 'iridium', 'tin', 'nickel'];
+    const MI_metals_for_furnace = ['antimony', 'lead', 'tin', 'nickel'];
 
     MI_metals_for_furnace.forEach(metal => {        
         event.remove({type: 'minecraft:smelting', input: `modern_industrialization:raw_${metal}`})
@@ -102,5 +102,10 @@ ServerEvents.recipes(event => {
         event.remove({type: 'minecraft:smelting', input: `minecraft:deepslate_${metal}_ore`})
         event.remove({type: 'minecraft:smelting', input: `modern_industrialization:${metal}_tiny_dust`})
     });
+
+    event.remove({type: 'minecraft:smelting', input: `modern_industrialization:raw_iridium`})
+    event.remove({type: 'minecraft:smelting', input: `modern_industrialization:iridium_dust`})
+    event.remove({type: 'minecraft:smelting', input: `modern_industrialization:iridium_ore`})
+    event.remove({type: 'minecraft:smelting', input: `modern_industrialization:iridium_tiny_dust`})
 
 })
