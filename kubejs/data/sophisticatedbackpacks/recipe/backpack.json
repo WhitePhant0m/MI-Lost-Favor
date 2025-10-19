@@ -9,7 +9,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "tag": "c:chests/wooden"
+      "item": "ars_elemental:caster_bag"
     },
     "L": {
       "tag": "c:leathers"
