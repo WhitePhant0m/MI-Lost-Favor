@@ -6,9 +6,8 @@ const $ChatFormatting = Java.loadClass("net.minecraft.ChatFormatting")
 const $SoundEffect = Java.loadClass("toni.immersivemessages.api.SoundEffect")
 const $ImmersiveMessagesManager = Java.loadClass("toni.immersivemessages.ImmersiveMessagesManager")
 
-
-/**@type {Array<string>} */ const placerBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime)
-/**@type {Array<string>} */ const boxBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForBoxes)
+/**@type {Object} */ const placerBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime)
+/**@type {Object} */ const boxBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForBoxes)
 
 
 const angleToFacing = {
@@ -18,7 +17,6 @@ const angleToFacing = {
 
 BlockEvents.rightClicked(placerBlocks, event => {
     if(event.getHand()=="OFF_HAND") event.cancel()
-    
     //#region FTB chunks stuff
     const chunkManager = $FTBChunksAPI.getManager()
     const currentChunk = chunkManager.getChunk($ChunkDimPos(event.player))
@@ -262,11 +260,10 @@ function textAnimatorString(text, type){
     return `<${type}>${text}</${type}>`
 } 
 
-let messagesQueue = 0
-
-
 function sendImmersiveMessage(text, player, args, event){
-    if(messagesQueue != 0) return
+    if(player.persistentData.immersiveMessageQueue) {
+        return
+    }
     args = args || {}
     let duration = args.duration || 2.2
     let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, TextIcons.warn().append(TextIcons.smallSpace()).append(text))
@@ -300,10 +297,19 @@ function sendImmersiveMessage(text, player, args, event){
     }
     message["sendServer(net.minecraft.server.level.ServerPlayer)"](player)
     if(args.queue){
-        messagesQueue++
-        /**@type {$MinecraftServer_} */(event.server).scheduleInTicks(duration * 20, _ => messagesQueue--)
+        player.persistentData.putBoolean("immersiveMessageQueue", true);
+        /**@type {$MinecraftServer_}*/(event.server).scheduleInTicks(duration * 20, _ =>  player.persistentData.remove("immersiveMessageQueue"))
     }
 }
+
+PlayerEvents.loggedOut(event => {
+    if(event.player.persistentData.immersiveMessageQueue) event.player.persistentData.remove("immersiveMessageQueue")
+})
+
+/* NetworkEvents.dataReceived("milf:immersiveMessageQueue", event => {
+    console.log("hello");
+    event.player.persistentData.remove("immersiveMessageQueue")
+}) */
 
 const defaultNotificationStyle = {
     anchor:"CENTER_RIGHT",

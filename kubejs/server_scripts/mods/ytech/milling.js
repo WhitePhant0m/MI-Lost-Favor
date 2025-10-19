@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
 
     ytechMillingCraft(event,{
         inputItems:[[{item: "minecraft:raw_iron"}]],
-        outputItems:[[{id:"modern_industrialization:iron_dust"}]],
+        outputItems:[[{id:"kubejs:crushed_iron"}]],
         bonusChance: 0.5,
         compatOff:true
     })

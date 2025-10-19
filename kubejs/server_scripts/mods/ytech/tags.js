@@ -23,7 +23,6 @@ ServerEvents.tags("item", event => {
         "ytech:lead_bolt",
         "ytech:bronze_block",
         "ytech:tin_block",
-
     ])
 
     event.add("modern_industrialization:forge_hammer_tools", [
@@ -35,6 +34,14 @@ ServerEvents.tags("item", event => {
         "ytech:stone_hammer",
         "ytech:golden_hammer",
         "ytech:tin_hammer"
+    ])
+
+    event.add("milf:coals_for_bloom", [
+        "minecraft:coal",
+        "minecraft:charcoal",
+        "modern_industrialization:coal_crushed_dust",
+        "modern_industrialization:lignite_coal_crushed_dust",
+        "malum:arcane_charcoal"
     ])
 
 })

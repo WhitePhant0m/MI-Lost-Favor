@@ -8,6 +8,8 @@ LootJS.modifiers(event => {
         { item: "minecraft:copper_ingot", replace_item: "minecraft:raw_copper" },
         { item: "minecraft:copper_block", replace_item: "minecraft:raw_copper_block" },
         { item: "minecraft:leather", replace_item: "ytech:raw_hide" },
+        { item: "ytech:crushed_gold", replace_item: "modern_industrialization:gold_dust"},
+        { item: "ytech:crushed_cassiterite", replace_item: "modern_industrialization:tin_dust"}
     ]
 
     const allowed_types_for_replacing = [LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC]

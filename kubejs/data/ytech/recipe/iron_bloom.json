@@ -1,0 +1,21 @@
+{
+  "type": "ytech:alloying",
+  "ingredient1": {
+    "count": 1,
+    "ingredient": {
+      "tag": "c:crushed_ores/iron"
+    }
+  },
+  "ingredient2": {
+    "count": 1,
+    "ingredient": {
+      "tag": "milf:coals_for_bloom"
+    }
+  },
+  "minTemp": 1250,
+  "result": {
+    "count": 1,
+    "id": "ytech:iron_bloom"
+  },
+  "smeltingTime": 200
+}

@@ -32,45 +32,23 @@ ServerEvents.recipes(event => {
         event.remove({ id: id })
     });
 
-    event.custom({
-        "type": "ytech:alloying",
-        "ingredient1": {
-            "count": 1,
-            "ingredient": {
-                "tag": "c:ingots/copper"
-            }
-        },
-        "ingredient2": {
-            "count": 1,
-            "ingredient": {
-                "tag": "c:ingots/tin"
-            }
-        },
-        "minTemp": 1085,
-        "result": {
-            "count": 2,
-            "id": "modern_industrialization:bronze_ingot"
-        },
-        "smeltingTime": 200
-    })
-
     event.recipes.ytech.hammering("heavy_weighted_pressure_plate", "iron_block")
     .tool("#c:hammers");;
 
     event.replaceInput({ output: 'ytech:reinforced_bricks' }, 'modern_industrialization:copper_bolt', 'modern_industrialization:fire_clay_brick')
     event.replaceInput({ output: 'ytech:reinforced_bricks' }, 'modern_industrialization:copper_plate', 'modern_industrialization:fire_clay_brick')
-    event.replaceInput({ input: 'ytech:crushed_copper' }, 'ytech:crushed_copper', 'modern_industrialization:copper_dust')
-    event.replaceInput({ input: 'ytech:crushed_gold' }, 'ytech:crushed_gold', 'modern_industrialization:gold_dust')
-    event.replaceInput({ input: 'ytech:crushed_iron' }, 'ytech:crushed_iron', 'modern_industrialization:iron_dust')
-    event.replaceInput({ input: 'ytech:crushed_galena' }, 'ytech:crushed_galena', 'modern_industrialization:lead_dust')
-    event.replaceInput({ input: 'ytech:crushed_cassiterite' }, 'ytech:crushed_cassiterite', 'modern_industrialization:tin_dust')
+    event.replaceInput({ input: 'ytech:crushed_copper' }, 'ytech:crushed_copper', 'kubejs:crushed_copper')
+    event.replaceInput({ input: 'ytech:crushed_gold' }, 'ytech:crushed_gold', 'kubejs:crushed_gold')
+    event.replaceInput({ input: 'ytech:crushed_iron' }, 'ytech:crushed_iron', 'kubejs:crushed_iron')
+    event.replaceInput({ input: 'ytech:crushed_galena' }, 'ytech:crushed_galena', 'kubejs:crushed_lead')
+    event.replaceInput({ input: 'ytech:crushed_cassiterite' }, 'ytech:crushed_cassiterite', 'kubejs:crushed_tin')
     event.replaceInput({ input: 'ytech:raw_galena' }, 'ytech:raw_galena', 'modern_industrialization:raw_lead')
     event.replaceInput({ input: 'ytech:raw_cassiterite' }, 'ytech:raw_cassiterite', 'modern_industrialization:raw_tin')
-    event.replaceOutput({ output: 'ytech:crushed_gold' }, 'ytech:crushed_gold', 'modern_industrialization:gold_dust')
-    event.replaceOutput({ output: 'ytech:crushed_cassiterite' }, 'ytech:crushed_cassiterite', 'modern_industrialization:tin_dust')
-    event.replaceOutput({ output: 'ytech:crushed_galena' }, 'ytech:crushed_galena', 'modern_industrialization:lead_dust')
-    event.replaceOutput({ output: 'ytech:crushed_copper' }, 'ytech:crushed_copper', 'modern_industrialization:copper_dust')
-    event.replaceOutput({ output: 'ytech:crushed_iron' }, 'ytech:crushed_iron', 'modern_industrialization:iron_dust')
+    event.replaceOutput({ output: 'ytech:crushed_gold' }, 'ytech:crushed_gold', 'kubejs:crushed_gold')
+    event.replaceOutput({ output: 'ytech:crushed_cassiterite' }, 'ytech:crushed_cassiterite', 'kubejs:crushed_tin')
+    event.replaceOutput({ output: 'ytech:crushed_galena' }, 'ytech:crushed_galena', 'kubejs:crushed_lead')
+    event.replaceOutput({ output: 'ytech:crushed_copper' }, 'ytech:crushed_copper', 'kubejs:crushed_copper')
+    event.replaceOutput({ output: 'ytech:crushed_iron' }, 'ytech:crushed_iron', 'kubejs:crushed_iron')
     event.replaceOutput({ output: 'ytech:bronze_ingot' }, 'ytech:bronze_ingot', 'modern_industrialization:bronze_ingot')
     event.replaceOutput({ output: 'ytech:tin_ingot' }, 'ytech:tin_ingot', 'modern_industrialization:tin_ingot')
     event.replaceOutput({ output: 'ytech:lead_ingot' }, 'ytech:lead_ingot', 'modern_industrialization:lead_ingot')

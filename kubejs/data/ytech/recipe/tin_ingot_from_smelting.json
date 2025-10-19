@@ -1,7 +1,7 @@
 {
     "type": "ytech:smelting",
     "ingredient": {
-        "item": "modern_industrialization:tin_dust"
+        "item": "kubejs:crushed_tin"
     },
     "inputCount": 1,
     "minTemp": 1100,

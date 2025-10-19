@@ -1,4 +1,4 @@
-//priority: 100
+//priority: 1000
 global.langCustomStuff = global.langCustomStuff || {}
 function createNewItem(id, args) {
     args = args || {}
@@ -9,6 +9,7 @@ function createNewItem(id, args) {
         args.stackSize && item.maxStackSize(args.stackSize)
         args.rarity && item.rarity(args.rarity)
         args.material && item.material(args.material)
+        args.tag && (!Array.isArray(args.tag) ? item.tag(args.tag) : args.tag.forEach(tag => {item.tag(tag)}))
     })
     global.langCustomStuff[`item.kubejs.${id}`] = Object.assign({"en_us" : idToName(id)}, args.lang)
 }
@@ -21,10 +22,19 @@ function createNewBlock(id, args) {
         args.soundType && block.soundType(args.soundType)
         args.requiresTool && block.requiresTool(true)
         args.hardness && block.hardness(args.hardness)
+        args.defaultCutout && block.defaultCutout()
+        args.box && block.box.apply(block, args.box)
         args.tagBlock && (!Array.isArray(args.tagBlock) ? block.tagBlock(args.tagBlock) : args.tagBlock.forEach(tag => {block.tagBlock(tag)}))
+        args.parentModel && block.parentModel(args.parentModel)
+        args.noDrops && block.noDrops()
+        args.property && block.property(args.property)
+        block.defaultState(state =>{
+            args.defaultStateCycle && state.cycle(args.defaultStateCycle)
+        })
         block.item(item =>{
             args.rarity && item.rarity(args.rarity)
             args.stackSize && item.maxStackSize(args.stackSize)
+            args.tag && (!Array.isArray(args.tag) ? item.tag(args.tag) : args.tag.forEach(tag => {item.tag(tag)}))
         })
     })
     global.langCustomStuff[`block.kubejs.${id}`] = Object.assign({"en_us" : idToName(id)}, args.lang)
@@ -39,6 +49,12 @@ createNewBlock("radio_tower_slab", {texturePath: 'custom_stuff:blocks/radio_towe
 
 createNewItem('amber_visage', {stackSize: 16, rarity:'epic', lang:{"en_us":"Amber Visage" , "ru_ru":"Янтарный Облик"}})
 createNewItem('meze_109', {itemType:"helmet", material:'kubejs:meze', stackSize: 1, rarity:'epic'})
+
+createNewItem('crushed_copper', {tag:["c:crushed_ores", "c:crushed_ores/copper"]})
+createNewItem('crushed_gold', {tag:["c:crushed_ores", "c:crushed_ores/gold"]})
+createNewItem('crushed_iron', {tag:["c:crushed_ores", "c:crushed_ores/iron"]})
+createNewItem('crushed_lead', {tag:["c:crushed_ores", "c:crushed_ores/lead"]})
+createNewItem('crushed_tin', {tag:["c:crushed_ores", "c:crushed_ores/tin"]})
 
 
 //#region MI stuff

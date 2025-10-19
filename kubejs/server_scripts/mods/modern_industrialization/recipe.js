@@ -46,8 +46,6 @@ const miMachineCraft = (event, args) => {
     event.custom(recipe)
 };
 
-
-
 ServerEvents.recipes(event => {
     event.remove({
         output: [
@@ -88,50 +86,6 @@ ServerEvents.recipes(event => {
         output: "modern_industrialization:fire_clay_dust",
         amount: 3,
     })
-
-    //bronze_glass_recipes
-    /*
-    event.shaped(
-        Item.of('kubejs:bronze_glass', 8),
-        [
-            'BRB',
-            'RGR', 
-            'BRB'
-        ],
-        {
-            R: '#c:rods/bronze',
-            B: '#c:bolts/bronze', 
-            G: '#c:glass_blocks'
-        }
-    )
-
-    event.recipes.modern_industrialization.assembler(32,200)
-    .itemIn("#c:glass_blocks")
-    .itemIn("4x #c:rods/bronze")
-    .fluidIn("modern_industrialization:soldering_alloy" , 100)
-    .itemOut('8x kubejs:bronze_glass')
-
-
-    event.shaped(
-        Item.of('kubejs:bronze_machine_bit', 16),
-        [
-            'BRB',
-            'RGR', 
-            'BRB'
-        ],
-        {
-            R: '#c:rods/bronze',
-            B: '#c:bolts/bronze', 
-            G: 'modern_industrialization:bronze_machine_casing'
-        }
-    )
-
-    event.recipes.modern_industrialization.assembler(32,200)
-    .itemIn("modern_industrialization:bronze_machine_casing")
-    .itemIn("4x #c:rods/bronze")
-    .fluidIn("modern_industrialization:soldering_alloy" , 100)
-    .itemOut('16x kubejs:bronze_machine_bit')
-    */
 
     event.shaped(
         Item.of('kubejs:radio_tower_block', 8),
@@ -226,16 +180,6 @@ ServerEvents.recipes(event => {
         'extended_industrialization:lv_solar_panel', 
         'modern_industrialization:pump', 
         'modern_industrialization:advanced_pump', 
-        /*
-        'modern_industrialization:bronze_compressor', 
-        'modern_industrialization:bronze_cutting_machine', 
-        'modern_industrialization:bronze_macerator', 
-        'modern_industrialization:bronze_mixer', 
-        'modern_industrialization:bronze_water_pump', 
-        'extended_industrialization:bronze_bending_machine',
-        'extended_industrialization:bronze_composter',
-        'extended_industrialization:bronze_waste_collector',
-        */
         'modern_industrialization:electric_water_pump', 
         'modern_industrialization:electric_mixer', 
         'modern_industrialization:distillery', 
@@ -301,5 +245,27 @@ ServerEvents.recipes(event => {
 
 
 
+
+
+
+})
+
+KubeJSTweaks.beforeRecipes(event =>{
+    const oresToChange = ['iron', 'gold', 'copper', 'tin', 'lead']
+    oresToChange.forEach(ore =>{
+/*         event.disable(`modern_industrialization:materials/${ore}/macerator/raw_metal`)
+        event.disable(`modern_industrialization:materials/${ore}/forge_hammer/raw_metal_to_dust_with_tool`)
+        event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust_with_tool`)
+        event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust`) */
+        const regex = new RegExp(`modern_industrialization:materials\\/${ore}\\/(?:macerator|forge_hammer)\\/raw_metal.*`)
+        event.getEntry(regex).forEach(entry => {
+            entry.fromPath("item_inputs").ifPresent(input => console.log(input.second.asJsonArray.get(0).asJsonObject.add("tag", `c:crushed_ores/${ore}`)))
+            entry.fromPath("ingredient").ifPresent(input => console.log(input.second.asJsonObject.add("tag", `c:crushed_ores/${ore}`)))
+        })
+
+    })
+    event.getEntry("modern_industrialization:materials/macerator/lead_crushed_to_dust").forEach(entry => {
+        entry.fromPath("item_inputs").ifPresent(input => console.log(input.second.asJsonObject.add("tag", `c:crushed_ores/lead`)))
+    })
 
 })
