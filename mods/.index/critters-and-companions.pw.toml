@@ -1,4 +1,4 @@
-filename = 'crittersandcompanions-neoforge-1.21.1-2.3.2 (1).jar'
+filename = 'crittersandcompanions-neoforge-1.21.1-2.3.3.jar'
 name = 'Critters and Companions'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'a7e031ef7438b532674766a3eec9ffdb016c9245'
+hash = '475676f7612b34503851df9b340ea97ca7c24bb3'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6972373
+file-id = 7094981
 project-id = 574913
