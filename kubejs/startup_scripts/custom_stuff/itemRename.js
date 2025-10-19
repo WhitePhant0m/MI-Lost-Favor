@@ -48,7 +48,7 @@ function addRename(itemId, langMap) {
   if (!itemId) return
   global.langRenames[itemId] = Object.assign(global.langRenames[itemId] || {}, langMap)
 }
-
+// client restart is required for working
 addRename(
   "sophisticatedbackpacks:copper_backpack",
   {
@@ -56,12 +56,31 @@ addRename(
     types: ["Block", "Item"]
   }
 )
-
-//TODO: Just for test remove in future 
 addRename(
-  "ars_nouveau:alakarkinos",
+  "sophisticatedbackpacks:iron_backpack",
   {
-    langs: { "en_us": "puk", "ru_ru": "Пук" },
-    types: ["Entity"]
+    langs: { "en_us": "Steel Backpack", "ru_ru": "Стальной рюкзак" },
+    types: ["Block", "Item"]
+  }
+)
+addRename(
+  "sophisticatedbackpacks:gold_backpack",
+  {
+    langs: { "en_us": "Aluminum Backpack", "ru_ru": "Алюминиевый рюкзак" },
+    types: ["Block", "Item"]
+  }
+)
+addRename(
+  "sophisticatedbackpacks:diamond_backpack",
+  {
+    langs: { "en_us": "Stainless Steel Backpack", "ru_ru": "Рюкзак из нержавеющей стали" },
+    types: ["Block", "Item"]
+  }
+)
+addRename(
+  "sophisticatedbackpacks:netherite_backpack",
+  {
+    langs: { "en_us": "Blastproof Backpack", "ru_ru": "Взрывостойкий рюкзак" },
+    types: ["Block", "Item"]
   }
 )
