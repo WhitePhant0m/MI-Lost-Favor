@@ -64,13 +64,14 @@ ServerEvents.recipes(event => {
 
     ytechAlloyingCraft(event, {
         inputItems:[
-            [{item: "modern_industrialization:iron_dust"}],
-            [{item: "modern_industrialization:coal_dust"}]
+            [{item: "minecraft:copper_ingot"}, 3],
+            [{item: "modern_industrialization:tin_ingot"}]
         ],
         outputItems:[
-            [{id:"ytech:iron_bloom"}]
+            [{id:"modern_industrialization:bronze_ingot"}, 4]
         ],
-        minTemp: 1250
+        minTemp: 1085,
+        compatOff:true
     })
 
 })

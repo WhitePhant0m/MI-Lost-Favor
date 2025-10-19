@@ -10,61 +10,6 @@ ServerEvents.recipes(event => {
         'modern_industrialization:electric_furnace', 
         'modern_industrialization:bronze_furnace'
     ]})
-    //replaced with ytech recipe
-    /*
-    event.shaped('modern_industrialization:bronze_mi_furnace', [
-        'PPP',
-        'PEP',
-        'RRR'
-    ], {
-        P: '#c:plates/bronze',
-        E: 'minecraft:furnace',
-        R: 'modern_industrialization:fire_clay_bricks'
-    })
-    
-    event.recipes.modern_industrialization.assembler(8, 200)
-    .itemIn("5x #c:plates/bronze")
-    .itemIn("minecraft:furnace")
-    .itemIn("3x modern_industrialization:fire_clay_bricks")
-    .itemOut("modern_industrialization:bronze_mi_furnace")
-
-    event.shaped('modern_industrialization:steel_mi_furnace', [
-        'PPP',
-        'PEP',
-        'RRR'
-    ], {
-        P: '#c:plates/steel',
-        E: 'minecraft:furnace',
-        R: 'modern_industrialization:fire_clay_bricks'
-    })
-    event.shapeless('modern_industrialization:steel_mi_furnace', ['modern_industrialization:bronze_mi_furnace', 'modern_industrialization:steel_upgrade'])
-    event.recipes.modern_industrialization.assembler(8, 200)
-    .itemIn("5x #c:plates/steel")
-    .itemIn("minecraft:furnace")
-    .itemIn("3x modern_industrialization:fire_clay_bricks")
-    .itemOut("modern_industrialization:steel_mi_furnace")
-    
-    event.recipes.modern_industrialization.packer(2, 100)
-    .itemIn('modern_industrialization:steel_upgrade')
-    .itemIn('modern_industrialization:bronze_mi_furnace')
-    .itemOut('modern_industrialization:steel_mi_furnace')
-    event.shaped('modern_industrialization:electric_mi_furnace', [
-        'CAC',
-        'CBC',
-        'TAT'
-    ], {
-        B: 'modern_industrialization:basic_machine_hull',
-        C: 'modern_industrialization:cupronickel_wire_magnetic',
-        T: 'modern_industrialization:tin_cable',
-        A: 'modern_industrialization:analog_circuit'
-    })
-    event.recipes.modern_industrialization.assembler(8, 200)
-    .itemIn("modern_industrialization:basic_machine_hull")
-    .itemIn("4x modern_industrialization:cupronickel_wire_magnetic")
-    .itemIn("2x modern_industrialization:tin_cable")
-    .itemIn("2x modern_industrialization:analog_circuit")
-    .itemOut("modern_industrialization:electric_mi_furnace")
-    */
 
     event.forEachRecipe({ type: 'minecraft:smelting' }, kubeRecipe => {
         let { originalRecipeResult: result, originalRecipeIngredients: ingredients } = kubeRecipe; 

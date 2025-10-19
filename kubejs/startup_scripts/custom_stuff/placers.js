@@ -1,5 +1,5 @@
-//priority: 1000
-let $BooleanProperty = Java.loadClass("net.minecraft.world.level.block.state.properties.BooleanProperty")
+//priority: 100
+const $BooleanProperty = Java.loadClass("net.minecraft.world.level.block.state.properties.BooleanProperty")
 const definitelyUniqueNameForIETemplatesList = [
     //'alloy_smelter',
     ['arcfurnace', 'arc_furnace'],
@@ -29,10 +29,38 @@ const definitelyUniqueNameForIETemplatesList = [
 global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime || {}
 global.AnotherDefinitelyUniqueNameForBoxes = global.AnotherDefinitelyUniqueNameForBoxes || {}
 
+const enabledProperty = $BooleanProperty.create("enabled")
+
+definitelyUniqueNameForIETemplatesList.forEach(name => {
+    const [nameString, itemName] = Array.isArray(name) ? [name[0], name[1]] : [name, name]
+    createNewBlock(`${nameString}_placer`, {
+        blockType:"cardinal",
+        defaultCutout:true,
+        box:[2, 0, 1, 14, 9, 15, true],
+        soundType:'bamboo',
+        tagBlock:"milf:placers",
+        property:enabledProperty,
+        defaultStateCycle:enabledProperty,
+        parentModel:"kubejs:block/box_closed",
+    })
+    global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime[`kubejs:${nameString}_placer`] = `immersiveengineering:${itemName}`
+    createNewBlock(`${nameString}_empty_box`, {
+        blockType:"cardinal",
+        defaultCutout:true,
+        box:[2, 0, 1, 14, 9, 15, true],
+        soundType:'bamboo',
+        tagBlock:"milf:empty_box",
+        property:enabledProperty,
+        defaultStateCycle:enabledProperty,
+        parentModel:"kubejs:block/box_open",
+        noDrops:true
+    })
+    global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `immersiveengineering:${itemName}`
+});
+
 StartupEvents.registry('block', event => {
-
-    const enabledProperty = $BooleanProperty.create("enabled")
-
+/*     const enabledProperty = $BooleanProperty.create("enabled")
+    
     definitelyUniqueNameForIETemplatesList.forEach(name => {
         const [nameString, itemName] = Array.isArray(name) ? [name[0], name[1]] : [name, name]
         console.log([nameString, itemName]);
@@ -55,7 +83,7 @@ StartupEvents.registry('block', event => {
         .parentModel("kubejs:block/box_open")
         .noDrops()
         global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `immersiveengineering:${itemName}`
-    });
+    }); */
 
 /*     definitelyUniqueNameForIETemplatesList.forEach(name => {
         const [nameString, itemName] = Array.isArray(name) ? [name[0], name[1]] : [name, name]
