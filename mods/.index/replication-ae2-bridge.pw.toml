@@ -1,4 +1,4 @@
-filename = 'rep_ae2_bridge-1.3.0.0.6-neoforge-1.21.1.jar'
+filename = 'rep_ae2_bridge-1.3.0.0.7-neoforge.jar'
 name = 'Replication AE2 Bridge'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '8377c0c181d7ecd5736f219e6f5524d312b48ce0'
+hash = '561b838791e42a8c95fbc29cab413337b499e824'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6962134
+file-id = 7094623
 project-id = 1264781

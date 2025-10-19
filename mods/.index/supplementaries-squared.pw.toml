@@ -1,4 +1,4 @@
-filename = 'suppsquared-1.21-1.2.13-neoforge.jar'
+filename = 'suppsquared-1.21-1.2.14-neoforge.jar'
 name = 'Supplementaries Squared'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'e1c167684d144d7e72ffa7f5c8c76614104e05c2'
+hash = '21f4d14de4f35e3824c774ce74aa16dd6a4d9b5a'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7051282
+file-id = 7116525
 project-id = 838411
