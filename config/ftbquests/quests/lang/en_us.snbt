@@ -270,6 +270,7 @@
 	]
 	quest.0E83A5E1B38BC5EF.quest_desc: ["тикает растение - даёт сурс"]
 	quest.0EC6045881A3898D.quest_desc: ["Wild pig"]
+	quest.0F3DBB0D6EEF427E.quest_subtitle: "elevator in water"
 	quest.0F4825A153097924.quest_desc: [
 		"&#FEECD6Enchantment Canvas&r helps you remove &#C6BCE9enchantments&r from an item and reapply them if needed. "
 		""
@@ -1189,6 +1190,7 @@
 		"{@pagebreak}"
 		"Войдите в защитные руины"
 	]
+	quest.4D2CAE9449DCAAF2.quest_subtitle: "water for source"
 	quest.4D80BF0416C5EFD2.quest_desc: ["The demolishing modifier can unlock the true power out of your tools (Pickaxes, Shovels, Axes, Hoes). Tools with this modifier will be able to break a 3x3 area."]
 	quest.4DCB694F94371292.quest_desc: [
 		"An empty world with nothing in it, handy to build your base somewhere in infinity!"
@@ -1736,6 +1738,7 @@
 		"{@pagebreak}"
 		"Один из важнейших блоков для дальнейшей прогрессии. Более подробные инструкции, как с ним взаимодействовать, можно прочитать в книге!"
 	]
+	quest.7A406C30B9862C6D.quest_subtitle: "elevator in lava"
 	quest.7A5F66121C4BCC2B.quest_desc: ["Charges items. That's it"]
 	quest.7AA3CDBC6B160F86.quest_desc: ["Free furnaces"]
 	quest.7C1FCF3A76C6E4DA.quest_desc: [
@@ -1755,6 +1758,7 @@
 		"Однако из-за его размеров его мощность была снижена. Чтобы компенсировать это, я создал специальные боеприпасы. Катализатор для масла. Если поместить болты в горшок с маслом, они могут покрыться маслом, применяя его эффект к пораженным целям. Имейте в виду, что некоторые масла не будут действовать на болты."
 	]
 	quest.7ED354CF6EFE61BC.quest_subtitle: "Linking tool"
+	quest.7EF5D915FEC62EE0.quest_subtitle: "elevator for source"
 	reward.0DC887212398806D.title: "New Quest Chapter"
 	reward.0E7A91DD8F37AF4D.title: "Desaturation"
 	reward.4002784F5F537B2D.title: "New interactions: chest looting, villagers, spawners, wandering trader"
