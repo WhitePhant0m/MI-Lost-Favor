@@ -35,7 +35,11 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.empty_box.gui3_1', `Attention, breaking this box will `)
     event.add('milf.empty_box.gui3_2', `${textAnimatorString("DESTROY", "glitch")}`)
     event.add('milf.empty_box.gui3_3', " it")
+    
     event.add('milf.text.dim.cant_visit', `${textAnimatorString("Some kind of magic is stopping you", "glitch")}`)
+
+    event.add('milf.flags.claimed', "Chunk claimed")
+    event.add('milf.flags.unclaimed', "Chunk unclaimed")
  
 })
 

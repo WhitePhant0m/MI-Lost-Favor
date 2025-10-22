@@ -49,6 +49,7 @@ createNewBlock("radio_tower_slab", {texturePath: 'custom_stuff:blocks/radio_towe
 
 createNewItem('amber_visage', {stackSize: 16, rarity:'epic', lang:{"en_us":"Amber Visage" , "ru_ru":"Янтарный Облик"}})
 createNewItem('meze_109', {itemType:"helmet", material:'kubejs:meze', stackSize: 1, rarity:'epic'})
+createNewItem('dev_pen')
 
 createNewItem('crushed_copper', {tag:["c:crushed_ores", "c:crushed_ores/copper"]})
 createNewItem('crushed_gold', {tag:["c:crushed_ores", "c:crushed_ores/gold"]})

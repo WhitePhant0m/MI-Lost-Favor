@@ -31,6 +31,8 @@ global.AnotherDefinitelyUniqueNameForBoxes = global.AnotherDefinitelyUniqueNameF
 
 const enabledProperty = $BooleanProperty.create("enabled")
 
+createNewBlock("chunk_flag", {property:enabledProperty, box:[5, 0, 5, 11, 1, 11, true], defaultCutout:true})
+
 definitelyUniqueNameForIETemplatesList.forEach(name => {
     const [nameString, itemName] = Array.isArray(name) ? [name[0], name[1]] : [name, name]
     createNewBlock(`${nameString}_placer`, {
