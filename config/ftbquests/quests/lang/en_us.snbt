@@ -151,6 +151,7 @@
 	]
 	quest.0651B6B965560FDE.quest_subtitle: "Phantoms? Hate those guys"
 	quest.06793C23D00355A7.quest_desc: ["Magnet? And configurable??? I'll take 2 please"]
+	quest.078297FA7375ABD6.quest_desc: ["The Ender Source Jar allows you to store source in an ender-connected Source Jar. Each jar you place will link to the same pool of source, allowing you to use the Source Jar from anywhere."]
 	quest.078401AAC8FB6799.quest_desc: [
 		"Alternatively, if I am struggling to find a certain affinity within an ingredient, I can instead FUSE other ones for a variable outcome. I can make a substance that will allow me to gain another affinity from three other poisonous materials. To do this I first must create the mix."
 		""
@@ -383,6 +384,7 @@
 		"{@pagebreak}"
 		"Одна &#FEECD6баночка&r вмещает только &#9BB8ED1 тип&r краски, палитра вмещает больше типов, но в ней &#FEECD6не так много места&r как в баночках!"
 	]
+	quest.16219C02EDE3F680.quest_desc: ["Получает сурс из сурс джаров и превращает его в жидкий сурс, далее с ним можно много приколов делать, например генератор сурс стоуна лава + ликвид сурс "]
 	quest.16CEDB259696495B.quest_desc: [
 		"As with previous familiars and Possessed mobs, read about them in the book."
 		"{@pagebreak}"
@@ -404,6 +406,7 @@
 		"{@pagebreak}"
 		"Ничего такого, да? Просто кусочек бедрока."
 	]
+	quest.1821E5AE238E165E.quest_desc: ["Преобразовывает разнообразные жидкости в сурс, *По хорошему добавить только пар -> сурс и удалить другие генераторы сурса*"]
 	quest.18238251518B54D5.quest_desc: ["123"]
 	quest.18238251518B54D5.title: "Chimmera Familiar"
 	quest.188484018F12E3B9.quest_desc: [
@@ -570,6 +573,7 @@
 	quest.244DB9331EEB5897.quest_desc: ["recolor armor"]
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a poisoned slime."]
 	quest.24D1B4E69FDDF397.quest_desc: ["декор, можно объединить с любым предметом чтобы отображать его"]
+	quest.256F4B9E44347533.quest_desc: ["Operates similar to the Source Relay: Splitter but can teleport source an endless distance between other Warp relays. For distances beyond 30 blocks, there is a chance that some source will be lost during warp."]
 	quest.265CFAAE6154EAEF.quest_desc: ["IN black_langast"]
 	quest.26AAD3E138239666.quest_desc: ["с топ блоками 42 (21 за блоктипы)"]
 	quest.26D3721A292E8E8C.quest_desc: [
@@ -681,11 +685,13 @@
 		"{@pagebreak}"
 		"До 4х"
 	]
+	quest.2E3384D5D0C2A9CF.quest_desc: ["Можно засунуть большинство мобов, даже боссов и начать их фармить при помощи дрыгмы, так же банки поддерживают ловлю в банку фолиатов из мода Ocultism"]
 	quest.2E52CA7586B64968.quest_desc: ["minecraft:jungle"]
 	quest.2E5638B2207FCCBF.quest_desc: [
 		"&lChalice (Filled)&r:"
 		"• +2x Power Capacity"
 	]
+	quest.2F9109DBADADEE10.quest_desc: ["Charms are a set of curios enchanted with strong protection magics. They range from allowing you to walk on Powdered Snow, to saving you from the Warden's powerful Sonic Boom. Each charm has a specific amount of charges available to protect you. Once the charges have been depleted, pop them into an Imbuement chamber to charge them back up."]
 	quest.2FBB9E95379CD74A.quest_desc: [
 		"An inexhaustable barrage of snowballs can be obtained by performing the Quartz Ritual"
 		"{@pagebreak}"
@@ -841,6 +847,7 @@
 		"{@pagebreak}"
 		"&#9BB8EDСтекло&r хорошо вписывается в интерьер, а так же &#FEECD6светится&r!"
 	]
+	quest.374D778AA6C127E6.quest_desc: ["Enables the transport of source between Source Jars and other Source Relays. To pull source from jars, use the Dominion Wand on the jar, and then on the relay. To send between relays or from a relay to a jar, use the wand on the relay and then the target you wish to send source to. Relays may only reach up to 30 blocks away. To clear connections, sneak while using the Dominion Wand on the relay."]
 	quest.37508D7F8B4E2CA1.quest_desc: [
 		"After growing a jade bulb, collect some of its petals"
 		""
@@ -896,6 +903,7 @@
 		"{@pagebreak}"
 		"Заставь баночку с гибелью съесть обсидиан, получишь &l&5неолит&r&r"
 	]
+	quest.3CED97E478F793D3.quest_subtitle: "TPS-metr"
 	quest.3CF855190F944C3E.quest_desc: [
 		"This map shifts and changes as I move, almost as if it were alive, sensing my intentions."
 		""
@@ -992,6 +1000,7 @@
 		"{@pagebreak}"
 		"Отключает спавн мобов в области"
 	]
+	quest.4287B0D38E0C2A7A.quest_subtitle: "Entangled block"
 	quest.428850B1426EB3D4.quest_desc: ["Wild cow"]
 	quest.42B6798C0C2BD9E5.quest_desc: [
 		"All the bronze machines use steam to operate"
@@ -1126,11 +1135,6 @@
 		"{@pagebreak}"
 		"Затем выпарить все примеси в котелке."
 	]
-	quest.48DC25C0975506FD.quest_desc: [
-		"нужно давать топливо любое, либо кидать либо платформа."
-		""
-		"Вокруг 3х3 камня будет превщарать камень в магму а потом в лаву "
-	]
 	quest.490D92E237AFBA82.quest_desc: ["с смесью получается торч который ускоряет рост растений"]
 	quest.4932A126EA1016F2.quest_desc: [
 		"To use the &5device&r, I simply hold it in my &ohand&r (or as a &lcharm&r on my person) and what will appear is a gauge that displays &euseful information&r about my bodies chemical composition. The &atoxicity&r gauge examines 3 important parts of my body. The &atoxins&r, my &ctolerance&r, and the &9thresholds&r I can reach!"
@@ -1159,6 +1163,7 @@
 	]
 	quest.498922D593321422.quest_desc: ["Better furnace, but bigger!"]
 	quest.49F633AB8533C593.quest_desc: ["Mends the items at the cost of oil."]
+	quest.4A87529560AC3F59.quest_desc: ["Operates similar to the Source Relay, but will automatically take from jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
 	quest.4ADB796A7EC14DE4.quest_desc: [
 		"The Soul Crimson Stone is an upgraded version of the normal Crimson Stone. Due to the power of the harnessed souls, this enhancer is able to completely remove the essence cost of one Hephaestus Forge ritual. After one use it loses its power and becomes a normal Crimson Stone."
 		""
@@ -1179,12 +1184,14 @@
 		""
 		"Вы можете создать сразу &oстак&r &#4040a1оникса&r за 1 крафт!"
 	]
+	quest.4BD90DDEB289EB1C.quest_desc: ["Operates similar to the Source Relay, but will deposit to jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
 	quest.4C56E87E195A4339.quest_desc: [
 		"Place these &#FEECD6microorganisms&r near some food and &#9BB8EDwait&r a bit. The bacteria will start to eat it and leave the &#FEECD6rests&r behind. Maybe you can use this to &#9BB8EDyour advantage&r!"
 		""
 		"{@pagebreak}"
 		"Установите &#FEECD6бутылочку&r рядом с &#CAE4C8листьями&r и немного &#9BB8EDподождите&r, бактерии начнут съедать &#CAE4C8листву&r и оставлять процессы своей &#FEECD6жизнидейстельности&r прямо в этих же &#CAE4C8листях&r, возможно вы сможете использовать это в &#9BB8EDсвоих целях&r!"
 	]
+	quest.4C5DF2EA2602D2A9.quest_desc: ["Click with spell book for Gluph crafting"]
 	quest.4CD83E3F1602127A.quest_desc: [
 		"Enter the preservation ruins."
 		"{@pagebreak}"
@@ -1192,6 +1199,7 @@
 	]
 	quest.4D2CAE9449DCAAF2.quest_subtitle: "water for source"
 	quest.4D80BF0416C5EFD2.quest_desc: ["The demolishing modifier can unlock the true power out of your tools (Pickaxes, Shovels, Axes, Hoes). Tools with this modifier will be able to break a 3x3 area."]
+	quest.4DBD70274DBF7823.quest_desc: ["Operates similar to the Source Relay, but will support taking from and transferring to multiple jars at once. The splitter has a much larger through-put than the Source Relay, and will split this throughput amongst all of its jars. See the instructions on the Source Relay for use."]
 	quest.4DCB694F94371292.quest_desc: [
 		"An empty world with nothing in it, handy to build your base somewhere in infinity!"
 		""
@@ -1245,7 +1253,9 @@
 		""
 		"Данный блок очень сильно поможет вам в будущем!"
 	]
+	quest.52FDAC0EAAA20FB1.quest_desc: ["плейсит временный физ. портал, работает между мирами, на выпил, мб передумаю"]
 	quest.538E3976DDFD9FBF.quest_desc: ["Отображает суммарное количество бафов в кузне"]
+	quest.53CBB401AAEFD083.quest_desc: ["Подавая сурс и банку с мобами, можно делать жертоприношение для мода окультизм, если поставить под алтарём"]
 	quest.53D189F7EF7CD121.quest_subtitle: "Perform the ritual!"
 	quest.53D226046704B4F5.quest_desc: ["Same as copper, but with a small chance to catch gold and iron."]
 	quest.552B1FFCECBD0652.quest_desc: ["A manual well. Produces different amounts of water in different biomes. Can be connected to a system of aqueducts"]
@@ -1261,6 +1271,7 @@
 	quest.55B031B4D7E5DEE3.quest_desc: ["Wild chicken"]
 	quest.5643AEC296D95BE9.quest_desc: ["Slowness and weakness."]
 	quest.56AE77021D975ACD.quest_desc: ["This mesh can catch basic resources, such as sand, gravel, clay and fish"]
+	quest.5750E25528ABB85C.quest_desc: [""]
 	quest.57A91C641FE38999.quest_desc: [
 		"Copper bolt to craft?"
 		"Unlock next stage after this?(because unlocking it in the middle of quest line is kinda weird to me, but IDK)"
@@ -1470,6 +1481,7 @@
 		"Как и с прошлыми фамильярами и одержимыми мобами, прочтите информацию о них в книге"
 	]
 	quest.644C38FE06C3047E.quest_desc: ["можно найти в джунглях и болотах в шахтах"]
+	quest.64C835EE832D0FC2.quest_desc: ["крос дим не воркает, тп на записаные корды"]
 	quest.64F723F01C41DE4E.quest_desc: [
 		"Invisible lighting!"
 		""
@@ -1568,6 +1580,7 @@
 		"{@pagebreak}"
 		"Это &#FEECD6лопата&r, &#9BB8EDкирка&r, &#C7E2E9топор&r, и &#CAE4C8мотыга&r &nв одном&r, буквально швейцарский нож!"
 	]
+	quest.6C85E4BCF27839E4.quest_subtitle: "Build warp portal"
 	quest.6CB0342958887169.quest_desc: ["Furnace, but better!"]
 	quest.6CE13F93E085DABB.quest_desc: ["The Edelwood Ladder can be climbed twice as fast as a vanilla Ladder"]
 	quest.6D1F116F28F30039.quest_desc: [
@@ -1738,6 +1751,7 @@
 		"{@pagebreak}"
 		"Один из важнейших блоков для дальнейшей прогрессии. Более подробные инструкции, как с ним взаимодействовать, можно прочитать в книге!"
 	]
+	quest.7974D49E6CAE39BF.quest_desc: ["Позволяет сделать ездового питомца при пкм на Starbuncle"]
 	quest.7A406C30B9862C6D.quest_subtitle: "elevator in lava"
 	quest.7A5F66121C4BCC2B.quest_desc: ["Charges items. That's it"]
 	quest.7AA3CDBC6B160F86.quest_desc: ["Free furnaces"]
@@ -1772,6 +1786,7 @@
 	task.03D27D995554C1F6.title: "Ancient?"
 	task.03FD4CFDF4EBC8D0.title: "Crushing"
 	task.04686380A3EF8E64.title: "Any #minecraft:vanilla_music_discs"
+	task.0485EF9BAD98F611.title: "Charms are a set of curios enchanted with strong protection magics. They range from allowing you to walk on Powdered Snow, to saving you from the Warden's powerful Sonic Boom. Each charm has a specific amount of charges available to protect you. Once the charges have been depleted, pop them into an Imbuement chamber to charge them back up."
 	task.068F277A6EC195B3.title: "Ore veins?"
 	task.0690302B69EE721E.title: "Any #pastel:colored_saplings"
 	task.06C366B476A6A584.title: "Ronaza's Contract"
@@ -1805,6 +1820,7 @@
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
 	task.25CB2D0B385D4533.title: "Spectrum?"
 	task.274F98243AA9482F.title: "Animals breeding"
+	task.29FC46F1CE4D25B3.title: "Cursed shit"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"
 	task.2BE6D4D9E1298E99.title: "Any #minecraft:decorated_pot_sherds"
 	task.2C236C4C499DB27A.title: "Any #hexerei:brooms"
