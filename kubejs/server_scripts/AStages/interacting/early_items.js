@@ -70,3 +70,8 @@ entity_interact_block.forEach(element => {
             .setCanBeRightClicked(false)
     }
 });
+
+AStages.addRestrictionForDimension("astages/dimension/starlight", "the_gatekeeper", "eternal_starlight:starlight")
+    .setDimensionMessage(() => Text.of([
+        Text.translate("milf.text.dim.cant_visit")
+    ]))
