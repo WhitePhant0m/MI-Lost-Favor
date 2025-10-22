@@ -1,0 +1,402 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: ""
+	id: "7A58E54E4B6B5025"
+	order_index: 14
+	quest_links: [
+		{
+			id: "481D34F36CC060E0"
+			linked_quest: "389A4181732368E0"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "05A3AFD6F133D05E"
+			linked_quest: "42D28603172F49D3"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "2689AD57838683A0"
+			linked_quest: "527B9A1647C48702"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "2083E8E3BB850540"
+			linked_quest: "05C4AA05CA0E6F80"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			id: "60D5474EFE17D247"
+			linked_quest: "464B4BB86A9CF448"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			id: "09837581FFE846FA"
+			linked_quest: "1F8EFD51ACC79C3D"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "5740F23B1C973972"
+			linked_quest: "61E704FFE6D51154"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "6B8F97DE5E091815"
+			linked_quest: "5F5AB4341CAE8DE2"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			id: "05FF1E6BE24CD1E1"
+			linked_quest: "75FB7CD04B7F2522"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "7E6939502CA74A9B"
+			linked_quest: "0665DE086D83F6F9"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			id: "0F59EEE6B77EC5B4"
+			linked_quest: "4489C7C871C3258B"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "472EA9410A122C18"
+			linked_quest: "33C4EBFA08980E30"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			id: "62293FBF080EDAFA"
+			linked_quest: "48CD5AE9FD5A8E86"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "708C1B04DF5B827B"
+			linked_quest: "06EAC7034ACFA220"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			id: "685695DEA588EEFB"
+			linked_quest: "137C9C8D6C96D777"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			id: "27628C347B49E3E6"
+			linked_quest: "29F80ACEADB93E95"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "4119B996A2387443"
+			linked_quest: "5BB1AA5E0D8A4819"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			id: "1E6336600E138779"
+			linked_quest: "255F98FEC054C461"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "448288E118692D8D"
+			linked_quest: "6698E9FBE3C24DE8"
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			id: "2B39E12087EB16BC"
+			linked_quest: "2EEEC6F9C1EDBCB0"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			id: "6246BF2F55CBC2CA"
+			linked_quest: "329A91823FE78F96"
+			x: 1.0d
+			y: 10.0d
+		}
+		{
+			id: "4D5ADAA540878F9E"
+			linked_quest: "391002DBCA6CE6D1"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			id: "7D4CD924978A90C0"
+			linked_quest: "1E4A4AD1899325D3"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "5A17BC95662A5385"
+			linked_quest: "06F29772DEA6EF99"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			id: "2E88FEC7C9C204E8"
+			linked_quest: "38DCF86BC7B68C30"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			id: "11F8B39558E0C1B7"
+			linked_quest: "5EBF48809F0A806A"
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			id: "386AE70C4B92E9FD"
+			linked_quest: "5DC8B6B0DD382499"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "27DE262D8322F161"
+			linked_quest: "2071CE16FAA3FDEE"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			id: "7F8FED9ECDCE4F06"
+			linked_quest: "0CC6BCAD15D4C47B"
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			id: "6DC43D9D7800A393"
+			linked_quest: "5842F95522AD1864"
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			id: "5C83F37E82F8FAD9"
+			linked_quest: "4597FC348992B9BD"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "7EC08F27CAC3452D"
+			linked_quest: "020C393BC2320A12"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			id: "1D1F69138E545B8D"
+			linked_quest: "40044C93A9BEF77A"
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			id: "3465ADF331388232"
+			linked_quest: "66D8668A4267CBE5"
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			id: "2367C8C85A1B9F67"
+			linked_quest: "4D6ED0D6DEBF3308"
+			x: 5.0d
+			y: 7.5d
+		}
+	]
+	quests: [
+		{
+			id: "4662FC44B4EFEC79"
+			tasks: [{
+				id: "2838F34ABBC2E928"
+				item: { count: 1, id: "enderstorage:ender_chest" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 8.5d
+		}
+		{
+			id: "0349E72B18624688"
+			tasks: [{
+				id: "6B90C2BB156E9157"
+				item: { count: 1, id: "minecraft:ender_chest" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 10.5d
+		}
+		{
+			id: "41DC5055E7C853FB"
+			tasks: [{
+				id: "2106D23223F87FCB"
+				item: { count: 1, id: "enderstorage:ender_pouch" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 7.5d
+		}
+		{
+			id: "437AFCB618DB0351"
+			tasks: [{
+				id: "66343FCBA5CA8377"
+				item: { count: 1, id: "bankstorage:bank_1" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "3B81DBB9804BD9CE"
+			tasks: [{
+				id: "108CD81F825AA79A"
+				item: { count: 1, id: "bankstorage:bank_2" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "196F5E47A551A77C"
+			tasks: [{
+				id: "79258E0164599858"
+				item: { count: 1, id: "bankstorage:bank_3" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "2F56E2D73EDAF28B"
+			tasks: [{
+				id: "60FD5FB33E52F9DD"
+				item: { count: 1, id: "bankstorage:bank_4" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "534D238F15C03CEB"
+			tasks: [{
+				id: "2093122B939512E0"
+				item: { count: 1, id: "bankstorage:bank_5" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			id: "75B4898C0F538D7E"
+			tasks: [{
+				id: "4D580CCBB79A553E"
+				item: { count: 1, id: "bankstorage:bank_6" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			id: "60C3D62004B7DD66"
+			tasks: [{
+				id: "442C051BA7864CA9"
+				item: { count: 1, id: "bankstorage:bank_7" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			id: "1DE92D9727F8D39A"
+			tasks: [{
+				id: "691908E05FFA4374"
+				item: { count: 1, id: "tankstorage:tank_1" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			id: "669A264E5501BA93"
+			tasks: [{
+				id: "45B33952B1E32E3D"
+				item: { count: 1, id: "tankstorage:tank_2" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			id: "14412618D3C7B873"
+			tasks: [{
+				id: "7CC80DAF4380432B"
+				item: { count: 1, id: "tankstorage:tank_3" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.0d
+		}
+		{
+			id: "70DE3C8E1263E278"
+			tasks: [{
+				id: "658A1ADE9F6CFD21"
+				item: { count: 1, id: "tankstorage:tank_4" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			id: "3323B394C0450AD6"
+			tasks: [{
+				id: "74E100D686FB54AA"
+				item: { count: 1, id: "tankstorage:tank_5" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			id: "379FD5EF89A0B9D6"
+			tasks: [{
+				id: "18F30FF0E05A88D8"
+				item: { count: 1, id: "tankstorage:tank_6" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 11.0d
+		}
+		{
+			id: "6392532F8B6C091F"
+			tasks: [{
+				id: "34AA00B8732F4C40"
+				item: { count: 1, id: "tankstorage:tank_7" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			id: "6171C6DA47DC94CB"
+			tasks: [{
+				id: "5CD1C70DA289898A"
+				item: { count: 1, id: "enderstorage:ender_tank" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 9.5d
+		}
+	]
+}

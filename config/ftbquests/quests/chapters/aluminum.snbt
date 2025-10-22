@@ -941,5 +941,39 @@
 			x: 2.0d
 			y: -21.0d
 		}
+		{
+			dependencies: ["6BC434A6B44D825B"]
+			id: "29F80ACEADB93E95"
+			shape: "none"
+			tasks: [{
+				id: "77B76934EE778094"
+				item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["6BC434A6B44D825B"]
+			id: "020C393BC2320A12"
+			tasks: [{
+				id: "587DEC08EA46C4B3"
+				item: { count: 1, id: "modern_industrialization:stainless_steel_barrel" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["6BC434A6B44D825B"]
+			id: "40044C93A9BEF77A"
+			tasks: [{
+				id: "734F0D2ED86F0F88"
+				item: { count: 1, id: "modern_industrialization:stainless_steel_tank" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -16.5d
+		}
 	]
 }

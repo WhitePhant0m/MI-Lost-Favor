@@ -9,10 +9,14 @@
 	chapter.293EE18185540114.title: "Forbidden Arcanus"
 	chapter.2B3E5D6E8B56E8BB.title: "Ars NOJDGIODHFIOSBV"
 	chapter.2E7EECD4E8CF01EA.title: "Spectrum"
+	chapter.389198189DCA1A49.title: "Utilities"
+	chapter.4D6A3C5941C9908A.title: "endgame"
+	chapter.4E4F6FF3EEEB1E51.title: "basic information"
 	chapter.535EA14E4BC77614.title: "Applied Energistics"
 	chapter.561B8642F13079C1.title: "Bronze Age"
 	chapter.5B0032897BBCD974.title: "cognition"
 	chapter.6DFA55A3EC367C34.title: "Hexerei"
+	chapter.7A58E54E4B6B5025.title: "Storage"
 	chapter.7CF76022186FB1FC.title: "Occultism"
 	chapter_group.414DFD996A564669.title: "Early"
 	chapter_group.4602108FDD7051BD.title: "Primitive"
@@ -518,6 +522,7 @@
 		""
 		"PIPES"
 	]
+	quest.1E4A4AD1899325D3.quest_subtitle: "Info aboute Plonk"
 	quest.1EE1B8261F4D85A0.quest_desc: ["Glowing for 30 seconds."]
 	quest.1F491D4829884C61.quest_desc: [
 		"Could be used to mine pure resources, as well as some fragile blocks"
@@ -934,6 +939,7 @@
 		""
 		"Когда моб умирает, будучи пораженным ядом, с него могут выпасть особые предметы. Однако меч слишком груб для их извлечения. Чтобы аккуратно извлечь эти ценные ингредиенты, их нужно умертвить скальпелем."
 	]
+	quest.3E6BADA7B5D3F004.quest_subtitle: "Just mark for \"More red\" mod"
 	quest.3EA2FDD972EB4226.quest_desc: [
 		"If some nasty bacteria is threatening your kitchen or your life, you can use this to clean the mess. Well, stop the mess from expanding, at least..."
 		"{@pagebreak}"
@@ -1855,6 +1861,7 @@
 	task.4336D6754C458F76.title: "Any #milf:chiseled_gemstone_block"
 	task.43701FA5652D00DD.title: "Any #minecraft:planks"
 	task.453F9EE1BA955692.title: "Any #milf:azure_dike_trinkets"
+	task.458BFB75460FD02D.title: "Plonk"
 	task.469F4D4AC95FB48B.title: "Any #milf:polished_base_blocks"
 	task.46C57609C45C54C6.title: "Any #milf:fusion_shrine"
 	task.46CE431166A44610.title: "Oil pot"

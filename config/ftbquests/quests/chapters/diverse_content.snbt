@@ -4,8 +4,33 @@
 	filename: "diverse_content"
 	group: ""
 	id: "389198189DCA1A49"
-	order_index: 8
-	quest_links: [ ]
+	order_index: 9
+	quest_links: [
+		{
+			id: "689B85F6CDCD4945"
+			linked_quest: "6443864802D04B07"
+			x: -22.5d
+			y: 3.5d
+		}
+		{
+			id: "1CB69A0609779A61"
+			linked_quest: "23D5012F534D8098"
+			x: -24.0d
+			y: 3.5d
+		}
+		{
+			id: "3EF4CF3FBD6D0BDE"
+			linked_quest: "26D3721A292E8E8C"
+			x: -25.5d
+			y: 3.5d
+		}
+		{
+			id: "59713B4263DC488F"
+			linked_quest: "047487BFFB8421D5"
+			x: -27.0d
+			y: 3.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -431,6 +456,105 @@
 			}]
 			x: 15.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "4E9E987ECB78D0EE"
+			tasks: [{
+				id: "5AC88946F9AD2923"
+				item: { count: 1, id: "chunkloaders:single_chunk_loader" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "78BBD0DEDC0DC727"
+			tasks: [{
+				id: "01173174BF45EDBB"
+				item: { count: 1, id: "chunkloaders:basic_chunk_loader" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "7568C8AE9BCABA59"
+			tasks: [{
+				id: "77E66C10E8A90923"
+				item: { count: 1, id: "chunkloaders:advanced_chunk_loader" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "215FDB247218C84B"
+			tasks: [{
+				id: "060A526F5764954D"
+				item: { count: 1, id: "chunkloaders:ultimate_chunk_loader" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "349B96434E8FA41C"
+			tasks: [{
+				id: "11FBDE1DCF44D41F"
+				item: { count: 1, id: "angelring:angel_ring" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "3705F495C81B64E5"
+			tasks: [{
+				id: "241DE71BCE55FA45"
+				item: { count: 1, id: "hostilenetworks:sim_chamber" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "3E6BADA7B5D3F004"
+			tasks: [{
+				id: "5BB32F838E2E2877"
+				item: { count: 1, id: "morered:or_gate" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "3F919489D2728085"
+			tasks: [{
+				id: "3062B5EE4802C7F7"
+				item: { components: { "gateways:gateway": "gateways:basic/deer" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3ACEAB25342B053C"]
+			id: "0D3FDE0A04F82F94"
+			tasks: [{
+				id: "681ACE860463E4A6"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 3.5d
 		}
 	]
 }

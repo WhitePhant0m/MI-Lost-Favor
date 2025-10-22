@@ -1,0 +1,58 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "endgame"
+	group: "7CCD8F01A3D08612"
+	id: "4D6A3C5941C9908A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1B6B111F04DC9771"]
+			id: "5BB1AA5E0D8A4819"
+			shape: "none"
+			tasks: [{
+				id: "4E7482825346A724"
+				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			id: "1B6B111F04DC9771"
+			tasks: [{
+				id: "30801D1EBC309F0E"
+				item: { count: 1, id: "modern_industrialization:blastproof_alloy_ingot" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			id: "1ED04E8BD4C2D5C7"
+			tasks: [{
+				id: "096956C40237E8DC"
+				item: { count: 1, id: "modern_industrialization:clean_stainless_steel_machine_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1ED04E8BD4C2D5C7"
+				"66D8668A4267CBE5"
+				"5842F95522AD1864"
+			]
+			id: "4D6ED0D6DEBF3308"
+			tasks: [{
+				id: "2BBA03A2032773E3"
+				item: { count: 1, id: "yet_another_industrialization:configurable_mixed_storage" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+	]
+}

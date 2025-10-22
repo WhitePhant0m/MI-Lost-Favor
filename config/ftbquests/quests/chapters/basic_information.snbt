@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "basic_information"
+	group: ""
+	id: "4E4F6FF3EEEB1E51"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "1E4A4AD1899325D3"
+		tasks: [{
+			id: "458BFB75460FD02D"
+			type: "checkmark"
+		}]
+		x: -3.5d
+		y: -2.0d
+	}]
+}
