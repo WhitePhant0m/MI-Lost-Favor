@@ -44,16 +44,6 @@ ServerEvents.recipes(event => {
             item_2: "pastel:pure_redstone",
             advancement: "pastel:midgame/build_enchanting_structure"
         },
-        {
-            name: "the_bumblezone:neurotoxins",
-            level_cap: 2,
-            xp_scaling: [100],
-            item_scaling: [8],
-            pigment_color: "pastel:green_pigment",
-            item_1: "minecraft:poisonous_potato",
-            item_2: "minecraft:spider_eye",
-            advancement: "pastel:midgame/build_enchanting_structure"
-        },
     ]
 
     const seen = new Set();
