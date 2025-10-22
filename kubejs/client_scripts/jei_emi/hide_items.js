@@ -159,7 +159,8 @@ const list = [
 	'pastel:fusion_shrine_structure_placer', 
 	'pastel:pedestal_tier_3_structure_placer', 
 	'pastel:pedestal_tier_2_structure_placer', 
-	'pastel:pedestal_tier_1_structure_placer'
+	'pastel:pedestal_tier_1_structure_placer',
+	'ars_nouveau:volcanic_sourcelink'
 	
 ]
 

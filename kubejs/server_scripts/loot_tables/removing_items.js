@@ -51,6 +51,8 @@ LootJS.modifiers(event => {
         { item_name: 'ars_nouveau:ritual_wilden_summon' },
         { item_name: 'minecraft:iron_nugget' },
         { item_name: 'minecraft:gold_nugget' },
+        { item_name: 'ars_additions:lost_codex_entry' },
+        { item_name: 'ars_additions:ancient_codex_entry' },
     ]
     const loot_types = [LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC]
 
