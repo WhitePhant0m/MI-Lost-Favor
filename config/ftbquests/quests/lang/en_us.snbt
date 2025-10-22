@@ -7,7 +7,7 @@
 	chapter.1DE9AF77B4D50480.title: "First steps"
 	chapter.231570DE6A7FCD52.title: "Traveling"
 	chapter.293EE18185540114.title: "Forbidden Arcanus"
-	chapter.2B3E5D6E8B56E8BB.title: "Ars NOJDGIODHFIOSBV"
+	chapter.2B3E5D6E8B56E8BB.title: "Ars Nouveau"
 	chapter.2E7EECD4E8CF01EA.title: "Spectrum"
 	chapter.389198189DCA1A49.title: "Utilities"
 	chapter.4D6A3C5941C9908A.title: "endgame"
@@ -291,7 +291,6 @@
 		"{@pagebreak}"
 		"Атамэ - быстрое и смертоносное оружие, и чтобы получить его силу, вам придется использовать Алмазный ритуал."
 	]
-	quest.0F88E4776BED75CE.quest_desc: ["An infinite source of water."]
 	quest.106F4D5B5D4A02F7.quest_desc: [
 		"Anyone &#FEECD6interested&r is invited to read the &l&#e4affaSpectrum&r&r guidebook, no point in copying the information to here!"
 		"{@pagebreak}"
@@ -483,6 +482,7 @@
 		"Просто &#FEECD6красивые лампы&r, не создавать же только утилит-предметы, верно? "
 	]
 	quest.1AE0400A3C0AF316.quest_desc: ["Looks OP for such an easy craft, so idk where to put it :p"]
+	quest.1B978110B709BF52.quest_subtitle: "Holds 512 items"
 	quest.1BBD0967E43849FF.quest_desc: [
 		"Rare gemstones that can be obtained while mining stratine ore."
 		"{@pagebreak}"
@@ -1683,6 +1683,7 @@
 		""
 		"Его можно зарядить, чтобы использовать в качестве портативного контейнера для алтарной энергии, позволяющего создавать магию кругов без присутствия алтаря, а также использовать при создании различных магических инструментов."
 	]
+	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
 	quest.71E39806A0B7D79D.quest_desc: [
 		"You can read about most rituals in the guidebook!"
 		"{@pagebreak}"
@@ -1774,6 +1775,7 @@
 		"Эти колючие листья можно получить только с помощью ножниц"
 	]
 	quest.7D5DCEA36FF46987.quest_desc: ["A bed for daytime."]
+	quest.7DAD1DF3B7F87944.quest_desc: ["The item is too powerful; we need to consider what its crafting recipe will be."]
 	quest.7E277FEC22A1924D.quest_desc: ["Spawner Scrap drops when breaking a Spawner"]
 	quest.7E9470BDDB0600F0.quest_desc: [
 		"11 без"

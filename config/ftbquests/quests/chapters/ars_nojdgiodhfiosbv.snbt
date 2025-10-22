@@ -5418,7 +5418,9 @@
 		}
 		{
 			dependencies: ["0EBE4702C54278F6"]
+			hide_dependency_lines: true
 			id: "33C4EBFA08980E30"
+			shape: "gear"
 			tasks: [{
 				id: "4836D142B370B98E"
 				item: { count: 1, id: "sophisticatedbackpacks:backpack" }

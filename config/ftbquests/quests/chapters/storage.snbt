@@ -28,7 +28,7 @@
 			id: "2083E8E3BB850540"
 			linked_quest: "05C4AA05CA0E6F80"
 			x: 2.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			id: "60D5474EFE17D247"
@@ -40,31 +40,31 @@
 			id: "09837581FFE846FA"
 			linked_quest: "1F8EFD51ACC79C3D"
 			x: 3.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			id: "5740F23B1C973972"
 			linked_quest: "61E704FFE6D51154"
 			x: 4.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			id: "6B8F97DE5E091815"
 			linked_quest: "5F5AB4341CAE8DE2"
 			x: 5.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			id: "05FF1E6BE24CD1E1"
 			linked_quest: "75FB7CD04B7F2522"
 			x: 6.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			id: "7E6939502CA74A9B"
 			linked_quest: "0665DE086D83F6F9"
 			x: 7.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			id: "0F59EEE6B77EC5B4"
@@ -118,25 +118,25 @@
 			id: "448288E118692D8D"
 			linked_quest: "6698E9FBE3C24DE8"
 			x: 3.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			id: "2B39E12087EB16BC"
 			linked_quest: "2EEEC6F9C1EDBCB0"
 			x: 0.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			id: "6246BF2F55CBC2CA"
 			linked_quest: "329A91823FE78F96"
 			x: 1.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			id: "4D5ADAA540878F9E"
 			linked_quest: "391002DBCA6CE6D1"
 			x: 2.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			id: "7D4CD924978A90C0"
@@ -148,73 +148,103 @@
 			id: "5A17BC95662A5385"
 			linked_quest: "06F29772DEA6EF99"
 			x: 4.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			id: "2E88FEC7C9C204E8"
 			linked_quest: "38DCF86BC7B68C30"
 			x: 6.0d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			id: "11F8B39558E0C1B7"
 			linked_quest: "5EBF48809F0A806A"
 			x: 5.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			id: "386AE70C4B92E9FD"
 			linked_quest: "5DC8B6B0DD382499"
 			x: 5.0d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			id: "27DE262D8322F161"
 			linked_quest: "2071CE16FAA3FDEE"
 			x: 4.0d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			id: "7F8FED9ECDCE4F06"
 			linked_quest: "0CC6BCAD15D4C47B"
 			x: 4.0d
-			y: 9.0d
+			y: 11.0d
 		}
 		{
 			id: "6DC43D9D7800A393"
 			linked_quest: "5842F95522AD1864"
 			x: 5.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			id: "5C83F37E82F8FAD9"
 			linked_quest: "4597FC348992B9BD"
 			x: 6.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			id: "7EC08F27CAC3452D"
 			linked_quest: "020C393BC2320A12"
 			x: 7.0d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			id: "1D1F69138E545B8D"
 			linked_quest: "40044C93A9BEF77A"
 			x: 6.0d
-			y: 10.0d
+			y: 12.0d
 		}
 		{
 			id: "3465ADF331388232"
 			linked_quest: "66D8668A4267CBE5"
 			x: 5.0d
-			y: 9.0d
+			y: 11.0d
 		}
 		{
 			id: "2367C8C85A1B9F67"
 			linked_quest: "4D6ED0D6DEBF3308"
 			x: 5.0d
-			y: 7.5d
+			y: 9.5d
+		}
+		{
+			id: "3B03898BD88078EA"
+			linked_quest: "57E0048DCD1B80FE"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			id: "0611F2F1299C42DA"
+			linked_quest: "7DAD1DF3B7F87944"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			id: "7402352E07E1602D"
+			linked_quest: "0EBE4702C54278F6"
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			id: "23000A6B39618CE1"
+			linked_quest: "1B978110B709BF52"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "102807B0A69797F3"
+			linked_quest: "2A60D184399CE876"
+			x: 4.0d
+			y: 4.0d
 		}
 	]
 	quests: [
@@ -256,7 +286,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "3B81DBB9804BD9CE"
@@ -266,7 +296,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "196F5E47A551A77C"
@@ -276,7 +306,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "2F56E2D73EDAF28B"
@@ -286,7 +316,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "534D238F15C03CEB"
@@ -296,7 +326,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "75B4898C0F538D7E"
@@ -306,7 +336,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "60C3D62004B7DD66"
@@ -316,7 +346,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			id: "1DE92D9727F8D39A"
@@ -326,7 +356,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			id: "669A264E5501BA93"
@@ -336,7 +366,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			id: "14412618D3C7B873"
@@ -346,7 +376,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			id: "70DE3C8E1263E278"
@@ -356,7 +386,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			id: "3323B394C0450AD6"
@@ -366,7 +396,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			id: "379FD5EF89A0B9D6"
@@ -376,7 +406,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			id: "6392532F8B6C091F"
@@ -386,7 +416,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			id: "6171C6DA47DC94CB"
@@ -397,6 +427,16 @@
 			}]
 			x: -8.5d
 			y: 9.5d
+		}
+		{
+			id: "7189776839551466"
+			tasks: [{
+				id: "2623396FB6F14D0A"
+				item: { count: 1, id: "minecraft:bundle" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
 		}
 	]
 }
