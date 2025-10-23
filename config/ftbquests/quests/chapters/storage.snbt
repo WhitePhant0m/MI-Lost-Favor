@@ -3,8 +3,11 @@
 	default_quest_shape: ""
 	filename: "storage"
 	group: ""
+	icon: {
+		id: "minecraft:chest"
+	}
 	id: "7A58E54E4B6B5025"
-	order_index: 14
+	order_index: 2
 	quest_links: [
 		{
 			id: "481D34F36CC060E0"

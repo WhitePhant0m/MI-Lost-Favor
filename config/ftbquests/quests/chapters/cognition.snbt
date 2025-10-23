@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "cognition"
 	group: ""
+	icon: {
+		id: "cognition:experience_obelisk"
+	}
 	id: "5B0032897BBCD974"
 	order_index: 13
 	quest_links: [ ]

@@ -4,8 +4,11 @@
 	default_quest_shape: ""
 	filename: "ars_nojdgiodhfiosbv"
 	group: ""
+	icon: {
+		id: "ars_nouveau:dominion_wand"
+	}
 	id: "2B3E5D6E8B56E8BB"
-	order_index: 2
+	order_index: 5
 	quest_links: [
 		{
 			id: "0B56918CABC0CAFA"

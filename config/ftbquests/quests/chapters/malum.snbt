@@ -3,8 +3,11 @@
 	default_quest_shape: ""
 	filename: "malum"
 	group: ""
+	icon: {
+		id: "malum:soul_stained_steel_scythe"
+	}
 	id: "07BA71E5216DF573"
-	order_index: 12
+	order_index: 6
 	quest_links: [{
 		id: "048FACDE08ABA32B"
 		linked_quest: "2649938C27A08C3A"

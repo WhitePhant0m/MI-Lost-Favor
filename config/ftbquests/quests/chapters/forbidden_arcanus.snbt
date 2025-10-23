@@ -3,8 +3,11 @@
 	default_quest_shape: ""
 	filename: "forbidden_arcanus"
 	group: ""
+	icon: {
+		id: "forbidden_arcanus:hephaestus_forge_tier_1"
+	}
 	id: "293EE18185540114"
-	order_index: 8
+	order_index: 11
 	quest_links: [ ]
 	quests: [
 		{

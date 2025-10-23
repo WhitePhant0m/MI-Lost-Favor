@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "toxony"
 	group: ""
+	icon: {
+		id: "toxony:plague_doctor_hood"
+	}
 	id: "0BA8A5647651177A"
 	images: [
 		{
@@ -32,7 +35,7 @@
 			y: 19.835204081632646d
 		}
 	]
-	order_index: 4
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{

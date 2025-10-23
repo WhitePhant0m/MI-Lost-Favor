@@ -3,8 +3,11 @@
 	default_quest_shape: ""
 	filename: "paganbless"
 	group: ""
+	icon: {
+		id: "paganbless:runic_core"
+	}
 	id: "0EF0C5F1BD4103BF"
-	order_index: 5
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{

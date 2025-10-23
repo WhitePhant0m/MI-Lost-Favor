@@ -3,8 +3,11 @@
 	default_quest_shape: ""
 	filename: "diverse_content"
 	group: ""
+	icon: {
+		id: "angelring:angel_ring"
+	}
 	id: "389198189DCA1A49"
-	order_index: 9
+	order_index: 12
 	quest_links: [
 		{
 			id: "689B85F6CDCD4945"

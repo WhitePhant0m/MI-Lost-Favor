@@ -3,8 +3,11 @@
 	default_quest_shape: ""
 	filename: "hexerei"
 	group: ""
+	icon: {
+		id: "hexerei:mixing_cauldron"
+	}
 	id: "6DFA55A3EC367C34"
-	order_index: 11
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{

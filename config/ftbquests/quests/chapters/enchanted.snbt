@@ -3,8 +3,14 @@
 	default_quest_shape: ""
 	filename: "enchanted"
 	group: ""
+	icon: {
+		components: {
+			"modopedia:book": "enchanted:art_of_witchcraft"
+		}
+		id: "modopedia:book"
+	}
 	id: "0C8C4901311BE1A5"
-	order_index: 7
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{
