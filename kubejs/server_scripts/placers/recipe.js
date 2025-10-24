@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         Object.entries(blocksCount).forEach(([blockID, count]) => {
             inputItems.push([{item:blockID}, count])
         })
-        miMachineCraft(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
+        miMachineCraft(event, {energy:4, time:200, machine:"modern_industrialization:multiblock_packer_3000_safety_regulations_edition",
             inputItems:inputItems,
             outputItems:[
                 [{item:block}]
