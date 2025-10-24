@@ -17,7 +17,7 @@
 
 */
 
-const miMachineCraft = (event, args) => {
+const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     const fluidsin = args.inputFluids || [];
     const fluidsout = args.outputFluids || [];
     const inputs = args.inputItems || [];
@@ -33,7 +33,7 @@ const miMachineCraft = (event, args) => {
         "item_outputs" : [],
         "fluid_inputs" : [],
         "fluid_outputs" : [],
-
+        "process_conditions": []        
     }
 
     inputs.forEach((input) => {recipe.item_inputs.push(Object.assign({}, input[0], {amount:input[1] || 1}, {probability:input[2]}))})
@@ -43,8 +43,44 @@ const miMachineCraft = (event, args) => {
 
     if(args.removeRecipe){outputs.forEach((out) => {event.remove({output: out})})}
     if(args.token){recipe.item_inputs.push(Object.assign({}, args.token, {amount:1}, {probability:0}))}
+    if(args.dimension){
+        recipe.process_conditions.push({
+            type:"modern_industrialization:dimension",
+            dimension:args.dimension
+        })
+    }
+    if(args.adjacent_block){
+        recipe.process_conditions.push({
+            type:"modern_industrialization:adjacent_block",
+            position:args.adjacent_block.position,
+            block:args.adjacent_block.block
+        })
+    }
+    if(args.custom_condition){
+        recipe.process_conditions.push({
+            type:"modern_industrialization:custom",
+            custom_id:args.custom_condition
+        })
+    }
     event.custom(recipe)
 };
+
+MIRecipeEvents.customCondition(event => {
+    event.register("milf:placer_craft_condition",
+            // condition itself, receives the machine context and the recipe that is being checked
+            (context, recipe) => {
+                if(context.level.getBlockState(context.getBlockEntity().getBlockPos().above())["is(net.minecraft.resources.ResourceKey)"]("minecraft:stripped_bamboo_block")){
+                    //context.level.setBlockAndUpdate(context.getBlockEntity().getBlockPos().above(), recipe.itemOutputs.first.stack.block)
+                    //console.log(context.level.getBlockEntity(context.getBlockEntity().getBlockPos().above().offset(2,0,0)).blockState.properties);
+                    //console.log("something");
+                    return true
+                } 
+                return false
+                //return context.level.getBlockState(context.getBlockEntity().getBlockPos().above())["is(net.minecraft.resources.ResourceKey)"]("minecraft:stripped_bamboo_block")
+            },
+            // description for REI-like mods
+            Text.of("Must be placed on an odd X position"));
+});
 
 ServerEvents.recipes(event => {
     event.remove({
