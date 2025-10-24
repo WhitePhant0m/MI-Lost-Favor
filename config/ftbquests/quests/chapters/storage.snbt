@@ -7,7 +7,7 @@
 		id: "minecraft:chest"
 	}
 	id: "7A58E54E4B6B5025"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "481D34F36CC060E0"

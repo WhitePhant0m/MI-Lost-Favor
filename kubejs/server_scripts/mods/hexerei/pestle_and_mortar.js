@@ -1,14 +1,13 @@
 /**
- * Adds a Hexerei pestle_and_mortar recipe and optionally removes existing recipes for the same output.
+ * args:
+ *  - ingredients (array)   : ingredients array (required)
+ *  - output (string)       : result item id (required)
+ *  - amount (number)       : result count, default 1
+ *  - grindingTime (number) : grinding duration, default 20
+ *  - removeRecipe (bool)   : if true, also calls `event.remove({ output: args.output })`
  *
- * Usage notes:
- *  - `event` is the KubeJS recipe event object (passed by the script environment).
- *  - `args` is an object with the following properties:
- *      - ingredients: Array — list of ingredient objects as expected by Hexerei (e.g. [{ item: 'minecraft:nether_wart' }, { item: 'minecraft:bone_meal', count: 2 }]).
- *      - output: String — namespaced item id for the output (e.g. 'mod:powder').
- *      - amount: Number (optional) — how many items to produce; defaults to 1.
- *      - grindingTime: Number (optional) — recipe grinding time; defaults to 20.
- *      - removeRecipe: Boolean (optional) — if strictly `true` the function will remove existing recipes that produce the same output before adding the custom one.
+ * Notes:
+ *  - If `removeRecipe` is true, the recipe matching `output` will be removed.
  */
 const customPestleAndMortarCraft = (event, args) => {
     event.custom({

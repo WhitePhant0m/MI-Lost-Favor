@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dyes_of_the_occult"
+	group: "786FFA1BEC14E223"
+	icon: {
+		components: {
+			"ftbquests:icon": "occultism:item/ritual_dummy_summon"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "207581C2CDE908B1"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+}

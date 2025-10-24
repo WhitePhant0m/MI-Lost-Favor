@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "occultism"
@@ -10,7 +11,7 @@
 		id: "ftbquests:custom_icon"
 	}
 	id: "7CF76022186FB1FC"
-	order_index: 4
+	order_index: 3
 	quest_links: [
 		{
 			id: "13BD50540DB39E49"
@@ -27,20 +28,19 @@
 	]
 	quests: [
 		{
-			dependencies: ["6ED1332B8EAE58AD"]
-			id: "7D87C2F156FAE350"
-			tasks: [{
-				id: "0F691CA963C1C558"
-				item: { components: { "modonomicon:book_id": "occultism:dictionary_of_spirits" }, count: 1, id: "occultism:dictionary_of_spirits" }
+			id: "6ED1332B8EAE58AD"
+			rewards: [{
+				id: "75D32C7044025128"
+				item: {
+					components: {
+						"modonomicon:book_id": "occultism:dictionary_of_spirits"
+					}
+					count: 1
+					id: "occultism:dictionary_of_spirits"
+				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: -1.0d
-		}
-		{
-			id: "6ED1332B8EAE58AD"
 			tasks: [{
-				count: 37L
 				id: "1B131AA27BAE12BB"
 				item: { count: 1, id: "occultism:datura_seeds" }
 				type: "item"
@@ -52,7 +52,7 @@
 			dependencies: ["6ED1332B8EAE58AD"]
 			id: "7C0781F1F6C11E66"
 			tasks: [{
-				count: 13L
+				count: 8L
 				id: "277AD159DEABAC6E"
 				item: { count: 1, id: "occultism:datura" }
 				type: "item"

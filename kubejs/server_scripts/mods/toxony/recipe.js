@@ -9,6 +9,10 @@ ServerEvents.recipes(event => {
         event.remove({id: id});
     });
 
+    event.remove({output: [
+        "toxony:redstone_mortar",
+    ]})
+
     
     customPestleAndMortarCraft(event, {
         ingredients: [
@@ -26,6 +30,7 @@ ServerEvents.recipes(event => {
             { "tag": "toxony:ingredients/poisonous" },
             { "tag": "toxony:plants/poisonous"},
             { "item": "minecraft:bone_meal"},
+            { "item": "enchanted:hint_of_rebirth"},
         ],
         output: "toxony:poison_paste",
         removeRecipe: true,

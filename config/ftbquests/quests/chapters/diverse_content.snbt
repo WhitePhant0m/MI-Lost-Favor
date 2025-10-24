@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "diverse_content"
@@ -7,7 +8,7 @@
 		id: "angelring:angel_ring"
 	}
 	id: "389198189DCA1A49"
-	order_index: 12
+	order_index: 8
 	quest_links: [
 		{
 			id: "689B85F6CDCD4945"

@@ -8,7 +8,7 @@
 		id: "minecraft:golden_sword"
 	}
 	id: "231570DE6A7FCD52"
-	order_index: 1
+	order_index: 4
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -2222,28 +2222,6 @@
 		}
 		{
 			icon: {
-				components: {
-					"apotheosis:affix_name": {
-						color: "#808080"
-						italic: 0b
-						translate: "misc.apotheosis.affix_name.two"
-						with: [
-							{
-								translate: "affix.apotheosis:melee/attribute/lacerating"
-							}
-							{
-								: ""
-							}
-							{
-								: ""
-							}
-						]
-					}
-					"apotheosis:affixes": {
-						"apotheosis:melee/attribute/lacerating": 0.75967944f
-					}
-					"apotheosis:rarity": "apotheosis:common"
-				}
 				id: "mowziesmobs:wrought_axe"
 			}
 			id: "1609A7DF5329EA44"
@@ -2255,6 +2233,28 @@
 			}]
 			x: -5.5d
 			y: 14.5d
+		}
+		{
+			id: "2A8C0D9B2C194AD2"
+			tasks: [{
+				entity: "cataclysm:scylla"
+				id: "47C65D490721F33F"
+				type: "kill"
+				value: 1L
+			}]
+			x: -12.0d
+			y: 12.5d
+		}
+		{
+			id: "0621BAAC08B04895"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				id: "15C89A2D3845DA00"
+				type: "kill"
+				value: 1L
+			}]
+			x: -13.5d
+			y: 12.5d
 		}
 	]
 }

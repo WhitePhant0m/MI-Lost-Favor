@@ -1,0 +1,42 @@
+{
+    "items": [
+        {
+            "id": "enchanted:broom",
+            "count": 1
+        },
+        {
+            "id": "enchanted:flying_ointment",
+            "count": 1
+        },
+        {
+            "id": "hexerei:blood_bottle",
+            "count": 1
+        },
+        {
+            "id": "hexerei:willow_log",
+            "count": 2
+        },
+        {
+            "id": "hexerei:mandrake_root",
+            "count": 1
+        },
+        {
+            "id": "minecraft:gold_block",
+            "count": 2
+        }
+    ],
+    "shapes": {
+        "enchanted:small_circle": "enchanted:ritual_chalk",
+        "enchanted:medium_circle": "enchanted:ritual_chalk"
+    },
+    "power": 3000,
+    "factory": {
+        "type": "enchanted:create_item",
+        "items": [
+            {
+                "id": "hexerei:willow_broom",
+                "count": 1
+            }
+        ]
+    }
+}

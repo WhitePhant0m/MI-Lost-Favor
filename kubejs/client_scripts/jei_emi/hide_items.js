@@ -160,7 +160,9 @@ const list = [
 	'pastel:pedestal_tier_3_structure_placer', 
 	'pastel:pedestal_tier_2_structure_placer', 
 	'pastel:pedestal_tier_1_structure_placer',
-	'ars_nouveau:volcanic_sourcelink'
+	'ars_nouveau:volcanic_sourcelink',
+	"enchanted:enchanted_broomstick",
+	"toxony:redstone_mortar",
 	
 ]
 

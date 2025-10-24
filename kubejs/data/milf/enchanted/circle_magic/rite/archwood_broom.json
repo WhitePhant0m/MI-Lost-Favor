@@ -1,0 +1,46 @@
+{
+    "items": [
+        {
+            "id": "enchanted:broom",
+            "count": 1
+        },
+        {
+            "id": "enchanted:flying_ointment",
+            "count": 1
+        },
+        {
+            "id": "ars_nouveau:blue_archwood_log",
+            "count": 2
+        },
+        {
+            "id": "ars_nouveau:source_gem",
+            "count": 1
+        },
+        {
+            "id": "hexerei:mandrake_root",
+            "count": 1
+        },
+        {
+            "id": "ars_nouveau:magebloom",
+            "count": 2
+        },
+        {
+            "id": "ars_nouveau:air_essence",
+            "count": 2
+        }
+    ],
+    "shapes": {
+        "enchanted:small_circle": "enchanted:ritual_chalk",
+        "enchanted:medium_circle": "enchanted:ritual_chalk"
+    },
+    "power": 3000,
+    "factory": {
+        "type": "enchanted:create_item",
+        "items": [
+            {
+                "id": "ars_hex:archwood_broom",
+                "count": 1
+            }
+        ]
+    }
+}
