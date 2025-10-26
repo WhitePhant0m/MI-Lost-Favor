@@ -37,6 +37,12 @@ ServerEvents.recipes(event => {
     })
 
     ytechChoppingCraft(event,{
+        inputItems:[[{item: "minecraft:iron_nugget"}]],
+        outputItems:[[{id:"kubejs:needle"}]],
+        tool: {tag : "c:knives"},
+    })
+
+    ytechChoppingCraft(event,{
         inputItems:[[{tag: "minecraft:planks"}]],
         outputItems:[[{id:"minecraft:stick"}, 3]],
         tool: {tag : "minecraft:axes"},

@@ -40,7 +40,6 @@ BlockEvents.rightClicked(placerBlocks, event => {
     //#region variables
     const templateName = event.block.getId().toString().slice(7, -7)
     const template = NBTIO.read(`kubejs/data/immersiveengineering/structure/multiblocks/${templateName}.nbt`)
-
     const playerFacing = event.player.getHorizontalFacing()
     const blockFacing = event.block.getProperties().facing
 
