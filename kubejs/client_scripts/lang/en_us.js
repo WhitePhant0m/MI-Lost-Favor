@@ -10,7 +10,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.saturation', 'You\'ve lost your saturation!')
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
-    event.add('milf.stage.early_mobs', 'You started hearing strange noises at night')
+    event.add('milf.stage.minecraft_mobs', 'You started hearing strange noises at night')
     event.add('milf.stage.early_items', 'You can trade with villagers, loot chests, and interact with spawners')
 
     event.add('advancements.apotheosis.progression.ascent.criteria.nether_gauntlet', 'Kill Nether Gauntlet')
@@ -40,6 +40,8 @@ ClientEvents.lang('en_us', event => {
 
     event.add('milf.flags.claimed', "Chunk claimed")
     event.add('milf.flags.unclaimed', "Chunk unclaimed")
+
+    event.add('rite.milf.infuse_broom', "Enchanted Broom")
  
 })
 
