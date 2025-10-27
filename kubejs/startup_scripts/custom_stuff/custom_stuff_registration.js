@@ -26,11 +26,10 @@ function itemBuilder(/**@type {$ItemBuilder_} */ item, args){
     })
 }
 
-
 function createNewBlock(id, args) {
     args = args || {}
     StartupEvents.registry('block', event =>{
-        let block = args.blockType ? event.create(id, args.blockType) : event.create(id)
+        const block = args.blockType ? event.create(id, args.blockType) : event.create(id)
         block.texture(args.texturePath || `custom_stuff:blocks/${id}`)
         args.soundType && block.soundType(args.soundType)
         args.requiresTool && block.requiresTool(true)
@@ -44,12 +43,15 @@ function createNewBlock(id, args) {
         args.notSolid && block.notSolid()
         args.waterlogged && block.waterlogged()
         args.property && block.property(args.property)
-        block.defaultState(state =>{
-            args.defaultStateCycle && state.cycle(args.defaultStateCycle)
-        })
-        block.item(item =>{
+        if (args.defaultState) {
+            block.defaultState(state =>{
+                args.defaultState.cycle && state.cycle(args.defaultState.cycle)
+                args.defaultState.setProperty && state.set(args.defaultState.setProperty.property, args.defaultState.setProperty.value)
+            })
+        }
+        block.item(item => {
             itemBuilder(item, args)
-        })
+        }) 
     })
     global.langCustomStuff[`block.kubejs.${id}`] = Object.assign({"en_us" : idToName(id)}, args.lang)
 }

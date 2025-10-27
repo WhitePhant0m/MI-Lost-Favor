@@ -85,7 +85,7 @@ definitelyUniqueNameForIETemplatesList.forEach(name => {
         soundType:'bamboo',
         tagBlock:"milf:placers",
         property:enabledProperty,
-        defaultStateCycle:enabledProperty,
+        defaultState:{cycle:enabledProperty},
         parentModel:"kubejs:block/box_closed",
         lang:name.langPlacers
     })
@@ -97,7 +97,7 @@ definitelyUniqueNameForIETemplatesList.forEach(name => {
         soundType:'bamboo',
         tagBlock:"milf:empty_box",
         property:enabledProperty,
-        defaultStateCycle:enabledProperty,
+        defaultState:{cycle:enabledProperty},
         parentModel:"kubejs:block/box_open",
         noDrops:true,
         lang:name.langBoxes
