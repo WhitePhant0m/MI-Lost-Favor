@@ -15,7 +15,6 @@
 	chapter.561B8642F13079C1.title: "Bronze Age"
 	chapter.5B0032897BBCD974.title: "cognition"
 	chapter.7A58E54E4B6B5025.title: "Storage"
-	chapter.7CF76022186FB1FC.title: "Occultism"
 	chapter_group.414DFD996A564669.title: "Early"
 	chapter_group.4602108FDD7051BD.title: "Primitive"
 	chapter_group.786FFA1BEC14E223.title: "Midgame"
@@ -1440,6 +1439,8 @@
 		"BUT HOW AND WHY??"
 		""
 		"…"
+		""
+		"&#4EC847<fade>🛈 Toxin is used as fuel!"
 		"{@pagebreak}"
 		""
 		"Я нашёл его..."
@@ -1453,6 +1454,8 @@
 		"НО КАК, ПОЧЕМУ И ЧТО ЭТО ЗНАЧИТ?"
 		""
 		"…"
+		""
+		"&#4EC847<fade>🛈 Токсин используется в качестве топлива!"
 	]
 	quest.6161B74A88A73B46.quest_subtitle: "Low HP build, pog!"
 	quest.61E590BED7EE9DA4.quest_desc: ["sooo entity magnet?!"]
@@ -1899,5 +1902,6 @@
 	task.78C5E8DD6BAEE398.title: "Any #milf:polished_gemstone_block"
 	task.7EECE34CF3EE7B8C.title: "Any #minecraft:logs"
 	task.7FA316644840FB37.title: "Any #milf:pillar_base_blocks"
+	task.7FA515C73B63F455.title: "Any #toxony:possible_ingredients"
 	task.7FAF7967D40C0369.title: "Malum"
 }
