@@ -1,0 +1,16 @@
+filename = 'born_in_chaos_[Neoforge]_1.21.1_1.7.3.jar'
+name = 'Born in Chaos'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'f8bd2d53a99884e62cdf0af1c99bb2b5debb4995'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7150215
+project-id = 686437
