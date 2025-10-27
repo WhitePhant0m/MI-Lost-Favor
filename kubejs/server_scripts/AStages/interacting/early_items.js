@@ -10,6 +10,10 @@ const item_interact_block = [
     { id: "mahogany_chest", item: "hexerei:mahogany_chest", stage: "early_items" },
     { id: "willow_chest", item: "hexerei:willow_chest", stage: "early_items" },
     { id: "witch_hazel_chest", item: "hexerei:witch_hazel_chest", stage: "early_items" },
+    { id: "iron_nugget", item: "minecraft:iron_nugget", stage: "early_items" },
+    { id: "iron_block", item: "minecraft:iron_block", stage: "early_items" },
+    { id: "gold_nugget", item: "minecraft:gold_nugget", stage: "early_items" },
+    { id: "gold_block", item: "minecraft:gold_block", stage: "early_items" },
 ]
 
 const entity_interact_block = [
@@ -23,8 +27,6 @@ const entity_interact_block = [
 
 item_interact_block.forEach(element => {
     let itemName = Item.of(element.item).hoverName
-
-
 
     AStages.addRestrictionForItem(`astages/${element.id}`, "early_items", element.item)
         .setPickUpDelay(60)
