@@ -21,3 +21,18 @@ ServerEvents.recipes(event => {
     event.remove({id:/sophisticatedstorage:generic*/})
 
 })
+
+ServerEvents.tags("item", event => {
+
+
+    const chests = event.get("sophisticatedstorage:all_storage").getObjectIds()
+    const types = ["copper", "iron", "gold", "diamond", "netherite"]
+    types.forEach( type => {
+        let regex = new RegExp(`sophisticatedstorage:.*${type}.*`)
+        chests.forEach(chest =>{
+            if(regex.test(chest.toString())) event.add(`milf:${type}_storage`, chest)
+            console.log(chest);
+        })
+    })
+
+})

@@ -440,8 +440,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: 3.5d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["50A40FAE189C817D"]
@@ -734,21 +734,6 @@
 			}]
 			x: 2.0d
 			y: -17.0d
-		}
-		{
-			dependencies: [
-				"0BCD76587F2DB00F"
-				"1C00BD0399683CCA"
-			]
-			id: "45D7914DAECC1D03"
-			shape: "octagon"
-			tasks: [{
-				id: "3086086D07749BF1"
-				item: { count: 1, id: "modern_industrialization:configurable_tank" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: 3.5d
 		}
 		{
 			dependencies: ["5AAE5B75AB0470BD"]

@@ -295,13 +295,13 @@ KubeJSTweaks.beforeRecipes(event =>{
         event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust`) */
         const regex = new RegExp(`modern_industrialization:materials\\/${ore}\\/(?:macerator|forge_hammer)\\/raw_metal.*`)
         event.getEntry(regex).forEach(entry => {
-            entry.fromPath("item_inputs").ifPresent(input => console.log(input.second.asJsonArray.get(0).asJsonObject.add("tag", `c:crushed_ores/${ore}`)))
-            entry.fromPath("ingredient").ifPresent(input => console.log(input.second.asJsonObject.add("tag", `c:crushed_ores/${ore}`)))
+            entry.fromPath("item_inputs").ifPresent(input => input.second.asJsonArray.get(0).asJsonObject.add("tag", `c:crushed_ores/${ore}`))
+            entry.fromPath("ingredient").ifPresent(input => input.second.asJsonObject.add("tag", `c:crushed_ores/${ore}`))
         })
 
     })
     event.getEntry("modern_industrialization:materials/macerator/lead_crushed_to_dust").forEach(entry => {
-        entry.fromPath("item_inputs").ifPresent(input => console.log(input.second.asJsonObject.add("tag", `c:crushed_ores/lead`)))
+        entry.fromPath("item_inputs").ifPresent(input => input.second.asJsonObject.add("tag", `c:crushed_ores/lead`))
     })
 
 })

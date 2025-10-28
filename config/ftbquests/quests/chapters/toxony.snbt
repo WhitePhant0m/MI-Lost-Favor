@@ -16,8 +16,8 @@
 			image: "toxony:textures/particle/aqua_splash_4.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 18.5d
-			y: -11.0d
+			x: 17.5d
+			y: -10.5d
 		}
 		{
 			color: 3663685
@@ -25,15 +25,15 @@
 			image: "toxony:textures/particle/aqua_splash_4.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 18.5d
-			y: -4.0d
+			x: 17.5d
+			y: -3.5d
 		}
 		{
 			height: 3.0d
 			image: "toxony:item/flail_spin_1"
 			rotation: 0.0d
 			width: 3.0d
-			x: 29.536564625850374d
+			x: 27.536564625850374d
 			y: -3.8392857142857153d
 		}
 	]
@@ -58,7 +58,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -7.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3F70D40267927529"]
@@ -71,8 +71,8 @@
 				item: { count: 1, id: "toxony:ocelot_mint" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -3.5d
+			x: 18.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["75DE98178AF407BD"]
@@ -101,8 +101,8 @@
 				item: { count: 1, id: "toxony:nightshade" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: -3.5d
+			x: 17.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3F70D40267927529"]
@@ -115,8 +115,8 @@
 				item: { count: 1, id: "toxony:water_hemlock" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -4.5d
+			x: 18.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3F70D40267927529"]
@@ -130,8 +130,8 @@
 				item: { count: 1, id: "toxony:coldsnap" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: -4.5d
+			x: 17.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3F70D40267927529"]
@@ -144,8 +144,8 @@
 				item: { count: 1, id: "toxony:bloodroot" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: -4.0d
+			x: 17.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3F70D40267927529"]
@@ -155,8 +155,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(toxony:scalpels)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: -9.0d
+			x: 17.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3DD74B48583DB8C0"]
@@ -169,8 +169,8 @@
 				item: { count: 1, id: "toxony:venom_tooth" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: -11.5d
+			x: 17.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["3DD74B48583DB8C0"]
@@ -184,8 +184,8 @@
 				item: { count: 1, id: "toxony:toxic_spit" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: -10.5d
+			x: 17.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["3DD74B48583DB8C0"]
@@ -198,8 +198,8 @@
 				item: { count: 1, id: "toxony:poison_sac" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -11.5d
+			x: 18.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["3DD74B48583DB8C0"]
@@ -211,8 +211,8 @@
 				item: { count: 1, id: "toxony:bog_bone" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: -11.0d
+			x: 17.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["3DD74B48583DB8C0"]
@@ -225,8 +225,8 @@
 				item: { count: 1, id: "toxony:acid_slimeball" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -10.5d
+			x: 18.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["75DE98178AF407BD"]
@@ -237,8 +237,8 @@
 				item: { count: 1, id: "toxony:poison_blend" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: -7.5d
+			x: 15.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["75DE98178AF407BD"]
@@ -258,7 +258,7 @@
 				}
 			]
 			x: 12.0d
-			y: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["02BDC1FB8AC8485D"]
@@ -269,7 +269,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["02BDC1FB8AC8485D"]
@@ -279,7 +279,7 @@
 				item: { count: 1, id: "toxony:fatigue_oil_pot" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: -5.0d
 		}
 		{
@@ -290,7 +290,7 @@
 				type: "checkmark"
 			}]
 			x: 12.0d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["02BDC1FB8AC8485D"]
@@ -301,7 +301,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["02BDC1FB8AC8485D"]
@@ -311,7 +311,7 @@
 				item: { count: 1, id: "toxony:fire_resistance_oil_pot" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 13.0d
 			y: -5.0d
 		}
 		{
@@ -322,8 +322,8 @@
 				item: { count: 1, id: "toxony:tox_gauge" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: -8.0d
+			x: 17.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3F70D40267927529"]
@@ -333,8 +333,8 @@
 				item: { count: 1, id: "toxony:copper_crucible" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: -7.0d
+			x: 17.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -348,8 +348,8 @@
 				item: { count: 1, id: "toxony:toxic_paste" }
 				type: "item"
 			}]
-			x: 21.0d
-			y: -7.5d
+			x: 20.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -362,7 +362,7 @@
 				item: { count: 1, id: "toxony:acid_oil_pot" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 18.5d
 			y: -6.0d
 		}
 		{
@@ -373,8 +373,8 @@
 				item: { count: 1, id: "toxony:oil_pot_sash" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: -6.0d
+			x: 17.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -388,8 +388,8 @@
 				item: { count: 1, id: "toxony:mending_oil_pot" }
 				type: "item"
 			}]
-			x: 22.5d
-			y: -6.0d
+			x: 18.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5A26B593C3D70B56"]
@@ -399,8 +399,8 @@
 				item: { count: 1, id: "toxony:toxic_blend" }
 				type: "item"
 			}]
-			x: 22.5d
-			y: -8.0d
+			x: 20.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["75DE98178AF407BD"]
@@ -422,7 +422,7 @@
 				item: { count: 1, id: "toxony:bolt" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 12.0d
 			y: -9.5d
 		}
 		{
@@ -433,7 +433,7 @@
 				item: { count: 1, id: "toxony:bolt_cartridge" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 12.0d
 			y: -10.5d
 		}
 		{
@@ -444,8 +444,8 @@
 				item: { count: 1, id: "toxony:potion_flask" }
 				type: "item"
 			}]
-			x: 22.5d
-			y: -9.0d
+			x: 20.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5A26B593C3D70B56"]
@@ -455,7 +455,7 @@
 				item: { count: 1, id: "toxony:glass_vial" }
 				type: "item"
 			}]
-			x: 22.5d
+			x: 21.0d
 			y: -7.0d
 		}
 		{
@@ -466,7 +466,7 @@
 				item: { count: 1, id: "toxony:toxin_canister" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 22.0d
 			y: -7.5d
 		}
 		{
@@ -488,7 +488,7 @@
 					type: "item"
 				}
 			]
-			x: 24.5d
+			x: 22.5d
 			y: -6.5d
 		}
 		{
@@ -506,7 +506,7 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
+			x: 23.0d
 			y: -7.5d
 		}
 		{
@@ -516,7 +516,7 @@
 				id: "03D27D995554C1F6"
 				type: "checkmark"
 			}]
-			x: 25.5d
+			x: 23.5d
 			y: -6.5d
 		}
 		{
@@ -527,7 +527,7 @@
 				item: { count: 1, id: "toxony:redstone_mixture" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 24.0d
 			y: -7.5d
 		}
 		{
@@ -538,7 +538,7 @@
 				item: { count: 1, id: "toxony:redstone_solution" }
 				type: "item"
 			}]
-			x: 26.5d
+			x: 24.5d
 			y: -6.5d
 		}
 		{
@@ -556,7 +556,7 @@
 					type: "item"
 				}
 			]
-			x: 27.0d
+			x: 25.0d
 			y: -7.5d
 		}
 		{
@@ -567,7 +567,7 @@
 				item: { count: 1, id: "toxony:copper_needle" }
 				type: "item"
 			}]
-			x: 27.5d
+			x: 25.5d
 			y: -6.5d
 		}
 		{
@@ -578,7 +578,7 @@
 				item: { count: 1, id: "toxony:magnifying_glass" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 26.0d
 			y: -7.5d
 		}
 		{
@@ -588,7 +588,7 @@
 				id: "5EC8E0E987CF862A"
 				type: "checkmark"
 			}]
-			x: 29.0d
+			x: 27.0d
 			y: -7.5d
 		}
 		{
@@ -602,7 +602,7 @@
 				item: { count: 1, id: "toxony:whirlsnap" }
 				type: "item"
 			}]
-			x: 28.5d
+			x: 26.5d
 			y: -5.0d
 		}
 		{
@@ -615,7 +615,7 @@
 				item: { count: 1, id: "toxony:moonlight_hemlock" }
 				type: "item"
 			}]
-			x: 29.5d
+			x: 27.5d
 			y: -5.0d
 		}
 		{
@@ -628,7 +628,7 @@
 				item: { count: 1, id: "toxony:snow_mint" }
 				type: "item"
 			}]
-			x: 29.5d
+			x: 27.5d
 			y: -4.0d
 		}
 		{
@@ -641,7 +641,7 @@
 				item: { count: 1, id: "toxony:warproot" }
 				type: "item"
 			}]
-			x: 29.0d
+			x: 27.0d
 			y: -4.5d
 		}
 		{
@@ -654,7 +654,7 @@
 				item: { count: 1, id: "toxony:sunspot" }
 				type: "item"
 			}]
-			x: 28.5d
+			x: 26.5d
 			y: -4.0d
 		}
 		{
@@ -665,7 +665,7 @@
 				item: { count: 1, id: "toxony:empty_tox_pot" }
 				type: "item"
 			}]
-			x: 29.0d
+			x: 27.0d
 			y: -10.0d
 		}
 		{
@@ -676,7 +676,7 @@
 				item: { count: 1, id: "toxony:toxin_tox_pot" }
 				type: "item"
 			}]
-			x: 29.0d
+			x: 27.0d
 			y: -12.0d
 		}
 		{
@@ -687,7 +687,7 @@
 				item: { count: 1, id: "toxony:smoke_tox_pot" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 28.0d
 			y: -11.5d
 		}
 		{
@@ -698,7 +698,7 @@
 				item: { count: 1, id: "toxony:regeneration_tox_pot" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 26.0d
 			y: -11.5d
 		}
 		{
@@ -709,7 +709,7 @@
 				item: { count: 1, id: "toxony:acid_tox_pot" }
 				type: "item"
 			}]
-			x: 27.5d
+			x: 25.5d
 			y: -10.5d
 		}
 		{
@@ -720,7 +720,7 @@
 				item: { count: 1, id: "toxony:witchfire_tox_pot" }
 				type: "item"
 			}]
-			x: 30.5d
+			x: 28.5d
 			y: -10.5d
 		}
 		{
@@ -731,7 +731,7 @@
 				item: { count: 1, id: "toxony:oil_base" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 28.0d
 			y: -8.5d
 		}
 		{
@@ -742,7 +742,7 @@
 				item: { count: 1, id: "toxony:toxic_leather" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 28.0d
 			y: -6.5d
 		}
 		{
@@ -770,7 +770,7 @@
 					type: "item"
 				}
 			]
-			x: 31.0d
+			x: 29.0d
 			y: -7.5d
 		}
 		{
@@ -781,7 +781,7 @@
 				item: { count: 1, id: "toxony:oil_pot_bandolier" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 30.0d
 			y: -7.5d
 		}
 		{
@@ -792,7 +792,7 @@
 				item: { count: 1, id: "toxony:toxin_flask" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 31.0d
 			y: -7.5d
 		}
 		{
@@ -815,7 +815,7 @@
 					type: "item"
 				}
 			]
-			x: 34.73979591836739d
+			x: 32.73979591836739d
 			y: -7.471343537415002d
 		}
 		{
@@ -833,7 +833,7 @@
 					type: "item"
 				}
 			]
-			x: 30.0d
+			x: 28.0d
 			y: -7.5d
 		}
 		{
@@ -844,7 +844,7 @@
 				item: { count: 1, id: "paganbless:herbalist_bench" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: -1.5d
 		}
 		{
@@ -866,7 +866,7 @@
 				item: { count: 1, id: "paganbless:black_thorn_log" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -880,7 +880,7 @@
 				item: { count: 1, id: "paganbless:boline" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -6.0d
 			y: -1.5d
 		}
 		{
@@ -894,7 +894,7 @@
 				item: { count: 1, id: "paganbless:essence_of_the_forest" }
 				type: "item"
 			}]
-			x: -8.5d
+			x: -7.5d
 			y: -1.5d
 		}
 		{
@@ -908,7 +908,7 @@
 				item: { count: 1, id: "paganbless:black_thorn_staff" }
 				type: "item"
 			}]
-			x: -9.25d
+			x: -8.25d
 			y: -1.5d
 		}
 		{
@@ -919,8 +919,8 @@
 				item: { count: 1, id: "paganbless:rune_slab_inert" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -943,7 +943,7 @@
 				item: { count: 1, id: "paganbless:runic_charge" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -954,7 +954,7 @@
 				item: { count: 1, id: "paganbless:hanging_rue" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: -2.0d
 		}
 		{
@@ -965,7 +965,7 @@
 				item: { count: 1, id: "paganbless:hanging_lavender" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -7.0d
 			y: -1.0d
 		}
 		{
@@ -976,7 +976,7 @@
 				item: { count: 1, id: "paganbless:dried_hanging_rue" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -8.0d
 			y: -2.5d
 		}
 		{
@@ -987,7 +987,7 @@
 				item: { count: 1, id: "paganbless:dried_hanging_lavender" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -8.0d
 			y: -0.5d
 		}
 		{
@@ -998,7 +998,7 @@
 				item: { count: 1, id: "paganbless:chopped_lavender" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -1.0d
 		}
 		{
@@ -1009,7 +1009,7 @@
 				item: { count: 1, id: "paganbless:chopped_rue" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.0d
 			y: -2.0d
 		}
 		{
@@ -1034,7 +1034,7 @@
 					type: "item"
 				}
 			]
-			x: -11.5d
+			x: -10.0d
 			y: -1.5d
 		}
 		{
@@ -1045,8 +1045,8 @@
 				item: { count: 1, id: "paganbless:rune_slab_diamond" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -5.0d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0D25CAEE5110F2AE"]
@@ -1056,8 +1056,8 @@
 				item: { count: 1, id: "paganbless:rune_slab_cinnabar" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -7.0d
+			x: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0D25CAEE5110F2AE"]
@@ -1067,8 +1067,8 @@
 				item: { count: 1, id: "paganbless:rune_slab_emerald" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -8.0d
+			x: -3.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0D25CAEE5110F2AE"]
@@ -1078,8 +1078,8 @@
 				item: { count: 1, id: "paganbless:rune_slab_lapis" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -9.0d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0D25CAEE5110F2AE"]
@@ -1089,8 +1089,8 @@
 				item: { count: 1, id: "paganbless:rune_slab_amethyst" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -4.0d
+			x: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0D25CAEE5110F2AE"]
@@ -1100,8 +1100,8 @@
 				item: { count: 1, id: "paganbless:rune_slab_quartz" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -3.0d
+			x: -5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1F1DD5CA76B5E4CA"]
@@ -1111,8 +1111,8 @@
 				item: { count: 1, id: "paganbless:athame" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -5.0d
+			x: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["67C0B671FD134FC2"]
@@ -1122,8 +1122,8 @@
 				item: { components: { "minecraft:entity_data": { id: "minecraft:pig" } }, count: 1, id: "paganbless:pentacle" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -7.0d
+			x: -4.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["558AC57D10E5E566"]
@@ -1133,8 +1133,8 @@
 				item: { count: 1, id: "paganbless:wand" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -8.0d
+			x: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["38A7C1FB4B3CA7F4"]
@@ -1144,8 +1144,8 @@
 				item: { count: 1, id: "paganbless:wican_ward" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.0d
+			x: -6.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5389665EEF98FAA2"]
@@ -1155,8 +1155,8 @@
 				item: { count: 1, id: "paganbless:eternal_snowball" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.0d
+			x: -6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4E31F25783F02AF0"]
@@ -1166,19 +1166,20 @@
 				item: { count: 1, id: "paganbless:chalice" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -9.0d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["47DF3BB83B4C272F"]
 			id: "0D25CAEE5110F2AE"
+			shape: "octagon"
 			tasks: [{
 				id: "2900E6E44D8C291F"
 				item: { count: 1, id: "paganbless:runic_core" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -6.0d
+			x: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0D25CAEE5110F2AE"]
@@ -1203,18 +1204,19 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
-			y: -6.0d
+			x: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1714360882474479"]
 			id: "6A2FCA07586ED280"
+			shape: "hexagon"
 			tasks: [{
 				id: "51173DA1477DA9F8"
 				item: { components: { "hexerei:book": { book: "hexerei:book_of_shadows", bookmarks: [ { color: "white", id: "", index: 0 }, { color: "white", id: "", index: 1 }, { color: "white", id: "", index: 2 }, { color: "white", id: "", index: 3 }, { color: "white", id: "", index: 4 }, { color: "white", id: "", index: 5 }, { color: "white", id: "", index: 6 }, { color: "white", id: "", index: 7 }, { color: "white", id: "", index: 8 }, { color: "white", id: "", index: 9 }, { color: "white", id: "", index: 10 }, { color: "white", id: "", index: 11 }, { color: "white", id: "", index: 12 }, { color: "white", id: "", index: 13 }, { color: "white", id: "", index: 14 }, { color: "white", id: "", index: 15 }, { color: "white", id: "", index: 16 }, { color: "white", id: "", index: 17 }, { color: "white", id: "", index: 18 }, { color: "white", id: "", index: 19 } ], chapter: 0, opened: 0b, page: 0, uuid: [I; 1974555292, -1205909360, -1100320342, -1275464202 ] } }, count: 1, id: "hexerei:book_of_shadows" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -3.0d
 			y: 1.5d
 		}
 		{
@@ -1253,7 +1255,7 @@
 				item: { count: 1, id: "hexerei:willow_sapling" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -4.5d
 			y: 2.0d
 		}
 		{
@@ -1265,7 +1267,7 @@
 				item: { count: 1, id: "hexerei:mahogany_sapling" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -4.5d
 			y: 1.0d
 		}
 		{
@@ -1277,7 +1279,7 @@
 				item: { count: 1, id: "hexerei:witch_hazel_sapling" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -5.0d
 			y: 1.5d
 		}
 		{
@@ -1289,7 +1291,7 @@
 				item: { count: 1, id: "hexerei:book_of_shadows_altar" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 1.0d
 		}
 		{
@@ -1301,7 +1303,7 @@
 				item: { count: 1, id: "hexerei:willow_altar" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -6.0d
 			y: 2.0d
 		}
 		{
@@ -1313,7 +1315,7 @@
 				item: { count: 1, id: "hexerei:witch_hazel_altar" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: 1.5d
 		}
 		{
@@ -1322,6 +1324,7 @@
 				id: "hexerei:candle"
 			}
 			id: "3C61CCD21782D84C"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "3C8D93CD09CDF958"
@@ -1346,8 +1349,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: -3.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1359,8 +1362,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -8.5d
+			x: -1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1372,8 +1375,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -9.0d
+			x: -1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1385,8 +1388,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -8.5d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1398,8 +1401,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -9.5d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1411,8 +1414,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -10.0d
+			x: 1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1424,8 +1427,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -9.5d
+			x: -1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1437,8 +1440,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -9.0d
+			x: 1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1450,8 +1453,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -8.0d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1463,8 +1466,8 @@
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.5d
+			x: 0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1477,7 +1480,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1490,7 +1493,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -7.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
@@ -1503,20 +1506,21 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -8.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3C61CCD21782D84C"]
+			hide_dependency_lines: true
 			id: "59B763039944DA6E"
-			shape: "diamond"
+			shape: "octagon"
 			tasks: [{
 				id: "6E9AB4DA84E8BE82"
 				item: { components: { "minecraft:custom_data": { effect: "hexerei:sunshine_effect", effectParticle: { particle0: "minecraft:electric_spark", particle1: "minecraft:firework", particle2: "minecraft:enchanted_hit", particle3: "minecraft:end_rod" }, swirl: { effectAmplifierMultiplier: 1b, effectCooldownMultiplier: 1b, effectDurationMultiplier: 1b, layer: "hexerei:textures/block/candle_swirl_layer.png", meltingSpeedMultiplier: 1b, radiusMultiplier: 1b } } }, count: 1, id: "hexerei:candle" }
 				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -8.5d
+			x: -1.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -1526,7 +1530,7 @@
 				item: { count: 1, id: "hexerei:crystal_ball" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: -3.0d
 		}
 		{
@@ -1535,13 +1539,13 @@
 				"49CF5D29C3F2F41F"
 			]
 			id: "6819B4405CCB4CD6"
-			shape: "gear"
+			shape: "octagon"
 			tasks: [{
 				id: "090B4A37229794BD"
 				item: { count: 1, id: "hexerei:blood_sigil" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -1552,8 +1556,8 @@
 				item: { count: 1, id: "hexerei:pestle_and_mortar" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3D08CD4C845EB608"]
@@ -1563,8 +1567,8 @@
 				item: { count: 1, id: "hexerei:seed_mixture" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.0d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["78E2D79E9DD19B4E"]
@@ -1574,8 +1578,8 @@
 				item: { count: 1, id: "hexerei:crow_flute" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["78E2D79E9DD19B4E"]
@@ -1593,8 +1597,8 @@
 				to_observe: "hexerei:crow"
 				type: "observation"
 			}]
-			x: 3.5d
-			y: -5.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2BE901E1F516A6AE"]
@@ -1605,7 +1609,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -1615,7 +1619,7 @@
 				item: { count: 1, id: "hexerei:herb_jar" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: -3.0d
 		}
 		{
@@ -1627,7 +1631,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7943319F97052FD4"]
@@ -1635,6 +1639,7 @@
 				id: "hexerei:sage"
 			}
 			id: "242C2C5E9BD41EE5"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "3E80207FDB3512AC"
@@ -1654,6 +1659,7 @@
 		{
 			dependencies: ["7943319F97052FD4"]
 			id: "46B94B0AB1C0F0E8"
+			shape: "diamond"
 			tasks: [{
 				id: "3353A614698F2FA9"
 				item: { count: 1, id: "hexerei:herb_drying_rack" }
@@ -1668,6 +1674,7 @@
 				"46B94B0AB1C0F0E8"
 			]
 			id: "54E38F55D7A23664"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "51F08E734E59EBF6"
@@ -1681,12 +1688,12 @@
 				}
 			]
 			x: 1.0d
-			y: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["54E38F55D7A23664"]
 			id: "7C082F9CC1474254"
-			shape: "heart"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "6A450BF11772DD17"
@@ -1705,7 +1712,7 @@
 				}
 			]
 			x: 1.0d
-			y: 5.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6A2FCA07586ED280"]
@@ -1719,11 +1726,14 @@
 				item: { count: 1, id: "hexerei:dowsing_rod" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["6819B4405CCB4CD6"]
+			dependencies: [
+				"6819B4405CCB4CD6"
+				"41F553F6D1E972F3"
+			]
 			id: "2518CA7E57223D3A"
 			tasks: [{
 				id: "2C236C4C499DB27A"
@@ -1736,101 +1746,110 @@
 		{
 			dependencies: ["2518CA7E57223D3A"]
 			id: "61FA00E88DCC1AAA"
+			shape: "diamond"
 			tasks: [{
 				id: "28A724254FFCCFF8"
 				item: { count: 1, id: "hexerei:small_satchel" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: -1.0d
+			x: 11.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["61FA00E88DCC1AAA"]
 			id: "4267AF82FA930181"
+			shape: "pentagon"
 			tasks: [{
 				id: "48842BF7EEF31EB4"
 				item: { count: 1, id: "hexerei:medium_satchel" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: -1.0d
+			x: 11.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4267AF82FA930181"]
 			id: "4616D728BEAB517A"
+			shape: "octagon"
 			tasks: [{
 				id: "2A71F2E818C10276"
 				item: { count: 1, id: "hexerei:ender_satchel" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: -2.5d
+			x: 12.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4267AF82FA930181"]
 			id: "463617DF26CF2E45"
+			shape: "octagon"
 			tasks: [{
 				id: "19FF715E5F99CD14"
 				item: { count: 1, id: "hexerei:replacer_satchel" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: -2.5d
+			x: 10.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4267AF82FA930181"]
 			id: "017A93CB5A64E85F"
+			shape: "octagon"
 			tasks: [{
 				id: "49899AE3FE92DFEC"
 				item: { count: 1, id: "hexerei:large_satchel" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: -1.0d
+			x: 11.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2518CA7E57223D3A"]
 			id: "68C66411366AEECE"
+			shape: "diamond"
 			tasks: [{
 				id: "3F31831F69A7A9DF"
 				item: { count: 1, id: "hexerei:gold_rings" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -1.5d
+			x: 11.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2518CA7E57223D3A"]
 			id: "24D1B4E69FDDF397"
+			shape: "diamond"
 			tasks: [{
 				id: "3FA3DB562D1EB08D"
 				item: { count: 1, id: "hexerei:broom_keychain" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: -1.5d
+			x: 12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2518CA7E57223D3A"]
 			id: "2050AE324A7E3ABC"
+			shape: "diamond"
 			tasks: [{
 				id: "5B9C4434029978C2"
 				item: { count: 1, id: "hexerei:broom_netherite_tip" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: 1.5d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2518CA7E57223D3A"]
 			id: "7334667E017F1A95"
+			shape: "diamond"
 			tasks: [{
 				id: "3AA577CCFE56022F"
 				item: { count: 1, id: "hexerei:broom_waterproof_tip" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 11.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2518CA7E57223D3A"]
@@ -1841,7 +1860,7 @@
 				item: { count: 1, id: "hexerei:broom_brush" }
 				type: "item"
 			}]
-			x: 14.0d
+			x: 11.0d
 			y: 1.0d
 		}
 		{
@@ -1853,7 +1872,7 @@
 				item: { count: 1, id: "hexerei:herb_enhanced_broom_brush" }
 				type: "item"
 			}]
-			x: 14.0d
+			x: 11.0d
 			y: 2.0d
 		}
 		{
@@ -1865,7 +1884,7 @@
 				item: { count: 1, id: "hexerei:moon_dust_brush" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 12.0d
 			y: 1.0d
 		}
 		{
@@ -1877,19 +1896,20 @@
 				item: { count: 1, id: "hexerei:broom_thruster_brush" }
 				type: "item"
 			}]
-			x: 14.5d
+			x: 11.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["2518CA7E57223D3A"]
 			id: "6AADBAB610C068F2"
+			shape: "diamond"
 			tasks: [{
 				id: "5A54B83DD3B10800"
 				item: { count: 1, id: "hexerei:broom_seat" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 0.0d
+			x: 11.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["746ED760B3D00FBA"]
@@ -1900,7 +1920,7 @@
 				item: { count: 1, id: "hexerei:selenite_shard" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -5.5d
 			y: 4.0d
 		}
 		{
@@ -1912,8 +1932,8 @@
 				item: { count: 1, id: "hexerei:infused_fabric" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2F8F7B3250ADBBC2"]
@@ -1935,8 +1955,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -4.0d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["09D1CCA04959E0ED"]
@@ -1947,8 +1967,8 @@
 				item: { count: 1, id: "hexerei:mushroom_witch_hat" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -6.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6A2FCA07586ED280"]
@@ -1975,8 +1995,8 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
-			y: 3.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6A2FCA07586ED280"]
@@ -2003,8 +2023,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 4.0d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6A2FCA07586ED280"]
@@ -2030,8 +2050,8 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: 3.5d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6A2FCA07586ED280"]
@@ -2057,8 +2077,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 3.0d
+			x: -3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -2091,7 +2111,7 @@
 				id: "hexerei:candle"
 			}
 			id: "490D92E237AFBA82"
-			shape: "gear"
+			shape: "octagon"
 			tasks: [
 				{
 					id: "3B03530FB8841E01"
@@ -2106,19 +2126,20 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 3.0d
+			x: 1.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2518CA7E57223D3A"]
 			id: "347AB6D3764BFAAA"
+			shape: "diamond"
 			tasks: [{
 				id: "7B637702BBCC715D"
 				item: { count: 1, id: "hexerei:broom_whistle" }
 				type: "item"
 			}]
 			x: 11.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["26E6571980D85436"]
@@ -2128,8 +2149,8 @@
 				item: { components: { "hexerei:book": { book: "hexerei:book_of_colors", bookmarks: [ { color: "white", id: "", index: 0 }, { color: "white", id: "", index: 1 }, { color: "white", id: "", index: 2 }, { color: "white", id: "", index: 3 }, { color: "white", id: "", index: 4 }, { color: "white", id: "", index: 5 }, { color: "white", id: "", index: 6 }, { color: "white", id: "", index: 7 }, { color: "white", id: "", index: 8 }, { color: "white", id: "", index: 9 }, { color: "white", id: "", index: 10 }, { color: "white", id: "", index: 11 }, { color: "white", id: "", index: 12 }, { color: "white", id: "", index: 13 }, { color: "white", id: "", index: 14 }, { color: "white", id: "", index: 15 }, { color: "white", id: "", index: 16 }, { color: "white", id: "", index: 17 }, { color: "white", id: "", index: 18 }, { color: "white", id: "", index: 19 } ], chapter: 0, opened: 0b, page: 0, uuid: [I; 1779040318, -49593144, -1927477659, -1740535917 ] } }, count: 1, id: "hexerei:book_of_colors" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 5.0d
+			x: -3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["26E6571980D85436"]
@@ -2139,8 +2160,8 @@
 				item: { components: { "hexerei:book": { book: "hexerei:notebook", bookmarks: [ { color: "white", id: "", index: 0 }, { color: "white", id: "", index: 1 }, { color: "white", id: "", index: 2 }, { color: "white", id: "", index: 3 }, { color: "white", id: "", index: 4 }, { color: "white", id: "", index: 5 }, { color: "white", id: "", index: 6 }, { color: "white", id: "", index: 7 }, { color: "white", id: "", index: 8 }, { color: "white", id: "", index: 9 }, { color: "white", id: "", index: 10 }, { color: "white", id: "", index: 11 }, { color: "white", id: "", index: 12 }, { color: "white", id: "", index: 13 }, { color: "white", id: "", index: 14 }, { color: "white", id: "", index: 15 }, { color: "white", id: "", index: 16 }, { color: "white", id: "", index: 17 }, { color: "white", id: "", index: 18 }, { color: "white", id: "", index: 19 } ], chapter: 0, opened: 0b, page: 0, uuid: [I; 344582520, 984108583, -2010483782, 1618757505 ] } }, count: 1, id: "hexerei:notebook" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 5.0d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["319E9DCC31DD5E11"]
@@ -2150,11 +2171,12 @@
 				item: { count: 1, id: "hexerei:book_canvas" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 6.0d
+			x: -3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "601E130974910962"
 			shape: "diamond"
@@ -2163,11 +2185,12 @@
 				structure: "hexerei:baba_yaga_hut"
 				type: "structure"
 			}]
-			x: 1.5d
-			y: 7.5d
+			x: 0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "7C5F23F3067032FF"
 			shape: "diamond"
@@ -2176,11 +2199,12 @@
 				structure: "hexerei:dark_coven"
 				type: "structure"
 			}]
-			x: 0.5d
-			y: 6.5d
+			x: -0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "09D83BB32728E07C"
 			shape: "diamond"
@@ -2189,11 +2213,12 @@
 				structure: "hexerei:nature_coven"
 				type: "structure"
 			}]
-			x: 1.5d
-			y: 6.5d
+			x: 0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "755C5C101E08EDF6"
 			shape: "diamond"
@@ -2202,11 +2227,12 @@
 				structure: "hexerei:owl_post_office"
 				type: "structure"
 			}]
-			x: 0.5d
-			y: 7.5d
+			x: -0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "144CD038830C0164"
 			shape: "diamond"
@@ -2215,8 +2241,8 @@
 				structure: "hexerei:witch_hut"
 				type: "structure"
 			}]
-			x: 1.0d
-			y: 7.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -2230,8 +2256,8 @@
 				item: { count: 1, id: "ars_hex:archwood_broom" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: 1.0d
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2245,7 +2271,7 @@
 				item: { count: 1, id: "ars_hex:magebloom_brush" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 12.0d
 			y: 2.0d
 		}
 		{
@@ -2254,26 +2280,26 @@
 				id: "enchanted:kettle"
 			}
 			id: "36ABE0F50C03A3AC"
-			shape: "gear"
+			shape: "hexagon"
 			tasks: [{
 				id: "25FD99544D7F8731"
 				item: { count: 1, id: "enchanted:kettle" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2B388DAC1919D26C"]
 			id: "5A4BB58AB11D4B81"
-			shape: "gear"
+			shape: "hexagon"
 			tasks: [{
 				id: "06BB24175C3B05AC"
 				item: { count: 1, id: "enchanted:witch_oven" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: -2.5d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5A4BB58AB11D4B81"]
@@ -2283,8 +2309,8 @@
 				item: { count: 1, id: "enchanted:clay_jar" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: -8.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -2295,8 +2321,8 @@
 				item: { count: 1, id: "enchanted:hint_of_rebirth" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: -7.5d
+			x: 6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -2307,8 +2333,8 @@
 				item: { count: 1, id: "enchanted:exhale_of_the_horned_one" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -9.5d
+			x: 5.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -2319,8 +2345,8 @@
 				item: { count: 1, id: "enchanted:reek_of_misfortune" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -8.0d
+			x: 4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -2331,8 +2357,8 @@
 				item: { count: 1, id: "enchanted:whiff_of_magic" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: -8.5d
+			x: 7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -2344,7 +2370,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -9.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -2355,8 +2381,8 @@
 				item: { count: 1, id: "enchanted:foul_fume" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -7.0d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5D4654627EEAA5B6"]
@@ -2367,29 +2393,28 @@
 				item: { count: 1, id: "enchanted:odour_of_purity" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.5d
+			x: 5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7162B15B452A8B2E"]
 			id: "76A00C0FCE2D91E1"
-			shape: "gear"
+			shape: "octagon"
 			tasks: [{
 				id: "401F54B1C717A807"
 				item: { count: 1, id: "enchanted:distillery" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -10.0d
+			x: 8.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
 				"2B2E150A76B0555C"
 				"0C3E53568C8342C1"
 			]
-			hide_dependency_lines: true
 			id: "0E4BFAA97BD15447"
-			shape: "gear"
+			shape: "hexagon"
 			tasks: [{
 				count: 6L
 				id: "2072CAEDD8B3408E"
@@ -2397,7 +2422,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -11.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["0E4BFAA97BD15447"]
@@ -2408,7 +2433,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -12.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["01DA1F605860E4CB"]
@@ -2419,7 +2444,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -13.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["5ECC8454B6CFAD89"]
@@ -2430,7 +2455,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -14.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["0E4BFAA97BD15447"]
@@ -2441,7 +2466,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -12.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4821B8BFF0FEE06B"]
@@ -2452,7 +2477,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -13.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0CE37F75EAC4705E"]
@@ -2463,7 +2488,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -14.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["0E4BFAA97BD15447"]
@@ -2474,7 +2499,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -13.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["73908D0BD7473933"]
@@ -2496,7 +2521,7 @@
 				}
 			]
 			x: 6.0d
-			y: -14.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -2507,7 +2532,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2269A11BFEF41742"]
@@ -2519,7 +2544,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2269A11BFEF41742"]
@@ -2530,8 +2555,8 @@
 				item: { count: 1, id: "enchanted:tongue_of_dog" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.5d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2269A11BFEF41742"]
@@ -2543,7 +2568,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2269A11BFEF41742"]
@@ -2554,7 +2579,7 @@
 				item: { count: 1, id: "minecraft:skeleton_skull" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -2565,8 +2590,8 @@
 				item: { count: 1, id: "enchanted:earmuffs" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5645E4DA993EDC3D"]
@@ -2576,31 +2601,32 @@
 				item: { count: 1, id: "enchanted:broom" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 7.0d
+			x: 9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2B388DAC1919D26C"]
+			hide_dependency_lines: true
 			id: "00504BDD52B7AF73"
 			tasks: [{
 				id: "6EE34CABD91026BF"
 				item: { count: 1, id: "enchanted:taglock_kit" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.5d
+			x: 9.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["75EE48FAB76C2F65"]
 			id: "7162B15B452A8B2E"
-			shape: "gear"
+			shape: "rsquare"
 			tasks: [{
 				id: "32DC852159813720"
 				item: { count: 1, id: "enchanted:attuned_stone" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -8.5d
+			x: 9.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2B388DAC1919D26C"]
@@ -2632,32 +2658,32 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: -0.5d
+			x: 7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5A4BB58AB11D4B81"]
 			id: "4662695201019F94"
-			shape: "gear"
+			shape: "rsquare"
 			tasks: [{
 				id: "493B1B1EAFAF4606"
 				item: { count: 1, id: "enchanted:fume_funnel" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.5d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4662695201019F94"]
 			id: "2B2F816ABE338A0C"
-			shape: "gear"
+			shape: "rsquare"
 			tasks: [{
 				id: "4C698AA7EB521B73"
 				item: { count: 1, id: "enchanted:fume_filter" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2668,11 +2694,12 @@
 				item: { count: 1, id: "enchanted:golden_chalk" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.5d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
+			hide_dependent_lines: true
 			id: "5645E4DA993EDC3D"
 			shape: "diamond"
 			tasks: [{
@@ -2680,8 +2707,8 @@
 				item: { count: 1, id: "enchanted:ritual_chalk" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 5.5d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2692,8 +2719,8 @@
 				item: { count: 1, id: "enchanted:nether_chalk" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2704,34 +2731,34 @@
 				item: { count: 1, id: "enchanted:otherwhere_chalk" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 5.0d
+			x: 9.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			hide_dependency_lines: true
 			id: "3827371BD2D8A5BA"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "1654AAB7BFA4BB6A"
 				item: { count: 1, id: "enchanted:mutandis" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 7.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
 			hide_dependency_lines: true
 			id: "738CBBAADBF8F9AD"
-			shape: "gear"
+			shape: "diamond"
 			tasks: [{
 				id: "0FCC850019D5A9AE"
 				item: { count: 1, id: "enchanted:mutandis_extremis" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2742,11 +2769,11 @@
 				item: { count: 1, id: "enchanted:drop_of_luck" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.5d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["36ABE0F50C03A3AC"]
+			dependencies: ["7A7D8E8CF5FCC95F"]
 			id: "49CF5D29C3F2F41F"
 			shape: "diamond"
 			tasks: [{
@@ -2754,20 +2781,20 @@
 				item: { count: 1, id: "enchanted:redstone_soup" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 0.0d
+			x: 7.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["36ABE0F50C03A3AC"]
+			dependencies: ["43141E73595BA04F"]
 			id: "41F553F6D1E972F3"
-			shape: "diamond"
+			shape: "octagon"
 			tasks: [{
 				id: "495BD25D11647A56"
 				item: { count: 1, id: "enchanted:flying_ointment" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -0.5d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2778,8 +2805,8 @@
 				item: { count: 1, id: "enchanted:happenstance_oil" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.5d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2790,8 +2817,8 @@
 				item: { count: 1, id: "enchanted:mystic_unguent" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 2.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2802,8 +2829,8 @@
 				item: { count: 1, id: "enchanted:spirit_of_otherwhere" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.0d
+			x: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2814,8 +2841,8 @@
 				item: { count: 1, id: "enchanted:soul_of_the_world" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.5d
+			x: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2826,7 +2853,7 @@
 				item: { count: 1, id: "enchanted:brew_of_love" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 4.5d
 			y: 3.0d
 		}
 		{
@@ -2838,8 +2865,8 @@
 				item: { count: 1, id: "enchanted:brew_of_sprouting" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 3.0d
+			x: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["36ABE0F50C03A3AC"]
@@ -2850,7 +2877,7 @@
 				item: { count: 1, id: "enchanted:brew_of_the_depths" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
@@ -2862,42 +2889,44 @@
 				item: { count: 1, id: "enchanted:brew_of_the_grotesque" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.5d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7162B15B452A8B2E"]
 			id: "7CC9F88727D23AF6"
+			shape: "circle"
 			tasks: [{
 				id: "2905220DEDCE465F"
 				item: { count: 1, id: "enchanted:poppet" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -10.0d
+			x: 9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["7CC9F88727D23AF6"]
 			id: "1ACC5B02FFBB0292"
+			shape: "rsquare"
 			tasks: [{
 				id: "6F87820C2C3EA8CA"
 				item: { count: 1, id: "enchanted:poppet_shelf" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -10.0d
+			x: 8.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["7CC9F88727D23AF6"]
 			id: "5BA28B2D3F0434AC"
-			shape: "gear"
+			shape: "rsquare"
 			tasks: [{
 				id: "0107BB8A6C3B46A6"
 				item: { count: 1, id: "enchanted:spinning_wheel" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -11.0d
+			x: 10.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -2910,8 +2939,8 @@
 				id: "2FD9C7170EFF4479"
 				type: "checkmark"
 			}]
-			x: 9.5d
-			y: -12.5d
+			x: 9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -2922,8 +2951,8 @@
 				item: { count: 1, id: "enchanted:infused_poppet" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -15.0d
+			x: 8.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -2934,8 +2963,8 @@
 				item: { count: 1, id: "enchanted:sturdy_poppet" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -14.5d
+			x: 8.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -2946,8 +2975,8 @@
 				item: { count: 1, id: "enchanted:armour_poppet" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -15.5d
+			x: 8.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -2958,8 +2987,8 @@
 				item: { count: 1, id: "enchanted:earth_poppet" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -16.0d
+			x: 9.0d
+			y: -13.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -2970,8 +2999,8 @@
 				item: { count: 1, id: "enchanted:fire_poppet" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -15.5d
+			x: 9.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -2982,8 +3011,8 @@
 				item: { count: 1, id: "enchanted:hunger_poppet" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -14.5d
+			x: 9.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -2994,8 +3023,8 @@
 				item: { count: 1, id: "enchanted:magic_poppet" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -14.0d
+			x: 9.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -3006,8 +3035,8 @@
 				item: { count: 1, id: "enchanted:water_poppet" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -14.0d
+			x: 8.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -3018,8 +3047,8 @@
 				item: { count: 1, id: "enchanted:void_poppet" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -15.0d
+			x: 10.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["50D0BAF7BB169151"]
@@ -3030,19 +3059,20 @@
 				item: { count: 1, id: "enchanted:tool_poppet" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -14.0d
+			x: 10.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["738CBBAADBF8F9AD"]
 			id: "28534F90FE9B1A19"
+			shape: "diamond"
 			tasks: [{
 				id: "48D3B6F0B0B1AF6F"
 				item: { count: 1, id: "enchanted:blood_poppy" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.0d
+			x: 5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3827371BD2D8A5BA"]
@@ -3053,8 +3083,8 @@
 				item: { count: 1, id: "enchanted:rowan_sapling" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.0d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3827371BD2D8A5BA"]
@@ -3065,8 +3095,8 @@
 				item: { count: 1, id: "enchanted:hawthorn_sapling" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 5.0d
+			x: 7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3827371BD2D8A5BA"]
@@ -3077,8 +3107,8 @@
 				item: { count: 1, id: "enchanted:alder_sapling" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.5d
+			x: 9.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3827371BD2D8A5BA"]
@@ -3089,8 +3119,8 @@
 				item: { count: 1, id: "enchanted:spanish_moss" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 5.0d
+			x: 8.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3827371BD2D8A5BA"]
@@ -3101,8 +3131,8 @@
 				item: { count: 1, id: "enchanted:glint_weed" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 6.0d
+			x: 8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3827371BD2D8A5BA"]
@@ -3113,32 +3143,36 @@
 				item: { count: 1, id: "enchanted:ember_moss" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.5d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
 				"5645E4DA993EDC3D"
 				"79AE7151ADF00D10"
+				"7162B15B452A8B2E"
 			]
 			hide_dependency_lines: false
 			id: "3784CF017C0CB226"
-			shape: "gear"
+			shape: "octagon"
 			tasks: [{
 				id: "46F1E0EC3589A44E"
 				item: { count: 1, id: "enchanted:attuned_stone_charged" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 5.0d
+			x: 9.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
 				"5645E4DA993EDC3D"
 				"7162B15B452A8B2E"
 			]
-			hide_dependency_lines: true
+			icon: {
+				id: "enchanted:circle_talisman"
+			}
 			id: "55816F492AF21D36"
+			shape: "octagon"
 			tasks: [
 				{
 					id: "78EC3125A644CB96"
@@ -3151,8 +3185,8 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
-			y: 6.0d
+			x: 9.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3784CF017C0CB226"]
@@ -3162,8 +3196,21 @@
 				id: "23F8EEA1AF4C1A9B"
 				type: "checkmark"
 			}]
-			x: 11.5d
-			y: 5.0d
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7162B15B452A8B2E"]
+			icon_scale: 0.7d
+			id: "6E57514B8D09F6D8"
+			shape: "heart"
+			tasks: [{
+				id: "45A509548F9C972D"
+				item: { count: 1, id: "waystones:waystone" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.5d
 		}
 	]
 }

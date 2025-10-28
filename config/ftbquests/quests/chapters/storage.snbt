@@ -82,12 +82,6 @@
 			y: 3.0d
 		}
 		{
-			id: "62293FBF080EDAFA"
-			linked_quest: "48CD5AE9FD5A8E86"
-			x: 3.0d
-			y: 3.0d
-		}
-		{
 			id: "708C1B04DF5B827B"
 			linked_quest: "06EAC7034ACFA220"
 			x: 4.0d

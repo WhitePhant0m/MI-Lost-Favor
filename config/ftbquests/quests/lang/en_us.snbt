@@ -1284,10 +1284,7 @@
 	quest.5643AEC296D95BE9.quest_desc: ["Slowness and weakness."]
 	quest.56AE77021D975ACD.quest_desc: ["This mesh can catch basic resources, such as sand, gravel, clay and fish"]
 	quest.5750E25528ABB85C.quest_desc: [""]
-	quest.57A91C641FE38999.quest_desc: [
-		"Copper bolt to craft?"
-		"Unlock next stage after this?(because unlocking it in the middle of quest line is kinda weird to me, but IDK)"
-	]
+	quest.57A91C641FE38999.quest_desc: [""]
 	quest.58111B4CAD89BCCE.quest_desc: [
 		"&#FEECD6Create&r your first &4c&r&6o&r&el&r&2o&r&br&r&9e&r&5d&r sapling!"
 		"{@pagebreak}"
@@ -1796,6 +1793,7 @@
 	task.007FE725C64153E1.title: "Any #milf:pillar_base_blocks"
 	task.0201D3254268522D.title: "Kandar's Open Conjure"
 	task.020311F4DEE019DA.title: "Any #ytech:tanning_racks"
+	task.02CC9AB30304F2F4.title: "Any #milf:netherite_storage"
 	task.03D27D995554C1F6.title: "Ancient?"
 	task.03FD4CFDF4EBC8D0.title: "Crushing"
 	task.04686380A3EF8E64.title: "Any #minecraft:vanilla_music_discs"
@@ -1809,6 +1807,7 @@
 	task.0925CEA8A38CBB6C.title: "Any #milf:colored_lamp"
 	task.09936E3502457C61.title: "Any #milf:colored_glowblock"
 	task.09FBBC80BC28B007.title: "Any #c:glass_blocks"
+	task.0B1832E4208E1AA5.title: "Any #milf:iron_storage"
 	task.0CB11BEA448FFB96.title: "Ore generation"
 	task.0E23718424EB6584.title: "Any #milf:polished_base_blocks"
 	task.0EB4593433321D21.title: "Any #c:saws"
@@ -1870,7 +1869,9 @@
 	task.49C1237D393FF8C9.title: "Any #smallships:ships"
 	task.4AA33BD44F51AF55.title: "Sevira's Permanent Confinement"
 	task.4B7415C6171EB8C4.title: "Any #c:rods/wooden"
+	task.4BA891B4F70A44E3.title: "Any #milf:copper_storage"
 	task.4BBE7498A48891A8.title: "Any #forbidden_arcanus:blacksmith_gavel"
+	task.4C13E036E01DE93A.title: "Any #milf:diamond_storage"
 	task.4C34F34DFB64B73E.title: "Any #milf:polished_base_blocks"
 	task.4E27A8371F4A90AB.title: "Any #c:stones"
 	task.4E3EC41B69DAD787.title: "Any #milf:polished_base_blocks"
@@ -1886,6 +1887,7 @@
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
 	task.64E7E65976B570B4.title: "Posuc's Convication"
 	task.651818A1418ADDFB.title: "Any #minecraft:saplings"
+	task.65741180CA3C4BD1.title: "Any #milf:gold_storage"
 	task.6719AA6DDAB0F823.title: "Any #minecraft:anvil"
 	task.68DA7E9C5CC5E0FB.title: "Uphyxes Inverted Tower"
 	task.690983E33893CB82.title: "Any #milf:polished_slabs"

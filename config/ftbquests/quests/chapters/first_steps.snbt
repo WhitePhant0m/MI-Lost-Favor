@@ -1823,5 +1823,17 @@
 			x: 9.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			id: "7DFBC74614BA7B57"
+			shape: "hexagon"
+			tasks: [{
+				id: "2ADAED46C021266D"
+				item: { count: 1, id: "sophisticatedbackpacks:copper_backpack" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 0.0d
+		}
 	]
 }
