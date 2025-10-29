@@ -1,0 +1,16 @@
+filename = 'primal-1.0.6+1.21.jar'
+name = '~Primal~'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '878dfab1d14bce5050cb4ff808ef3b8b3f956bf4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7150532
+project-id = 1351626

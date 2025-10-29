@@ -1,16 +1,16 @@
-filename = 'certain_questing_additions-neoforge-1.0.5+mc1.21.1.jar'
+filename = 'certain_questing_additions-neoforge-1.0.7+mc1.21.1.jar'
 name = 'Certain Questing Additions'
 side = 'client'
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-mc-versions = [ '1.21.1', '1.21.2', '1.21.3', '1.21.4', '1.21.5' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'f2b18af9b51ce7dd7dd4118dc3bde5715208d255'
+hash = 'cdcc409e4ce8ee2ae605d21c453b6a3382db7121'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7148114
+file-id = 7151275
 project-id = 1372051

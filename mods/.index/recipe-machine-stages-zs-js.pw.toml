@@ -1,0 +1,16 @@
+filename = 'sdmrecipemachinestages-neoforge-1.0.0.jar'
+name = 'SDM Recipe Machine Stages'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '7afc55034eb40bcdaf517dbbbaa6500e31daa57d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7151597
+project-id = 1108011
