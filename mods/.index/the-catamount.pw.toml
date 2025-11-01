@@ -1,0 +1,16 @@
+filename = 'TheCatamount-neoforge-1.0.jar'
+name = 'The Catamount'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '8f75df715e1237831cb37c30b688c26f9a31ec28'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7167562
+project-id = 1375354
