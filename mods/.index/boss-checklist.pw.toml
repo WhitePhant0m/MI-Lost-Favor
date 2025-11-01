@@ -1,4 +1,4 @@
-filename = 'boss_checklist-neoforge-2.0.0beta.jar'
+filename = 'boss_checklist-neoforge-2.0.0.jar'
 name = 'Boss Checklist'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '8e0b36ccd1307879b1ad1ca0d5269957426d0115'
+hash = 'd300cbaf763a53f1e9beb419a3e714ec73355a96'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7134043
+file-id = 7147499
 project-id = 1355708

@@ -1,4 +1,4 @@
-filename = 'portingdeadlibs-1.0.62-1.21.1.jar'
+filename = 'portingdeadlibs-1.1.1-1.21.1.jar'
 name = 'Porting Dead Libs'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '73d7821f5b301b2cc71e6d676e336ce02dacce49'
+hash = '78270a9ad2380482f2978e6e1afb0ab6bac671df'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7152406
+file-id = 7169810
 project-id = 1173919

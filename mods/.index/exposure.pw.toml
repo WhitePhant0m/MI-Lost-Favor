@@ -1,4 +1,4 @@
-filename = 'exposure-neoforge-1.21.1-1.9.11.jar'
+filename = 'exposure-neoforge-1.21.1-1.9.12.jar'
 name = 'Exposure'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '41b14add4442c0e155e2755d4bcfdfd644a39b55'
+hash = '94e261ac4f70986de59d64da815eba920d20ff5d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7033927
+file-id = 7165876
 project-id = 871755

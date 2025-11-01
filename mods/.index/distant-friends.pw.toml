@@ -1,4 +1,4 @@
-filename = 'DistantFriends-neoforge-1.21.1-0.9.4.jar'
+filename = 'DistantFriends-neoforge-1.21.1-0.9.5.jar'
 name = 'Distant Friends'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'b55e724ae1f123975dd7793fc5442e9f2785260e'
+hash = 'e0c84db281af5b14757a8fab7376286f68f70382'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7019988
+file-id = 7167547
 project-id = 839197

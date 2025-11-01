@@ -1,4 +1,4 @@
-filename = 'morerelics-1.5.0-1.21.1-hotfix.jar'
+filename = 'morerelics-1.5.1-1.21.1.jar'
 name = 'More Relics'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '3768b661b72ad1a2b1ade8ff8371141c9a4adb29'
+hash = '48b1985bae2ece5edaa42beadffb8b5a2b7b9996'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7084476
+file-id = 7160721
 project-id = 1269280
