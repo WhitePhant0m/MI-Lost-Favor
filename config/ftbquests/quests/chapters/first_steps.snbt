@@ -513,7 +513,7 @@
 			]
 			id: "1714360882474479"
 			rewards: [{
-				auto: "enabled"
+				auto: "invisible"
 				icon: {
 					id: "lootr:lootr_chest"
 				}
