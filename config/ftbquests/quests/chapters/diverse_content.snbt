@@ -565,5 +565,15 @@
 			x: -21.0d
 			y: 3.5d
 		}
+		{
+			id: "3B04F041F40DF67B"
+			tasks: [{
+				id: "320B4438B78D7C5F"
+				item: { count: 1, id: "yo_hooks:iron_grappling_hook" }
+				type: "item"
+			}]
+			x: -28.5d
+			y: 3.5d
+		}
 	]
 }

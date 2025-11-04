@@ -797,6 +797,9 @@
 		}
 		{
 			dependencies: ["10EDC166831C6721"]
+			icon: {
+				id: "toxony:alchemical_forge_part"
+			}
 			id: "60F83295651EE0CF"
 			shape: "gear"
 			size: 2.0d
