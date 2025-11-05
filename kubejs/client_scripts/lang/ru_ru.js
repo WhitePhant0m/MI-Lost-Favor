@@ -17,4 +17,6 @@ ClientEvents.lang('ru_ru', event => {
     event.add('kubejs.press_button', 'Зажми ')
     event.add('kubejs.for_details', 'для подробной информации')
     event.add('kubejs.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
+
+    event.add('gateways.basic/deer', "Врата Оленя")
 })

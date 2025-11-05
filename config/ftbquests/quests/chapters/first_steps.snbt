@@ -1835,5 +1835,17 @@
 			x: 19.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["51BC2EDB324F7ECD"]
+			id: "19C9F5C94F3F8853"
+			shape: "heart"
+			tasks: [{
+				id: "46CA1D477DB07A30"
+				item: { components: { "gateways:gateway": "gateways:basic/deer" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.0d
+		}
 	]
 }

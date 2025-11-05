@@ -42,6 +42,8 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.flags.unclaimed', "Chunk unclaimed")
 
     event.add('rite.milf.infuse_broom', "Enchanted Broom")
+
+    event.add('gateways.basic/deer', "Deer Gateway")
  
 })
 
