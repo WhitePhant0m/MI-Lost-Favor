@@ -14,6 +14,8 @@ const mythsandlegends_mobs = [
     {id:"possessed_armor_inquisitor", mob: "mythsandlegends:possessed_armor_inquisitor"},
     {id:"scorched_sentinel", mob: "mythsandlegends:scorched_sentinel"},
     {id:"warborn_aegis", mob: "mythsandlegends:warborn_aegis"},
+    {id:"imp", mob: "mythsandlegends:imp"},
+    {id:"imp_clone", mob: "mythsandlegends:imp_clone"},
 ]
 
 mobRestriction("mythsandlegends", mythsandlegends_mobs)

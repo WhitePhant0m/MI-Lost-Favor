@@ -18,6 +18,13 @@ const minecraft_mobs = [
     {id:"wither_skeleton", mob: "minecraft:wither_skeleton"},
     {id:"ravager", mob: "minecraft:ravager"},
     {id:"vex", mob: "minecraft:vex"},
+    {id:"hoglin", mob: "minecraft:hoglin"},
+    {id:"zombified_piglin", mob: "minecraft:zombified_piglin"},
+    {id:"piglin", mob: "minecraft:piglin"},
+    {id:"ghast", mob: "minecraft:ghast"},
+    {id:"magma_cube", mob: "minecraft:magma_cube"},
+    {id:"blaze", mob: "minecraft:blaze"},
+    {id:"shulker", mob: "minecraft:shulker"},
 ]
 
 mobRestriction("minecraft", minecraft_mobs)
