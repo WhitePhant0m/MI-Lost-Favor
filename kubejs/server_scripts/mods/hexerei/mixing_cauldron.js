@@ -3,7 +3,7 @@
  * args:
  *  - fluid (string)        : fluid id, default "minecraft:water"
  *  - fluidAmount (number)  : fluid amount, default 1
- *  - ingredients (array)   : ingredients array (max 8 items)
+ *  - ingredients (array)   : ingredients array (**REQUIRED** 8 items if there is less, the recipe will not work!)
  *  - output (string)       : result item id (required)
  *  - amount (number)       : result count, default 1
  *  - grindingTime (string) : mapped to `moonRequirement` — one of the moon phases or "none"
@@ -43,10 +43,13 @@ ServerEvents.recipes(event => {
         fluid: "minecraft:lava",
         fluidAmount: 1000,
         ingredients: [
-            { "tag": "c:cobblestones/deepslate" },
-            { "tag": "c:cobblestones/deepslate" },
-            { "tag": "c:cobblestones/deepslate" },
             { "tag": "paganbless:herbs" },
+            { "tag": "paganbless:herbs" },
+            { "tag": "c:cobblestones/deepslate" },
+            { "tag": "c:cobblestones/deepslate" },
+            { "tag": "c:cobblestones/deepslate" },
+            { "tag": "c:cobblestones/deepslate" },
+            { "tag": "c:cobblestones/deepslate" },
             { "tag": "paganbless:herbs" },
         ],
         output: "paganbless:rune_slab_inert",
@@ -57,13 +60,14 @@ ServerEvents.recipes(event => {
         fluid: "minecraft:water",
         fluidAmount: 500,
         ingredients: [
+            { "item": "minecraft:glass_bottle" },
             { "tag": "paganbless:herbs" },
-            { "tag": "paganbless:herbs" },
-            { "item": "paganbless:essence_of_the_forest" },
             { "item": "paganbless:essence_of_the_forest" },
             { "item": "paganbless:cinnabar" },
             { "item": "minecraft:amethyst_shard" },
-            { "item": "minecraft:glass_bottle" },
+            { "item": "paganbless:cinnabar" },
+            { "item": "paganbless:essence_of_the_forest" },
+            { "tag": "paganbless:herbs" }
         ],
         output: "paganbless:runic_charge",
         removeRecipe: true
@@ -76,9 +80,12 @@ ServerEvents.recipes(event => {
             { "item": "minecraft:sugar" },
             { "item": "minecraft:sugar" },
             { "item": "minecraft:sugar" },
+            { "item": "minecraft:sugar" },
+            { "item": "minecraft:sugar" },
+            { "item": "paganbless:winter_berries" },
         ],
         output: "paganbless:glazed_berries",
-        count: 2,
+        amount: 2,
         removeRecipe: true
     })
     
