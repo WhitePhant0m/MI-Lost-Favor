@@ -16,7 +16,6 @@ ClientEvents.lang('en_us', event => {
     event.add('advancements.apotheosis.progression.ascent.criteria.nether_gauntlet', 'Kill Nether Gauntlet')
 
     event.add('milf.cannot.mine.block', 'You cannot mine this block for now')
-    //event.add('item.kubejs.amber_visage', 'Amber Visage')
     event.add('kubejs.press_button', 'Hold ')
     event.add('kubejs.for_details', 'for more information')
     event.add('kubejs.amber_visage.tooltip', 'Used as fuel in the transmogrification table to change the appearance of items without modifying their behavior at all')
@@ -41,9 +40,19 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.flags.claimed', "Chunk claimed")
     event.add('milf.flags.unclaimed', "Chunk unclaimed")
 
-    event.add('rite.milf.infuse_broom', "Enchanted Broom")
-
     event.add('gateways.basic/deer', "Deer Gateway")
+
+    //#region rituals
+    event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
+    event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
+    event.add('ritual.occultism.craft_curio_bag.finished', "Ritual completed successfully: Craft Trinkets Pouch.")
+    event.add('ritual.occultism.craft_curio_bag.interrupted', "Interruption in the ritual: Craft Trinkets Pouch.")
+    
+    event.add('ritual.occultism.craft_vial_of_liquid_confidence.started', "Starting the ritual: Craft Vial Of Liquid Confidence.")
+    event.add('ritual.occultism.craft_vial_of_liquid_confidence.conditions', "Not all requirements for this ritual are met.")
+    event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")
+    event.add('ritual.occultism.craft_vial_of_liquid_confidence.interrupted', "Interruption in the ritual: Craft Vial Of Liquid Confidence.")
+    //#endregion
  
 })
 

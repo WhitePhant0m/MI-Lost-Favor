@@ -13,10 +13,40 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.early_items', 'Вам доступна торговля с жителями, лутинг сундуков, взаимодействие с спавнерами')
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
-    //event.add('item.kubejs.amber_visage', 'Янтарный Облик')
     event.add('kubejs.press_button', 'Зажми ')
     event.add('kubejs.for_details', 'для подробной информации')
     event.add('kubejs.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
 
+    event.add('milf.placers.notification1', `Не хватает места, чтобы ${textAnimatorString("это", "bounce")} разместить`)
+    event.add('milf.placers.notification2', `Сначала необходимо выбрать  ${textAnimatorString("правильное направление", "glitch")}`)
+    event.add('milf.placers.notification3', `Структура должна быть ${textAnimatorString("ТОЧНО ", "shake")} такой же`)
+
+    event.add('milf.placers.gui1', `Используйте любой тип ${textAnimatorStringForEach("МОЛОТКА", "bounce")} для создания структуры!`)
+    event.add('milf.placers.gui2', `Щелкните правой кнопкой мыши пустой рукой, чтобы просмотреть предварительный вариант.`)
+    event.add('milf.placers.gui3', ` + ПКМ с пустой рукой, чтобы удалить предварительный просмотр`)
+    event.add('milf.empty_box.gui1', `Вы все еще можете вернуть свою структуру!`)
+    event.add('milf.empty_box.gui2_1', `Просто `)
+    event.add('milf.empty_box.gui2_2', ` + ПКМ с пустой рукой, чтобы вернуть её обратно`)
+    event.add('milf.empty_box.gui3_1', `Обратите внимание, что разбивание этой коробки приведет к `)
+    event.add('milf.empty_box.gui3_2', `${textAnimatorString("РАЗРУШЕНИЮ", "glitch")}`)
+    event.add('milf.empty_box.gui3_3', " этой коробки")
+    
+    event.add('milf.text.dim.cant_visit', `${textAnimatorString("Какая-то магия останавливает вас", "glitch")}`)
+
+    event.add('milf.flags.claimed', "Чанк запривачен")
+    event.add('milf.flags.unclaimed', "Чанк распривачен")
+
     event.add('gateways.basic/deer', "Врата Оленя")
+
+    //#region rituals
+        event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
+        event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
+        event.add('ritual.occultism.craft_curio_bag.finished', "Ritual completed successfully: Craft Trinkets Pouch.")
+        event.add('ritual.occultism.craft_curio_bag.interrupted', "Interruption in the ritual: Craft Trinkets Pouch.")
+        
+        event.add('ritual.occultism.craft_vial_of_liquid_confidence.started', "Starting the ritual: Craft Vial Of Liquid Confidence.")
+        event.add('ritual.occultism.craft_vial_of_liquid_confidence.conditions', "Not all requirements for this ritual are met.")
+        event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")
+        event.add('ritual.occultism.craft_vial_of_liquid_confidence.interrupted', "Interruption in the ritual: Craft Vial Of Liquid Confidence.")
+    //#endregion
 })
