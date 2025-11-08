@@ -666,7 +666,7 @@
 				item: { count: 1, id: "occultism:otherworld_goggles" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: -2.0d
 		}
 		{
@@ -677,7 +677,7 @@
 				item: { count: 1, id: "occultism:satchel" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: -1.5d
 		}
 		{
@@ -688,7 +688,7 @@
 				item: { count: 1, id: "occultism:fragile_soul_gem" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: -1.5d
 		}
 		{
@@ -1980,6 +1980,30 @@
 			}]
 			x: 13.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["64FE8C0AC725C0D2"]
+			id: "57E0048DCD1B80FE"
+			tasks: [{
+				id: "602865D52CB264A1"
+				item: { count: 1, id: "ars_elemental:curio_bag" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57E0048DCD1B80FE"]
+			hide_dependency_lines: true
+			id: "33C4EBFA08980E30"
+			shape: "gear"
+			tasks: [{
+				id: "4836D142B370B98E"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
 		}
 	]
 }
