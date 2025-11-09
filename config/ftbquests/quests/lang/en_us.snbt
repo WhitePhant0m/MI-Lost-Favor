@@ -1,13 +1,10 @@
 {
-	chapter.07BA71E5216DF573.title: "Malum"
 	chapter.0BA8A5647651177A.title: "<neon>Root Whispering"
+	chapter.0E71C46ADE360F4F.title: "Underveil Harmonies"
 	chapter.126830F3CB1F8DDD.title: "aluminum"
 	chapter.1DE9AF77B4D50480.title: "First steps"
 	chapter.207581C2CDE908B1.title: "Dyes of the Occult"
 	chapter.231570DE6A7FCD52.title: "Traveling"
-	chapter.293EE18185540114.title: "Forbidden Arcanus"
-	chapter.2B3E5D6E8B56E8BB.title: "Ars Nouveau"
-	chapter.2E7EECD4E8CF01EA.title: "Spectrum"
 	chapter.389198189DCA1A49.title: "Utilities"
 	chapter.4D6A3C5941C9908A.title: "endgame"
 	chapter.4E4F6FF3EEEB1E51.title: "basic information"
@@ -1220,6 +1217,7 @@
 		""
 		"P.S. Для открытия крафта улучшите свой старый пьедестал!"
 	]
+	quest.4E062C1AFC3440ED.quest_desc: ["Use corrupt soul on oak sapling or dead bush"]
 	quest.4E56E1DDA10FCFE6.quest_desc: [
 		"The Coille Slat grants growth to plants and can be obtained by using the Emerald Ritual"
 		"{@pagebreak}"
@@ -1646,6 +1644,7 @@
 		"P.S. Чтобы начать варить пиво подветрдите что вам исполнилось 18 лет в книжке спектрума! &#d33b2bЭто важно!&r"
 		"А еще распишитесь *&#9BB8EDтут&r*, *&#9BB8EDздесь&r*, и предоставьте &#FEECD6фото паспорта&r!"
 	]
+	quest.704B2659E03B8728.quest_subtitle: "Kill Corrupt Lost Soul"
 	quest.70798A5B74FDB203.quest_desc: [
 		"Grows in swamps."
 		""
@@ -1785,6 +1784,7 @@
 	quest.7EF5D915FEC62EE0.quest_subtitle: "elevator for source"
 	reward.0DC887212398806D.title: "New Quest Chapter"
 	reward.0E7A91DD8F37AF4D.title: "Desaturation"
+	reward.3922C9ACA47723BA.title: "forbidden arcanus mobs"
 	reward.4002784F5F537B2D.title: "You can interact with everything made of iron!"
 	reward.41C8354D477A8899.title: "Access to most ore"
 	reward.670CBE4973B6F390.title: "New interactions: chest looting, villagers, spawners, wandering trader"
