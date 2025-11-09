@@ -2715,8 +2715,8 @@
 					type: "item"
 				}
 			]
-			x: 23.0d
-			y: -10.0d
+			x: 16.5d
+			y: -32.0d
 		}
 		{
 			dependencies: [
@@ -2746,8 +2746,8 @@
 					type: "item"
 				}
 			]
-			x: 23.0d
-			y: -11.5d
+			x: 16.5d
+			y: -33.5d
 		}
 		{
 			dependencies: ["42579E72777FEA41"]
@@ -2773,8 +2773,8 @@
 					type: "item"
 				}
 			]
-			x: 26.5d
-			y: -10.0d
+			x: 20.0d
+			y: -32.0d
 		}
 		{
 			dependencies: [
@@ -2804,8 +2804,8 @@
 					type: "item"
 				}
 			]
-			x: 25.5d
-			y: -12.0d
+			x: 19.0d
+			y: -34.0d
 		}
 		{
 			dependencies: ["3D7D325BBD4A7751"]
@@ -2815,8 +2815,8 @@
 				item: { count: 1, id: "forbidden_arcanus:quantum_injector" }
 				type: "item"
 			}]
-			x: 26.5d
-			y: -12.0d
+			x: 20.0d
+			y: -34.0d
 		}
 		{
 			dependencies: ["3D7D325BBD4A7751"]
@@ -2840,8 +2840,8 @@
 					type: "item"
 				}
 			]
-			x: 27.5d
-			y: -12.0d
+			x: 21.0d
+			y: -34.0d
 		}
 		{
 			dependencies: [
@@ -2867,8 +2867,8 @@
 					type: "item"
 				}
 			]
-			x: 31.0d
-			y: -10.0d
+			x: 24.5d
+			y: -32.0d
 		}
 		{
 			dependencies: ["3E6F9ACF7C710FA4"]
@@ -2892,8 +2892,8 @@
 					type: "item"
 				}
 			]
-			x: 30.5d
-			y: -12.0d
+			x: 24.0d
+			y: -34.0d
 		}
 		{
 			dependencies: ["3E6F9ACF7C710FA4"]
@@ -2903,8 +2903,8 @@
 				item: { count: 1, id: "forbidden_arcanus:boss_catcher" }
 				type: "item"
 			}]
-			x: 31.5d
-			y: -12.0d
+			x: 25.0d
+			y: -34.0d
 		}
 		{
 			id: "1A36B71E5CE7D1BF"
@@ -2913,8 +2913,8 @@
 				item: { count: 1, id: "forbidden_arcanus:dragon_scale" }
 				type: "item"
 			}]
-			x: 27.5d
-			y: -15.5d
+			x: 21.0d
+			y: -37.5d
 		}
 		{
 			dependencies: ["704B2659E03B8728"]
@@ -2925,8 +2925,8 @@
 				item: { count: 1, id: "forbidden_arcanus:growing_edelwood" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: -10.5d
+			x: 15.0d
+			y: -32.0d
 		}
 		{
 			id: "7591497746DA17AC"
@@ -2935,8 +2935,8 @@
 				item: { count: 1, id: "forbidden_arcanus:dark_nether_star" }
 				type: "item"
 			}]
-			x: 28.5d
-			y: -15.5d
+			x: 22.0d
+			y: -37.5d
 		}
 		{
 			dependencies: ["3E6F9ACF7C710FA4"]
@@ -2946,8 +2946,8 @@
 				item: { count: 1, id: "forbidden_arcanus:hephaestus_forge_tier_5" }
 				type: "item"
 			}]
-			x: 34.5d
-			y: -10.0d
+			x: 28.0d
+			y: -32.0d
 		}
 		{
 			dependencies: ["5145F508257EA3AA"]

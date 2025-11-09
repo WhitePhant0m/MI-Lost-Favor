@@ -2049,7 +2049,7 @@
 				to_observe: "#forbidden_arcanus:runic_stones"
 				type: "observation"
 			}]
-			x: -17.0d
+			x: -16.5d
 			y: 26.0d
 		}
 		{
@@ -2066,7 +2066,7 @@
 				to_observe: "forbidden_arcanus:stella_arcanum"
 				type: "observation"
 			}]
-			x: -18.0d
+			x: -17.5d
 			y: 26.0d
 		}
 		{
@@ -2082,19 +2082,23 @@
 				to_observe: "#forbidden_arcanus:arcane_crystal_ores"
 				type: "observation"
 			}]
-			x: -19.0d
+			x: -18.5d
 			y: 26.0d
 		}
 		{
-			dependencies: ["4057F0E61DC737E0"]
+			dependencies: [
+				"4057F0E61DC737E0"
+				"5B8FDB56139B5289"
+			]
+			hide_dependency_lines: true
 			id: "6D62B6D792D203BA"
 			tasks: [{
 				id: "044B3D1EC2ADE7DC"
 				item: { count: 1, id: "forbidden_arcanus:mundabitur_dust" }
 				type: "item"
 			}]
-			x: -18.5d
-			y: 27.0d
+			x: -17.0d
+			y: 30.5d
 		}
 		{
 			dependencies: ["6D62B6D792D203BA"]
@@ -2104,19 +2108,20 @@
 				item: { count: 1, id: "forbidden_arcanus:deorum_ingot" }
 				type: "item"
 			}]
-			x: -19.0d
-			y: 28.0d
+			x: -17.0d
+			y: 29.5d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
+			hide_dependency_lines: true
 			id: "73A5D237B167B47E"
 			tasks: [{
 				id: "4BBE7498A48891A8"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forbidden_arcanus:blacksmith_gavel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -16.0d
-			y: 26.0d
+			x: -16.5d
+			y: 31.5d
 		}
 		{
 			dependencies: ["6D62B6D792D203BA"]
@@ -2151,8 +2156,8 @@
 					type: "item"
 				}
 			]
-			x: -18.0d
-			y: 28.0d
+			x: -17.5d
+			y: 31.5d
 		}
 		{
 			dependencies: [
@@ -2207,7 +2212,7 @@
 				}
 			]
 			x: -17.0d
-			y: 34.0d
+			y: 33.5d
 		}
 		{
 			dependencies: [
@@ -2238,7 +2243,7 @@
 				}
 			]
 			x: -15.5d
-			y: 33.0d
+			y: 32.5d
 		}
 		{
 			dependencies: [
@@ -2254,7 +2259,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: 34.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["026821F02D50FE0D"]
@@ -2282,7 +2287,7 @@
 				}
 			]
 			x: -15.5d
-			y: 35.0d
+			y: 34.5d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
@@ -2294,7 +2299,7 @@
 				type: "item"
 			}]
 			x: -14.0d
-			y: 33.5d
+			y: 33.0d
 		}
 		{
 			dependencies: ["026821F02D50FE0D"]
@@ -2305,7 +2310,7 @@
 				type: "item"
 			}]
 			x: -18.5d
-			y: 35.0d
+			y: 34.5d
 		}
 		{
 			dependencies: ["026821F02D50FE0D"]
@@ -2333,7 +2338,7 @@
 				}
 			]
 			x: -18.5d
-			y: 33.0d
+			y: 32.5d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2344,7 +2349,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 32.0d
+			y: 31.5d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2355,7 +2360,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 33.0d
+			y: 32.5d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2366,7 +2371,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 34.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["39C79097C7355375"]
@@ -2377,7 +2382,7 @@
 				type: "item"
 			}]
 			x: -23.5d
-			y: 34.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2389,7 +2394,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 35.0d
+			y: 34.5d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2400,7 +2405,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 36.0d
+			y: 35.5d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2411,7 +2416,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 37.0d
+			y: 36.5d
 		}
 		{
 			dependencies: ["026821F02D50FE0D"]
@@ -2422,7 +2427,7 @@
 				type: "checkmark"
 			}]
 			x: -19.0d
-			y: 34.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["1D9DE7EAC8B966F9"]
@@ -2432,8 +2437,8 @@
 				item: { count: 1, id: "forbidden_arcanus:spectral_eye_amulet" }
 				type: "item"
 			}]
-			x: -19.0d
-			y: 29.0d
+			x: -17.0d
+			y: 28.5d
 		}
 		{
 			dependencies: ["4E062C1AFC3440ED"]
@@ -2486,7 +2491,7 @@
 				}
 			]
 			x: -22.5d
-			y: 31.0d
+			y: 30.5d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
@@ -2496,7 +2501,7 @@
 				item: { count: 1, id: "forbidden_arcanus:corrupt_soul" }
 				type: "item"
 			}]
-			x: -20.0d
+			x: -19.5d
 			y: 26.0d
 		}
 		{
@@ -2533,7 +2538,7 @@
 				type: "item"
 			}]
 			x: -23.5d
-			y: 31.5d
+			y: 31.0d
 		}
 		{
 			dependencies: ["1FC1A96DBEC7375E"]
@@ -2545,7 +2550,7 @@
 				type: "item"
 			}]
 			x: -24.5d
-			y: 31.5d
+			y: 31.0d
 		}
 		{
 			dependencies: [
@@ -2558,7 +2563,7 @@
 				type: "checkmark"
 			}]
 			x: -25.5d
-			y: 31.5d
+			y: 31.0d
 		}
 		{
 			dependencies: ["1FD668D64C10EA51"]
@@ -2569,7 +2574,7 @@
 				type: "item"
 			}]
 			x: -26.5d
-			y: 31.5d
+			y: 31.0d
 		}
 		{
 			dependencies: ["14BA9A5CAC394A27"]
@@ -2579,7 +2584,7 @@
 				item: { count: 1, id: "forbidden_arcanus:magical_farmland" }
 				type: "item"
 			}]
-			x: -20.0d
+			x: -18.5d
 			y: 28.0d
 		}
 		{
@@ -2601,7 +2606,7 @@
 				item: { count: 1, id: "forbidden_arcanus:arcane_bone_meal" }
 				type: "item"
 			}]
-			x: -20.0d
+			x: -18.5d
 			y: 27.0d
 		}
 		{
@@ -2614,7 +2619,7 @@
 				type: "item"
 			}]
 			x: -14.0d
-			y: 34.5d
+			y: 34.0d
 		}
 		{
 			dependencies: ["02DD191C0682BFD6"]
@@ -2636,7 +2641,7 @@
 				type: "item"
 			}]
 			x: -13.0d
-			y: 34.5d
+			y: 34.0d
 		}
 		{
 			dependencies: ["4D5DFD75A11BE595"]
