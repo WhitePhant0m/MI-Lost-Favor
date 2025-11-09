@@ -16,6 +16,6 @@ soundCategory_neutral:0.20422535211267606
 soundCategory_player:0.5035211267605634
 soundCategory_ambient:0.5
 soundCategory_voice:0.20422535211267606
-resourcePacks:["vanilla","fabric","mod_resources","modern_industrialization/generated","file/Ars Nouveau Refresh 1.2.0.zip","file/Chaotix Apotheotic Tweaks v2.0 1.21.1.zip","file/EnderEyes_1.21.8_v3.1.zip","file/Midnighttiggers-FCT-Default_1.20_V7.zip","file/Slightly-Improved-Font-1.1.5.zip","file/Modded Omelet.zip","file/Updated_Engineering_v1.7.zip","file/cubic-sun-moon-v1.8.3a.zip","file/waystones_1.21.5.zip","file/xali\u0027s Enhanced Vanilla -1.11.2b-rev.54d51d4.zip","moonlight:merged_pack"]
-incompatibleResourcePacks:["file/Modded Omelet.zip","file/Updated_Engineering_v1.7.zip","file/waystones_1.21.5.zip"]
+resourcePacks:["researchd:example_researches","vanilla","fabric","mod_resources","moonlight:merged_pack","enderzoology:dynamically_copied_textures","modern_industrialization/generated","file/Slightly-Improved-Font-1.1.5.zip","file/EnderEyes_1.21.8_v3.1.zip","file/Chaotix Apotheotic Tweaks v2.0 1.21.1.zip","file/Ars Nouveau Refresh 1.2.0.zip","file/Updated_Engineering_v1.7.zip","file/waystones_1.21.5.zip","file/cubic-sun-moon-v1.8.3a.zip","file/§eSlim§0 §eFire§0.zip","file/RPG_Series_Icons-1.2+1.21.1.zip","file/SodiumTranslations.zip","mod/pastel:pastel_style_amethyst","file/Modern Retexturization.zip"]
+incompatibleResourcePacks:["file/Updated_Engineering_v1.7.zip","file/waystones_1.21.5.zip"]
 menuBackgroundBlurriness:5
