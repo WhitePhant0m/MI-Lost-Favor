@@ -2164,6 +2164,7 @@
 			}
 			id: "026821F02D50FE0D"
 			shape: "gear"
+			size: 2.0d
 			tasks: [
 				{
 					icon: {
@@ -2236,7 +2237,7 @@
 					type: "item"
 				}
 			]
-			x: -16.0d
+			x: -15.5d
 			y: 33.0d
 		}
 		{
@@ -2252,7 +2253,7 @@
 				item: { count: 1, id: "forbidden_arcanus:quantum_catcher" }
 				type: "item"
 			}]
-			x: -15.5d
+			x: -15.0d
 			y: 34.0d
 		}
 		{
@@ -2280,17 +2281,19 @@
 					type: "item"
 				}
 			]
-			x: -16.0d
+			x: -15.5d
 			y: 35.0d
 		}
 		{
+			dependencies: ["5B37B11A0B0A84E6"]
+			hide_dependency_lines: true
 			id: "7E277FEC22A1924D"
 			tasks: [{
 				id: "4E28531589AB7D51"
 				item: { count: 1, id: "forbidden_arcanus:spawner_scrap" }
 				type: "item"
 			}]
-			x: -14.5d
+			x: -14.0d
 			y: 33.5d
 		}
 		{
@@ -2455,6 +2458,8 @@
 			y: 26.5d
 		}
 		{
+			dependencies: ["6D62B6D792D203BA"]
+			hide_dependency_lines: true
 			id: "22B9F5FC4D1868F1"
 			tasks: [
 				{
@@ -2540,7 +2545,7 @@
 				type: "item"
 			}]
 			x: -24.5d
-			y: 32.5d
+			y: 31.5d
 		}
 		{
 			dependencies: [
@@ -2553,7 +2558,7 @@
 				type: "checkmark"
 			}]
 			x: -25.5d
-			y: 32.5d
+			y: 31.5d
 		}
 		{
 			dependencies: ["1FD668D64C10EA51"]
@@ -2564,7 +2569,7 @@
 				type: "item"
 			}]
 			x: -26.5d
-			y: 32.5d
+			y: 31.5d
 		}
 		{
 			dependencies: ["14BA9A5CAC394A27"]
@@ -2608,7 +2613,7 @@
 				item: { count: 1, id: "forbidden_arcanus:aureal_bottle" }
 				type: "item"
 			}]
-			x: -14.5d
+			x: -14.0d
 			y: 34.5d
 		}
 		{
@@ -2630,7 +2635,7 @@
 				item: { count: 1, id: "forbidden_arcanus:enchanted_soul" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -13.0d
 			y: 34.5d
 		}
 		{
@@ -3287,7 +3292,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
 				type: "item"
 			}]
 			x: -37.0d
@@ -3361,7 +3366,7 @@
 				}
 			]
 			x: -40.0d
-			y: 11.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["351C8BB52E7CD0E8"]
@@ -3498,6 +3503,117 @@
 			}]
 			x: -18.0d
 			y: 24.0d
+		}
+		{
+			dependencies: ["4C67A17CAAC7B5B5"]
+			hide_dependent_lines: true
+			id: "0F3AE05836B4116E"
+			shape: "diamond"
+			tasks: [{
+				id: "2A110429AB074AB8"
+				item: { count: 1, id: "minecraft:heart_of_the_sea" }
+				type: "item"
+			}]
+			x: -19.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4C67A17CAAC7B5B5"]
+			hide_dependent_lines: true
+			id: "407EE556E5E33E90"
+			shape: "diamond"
+			tasks: [{
+				id: "512A57F476B60A7E"
+				item: { count: 1, id: "minecraft:phantom_membrane" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4C67A17CAAC7B5B5"]
+			hide_dependent_lines: true
+			id: "45A2DBDB2974F3F0"
+			shape: "diamond"
+			tasks: [{
+				id: "49BE5ED5E272AFAC"
+				item: { count: 1, id: "minecraft:ender_eye" }
+				type: "item"
+			}]
+			x: -20.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4C67A17CAAC7B5B5"]
+			hide_dependent_lines: true
+			id: "39EEE142E0F05A1A"
+			shape: "diamond"
+			tasks: [{
+				id: "28FEFC4848C2E413"
+				item: { count: 1, id: "minecraft:nautilus_shell" }
+				type: "item"
+			}]
+			x: -19.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4C67A17CAAC7B5B5"]
+			hide_dependent_lines: true
+			id: "77472788A5914815"
+			shape: "diamond"
+			tasks: [{
+				id: "5C2B175ADAB687BD"
+				item: { count: 1, id: "minecraft:ghast_tear" }
+				type: "item"
+			}]
+			x: -20.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4C67A17CAAC7B5B5"]
+			id: "4A7426629A7B7BED"
+			shape: "diamond"
+			tasks: [{
+				id: "00A6AD32F6C26985"
+				item: { count: 1, id: "minecraft:nether_star" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3682A94D1B71ED30"]
+			id: "4C67A17CAAC7B5B5"
+			tasks: [{
+				id: "77CF8D64718D9A67"
+				type: "checkmark"
+			}]
+			x: -19.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C67A17CAAC7B5B5"]
+			id: "5EB07EF24CC65341"
+			shape: "diamond"
+			tasks: [{
+				id: "4CC9F936B2FA6A57"
+				item: { count: 1, id: "minecraft:popped_chorus_fruit" }
+				type: "item"
+			}]
+			x: -20.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4C67A17CAAC7B5B5"]
+			id: "3858B151CC382C38"
+			shape: "diamond"
+			tasks: [{
+				id: "4D51EE32639F132C"
+				item: { count: 1, id: "minecraft:totem_of_undying" }
+				type: "item"
+			}]
+			x: -18.5d
+			y: -4.0d
 		}
 	]
 }
