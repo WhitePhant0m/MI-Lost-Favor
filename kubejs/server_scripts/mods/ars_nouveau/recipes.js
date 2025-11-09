@@ -9,5 +9,15 @@ ServerEvents.recipes(event => {
 
     event.remove({output:  [
         "ars_nouveau:volcanic_sourcelink",
+        "ars_nouveau:dowsing_rod",
     ]})
+    event.shaped("ars_nouveau:dowsing_rod", [
+        " Q ",
+        "WRW",
+        "   "
+    ], {
+        Q: "minecraft:gold_ingot",
+        W: "#minecraft:planks",
+        R: "enchanted:whiff_of_magic",
+    });
 })
