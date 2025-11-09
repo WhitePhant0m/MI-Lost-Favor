@@ -83,6 +83,7 @@ global.getConfidence = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
 }
 createNewItem("vial_of_liquid_confidence", {
     useAnimation: "drink",
+    rarity: 'epic',
     food: { nutrition: 1, saturation: 0, alwaysEdible: true, eaten: "getConfidence" },
     lang: { "en_us": "Vial of liquid confidence", "ru_ru": "Флакон жидкой уверенности" }
 })
@@ -91,6 +92,7 @@ createNewItem("vial_of_liquid_confidence", {
 
 //#region Misc
 createNewItem('amber_visage', { stackSize: 16, rarity: 'epic', lang: { "en_us": "Amber visage", "ru_ru": "Янтарный облик" } })
+createNewItem('table_core', {rarity: 'rare', lang: { "en_us": "Table Core", "ru_ru": "Ядро Стола" } })
 createNewItem('dev_pen')
 
 //#endregion
