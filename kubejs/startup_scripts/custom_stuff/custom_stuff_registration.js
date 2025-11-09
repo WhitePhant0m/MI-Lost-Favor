@@ -75,6 +75,7 @@ createNewItem('meze_109', { itemType: "helmet", material: 'kubejs:meze', stackSi
 createNewItem("steaming_iron_ingot", { food: { nutrition: 4, saturation: 0, alwaysEdible: true, eaten: "setOnFire", effects: [['minecraft:nausea', 200, 0, 1], ['minecraft:darkness', 100, 0, 1]] }, lang: { "en_us": "Steaming iron ingot", "ru_ru": "Жареный железный слиток" }})
 createNewItem("dirt_cake", { food: { nutrition: 1, saturation: 0, alwaysEdible: true, effects: [['minecraft:hunger', 200, 0, 1], ['minecraft:slowness', 200, 0, 1], ['minecraft:strength', 100, 0, 1]] }, lang: { "en_us": "Dirt cake", "ru_ru": "Торт из грязи" } })
 createNewItem("uranium_sandwich", { food: { nutrition: 1, saturation: 20000, alwaysEdible: true, effects: [['minecraft:hunger', 200, 3, 1], ['minecraft:poison', 1000, 0, 1]] }, lang: { "en_us": "Uranium sandwich", "ru_ru": "Урановый бутерброд" }})
+
 global.getConfidence = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
     if (ctx.player.level.clientSide) return
     let player = ctx.entity;
@@ -93,6 +94,8 @@ createNewItem("vial_of_liquid_confidence", {
 //#region Misc
 createNewItem('amber_visage', { stackSize: 16, rarity: 'epic', lang: { "en_us": "Amber visage", "ru_ru": "Янтарный облик" } })
 createNewItem('table_core', {rarity: 'rare', lang: { "en_us": "Table Core", "ru_ru": "Ядро Стола" } })
+createNewItem('onyx_table_core', {rarity: 'rare', lang: { "ru_ru": "Ониксовое Ядро Стола" } })
+createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Луннокаменное Ядро Стола" } })
 createNewItem('dev_pen')
 
 //#endregion
