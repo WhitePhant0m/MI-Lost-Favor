@@ -68,3 +68,12 @@ FTBQuestsEvents.customReward('4002784F5F537B2D', event => {
 
     event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
 });
+
+// reward for Enter in Eternal Starlight
+FTBQuestsEvents.customReward('3922C9ACA47723BA', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+    let stage = "forbidden_arcanus_mobs"
+
+    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+});
