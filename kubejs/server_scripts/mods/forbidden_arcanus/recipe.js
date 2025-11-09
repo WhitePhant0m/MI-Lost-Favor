@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({
         output: [
             "forbidden_arcanus:mundabitur_dust",
+            "forbidden_arcanus:clibano_core",
         ]
     })
 
@@ -22,5 +23,23 @@ ServerEvents.recipes(event => {
         "minecraft:blaze_powder",
         "occultism:echo_dust",
     ]);
+
+    customPedestalCraft(event, {
+        tier: "advanced", onyx: 8, citrine: 32, time: 600, experience: 8.0, yield_upgrades: true,
+        pattern: [
+            'qqq',
+            'qwq',
+            'qqq'
+        ],
+        key: {
+            q: 'forbidden_arcanus:darkstone',
+            w: 'minecraft:blast_furnace'
+        },
+        result: {
+            "id": "forbidden_arcanus:clibano_core",
+            "count": 1
+        },
+        advancement: "pastel:create_onyx_shard"
+    })
 
 });
