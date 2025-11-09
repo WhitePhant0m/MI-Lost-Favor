@@ -53,11 +53,16 @@ FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
 FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
     let player = event.entity;
     let player_name = player.profile.name
-    let stage = "early_items"
-
-    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
-    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}`).string)
-    player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
+    let main_stage = "early_items"
+    let stage_list = [
+        "early_items",
+        "blast_furnace",
+    ]
+    stage_list.forEach(stage => {
+        event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+    });
+    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${main_stage}`).string)
+    player.tell(Text.translate(`milf.stage.${main_stage}`).color("#ac6cba").bold())
 });
 
 // reward for Iron Ingot

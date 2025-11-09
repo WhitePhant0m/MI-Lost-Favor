@@ -10,7 +10,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.saturation', 'Вы потеряли насыщение!')
     event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
     event.add('milf.stage.minecraft_mobs', 'Вы стали слышать странные звуки в ночи')
-    event.add('milf.stage.early_items', 'Вам доступна торговля с жителями, лутинг сундуков, взаимодействие с спавнерами')
+    event.add('milf.stage.early_items', 'Вам доступна торговля с жителями, лутинг сундуков, взаимодействие с спавнерами и Плавильной печью')
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
     event.add('kubejs.press_button', 'Зажми ')
