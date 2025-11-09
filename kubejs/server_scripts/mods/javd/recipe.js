@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             "QWQ",
             "QQQ"
         ],
-        keys: {
+        key: {
             "W": { "tag": "endrem:eyes" },
             "Q": { "item": "minecraft:obsidian" }
         },
