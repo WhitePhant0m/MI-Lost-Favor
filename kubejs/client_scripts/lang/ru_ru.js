@@ -18,8 +18,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('kubejs.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
 
     event.add('milf.placers.notification1', `Не хватает места, чтобы ${textAnimatorString("это", "bounce")} разместить`)
-    event.add('milf.placers.notification2', `Сначала необходимо выбрать  ${textAnimatorString("правильное направление", "glitch")}`)
-    event.add('milf.placers.notification3', `Структура должна быть ${textAnimatorString("ТОЧНО ", "shake")} такой же`)
+    event.add('milf.placers.notification2', `Сначала необходимо выбрать ${textAnimatorString("правильное направление", "glitch")}`)
+    event.add('milf.placers.notification3', `Структура должна быть ${textAnimatorString("ТОЧНО", "shake")} такой же`)
 
     event.add('milf.placers.gui1', `Используйте любой тип ${textAnimatorStringForEach("МОЛОТКА", "bounce")} для создания структуры!`)
     event.add('milf.placers.gui2', `Щелкните правой кнопкой мыши пустой рукой, чтобы просмотреть предварительный вариант.`)
