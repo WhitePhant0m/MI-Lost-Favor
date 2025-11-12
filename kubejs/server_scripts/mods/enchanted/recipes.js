@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    
+
     customMixingCauldron(event, {
         fluid: "minecraft:water",
         fluidAmount: 1000,
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         ],
         [{ "id": 'enchanted:witch_oven' }, 1]
     );
-    
+
     anvil_recipe(
         [
             [{ "item": "minecraft:cauldron" }, 1],
@@ -42,7 +42,32 @@ ServerEvents.recipes(event => {
         ],
         [{ "id": 'enchanted:kettle' }, 1]
     );
-    
-    
+
+    customPestleAndMortarCraft(event, {
+        ingredients: [
+            { "item": "minecraft:calcite" },
+            { "item": "minecraft:calcite" },
+            { "item": "minecraft:calcite" },
+            { "item": "minecraft:calcite" },
+            { "item": "minecraft:calcite" },
+        ],
+        output: "enchanted:quicklime",
+        amount: 5,
+        removeRecipe: true,
+        grindingTime: 100
+    })
+
+
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:macerator",
+        inputItems: [
+            [{ item: "minecraft:calcite" }],
+        ],
+        outputItems: [
+            [{ item: "enchanted:quicklime" }, 1],
+            [{ item: "enchanted:quicklime" }, 1, 0.1]
+        ]
+    })
+
 
 })
