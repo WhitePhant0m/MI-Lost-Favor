@@ -29,6 +29,10 @@ ServerEvents.recipes(event => {
     .itemIn("minecraft:raw_gold")
     .itemOut("minecraft:gold_ingot")
 
+    event.recipes.modern_industrialization.mi_furnace(2, 200)
+    .itemIn("minecraft:sand")
+    .itemOut("minecraft:glass")
+
     const minecraft_metals_for_furnace = ['copper', 'gold', 'iron'];
     const MI_metals_for_furnace = ['antimony', 'lead', 'tin', 'nickel'];
 
