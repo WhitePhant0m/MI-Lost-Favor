@@ -1,4 +1,4 @@
-filename = 'SubtleEffects-neoforge-1.21.1-1.13.0.jar'
+filename = 'SubtleEffects-neoforge-1.21.1-1.13.1.jar'
 name = 'Subtle Effects'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'e05d26389a58974737c5a10b11149b663e7f83e5'
+hash = '13c68b64938b4668311ea75bcb456410f50f3bf8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7064187
+file-id = 7139084
 project-id = 1023913
