@@ -1,4 +1,4 @@
-filename = 'ars_elemental-1.21.1-0.7.6.3.jar'
+filename = 'ars_elemental-1.21.1-0.7.6.6.jar'
 name = 'Ars Elemental'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '4c7f48d9fe81fd895ffa0e336f279921e6739c12'
+hash = 'c681f792154cfe1b2ec1b117e4d4f481823c98e1'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7163455
+file-id = 7210039
 project-id = 561470

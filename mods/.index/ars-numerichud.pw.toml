@@ -1,4 +1,4 @@
-filename = 'arsnumerichud-1.0.1.jar'
+filename = 'arsnumerichud-1.0.2.jar'
 name = 'Ars NumericHUD'
 side = 'client'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'd499312b7c0bf674f09c6f299e13cc92d90d1ba3'
+hash = '7d0210119042bbf6c4dbc47daf1b696a7a4d5577'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6315218
+file-id = 7194728
 project-id = 1221985

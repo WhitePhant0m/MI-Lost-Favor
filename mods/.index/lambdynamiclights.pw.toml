@@ -1,4 +1,4 @@
-filename = 'lambdynamiclights-4.8.5+1.21.1.jar'
+filename = 'lambdynamiclights-4.8.6+1.21.1.jar'
 name = 'LambDynamicLights'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge', 'fabric', 'quilt' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '532a7d7c7b016b1a77bccbe8819ca16699e7df3a'
+hash = '9bca461cf1fd5114f937f8710b377f8c13b8c71d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7117956
+file-id = 7178353
 project-id = 393442
