@@ -882,6 +882,24 @@ ServerEvents.recipes(event => {
         {B:'ytech:terracotta_bricks', A:"ytech:aqueduct_hydrator", S:"ytech:wooden_box", s:"ytech:terracotta_aqueduct"},
         'ytech:aqueduct_fertilizer', {} , "#c:hammers", true
     )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("s"),
+            ['   ','   ','   '].layerAll("P").layerCentre("S").layerCorners("n"),
+            ['   ','   ','   '].layerAll("P").layerCorners("n")
+        ],
+        {P:'#minecraft:planks', s:"#minecraft:wooden_slabs", S:"ytech:wooden_box", n:"minecraft:iron_nugget"},
+        'minecraft:barrel', {} , "#c:hammers", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("s"),
+            ['   ','   ','   '].layerCentre("S"),
+            ['   ','   ','   '].layerAll("s").layerCentre("S").layerSides("C").layerFront("T").layerBack("T")
+        ],
+        {s:"#minecraft:wooden_slabs", S:"minecraft:stick", C:"minecraft:copper_ingot", T:"modern_industrialization:tin_ingot"},
+        'ytech:potters_wheel', {} , "#c:hammers", true
+    )
     //#endregion
 
     //#endregion

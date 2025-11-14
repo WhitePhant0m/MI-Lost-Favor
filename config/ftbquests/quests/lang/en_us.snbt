@@ -123,6 +123,7 @@
 		"{@pagebreak}"
 		"Используя стеклянные флаконы, я могу создать контейнер, усиленный медью. Этот более крупный и тяжелый контейнер - ценная деталь. Предвестие грандиозного творения..."
 	]
+	quest.047487BFFB8421D5.quest_desc: ["Since the measuring unit is... literally all around you, it's much easier to produce an accurate tape measure"]
 	quest.04914A341C6DBCC8.quest_desc: [
 		"&lCandelabra&r: "
 		"• +2x Recharge Rate"
@@ -166,6 +167,7 @@
 	]
 	quest.07B3FFC9267C5861.quest_desc: ["The Maledictus Pact Enhancer allows the creation of cursed items in the Hephaestus Forge. It can be found as loot in bastion treasure rooms with a chance of 18% per chest. "]
 	quest.07E78D29C898CE55.quest_desc: ["Wild sheep"]
+	quest.08136C156A331A52.quest_desc: ["A convenient way to store food. A lot of food. LMB to change mode, RMB with the closed one to change selected food, RMB with the opened one to eat said food"]
 	quest.083BEEC631645C14.quest_desc: ["Summon Possessed Bee with Ihagan's Enthrallment and kill"]
 	quest.085A58908A521A63.quest_desc: [
 		"The ancients lacked vision. They stopped at just blends without realizing what these poisons can really do. I've felt the changes. Every night I feel the toxins pulsing in my blood. I'm changing, I feel much stronger, feel more alert. Its revelating."
@@ -523,6 +525,7 @@
 		"{@pagebreak}"
 		"Может использоваться для добычи чистых ресурсов, а также некоторых хрупких блоков."
 	]
+	quest.1F7DF0379C917C3B.quest_desc: ["Well, if it works, it works, i guess..."]
 	quest.1FC26CA207964E0D.quest_desc: ["5 арканы в тотем"]
 	quest.1FD668D64C10EA51.quest_desc: ["You can create a Block Hole by throwing Dark Matter together with Corrupti Dust on the ground. It will attract items and small entities like Arrows or Experience Orbs and delete them. Once it absorbed enough experience points, it will throw out a Xpetrified Orb."]
 	quest.203B742A5DB473FA.quest_desc: ["Simply smash a piece of flint against a stone to sharpen it"]
@@ -572,6 +575,8 @@
 		"{@pagebreak}"
 		"Буквально — &#DEB3E0Красочная ячейка&r, храни краски в баночках!"
 	]
+	quest.23D5012F534D8098.quest_desc: ["Provides storage and easy access to any type of tool you put inside it"]
+	quest.244621C9368A3934.quest_desc: ["One of the most important blocks in the modpack (until you find a way to perform such a human-dependent procedure via machinery *wink*) allows you to construct blocks from ingredients in a 3x3x3 grid"]
 	quest.244DB9331EEB5897.quest_desc: ["recolor armor"]
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a poisoned slime."]
 	quest.24D1B4E69FDDF397.quest_desc: ["декор, можно объединить с любым предметом чтобы отображать его"]
@@ -631,6 +636,7 @@
 		"{@pagebreak}"
 		"Всех &#FEECD6заинтересовавшихся&r приглашаем в книжку &#9BB8EDSpectrum&r'a, расписывать тут такую механику не видим смысла!"
 	]
+	quest.29F05931D0564717.quest_desc: [""]
 	quest.2A60D184399CE876.quest_desc: [
 		"A &#FEECD6Bottomless Bundle&r&r allows you to store a &l&#FEECD6huge&r&r amount of items of a single type, very handy in mines!"
 		"{@pagebreak}"
@@ -707,6 +713,7 @@
 		"{@pagebreak}"
 		"Если я почувствую себя ОСОБЕННО плохо, я могу изготовить это пахучее и НЕ приятное на ощупь масло. Им могут заинтересоваться местные врачи."
 	]
+	quest.30B7522161DC8B1B.quest_desc: ["You know what you will use this for, don't you?"]
 	quest.30C4AD468ACFB3C5.quest_desc: [
 		"Can catch living creatures!"
 		"{@pagebreak}"
@@ -746,6 +753,7 @@
 		"Эндер-Воронка работает только тогда, когда вы находитесь &#FEECD6онлайн&r."
 	]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
+	quest.3311BAD6D1B590DE.quest_desc: ["Better than nothing, and fancy furthermore, eh?"]
 	quest.3375DE99A86D3CB4.quest_desc: ["Item pipes will normally prefer the closest inventory. An inhibitor increases the length of a connection by 1000 for pathfinding purposes, which makes item pipes avoid that connection if possible."]
 	quest.33D177C9C103372D.quest_desc: ["Allows you to throw oils. Can become handy in the future."]
 	quest.3439A90E9544512F.quest_desc: [
@@ -773,6 +781,7 @@
 	quest.353FB272140BABA3.quest_desc: ["пушит игрока вверх, джамп пад?"]
 	quest.353FB272140BABA3.quest_subtitle: "Jump pad"
 	quest.35450D58651AF44B.quest_desc: ["Allows you to access your system from any point in the world when linked to quantum ring"]
+	quest.357CC2253FDA3DA1.quest_desc: ["Bottomless... book? For all those pretty scribbled treatises \"you\" wrote about this beautiful world"]
 	quest.35A512DACA56FF16.quest_desc: [
 		"The Alembic. An old device in the academy that will help purify liquids similar to how the crucible purifies solids. However, they are fragile. In order for this to work, I need a stronger glassy material. I know one located in the Nether. I must find it!"
 		""
@@ -864,8 +873,10 @@
 		"Более подробнее о росте можно прочитать в книге!"
 	]
 	quest.3844F342D000826A.quest_desc: ["A copper mesh can catch tin, lead and copper."]
+	quest.389A4181732368E0.quest_desc: ["The chest predecessor and your first reliable storage, can store up to 9 stacks of items"]
 	quest.38AAF5DFC8A1F13D.quest_subtitle: "How To Tame a Kindling"
 	quest.39C79097C7355375.quest_desc: ["The Crimson Stone is all about Souls. When used it the Hephaestus Forge it will half the Souls essence cost and when used in the Clibano it will increase the burn duration of inputted Souls (Soon). Crimson Stones can be found in Pillager Outpost loot chests (18% chance)."]
+	quest.3A47A5B107C19092.quest_desc: ["Fancy, queen-sized patch of fiber"]
 	quest.3A5FB1474CC41CED.quest_desc: [
 		"Grows in taiga biomes (the cold ones)."
 		""
@@ -884,6 +895,7 @@
 		""
 		"{image:quest_pics:textures/machine_extender.png width:200 height:130 align:center}"
 	]
+	quest.3B77EDA3E715F8ED.quest_desc: ["Can only be acquired via axe (because we care about the well-being of your fists, you masochist (•ᴗ•) )"]
 	quest.3B8E12BA33DFD7AC.quest_desc: [
 		"Once I have enough data on a specific poisonous ingredient, I can hold my magnifying glass in my hand and hover over it in my inventory to see what affinity this poisonous ingredient is associated with. Oh, the beautiful art of experimental science!"
 		"{@pagebreak}"
@@ -1233,6 +1245,7 @@
 		"{@pagebreak}"
 		"Выполняет простые арифметические операции над входными сигналами. Используйте ПКМ для изменения операции."
 	]
+	quest.4F16E1AF399E74E4.quest_subtitle: "No more anvils ^o^"
 	quest.4F3E70AAD31A62A8.quest_desc: ["minecraft:swamp"]
 	quest.50A70151E50EC5DC.quest_desc: ["Drops from bogged."]
 	quest.51355FDCB71F9048.quest_desc: [
@@ -1280,6 +1293,7 @@
 	]
 	quest.55B031B4D7E5DEE3.quest_desc: ["Wild chicken"]
 	quest.5643AEC296D95BE9.quest_desc: ["Slowness and weakness."]
+	quest.56956E24B043B41A.quest_desc: ["&mUse an axe for the combat instead, as it's more powerful. But shh, I didn't tell you that&r"]
 	quest.56AE77021D975ACD.quest_desc: ["This mesh can catch basic resources, such as sand, gravel, clay and fish"]
 	quest.5750E25528ABB85C.quest_desc: [""]
 	quest.57A91C641FE38999.quest_desc: [""]
@@ -1487,6 +1501,7 @@
 		"Как и с прошлыми фамильярами и одержимыми мобами, прочтите информацию о них в книге"
 	]
 	quest.644C38FE06C3047E.quest_desc: ["можно найти в джунглях и болотах в шахтах"]
+	quest.64A80D12CB567158.quest_desc: ["Time to put your shiny... well, I guess rather dull, new antler pickaxe to good use!"]
 	quest.64C835EE832D0FC2.quest_desc: ["крос дим не воркает, тп на записаные корды"]
 	quest.64F723F01C41DE4E.quest_desc: [
 		"Invisible lighting!"
@@ -1529,6 +1544,7 @@
 		"Полноценный иммунитет от огня и немного больше"
 	]
 	quest.678DD52529698DE4.quest_desc: ["Нужно кормить зельями даёт сурс"]
+	quest.6823D5F00B44B271.quest_desc: ["Used to... mold brick-looking stuff"]
 	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a poisoned wolf."]
 	quest.691756F3D7240809.quest_desc: [
 		"Periodically emits a redstone pulse. By pressing RMB you can change the length of the pulse, and by pressing Shift+RMB you can change the interval between pulses."
@@ -1616,6 +1632,7 @@
 		""
 		"leashed mobs teleport with you"
 	]
+	quest.6E680C846961BFE3.quest_subtitle: "Finally"
 	quest.6E69C3F456FD1C3D.quest_desc: ["Every ritual you execute will require you to sacrifice certain items which need to be placed on Pedestals. Obtaining these Pedestals should be your next step. Most rituals will only need 6 Pedestals while others may require you to use all 8 available spots for Pedestals. "]
 	quest.6E99902F01ED8483.quest_desc: [
 		"Blaze powder was already as VOLATILE as toxin. It burns just like toxin does. So a thought came to me. Was there a way to mix these substances together to create the ultimate purifying effect. That's when I created this miraculous fusion. WITCHFIRE."
@@ -1683,6 +1700,7 @@
 		"{@pagebreak}"
 		"О большинстве ритуалов можно прочитать в гайдбуке!"
 	]
+	quest.72469A4BC17070AB.quest_desc: ["Used to increase toolbelt capacity. The first upgrade can be applied via needle, which will increase the toolbelt tool limit by 2, ensuing upgrades will require an anvil and will only add 1 additional slot"]
 	quest.725F8D9DA52207FB.quest_desc: [
 		"&#DEB3E0Pylons&r allows to &#FEECD6speed up&r crafts in &l&#e4affaSpectrum&r&r multiblocks. Also, they can be used as upgrades for &#9BB8EDModern Industrialization&r machines."
 		"{@pagebreak}"
@@ -1725,6 +1743,8 @@
 		"Ну… Или… Воспользуйтесь дробителем…"
 	]
 	quest.7411203C75645676.quest_desc: ["From undead(zombie/zoglin/husk/zombie villager/piglin) with scythe"]
+	quest.742D4F5A2D903B69.quest_desc: ["Dropped by deer. It slightly resembles a half-pickaxe if you look at it from a specific angle..."]
+	quest.745BE9DA293006D1.quest_desc: ["Bundle's lil bro, look at it, so cute ❤"]
 	quest.74D4C6332BC7AE9D.quest_desc: [
 		"Thaumic Footsteps"
 		"{@pagebreak}"

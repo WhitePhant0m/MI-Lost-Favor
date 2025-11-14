@@ -9,20 +9,28 @@
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
 const ieBlueprintCraft = (event, args) => {
+    let result = JSON.parse(JSON.stringify(args.outputItems[0][0]))
+    //console.log(result);
+    if (result.hasOwnProperty("item")){
+        result["id"] = result["item"]
+        delete result["item"]
+    }
+    //console.log(result);
     let recipe = {
         type: "immersiveengineering:blueprint",
         inputs: [],
         category: args.category,
-        result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
+        result: Object.assign({} ,result, {count: args.outputItems[0][1] || 1}),
     }
     args.inputItems.forEach((input) => {recipe.inputs.push(Object.assign({},{"basePredicate": input[0]}, {count:input[1] || 1}))})
     if(!args.compatOff){
         miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
             inputItems:args.inputItems,
-            outputItems:[[{item:recipe.result.item}, recipe.result.count]]
+            outputItems:[[{item:recipe.result.id}, recipe.result.count]]
         })
     }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].item})}
+    //console.log(recipe);
     event.custom(recipe)
 }
 

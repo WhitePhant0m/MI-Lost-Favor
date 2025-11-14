@@ -100,6 +100,7 @@ ServerEvents.recipes(event => {
         "modern_industrialization:materials/blast_furnace/bauxite_to_aluminum_ingot",
         "modern_industrialization:vanilla_recipes/easy_chest",
         "modern_industrialization:vanilla_recipes/easy_chest",
+        "modern_industrialization:electric_age/component/craft/resistor",
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -145,6 +146,21 @@ ServerEvents.recipes(event => {
         ],
         {
             B: 'kubejs:radio_tower_block',
+        }
+    )
+
+        event.shaped(
+        Item.of('modern_industrialization:resistor', 6),
+        [
+            ' PC',
+            'PWP', 
+            'RP '
+        ],
+        {
+            P:"minecraft:paper",
+            W:"modern_industrialization:copper_wire",
+            C:"modern_industrialization:coal_dust",
+            R:"minecraft:redstone"
         }
     )
 

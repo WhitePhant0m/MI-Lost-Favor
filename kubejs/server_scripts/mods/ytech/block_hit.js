@@ -40,8 +40,15 @@ ServerEvents.recipes(event => {
     block_hit_recipe({item:"modern_industrialization:bronze_machine_casing"}, [{id:"kubejs:bronze_machine_bit"}, 12], {tag : "minecraft:anvil"} )
     block_hit_recipe({item:"modern_industrialization:frostproof_machine_casing"}, [{id:"kubejs:basic_machine_bit"}, 12], {tag : "minecraft:anvil"} )
     block_hit_recipe({item:"modern_industrialization:steel_machine_casing"}, [{id:"kubejs:steel_machine_bit"}, 12], {tag : "minecraft:anvil"} )
-
+    
     block_hit_recipe({tag:"c:cobblestones"}, [{id:"ytech:pebble"}, 4], {tag : "c:stones"} )
 
 
+    ytechBlockHitCraft(event, {
+            inputItems:[[{item:"modern_industrialization:bronze_machine_casing"}]],
+            outputItems:[[{id:"moderndynamics:machine_extender"}, 1]],
+            block:{tag : "c:storage_blocks/coal"},
+            removeRecipe:true,
+            compatOff:true
+    })
 })
