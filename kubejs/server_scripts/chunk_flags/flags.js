@@ -1,4 +1,4 @@
-const $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
+let $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
 
 BlockEvents.rightClicked("kubejs:chunk_flag", event =>{
     if(event.getHand()=="OFF_HAND") event.cancel()

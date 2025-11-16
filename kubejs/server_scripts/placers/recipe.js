@@ -1,8 +1,7 @@
 ServerEvents.recipes(event => {
-    placerBlocks.forEach(block => {
+    PLACER_BLOCKS.forEach(block => {
         const templateName = block.slice(7, -7)
-        console.log(block, templateName);
-        const template = NBTIO.read(`kubejs/data/${placerBlocksMap[block].split(':')[0]}/structure/multiblocks/${templateName}.nbt`)
+        const template = NBTIO.read(`kubejs/data/${PLACER_BLOCKS_TO_ITEM_NAME_MAP[block].split(':')[0]}/structure/multiblocks/${templateName}.nbt`)
         let blocksCount = {}
         for(let i in template.blocks){
             let state = template.blocks.getCompound(i).state;
