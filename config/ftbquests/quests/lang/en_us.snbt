@@ -407,6 +407,7 @@
 		"{@pagebreak}"
 		"Ничего такого, да? Просто кусочек бедрока."
 	]
+	quest.17A44FD7738F4496.quest_desc: ["Used to crush items to make them less intact"]
 	quest.1821E5AE238E165E.quest_desc: ["Преобразовывает разнообразные жидкости в сурс, *По хорошему добавить только пар -> сурс и удалить другие генераторы сурса*"]
 	quest.18238251518B54D5.quest_desc: ["123"]
 	quest.18238251518B54D5.title: "Chimmera Familiar"
@@ -458,6 +459,7 @@
 		""
 		"Редстоун довольно чувствителен к токсинам, что можно понять из принципа работы измерителя токсичности. Но сначала я должен превратить его в смесь."
 	]
+	quest.19F4ECE3B256B396.quest_desc: ["Sharp as a needle... literally (and performs as one too)"]
 	quest.1A144AF45E9C2525.quest_desc: [
 		"Collects items in a &bhuge radius&r, can also collect xp if a &9Knowledge Gem&r is inserted!"
 		""
@@ -630,7 +632,6 @@
 		"{@pagebreak}"
 		"Почти что полёт"
 	]
-	quest.29A43713F3DD703F.quest_desc: ["How to use this thing"]
 	quest.29B42E7ADFFA7AAF.quest_desc: [
 		"Anyone &#FEECD6interested&r is invited to read the &l&#e4affaSpectrum&r&r guidebook, no point in copying the information to here!"
 		"{@pagebreak}"
@@ -959,6 +960,7 @@
 		"After having built the above pattern, place the Smithing Table in the central spot above the Gilded Chiseled Polished Darkstone block. In order to transform it into the desired Hephaestus Forge you'll now only need to sneak and right-click with the Mundabitur Dust on the Smithing Table. A bolt of corrupted lightning will strike the block and transform it. "
 	]
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a poisoned squid."]
+	quest.3F168A7DE7626306.quest_desc: ["Tin suitable for smelter"]
 	quest.3F3D4E142EEE7C6B.quest_desc: [
 		"When dealing with Mandrakes, Banshees and other loud creatures, protection for your ears is essential."
 		""
@@ -1545,6 +1547,7 @@
 	]
 	quest.678DD52529698DE4.quest_desc: ["Нужно кормить зельями даёт сурс"]
 	quest.6823D5F00B44B271.quest_desc: ["Used to... mold brick-looking stuff"]
+	quest.687476E0881C0199.quest_desc: ["Copper suitable for smelter"]
 	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a poisoned wolf."]
 	quest.691756F3D7240809.quest_desc: [
 		"Periodically emits a redstone pulse. By pressing RMB you can change the length of the pulse, and by pressing Shift+RMB you can change the interval between pulses."
@@ -1632,6 +1635,7 @@
 		""
 		"leashed mobs teleport with you"
 	]
+	quest.6E680C846961BFE3.quest_desc: ["Let's just pretend that there's no saw on this thing's texture and move on until you can make said saw to satisfy your meticulousness needs."]
 	quest.6E680C846961BFE3.quest_subtitle: "Finally"
 	quest.6E69C3F456FD1C3D.quest_desc: ["Every ritual you execute will require you to sacrifice certain items which need to be placed on Pedestals. Obtaining these Pedestals should be your next step. Most rituals will only need 6 Pedestals while others may require you to use all 8 available spots for Pedestals. "]
 	quest.6E99902F01ED8483.quest_desc: [
@@ -1780,6 +1784,12 @@
 		"Один из важнейших блоков для дальнейшей прогрессии. Более подробные инструкции, как с ним взаимодействовать, можно прочитать в книге!"
 	]
 	quest.7974D49E6CAE39BF.quest_desc: ["Позволяет сделать ездового питомца при пкм на Starbuncle"]
+	quest.79CE5FF7EB605456.quest_desc: [
+		"Tired of building all those complex multiblock structures? Want to have an ability to easily move them around if you feel weak Feng Shui from it? We're presenting to you: Multiblock Packer 3000 (Safety regulations edition)."
+		"With this bad boy you can forget about all the hassle of manually building structures FOREVER! With advanced compacting technology, we accomplished the ability to pack ANY multiblock into a single small box! You can carry it around, you can place it anywhere, and you can even take it back whenever you wish to! Our engineers at PLACERS™ (Packing Logistics And Controlled Erections of Rebuildable Structures) have made the real revolution by discovering the new PUSH® (Piston it Until Shit Happens) technique, which allowed us to pack such great possibilities in such a tiny device."
+		"Craft one for yourself today, and you'll get an unlimited supply of boxes, as well as a little plushie of our demure CEO for free!"
+		"<fade>ⓘ (We are not responsible for any injuries inflicted on the user by the machine. May contain traces of radioactive waste, horsehairs, and insulin. Not recommended for use for infants, piglins, and fairies) </fade>"
+	]
 	quest.7A406C30B9862C6D.quest_subtitle: "elevator in lava"
 	quest.7A5F66121C4BCC2B.quest_desc: ["Charges items. That's it"]
 	quest.7AA3CDBC6B160F86.quest_desc: ["Free furnaces"]
@@ -1807,6 +1817,7 @@
 	reward.3922C9ACA47723BA.title: "forbidden arcanus mobs"
 	reward.4002784F5F537B2D.title: "You can interact with everything made of iron!"
 	reward.41C8354D477A8899.title: "Access to most ore"
+	reward.5BA06D58446F6FDD.title: "Unlimited supply of boxes"
 	reward.670CBE4973B6F390.title: "New interactions: chest looting, villagers, spawners, wandering trader"
 	reward.74E5C7C4B8A33E55.title: "New monsters"
 	reward_table.77E899F6A1C7866E.title: "crystals"

@@ -1,6 +1,5 @@
 //priority: 100
 const $BooleanProperty = Java.loadClass("net.minecraft.world.level.block.state.properties.BooleanProperty")
-
 const en_usPlacer = "Placer"
 const en_usEmptyBox = "Empty Box"
 const ru_ruPlacer = "Установщик"
@@ -10,100 +9,257 @@ const definitelyUniqueNameForIETemplatesList = [
     {
         name: ['arcfurnace', 'arc_furnace'],
         langPlacers: {"en_us": `Arc Furnace ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} дуговой Печи`},
-        langBoxes: {"en_us": `Arc Furnace ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} дуговой Печи`}
+        langBoxes: {"en_us": `Arc Furnace ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} дуговой Печи`},
+        mod:"immersiveengineering"
     },
     {
         name: 'assembler',
         langPlacers: { "en_us": `Assembler ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} сборщика` },
-        langBoxes: { "en_us": `Assembler ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} сборщика` }
+        langBoxes: { "en_us": `Assembler ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} сборщика` },
+        mod:"immersiveengineering"
     },
     {
         name: 'auto_workbench',
         langPlacers: { "en_us": `Auto Workbench ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} автоматизированного верстака инженера` },
-        langBoxes: { "en_us": `Auto Workbench ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} автоматизированного верстака инженера` }
+        langBoxes: { "en_us": `Auto Workbench ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} автоматизированного верстака инженера` },
+        mod:"immersiveengineering"
     },
     //{name: 'blast_furnace', langPlacers: {"en_us": `Blast Furnace ${en_usPlacer}`}, langBoxes: {"en_us": `Blast Furnace ${en_usEmptyBox}`}},
     {
         name: 'bottling_machine',
         langPlacers: { "en_us": `Bottling Machine ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} разливочной машины` },
-        langBoxes: { "en_us": `Bottling Machine ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} разливочной машины` }
+        langBoxes: { "en_us": `Bottling Machine ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} разливочной машины` },
+        mod:"immersiveengineering"
     },
     {
         name: 'chunk_loader',
         langPlacers: { "en_us": `Chunk Loader ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} загрузчика чанков` },
-        langBoxes: { "en_us": `Chunk Loader ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} загрузчика чанков` }
+        langBoxes: { "en_us": `Chunk Loader ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} загрузчика чанков` },
+        mod:"immersiveengineering"
     },
     //{name: 'coke_oven', langPlacers: {"en_us": `Coke Oven ${en_usPlacer}`}, langBoxes: {"en_us": `Coke Oven ${en_usEmptyBox}`}},
     {
         name: 'crusher',
         langPlacers: { "en_us": `Crusher ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} дробителя` },
-        langBoxes: { "en_us": `Crusher ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} дробителя` }
+        langBoxes: { "en_us": `Crusher ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} дробителя` },
+        mod:"immersiveengineering"
     },
     {
         name: 'diesel_generator',
         langPlacers: { "en_us": `Diesel Generator ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} дизельного генератора` },
-        langBoxes: { "en_us": `Diesel Generator ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} дизельного генератора` }
+        langBoxes: { "en_us": `Diesel Generator ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} дизельного генератора` },
+        mod:"immersiveengineering"
     },
     {
         name: ['excavator_full', 'excavator'],
         langPlacers: { "en_us": `Excavator ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} экскаватора` },
-        langBoxes: { "en_us": `Excavator ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} экскаватора` }
+        langBoxes: { "en_us": `Excavator ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} экскаватора` },
+        mod:"immersiveengineering"
     },
     {
         name: 'fermenter',
         langPlacers: { "en_us": `Fermenter ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} бродильного аппарата` },
-        langBoxes: { "en_us": `Fermenter ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} бродильного аппарата` }
+        langBoxes: { "en_us": `Fermenter ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} бродильного аппарата` },
+        mod:"immersiveengineering"
     },
     //{name: 'improved_blast_furnace', langPlacers: {"en_us": `Improved Blast Furnace ${en_usPlacer}`}, langBoxes: {"en_us": `Improved Blast Furnace ${en_usEmptyBox}`}},
     {
         name: 'lightning_rod',
         langPlacers: { "en_us": `Lightning Rod ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} молниетвода` },
-        langBoxes: { "en_us": `Lightning Rod ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} молниетвода` }
+        langBoxes: { "en_us": `Lightning Rod ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} молниетвода` },
+        mod:"immersiveengineering"
     },
     {
         name: 'metal_press',
         langPlacers: { "en_us": `Metal Press ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} металлического пресса` },
-        langBoxes: { "en_us": `Metal Press ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} металлического пресса` }
+        langBoxes: { "en_us": `Metal Press ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} металлического пресса` },
+        mod:"immersiveengineering"
     },
     {
         name: 'mixer',
         langPlacers: { "en_us": `Mixer ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} смесителя` },
-        langBoxes: { "en_us": `Mixer ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} смесителя` }
+        langBoxes: { "en_us": `Mixer ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} смесителя` },
+        mod:"immersiveengineering"
     },
     {
         name: 'radio_tower',
         langPlacers: { "en_us": `Radio Tower ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} радио Вышки` },
-        langBoxes: { "en_us": `Radio Tower ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} радио Вышки` }
+        langBoxes: { "en_us": `Radio Tower ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} радио Вышки` },
+        mod:"immersiveengineering"
     },
     {
         name: 'refinery',
         langPlacers: { "en_us": `Refinery ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} очистителя` },
-        langBoxes: { "en_us": `Refinery ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} очистителя` }
+        langBoxes: { "en_us": `Refinery ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} очистителя` },
+        mod:"immersiveengineering"
     },
     {
         name: 'sawmill',
         langPlacers: { "en_us": `Sawmill ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} лесопилки` },
-        langBoxes: { "en_us": `Sawmill ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} лесопилки` }
+        langBoxes: { "en_us": `Sawmill ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} лесопилки` },
+        mod:"immersiveengineering"
     },
     {
         name: ['sheetmetal_tank', 'tank'],
         langPlacers: { "en_us": `Fluid Tank ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} жидкостного резервуара` },
-        langBoxes: { "en_us": `Fluid Tank ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} жидкостного резервуара` }
+        langBoxes: { "en_us": `Fluid Tank ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} жидкостного резервуара` },
+        mod:"immersiveengineering"
     },
     {
         name: 'shelf',
         langPlacers: { "en_us": `Shelf ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} полки` },
-        langBoxes: { "en_us": `Shelf ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} полки` }
+        langBoxes: { "en_us": `Shelf ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} полки` },
+        mod:"immersiveengineering"
     },
     {
         name: 'silo',
         langPlacers: { "en_us": `Silo ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} бункера` },
-        langBoxes: { "en_us": `Silo ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} бункера` }
+        langBoxes: { "en_us": `Silo ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} бункера` },
+        mod:"immersiveengineering"
     },
     {
         name: 'squeezer',
         langPlacers: { "en_us": `Squeezer ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} соковыжималки` },
-        langBoxes: { "en_us": `Squeezer ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} соковыжималки` }
+        langBoxes: { "en_us": `Squeezer ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} соковыжималки` },
+        mod:"immersiveengineering"
+    },
+    {
+        name: ['advanced_large_steam_boiler', 'advanced_large_steam_boiler'],
+        langPlacers: {"en_us": `Advanced Large Steam Boiler ${en_usPlacer}`},
+        langBoxes: {"en_us": `Advanced Large Steam Boiler ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['coke_oven', 'coke_oven'],
+        langPlacers: {"en_us": `Coke Oven ${en_usPlacer}`},
+        langBoxes: {"en_us": `Coke Oven ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['distillation_tower', 'distillation_tower'],
+        langPlacers: {"en_us": `Distillation Tower ${en_usPlacer}`},
+        langBoxes: {"en_us": `Distillation Tower ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['electric_blast_furnace_cupronickel', 'electric_blast_furnace'],
+        langPlacers: {"en_us": `Electric Blast Furnace Cupronickel ${en_usPlacer}`},
+        langBoxes: {"en_us": `Electric Blast Furnace Cupronickel ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['electric_blast_furnace_kanthal', 'electric_blast_furnace'],
+        langPlacers: {"en_us": `Electric Blast Furnace Kanthal ${en_usPlacer}`},
+        langBoxes: {"en_us": `Electric Blast Furnace Kanthal ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['electric_quarry', 'electric_quarry'],
+        langPlacers: {"en_us": `Electric Quarry ${en_usPlacer}`},
+        langBoxes: {"en_us": `Electric Quarry ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['fusion_reactor', 'fusion_reactor'],
+        langPlacers: {"en_us": `Fusion Reactor ${en_usPlacer}`},
+        langBoxes: {"en_us": `Fusion Reactor ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['heat_exchanger', 'heat_exchanger'],
+        langPlacers: {"en_us": `Heat Exchanger ${en_usPlacer}`},
+        langBoxes: {"en_us": `Heat Exchanger ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['high_pressure_advanced_large_steam_boiler', 'high_pressure_advanced_large_steam_boiler'],
+        langPlacers: {"en_us": `High Pressure Advanced Large Steam Boiler ${en_usPlacer}`},
+        langBoxes: {"en_us": `High Pressure Advanced Large Steam Boiler ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['high_pressure_large_steam_boiler', 'high_pressure_large_steam_boiler'],
+        langPlacers: {"en_us": `High Pressure Large Steam Boiler ${en_usPlacer}`},
+        langBoxes: {"en_us": `High Pressure Large Steam Boiler ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['implosion_compressor', 'implosion_compressor'],
+        langPlacers: {"en_us": `Implosion Compressor ${en_usPlacer}`},
+        langBoxes: {"en_us": `Implosion Compressor ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['large_diesel_generator', 'large_diesel_generator'],
+        langPlacers: {"en_us": `Large Diesel Generator ${en_usPlacer}`},
+        langBoxes: {"en_us": `Large Diesel Generator ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['large_steam_boiler', 'large_steam_boiler'],
+        langPlacers: {"en_us": `Large Steam Boiler ${en_usPlacer}`},
+        langBoxes: {"en_us": `Large Steam Boiler ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['nuclear_reactor_extreme', 'nuclear_reactor'],
+        langPlacers: {"en_us": `Nuclear Reactor Extreme ${en_usPlacer}`},
+        langBoxes: {"en_us": `Nuclear Reactor Extreme ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['nuclear_reactor_large', 'nuclear_reactor'],
+        langPlacers: {"en_us": `Nuclear Reactor Large ${en_usPlacer}`},
+        langBoxes: {"en_us": `Nuclear Reactor Large ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['nuclear_reactor_medium', 'nuclear_reactor'],
+        langPlacers: {"en_us": `Nuclear Reactor Medium ${en_usPlacer}`},
+        langBoxes: {"en_us": `Nuclear Reactor Medium ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['nuclear_reactor_small', 'nuclear_reactor'],
+        langPlacers: {"en_us": `Nuclear Reactor Small ${en_usPlacer}`},
+        langBoxes: {"en_us": `Nuclear Reactor Small ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['oil_drilling_rig', 'oil_drilling_rig'],
+        langPlacers: {"en_us": `Oil Drilling Rig ${en_usPlacer}`},
+        langBoxes: {"en_us": `Oil Drilling Rig ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['plasma_turbine', 'plasma_turbine'],
+        langPlacers: {"en_us": `Plasma Turbine ${en_usPlacer}`},
+        langBoxes: {"en_us": `Plasma Turbine ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['pressurizer', 'pressurizer'],
+        langPlacers: {"en_us": `Pressurizer ${en_usPlacer}`},
+        langBoxes: {"en_us": `Pressurizer ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['steam_blast_furnace', 'steam_blast_furnace'],
+        langPlacers: {"en_us": `Steam Blast Furnace ${en_usPlacer}`},
+        langBoxes: {"en_us": `Steam Blast Furnace ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['steam_quarry', 'steam_quarry'],
+        langPlacers: {"en_us": `Steam Quarry ${en_usPlacer}`},
+        langBoxes: {"en_us": `Steam Quarry ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['vacuum_freezer', 'vacuum_freezer'],
+        langPlacers: {"en_us": `Vacuum Freezer ${en_usPlacer}`},
+        langBoxes: {"en_us": `Vacuum Freezer ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
     }
 ]
 
@@ -168,7 +324,7 @@ definitelyUniqueNameForIETemplatesList.forEach(name => {
         parentModel: "kubejs:block/box_closed",
         lang: name.langPlacers
     })
-    global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime[`kubejs:${nameString}_placer`] = `immersiveengineering:${itemName}`
+    global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime[`kubejs:${nameString}_placer`] = `${name.mod}:${itemName}`
     createNewBlock(`${nameString}_empty_box`, {
         blockType: "cardinal",
         defaultCutout: true,
@@ -181,7 +337,7 @@ definitelyUniqueNameForIETemplatesList.forEach(name => {
         noDrops: true,
         lang: name.langBoxes
     })
-    global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `immersiveengineering:${itemName}`
+    global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `${name.mod}:${itemName}`
 });
 
 /*JSONs shenanigans
@@ -211,7 +367,7 @@ ore_list.forEach(ore => {
 })
 
 definitelyUniqueNameForIETemplatesList.forEach(name => {
-    const [nameString, itemName] = Array.isArray(name) ? [name[0], name[1]] : [name, name]
+    const [nameString, itemName] = Array.isArray(name.name) ? [name.name[0], name.name[1]] : [name.name, name.name]
     const emiJsonPath = `kubejs/assets/emi/recipe/additions/${nameString}_placer.json`;
     const left = {
         "type": "item",
@@ -227,7 +383,7 @@ definitelyUniqueNameForIETemplatesList.forEach(name => {
         "type": "emi:world_interaction",
         "left":left,
         "right":right,
-        "output": `item:immersiveengineering:${itemName}`
+        "output": `item:${name.mod}:${itemName}`
     }
     JsonIO.write(emiJsonPath, JSON.stringify(Json, null, 2))
 }) 

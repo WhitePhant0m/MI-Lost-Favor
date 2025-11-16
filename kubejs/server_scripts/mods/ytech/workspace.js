@@ -722,6 +722,15 @@ ServerEvents.recipes(event => {
     )
 
     workspace_recipe([
+            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P"),
+            ['   ','   ','   '].layerSides("S").layerCorners("R").layerCentre("C"),
+            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P")
+        ],
+        {S:'immersiveengineering:basic_engineering', R:'modern_industrialization:steel_rod', P:"modern_industrialization:steel_plate", C:"modern_industrialization:analog_circuit"},
+        'modern_industrialization:multiblock_packer_3000_safety_regulations_edition', {} , "immersiveengineering:hammer"
+    )
+
+    workspace_recipe([
             [' B ',' B ',' B '],
             ['   ',' I ','   '],
             ['   ',' P ','   '].layerCorners("b").layerSides("R")

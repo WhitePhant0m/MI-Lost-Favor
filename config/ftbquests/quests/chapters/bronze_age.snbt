@@ -436,7 +436,7 @@
 			}
 			id: "161C42408B4B034C"
 			shape: "octagon"
-			size: 1.0d
+			size: 2.0d
 			tasks: [
 				{
 					id: "3E6005E9FF8E8AAA"
@@ -646,14 +646,12 @@
 			y: 11.5d
 		}
 		{
-			dependencies: [
-				"3E2B5BE100E180C6"
-				"11DDFA1D0917DD5B"
-			]
+			dependencies: ["11DDFA1D0917DD5B"]
 			icon: {
 				id: "immersiveengineering:metal_press"
 			}
 			id: "570E4E47D3CBC937"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "3504CB725C48695D"
@@ -701,7 +699,7 @@
 					type: "item"
 				}
 			]
-			x: -15.0d
+			x: -14.5d
 			y: 3.0d
 		}
 		{
@@ -728,9 +726,13 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["47BB1661B5D6E3C7"]
+			dependencies: [
+				"47BB1661B5D6E3C7"
+				"570E4E47D3CBC937"
+			]
 			hide_dependency_lines: true
 			id: "3E2B5BE100E180C6"
+			shape: "pentagon"
 			tasks: [
 				{
 					id: "586916631E4D5FC2"
@@ -758,7 +760,7 @@
 					type: "item"
 				}
 			]
-			x: -16.0d
+			x: -15.5d
 			y: 3.0d
 		}
 		{
@@ -767,6 +769,7 @@
 				id: "immersiveengineering:crusher"
 			}
 			id: "6290C234D1AD169B"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "47B5A5F86CD655DD"
@@ -816,7 +819,7 @@
 					type: "item"
 				}
 			]
-			x: -14.5d
+			x: -14.0d
 			y: 5.0d
 		}
 		{
@@ -838,6 +841,7 @@
 				id: "immersiveengineering:refinery"
 			}
 			id: "5EB3607AEB955B3C"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "08FBCADAC116E054"
@@ -903,6 +907,7 @@
 				id: "immersiveengineering:fermenter"
 			}
 			id: "4FEBFA4078794109"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "39EA56FAD91B4656"
@@ -959,8 +964,8 @@
 					type: "item"
 				}
 			]
-			x: -11.0d
-			y: 8.0d
+			x: -11.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["11DDFA1D0917DD5B"]
@@ -968,6 +973,7 @@
 				id: "immersiveengineering:squeezer"
 			}
 			id: "1045516B7695F372"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "47F3AB6C0652852E"
@@ -1030,8 +1036,8 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: 8.0d
+			x: -7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["19276F81270ABB80"]
@@ -1060,6 +1066,7 @@
 		}
 		{
 			dependencies: ["34CA5E0E7D5FC05A"]
+			hide_dependent_lines: true
 			id: "1BCEB13A38CE4D8E"
 			shape: "diamond"
 			tasks: [{
@@ -1310,6 +1317,7 @@
 				id: "immersiveengineering:bottling_machine"
 			}
 			id: "686F439E21ED2A67"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "7245426D0154BD0D"
@@ -1333,6 +1341,7 @@
 				"1045516B7695F372"
 			]
 			id: "3949CA8B16B83F73"
+			shape: "pentagon"
 			tasks: [{
 				count: 3L
 				id: "76DA12CEF72DC70B"
@@ -1492,6 +1501,7 @@
 				id: "immersiveengineering:tank"
 			}
 			id: "4EF8906CE102966A"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "390F3D9699D1CD10"
@@ -1521,7 +1531,7 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
+			x: -5.0d
 			y: 5.0d
 		}
 		{
@@ -2267,13 +2277,13 @@
 		{
 			dependencies: ["11DDFA1D0917DD5B"]
 			id: "1985027AD76FCC23"
-			shape: "heart"
+			shape: "rsquare"
 			tasks: [{
 				id: "008215D5DBD6E6F9"
 				item: { count: 1, id: "immersiveengineering:toolbox" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.5d
 			y: 3.0d
 		}
 		{
@@ -2282,6 +2292,7 @@
 				"4FEBFA4078794109"
 			]
 			id: "7E9E2A5C08A03089"
+			shape: "pentagon"
 			tasks: [{
 				id: "09A39061218A5A05"
 				item: { count: 1, id: "immersiveengineering:biodiesel_bucket" }
@@ -2429,17 +2440,6 @@
 			}]
 			x: -17.0d
 			y: 10.0d
-		}
-		{
-			dependencies: ["161C42408B4B034C"]
-			id: "29A43713F3DD703F"
-			shape: "rsquare"
-			tasks: [{
-				id: "068F277A6EC195B3"
-				type: "checkmark"
-			}]
-			x: -9.5d
-			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -3106,7 +3106,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["41E80F2D1521D52D"]
@@ -3118,7 +3118,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -3131,7 +3131,7 @@
 				type: "item"
 			}]
 			x: -9.5d
-			y: 9.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["41E80F2D1521D52D"]
@@ -3143,7 +3143,7 @@
 				type: "item"
 			}]
 			x: -9.5d
-			y: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["41E80F2D1521D52D"]
@@ -3155,7 +3155,7 @@
 				type: "item"
 			}]
 			x: -9.5d
-			y: 11.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -3167,7 +3167,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -3179,7 +3179,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 12.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -3191,7 +3191,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -3203,18 +3203,19 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 12.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
 			id: "7C1EEA75AB2EF2C9"
+			shape: "rsquare"
 			tasks: [{
 				id: "2E0890A56E14DBC2"
 				item: { count: 1, id: "immersiveengineering:connector_bundled" }
 				type: "item"
 			}]
 			x: -9.5d
-			y: 13.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["7C1EEA75AB2EF2C9"]
@@ -3226,7 +3227,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 14.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -3238,7 +3239,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: 11.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -3250,7 +3251,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: 11.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6EEFEB5DD10A329D"]
@@ -3262,7 +3263,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 14.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["7C1EEA75AB2EF2C9"]
@@ -3274,7 +3275,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 14.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["764B69FBE4283FD9"]
@@ -3286,7 +3287,7 @@
 				type: "item"
 			}]
 			x: -9.5d
-			y: 15.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["3D0E6086BCC4B89C"]
@@ -3298,7 +3299,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: 14.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -3467,6 +3468,37 @@
 			}]
 			x: 5.0d
 			y: 12.5d
+		}
+		{
+			dependencies: ["11DDFA1D0917DD5B"]
+			id: "79CE5FF7EB605456"
+			rewards: [
+				{
+					id: "477411EB25669240"
+					item: {
+						count: 1
+						id: "kubejs:saeta_plush"
+					}
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					icon: {
+						id: "kubejs:vacuum_freezer_placer"
+					}
+					id: "5BA06D58446F6FDD"
+					type: "custom"
+				}
+			]
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "5803852FB47F6DA6"
+				item: { count: 1, id: "modern_industrialization:multiblock_packer_3000_safety_regulations_edition" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 8.5d
 		}
 	]
 }

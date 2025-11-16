@@ -69,9 +69,9 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
-            [{ "tag": "c:plates/aluminum" }, 4],
+            [{ "tag": "c:plates/battery_alloy" }, 4],
             [{ "item": "modern_industrialization:analog_circuit" }, 1],
-            [{ "item": "modern_industrialization:aluminum_curved_plate" }, 2],
+            [{ "item": "modern_industrialization:battery_alloy_curved_plate" }, 2],
             [{ "item": "modern_industrialization:tin_cable"}, 2],
         ],
         { "item": "modern_industrialization:portable_storage_unit" },
