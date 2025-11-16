@@ -89,9 +89,17 @@ BlockEvents.rightClicked(BOX_BLOCKS, event => {
     }
 })
 
-function handlePreview(event, template, playerStructureData, blockStructureData){
+function handlePreview(/**@type {$BlockRightClickedKubeEvent_} */ event, template, playerStructureData, blockStructureData){
     if (event.player.isCrouching()) {
-        removePreview(event, blockStructureData)
+        if(event.block.getProperties().enabled == "true") {
+            let { boxPos } = blockStructureData
+            removePreview(event, blockStructureData)
+            event.server.runCommandSilent(`playsound block.bamboo.break block @p ${boxPos.x} ${boxPos.y} ${boxPos.z}`)
+        }
+        event.cancel()
+        return
+    }
+    if(event.block.getProperties().enabled == "true" && event.block.getProperties().facing == event.player.getHorizontalFacing()) {
         event.cancel()
         return
     }
@@ -122,7 +130,7 @@ function handlePlacement(event, template, modName, playerStructureData, blockStr
     placeStructure(event, template, modName, blockStructureData)
 }
 
-function placeStructure(event, template, modName, blockStructureData){
+function placeStructure(/**@type {$BlockRightClickedKubeEvent_} */ event, template, modName, blockStructureData){
     const { blockPosRelativeStart, facing } = blockStructureData
     event.block.set(event.block.id.toString().slice(0,-7) + "_empty_box", Object.assign({}, event.block.getProperties(), {enabled:false}))
     event.server.runCommandSilent(`playsound block.anvil.land block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
@@ -150,10 +158,17 @@ function placeStructure(event, template, modName, blockStructureData){
                             machineOrientation.facingDirection = Direction.SOUTH
                             break;
                     }
+                    if (event.block.getProperties().machine_shape) {
+                        let entityData = event.getLevel().getBlock(blockPosRelativeStart.offset(rotatedVec3i)).entityData
+                        let machineShape = parseInt(event.block.getProperties().machine_shape)
+                        event.getLevel().getBlock(blockPosRelativeStart.offset(rotatedVec3i)).setEntityData(Object.assign({}, entityData, {activeShape: machineShape})) 
+                    }
                     blockEntity.setChanged();
                     blockEntity.sync();
                 }
+
             }
+
         }
     }
 }

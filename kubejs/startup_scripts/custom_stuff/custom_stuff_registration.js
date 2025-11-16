@@ -1,5 +1,17 @@
 //priority: 1000
+/** @type {typeof import("net.minecraft.world.level.block.state.properties.EnumProperty").$EnumProperty } */
+let $EnumProperty  = Java.loadClass("net.minecraft.world.level.block.state.properties.EnumProperty")
+/** @type {typeof import("net.minecraft.world.level.block.state.properties.IntegerProperty").$IntegerProperty } */
+let $IntegerProperty  = Java.loadClass("net.minecraft.world.level.block.state.properties.IntegerProperty")
+/** @type {typeof import("net.minecraft.world.level.block.state.properties.BooleanProperty").$BooleanProperty } */
+let $BooleanProperty  = Java.loadClass("net.minecraft.world.level.block.state.properties.BooleanProperty")
 global.langCustomStuff = global.langCustomStuff || {}
+
+const enabledProperty = $BooleanProperty.create("enabled")
+//const activeMachineShapeProperty  = $EnumProperty.create("shape", "String",["0", "1", "2", "3", "4"])
+const activeMachineShapeProperty  = $IntegerProperty.create("machine_shape", 0, 4)
+
+
 function createNewItem(id, args) {
     args = args || {}
     StartupEvents.registry('item', event => {
@@ -43,7 +55,8 @@ function createNewBlock(id, args) {
         args.noDrops && block.noDrops()
         args.notSolid && block.notSolid()
         args.waterlogged && block.waterlogged()
-        args.property && block.property(args.property)
+        //args.property && block.property(args.property)
+        args.property && (!Array.isArray(args.property) ? block.property(args.property) : args.property.forEach(property => { block.property(property)}))
         if (args.defaultState) {
             block.defaultState(state => {
                 args.defaultState.cycle && state.cycle(args.defaultState.cycle)
