@@ -108,6 +108,24 @@ ServerEvents.recipes(event => {
         [{ "id": 'moderndynamics:filter' }, 2]
     );
 
+    anvil_recipe(
+        [
+            [{ "item": "minecraft:glass" }, 2],
+            [{ "item": "modern_industrialization:copper_plate" }, 4]
+        ],
+        [{ "id": 'moderndynamics:fluid_pipe' }, 16]
+
+    );
+
+    anvil_recipe(
+        [
+            [{ "item": "minecraft:glass" }, 2],
+            [{ "item": "modern_industrialization:iron_plate" }, 4]
+        ],
+        [{ "id": 'moderndynamics:item_pipe' }, 16]
+
+    );
+
     //#region mi stuff
 
     anvil_recipe(

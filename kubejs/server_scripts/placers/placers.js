@@ -4,10 +4,12 @@ const $ChunkDimPos = Java.loadClass("dev.ftb.mods.ftblibrary.math.ChunkDimPos")
 /**@type {Object} */ const placerBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime)
 /**@type {Object} */ const boxBlocks = Object.keys(global.AnotherDefinitelyUniqueNameForBoxes)
 
+const placerBlocksMap = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime
+const boxBlocksMap = global.AnotherDefinitelyUniqueNameForBoxes
 
 const angleToFacing = {
-    0:"east",90:"north",180:"west",270:"south",
-    "east":0,"north":90,"west":180,"south":270
+    270:"east",0:"north",90:"west",180:"south",
+    "east":270,"north":0,"west":90,"south":180
 }
 
 const defaultNotificationStyle = {
@@ -39,7 +41,8 @@ BlockEvents.rightClicked(placerBlocks, event => {
 
     //#region variables
     const templateName = event.block.getId().toString().slice(7, -7)
-    const template = NBTIO.read(`kubejs/data/immersiveengineering/structure/multiblocks/${templateName}.nbt`)
+    const modName = placerBlocksMap[event.block.getId().toString()].split(':')[0]
+    const template = NBTIO.read(`kubejs/data/${modName}/structure/multiblocks/${templateName}.nbt`)
     const playerFacing = event.player.getHorizontalFacing()
     const blockFacing = event.block.getProperties().facing
 
@@ -49,13 +52,13 @@ BlockEvents.rightClicked(placerBlocks, event => {
     const blockAngle = angleToFacing[blockFacing]
     const blockAngleRad = blockAngle * (Math.PI / 180)
 
-    const structureVec3i = Vec3i(template.size[0], template.size[1], template.size[2])
+    /**@type {$Vec3i_} */ const structureVec3i = Vec3i(template.size[0], template.size[1], template.size[2])
     const structureVec3irotated_player = rotateVec3i(structureVec3i, angleRad)
     const structureVec3irotated_block = rotateVec3i(structureVec3i, blockAngleRad)
     const structureX_player = structureVec3irotated_player.getX(), structureY_player = structureVec3irotated_player.getY(), structureZ_player = structureVec3irotated_player.getZ()
     const structureX_block = structureVec3irotated_block.getX(), structureY_block = structureVec3irotated_block.getY(), structureZ_block = structureVec3irotated_block.getZ()
 
-    const offsetVec3i = new Vec3i(1,0,0)
+    const offsetVec3i = new Vec3i(-Math.floor(structureVec3i.getX() / 2), 0, -structureVec3i.getZ())
     const blockPos = event.block.getPos()
     const blockPos_player = blockPos.offset(rotateVec3i(offsetVec3i, angleRad))
     const blockPos_block = blockPos.offset(rotateVec3i(offsetVec3i, blockAngleRad))
@@ -191,7 +194,33 @@ BlockEvents.rightClicked(placerBlocks, event => {
             if (String(blockProperties.north).slice(1, -1) === "true") {realProperties[directionRelativeTo("north", blockFacing)] = true}
 
             let block = Block.withProperties(blockID, realProperties)
+            //$OrientationComponent
+            //console.log(Block.entity(blockID));
             event.getLevel().setBlockAndUpdate(blockPos_block.offset(rotatedVec), block)
+            //console.log(event.getLevel().getBlockEntity(blockPos_block.offset(rotatedVec)));
+            if(modName == "modern_industrialization"){
+                let blockEntity = event.getLevel().getBlockEntity(blockPos_block.offset(rotatedVec))
+                if (blockEntity != null){
+                    blockEntity.placedBy.placerId = event.player.uuid
+                    let machineOrientation = blockEntity.orientation
+                    switch (directionRelativeTo("south", blockFacing)) {
+                        case "east":
+                            machineOrientation.facingDirection = Direction.EAST
+                            break;
+                        case "north":
+                            machineOrientation.facingDirection = Direction.NORTH
+                            break;
+                        case "west":
+                            machineOrientation.facingDirection = Direction.WEST
+                            break;
+                        case "south":
+                            machineOrientation.facingDirection = Direction.SOUTH
+                            break;
+                    }
+                    blockEntity.setChanged();
+                    blockEntity.sync();
+                }
+            }
         }
         //console.log(event.block.id);
         event.block.set(event.block.id.toString().slice(0,-7) + "_empty_box", Object.assign({}, event.block.getProperties(), {enabled:false}))
@@ -205,7 +234,8 @@ BlockEvents.rightClicked(boxBlocks, event => {
     if(event.getHand()=="OFF_HAND") event.cancel()
     if(!event.player.mainHandItem.isEmpty() || !event.player.isCrouching()) event.cancel()
     const templateName = event.block.getId().toString().slice(7, -10)
-    const template = NBTIO.read(`kubejs/data/immersiveengineering/structure/multiblocks/${templateName}.nbt`)
+    const template = NBTIO.read(`kubejs/data/${boxBlocksMap[event.block.getId().toString()].split(':')[0]}/structure/multiblocks/${templateName}.nbt`)
+    const modName = boxBlocksMap[event.block.getId().toString()].split(':')[0]
 
     const blockFacing = event.block.getProperties().facing
 
@@ -215,8 +245,7 @@ BlockEvents.rightClicked(boxBlocks, event => {
     const structureVec3i = Vec3i(template.size[0], template.size[1], template.size[2])
     const structureVec3irotated_block = rotateVec3i(structureVec3i, blockAngleRad)
     const structureX_block = structureVec3irotated_block.getX(), structureY_block = structureVec3irotated_block.getY(), structureZ_block = structureVec3irotated_block.getZ()
-
-    const offsetVec3i = new Vec3i(1,0,0)
+    const offsetVec3i = new Vec3i(-Math.floor(structureVec3i.getX() / 2), 0, -structureVec3i.getZ())
     const blockPos = event.block.getPos()
     const blockPos_block = blockPos.offset(rotateVec3i(offsetVec3i, blockAngleRad))
 
@@ -241,8 +270,9 @@ BlockEvents.rightClicked(boxBlocks, event => {
         if (String(blockProperties.south).slice(1, -1) === "true") {realProperties[directionRelativeTo("south", blockFacing)] = true}
         if (String(blockProperties.north).slice(1, -1) === "true") {realProperties[directionRelativeTo("north", blockFacing)] = true}
 
-        let block = Block.withProperties(blockID, realProperties)
-        if(event.getLevel().getBlock(blockPos_block.offset(rotatedVec)).getBlockState() != block) {
+        let nbtBlock = Block.withProperties(blockID, realProperties)
+        let realBlock = event.getLevel().getBlock(blockPos_block.offset(rotatedVec)).getBlockState()
+        if (realBlock != nbtBlock && (modName != "immersiveengineering" || realBlock.block.id != boxBlocksMap[event.block.getId().toString()])) {
             canRemove = false
             event.getLevel().spawnParticles("minecraft:gust", false, blockPos_block.offset(rotatedVec).getX() + 0.5, blockPos_block.offset(rotatedVec).getY() + 0.5, blockPos_block.offset(rotatedVec).getZ() + 0.5, 0.2, 0.2, 0.2, 1, 0)
         }
@@ -253,11 +283,16 @@ BlockEvents.rightClicked(boxBlocks, event => {
         event.cancel()
     }
     event.block.set(event.block.id.toString().slice(0,-10) + "_placer", Object.assign({}, event.block.getProperties(), {enabled:false}))
-    event.server.runCommandSilent(`fill ${x_block} ${y_block} ${z_block} ${x_block + structureX_block} ${y_block + structureY_block} ${z_block + structureZ_block} air replace`)
+    
+    //event.server.runCommandSilent(`fill ${x_block} ${y_block} ${z_block} ${x_block + structureX_block} ${y_block + structureY_block} ${z_block + structureZ_block} air replace`)
+    //console.log(structureVec3irotated_block);
+    BlockPos.betweenClosedStream(new BlockPos(blockPos_block), new BlockPos(blockPos_block.offset(structureVec3irotated_block).offset(rotateVec3i(new Vec3i(-1,-1,-1), blockAngleRad)))).forEach(pos => {
+        event.level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3)
+    })
     event.server.runCommandSilent(`playsound block.bamboo.break block @p ${x_block} ${y_block} ${z_block}`)
     particleFrame("minecraft:instant_effect", {x:x_block,y:y_block,z:z_block}, {x:structureX_block,y:structureY_block,z:structureZ_block}, event)
 })
-
+/**@returns {$Vec3i_} */ 
 function rotateVec3i(vec3i, angle){
     return Vec3i(Math.round(vec3i.getX() * Math.cos(angle) + vec3i.getZ() * Math.sin(angle)), vec3i.getY(), Math.round(-vec3i.getX() * Math.sin(angle) + vec3i.getZ() * Math.cos(angle)))
 }
@@ -316,7 +351,7 @@ function directionRelativeTo(direction, to){
 
 BlockEvents.broken(placerBlocks, event => {
     const templateName = event.block.getId().toString().slice(7, -7)
-    const template = NBTIO.read(`kubejs/data/immersiveengineering/structure/multiblocks/${templateName}.nbt`)
+    const template = NBTIO.read(`kubejs/data/${placerBlocksMap[event.block.getId().toString()].split(':')[0]}/structure/multiblocks/${templateName}.nbt`)
 
     const blockFacing = event.block.getProperties().facing
     const blockAngle = angleToFacing[blockFacing]
@@ -326,7 +361,7 @@ BlockEvents.broken(placerBlocks, event => {
     const structureVec3irotated_block = rotateVec3i(structureVec3i, blockAngleRad)
     const structureX_block = structureVec3irotated_block.getX(), structureY_block = structureVec3irotated_block.getY(), structureZ_block = structureVec3irotated_block.getZ()
 
-    const offsetVec3i = new Vec3i(1,0,0)
+    const offsetVec3i = new Vec3i(-Math.floor(structureVec3i.getX() / 2), 0, -structureVec3i.getZ())
     const blockPos_block = event.block.getPos().offset(rotateVec3i(offsetVec3i, blockAngleRad))
 
     const x_block = blockPos_block.getX(), y_block = blockPos_block.getY(), z_block= blockPos_block.getZ()

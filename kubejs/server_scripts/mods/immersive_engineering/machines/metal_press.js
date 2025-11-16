@@ -19,6 +19,7 @@ const iePressCraft = (event, args) => {
     }
     if(!args.compatOff){
         let machine = "modern_industrialization:packer"
+        let miInputs = args.inputItems
         switch (args.mold.item) {
             case "immersiveengineering:mold_unpacking":
                 machine = "modern_industrialization:unpacker"
@@ -34,13 +35,15 @@ const iePressCraft = (event, args) => {
                 break;
             case "immersiveengineering:mold_packing_9":
                 machine = "modern_industrialization:packer"
+                miInputs.concat([[args.mold, 1, 0]])
                 break;
             case "immersiveengineering:mold_packing_4":
                 machine = "modern_industrialization:packer"
+                miInputs.concat([[args.mold, 1, 0]])
                 break;
         }
         miMachineCraft(event, {energy:2, time:200, machine:machine,
-            inputItems:args.inputItems.concat([[args.mold, 1, 0]]),
+            inputItems:miInputs,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]]
         })
     }

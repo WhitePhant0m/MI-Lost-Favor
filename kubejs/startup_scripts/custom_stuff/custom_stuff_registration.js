@@ -97,7 +97,7 @@ createNewItem('table_core', {rarity: 'rare', lang: { "en_us": "Table Core", "ru_
 createNewItem('onyx_table_core', {rarity: 'rare', lang: { "ru_ru": "Ониксовое Ядро Стола" } })
 createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Луннокаменное Ядро Стола" } })
 createNewItem('dev_pen')
-
+createNewItem('destruction_pen')
 //#endregion
 
 //#region Ytech stuff

@@ -722,6 +722,15 @@ ServerEvents.recipes(event => {
     )
 
     workspace_recipe([
+            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P"),
+            ['   ','   ','   '].layerSides("S").layerCorners("R").layerCentre("C"),
+            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P")
+        ],
+        {S:'immersiveengineering:basic_engineering', R:'modern_industrialization:steel_rod', P:"modern_industrialization:steel_plate", C:"modern_industrialization:analog_circuit"},
+        'modern_industrialization:multiblock_packer_3000_safety_regulations_edition', {} , "immersiveengineering:hammer"
+    )
+
+    workspace_recipe([
             [' B ',' B ',' B '],
             ['   ',' I ','   '],
             ['   ',' P ','   '].layerCorners("b").layerSides("R")
@@ -881,6 +890,24 @@ ServerEvents.recipes(event => {
         ],
         {B:'ytech:terracotta_bricks', A:"ytech:aqueduct_hydrator", S:"ytech:wooden_box", s:"ytech:terracotta_aqueduct"},
         'ytech:aqueduct_fertilizer', {} , "#c:hammers", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("s"),
+            ['   ','   ','   '].layerAll("P").layerCentre("S").layerCorners("n"),
+            ['   ','   ','   '].layerAll("P").layerCorners("n")
+        ],
+        {P:'#minecraft:planks', s:"#minecraft:wooden_slabs", S:"ytech:wooden_box", n:"minecraft:iron_nugget"},
+        'minecraft:barrel', {} , "#c:hammers", true
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerAll("s"),
+            ['   ','   ','   '].layerCentre("S"),
+            ['   ','   ','   '].layerAll("s").layerCentre("S").layerSides("C").layerFront("T").layerBack("T")
+        ],
+        {s:"#minecraft:wooden_slabs", S:"minecraft:stick", C:"minecraft:copper_ingot", T:"modern_industrialization:tin_ingot"},
+        'ytech:potters_wheel', {} , "#c:hammers", true
     )
     //#endregion
 

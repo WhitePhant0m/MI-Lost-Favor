@@ -52,18 +52,3 @@ ItemEvents.firstRightClicked("kubejs:dev_pen", event => {
     mode %= 3
 })
 
-let $RenderType = Java.loadClass("net.minecraft.client.renderer.RenderType")
-let $Stage = Java.loadClass("net.neoforged.neoforge.client.event.RenderLevelStageEvent$Stage")
-NativeEvents.onEvent("net.neoforged.neoforge.client.event.RenderLevelStageEvent", event => {
-    if (mode == 0) return
-    if (event.getStage() == $Stage.AFTER_TRIPWIRE_BLOCKS) {
-        let camera = Client.gameRenderer.getMainCamera().getPosition()
-        let posestack = event.getPoseStack()
-        let vertexConsumer = Client.renderBuffers().bufferSource().getBuffer($RenderType.lines())
-        posestack.pushPose()
-        posestack.translate(-camera.x(), -camera.y(), -camera.z())
-        event.levelRenderer.renderLineBox(posestack, vertexConsumer, aabb, 1, 0.2, 0.2, 100)
-        posestack.popPose()
-    }
-})
-
