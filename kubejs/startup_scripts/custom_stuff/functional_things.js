@@ -1,5 +1,4 @@
 //priority: 100
-const $BooleanProperty = Java.loadClass("net.minecraft.world.level.block.state.properties.BooleanProperty")
 const en_usPlacer = "Placer"
 const en_usEmptyBox = "Empty Box"
 const ru_ruPlacer = "Установщик"
@@ -145,13 +144,15 @@ const definitelyUniqueNameForIETemplatesList = [
         name: ['electric_blast_furnace_cupronickel', 'electric_blast_furnace'],
         langPlacers: {"en_us": `Electric Blast Furnace Cupronickel ${en_usPlacer}`},
         langBoxes: {"en_us": `Electric Blast Furnace Cupronickel ${en_usEmptyBox}`},
-        mod:"modern_industrialization"
+        mod:"modern_industrialization",
+        activeMachineShape:0
     },
     {
         name: ['electric_blast_furnace_kanthal', 'electric_blast_furnace'],
         langPlacers: {"en_us": `Electric Blast Furnace Kanthal ${en_usPlacer}`},
         langBoxes: {"en_us": `Electric Blast Furnace Kanthal ${en_usEmptyBox}`},
-        mod:"modern_industrialization"
+        mod:"modern_industrialization",
+        activeMachineShape:1
     },
     {
         name: ['electric_quarry', 'electric_quarry'],
@@ -205,25 +206,29 @@ const definitelyUniqueNameForIETemplatesList = [
         name: ['nuclear_reactor_extreme', 'nuclear_reactor'],
         langPlacers: {"en_us": `Nuclear Reactor Extreme ${en_usPlacer}`},
         langBoxes: {"en_us": `Nuclear Reactor Extreme ${en_usEmptyBox}`},
-        mod:"modern_industrialization"
+        mod:"modern_industrialization",
+        activeMachineShape:3
     },
     {
         name: ['nuclear_reactor_large', 'nuclear_reactor'],
         langPlacers: {"en_us": `Nuclear Reactor Large ${en_usPlacer}`},
         langBoxes: {"en_us": `Nuclear Reactor Large ${en_usEmptyBox}`},
-        mod:"modern_industrialization"
+        mod:"modern_industrialization",
+        activeMachineShape:2
     },
     {
         name: ['nuclear_reactor_medium', 'nuclear_reactor'],
         langPlacers: {"en_us": `Nuclear Reactor Medium ${en_usPlacer}`},
         langBoxes: {"en_us": `Nuclear Reactor Medium ${en_usEmptyBox}`},
-        mod:"modern_industrialization"
+        mod:"modern_industrialization",
+        activeMachineShape:1
     },
     {
         name: ['nuclear_reactor_small', 'nuclear_reactor'],
         langPlacers: {"en_us": `Nuclear Reactor Small ${en_usPlacer}`},
         langBoxes: {"en_us": `Nuclear Reactor Small ${en_usEmptyBox}`},
-        mod:"modern_industrialization"
+        mod:"modern_industrialization",
+        activeMachineShape:0
     },
     {
         name: ['oil_drilling_rig', 'oil_drilling_rig'],
@@ -295,8 +300,6 @@ const ore_list = [
 global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime || {}
 global.AnotherDefinitelyUniqueNameForBoxes = global.AnotherDefinitelyUniqueNameForBoxes || {}
 
-const enabledProperty = $BooleanProperty.create("enabled")
-
 createNewBlock("chunk_flag", { property: enabledProperty, box: [5, 0, 5, 11, 1, 11, true], defaultCutout: true, lang: { "en_us": "Chunk flag", "ru_ru": "Флаг чанка" }})
 
 ore_list.forEach(ore => {
@@ -311,33 +314,33 @@ ore_list.forEach(ore => {
     })
 });
 
-definitelyUniqueNameForIETemplatesList.forEach(name => {
-    const [nameString, itemName] = Array.isArray(name.name) ? [name.name[0], name.name[1]] : [name.name, name.name]
+definitelyUniqueNameForIETemplatesList.forEach(template => {
+    const [nameString, itemName] = Array.isArray(template.name) ? [template.name[0], template.name[1]] : [template.name, template.name]
     createNewBlock(`${nameString}_placer`, {
         blockType: "cardinal",
         defaultCutout: true,
         box: [2, 0, 1, 14, 9, 15, true],
         soundType: 'bamboo',
         tagBlock: "milf:placers",
-        property: enabledProperty,
-        defaultState: { cycle: enabledProperty },
+        property: (template.activeMachineShape == undefined ? enabledProperty : [enabledProperty, activeMachineShapeProperty]),
+        defaultState: (template.activeMachineShape == undefined ? { cycle: enabledProperty } : { cycle: enabledProperty , setProperty:{property:activeMachineShapeProperty, value:template.activeMachineShape}}),
         parentModel: "kubejs:block/box_closed",
-        lang: name.langPlacers
+        lang: template.langPlacers
     })
-    global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime[`kubejs:${nameString}_placer`] = `${name.mod}:${itemName}`
+    global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime[`kubejs:${nameString}_placer`] = `${template.mod}:${itemName}`
     createNewBlock(`${nameString}_empty_box`, {
         blockType: "cardinal",
         defaultCutout: true,
         box: [2, 0, 1, 14, 9, 15, true],
         soundType: 'bamboo',
         tagBlock: "milf:empty_box",
-        property: enabledProperty,
-        defaultState: { cycle: enabledProperty },
+        property: (template.activeMachineShape == undefined ? enabledProperty : [enabledProperty, activeMachineShapeProperty]),
+        defaultState: (template.activeMachineShape == undefined ? { cycle: enabledProperty } : { cycle: enabledProperty , setProperty:{property:activeMachineShapeProperty, value:template.activeMachineShape}}),
         parentModel: "kubejs:block/box_open",
         noDrops: true,
-        lang: name.langBoxes
+        lang: template.langBoxes
     })
-    global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `${name.mod}:${itemName}`
+    global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `${template.mod}:${itemName}`
 });
 
 /*JSONs shenanigans
