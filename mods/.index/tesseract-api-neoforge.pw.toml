@@ -1,4 +1,4 @@
-filename = 'tesseract-api-neoforge-1.9.3-1.21.1.jar'
+filename = 'tesseract-api-neoforge-1.10.3-1.21.1.jar'
 name = 'Tesseract API'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '2bf418e495acb65a0b4b0e399ec87891b6a53136'
+hash = 'c342c1c2c62ac98a2159a908cea4ba61a74bc9ca'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7121587
+file-id = 7221296
 project-id = 1067672

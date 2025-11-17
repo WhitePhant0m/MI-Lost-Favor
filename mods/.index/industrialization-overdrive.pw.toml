@@ -1,16 +1,16 @@
-filename = 'hostile_neural_industrialization-1.0.10-1.21.1.jar'
-name = 'Hostile Neural Industrialization'
+filename = 'industrialization_overdrive-1.10.5+1.21.1.jar'
+name = 'Industrialization Overdrive'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'c794b45fdb54f10faf9c38d3ed3a41d0188abaf2'
+hash = '2618e8ca5e2affd654602d7ed339a5e9012357f5'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7219484
-project-id = 1312953
+file-id = 7195045
+project-id = 1089065
