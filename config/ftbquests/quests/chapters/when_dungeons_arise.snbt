@@ -2347,5 +2347,18 @@
 			x: -17.0d
 			y: 8.5d
 		}
+		{
+			id: "3C2C12DB2DD8AFE8"
+			tasks: [{
+				icon: {
+					id: "the_catamount:monstrous_skull"
+				}
+				id: "56051EC58E269FAB"
+				structure: "the_catamount:haunting_grounds"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: 12.5d
+		}
 	]
 }

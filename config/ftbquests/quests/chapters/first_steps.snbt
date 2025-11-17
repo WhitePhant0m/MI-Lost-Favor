@@ -263,7 +263,7 @@
 				item: { count: 1, id: "ytech:brick_mold" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.0d
 			y: -6.0d
 		}
 		{
@@ -276,7 +276,7 @@
 				item: { count: 1, id: "ytech:unfired_brick" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -303,7 +303,7 @@
 				item: { count: 1, id: "minecraft:furnace" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.0d
 			y: -2.0d
 		}
 		{
@@ -831,7 +831,7 @@
 				item: { count: 1, id: "ytech:stone_hammer" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 9.0d
 			y: -6.0d
 		}
 		{
@@ -920,8 +920,8 @@
 				to_observe: "ytech:aurochs"
 				type: "observation"
 			}]
-			x: -9.5d
-			y: -8.5d
+			x: 12.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["410F856A333A2FDF"]
@@ -934,8 +934,8 @@
 				to_observe: "ytech:mouflon"
 				type: "observation"
 			}]
-			x: -10.0d
-			y: -8.0d
+			x: 13.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["410F856A333A2FDF"]
@@ -948,8 +948,8 @@
 				to_observe: "ytech:fowl"
 				type: "observation"
 			}]
-			x: -9.0d
-			y: -8.0d
+			x: 13.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["410F856A333A2FDF"]
@@ -962,18 +962,18 @@
 				to_observe: "ytech:wild_boar"
 				type: "observation"
 			}]
-			x: -9.5d
-			y: -7.5d
+			x: 13.0d
+			y: -10.5d
 		}
 		{
-			dependencies: ["22F6F4D5CF2C2BE8"]
+			dependencies: ["68A22BD457DE7363"]
 			id: "410F856A333A2FDF"
 			tasks: [{
 				id: "274F98243AA9482F"
 				type: "checkmark"
 			}]
-			x: -7.5d
-			y: -8.0d
+			x: 13.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["0ACD0476CE4CAED1"]
@@ -984,8 +984,8 @@
 				item: { count: 1, id: "ytech:well_pulley" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -3.0d
+			x: 14.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["19F4ECE3B256B396"]
@@ -1040,10 +1040,7 @@
 			shape: "none"
 			tasks: [{
 				icon: {
-					components: {
-						"ftbquests:missing_item": "pastel:sheep_head"
-					}
-					id: "ftbquests:missing_item"
+					id: "pastel:sheep_head"
 				}
 				id: "21696546970F8CA4"
 				observe_type: 5
@@ -1051,8 +1048,8 @@
 				to_observe: "minecraft:sheep"
 				type: "observation"
 			}]
-			x: -11.0d
-			y: -8.0d
+			x: 13.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["745BE9DA293006D1"]
@@ -1621,8 +1618,8 @@
 				item: { count: 1, id: "ytech:divining_rod" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.5d
+			x: 15.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1670,8 +1667,8 @@
 				item: { count: 1, id: "ytech:terracotta_aqueduct" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -6.5d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7A4BF1F1B52D40F0"]
@@ -1704,8 +1701,8 @@
 				item: { count: 1, id: "ytech:aqueduct_valve" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -5.0d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0D3A5D8E30D4F371"]
@@ -1751,8 +1748,8 @@
 				item: { count: 1, id: "ytech:aqueduct_fertilizer" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: 13.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0ACD0476CE4CAED1"]
@@ -1762,8 +1759,8 @@
 				item: { count: 1, id: "ytech:aqueduct_hydrator" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -4.0d
+			x: 13.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["183336DC1AF8137B"]
@@ -1836,7 +1833,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["51E3EA7E70ECE842"]
+			dependencies: [
+				"51E3EA7E70ECE842"
+				"33C4EBFA08980E30"
+			]
 			id: "7DFBC74614BA7B57"
 			shape: "diamond"
 			tasks: [{
@@ -1897,6 +1897,18 @@
 			}]
 			x: 3.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["72BD3F0CD728C914"]
+			id: "68A22BD457DE7363"
+			tasks: [{
+				count: 8L
+				id: "0F53207FFCB0E0C6"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:crops)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -8.0d
 		}
 	]
 }

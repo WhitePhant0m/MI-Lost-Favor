@@ -39,7 +39,15 @@
 		""
 		"&#9BB8EDСпойлер&r: это не самый ранний этап, просто имей ввиду!"
 	]
-	quest.00DD7D7D33A1B40E.quest_desc: ["Passively produces various resources depending on mesh in it. Has to be placed in &9river&r or &9ocean&r biome."]
+	quest.00DD7D7D33A1B40E.quest_desc: [
+		"Passively produces various resources depending on mesh in it. Has to be placed in &9river&r or &9ocean&r biome."
+		""
+		"&#4EC847<fade>🛈 Strainer must be under falling water"
+		"{@pagebreak}"
+		"Пассивно производит различные ресурсы в зависимости от сетки внутри него. Должен быть размещен в &9речном&r или &9океанском&r биоме."
+		""
+		"&#4EC847<fade>🛈 Сито должно находится под текущей водой"
+	]
 	quest.01DA1F605860E4CB.quest_desc: [
 		"A torch, candelabra or candle can be an effective means of increasing your altar's recharge rate."
 		""
@@ -74,7 +82,11 @@
 		"Each ritual requires a different set of essences to start."
 	]
 	quest.0274D350ABE3F101.quest_desc: [
-		"Нужен чтобы указывать где пулли может добывать воду"
+		"Indicates the amount of water for a Well Pulley."
+		""
+		"Looking down gives more water, looking up gives less. "
+		"{@pagebreak}"
+		"Указывает на количество воды для ручного колодца."
 		""
 		"Смотрит в низ - даёт больше воды, вверх - меньше. "
 	]
@@ -123,14 +135,22 @@
 		"{@pagebreak}"
 		"Используя стеклянные флаконы, я могу создать контейнер, усиленный медью. Этот более крупный и тяжелый контейнер - ценная деталь. Предвестие грандиозного творения..."
 	]
-	quest.047487BFFB8421D5.quest_desc: ["Since the measuring unit is... literally all around you, it's much easier to produce an accurate tape measure"]
+	quest.047487BFFB8421D5.quest_desc: [
+		"Since the measuring unit is... literally all around you, it's much easier to produce an accurate tape measure"
+		"{@pagebreak}"
+		"Поскольку единица измерения находится буквально вокруг вас, гораздо проще изготовить точную рулетку."
+	]
 	quest.04914A341C6DBCC8.quest_desc: [
 		"&lCandelabra&r: "
 		"• +2x Recharge Rate"
 	]
 	quest.0501BDB7ED850B47.quest_desc: [""]
 	quest.051773C85A4FB2DF.quest_subtitle: "Kill golem for get charm"
-	quest.0528A7114DC06152.quest_desc: ["Gives a 1 to 2 ratio when chopping logs into planks, as opposed to the 1 to 1 in a crafting grid."]
+	quest.0528A7114DC06152.quest_desc: [
+		"Gives a 1 to 2 ratio when chopping logs into planks, as opposed to the 1 to 1 in a crafting grid."
+		"{@pagebreak}"
+		"При распиловке бревен на доски дает соотношение 1 к 2, в отличие от соотношения 1 к 1 в верстаке."
+	]
 	quest.056505A2F0A197CB.quest_desc: [
 		"Improve your final pedestal!"
 		""
@@ -167,7 +187,11 @@
 	]
 	quest.07B3FFC9267C5861.quest_desc: ["The Maledictus Pact Enhancer allows the creation of cursed items in the Hephaestus Forge. It can be found as loot in bastion treasure rooms with a chance of 18% per chest. "]
 	quest.07E78D29C898CE55.quest_desc: ["Wild sheep"]
-	quest.08136C156A331A52.quest_desc: ["A convenient way to store food. A lot of food. LMB to change mode, RMB with the closed one to change selected food, RMB with the opened one to eat said food"]
+	quest.08136C156A331A52.quest_desc: [
+		"A convenient way to store food. A lot of food. LMB to change mode, RMB with the closed one to change selected food, RMB with the opened one to eat said food"
+		"{@pagebreak}"
+		"Удобный способ хранения еды. Многооо еды. ЛКМ для смены режима, ПКМ с закрытым режимом для смены выбранной еды, ПКМ с открытым режимом для употребления указанной еды."
+	]
 	quest.083BEEC631645C14.quest_desc: ["Summon Possessed Bee with Ihagan's Enthrallment and kill"]
 	quest.085A58908A521A63.quest_desc: [
 		"The ancients lacked vision. They stopped at just blends without realizing what these poisons can really do. I've felt the changes. Every night I feel the toxins pulsing in my blood. I'm changing, I feel much stronger, feel more alert. Its revelating."
@@ -331,8 +355,16 @@
 		"Using a wrench, you can rotate any machine by right-clicking. You can rotate the output side by sneaking while you shift-click."
 		""
 		"Note that breaking a machine with the wrench will not drop it. Use a pickaxe for that!"
+		"{@pagebreak}"
+		"С помощью гаечного ключа можно поворачивать любую машину, щелкнув по ней ПКМ. Вы можете повернуть \"выход\" машины, используя шифт-клик."
+		""
+		"Обратите внимание, что разбивая машину гаечным ключом, вы не сможете ее получить. Для этого используйте кирку!"
 	]
-	quest.12EA2728AD90FABD.quest_desc: ["Can cook food. You can also light torches by Shift-clicking it"]
+	quest.12EA2728AD90FABD.quest_desc: [
+		"Can cook food. You can also light torches by Shift-clicking it"
+		"{@pagebreak}"
+		"Может готовить еду. Также можно зажигать факелы, нажав Shift и щелкнув по костру."
+	]
 	quest.13134EE8E1631EBB.quest_desc: ["PIPES"]
 	quest.137E20A86306BF4A.quest_desc: [
 		"&#b0620eNothing&r difficult, right? "
@@ -396,7 +428,11 @@
 		"{@pagebreak}"
 		"Я усовершенствовал состав масла усталости с помощью токсина и получил смесь способную, при резком изменении внутренней энергии, взрываться газом со свойствами предшественника."
 	]
-	quest.172C44614A53FAAF.quest_desc: ["Place an extractor on an item or fluid pipe to allow it to extract from adjacent inventories."]
+	quest.172C44614A53FAAF.quest_desc: [
+		"Place an extractor on an item or fluid pipe to allow it to extract from adjacent inventories."
+		"{@pagebreak}"
+		"Установите экстрактор на предметную или жидкостную трубу, чтобы он мог извлекать их из соседних инвентарей."
+	]
 	quest.173490A557431C56.quest_desc: [
 		"Some &#C6BCE9endermen&r appearing in your world hold blocks that seem to emit an &#ECB4B4spooky aura&r."
 		"{@pagebreak}"
@@ -407,7 +443,11 @@
 		"{@pagebreak}"
 		"Ничего такого, да? Просто кусочек бедрока."
 	]
-	quest.17A44FD7738F4496.quest_desc: ["Used to crush items to make them less intact"]
+	quest.17A44FD7738F4496.quest_desc: [
+		"Used to crush items to make them less intact"
+		"{@pagebreak}"
+		"Используется для измельчения предметов, чтобы сделать их менее целыми."
+	]
 	quest.1821E5AE238E165E.quest_desc: ["Преобразовывает разнообразные жидкости в сурс, *По хорошему добавить только пар -> сурс и удалить другие генераторы сурса*"]
 	quest.18238251518B54D5.quest_desc: ["123"]
 	quest.18238251518B54D5.title: "Chimmera Familiar"
@@ -446,6 +486,11 @@
 		"Лаванда: Регенерация"
 		"Рута: Увеличение скорости роста растений"
 	]
+	quest.19C9F5C94F3F8853.quest_desc: [
+		"If you need a lot of deer antlers, this is the best option available to you right now!"
+		"{@pagebreak}"
+		"Если вам понадобится много оленьих рогов это лучшее что вам пока что доступно!"
+	]
 	quest.19E126BBEF648662.quest_desc: [
 		"However, there is a catch to mutagens. Not all of them are the same, and the one I get greatly depends on the INGREDIENTS I CONSUME. As such when eating substances or making blends, I must be mindful of which ones I eat, as each ingredient contains an affinity for one aspect of the world that another may not share."
 		""
@@ -459,7 +504,11 @@
 		""
 		"Редстоун довольно чувствителен к токсинам, что можно понять из принципа работы измерителя токсичности. Но сначала я должен превратить его в смесь."
 	]
-	quest.19F4ECE3B256B396.quest_desc: ["Sharp as a needle... literally (and performs as one too)"]
+	quest.19F4ECE3B256B396.quest_desc: [
+		"Sharp as a needle... literally (and performs as one too)"
+		"{@pagebreak}"
+		"Острый как игла... в буквальном смысле (и работает так же)"
+	]
 	quest.1A144AF45E9C2525.quest_desc: [
 		"Collects items in a &bhuge radius&r, can also collect xp if a &9Knowledge Gem&r is inserted!"
 		""
@@ -519,6 +568,10 @@
 		"Turns ingots into rods and rods into bolts when provided with lubricant"
 		""
 		"PIPES"
+		"{@pagebreak}"
+		"Превращает слитки в стерниж, а стрежни в болты при наличии смазки."
+		""
+		"ТРУБЫ"
 	]
 	quest.1E4A4AD1899325D3.quest_subtitle: "Info about Plonk"
 	quest.1EE1B8261F4D85A0.quest_desc: ["Glowing for 30 seconds."]
@@ -527,7 +580,11 @@
 		"{@pagebreak}"
 		"Может использоваться для добычи чистых ресурсов, а также некоторых хрупких блоков."
 	]
-	quest.1F7DF0379C917C3B.quest_desc: ["Well, if it works, it works, i guess..."]
+	quest.1F7DF0379C917C3B.quest_desc: [
+		"Well, if it works, it works, i guess..."
+		"{@pagebreak}"
+		"Работает — и отлично, наверное."
+	]
 	quest.1FC26CA207964E0D.quest_desc: ["5 арканы в тотем"]
 	quest.1FD668D64C10EA51.quest_desc: ["You can create a Block Hole by throwing Dark Matter together with Corrupti Dust on the ground. It will attract items and small entities like Arrows or Experience Orbs and delete them. Once it absorbed enough experience points, it will throw out a Xpetrified Orb."]
 	quest.203B742A5DB473FA.quest_desc: ["Simply smash a piece of flint against a stone to sharpen it"]
@@ -565,7 +622,11 @@
 		"{@pagebreak}"
 		"&6Центрифуга&r, &4позволяет разделять&r различные ресурсы на другие"
 	]
-	quest.22F6F4D5CF2C2BE8.quest_desc: ["First things first, get some gravel to begin your journey, it'll surely be handy."]
+	quest.22F6F4D5CF2C2BE8.quest_desc: [
+		"First things first, get some gravel to begin your journey, it'll surely be handy."
+		"{@pagebreak}"
+		"Прежде всего, запаситесь гравием, чтобы начать свое путешествие, он вам обязательно пригодится."
+	]
 	quest.235EC6F66B8527EE.quest_desc: [
 		"You can generate clay using mud and liquid crystals."
 		"{@pagebreak}"
@@ -577,8 +638,16 @@
 		"{@pagebreak}"
 		"Буквально — &#DEB3E0Красочная ячейка&r, храни краски в баночках!"
 	]
-	quest.23D5012F534D8098.quest_desc: ["Provides storage and easy access to any type of tool you put inside it"]
-	quest.244621C9368A3934.quest_desc: ["One of the most important blocks in the modpack (until you find a way to perform such a human-dependent procedure via machinery *wink*) allows you to construct blocks from ingredients in a 3x3x3 grid"]
+	quest.23D5012F534D8098.quest_desc: [
+		"Provides storage and easy access to any type of tool you put inside it"
+		"{@pagebreak}"
+		"Обеспечивает хранение и легкий доступ к любому типу инструментов, которые вы помещаете внутрь"
+	]
+	quest.244621C9368A3934.quest_desc: [
+		"One of the most important blocks in the modpack (until you find a way to perform such a human-dependent procedure via machinery *wink*) allows you to construct blocks from ingredients in a 3x3x3 grid"
+		"{@pagebreak}"
+		"Один из самых важных блоков в модпаке (пока вы не придумаете, как автоматизировать такую ручную операцию *подмигнул*) позволяет создавать блоки из ингредиентов в сетке 3x3x3."
+	]
 	quest.244DB9331EEB5897.quest_desc: ["recolor armor"]
 	quest.24A65F3E0C177185.quest_desc: ["Drops from a poisoned slime."]
 	quest.24D1B4E69FDDF397.quest_desc: ["декор, можно объединить с любым предметом чтобы отображать его"]
@@ -609,7 +678,11 @@
 		"{@pagebreak}"
 		"Найдите заброшенный город в глубоких низинах"
 	]
-	quest.27DF75B7564C37A4.quest_desc: ["Place an attractor on an item pipe to allow it to pull from connected inventories. Place an attractor on a fluid pipe to increase the speed at which it pulls fluids from the network."]
+	quest.27DF75B7564C37A4.quest_desc: [
+		"Place an attractor on an item pipe to allow it to pull from connected inventories. Place an attractor on a fluid pipe to increase the speed at which it pulls fluids from the network."
+		"{@pagebreak}"
+		"Установите аттрактор на трубу для предметов, чтобы он мог извлекать предметы из подключенных инвентарей. Установите аттрактор на трубу для жидкостей, чтобы увеличить скорость извлечения жидкостей из сети."
+	]
 	quest.27F5E8BA17C7EA2E.quest_desc: [
 		"The eternal modifier is probably the strongest of the currently implemented modifiers. However, the advantage of completely removing durability from an item and making it truly eternal comes with a high cost: the ritual that creates the  Eternal Stella item in the Blocks requires a Stellarite Piece as an ingredient."
 		""
@@ -620,7 +693,11 @@
 		"{@pagebreak}"
 		"Вырастите Киндлинга и возьмите его перо нажав Shift + ПКМ с ножницами на взрослой особи."
 	]
-	quest.286CADEC3AB44CCE.quest_desc: ["Use your newly acquired sharp flint to harvest some grass"]
+	quest.286CADEC3AB44CCE.quest_desc: [
+		"Use your newly acquired sharp flint to harvest some grass"
+		"{@pagebreak}"
+		"Используйте ваш новый острый кремневый камень, чтобы собрать немного травы."
+	]
 	quest.28A2FCBC095F291E.quest_desc: ["Use the poison paste on farmland. Can farm plants from this mod."]
 	quest.28DE945FA0D4BCB9.quest_desc: [
 		"&#9BB8EDThis chest&r is literally a safe, only the person who placed it down can open it. Incredible &#C6BCE9magic&r!"
@@ -714,7 +791,11 @@
 		"{@pagebreak}"
 		"Если я почувствую себя ОСОБЕННО плохо, я могу изготовить это пахучее и НЕ приятное на ощупь масло. Им могут заинтересоваться местные врачи."
 	]
-	quest.30B7522161DC8B1B.quest_desc: ["You know what you will use this for, don't you?"]
+	quest.30B7522161DC8B1B.quest_desc: [
+		"You know what you will use this for, don't you?"
+		"{@pagebreak}"
+		"Ты же знаешь, для чего это нужно, да?"
+	]
 	quest.30C4AD468ACFB3C5.quest_desc: [
 		"Can catch living creatures!"
 		"{@pagebreak}"
@@ -754,8 +835,16 @@
 		"Эндер-Воронка работает только тогда, когда вы находитесь &#FEECD6онлайн&r."
 	]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
-	quest.3311BAD6D1B590DE.quest_desc: ["Better than nothing, and fancy furthermore, eh?"]
-	quest.3375DE99A86D3CB4.quest_desc: ["Item pipes will normally prefer the closest inventory. An inhibitor increases the length of a connection by 1000 for pathfinding purposes, which makes item pipes avoid that connection if possible."]
+	quest.3311BAD6D1B590DE.quest_desc: [
+		"Better than nothing, and fancy furthermore, eh?"
+		"{@pagebreak}"
+		"Лучше, чем ничего, и к тому же роскошно, да?"
+	]
+	quest.3375DE99A86D3CB4.quest_desc: [
+		"Item pipes will normally prefer the closest inventory. An inhibitor increases the length of a connection by 1000 for pathfinding purposes, which makes item pipes avoid that connection if possible."
+		"{@pagebreak}"
+		"Предметные трубы обычно предпочитают ближайший инвентарь. Ингибитор увеличивает длину соединения на 1000 для целей поиска пути, что заставляет трубы для предметов избегать этого соединения, если это возможно."
+	]
 	quest.33D177C9C103372D.quest_desc: ["Allows you to throw oils. Can become handy in the future."]
 	quest.3439A90E9544512F.quest_desc: [
 		"Deep down below, you found a secure structure. There &lmust be a way&r to get into it, if not now, maybe later. You better remember this place."
@@ -782,7 +871,11 @@
 	quest.353FB272140BABA3.quest_desc: ["пушит игрока вверх, джамп пад?"]
 	quest.353FB272140BABA3.quest_subtitle: "Jump pad"
 	quest.35450D58651AF44B.quest_desc: ["Allows you to access your system from any point in the world when linked to quantum ring"]
-	quest.357CC2253FDA3DA1.quest_desc: ["Bottomless... book? For all those pretty scribbled treatises \"you\" wrote about this beautiful world"]
+	quest.357CC2253FDA3DA1.quest_desc: [
+		"Bottomless... book? For all those pretty scribbled treatises «you» wrote about this beautiful world"
+		"{@pagebreak}"
+		"Бездонная... книга? Для всех тех красивых набросков, которые «ты» написал об этом прекрасном мире."
+	]
 	quest.35A512DACA56FF16.quest_desc: [
 		"The Alembic. An old device in the academy that will help purify liquids similar to how the crucible purifies solids. However, they are fragile. In order for this to work, I need a stronger glassy material. I know one located in the Nether. I must find it!"
 		""
@@ -873,11 +966,23 @@
 		""
 		"Более подробнее о росте можно прочитать в книге!"
 	]
-	quest.3844F342D000826A.quest_desc: ["A copper mesh can catch tin, lead and copper."]
-	quest.389A4181732368E0.quest_desc: ["The chest predecessor and your first reliable storage, can store up to 9 stacks of items"]
+	quest.3844F342D000826A.quest_desc: [
+		"A copper mesh can catch tin, lead and copper."
+		"{@pagebreak}"
+		"Медная сетка может улавливать олово, свинец и медь."
+	]
+	quest.389A4181732368E0.quest_desc: [
+		"[ \"The chest predecessor and your first(\", { \"text\": \"or not first?\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1E4A4AD1899325D3\" } }, \") reliable storage, can store up to 9 stacks of items\" ]"
+		"{@pagebreak}"
+		"[ \"Предшественник сундука и ваше первое(\", { \"text\": \"или не совсем первое?\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1E4A4AD1899325D3\" } }, \") надежное хранилище, может хранить до 9 стаков предметов.\" ]"
+	]
 	quest.38AAF5DFC8A1F13D.quest_subtitle: "How To Tame a Kindling"
 	quest.39C79097C7355375.quest_desc: ["The Crimson Stone is all about Souls. When used it the Hephaestus Forge it will half the Souls essence cost and when used in the Clibano it will increase the burn duration of inputted Souls (Soon). Crimson Stones can be found in Pillager Outpost loot chests (18% chance)."]
-	quest.3A47A5B107C19092.quest_desc: ["Fancy, queen-sized patch of fiber"]
+	quest.3A47A5B107C19092.quest_desc: [
+		"Fancy, queen-sized patch of fiber"
+		"{@pagebreak}"
+		"Необычный, королевский размер, с набивкой из волокна"
+	]
 	quest.3A5FB1474CC41CED.quest_desc: [
 		"Grows in taiga biomes (the cold ones)."
 		""
@@ -895,8 +1000,19 @@
 		"Here is an example with a Modern Industrialization Chemical Reactor:"
 		""
 		"{image:quest_pics:textures/machine_extender.png width:200 height:130 align:center}"
+		"{@pagebreak}"
+		""
+		"Удлинитель машины можно разместить сверху машины, чтобы «удлинить» ее, освободив больше места для подключения труб. Удлинители машины можно стакать."
+		""
+		"Вот пример с химическим реактором:"
+		""
+		"{image:quest_pics:textures/machine_extender.png width:200 height:130 align:center}"
 	]
-	quest.3B77EDA3E715F8ED.quest_desc: ["Can only be acquired via axe (because we care about the well-being of your fists, you masochist (•ᴗ•) )"]
+	quest.3B77EDA3E715F8ED.quest_desc: [
+		"Can only be acquired via axe (because we care about the well-being of your fists, you masochist (•ᴗ•) )"
+		"{@pagebreak}"
+		"Можно получить только с помощью топора (потому что мы заботимся о благополучии ваших кулаков, вы мазохист (•ᴗ•) )"
+	]
 	quest.3B8E12BA33DFD7AC.quest_desc: [
 		"Once I have enough data on a specific poisonous ingredient, I can hold my magnifying glass in my hand and hover over it in my inventory to see what affinity this poisonous ingredient is associated with. Oh, the beautiful art of experimental science!"
 		"{@pagebreak}"
@@ -960,7 +1076,11 @@
 		"After having built the above pattern, place the Smithing Table in the central spot above the Gilded Chiseled Polished Darkstone block. In order to transform it into the desired Hephaestus Forge you'll now only need to sneak and right-click with the Mundabitur Dust on the Smithing Table. A bolt of corrupted lightning will strike the block and transform it. "
 	]
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a poisoned squid."]
-	quest.3F168A7DE7626306.quest_desc: ["Tin suitable for smelter"]
+	quest.3F168A7DE7626306.quest_desc: [
+		"Tin suitable for smelter"
+		"{@pagebreak}"
+		"Олово, пригодное для плавки"
+	]
 	quest.3F3D4E142EEE7C6B.quest_desc: [
 		"When dealing with Mandrakes, Banshees and other loud creatures, protection for your ears is essential."
 		""
@@ -1183,7 +1303,11 @@
 		""
 		"Этот &5прибор&r очень поможет мне в моих будущих исследованиях. Особенно когда я буду изучать &5древние ритуалы&r и &aсмеси ядов&r. Мне нужно следить за тем, чтобы не слишком увлекаться и постоянно держать устройство при себе, чтобы не выйти за рамки дозволенного. У меня есть ощущение, что этот прибор превратится из средства предосторожности в прекрасную перспективу на будущее."
 	]
-	quest.498922D593321422.quest_desc: ["Better furnace, but bigger!"]
+	quest.498922D593321422.quest_desc: [
+		"Better furnace, but bigger!"
+		"{@pagebreak}"
+		"Печь покруче — но ещё и побольше!"
+	]
 	quest.49F633AB8533C593.quest_desc: ["Mends the items at the cost of oil."]
 	quest.4A87529560AC3F59.quest_desc: ["Operates similar to the Source Relay, but will automatically take from jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
 	quest.4ADB796A7EC14DE4.quest_desc: [
@@ -1282,8 +1406,16 @@
 	quest.538E3976DDFD9FBF.quest_desc: ["Отображает суммарное количество бафов в кузне"]
 	quest.53CBB401AAEFD083.quest_desc: ["Подавая сурс и банку с мобами, можно делать жертоприношение для мода окультизм, если поставить под алтарём"]
 	quest.53D189F7EF7CD121.quest_subtitle: "Perform the ritual!"
-	quest.53D226046704B4F5.quest_desc: ["Same as copper, but with a small chance to catch gold and iron."]
-	quest.552B1FFCECBD0652.quest_desc: ["A manual well. Produces different amounts of water in different biomes. Can be connected to a system of aqueducts"]
+	quest.53D226046704B4F5.quest_desc: [
+		"Same as copper, but with a small chance to catch gold and iron."
+		"{@pagebreak}"
+		"То же самое, что и медная, но с небольшой вероятностью добычи золота и железа."
+	]
+	quest.552B1FFCECBD0652.quest_desc: [
+		"A manual well. Produces different amounts of water in different biomes. Can be connected to a system of aqueducts"
+		"{@pagebreak}"
+		"Ручной колодец. Производит разное количество воды в разных биомах. Может быть подключен к системе акведуков."
+	]
 	quest.55816F492AF21D36.quest_desc: [
 		"You can collect an already drawn ritual by dropping the talisman and redstone into the circle, activating the ritual, and then placing it anywhere you want."
 		""
@@ -1295,8 +1427,16 @@
 	]
 	quest.55B031B4D7E5DEE3.quest_desc: ["Wild chicken"]
 	quest.5643AEC296D95BE9.quest_desc: ["Slowness and weakness."]
-	quest.56956E24B043B41A.quest_desc: ["&mUse an axe for the combat instead, as it's more powerful. But shh, I didn't tell you that&r"]
-	quest.56AE77021D975ACD.quest_desc: ["This mesh can catch basic resources, such as sand, gravel, clay and fish"]
+	quest.56956E24B043B41A.quest_desc: [
+		"&mUse an axe for the combat instead, as it's more powerful. But shh, I didn't tell you that&r"
+		"{@pagebreak}"
+		"&mВместо этого используйте топор, он более мощный. Но тише, я вам этого не говорил&r"
+	]
+	quest.56AE77021D975ACD.quest_desc: [
+		"This mesh can catch basic resources, such as sand, gravel, clay and fish"
+		"{@pagebreak}"
+		"Эта сетка может улавливать основные ресурсы, такие как песок, гравий, глина и рыбу."
+	]
 	quest.5750E25528ABB85C.quest_desc: [""]
 	quest.57A91C641FE38999.quest_desc: [""]
 	quest.58111B4CAD89BCCE.quest_desc: [
@@ -1503,7 +1643,11 @@
 		"Как и с прошлыми фамильярами и одержимыми мобами, прочтите информацию о них в книге"
 	]
 	quest.644C38FE06C3047E.quest_desc: ["можно найти в джунглях и болотах в шахтах"]
-	quest.64A80D12CB567158.quest_desc: ["Time to put your shiny... well, I guess rather dull, new antler pickaxe to good use!"]
+	quest.64A80D12CB567158.quest_desc: [
+		"Time to put your shiny... well, I guess rather dull, new antler pickaxe to good use!"
+		"{@pagebreak}"
+		"Пришло время использовать твою блестящую... ну, скорее скучную, новую кирку из рогов!"
+	]
 	quest.64C835EE832D0FC2.quest_desc: ["крос дим не воркает, тп на записаные корды"]
 	quest.64F723F01C41DE4E.quest_desc: [
 		"Invisible lighting!"
@@ -1514,12 +1658,21 @@
 		""
 		"Невероятно удобный способ осветить своё Уб&m&0ожество&r&rежище"
 	]
+	quest.64FE8C0AC725C0D2.quest_desc: [
+		"Using occultism and the Possessed Endermite ritual, you can summon a Endermite that may drop End Stone, which can be used to craft purple chalk."
+		"{@pagebreak}"
+		"Используя оккультизм и ритуал Possessed Endermite вы можете призвать Чешуйницу Края из которой может выпасть End Stone, для крафта фиолетового мелка."
+	]
 	quest.650EB42A35DC8763.quest_desc: [
 		"Allows exchanging one block for another. Can change multiple connected blocks simultaneously. Handy when dealing with EBF coils!  "
 		"{@pagebreak}"
 		"Позволяет заменять блоки одного типа, на другого."
 	]
-	quest.65A0E1BB560D5E14.quest_desc: ["Guess what a filter does! ;)"]
+	quest.65A0E1BB560D5E14.quest_desc: [
+		"Guess what a filter does! ;)"
+		"{@pagebreak}"
+		"Угадайте, для чего нужен фильтр! ;)"
+	]
 	quest.6621095DCFF9AE0F.quest_desc: ["Crush ore and other things into powder, with increased yield!"]
 	quest.662C013A5E66F0B9.quest_desc: [
 		"Turns water into steam, but require manual maintenance via gentle axe rubs"
@@ -1546,8 +1699,16 @@
 		"Полноценный иммунитет от огня и немного больше"
 	]
 	quest.678DD52529698DE4.quest_desc: ["Нужно кормить зельями даёт сурс"]
-	quest.6823D5F00B44B271.quest_desc: ["Used to... mold brick-looking stuff"]
-	quest.687476E0881C0199.quest_desc: ["Copper suitable for smelter"]
+	quest.6823D5F00B44B271.quest_desc: [
+		"Used to... mold brick-looking stuff"
+		"{@pagebreak}"
+		"Используется для... формовки кирпичеподобных изделий"
+	]
+	quest.687476E0881C0199.quest_desc: [
+		"Copper suitable for smelter"
+		"{@pagebreak}"
+		"Медь, пригодная для плавки"
+	]
 	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a poisoned wolf."]
 	quest.691756F3D7240809.quest_desc: [
 		"Periodically emits a redstone pulse. By pressing RMB you can change the length of the pulse, and by pressing Shift+RMB you can change the interval between pulses."
@@ -1606,7 +1767,11 @@
 		"Это &#FEECD6лопата&r, &#9BB8EDкирка&r, &#C7E2E9топор&r, и &#CAE4C8мотыга&r &nв одном&r, буквально швейцарский нож!"
 	]
 	quest.6C85E4BCF27839E4.quest_subtitle: "Build warp portal"
-	quest.6CB0342958887169.quest_desc: ["Furnace, but better!"]
+	quest.6CB0342958887169.quest_desc: [
+		"Furnace, but better!"
+		"{@pagebreak}"
+		"Печь — только покруче!"
+	]
 	quest.6CE13F93E085DABB.quest_desc: ["The Edelwood Ladder can be climbed twice as fast as a vanilla Ladder"]
 	quest.6D1F116F28F30039.quest_desc: [
 		"Gathering the required essences for a ritual can be tedious - luckily Aureal can be automated with the help of Obelisks. When placed in one of the spots where normally a Pedestal would go, it will slowly fill up the Aureal bar in the Hephaestus Forge. "
@@ -1635,7 +1800,11 @@
 		""
 		"leashed mobs teleport with you"
 	]
-	quest.6E680C846961BFE3.quest_desc: ["Let's just pretend that there's no saw on this thing's texture and move on until you can make said saw to satisfy your meticulousness needs."]
+	quest.6E680C846961BFE3.quest_desc: [
+		"Let's just pretend that there's no saw on this thing's texture and move on until you can make said saw to satisfy your meticulousness needs."
+		"{@pagebreak}"
+		"Давайте просто сделаем вид, что на текстуре этой штуки нет пилы, и продолжим, пока вы не сможете сделать эту пилу, чтобы удовлетворить свои потребности в точности."
+	]
 	quest.6E680C846961BFE3.quest_subtitle: "Finally"
 	quest.6E69C3F456FD1C3D.quest_desc: ["Every ritual you execute will require you to sacrifice certain items which need to be placed on Pedestals. Obtaining these Pedestals should be your next step. Most rituals will only need 6 Pedestals while others may require you to use all 8 available spots for Pedestals. "]
 	quest.6E99902F01ED8483.quest_desc: [
@@ -1704,7 +1873,11 @@
 		"{@pagebreak}"
 		"О большинстве ритуалов можно прочитать в гайдбуке!"
 	]
-	quest.72469A4BC17070AB.quest_desc: ["Used to increase toolbelt capacity. The first upgrade can be applied via needle, which will increase the toolbelt tool limit by 2, ensuing upgrades will require an anvil and will only add 1 additional slot"]
+	quest.72469A4BC17070AB.quest_desc: [
+		"Used to increase toolbelt capacity. The first upgrade can be applied via needle, which will increase the toolbelt tool limit by 2, ensuing upgrades will require an anvil and will only add 1 additional slot"
+		"{@pagebreak}"
+		"Используется для увеличения емкости пояса для инструментов. Первое улучшение можно применить с помощью иглы, что увеличит лимит инструментов на поясе на 2, последующие улучшения потребуют наковальни и добавят только 1 дополнительный слот."
+	]
 	quest.725F8D9DA52207FB.quest_desc: [
 		"&#DEB3E0Pylons&r allows to &#FEECD6speed up&r crafts in &l&#e4affaSpectrum&r&r multiblocks. Also, they can be used as upgrades for &#9BB8EDModern Industrialization&r machines."
 		"{@pagebreak}"
@@ -1747,8 +1920,16 @@
 		"Ну… Или… Воспользуйтесь дробителем…"
 	]
 	quest.7411203C75645676.quest_desc: ["From undead(zombie/zoglin/husk/zombie villager/piglin) with scythe"]
-	quest.742D4F5A2D903B69.quest_desc: ["Dropped by deer. It slightly resembles a half-pickaxe if you look at it from a specific angle..."]
-	quest.745BE9DA293006D1.quest_desc: ["Bundle's lil bro, look at it, so cute ❤"]
+	quest.742D4F5A2D903B69.quest_desc: [
+		"Dropped by deer. It slightly resembles a half-pickaxe if you look at it from a specific angle..."
+		"{@pagebreak}"
+		"Выпадает из оленя. Если посмотреть под определенным углом, он немного напоминает половину кирки..."
+	]
+	quest.745BE9DA293006D1.quest_desc: [
+		"Bundle's lil bro, look at it, so cute ❤"
+		"{@pagebreak}"
+		"Младший брат мешка, посмотрите, какой он милый ❤"
+	]
 	quest.74D4C6332BC7AE9D.quest_desc: [
 		"Thaumic Footsteps"
 		"{@pagebreak}"
@@ -1798,7 +1979,11 @@
 		"{@pagebreak}"
 		"Эти колючие листья можно получить только с помощью ножниц"
 	]
-	quest.7D5DCEA36FF46987.quest_desc: ["A bed for daytime."]
+	quest.7D5DCEA36FF46987.quest_desc: [
+		"A bed for daytime."
+		"{@pagebreak}"
+		"Кровать для дневного сна."
+	]
 	quest.7DAD1DF3B7F87944.quest_desc: ["The item is too powerful; we need to consider what its crafting recipe will be."]
 	quest.7E277FEC22A1924D.quest_desc: ["Spawner Scrap drops when breaking a Spawner"]
 	quest.7E9470BDDB0600F0.quest_desc: [
@@ -1843,6 +2028,7 @@
 	task.0E23718424EB6584.title: "Any #milf:polished_base_blocks"
 	task.0EB4593433321D21.title: "Any #c:saws"
 	task.0F25C68A335172FD.title: "Ore generattion"
+	task.0F53207FFCB0E0C6.title: "Any #c:crops"
 	task.0F74A9109F9CECEA.title: "Any #minecraft:wooden_slabs"
 	task.10D736208838EF5D.title: "Any #hexerei:candles"
 	task.1581CD219F02ED5C.title: "Fatma's Incentivized Attraction"

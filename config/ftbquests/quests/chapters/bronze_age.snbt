@@ -3398,7 +3398,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["2B815502453269AF"]
+			dependencies: [
+				"2B815502453269AF"
+				"33C4EBFA08980E30"
+			]
 			id: "06EAC7034ACFA220"
 			shape: "heart"
 			tasks: [{
@@ -3410,7 +3413,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["0BCD76587F2DB00F"]
+			dependencies: [
+				"0BCD76587F2DB00F"
+				"33C4EBFA08980E30"
+			]
 			id: "137C9C8D6C96D777"
 			shape: "heart"
 			tasks: [{
