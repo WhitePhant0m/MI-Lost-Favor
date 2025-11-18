@@ -11,7 +11,7 @@ const anvilSmashingCraft = (event, args) => {
     let recipe = {
         type: "paganbless:anvil_smashing",
         ingredients: [],
-        result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
+        result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || args.outputItems[0][0].count || 1}),
     }
     args.inputItems.forEach((input) => {recipe.ingredients.push(Object.assign({},input[0], {count:input[1] || 1}))})
     if(!args.compatOff){
@@ -226,5 +226,27 @@ ServerEvents.recipes(event => {
     );
 
     //#endregion
+
+    //pastel compat
+    event.forEachRecipe({ type: 'pastel:anvil_crushing', not : {output: "#kubejs:nocompat"}}, r => {
+        const rjson = JSON.parse(r.json)
+        if (rjson.result.id.split(":")[0] == "ae2") return
+        if (Array.isArray(rjson.ingredient)) {
+            rjson.ingredient.forEach(ing =>{
+                anvilSmashingCraft(event, {
+                    inputItems: [[ing]],
+                    outputItems: [[rjson.result]],
+                    compatOff:true
+                })
+            })
+        } else {
+            anvilSmashingCraft(event, {
+                inputItems: [rjson.ingredient],
+                outputItems: [[rjson.result]],
+                compatOff:true
+            })
+        }
+        
+    })   
 
 })
