@@ -35,11 +35,14 @@ const iePressCraft = (event, args) => {
                 break;
             case "immersiveengineering:mold_packing_9":
                 machine = "modern_industrialization:packer"
-                miInputs.concat([[args.mold, 1, 0]])
+                miInputs = miInputs.concat([[args.mold, 1, 0]])
                 break;
             case "immersiveengineering:mold_packing_4":
                 machine = "modern_industrialization:packer"
-                miInputs.concat([[args.mold, 1, 0]])
+                miInputs = miInputs.concat([[args.mold, 1, 0]])
+                break;
+            default :
+                miInputs = miInputs.concat([[args.mold, 1, 0]])
                 break;
         }
         miMachineCraft(event, {energy:2, time:200, machine:machine,
@@ -61,16 +64,17 @@ ServerEvents.recipes(event => {
     var tier4bp = "Quantum Blueprint"
     var tier5bp = "Divine Blueprint"
 
-    function press_recipe(input, output, mold, energy) {
+    function aePressRecipe(input, output, mold, energy) {
         iePressCraft(event, {
             inputItems:[input],
             outputItems:[output],
             mold: {item : mold},
-            energy: energy
+            energy: energy,
+            compatOff:true
         })
     }
 
-    function press_blueprint_recipe(blueprint, bpTier, color) {
+    function pressBlueprintRecipe(blueprint, bpTier, color) {
         event.custom({
             type: "immersiveengineering:metal_press",
             energy: 3200,
@@ -87,25 +91,25 @@ ServerEvents.recipes(event => {
         });
     }
 
-    press_blueprint_recipe("kubejs:mysterious_blueprint", tier1bp, '#84b9ff')
-    press_blueprint_recipe("kubejs:storage_blueprint", tier2bp, '#fff678')
-    press_blueprint_recipe("kubejs:automation_blueprint", tier3bp, '#8de8ff')
-    press_blueprint_recipe("kubejs:quantum_blueprint", tier4bp, '#c795ff')
-    press_blueprint_recipe("kubejs:divine_blueprint", tier5bp, '#abffc0')
+    pressBlueprintRecipe("kubejs:mysterious_blueprint", tier1bp, '#84b9ff')
+    pressBlueprintRecipe("kubejs:storage_blueprint", tier2bp, '#fff678')
+    pressBlueprintRecipe("kubejs:automation_blueprint", tier3bp, '#8de8ff')
+    pressBlueprintRecipe("kubejs:quantum_blueprint", tier4bp, '#c795ff')
+    pressBlueprintRecipe("kubejs:divine_blueprint", tier5bp, '#abffc0')
 
 
 
 
     // processors
-    press_recipe([{"tag": "c:ingots/silicon"}, 2], [{id :"ae2:printed_silicon"}, 1], "ae2:silicon_press", 3200);
-    press_recipe([{"tag": "c:ingots/gold"}, 2], [{id :"ae2:printed_logic_processor"}, 1], "ae2:logic_processor_press", 3200);
-    press_recipe([{"tag": "c:gems/certus_quartz"}, 2], [{id :"ae2:printed_calculation_processor"}, 1], "ae2:calculation_processor_press", 3200);
-    press_recipe([{"tag": "c:ingots/aluminum"}, 2], [{id :"ae2:printed_engineering_processor"}, 1], "ae2:engineering_processor_press", 3200);
-    press_recipe([{"item": "advanced_ae:quantum_alloy"}, 2], [{id :"advanced_ae:printed_quantum_processor"}, 1], "advanced_ae:quantum_processor_press", 3200);
-    press_recipe([{"item": "megacells:sky_steel_ingot"}, 2], [{id :"megacells:printed_accumulation_processor"}, 1], "megacells:accumulation_processor_press", 3200);
+    aePressRecipe([{"tag": "c:ingots/silicon"}, 2], [{id :"ae2:printed_silicon"}, 1], "ae2:silicon_press", 3200);
+    aePressRecipe([{"tag": "c:ingots/gold"}, 2], [{id :"ae2:printed_logic_processor"}, 1], "ae2:logic_processor_press", 3200);
+    aePressRecipe([{"tag": "c:gems/certus_quartz"}, 2], [{id :"ae2:printed_calculation_processor"}, 1], "ae2:calculation_processor_press", 3200);
+    aePressRecipe([{"tag": "c:ingots/aluminum"}, 2], [{id :"ae2:printed_engineering_processor"}, 1], "ae2:engineering_processor_press", 3200);
+    aePressRecipe([{"item": "advanced_ae:quantum_alloy"}, 2], [{id :"advanced_ae:printed_quantum_processor"}, 1], "advanced_ae:quantum_processor_press", 3200);
+    aePressRecipe([{"item": "megacells:sky_steel_ingot"}, 2], [{id :"megacells:printed_accumulation_processor"}, 1], "megacells:accumulation_processor_press", 3200);
 
     //custom stuff
-    press_recipe([{"tag": "c:plates/iron"}, 2], [{id :"kubejs:cell_half"}, 1], "kubejs:cell_press", 3200);
-    press_recipe([{"tag": "c:plates/iron"}, 2], [{id :"kubejs:core_hull"}, 1], "kubejs:core_press", 3200);
+    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"kubejs:cell_half"}, 1], "kubejs:cell_press", 3200);
+    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"kubejs:core_hull"}, 1], "kubejs:core_press", 3200);
 
 })

@@ -1,10 +1,9 @@
 
-const $RegisterGuiLayersEvent = Java.loadClass("net.neoforged.neoforge.client.event.RegisterGuiLayersEvent");
-const $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type");
-const $TooltipRenderUtil = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil")
-const $ClientTooltipComponent = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent")
-const $DefaultTooltipPositioner = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE
-
+let $RegisterGuiLayersEvent = Java.loadClass("net.neoforged.neoforge.client.event.RegisterGuiLayersEvent");
+let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type");
+let $TooltipRenderUtil = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil")
+let $ClientTooltipComponent = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent")
+let $DefaultTooltipPositioner = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE
 NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
 	event.registerBelowAll(ID.kjs("placers_tooltips"), (gui, delta) => global.renderBlockTooltips(gui, delta))
 })

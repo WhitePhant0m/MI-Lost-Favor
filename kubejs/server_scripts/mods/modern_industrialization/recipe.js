@@ -37,7 +37,14 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     }
 
     inputs.forEach((input) => {recipe.item_inputs.push(Object.assign({}, input[0], {amount:input[1] || 1}, {probability:input[2]}))})
-    outputs.forEach((out) => {recipe.item_outputs.push(Object.assign({}, out[0], {amount:out[1] || 1}, {probability:out[2]}))})
+    outputs.forEach((out) => {
+        let output = Object.assign({}, out[0], {amount:out[1] || out[0].amount || 1}, {probability:out[2]})
+        if (output.id) {
+            output.item = output.id
+            delete output.id
+        }
+        recipe.item_outputs.push(output)
+    })
     fluidsin.forEach((input) => {recipe.fluid_inputs.push(Object.assign({}, input[0], {amount:input[1] || 1000} , {probability:input[2]}))})
     fluidsout.forEach((out) => {recipe.fluid_outputs.push(Object.assign({}, out[0], {amount:out[1] || 1000}, {probability:out[2]}))})
 

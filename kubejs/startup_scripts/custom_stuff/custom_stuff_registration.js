@@ -1,4 +1,6 @@
 //priority: 1000
+/** @type {typeof import("net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent").$BlockEntityTypeAddBlocksEvent } */
+let $BlockEntityTypeAddBlocksEvent  = Java.loadClass("net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent")
 /** @type {typeof import("net.minecraft.world.level.block.state.properties.EnumProperty").$EnumProperty } */
 let $EnumProperty  = Java.loadClass("net.minecraft.world.level.block.state.properties.EnumProperty")
 /** @type {typeof import("net.minecraft.world.level.block.state.properties.IntegerProperty").$IntegerProperty } */
@@ -21,7 +23,6 @@ function createNewItem(id, args) {
     })
     global.langCustomStuff[`item.kubejs.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
-
 
 function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
     args.stackSize && item.maxStackSize(args.stackSize)
@@ -56,6 +57,7 @@ function createNewBlock(id, args) {
         args.notSolid && block.notSolid()
         args.waterlogged && block.waterlogged()
         //args.property && block.property(args.property)
+        args.blockEntity && block.blockEntity(args.blockEntity)
         args.property && (!Array.isArray(args.property) ? block.property(args.property) : args.property.forEach(property => { block.property(property)}))
         if (args.defaultState) {
             block.defaultState(state => {
