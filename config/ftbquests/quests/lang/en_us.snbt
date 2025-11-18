@@ -443,6 +443,15 @@
 		"{@pagebreak}"
 		"Ничего такого, да? Просто кусочек бедрока."
 	]
+	quest.179140A353AB44E8.quest_desc: [
+		"&lWelcome to &l&3MI&f:&6Lost Favor&r&r!"
+		""
+		"At first, you won't go hungry. This is done on purpose so that you can find a place to survive! Also, hostile monsters will not spawn around you! For the same reason. "
+		""
+		"You won't be able to loot chests, you won't have access to the map, and you could get killed in the dungeons, so don't go in there until you're ready! "
+		""
+		"Sooner or later, you will have full access to everything you are so used to, don't worry!"
+	]
 	quest.17A44FD7738F4496.quest_desc: [
 		"Used to crush items to make them less intact"
 		"{@pagebreak}"
@@ -469,6 +478,15 @@
 		"Так же можно добавить кровь любого другого существа, для этого нужно наложить на существо эффект слабости перед тем как зажечь жаровню."
 		""
 		"На игроке может быть максимум 2 проклятья. Так же его сложно снять."
+	]
+	quest.19720A27E00D46F5.quest_desc: [
+		"Bridging allows for placing blocks in gaps in front, above, or below blocks, even if the surface isn't visible! When it's available, a crosshair is shown to indicate where that block will be placed. When the F3 menu is visible, there's an extra outline showing the exact position it's placing in (but you can turn it on all the time in the config)"
+		""
+		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/bridging-mod\" } }, \".\" ]"
+		"{@pagebreak}"
+		"Бриджинг позволяет размещать блоки в промежутках перед, над или под блоками, даже если поверхность не видна! Когда эта функция доступна, появляется перекрестье, указывающее место, где будет размещен блок. Когда отображается меню F3, появляется дополнительная обводка, показывающая точное место размещения (но вы можете включить ее на постоянной основе в настройках)."
+		""
+		"[ \"Более подробно можно прочитать \", { \"text\": \"тут\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/bridging-mod\" } }, \".\" ]"
 	]
 	quest.19800DDEA270C24C.quest_desc: ["One of the most useful items in any situation. You can configure it via the button to the top right of your character so it will refill whatever block you're holding straight from your system as well as search through your system to pick blocks via the middle mouse button"]
 	quest.1987F8CE26632CC4.quest_desc: [
@@ -573,7 +591,19 @@
 		""
 		"ТРУБЫ"
 	]
-	quest.1E4A4AD1899325D3.quest_subtitle: "Info about Plonk"
+	quest.1E4A4AD1899325D3.quest_desc: [
+		"Place items on block by pressing P while looking at a block. "
+		""
+		"You can place items on all 6 sides of a block."
+		""
+		"[ \"More info \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/plonk\" } } ]"
+		"{@pagebreak}"
+		"Установка предметов на блок, нажав P, глядя на блок. "
+		""
+		"Вы можете помещать предметы на все 6 сторон любого блока."
+		""
+		"[ \"Больее подробно \", { \"text\": \"тут\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/plonk\" } } ]"
+	]
 	quest.1EE1B8261F4D85A0.quest_desc: ["Glowing for 30 seconds."]
 	quest.1F491D4829884C61.quest_desc: [
 		"Could be used to mine pure resources, as well as some fragile blocks"
@@ -994,6 +1024,7 @@
 		"Теперь что касается пустых горшочков. Их можно заполнить, не меняя состав. Теперь, используя эту основу, я могу заполнять горшочки и даже патронаж!"
 	]
 	quest.3AB217EEA136075C.title: "Djinni Crusher"
+	quest.3B40DB8CA23BB5A0.quest_desc: ["When walls and fences hold you, fret not, now you can jump them!"]
 	quest.3B4BC79A5DE6EC7C.quest_desc: [
 		"The Machine Extender can be placed on top of a machine to \"extend\" it, giving more space for pipes to connect. Machine Extenders can be stacked."
 		""
@@ -1076,6 +1107,11 @@
 		"After having built the above pattern, place the Smithing Table in the central spot above the Gilded Chiseled Polished Darkstone block. In order to transform it into the desired Hephaestus Forge you'll now only need to sneak and right-click with the Mundabitur Dust on the Smithing Table. A bolt of corrupted lightning will strike the block and transform it. "
 	]
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a poisoned squid."]
+	quest.3F076989AA64CD64.quest_desc: [
+		"Mod adds a keybind which zooms in your FOV while it's held down, allowing you to see further away, and keybinds for increasing and decreasing the zoom level."
+		""
+		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/zume\" } }, \".\" ]"
+	]
 	quest.3F168A7DE7626306.quest_desc: [
 		"Tin suitable for smelter"
 		"{@pagebreak}"
@@ -1710,6 +1746,16 @@
 		"Медь, пригодная для плавки"
 	]
 	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a poisoned wolf."]
+	quest.6902C00ECD02ACEA.quest_desc: [
+		"Mouse Tweaks replaces the standard RMB dragging mechanic, adds two new LMB dragging mechanics and an ability to quickly move items with the scroll wheel."
+		""
+		"[\"More info for Mouse Tweaks: \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks\" } }]"
+		""
+		""
+		"More Mouse Tweaks — complements Mouse Tweaks by adding more mouse functionality from Mouse Wheelie."
+		""
+		"[ \"More info for More Mouse Tweaks: \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/moremousetweaks\" } } ]"
+	]
 	quest.691756F3D7240809.quest_desc: [
 		"Periodically emits a redstone pulse. By pressing RMB you can change the length of the pulse, and by pressing Shift+RMB you can change the interval between pulses."
 		"{@pagebreak}"
@@ -2014,6 +2060,7 @@
 	task.03FD4CFDF4EBC8D0.title: "Crushing"
 	task.04686380A3EF8E64.title: "Any #minecraft:vanilla_music_discs"
 	task.0485EF9BAD98F611.title: "Charms are a set of curios enchanted with strong protection magics. They range from allowing you to walk on Powdered Snow, to saving you from the Warden's powerful Sonic Boom. Each charm has a specific amount of charges available to protect you. Once the charges have been depleted, pop them into an Imbuement chamber to charge them back up."
+	task.05F09C91C1D5D399.title: "Jump Over Fences"
 	task.068F277A6EC195B3.title: "Ore veins?"
 	task.0690302B69EE721E.title: "Any #pastel:colored_saplings"
 	task.06C366B476A6A584.title: "Ronaza's Contract"
@@ -2048,6 +2095,7 @@
 	task.23F8EEA1AF4C1A9B.title: "Rituals"
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
 	task.25CB2D0B385D4533.title: "Spectrum?"
+	task.2693375290DFFFE2.title: "<glitch>print(\"Hello World!\")"
 	task.274F98243AA9482F.title: "Animals breeding"
 	task.29FC46F1CE4D25B3.title: "Cursed shit"
 	task.2A1B82765D957242.title: "Any #milf:polished_gemstone_block"
@@ -2071,6 +2119,7 @@
 	task.3C8D93CD09CDF958.title: "Any #hexerei:tallow_meltable"
 	task.3EF92E0D9F56CD52.title: "Ihagan's Enthrallment"
 	task.40EE6EFAE710D3F5.title: "Ophyx' Calling"
+	task.42075FB0D0CA93C3.title: "Zume"
 	task.4224A6EBD936625E.title: "Butcher?"
 	task.42DC3FD183E10DD5.title: "*Click*"
 	task.43199D58E9963367.title: "Any #c:ingots/silicon"
@@ -2114,11 +2163,13 @@
 	task.6E27CA7959D2DC61.title: "Any #pastel:bedrock_equipment"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
 	task.73CEC69AE2924335.title: "Any #c:logs/archwood"
+	task.7431F878DB34A30D.title: "Bridging"
 	task.745285CCE59E780F.title: "Any #milf:polished_gemstone_block"
 	task.76CE25E2E78A0201.title: "Any #milf:pedestal_basic"
 	task.77C744B48E7A1B18.title: "Any #minecraft:beds"
 	task.77CF8D64718D9A67.title: "Vanilla items for spectrum progression"
 	task.78C5E8DD6BAEE398.title: "Any #milf:polished_gemstone_block"
+	task.7AE5252F3D792BCA.title: "Mouse Tweaks \\& More Mouse Tweaks"
 	task.7EECE34CF3EE7B8C.title: "Any #minecraft:logs"
 	task.7FA316644840FB37.title: "Any #milf:pillar_base_blocks"
 	task.7FA515C73B63F455.title: "Any #toxony:possible_ingredients"
