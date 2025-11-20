@@ -4,6 +4,14 @@
 	filename: "basic_information"
 	group: ""
 	id: "4E4F6FF3EEEB1E51"
+	images: [{
+		height: 2.0d
+		image: "occultism:textures/gui/book/familiar_devil.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: -4.765306122448969d
+		y: -2.9183673469387728d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

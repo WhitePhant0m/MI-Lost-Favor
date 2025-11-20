@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
-    let mibp = "MI components"
+    let miComponents = "MI components"
+    let miTools = "MI tools"
 
     function blueprint_recipe(inputs, output, bpCategory) {
         ieBlueprintCraft(event, {
@@ -12,13 +13,38 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
+            [{ "item": "immersiveengineering:component_iron" }, 2],
+            [{ "item": "modern_industrialization:copper_drill_head" }, 1],
+            [{ "item": "kubejs:small_steel_fluid_container" }, 1],
+            [{ "item": "modern_industrialization:iron_large_plate" }, 4],
+            [{ "item": "modern_industrialization:diamond_dust" }, 3]
+        ],
+        { "item": "modern_industrialization:steam_mining_drill" },
+        miTools
+    ); 
+
+    blueprint_recipe(
+        [
+            [{ "item": "immersiveengineering:component_iron" }, 2],
+            [{ "item": "modern_industrialization:copper_curved_plate" }, 4],
+            [{ "item": "kubejs:small_steel_fluid_container" }, 1],
+            [{ "item": "modern_industrialization:iron_large_plate" }, 4],
+            [{ "item": "modern_industrialization:diamond_dust" }, 3],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 6]
+        ],
+        { "item": "extended_industrialization:steam_chainsaw" },
+        miTools
+    ); 
+
+    blueprint_recipe(
+        [
             [{ "tag": "c:rods/steel" }, 2],
             [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
             [{ "item": "modern_industrialization:tin_cable" }, 2],
             [{ "item": "modern_industrialization:steel_rod_magnetic" }, 1]
         ],
         { "item": "modern_industrialization:motor" },
-        mibp
+        miComponents
     );
 
 
@@ -31,7 +57,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:analog_circuit" }, 1],
         ],
         { "item": "kubejs:rangefinder" },
-        mibp
+        miComponents
     );
 
     blueprint_recipe(
@@ -41,7 +67,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tin_cable" }, 1],
         ],
         { "item": "modern_industrialization:conveyor" },
-        mibp
+        miComponents
     );
 
     blueprint_recipe(
@@ -53,7 +79,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tin_cable" }, 2],
         ],
         { "item": "modern_industrialization:piston" },
-        mibp
+        miComponents
     );
 
     blueprint_recipe(
@@ -64,7 +90,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tin_rotor" }, 3],
         ],
         { "item": "modern_industrialization:pump" },
-        mibp
+        miComponents
     );
 
     blueprint_recipe(
@@ -75,7 +101,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tin_cable"}, 2],
         ],
         { "item": "modern_industrialization:portable_storage_unit" },
-        mibp
+        miComponents
     );
 
     blueprint_recipe(
@@ -87,7 +113,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:tin_cable"}, 3],
         ],
         { "item": "modern_industrialization:robot_arm" },
-        mibp
+        miComponents
     );
 
     blueprint_recipe(
@@ -100,7 +126,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
         ],
         { "item": "kubejs:cd_reader" },
-        mibp
+        miComponents
     );
 
     blueprint_recipe(
@@ -110,7 +136,7 @@ ServerEvents.recipes(event => {
             [{ "item": "immersiveengineering:sawblade" }, 1],
         ],
         { "item": "modern_industrialization:invar_rotary_blade" },
-        mibp
+        miComponents
     );
 
 })

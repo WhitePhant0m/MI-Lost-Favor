@@ -51,7 +51,34 @@ MIMaterialEvents.addMaterials(event => {
             .materialSet('shiny')
             .addExternalPart('ingot', 'ae2:certus_quartz_crystal')
             .addExternalPart('dust', 'ae2:certus_quartz_dust')
-            .addParts('rod')
+            .addParts('rod', "plate", "large_plate")
+            .defaultRecipes()
+    })
+
+    event.createMaterial('Ferricore', 'ferricore', 0x54ccc2,
+        builder => {
+        builder
+            .materialSet('shiny')
+            .addExternalPart('ingot', 'justdirethings:ferricore_ingot')
+            .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .defaultRecipes()
+    })
+
+    event.createMaterial('Blaze gold', 'blaze_gold', 0xb0501c,
+        builder => {
+        builder
+            .materialSet('shiny')
+            .addExternalPart('ingot', 'justdirethings:blazegold_ingot')
+            .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .defaultRecipes()
+    })
+
+    event.createMaterial('Eclipse alloy', 'eclipse_alloy', 0x15203b,
+        builder => {
+        builder
+            .materialSet('shiny')
+            .addExternalPart('ingot', 'justdirethings:eclipsealloy_ingot')
+            .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
             .defaultRecipes()
     })
 

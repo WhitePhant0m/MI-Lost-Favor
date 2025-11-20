@@ -1,8 +1,10 @@
 MIMachineEvents.registerCasings(event => {
     event.registerBlockImitation("treated_wood_casing", "immersiveengineering:basic_engineering");
     event.registerBlockImitation("sheetmetal_steel_casing", "immersiveengineering:sheetmetal_steel");
-
+    event.registerBlockImitation("fire_clay_bricks", "modern_industrialization:fire_clay_bricks");
 })
+
+const MI_HATCHES_ALL = ["energy_input", "item_input", "item_output", "fluid_input"]
 function registerMIMachine(name, args){
     let recipe
     MIMachineEvents.registerRecipeTypes(event => {
@@ -47,6 +49,25 @@ function registerMIMachine(name, args){
     })
 }
 
+function registerBatchMIMachineFromExisting(name, args){
+    MITweaksMachineEvents.registerBatchMultiblocks(event => {
+        let shape = event.layeredShape(args.casing , args.shape)
+        Object.entries(args.shapeKeys).forEach(([key, block]) => {
+            let actualBlock = (typeof block === "string") ? block : block.id
+            shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
+        })
+        shape = shape.build()
+        const multiTypeFunction = args.steam ? event.steam : event.electric
+        multiTypeFunction.apply(event, [
+            idToName(name), name, event.getRecipeType(args.recipeType), shape,
+            (emiWorkstations) => emiWorkstations.add.apply(emiWorkstations, args.emiWorkstations),
+            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
+            args.batchsize, args.costMulti
+        ]) 
+    })
+    //jsonDataForBatchMachine(name, args.mainCasing, args.mainOverlays)
+}
+
 registerMIMachine('enigma_machine', {itemsIn: true, itemsOut: true, casing: 'treated_wood_casing',
     shape: [
         ['           ','           ','           ','           ','           ','           '],
@@ -64,7 +85,7 @@ registerMIMachine('enigma_machine', {itemsIn: true, itemsOut: true, casing: 'tre
     shapeKeys: {
         M: "immersiveengineering:sheetmetal_steel",
         P: "immersiveengineering:treated_wood_horizontal",
-        H: {id: "immersiveengineering:basic_engineering", hatches: ["energy_input", "item_input", "item_output", "fluid_input"]},
+        H: {id: "immersiveengineering:basic_engineering", hatches: MI_HATCHES_ALL},
         S: "immersiveengineering:slab_sheetmetal_steel",
         L: "immersiveengineering:logic_unit",
         B: "xkdeco:hollow_steel_beam",
@@ -123,7 +144,7 @@ registerMIMachine('multiblock_packer_3000_safety_regulations_edition', {steam:tr
     ],
     shapeKeys: {
         "A":"immersiveengineering:slab_sheetmetal_steel",
-        "a":{id:"immersiveengineering:sheetmetal_steel", hatches: ["energy_input", "item_input", "item_output", "fluid_input"]},
+        "a":{id:"immersiveengineering:sheetmetal_steel", hatches: MI_HATCHES_ALL},
         "B":"minecraft:piston",
         "b":"immersiveengineering:steel_scaffolding_standard",
         "C":"immersiveengineering:light_engineering",
@@ -134,3 +155,89 @@ registerMIMachine('multiblock_packer_3000_safety_regulations_edition', {steam:tr
     itemOutputSlots: [[56, 71, 1, 1]],
     mainCasing:'treated_wood_casing', mainOverlays: 'enigma_overlays', frontOverlay: true
 })
+
+registerBatchMIMachineFromExisting('advanced_large_steam_furnace', {steam:true, casing: 'modern_industrialization:fire_clay_bricks', recipeType:"modern_industrialization:mi_furnace",
+    emiWorkstations:["modern_industrialization:bronze_mi_furnace"],
+    shape: [['AAA', 'aaa', 'aaa'], 
+            ['BAB', 'B B', 'BaB'], 
+            ['AAA', 'a#a', 'aaa']],
+    shapeKeys: {"A":{id:"modern_industrialization:fire_clay_bricks", hatches: MI_HATCHES_ALL},
+                "a":"modern_industrialization:bronze_plated_bricks",
+                "B":"modern_industrialization:bronze_machine_casing_pipe"
+    },
+    mainCasing:'bronze_plated_bricks', mainOverlays: 'mi_furnace', frontOverlay: true,
+    batchsize:8, costMulti:0.75
+})
+
+registerBatchMIMachineFromExisting('large_electric_furnace', {steam:true, casing: 'modern_industrialization:heatproof_machine_casing', recipeType:"modern_industrialization:mi_furnace",
+    emiWorkstations:["modern_industrialization:bronze_mi_furnace"],
+    shape: [['AAA', 'aaa', 'aaa', 'AAA'], 
+            ['BAB', 'B B', 'B B', 'BAB'], 
+            ['A#A', 'aaa', 'aaa', 'AAA']],
+    shapeKeys: {"A":{id:"modern_industrialization:heatproof_machine_casing", hatches: MI_HATCHES_ALL},
+                "a":"modern_industrialization:cupronickel_coil",
+                "B":"modern_industrialization:invar_machine_casing_pipe"},
+    mainCasing:'heatproof_machine_casing', mainOverlays: 'mi_furnace', frontOverlay: true,
+    batchsize:8, costMulti:0.75
+})
+
+function saveJsonToPath(path, json){
+    JsonIO.write(path, JSON.stringify(json, null, 2))
+}
+
+function jsonDataForBatchMachine(machineName, mainCasing, mainOverlays){
+    let blockstatesPath = `kubejs/assets/mi_tweaks/blockstates/${machineName}.json`;
+    let blockstatesJson = {
+        "variants": {
+            "": {
+                "model": `mi_tweaks:block/${machineName}`
+            }
+        }
+    }
+    saveJsonToPath(blockstatesPath, blockstatesJson)
+
+    let modelPath = `kubejs/assets/mi_tweaks/models/block/${machineName}.json`;
+    let modelJson = {
+        "casing": `modern_industrialization:${mainCasing}`,
+        "default_overlays": {
+            "fluid_auto": "modern_industrialization:block/overlays/fluid_auto",
+            "front": `modern_industrialization:block/machines/${mainOverlays}/overlay_front`,
+            "front_active": `modern_industrialization:block/machines/${mainOverlays}/overlay_front_active`,
+            "item_auto": "modern_industrialization:block/overlays/item_auto",
+            "output": "modern_industrialization:block/overlays/output"
+        },
+        "loader": "modern_industrialization:machine"
+    }
+    saveJsonToPath(modelPath, modelJson)
+
+    let itemPath = `kubejs/assets/mi_tweaks/models/item/${machineName}.json`;
+    let itemJson = {
+        "parent": `mi_tweaks:block/${machineName}`
+    }
+    saveJsonToPath(itemPath, itemJson)
+
+    let dataPath = `kubejs/data/mi_tweaks/loot_table/blocks/${machineName}.json`;
+    let dataJson = {
+        "type": "minecraft:block",
+        "pools": [
+            {
+                "bonus_rolls": 0.0,
+                "conditions": [
+                    {
+                        "condition": "minecraft:survives_explosion"
+                    }
+                ],
+                "entries": [
+                    {
+                        "type": "minecraft:item",
+                        "name": `mi_tweaks:${machineName}`
+                    }
+                ],
+                "rolls": 1.0
+            }
+        ],
+        "random_sequence": `mi_tweaks:blocks/${machineName}`
+    }
+    saveJsonToPath(dataPath, dataJson)
+
+}

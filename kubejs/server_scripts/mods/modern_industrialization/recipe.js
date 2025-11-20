@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-        event.shaped(
+    event.shaped(
         Item.of('modern_industrialization:resistor', 6),
         [
             ' PC',
@@ -182,6 +182,19 @@ ServerEvents.recipes(event => {
             R:"minecraft:redstone"
         }
     )
+
+    milfShaped(event, {
+        pattern: [
+            "P P",
+            "PCP",
+            "P P"
+        ],
+        key: {
+            P: { item: "modern_industrialization:invar_curved_plate" },
+            C: { item: "modern_industrialization:heatproof_machine_casing" }
+        },
+        outputItems: [[{ id: "modern_industrialization:invar_machine_casing_pipe" }, 2]],
+    })
 
 
     event.custom({

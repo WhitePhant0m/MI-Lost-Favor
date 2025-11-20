@@ -766,7 +766,7 @@
 					type: "item"
 				}
 			]
-			x: -15.5d
+			x: -13.5d
 			y: 3.0d
 		}
 		{
@@ -1768,8 +1768,8 @@
 			id: "498922D593321422"
 			shape: "hexagon"
 			tasks: [{
-				id: "776C8320387E9630"
-				item: { count: 1, id: "extended_industrialization:large_steam_furnace" }
+				id: "6A59240C1CB1DA0C"
+				item: { count: 1, id: "mi_tweaks:advanced_large_steam_furnace" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -3994,6 +3994,54 @@
 			}]
 			x: -11.5d
 			y: -9.5d
+		}
+		{
+			dependencies: ["55756CD3B1F8F89F"]
+			id: "2F10BA3C4E457AE5"
+			shape: "octagon"
+			tasks: [{
+				id: "16F596CEC63DF9E5"
+				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["55756CD3B1F8F89F"]
+			id: "522539A6C9F9C87E"
+			shape: "octagon"
+			tasks: [{
+				id: "0DC8826EBBC6A44D"
+				item: { count: 1, id: "extended_industrialization:steam_chainsaw" }
+				type: "item"
+			}]
+			x: -17.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["570E4E47D3CBC937"]
+			id: "55756CD3B1F8F89F"
+			shape: "octagon"
+			tasks: [{
+				id: "258B5209CB151822"
+				item: { components: { "immersiveengineering:blueprint": "MI tools" }, count: 1, id: "immersiveengineering:blueprint" }
+				type: "item"
+			}]
+			x: -15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["58CE6288033131D7"]
+			id: "7C21F0EED4B51F96"
+			shape: "heart"
+			tasks: [{
+				id: "1A22263A54B618DC"
+				item: { count: 1, id: "modern_industrialization:trash_can" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.5d
 		}
 	]
 }

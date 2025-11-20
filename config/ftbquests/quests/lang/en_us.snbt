@@ -452,6 +452,7 @@
 		""
 		"Sooner or later, you will have full access to everything you are so used to, don't worry!"
 	]
+	quest.179140A353AB44E8.quest_subtitle: "Or rather System.out.println(\"Hello World!\")"
 	quest.17A44FD7738F4496.quest_desc: [
 		"Used to crush items to make them less intact"
 		"{@pagebreak}"
@@ -1452,6 +1453,7 @@
 		"{@pagebreak}"
 		"Ручной колодец. Производит разное количество воды в разных биомах. Может быть подключен к системе акведуков."
 	]
+	quest.55756CD3B1F8F89F.quest_desc: ["It totally makes sense that you can squeeze information out of books ´꒳`"]
 	quest.55816F492AF21D36.quest_desc: [
 		"You can collect an already drawn ritual by dropping the talisman and redstone into the circle, activating the ritual, and then placing it anywhere you want."
 		""

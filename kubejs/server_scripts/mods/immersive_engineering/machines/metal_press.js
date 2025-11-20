@@ -74,7 +74,11 @@ ServerEvents.recipes(event => {
         })
     }
 
-    function pressBlueprintRecipe(blueprint, bpTier, color) {
+    function aePressBlueprintRecipe(blueprint, bpTier, color) {
+        pressBlueprintRecipe(blueprint, bpTier, color, bpTier)
+    }
+
+    function pressBlueprintRecipe(blueprint, bpTier, color, name) {
         event.custom({
             type: "immersiveengineering:metal_press",
             energy: 3200,
@@ -86,16 +90,18 @@ ServerEvents.recipes(event => {
             result: {
                 id: "immersiveengineering:blueprint",
                 count: 1,
-                components: { "immersiveengineering:blueprint": bpTier, "minecraft:item_name": "{'text':'" + bpTier + "','color':'" + color + "'}" }
+                components: { "immersiveengineering:blueprint": bpTier, "minecraft:item_name": "{'text':'" + name + "','color':'" + color + "'}" }
             }
         });
     }
 
-    pressBlueprintRecipe("kubejs:mysterious_blueprint", tier1bp, '#84b9ff')
-    pressBlueprintRecipe("kubejs:storage_blueprint", tier2bp, '#fff678')
-    pressBlueprintRecipe("kubejs:automation_blueprint", tier3bp, '#8de8ff')
-    pressBlueprintRecipe("kubejs:quantum_blueprint", tier4bp, '#c795ff')
-    pressBlueprintRecipe("kubejs:divine_blueprint", tier5bp, '#abffc0')
+    aePressBlueprintRecipe("kubejs:mysterious_blueprint", tier1bp, '#84b9ff')
+    aePressBlueprintRecipe("kubejs:storage_blueprint", tier2bp, '#fff678')
+    aePressBlueprintRecipe("kubejs:automation_blueprint", tier3bp, '#8de8ff')
+    aePressBlueprintRecipe("kubejs:quantum_blueprint", tier4bp, '#c795ff')
+    aePressBlueprintRecipe("kubejs:divine_blueprint", tier5bp, '#abffc0')
+
+    pressBlueprintRecipe("modern_industrialization:guidebook", "MI tools", '#ccac7c', "MI Tools Blueprint")
 
 
 

@@ -8,12 +8,29 @@ ServerEvents.recipes(event => {
     event.remove({output: [
         'modern_industrialization:steel_furnace', 
         'modern_industrialization:electric_furnace', 
-        'modern_industrialization:bronze_furnace'
+        'modern_industrialization:bronze_furnace',
+        "extended_industrialization:large_steam_furnace",
+        "extended_industrialization:large_electric_furnace"
     ]})
 
     event.forEachRecipe({ type: 'minecraft:smelting' }, kubeRecipe => {
         let { originalRecipeResult: result, originalRecipeIngredients: ingredients } = kubeRecipe; 
         event.recipes.modern_industrialization.mi_furnace(2, 200).itemIn(ingredients).itemOut(result);
+/*         const rjson = JSON.parse(kubeRecipe.json)
+        if (Array.isArray(rjson.ingredient)) {
+            rjson.ingredient.forEach(ing =>{
+                miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:furnace",
+                    inputItems: [[ing]],
+                    outputItems: [[rjson.result]]
+                })
+            })
+        } else {
+            miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:furnace",
+                inputItems: [[rjson.ingredient]],
+                outputItems: [[rjson.result]]
+            })
+        } */
+
     });
     
     // Adding recipes that have been deleted 
@@ -62,3 +79,9 @@ ServerEvents.recipes(event => {
     event.remove({type: 'minecraft:smelting', input: `modern_industrialization:iridium_tiny_dust`})
 
 })
+
+/* 
+KubeJSTweaks.beforeRecipes(event =>{
+    let regex = new RegExp(".*\_exported_mi_furnace")
+    event.disable(regex)
+}) */

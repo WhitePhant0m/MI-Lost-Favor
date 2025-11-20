@@ -50,6 +50,17 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineCraft(event, {energy:4, time:300, machine:"modern_industrialization:packer",
+        outputItems:[
+            [{item:"modern_industrialization:trash_can"}]
+        ],
+        inputItems:[
+            [{item:"modern_industrialization:steel_upgrade"}, 1],
+            [{item:"minecraft:magma_block"}, 4],
+        ],
+        removeRecipe:true
+    })
+
     miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"sophisticatedstorage:advanced_compacting_upgrade"}]
@@ -61,4 +72,6 @@ ServerEvents.recipes(event => {
         ],
         removeRecipe:true
     })
+
+
 })

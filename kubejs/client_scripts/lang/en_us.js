@@ -42,6 +42,9 @@ ClientEvents.lang('en_us', event => {
 
     event.add('gateways.basic/deer', "Deer Gateway")
 
+    event.add('block.mi_tweaks.advanced_large_steam_furnace', "Advanced Large Steam Furnace")
+    event.add('block.mi_tweaks.large_electric_furnace', "Large Electric Furnace")
+
     //#region rituals
     event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
     event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
