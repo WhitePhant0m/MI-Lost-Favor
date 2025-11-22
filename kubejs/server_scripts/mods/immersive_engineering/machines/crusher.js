@@ -10,7 +10,7 @@
  *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
  *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
 */
-const ieCrusherCraft = (event, args) => {
+const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
     let recipe = {
         type: "immersiveengineering:crusher",
         input: args.inputItems[0][0],
@@ -22,16 +22,47 @@ const ieCrusherCraft = (event, args) => {
         (index == 0) ? recipe.result = {basePredicate:out[0], count:out[1] ?? 1} : recipe.secondaries.push({output:out[0], count:out[1] || 1, chance:out[2]})
     })
     if(!args.compatOff){
-        miMachineCraft(event, {energy:4, time:args.time || 200, machine:"modern_industrialization:macerator",
+        let miEnergy = 4
+        switch(args.compatTier){
+            case "bronze":
+                miEnergy = 2
+                break
+            case "steel":
+                miEnergy = 4
+                break
+            case "electric":
+                miEnergy = 8
+                break
+        }
+        let miArgs = 
+        miMachineCraft(event, {energy:miEnergy, time:args.time || 200, machine:"modern_industrialization:macerator",
             inputItems:args.inputItems,
             outputItems:args.outputItems
         })
     }
-    if(args.removeRecipe){event.remove(args.outputItems.forEach((out) => {event.remove({output: out})}))}
+    if(args.removeRecipe){args.outputItems.forEach((out) => {event.remove({output: out})})}
     event.custom(recipe)
 }
 
 ServerEvents.recipes(event => {
+
+    ieCrusherCraft(event,{
+        inputItems:[[{"tag": "c:sandstone/uncolored_blocks"}]],
+        outputItems:[
+            [{item: "minecraft:sand"}, 2],
+            [{item: "modern_industrialization:saltpeter_dust"}, 1, 0.5]
+        ],
+        compatTier:"electric",
+    })
+
+    ieCrusherCraft(event,{
+        inputItems:[[{"tag": "c:sandstone/red_blocks"}]],
+        outputItems:[
+            [{item: "minecraft:red_sand"}, 2],
+            [{item: "modern_industrialization:saltpeter_dust"}, 1, 0.5]
+        ],
+        compatTier:"electric",
+    })
 
     ieCrusherCraft(event,{
         inputItems:[[{"item": "extendedae:entro_crystal"}]],

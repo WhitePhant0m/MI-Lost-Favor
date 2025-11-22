@@ -112,25 +112,8 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    const removing_by_recipe_id = [
-        /modern_industrialization:materials\/.*\/craft\/ring/,
-        "modern_industrialization:materials/fire_clay_dust",
-        "modern_industrialization:materials/bronze_dust",
-        "modern_industrialization:materials/blast_furnace/bauxite_to_aluminum_ingot",
-        "modern_industrialization:vanilla_recipes/easy_chest",
-        "modern_industrialization:vanilla_recipes/easy_chest",
-        "modern_industrialization:electric_age/component/craft/resistor",
-    ]
-
-    removing_by_recipe_id.forEach(id => {
-        event.remove({ id: id })
-    });
-
-    //WIP, crutch solution
-
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:packer' })
     event.remove({ output: /ae2:*/, type: 'modern_industrialization:assembler' })
-    // event.remove({ output: /ae2:*/, type: 'modern_industrialization:electrolyzer' })
 
     customPestleAndMortarCraft(event, {
         ingredients: [
@@ -143,45 +126,44 @@ ServerEvents.recipes(event => {
         amount: 3,
     })
 
-    event.shaped(
-        Item.of('kubejs:radio_tower_block', 8),
-        [
+    milfShaped(event, {
+        pattern: [
             'ASA',
             'S S', 
             'ASA'
         ],
-        {
-            A: '#c:plates/aluminum',
-            S: '#c:plates/stainless_steel', 
-        }
-    )
+        key: {
+            A: { tag: "c:plates/aluminum" },
+            S: { tag: "c:plates/stainless_steel" }
+        },
+        outputItems: [[{ id: "kubejs:radio_tower_block" }, 8]],
+    })
 
-    event.shaped(
-        Item.of('kubejs:radio_tower_slab', 6),
-        [
-            '   ',
-            'BBB', 
-            '   '
+    milfShaped(event, {
+        pattern: [
+            'BBB'
         ],
-        {
-            B: 'kubejs:radio_tower_block',
-        }
-    )
+        key: {
+            B: { item: "kubejs:radio_tower_block" },
+        },
+        outputItems: [[{ id: "kubejs:radio_tower_slab" }, 6]],
+    })
 
-    event.shaped(
-        Item.of('modern_industrialization:resistor', 6),
-        [
+    milfShaped(event, {
+        pattern: [
             ' PC',
             'PWP', 
             'RP '
         ],
-        {
-            P:"minecraft:paper",
-            W:"modern_industrialization:copper_wire",
-            C:"modern_industrialization:coal_dust",
-            R:"minecraft:redstone"
-        }
-    )
+        key: {
+            P: { item: "minecraft:paper" },
+            W: { item: "modern_industrialization:copper_wire" },
+            C: { item: "modern_industrialization:coal_dust" },
+            R: { item: "minecraft:redstone" },
+        },
+        outputItems: [[{ id: "modern_industrialization:resistor" }, 6]],
+        compatOff:true
+    })
 
     milfShaped(event, {
         pattern: [
@@ -196,40 +178,24 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "modern_industrialization:invar_machine_casing_pipe" }, 2]],
     })
 
-
-    event.custom({
-            "type": "minecraft:crafting_shaped",
-            "category": "misc",
-            "key": {
-                "i": {
-                "tag": "c:ingots/aluminum"
-                },
-                "d": {
-                "tag": "c:dyes/blue"
-                },
-                "r": {
-                "tag": "c:rods/aluminum"
-                },
-                "p": {
-                "tag": "c:paper"
-                }
-            },
-            "pattern": [
-                "rir",
-                "ddd",
-                "ppp"
-            ],
-            "result": {
-                "components": {
-                "immersiveengineering:blueprint": "MI components"
-                },
-                "count": 1,
-                "id": "immersiveengineering:blueprint"
-            },
-            "show_notification": false
-        })
-
-
+    milfShaped(event, {
+        pattern: [
+            "rir",
+            "ddd",
+            "ppp"
+        ],
+        key: {
+            i: { tag: "c:ingots/aluminum" },
+            d: { tag: "c:dyes/blue" },
+            r: { tag: "c:rods/aluminum" },
+            p: { tag: "c:paper" }
+        },
+        outputItems: [[{ 
+            "components": {"immersiveengineering:blueprint": "MI components"},
+            "id": "immersiveengineering:blueprint"
+        }, 1]],
+        compatOff:true
+    })
 
     event.replaceOutput(
         { output: 'modern_industrialization:steel_block' },
@@ -335,9 +301,29 @@ ServerEvents.recipes(event => {
 })
 
 KubeJSTweaks.beforeRecipes(event =>{
+
+    const disableByRecipeID = [
+        /modern_industrialization:materials\/.*\/craft\/ring/,
+        "modern_industrialization:materials/fire_clay_dust",
+        "modern_industrialization:materials/bronze_dust",
+        "modern_industrialization:materials/blast_furnace/bauxite_to_aluminum_ingot",
+        "modern_industrialization:vanilla_recipes/easy_chest",
+        "modern_industrialization:vanilla_recipes/easy_chest",
+        "modern_industrialization:electric_age/component/craft/resistor",
+        `modern_industrialization:vanilla_recipes/macerator/sandstone_to_sand`,
+        `modern_industrialization:vanilla_recipes/macerator/red_sandstone_to_sand`,
+        "modern_industrialization:vanilla_recipes/lignite_torch",
+        "modern_industrialization:vanilla_recipes/torch"
+    ]
+
+    disableByRecipeID.forEach(id =>{
+        event.disable(id)
+    })
+    
+
     const oresToChange = ['iron', 'gold', 'copper', 'tin', 'lead']
     oresToChange.forEach(ore =>{
-/*         event.disable(`modern_industrialization:materials/${ore}/macerator/raw_metal`)
+/*      event.disable(`modern_industrialization:materials/${ore}/macerator/raw_metal`)
         event.disable(`modern_industrialization:materials/${ore}/forge_hammer/raw_metal_to_dust_with_tool`)
         event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust_with_tool`)
         event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust`) */

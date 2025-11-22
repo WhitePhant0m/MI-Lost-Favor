@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
         "immersiveengineering:arcfurnace/raw_ore_uranium",
         "immersiveengineering:crusher/ore_quartz",
         "immersiveengineering:crusher/ore_lapis",
+        "immersiveengineering:crusher/red_sandstone"
     ]
 
     removing_by_recipe_id.forEach(id => {
@@ -85,31 +86,6 @@ ServerEvents.recipes(event => {
             "modern_industrialization:aluminum_plate",
             "modern_industrialization:steel_plate"
         )
-    /*
-    event.remove({id: "immersiveengineering:crafting/component_iron"})
-    event.shaped("4x immersiveengineering:component_iron", [
-        "QTQ",
-        "RWR",
-        "QTQ"
-    ], {
-        Q: "modern_industrialization:iron_plate",
-        W: "minecraft:copper_ingot",
-        R: "modern_industrialization:piston",
-        T: "modern_industrialization:conveyor"
-    });
-    event.remove({id: "immersiveengineering:crafting/component_steel"})
-    event.shaped("4x immersiveengineering:component_steel", [
-        "QTQ",
-        "RWR",
-        "QTQ"
-    ], {
-        Q: "modern_industrialization:steel_plate",
-        W: "minecraft:copper_ingot",
-        R: "modern_industrialization:robot_arm",
-        T: "modern_industrialization:conveyor"
-    });
-    */
-
 
     event.remove({id: "immersiveengineering:crafting/component_iron"})
     event.shaped("2x immersiveengineering:component_iron", [
