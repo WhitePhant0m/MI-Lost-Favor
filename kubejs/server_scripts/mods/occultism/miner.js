@@ -24,6 +24,8 @@ ServerEvents.recipes(event => {
         "occultism:miner/ores/platinum_ore",
         "occultism:miner/ores/bauxite_ore",
         "occultism:miner/ores/emerald_ore",
+        "occultism:miner/ores/runic_stone",
+        "occultism:miner/ores/arcane_crystal",
         // Deepslate Miners
         "occultism:miner/deeps/deepslate_copper_ore",
         "occultism:miner/deeps/deepslate_iron_ore",
@@ -34,6 +36,8 @@ ServerEvents.recipes(event => {
         "occultism:miner/deeps/deepslate_gold_ore",
         "occultism:miner/deeps/deepslate_lapis_ore",
         "occultism:miner/deeps/deepslate_silver_ore",
+        // Master 
+        // "occultism:miner/master/stellarite",
         // Eldritch Ancient Miner
         "occultism:miner/eldritch/raw_platinum",
         "occultism:miner/eldritch/raw_gold",
@@ -59,16 +63,37 @@ ServerEvents.recipes(event => {
         "occultism:miner/eldritch/raw_lead",
         "occultism:miner/eldritch/salt",
         "occultism:miner/eldritch/raw_uranium",
+        "occultism:miner/eldritch/raw_iridium",
+        "occultism:miner/eldritch/rune",
+        "occultism:miner/eldritch/amethyst",
+        "occultism:miner/eldritch/arcane_crystal",
+        "occultism:miner/eldritch/stellarite",
     ]
 
 
     // miner_types: unspecialized, ores, deeps, master, eldritch
     const custom_ores = [
         {name: "malum:deepslate_soulstone_ore", miner_type: "deeps", chance: 200, amount: 1},
+        {name: "forbidden_arcanus:arcane_crystal_ore", miner_type: "deeps", chance: 200, amount: 1},
+        {name: "forbidden_arcanus:runic_stone", miner_type: "deeps", chance: 200, amount: 1},
         {name: "malum:brilliant_deepslate", miner_type: "deeps", chance: 100, amount: 1},
+        {name: "malum:refined_brilliance", miner_type: "eldritch", chance: 100, amount: 9},
         {name: "pastel:deepslate_shimmerstone_ore", miner_type: "deeps", chance: 200, amount: 1},
+        {name: "pastel:stratine_ore", miner_type: "deeps", chance: 200, amount: 1},
         {name: "malum:cthonic_gold_ore", miner_type: "deeps", chance: 100, amount: 1},
-        {name: "pastel:deepslate_azurite_ore", miner_type: "deeps", chance: 50, amount: 1},
+        {name: "pastel:deepslate_azurite_ore", miner_type: "deeps", chance: 20, amount: 1},
+        {name: "malum:block_of_soulstone", miner_type: "eldritch", chance: 50, amount: 1},
+        {name: "malum:cthonic_gold_fragment", miner_type: "eldritch", chance: 50, amount: 9},
+        {name: "pastel:azurite_block", miner_type: "eldritch", chance: 50, amount: 1},
+        {name: "pastel:shimmerstone_gem", miner_type: "eldritch", chance: 50, amount: 9},
+        {name: "pastel:stratine_fragments", miner_type: "eldritch", chance: 50, amount: 9},
+        {name: "forbidden_arcanus:stellarite_block", miner_type: "eldritch", chance: 20, amount: 1},
+        {name: "forbidden_arcanus:rune_block", miner_type: "eldritch", chance: 50, amount: 1},
+        {name: "forbidden_arcanus:arcane_crystal_block", miner_type: "eldritch", chance: 50, amount: 1},
+        {name: "minecraft:amethyst_shard", miner_type: "eldritch", chance: 200, amount: 9},
+        {name: "pastel:citrine_shard", miner_type: "eldritch", chance: 200, amount: 9},
+        {name: "pastel:topaz_shard", miner_type: "eldritch", chance: 200, amount: 9},
+
     ]
     
 
