@@ -53,7 +53,6 @@ FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
 FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
     let player = event.entity;
     let player_name = player.profile.name
-    let main_stage = "early_items"
     let stage_list = [
         "early_items",
         "blast_furnace",
@@ -61,8 +60,8 @@ FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
     stage_list.forEach(stage => {
         event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
     });
-    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${main_stage}`).string)
-    player.tell(Text.translate(`milf.stage.${main_stage}`).color("#ac6cba").bold())
+    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.early_items"`).string)
+    player.tell(Text.translate(`milf.stage.early_items"`).color("#ac6cba").bold())
 });
 
 // reward for Iron Ingot
@@ -79,6 +78,16 @@ FTBQuestsEvents.customReward('3922C9ACA47723BA', event => {
     let player = event.entity;
     let player_name = player.profile.name
     let stage = "forbidden_arcanus_mobs"
+
+    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+});
+
+
+// reward for flint and steel
+FTBQuestsEvents.customReward('7650FE6CA0220DA3', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+    let stage = "the_nether_access"
 
     event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
 });

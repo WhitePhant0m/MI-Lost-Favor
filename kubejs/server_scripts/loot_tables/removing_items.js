@@ -54,6 +54,7 @@ LootJS.modifiers(event => {
         { item_name: 'ars_additions:lost_codex_entry' },
         { item_name: 'ars_additions:ancient_codex_entry' },
         { item_name: 'hexerei:blood_sigil' },
+        { item_name: 'minecraft:flint_and_steel' },
     ]
     const loot_types = [LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC]
 
