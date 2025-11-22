@@ -1768,8 +1768,8 @@
 			id: "498922D593321422"
 			shape: "hexagon"
 			tasks: [{
-				id: "6A59240C1CB1DA0C"
-				item: { components: { "ftbquests:missing_item": "mi_tweaks:advanced_large_steam_furnace" }, count: 1, id: "ftbquests:missing_item" }
+				id: "546EEF90D6C4C757"
+				item: { count: 1, id: "mi_tweaks:advanced_large_steam_furnace" }
 				type: "item"
 			}]
 			x: -3.5d
