@@ -276,6 +276,17 @@
 		"{@pagebreak}"
 		"Только &lсамый&r удачивлый сможет найти символ лепреконов!"
 	]
+	quest.0E16DE12CC7D4CEA.quest_desc: [
+		"Adds small rewarding events such as Dig Spots, Fishing Spots, Drop Rushes and Gold Rushes."
+		""
+		"• Dig Spots holding small treasures"
+		""
+		"• Fishing Spots guaranteeing a catch with treasure"
+		""
+		"• Drop Rushes for bonus harvests in a simple timed challenge"
+		""
+		"• Gold Rushes for extra ores while mining"
+	]
 	quest.0E432C3C0C5E9D1D.quest_desc: ["Fire Resistance (duh)"]
 	quest.0E4BFAA97BD15447.quest_desc: [
 		"To construct an altar, a witch must place &lsix altar blocks&r to form a rectangular platform."
@@ -328,6 +339,7 @@
 		""
 		"You can also buy from Wandering Trader"
 	]
+	quest.1150D94139B83FBF.quest_desc: ["Armor Quick Swap makes changing gear effortless. In your inventory, simply right-click an armor piece to instantly equip or exchange it with what you’re wearing. You can also sneak and right-click an armor stand to swap your entire outfit in one go. It couldn’t be simpler — just quick gear changes whenever you need them."]
 	quest.1183EEDA65D3180C.quest_desc: ["To get it, you need to right click normal Farmland with Arcane Bone Meal. Magical Farmland doubles the quantity of crop drops."]
 	quest.11AEAD046E2353E6.quest_desc: [
 		"I will need a tool to administer the solution into an unfortunate specimen. Luckily, with the help of another doctoral tool, I can make a simple copper needle. One especially capable of handling dangerous solutions."
@@ -452,7 +464,6 @@
 		""
 		"Sooner or later, you will have full access to everything you are so used to, don't worry!"
 	]
-	quest.179140A353AB44E8.quest_subtitle: "Or rather System.out.println(\"Hello World!\")"
 	quest.17A44FD7738F4496.quest_desc: [
 		"Used to crush items to make them less intact"
 		"{@pagebreak}"
@@ -763,6 +774,14 @@
 		""
 		"Так же используется для создания ведьмовских машин"
 	]
+	quest.2B3E3C5AB2CDFAB9.quest_desc: [
+		"Take control over you inventory. Sort. Move matching Items. Throw all. Locked slots. Gear sets! And much more."
+		""
+		"ALT + SHIFT + LMB for lock item in inventory"
+		""
+		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next\" } }, \".\" ]"
+	]
+	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make the player aware of certain non-obvious mechanics. You can read them later, once you have an starting base."]
 	quest.2BB85B5FB4A2E943.quest_desc: [
 		"Grows in dark forests."
 		""
@@ -809,6 +828,11 @@
 	quest.2E5638B2207FCCBF.quest_desc: [
 		"&lChalice (Filled)&r:"
 		"• +2x Power Capacity"
+	]
+	quest.2F728B18B7B4C5FE.quest_desc: [
+		"Boss Checklist adds a list of all bosses from modpack to the game, which can be opened by pressing R and open radical menu."
+		""
+		"The menu displays all bosses from various mods, which you can mark as defeated, or they will be marked automatically if the mod is installed on the server. For each boss, you can view their model/image, mod name, drops, spawn conditions, and other additional info."
 	]
 	quest.2F9109DBADADEE10.quest_desc: ["Charms are a set of curios enchanted with strong protection magics. They range from allowing you to walk on Powdered Snow, to saving you from the Warden's powerful Sonic Boom. Each charm has a specific amount of charges available to protect you. Once the charges have been depleted, pop them into an Imbuement chamber to charge them back up."]
 	quest.2FBB9E95379CD74A.quest_desc: [
@@ -1096,6 +1120,7 @@
 		""
 		"Когда моб умирает, будучи пораженным ядом, с него могут выпасть особые предметы. Однако меч слишком груб для их извлечения. Чтобы аккуратно извлечь эти ценные ингредиенты, их нужно умертвить скальпелем."
 	]
+	quest.3DF8DAC78B7B164A.quest_desc: ["Only Fight or Flight adds a simple system similar to open-world sandbox rpgs where players cannot place blocks in the middle of a fight!"]
 	quest.3E6BADA7B5D3F004.quest_subtitle: "Just mark for \"More red\" mod"
 	quest.3EA2FDD972EB4226.quest_desc: [
 		"If some nasty bacteria is threatening your kitchen or your life, you can use this to clean the mess. Well, stop the mess from expanding, at least..."
@@ -1235,6 +1260,11 @@
 		"Просто ломайте листву дерева."
 		""
 		"&n&l&#FEECD6Совет:&r&r&r Используйте &#FEECD6мотыгу&r для разрушения &#CAE4C8листвы&r, это гораздо быстрее чем ручками!"
+	]
+	quest.449B931E4C9867A1.quest_desc: [
+		"mod adds a trash slot to your inventory allowing you to quickly and safely get rid of unwanted items."
+		""
+		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/trashslot\" } }, \".\" ]"
 	]
 	quest.454C3080B0A7A24A.quest_desc: [
 		"Quite &#FEECD6bad&r for bridges and diving!"
@@ -1453,6 +1483,10 @@
 		"{@pagebreak}"
 		"Ручной колодец. Производит разное количество воды в разных биомах. Может быть подключен к системе акведуков."
 	]
+	quest.5554B53144E7F2C5.quest_desc: [
+		"Harvest With Ease lets you right-click on fully grown crops with hoe to harvest and replant them "
+		"instantly — no more tedious replanting!"
+	]
 	quest.55756CD3B1F8F89F.quest_desc: ["It totally makes sense that you can squeeze information out of books ´꒳`"]
 	quest.55816F492AF21D36.quest_desc: [
 		"You can collect an already drawn ritual by dropping the talisman and redstone into the circle, activating the ritual, and then placing it anywhere you want."
@@ -1509,8 +1543,37 @@
 		"В отличие от печи, эта печь не может перерабатывать руды. Поместите глиняный кувшин в центральный слот, чтобы собирать дым."
 	]
 	quest.5A518A86865E47EB.quest_desc: ["Показывает радиус работы тотемов"]
+	quest.5AB1A672225555B0.quest_desc: [
+		"Mod allows showcasing items from the inventory in chat."
+		""
+		"You have to click the item in your inventory with &lShift + X&r to showcase it"
+	]
 	quest.5AEBD2E96FA53366.quest_desc: ["The fiery modifier can be applied to all tool items (Pickaxes, Shovels, Axes, Hoes) and will automatically smelt all mined blocks if they have a smelting recipe. "]
 	quest.5AEEF8055EA6AE88.quest_desc: ["Use a Splash Aureal Bottle on a normal soul for getting"]
+	quest.5B66EF3877866949.quest_desc: [
+		"This mod adds horse improvements you haven't thought you needed."
+		""
+		"• When mounted, clicking on a fence will leash the horse to it. Requires Lead in the special slot that's added to horse inventory."
+		""
+		"• Ridden horses can swim now. Press jump (spacebar) when in water."
+		""
+		"• Horses now fit in boats."
+		""
+		"• Makes traversing forests easier by tweaking Leaves collision. You'll get stuck on leaves much less now."
+		""
+		"• Increases horse step height by 10%. Allows riding up a path to a full block and not get stuck."
+		""
+		"• When mounted, your mining speed will remain the same as on ground. Removes 80% block break speed penalty when mounted."
+		""
+		"• Keeps player's looking direction when mounting a horse. Rotates horse instead of you."
+		""
+		"• When horse is not moving, player can move the camera independently of the ridden horse, up to 100 degrees (after which horse will follow the rotation)."
+		""
+		"• Makes horse disappear (almost) when rider is looking down. Watch your step!"
+		""
+		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/horseman\" } }, \".\" ]"
+	]
+	quest.5C6F64DF2FA17AA2.quest_desc: ["Can be used to summon a horse from any location in the world. "]
 	quest.5C95E8450BEAD473.quest_desc: [
 		"Using the Cinnabar Ritual you can obtain the incredibly powerful Pentacle. Whatever mob is sacrificed to obtain it will result in the Pentacle spawing that mob for eternity"
 		"{@pagebreak}"
@@ -1888,6 +1951,12 @@
 		""
 		"You can also buy from Wandering Trader"
 	]
+	quest.70AB266645FE1C03.quest_desc: [
+		"A mod designed to encourage dietary variety! It does so by rewarding the player for eating a variety of foods instead of punishing them for failing to diversify. Instead of using the stick we use the carrot!"
+		""
+		"In the modpack, only rare and very filling food gives you extra hearts!"
+	]
+	quest.7145CB4C825D9D77.quest_desc: ["Clavis transforms the traditional loot system: every loot chest is now locked and can be opened through a simple yet engaging mini-game. The better you perform, the richer your reward - up to nearly double the loot for a perfect result."]
 	quest.714992905CA44375.quest_desc: [
 		"My catalogue of ingredients, although plentiful, can be limiting in its color. I do not have enough ingredients to expand my ideas, my vision! But I know how I can get more. It may seem like these are all the flowers and herbs the world has to offer, but I know simple plant life can be so much more complex. I will imbue these plants, strip them down to their genetical make-up, and create new plants. COMPLETELY REMADE BY MY HAND."
 		""
@@ -1915,6 +1984,7 @@
 		""
 		"Его можно зарядить, чтобы использовать в качестве портативного контейнера для алтарной энергии, позволяющего создавать магию кругов без присутствия алтаря, а также использовать при создании различных магических инструментов."
 	]
+	quest.71721385710E5EB0.quest_desc: ["«С» button for crawl"]
 	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
 	quest.71E39806A0B7D79D.quest_desc: [
 		"You can read about most rituals in the guidebook!"
@@ -1988,6 +2058,7 @@
 		"{@pagebreak}"
 		"&#FEECD6Раздавите&r этот &#CAE4C8токсичный&r вид &#CAE4C8тростника&r своей новенькой наковальней!"
 	]
+	quest.757ED58D0C1CED21.quest_desc: ["FindMe allows you to search for items in nearby inventories by pressing a key. For that you simply need to hover over an item (JEI Compatible) and press «&lY&r» and cloud particles will spawn in the inventories that have that item."]
 	quest.7591497746DA17AC.quest_desc: ["Just for endgame tier 5 pedestal without crafts for now"]
 	quest.760015A8E61B210A.quest_desc: ["Виталик за тики роста животных/размножение/убийство даёт сурс "]
 	quest.7635ED9379E95573.quest_desc: ["Even grass could become quite strong when you weave it properly"]
@@ -2072,6 +2143,7 @@
 	task.08DD73E0742DA0F8.title: "Any #milf:notched_polished_block"
 	task.0925CEA8A38CBB6C.title: "Any #milf:colored_lamp"
 	task.09936E3502457C61.title: "Any #milf:colored_glowblock"
+	task.09C8A19971E0C5CF.title: "FindMe"
 	task.09FBBC80BC28B007.title: "Any #c:glass_blocks"
 	task.0B1832E4208E1AA5.title: "Any #milf:iron_storage"
 	task.0CB11BEA448FFB96.title: "Ore generation"
@@ -2092,13 +2164,17 @@
 	task.17EBE6D06902A269.title: "Any #milf:basic_gemstone_shards"
 	task.1858B5DCA97FF142.title: "Any #ars_nouveau:horn_food"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
+	task.1AE53C37C664CA3B.title: "Clavis"
 	task.1DB3762470DC4D9D.title: "Any #milf:chiseled_base_blocks"
+	task.1FA40B43BF41A3BE.title: "Only Fight Or Flight"
 	task.1FC975DB259AA8A8.title: "Any #milf:gemstone_lamp"
 	task.223A6719946C7ABC.title: "Any #c:chests"
 	task.23F8EEA1AF4C1A9B.title: "Rituals"
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
 	task.25CB2D0B385D4533.title: "Spectrum?"
-	task.2693375290DFFFE2.title: "<glitch>print(\"Hello World!\")"
+	task.2693375290DFFFE2.title: "<glitch>Hello World!"
+	task.26FC76B546262768.title: "Inventory Profiles Next"
+	task.271E89A2A2B37CFC.title: "Showcase Item"
 	task.274F98243AA9482F.title: "Animals breeding"
 	task.284E0D3F10A1E2A1.title: "Weapons"
 	task.29FC46F1CE4D25B3.title: "Cursed shit"
@@ -2121,7 +2197,9 @@
 	task.3AC7749433FF53D8.title: "Abras' Conjure"
 	task.3B4C4E1225398BD9.title: "Black Hole"
 	task.3C8D93CD09CDF958.title: "Any #hexerei:tallow_meltable"
+	task.3CF465D57CE596A9.title: "Boss Checklist"
 	task.3EF92E0D9F56CD52.title: "Ihagan's Enthrallment"
+	task.40ED385E3D23C00B.title: "Little Joys"
 	task.40EE6EFAE710D3F5.title: "Ophyx' Calling"
 	task.42075FB0D0CA93C3.title: "Zume"
 	task.4224A6EBD936625E.title: "Butcher?"
@@ -2143,14 +2221,17 @@
 	task.4BBE7498A48891A8.title: "Any #forbidden_arcanus:blacksmith_gavel"
 	task.4C13E036E01DE93A.title: "Any #milf:diamond_storage"
 	task.4C34F34DFB64B73E.title: "Any #milf:polished_base_blocks"
+	task.4C9B71D2BC1CA752.title: "Next quests"
 	task.4E27A8371F4A90AB.title: "Any #c:stones"
 	task.4E3EC41B69DAD787.title: "Any #milf:polished_base_blocks"
 	task.4E4DCBBCBFA389BB.title: "Any #c:files"
 	task.4FE41B7B9F6AAEE7.title: "!"
 	task.50145BF6C914A142.title: "Any #milf:gemstone_lamp"
 	task.55A9AB2E43857E14.title: "Any #minecraft:beds"
+	task.5681B6E38A2DC015.title: "Harvest with ease"
 	task.5733CBC7B63AE4B4.title: "source generation"
 	task.5811DD77B7904989.title: "AE2WTlib"
+	task.583D11B3732CE886.title: "TrashSlot"
 	task.587A56D8D8AFA800.title: "Any #malum:runewood_logs"
 	task.5D063D32D1C6BB2C.title: "Any #ytech:aqueducts"
 	task.5EC8E0E987CF862A.title: "More plants"
@@ -2163,6 +2244,8 @@
 	task.690983E33893CB82.title: "Any #milf:polished_slabs"
 	task.6A98FF8B055D914F.title: "Any #milf:colored_spore_blossom"
 	task.6B073DC5E1960334.title: "Odus' Open Convocation"
+	task.6C76C1D379AC2926.title: "Horseman"
+	task.6DA0FB55995165C0.title: "Armor Quick Swap"
 	task.6E241CA073F70AD3.title: "Xeovrenth Adjure"
 	task.6E27CA7959D2DC61.title: "Any #pastel:bedrock_equipment"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
@@ -2170,10 +2253,12 @@
 	task.7431F878DB34A30D.title: "Bridging"
 	task.745285CCE59E780F.title: "Any #milf:polished_gemstone_block"
 	task.76CE25E2E78A0201.title: "Any #milf:pedestal_basic"
+	task.77B05217F3206FA8.title: "Crawl"
 	task.77C744B48E7A1B18.title: "Any #minecraft:beds"
 	task.77CF8D64718D9A67.title: "Vanilla items for spectrum progression"
 	task.78C5E8DD6BAEE398.title: "Any #milf:polished_gemstone_block"
 	task.7AE5252F3D792BCA.title: "Mouse Tweaks \\& More Mouse Tweaks"
+	task.7DFA2C0B9737E55D.title: "Spice of Life"
 	task.7EECE34CF3EE7B8C.title: "Any #minecraft:logs"
 	task.7FA316644840FB37.title: "Any #milf:pillar_base_blocks"
 	task.7FA515C73B63F455.title: "Any #toxony:possible_ingredients"

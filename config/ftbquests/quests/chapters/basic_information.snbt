@@ -1,64 +1,73 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	filename: "basic_information"
 	group: ""
+	icon: {
+		id: "kubejs:holy_book_of_color"
+	}
 	id: "4E4F6FF3EEEB1E51"
 	images: [{
 		height: 2.0d
 		image: "occultism:textures/gui/book/familiar_devil.png"
+		order: 1
 		rotation: 0.0d
 		width: 2.0d
-		x: -4.765306122448969d
-		y: -2.9183673469387728d
+		x: -3.8820329743200617d
+		y: -1.8399330927084137d
 	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["2B7F14733C000C22"]
 			id: "1E4A4AD1899325D3"
 			tasks: [{
 				id: "458BFB75460FD02D"
 				type: "checkmark"
 			}]
 			x: -3.5d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
+			dependencies: ["2B7F14733C000C22"]
 			id: "19720A27E00D46F5"
 			tasks: [{
 				id: "7431F878DB34A30D"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -2.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
+			dependencies: ["2B7F14733C000C22"]
 			id: "6902C00ECD02ACEA"
 			tasks: [{
 				id: "7AE5252F3D792BCA"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: -2.0d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["2B7F14733C000C22"]
 			id: "3F076989AA64CD64"
 			tasks: [{
 				id: "42075FB0D0CA93C3"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: -2.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["2B7F14733C000C22"]
 			id: "3B40DB8CA23BB5A0"
 			tasks: [{
 				id: "05F09C91C1D5D399"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: -2.0d
+			x: 3.5d
+			y: 1.0d
 		}
 		{
 			id: "179140A353AB44E8"
@@ -67,7 +76,182 @@
 				id: "2693375290DFFFE2"
 				type: "checkmark"
 			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "70AB266645FE1C03"
+			rewards: [
+				{
+					id: "0B7CDDF7626E38B9"
+					item: {
+						count: 1
+						id: "solcarrot:food_book"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1772FD9BE177AF8B"
+					item: {
+						count: 1
+						id: "farmersdelight:hamburger"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7DFA2C0B9737E55D"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "5B66EF3877866949"
+			tasks: [{
+				id: "6C76C1D379AC2926"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "449B931E4C9867A1"
+			tasks: [{
+				id: "583D11B3732CE886"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "71721385710E5EB0"
+			tasks: [{
+				id: "77B05217F3206FA8"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "5AB1A672225555B0"
+			tasks: [{
+				id: "271E89A2A2B37CFC"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "757ED58D0C1CED21"
+			tasks: [{
+				id: "09C8A19971E0C5CF"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "2B3E3C5AB2CDFAB9"
+			tasks: [{
+				id: "26FC76B546262768"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "3DF8DAC78B7B164A"
+			tasks: [{
+				id: "1FA40B43BF41A3BE"
+				type: "checkmark"
+			}]
 			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "0E16DE12CC7D4CEA"
+			tasks: [{
+				id: "40ED385E3D23C00B"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "5554B53144E7F2C5"
+			tasks: [{
+				id: "5681B6E38A2DC015"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "7145CB4C825D9D77"
+			rewards: [{
+				id: "04F566FE21CD4049"
+				item: {
+					count: 1
+					id: "clavis:lock_pick"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1AE53C37C664CA3B"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "1150D94139B83FBF"
+			rewards: [{
+				id: "4C4F09E92E79A723"
+				item: {
+					count: 1
+					id: "minecraft:armor_stand"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DA0FB55995165C0"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "2F728B18B7B4C5FE"
+			tasks: [{
+				id: "3CF465D57CE596A9"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["179140A353AB44E8"]
+			id: "2B7F14733C000C22"
+			tasks: [{
+				id: "4C9B71D2BC1CA752"
+				type: "checkmark"
+			}]
+			x: 0.0d
 			y: 0.0d
 		}
 	]
