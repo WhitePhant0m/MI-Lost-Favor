@@ -378,6 +378,7 @@
 		"Может готовить еду. Также можно зажигать факелы, нажав Shift и щелкнув по костру."
 	]
 	quest.13134EE8E1631EBB.quest_desc: ["PIPES"]
+	quest.1325489D5E635F06.quest_subtitle: "Banners can be repainted using souls"
 	quest.137E20A86306BF4A.quest_desc: [
 		"&#b0620eNothing&r difficult, right? "
 		"{@pagebreak}"

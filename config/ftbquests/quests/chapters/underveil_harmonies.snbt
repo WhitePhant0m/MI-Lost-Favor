@@ -442,8 +442,8 @@
 				item: { count: 1, id: "malum:soulwoven_pouch" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.5d
+			x: 2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["124BA0D7C84EA673"]
@@ -481,8 +481,8 @@
 				item: { count: 1, id: "malum:soulwoven_banner" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 7.0d
+			x: 1.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -601,8 +601,8 @@
 				item: { count: 1, id: "malum:soul_stained_steel_pickaxe" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 3.0d
+			x: 8.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5D84D25A7A2E91B0"]
@@ -614,7 +614,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5D84D25A7A2E91B0"]
@@ -638,7 +638,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5D84D25A7A2E91B0"]
@@ -661,8 +661,8 @@
 				item: { count: 1, id: "malum:soul_stained_steel_sword" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 3.5d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5D84D25A7A2E91B0"]
@@ -1412,8 +1412,8 @@
 			id: "5C6DEDFD2DF2BFCA"
 			shape: "diamond"
 			tasks: [{
-				id: "3401D0BF0CDF47C8"
-				item: { count: 1, id: "malum:rune_of_motion" }
+				id: "7358B899D2438577"
+				item: { count: 1, id: "malum:rune_of_flowing_grasp" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -1425,8 +1425,8 @@
 			id: "540674DCE3618C62"
 			shape: "diamond"
 			tasks: [{
-				id: "6C28BF7BFBB8ABF3"
-				item: { count: 1, id: "malum:rune_of_loyalty" }
+				id: "7164F48715DD523B"
+				item: { count: 1, id: "malum:rune_of_sky_tether" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -1438,8 +1438,8 @@
 			id: "2D0AC130B7B4D91D"
 			shape: "diamond"
 			tasks: [{
-				id: "1B9B9436B2AE8972"
-				item: { count: 1, id: "malum:rune_of_warding" }
+				id: "231C3AAADB3D3938"
+				item: { count: 1, id: "malum:rune_of_stone_ward" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -1451,8 +1451,8 @@
 			id: "5CA1DE55A53172C4"
 			shape: "diamond"
 			tasks: [{
-				id: "74F5963C403FD997"
-				item: { count: 1, id: "malum:rune_of_haste" }
+				id: "4CB05A3352BA65D3"
+				item: { count: 1, id: "malum:rune_of_howling_gale" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -1464,8 +1464,8 @@
 			id: "5FF4F130D37CBABD"
 			shape: "diamond"
 			tasks: [{
-				id: "467916634D3825E6"
-				item: { count: 1, id: "malum:rune_of_the_aether" }
+				id: "2043741BF2315AC4"
+				item: { count: 1, id: "malum:rune_of_burning_fervor" }
 				type: "item"
 			}]
 			x: -0.5d
@@ -1477,8 +1477,8 @@
 			id: "4C4D1A6DB70161F8"
 			shape: "diamond"
 			tasks: [{
-				id: "3D7E3A13988D74C5"
-				item: { count: 1, id: "malum:rune_of_the_seas" }
+				id: "74B30CF27AF72A17"
+				item: { count: 1, id: "malum:rune_of_good_tides" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -1490,8 +1490,8 @@
 			id: "7A2A6B8E38343414"
 			shape: "diamond"
 			tasks: [{
-				id: "391B4862022E0A1E"
-				item: { count: 1, id: "malum:rune_of_the_arena" }
+				id: "078678F3A1BAC455"
+				item: { count: 1, id: "malum:rune_of_fiery_embrace" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -1503,8 +1503,8 @@
 			id: "14221DB9F8267745"
 			shape: "diamond"
 			tasks: [{
-				id: "4DE7C0D3500D3D64"
-				item: { count: 1, id: "malum:rune_of_the_hells" }
+				id: "231A08B6BF6AC869"
+				item: { count: 1, id: "malum:rune_of_oaken_might" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -1536,7 +1536,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "406638231C0A2409"
-				item: { count: 1, id: "malum:rune_of_sacrificial_empowerment" }
+				item: { count: 1, id: "malum:rune_of_radial_empowerment" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -10826,6 +10826,57 @@
 			}]
 			x: -49.400000000000006d
 			y: -33.2d
+		}
+		{
+			dependencies: ["1B978110B709BF52"]
+			id: "264E9578B746FDD6"
+			shape: "gear"
+			tasks: [{
+				id: "620790472C6B28EB"
+				item: { count: 1, id: "malum:ravenous_pouch" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4A9886369CE0CF61"]
+			id: "318632EF61E817A3"
+			shape: "diamond"
+			tasks: [{
+				id: "7E56BFD587C9FC10"
+				item: { count: 1, id: "malum:spellweaving_pickaxe" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1278B5DE55634C73"]
+			id: "014D3C767CACA387"
+			shape: "diamond"
+			tasks: [{
+				id: "0DB3AC935DCBA70C"
+				item: { count: 1, id: "malum:spellweaving_axe" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0237945A1F6F9132"
+				"03DD999D8C15C916"
+			]
+			id: "147D3F43C7E0111E"
+			shape: "gear"
+			tasks: [{
+				id: "17F62F252EE488E2"
+				item: { count: 1, id: "gaze:spirit_channel_pouch" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 31.0d
 		}
 	]
 }

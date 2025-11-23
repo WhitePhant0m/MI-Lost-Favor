@@ -1,16 +1,16 @@
-filename = 'gaze-1.1.6.1.jar'
-name = 'Gaze - A Malum Addon'
+filename = 'gaze-1.1.7.jar'
+name = 'Gaze'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '105ba268242167635bb78c327535749a8c89a90e'
+hash = 'e893f6c526cb00cd9237e7ab4f5c1ae882776294'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6655837
+file-id = 7250833
 project-id = 1273454
