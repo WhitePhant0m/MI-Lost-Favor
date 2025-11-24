@@ -1,0 +1,87 @@
+{
+  "main": {
+    "0": {
+      "title": "Map",
+      "icon": {
+        "stack": "{count:1,id:\"minecraft:filled_map\"}"
+      },
+      "action": {
+        "category": "MiniMap"
+      }
+    },
+    "4": {
+      "title": "World Tier Select",
+      "icon": {
+        "stack": "{count:1,id:\"apotheosis:boss_summoner\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.apotheosis.open_world_tier_select",
+          "toggle": false
+        }
+      }
+    },
+    "5": {
+      "title": "Open Boss Checklist",
+      "icon": {
+        "stack": "{count:1,id:\"kubejs:holy_book_of_color\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.boss_checklist.open_checklist",
+          "toggle": false
+        }
+      }
+    },
+    "6": {
+      "title": "Advancement",
+      "icon": {
+        "stack": "{count:1,id:\"chipped:alchemy_book\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.advancements",
+          "toggle": false
+        }
+      }
+    }
+  },
+  "MiniMap": {
+    "4": {
+      "title": "Minimap settings",
+      "icon": {
+        "stack": "{count:1,id:\"minecraft:map\"}"
+      },
+      "action": {
+        "key": {
+          "key": "gui.xaero_minimap_settings",
+          "toggle": false
+        }
+      }
+    },
+    "5": {
+      "title": "New Waypoint",
+      "icon": {
+        "stack": "{count:1,id:\"minecraft:map\"}"
+      },
+      "action": {
+        "key": {
+          "key": "gui.xaero_new_waypoint",
+          "toggle": false
+        }
+      }
+    },
+    "6": {
+      "title": "Open Waypoint Screen",
+      "icon": {
+        "stack": "{count:1,id:\"minecraft:map\"}"
+      },
+      "action": {
+        "key": {
+          "key": "gui.xaero_waypoints_key",
+          "toggle": false
+        }
+      }
+    }
+  }
+}
