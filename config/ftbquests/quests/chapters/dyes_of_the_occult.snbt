@@ -3296,7 +3296,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
 				type: "item"
 			}]
 			x: -37.0d
@@ -3618,6 +3618,17 @@
 			}]
 			x: -18.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["026821F02D50FE0D"]
+			id: "7AB88C2D779F62E2"
+			tasks: [{
+				id: "4044017274577007"
+				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:magical_pouch" }
+				type: "item"
+			}]
+			x: -17.0d
+			y: 35.5d
 		}
 	]
 }

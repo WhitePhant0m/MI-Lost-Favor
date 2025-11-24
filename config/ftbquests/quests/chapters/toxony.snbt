@@ -1622,8 +1622,8 @@
 				item: { count: 1, id: "hexerei:herb_jar" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -3214,6 +3214,38 @@
 			}]
 			x: 9.0d
 			y: -3.5d
+		}
+		{
+			dependencies: [
+				"5645E4DA993EDC3D"
+				"247A04F9979837AB"
+				"625AB3BA7F32CA10"
+				"5504357597BD115A"
+				"631F38ADF34C57B6"
+			]
+			hide_dependency_lines: true
+			id: "4F9AF422C4AA5B85"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "367E380A2B943FA1"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			id: "3D7610F02FB93E78"
+			shape: "heart"
+			tasks: [{
+				id: "68403CCA82BDEA08"
+				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:devices_pouch" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
 		}
 	]
 }
