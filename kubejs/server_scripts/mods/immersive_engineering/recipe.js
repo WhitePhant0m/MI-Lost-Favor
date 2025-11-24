@@ -19,41 +19,6 @@ ServerEvents.recipes(event => {
         ]
     })
 
-    // Create constants
-    const removing_by_recipe_id = [
-        /immersiveengineering:crafting\/.*hammercrushing.*/,
-        /immersiveengineering:crusher\/.*aluminum/,
-        /immersiveengineering:blastfurnace.*/,
-        "immersiveengineering:alloysmelter/insulating_glass",
-        "immersiveengineering:alloysmelter/bronze",
-        "immersiveengineering:alloysmelter/electrum",
-        "immersiveengineering:alloysmelter/constantan",
-        "immersiveengineering:alloysmelter/invar",
-        "immersiveengineering:arcfurnace/raw_block_aluminum",
-        "immersiveengineering:arcfurnace/raw_ore_aluminum",
-        "immersiveengineering:arcfurnace/ore_silver",
-        "immersiveengineering:arcfurnace/dust_tungsten",
-        "immersiveengineering:arcfurnace/ore_tungsten",
-        "immersiveengineering:arcfurnace/raw_block_tungsten",
-        "immersiveengineering:arcfurnace/raw_ore_tungsten",
-        "immersiveengineering:arcfurnace/dust_aluminum",
-        "immersiveengineering:arcfurnace/dust_platinum",
-        "immersiveengineering:arcfurnace/ore_platinum",
-        "immersiveengineering:arcfurnace/raw_block_platinum",
-        "immersiveengineering:arcfurnace/raw_ore_platinum",
-        "immersiveengineering:arcfurnace/dust_uranium",
-        "immersiveengineering:arcfurnace/ore_uranium",
-        "immersiveengineering:arcfurnace/raw_block_uranium",
-        "immersiveengineering:arcfurnace/raw_ore_uranium",
-        "immersiveengineering:crusher/ore_quartz",
-        "immersiveengineering:crusher/ore_lapis",
-        "immersiveengineering:crusher/red_sandstone"
-    ]
-
-    removing_by_recipe_id.forEach(id => {
-        event.remove({ id: id })
-    })
-
     const materials_for_wires = ["steel", "copper", "lead"]
     materials_for_wires.forEach(material => {
         event.replaceInput(
@@ -86,65 +51,97 @@ ServerEvents.recipes(event => {
             "modern_industrialization:steel_plate"
         )
 
-    event.remove({id: "immersiveengineering:crafting/component_iron"})
-    event.shaped("2x immersiveengineering:component_iron", [
-        "QTQ",
-        "RWR",
-        "QTQ"
-    ], {
-        Q: "#c:plates/iron",
-        W: "#c:gears/steel",
-        R: "modern_industrialization:rubber_sheet",
-        T: "#c:ingots/copper"
-    });
-    event.remove({id: "immersiveengineering:crafting/component_steel"})
-    event.shaped("2x immersiveengineering:component_steel", [
-        "QTQ",
-        "RWR",
-        "QTQ"
-    ], {
-        Q: "#c:plates/steel",
-        W: "#c:gears/steel",
-        R: "modern_industrialization:rubber_sheet",
-        T: "#c:ingots/bronze"
-    });
+    milfShaped(event, {
+        pattern: [
+            "NFN",
+            "FMF",
+            "NFN"
+        ],
+        key: {
+            M: { item: "minecraft:magma_block" },
+            N: { item: "minecraft:nether_brick" },
+            F: { item: "modern_industrialization:fire_clay_brick" },
+        },
+        outputItems: [[{ id: "immersiveengineering:blastbrick" }, 3]],
+        removeRecipe:true
+    })
 
-    event.remove({output: "immersiveengineering:rs_engineering"})
-    event.shaped("4x immersiveengineering:rs_engineering", [
-        "WQW",
-        "QRQ",
-        "WQW"
-    ], {
-        Q: "minecraft:redstone",
-        W: "immersiveengineering:sheetmetal_iron",
-        R: "modern_industrialization:analog_circuit"
-    });
+    milfShaped(event, {
+        pattern: [
+            "NF",
+            "FN",
+        ],
+        key: {
+            N: { item: "minecraft:nether_brick" },
+            F: { item: "modern_industrialization:fire_clay_brick" }
+        },
+        outputItems: [[{ id: "immersiveengineering:alloybrick" }, 2]],
+        removeRecipe:true
+    })
 
+    milfShaped(event, {
+        pattern: [
+            "QTQ",
+            "RWR",
+            "QTQ"
+        ],
+        key: {
+            Q: { tag: "c:plates/iron" },
+            W: { tag: "c:gears/steel" },
+            R: { item: "modern_industrialization:rubber_sheet" },
+            T: { tag: "c:ingots/copper" },
+        },
+        outputItems: [[{ id: "immersiveengineering:component_iron" }, 2]],
+        removeRecipe:true,
+        compatOff:true
 
-    event.shaped("kubejs:blank_blueprint", [
-        "   ",
-        "DDD",
-        "PPP"
-    ], {
-        D: "minecraft:blue_dye",
-        P: "minecraft:paper"
-    });
+    })
 
+    milfShaped(event, {
+        pattern: [
+            "QTQ",
+            "RWR",
+            "QTQ"
+        ],
+        key: {
+            Q: { tag: "c:plates/steel" },
+            W: { tag: "c:gears/steel" },
+            R: { item: "modern_industrialization:rubber_sheet" },
+            T: { tag: "c:ingots/bronze" },
+        },
+        outputItems: [[{ id: "immersiveengineering:component_steel" }, 2]],
+        removeRecipe:true,
+        compatOff:true
 
+    })
 
+    milfShaped(event, {
+        pattern: [
+            "WQW",
+            "QRQ",
+            "WQW"
+        ],
+        key: {
+            Q: { item: "minecraft:redstone" },
+            W: { item: "immersiveengineering:sheetmetal_iron" },
+            R: { item: "modern_industrialization:analog_circuit" },
+        },
+        outputItems: [[{ id: "immersiveengineering:rs_engineering" }, 4]],
+        removeRecipe:true
+    })
 
-
-
-
-
-
-
-
-
-
-
-
-
+    milfShaped(event, {
+        pattern: [
+            "DDD",
+            "PPP"
+        ],
+        key: {
+            D: { item: "minecraft:blue_dye" },
+            P: { item: "minecraft:paper" }
+        },
+        outputItems: [[{ id: "kubejs:blank_blueprint" }, 1]],
+        removeRecipe:true
+    })
 
     //TODO: добавить всё что дробится и плавиться из руды или похожее на руду
     const ore_for_arc_furnace = [
@@ -159,4 +156,45 @@ ServerEvents.recipes(event => {
         "stratine",
         "ae2:certus_quartz_crystal",
     ]
+})
+
+
+
+KubeJSTweaks.beforeRecipes(event =>{
+
+    const disableByRecipeID = [
+        /immersiveengineering:crafting\/.*hammercrushing.*/,
+        /immersiveengineering:crusher\/.*aluminum/,
+        /immersiveengineering:blastfurnace.*/,
+        "immersiveengineering:alloysmelter/insulating_glass",
+        "immersiveengineering:alloysmelter/bronze",
+        "immersiveengineering:alloysmelter/electrum",
+        "immersiveengineering:alloysmelter/constantan",
+        "immersiveengineering:alloysmelter/invar",
+        "immersiveengineering:arcfurnace/raw_block_aluminum",
+        "immersiveengineering:arcfurnace/raw_ore_aluminum",
+        "immersiveengineering:arcfurnace/ore_silver",
+        "immersiveengineering:arcfurnace/dust_tungsten",
+        "immersiveengineering:arcfurnace/ore_tungsten",
+        "immersiveengineering:arcfurnace/raw_block_tungsten",
+        "immersiveengineering:arcfurnace/raw_ore_tungsten",
+        "immersiveengineering:arcfurnace/dust_aluminum",
+        "immersiveengineering:arcfurnace/dust_platinum",
+        "immersiveengineering:arcfurnace/ore_platinum",
+        "immersiveengineering:arcfurnace/raw_block_platinum",
+        "immersiveengineering:arcfurnace/raw_ore_platinum",
+        "immersiveengineering:arcfurnace/dust_uranium",
+        "immersiveengineering:arcfurnace/ore_uranium",
+        "immersiveengineering:arcfurnace/raw_block_uranium",
+        "immersiveengineering:arcfurnace/raw_ore_uranium",
+        "immersiveengineering:crusher/ore_quartz",
+        "immersiveengineering:crusher/ore_lapis",
+        "immersiveengineering:crusher/red_sandstone"
+    ]
+
+    disableByRecipeID.forEach(id =>{
+        event.disable(id)
+    })
+    
+
 })

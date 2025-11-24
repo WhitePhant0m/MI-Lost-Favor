@@ -731,6 +731,24 @@ ServerEvents.recipes(event => {
     )
 
     workspace_recipe([
+            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P"),
+            ['   ','   ','   '].layerSides("S").layerCorners("R").layerCentre("C"),
+            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P")
+        ],
+        {S:'modern_industrialization:fire_clay_bricks', R:'modern_industrialization:steel_rod', P:"modern_industrialization:steel_plate", C:"extended_industrialization:steel_alloy_smelter"},
+        'mi_tweaks:advanced_steam_alloy_smelter'
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P"),
+            ['   ','   ','   '].layerSides("S").layerCorners("R").layerCentre("C"),
+            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P")
+        ],
+        {S:'modern_industrialization:fire_clay_bricks', R:'modern_industrialization:steel_rod', P:"modern_industrialization:steel_plate", C:"modern_industrialization:steam_blast_furnace"},
+        'mi_tweaks:advanced_steam_blast_furnace'
+    )
+
+    workspace_recipe([
             [' B ',' B ',' B '],
             ['   ',' I ','   '],
             ['   ',' P ','   '].layerCorners("b").layerSides("R")

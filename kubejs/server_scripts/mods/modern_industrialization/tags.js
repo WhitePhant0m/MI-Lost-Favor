@@ -1,32 +1,22 @@
 ServerEvents.tags('item', event => {
-    event.removeAllTagsFrom(
-        [
-            'modern_industrialization:netherite_hammer', 
-            'modern_industrialization:steel_hammer', 
-            'modern_industrialization:diamond_hammer', 
-            'modern_industrialization:iron_hammer'
-        ])
-    event.add('c:bolts', [
-        'modern_industrialization:iron_bolt', 
-        'modern_industrialization:gold_bolt', 
-        'modern_industrialization:invar_bolt', 
-        'modern_industrialization:steel_bolt', 
-        'modern_industrialization:tin_bolt', 
-        'modern_industrialization:stainless_steel_bolt', 
-        'modern_industrialization:aluminum_bolt', 
-        'modern_industrialization:titanium_bolt', 
-        'modern_industrialization:copper_bolt',
-        'modern_industrialization:lead_bolt',
-        'modern_industrialization:bronze_bolt'
+    event.removeAllTagsFrom([
+        'modern_industrialization:netherite_hammer', 
+        'modern_industrialization:steel_hammer', 
+        'modern_industrialization:diamond_hammer', 
+        'modern_industrialization:iron_hammer'
     ])
+
+    let boltsRegExp = new RegExp(/modern_industrialization:.*_bolt/)
+    event.add('c:bolts', boltsRegExp)
+
+    let curvedPlatesRegExp = new RegExp(/modern_industrialization:.*_curved_plate/)
+    event.add('c:curved_plates', curvedPlatesRegExp)
 
     event.add('milf:coke_coal', [
         'modern_industrialization:coke', 
         'modern_industrialization:coke_block', 
         'modern_industrialization:coke_dust', 
     ])
-
-    event.add('c:bolts', 'modern_industrialization:bronze_bolt')
 
     const mi_material_for_tags = ['gold', 'copper', 'invar', 'iron', 'stainless_steel', 'steel', 'tin', 'titanium', 'aluminum', 'bronze', 'lead']
 

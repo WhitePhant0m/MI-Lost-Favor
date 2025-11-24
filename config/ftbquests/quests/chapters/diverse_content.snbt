@@ -40,6 +40,12 @@
 			x: -23.5d
 			y: 11.0d
 		}
+		{
+			id: "6B6D7BAEA7A740F5"
+			linked_quest: "468A8B2EA06FD87C"
+			x: -28.5d
+			y: 3.5d
+		}
 	]
 	quests: [
 		{
@@ -563,16 +569,6 @@
 				type: "item"
 			}]
 			x: -21.0d
-			y: 3.5d
-		}
-		{
-			id: "3B04F041F40DF67B"
-			tasks: [{
-				id: "320B4438B78D7C5F"
-				item: { count: 1, id: "yo_hooks:iron_grappling_hook" }
-				type: "item"
-			}]
-			x: -28.5d
 			y: 3.5d
 		}
 	]
