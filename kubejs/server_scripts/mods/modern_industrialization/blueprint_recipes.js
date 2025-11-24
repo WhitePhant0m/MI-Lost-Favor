@@ -13,6 +13,25 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
+            [{ "item": "modern_industrialization:steel_ring" }, 1],
+            [{ "item": "minecraft:flint" }, 1]
+        ],
+        { "item": "minecraft:flint_and_steel" },
+        miTools
+    ); 
+
+    blueprint_recipe(
+        [
+            [{ "item": "modern_industrialization:steel_curved_plate" }, 2],
+            [{ "item": "modern_industrialization:steel_nugget" }, 1],
+            [{ "item": "modern_industrialization:iron_plate" }, 1]
+        ],
+        { "item": "measurements:tape_measure" },
+        miTools
+    ); 
+
+    blueprint_recipe(
+        [
             [{ "item": "immersiveengineering:component_iron" }, 2],
             [{ "item": "modern_industrialization:copper_drill_head" }, 1],
             [{ "item": "kubejs:small_steel_fluid_container" }, 1],

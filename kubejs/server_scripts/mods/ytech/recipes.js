@@ -253,19 +253,4 @@ ServerEvents.recipes(event => {
         //removeRecipeType:"minecraft:crafting_shaped"
     })
 
-    milfShaped(event, {
-        pattern: [
-            "SS ",
-            "SI ",
-            " SN"
-        ],
-        key: {
-            S: { item: "ytech:leather_strips" },
-            I: { item: "minecraft:copper_ingot" },
-            N: { tag: "c:nuggets/copper" },
-        },
-        outputItems: [[{ id: "measurements:tape_measure" }, 1]],
-        removeRecipeType: "minecraft:crafting_shaped"
-    })
-
 })

@@ -11,7 +11,6 @@ ServerEvents.recipes(event => {
             /immersiveengineering:ingot.*/,
             /immersiveengineering:raw.*/,
             /immersiveengineering:nugget.*/,
-            /immersiveengineering:.*blast.*/,
             'immersiveengineering:wire_copper',
             'immersiveengineering:wire_electrum',
             'immersiveengineering:wire_aluminum',

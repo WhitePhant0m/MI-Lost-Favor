@@ -1024,18 +1024,6 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["7C002DE8DFC45FD9"]
-			id: "047487BFFB8421D5"
-			shape: "pentagon"
-			tasks: [{
-				id: "16C922B46979DB9A"
-				item: { count: 1, id: "measurements:tape_measure" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 4.5d
-		}
-		{
 			dependencies: ["07E78D29C898CE55"]
 			icon: {
 				id: "pastel:sheep_head"
@@ -1983,32 +1971,16 @@
 			y: -12.5d
 		}
 		{
-			id: "03A93CC9E208F1C3"
-			shape: "diamond"
-			tasks: [{
-				icon: {
-					id: "pastel:horse_head"
-				}
-				id: "20ED1EF01A3D5DDC"
-				observe_type: 5
-				timer: 0L
-				to_observe: "minecraft:horse"
-				type: "observation"
-			}]
-			x: -4.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["03A93CC9E208F1C3"]
+			dependencies: ["7C002DE8DFC45FD9"]
 			id: "5C6F64DF2FA17AA2"
-			shape: "diamond"
+			shape: "pentagon"
 			tasks: [{
 				id: "47B8EBF174217BF3"
 				item: { components: { "minecraft:instrument": "minecraft:ponder_goat_horn" }, count: 1, id: "horseman:copper_horn" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -8.0d
+			x: 4.5d
+			y: 4.5d
 		}
 	]
 }

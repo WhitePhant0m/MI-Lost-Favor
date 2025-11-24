@@ -288,7 +288,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].layerCorners("c").layerPlus("P")
         ],
         {c:"modern_industrialization:bronze_curved_plate",P:"modern_industrialization:fire_clay_bricks",f:"modern_industrialization:bronze_mi_furnace",C:"modern_industrialization:bronze_machine_casing_pipe"},
-        'extended_industrialization:large_steam_furnace'
+        'mi_tweaks:advanced_large_steam_furnace'
     )
     //large_steam_macerator
     workspace_recipe([

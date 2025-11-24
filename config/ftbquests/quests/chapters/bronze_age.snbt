@@ -4044,7 +4044,7 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["2B815502453269AF"]
+			dependencies: ["55756CD3B1F8F89F"]
 			id: "336C43BDBE0A0995"
 			rewards: [{
 				auto: "enabled"
@@ -4058,19 +4058,19 @@
 				team_reward: true
 				type: "custom"
 			}]
-			shape: "none"
+			shape: "rsquare"
 			tasks: [{
 				id: "3334C940370DE015"
 				item: { count: 1, id: "minecraft:flint_and_steel" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.5d
+			x: -15.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["336C43BDBE0A0995"]
 			id: "4DD1404D1B9CA7F7"
-			shape: "none"
+			shape: "octagon"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: {
@@ -4082,8 +4082,20 @@
 				id: "5185610C55BE45D6"
 				type: "dimension"
 			}]
-			x: 0.5d
-			y: 3.5d
+			x: -15.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55756CD3B1F8F89F"]
+			id: "047487BFFB8421D5"
+			shape: "pentagon"
+			tasks: [{
+				id: "16C922B46979DB9A"
+				item: { count: 1, id: "measurements:tape_measure" }
+				type: "item"
+			}]
+			x: -17.0d
+			y: 4.5d
 		}
 	]
 }

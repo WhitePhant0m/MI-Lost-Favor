@@ -339,7 +339,7 @@
 		""
 		"You can also buy from Wandering Trader"
 	]
-	quest.1150D94139B83FBF.quest_desc: ["Armor Quick Swap makes changing gear effortless. In your inventory, simply right-click an armor piece to instantly equip or exchange it with what you’re wearing. You can also sneak and right-click an armor stand to swap your entire outfit in one go. It couldn’t be simpler — just quick gear changes whenever you need them."]
+	quest.1150D94139B83FBF.quest_desc: ["Now you can hot-swap armor by simply right-clicking it, or if you, fancy pants, want to have the whole hat-check room of armor, you can sneak right-click an armor stand to hot-swap the whole set!"]
 	quest.1183EEDA65D3180C.quest_desc: ["To get it, you need to right click normal Farmland with Arcane Bone Meal. Magical Farmland doubles the quantity of crop drops."]
 	quest.11AEAD046E2353E6.quest_desc: [
 		"I will need a tool to administer the solution into an unfortunate specimen. Luckily, with the help of another doctoral tool, I can make a simple copper needle. One especially capable of handling dangerous solutions."
@@ -459,11 +459,15 @@
 	quest.179140A353AB44E8.quest_desc: [
 		"&lWelcome to &l&3MI&f:&6Lost Favor&r&r!"
 		""
-		"At first, you won't go hungry. This is done on purpose so that you can find a place to survive! Also, hostile monsters will not spawn around you! For the same reason. "
+		"As this modpack is progress dependent, we introduced quite a number of restrictions, as well as simplifications to the gameplay! "
 		""
-		"You won't be able to loot chests, you won't have access to the map, and you could get killed in the dungeons, so don't go in there until you're ready! "
+		"You don't need to worry about food for the first couple of quests so that you can smoothly settle somewhere and prepare yourself for the dangers of this cruel world. The same reasoning stands behind the lack of naturally spawned monsters around you, wicked bastards are lurking around in the dungeons, waiting for the opportunity to strike at the first unwary wanderer that happens to stumble across their domain, so be cautious. "
 		""
-		"Sooner or later, you will have full access to everything you are so used to, don't worry!"
+		"Maps are essential to not get lost here, so you'll have an opportunity to make a scribbled one quite early, but the proper one will require the tech knowledge you don't possess as of the time being, but worry not, as it will come to you eventually."
+		""
+		"Inhabitants of those long-forgotten places around the world experienced burglary firsthand and thus know how to protect their possessions, locking them behind those magical locks of theirs, so you'll have to figure out a workaround to seize their treasures in the name of greater good."
+		""
+		"But as in all the stories, time and effort will lead you through this journey, breaking restrictions as time goes on."
 	]
 	quest.17A44FD7738F4496.quest_desc: [
 		"Used to crush items to make them less intact"
@@ -605,9 +609,7 @@
 		"ТРУБЫ"
 	]
 	quest.1E4A4AD1899325D3.quest_desc: [
-		"Place items on block by pressing P while looking at a block. "
-		""
-		"You can place items on all 6 sides of a block."
+		"By pressing 'P' on any side of a block, you can stick up to 4 items to it, so it's time to open your own flea market with strong desires to unlock better storage solutions!"
 		""
 		"[ \"More info \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/plonk\" } } ]"
 		"{@pagebreak}"
@@ -645,6 +647,23 @@
 		""
 		"• Left-click the barrel item on an empty slot to extract some items from it."
 	]
+	quest.2141539997D6480F.quest_desc: [
+		"Hunger - none."
+		""
+		"Mobs - gone."
+		""
+		"Dungeons - scary."
+		""
+		"Maps - later."
+		""
+		"Chests - locked."
+		""
+		"Have fun, unlock stuff."
+		""
+		"Good luck, sweetie pie <3"
+	]
+	quest.2141539997D6480F.quest_subtitle: "ADHD edition"
+	quest.2141539997D6480F.title: "<pend>Hi wrld"
 	quest.223D9E832411A590.quest_desc: [
 		"Yeah, it's a &#FEECD6sponge&r. A &#ff6600Lava Sponge&r. Any more questions...?"
 		"{@pagebreak}"
@@ -776,13 +795,13 @@
 		"Так же используется для создания ведьмовских машин"
 	]
 	quest.2B3E3C5AB2CDFAB9.quest_desc: [
-		"Take control over you inventory. Sort. Move matching Items. Throw all. Locked slots. Gear sets! And much more."
+		"Take control over your inventory. Sort. Move matching items. Throw all. Lock slots. Make gear sets! And much more."
 		""
-		"ALT + SHIFT + LMB for lock item in inventory"
+		"ALT + SHIFT + LMB to lock item slot"
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next\" } }, \".\" ]"
 	]
-	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make the player aware of certain non-obvious mechanics. You can read them later, once you have an starting base."]
+	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain non-obvious mechanics. You can read them whenever, we won't judge."]
 	quest.2BB85B5FB4A2E943.quest_desc: [
 		"Grows in dark forests."
 		""
@@ -831,7 +850,7 @@
 		"• +2x Power Capacity"
 	]
 	quest.2F728B18B7B4C5FE.quest_desc: [
-		"Boss Checklist adds a list of all bosses from modpack to the game, which can be opened by pressing R and open radical menu."
+		"Boss Checklist adds a list of all bosses from the modpack to the game, which can be accessed via the radial menu \"R.\""
 		""
 		"The menu displays all bosses from various mods, which you can mark as defeated, or they will be marked automatically if the mod is installed on the server. For each boss, you can view their model/image, mod name, drops, spawn conditions, and other additional info."
 	]
@@ -1263,9 +1282,9 @@
 		"&n&l&#FEECD6Совет:&r&r&r Используйте &#FEECD6мотыгу&r для разрушения &#CAE4C8листвы&r, это гораздо быстрее чем ручками!"
 	]
 	quest.449B931E4C9867A1.quest_desc: [
-		"mod adds a trash slot to your inventory allowing you to quickly and safely get rid of unwanted items."
+		"Press \"T\" to reveal the trash slot in your inventory, so you no longer have to litter around whenever you fill your pockets with \"useful\" items and suddenly there's no space left. Of course, later down the line you'll unlock plastic, paper, metal, and all the other types of trash that you'll HAVE to filter into corresponding, progressively expanding trash slots, because of course we need to complicate things. How could we possibly be modpack devs otherwise, eh?"
 		""
-		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/trashslot\" } }, \".\" ]"
+		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/trashslot\" } }, \", but be aware and don't believe a single word, because we know better.\" ]"
 	]
 	quest.454C3080B0A7A24A.quest_desc: [
 		"Quite &#FEECD6bad&r for bridges and diving!"
@@ -1484,10 +1503,7 @@
 		"{@pagebreak}"
 		"Ручной колодец. Производит разное количество воды в разных биомах. Может быть подключен к системе акведуков."
 	]
-	quest.5554B53144E7F2C5.quest_desc: [
-		"Harvest With Ease lets you right-click on fully grown crops with hoe to harvest and replant them "
-		"instantly — no more tedious replanting!"
-	]
+	quest.5554B53144E7F2C5.quest_desc: ["Right-click on a fully grown crop to replant it with the power of worm-friendship!"]
 	quest.55756CD3B1F8F89F.quest_desc: ["It totally makes sense that you can squeeze information out of books ´꒳`"]
 	quest.55816F492AF21D36.quest_desc: [
 		"You can collect an already drawn ritual by dropping the talisman and redstone into the circle, activating the ritual, and then placing it anywhere you want."
@@ -1544,11 +1560,7 @@
 		"В отличие от печи, эта печь не может перерабатывать руды. Поместите глиняный кувшин в центральный слот, чтобы собирать дым."
 	]
 	quest.5A518A86865E47EB.quest_desc: ["Показывает радиус работы тотемов"]
-	quest.5AB1A672225555B0.quest_desc: [
-		"Mod allows showcasing items from the inventory in chat."
-		""
-		"You have to click the item in your inventory with &lShift + X&r to showcase it"
-	]
+	quest.5AB1A672225555B0.quest_desc: ["By pressing \"Shift + X\" on an item in your inventory, you can link said item in chat"]
 	quest.5AEBD2E96FA53366.quest_desc: ["The fiery modifier can be applied to all tool items (Pickaxes, Shovels, Axes, Hoes) and will automatically smelt all mined blocks if they have a smelting recipe. "]
 	quest.5AEEF8055EA6AE88.quest_desc: ["Use a Splash Aureal Bottle on a normal soul for getting"]
 	quest.5B66EF3877866949.quest_desc: [
@@ -1818,7 +1830,12 @@
 		"[\"More info for Mouse Tweaks: \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks\" } }]"
 		""
 		""
-		"More Mouse Tweaks — complements Mouse Tweaks by adding more mouse functionality from Mouse Wheelie."
+		"More Mouse Tweaks — complements Mouse Tweaks by adding more mouse functionality"
+		""
+		"ALT+LMB to drop a slot"
+		"CTRL+LMB to quick-move all matching slots"
+		"CTRL+ALT+LMB to drop all matching slots"
+		"SHIFT+RMB for bulk crafting or trading"
 		""
 		"[ \"More info for More Mouse Tweaks: \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/moremousetweaks\" } } ]"
 	]
@@ -1955,7 +1972,7 @@
 	quest.70AB266645FE1C03.quest_desc: [
 		"A mod designed to encourage dietary variety! It does so by rewarding the player for eating a variety of foods instead of punishing them for failing to diversify. Instead of using the stick we use the carrot!"
 		""
-		"In the modpack, only rare and very filling food gives you extra hearts!"
+		"In this modpack, only rare and very filling food will give you extra hearts! (Oh, and weird ones too, just to fulfill the sincere desire of your gourmet needs.)"
 	]
 	quest.7145CB4C825D9D77.quest_desc: ["Clavis transforms the traditional loot system: every loot chest is now locked and can be opened through a simple yet engaging mini-game. The better you perform, the richer your reward - up to nearly double the loot for a perfect result."]
 	quest.714992905CA44375.quest_desc: [
@@ -1985,7 +2002,7 @@
 		""
 		"Его можно зарядить, чтобы использовать в качестве портативного контейнера для алтарной энергии, позволяющего создавать магию кругов без присутствия алтаря, а также использовать при создании различных магических инструментов."
 	]
-	quest.71721385710E5EB0.quest_desc: ["«С» button for crawl"]
+	quest.71721385710E5EB0.quest_desc: ["You can press \"C\" to crawl and say hi to all your worm-like friends!"]
 	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
 	quest.71E39806A0B7D79D.quest_desc: [
 		"You can read about most rituals in the guidebook!"
@@ -2059,7 +2076,7 @@
 		"{@pagebreak}"
 		"&#FEECD6Раздавите&r этот &#CAE4C8токсичный&r вид &#CAE4C8тростника&r своей новенькой наковальней!"
 	]
-	quest.757ED58D0C1CED21.quest_desc: ["FindMe allows you to search for items in nearby inventories by pressing a key. For that you simply need to hover over an item (JEI Compatible) and press «&lY&r» and cloud particles will spawn in the inventories that have that item."]
+	quest.757ED58D0C1CED21.quest_desc: ["Press \"Y\" on an item in your inventory (or in EMI) to highlight similar items in nearby chests"]
 	quest.7591497746DA17AC.quest_desc: ["Just for endgame tier 5 pedestal without crafts for now"]
 	quest.760015A8E61B210A.quest_desc: ["Виталик за тики роста животных/размножение/убийство даёт сурс "]
 	quest.7635ED9379E95573.quest_desc: ["Even grass could become quite strong when you weave it properly"]
@@ -2250,6 +2267,7 @@
 	task.6E241CA073F70AD3.title: "Xeovrenth Adjure"
 	task.6E27CA7959D2DC61.title: "Any #pastel:bedrock_equipment"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
+	task.715168A27BACCD77.title: "Hi wrld"
 	task.73CEC69AE2924335.title: "Any #c:logs/archwood"
 	task.7431F878DB34A30D.title: "Bridging"
 	task.745285CCE59E780F.title: "Any #milf:polished_gemstone_block"
