@@ -1,10 +1,11 @@
 ServerEvents.recipes(event => {
-    event.custom({
-        "type": "extended_industrialization:alloy_smelter",
-        "duration": 200,
-        "eu": 4,
-        "item_inputs": [
-            {
+
+    miMachineCraft(event, {
+        machine:"extended_industrialization:alloy_smelter",
+        energy:4,
+        time:200,
+        inputItems:[
+            [{
                 "type": "neoforge:compound",
                 "amount": 1,
                 "children": [
@@ -15,8 +16,8 @@ ServerEvents.recipes(event => {
                         "tag": "c:ingots/nickel"
                     }
                 ]
-            },
-            {
+            }],
+            [{
                 "type": "neoforge:compound",
                 "amount": 1,
                 "children": [
@@ -27,22 +28,17 @@ ServerEvents.recipes(event => {
                         "tag": "c:ingots/copper"
                     }
                 ]
-            }
+            }]
         ],
-        "item_outputs": [
-            {
-                "amount": 2,
-                "item": "modern_industrialization:constantan_ingot"
-            }
-        ]
+        outputItems:[[{"item": "modern_industrialization:constantan_ingot"}, 2]]
     })
 
-    event.custom({
-        "type": "extended_industrialization:alloy_smelter",
-        "duration": 200,
-        "eu": 4,
-        "item_inputs": [
-            {
+    miMachineCraft(event, {
+        machine:"extended_industrialization:alloy_smelter",
+        energy:4,
+        time:200,
+        inputItems:[
+            [{
                 "type": "neoforge:compound",
                 "amount": 9,
                 "children": [
@@ -53,8 +49,8 @@ ServerEvents.recipes(event => {
                         "tag": "c:nuggets/nickel"
                     }
                 ]
-            },
-            {
+            }],
+            [{
                 "type": "neoforge:compound",
                 "amount": 9,
                 "children": [
@@ -65,18 +61,19 @@ ServerEvents.recipes(event => {
                         "tag": "c:nuggets/copper"
                     }
                 ]
-            }
+            }]
         ],
-        "item_outputs": [
-            {
-                "amount": 2,
-                "item": "modern_industrialization:constantan_ingot"
-            }
+        outputItems:[[{"item": "modern_industrialization:constantan_ingot"}, 2]]
+    })
+
+    miMachineCraft(event, {energy:4, time:400, machine:"extended_industrialization:alloy_smelter",
+        inputItems:[
+            [{tag:`c:glass_blocks`}, 2],
+            [{tag:`c:dusts/iron`}, 1]
+        ],
+        outputItems:[
+            [{item:`immersiveengineering:insulating_glass`}, 2],
         ]
     })
 
-    event.recipes.extended_industrialization.alloy_smelter(4, 400)
-    .itemIn("2x #c:glass_blocks")
-    .itemIn("#c:dusts/iron")
-    .itemOut("2x immersiveengineering:insulating_glass")
 })

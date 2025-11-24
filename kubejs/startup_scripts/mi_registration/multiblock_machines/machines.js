@@ -2,9 +2,14 @@ MIMachineEvents.registerCasings(event => {
     event.registerBlockImitation("treated_wood_casing", "immersiveengineering:basic_engineering");
     event.registerBlockImitation("sheetmetal_steel_casing", "immersiveengineering:sheetmetal_steel");
     event.registerBlockImitation("fire_clay_bricks", "modern_industrialization:fire_clay_bricks");
+    event.registerBlockImitation("blast_brick", "immersiveengineering:blastbrick");
+    event.registerBlockImitation("steel_plated_bricks", "extended_industrialization:steel_plated_bricks");
+
 })
 
-const MI_HATCHES_ALL = ["energy_input", "item_input", "item_output", "fluid_input"]
+global.miTweaksTags = global.miTweaksTags || []
+
+const MI_HATCHES_ALL = ["energy_input", "item_input", "item_output", "fluid_input", "fluid_output"]
 function registerMIMachine(name, args){
     let recipe
     MIMachineEvents.registerRecipeTypes(event => {
@@ -49,6 +54,52 @@ function registerMIMachine(name, args){
     })
 }
 
+function registerBatchMIMachine(name, args){
+    let recipe
+    MIMachineEvents.registerRecipeTypes(event => {
+        recipe = event.register(name)
+        args.itemsIn && (recipe = recipe.withItemInputs())
+        args.itemsOut && (recipe = recipe.withItemOutputs())
+        args.fluidsIn && (recipe = recipe.withFluidInputs())
+        args.fluidsOut && (recipe = recipe.withFluidOutputs())
+    })
+    MITweaksMachineEvents.registerBatchMultiblocks(event => {
+        let shape = event.layeredShape(args.casing , args.shape)
+        Object.entries(args.shapeKeys).forEach(([key, block]) => {
+            let actualBlock = (typeof block === "string") ? block : block.id
+            shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
+        })
+        shape = shape.build()
+        const multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
+        multiTypeFunction.apply(event, [
+            idToName(name), name, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+            itemInputs => {
+                if(!args.itemInputSlots) {return itemInputs}
+                args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
+                return itemInputs
+            },
+            itemOutputs => {
+                if(!args.itemOutputSlots) {return itemOutputs}
+                args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
+                return itemOutputs
+            },
+            fluidInputs => {
+                if(!args.fluidInputSlots) {return fluidInputs}
+                args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
+                return fluidInputs
+            },
+            fluidOutputs => {
+                if(!args.fluidOutputSlots) {return fluidOutputs}
+                args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
+                return fluidOutputs
+            },
+            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
+            args.batchsize || 8, args.costMulti || 1
+        ]) 
+    })
+    jsonDataForBatchMachine(name, args.mainCasing, args.mainOverlays)
+}
+
 function registerBatchMIMachineFromExisting(name, args){
     MITweaksMachineEvents.registerBatchMultiblocks(event => {
         let shape = event.layeredShape(args.casing , args.shape)
@@ -65,7 +116,7 @@ function registerBatchMIMachineFromExisting(name, args){
             args.batchsize, args.costMulti
         ]) 
     })
-    //jsonDataForBatchMachine(name, args.mainCasing, args.mainOverlays)
+    jsonDataForBatchMachine(name, args.mainCasing, args.mainOverlays)
 }
 
 registerMIMachine('enigma_machine', {itemsIn: true, itemsOut: true, casing: 'treated_wood_casing',
@@ -181,11 +232,48 @@ registerBatchMIMachineFromExisting('large_electric_furnace', {steam:true, casing
     batchsize:8, costMulti:0.75
 })
 
+registerBatchMIMachineFromExisting('advanced_steam_blast_furnace', {steam:true, casing: 'steel_plated_bricks', recipeType:"modern_industrialization:blast_furnace",
+    emiWorkstations:["modern_industrialization:steam_blast_furnace"],
+    shape: [['AaaaA', 'AaaaA', ' BBB '], 
+            ['a   a', 'a   a', 'B   B'], 
+            ['a   a', 'a F a', 'B   B'], 
+            ['a   a', 'a   a', 'B   B'], 
+            ['AaaaA', 'Aa#aA', ' BBB ']],
+    shapeKeys: {"A":"immersiveengineering:blastbrick",
+                "a":{id:"extended_industrialization:steel_plated_bricks", hatches: MI_HATCHES_ALL},
+                "B":"immersiveengineering:slab_blastbrick",
+                "F":"immersiveengineering:blast_furnace"},
+    mainCasing:'steel_plated_bricks', mainOverlays: 'blast_furnace', frontOverlay: true,
+    batchsize:8, costMulti:0.75
+})
+
+registerBatchMIMachine('advanced_steam_alloy_smelter', {steam:true, itemsIn: true, itemsOut: true,fluidsIn: true, fluidsOut: true, casing: 'steel_plated_bricks',
+    shape: [['AAAAA', '  A  ', '  A  ', 'aaAaa'], 
+            ['ABBBA', ' K K ', '     ', 'aaAaa'], 
+            ['ABBBA', 'A   A', 'A   A', 'AAAAA'], 
+            ['ABBBA', ' K K ', '     ', 'aaAaa'], 
+            ['AAAAA', '  #  ', '  A  ', 'aaAaa']],
+    shapeKeys: {"A":{id:"extended_industrialization:steel_plated_bricks", hatches: MI_HATCHES_ALL},
+                "a":"immersiveengineering:slab_alloybrick",
+                "B":"modern_industrialization:fire_clay_bricks",
+                "K":"immersiveengineering:alloy_smelter"},
+    pBar: {x: 88, y: 33, name: 'arrow'},
+    itemInputSlots: [[40, 35, 2, 1]],
+    itemOutputSlots: [[120, 35,1,1]],
+    mainCasing:'steel_plated_bricks', mainOverlays: 'coke_oven', frontOverlay: true,
+    batchsize:8, costMulti:0.75
+})
+
 function saveJsonToPath(path, json){
     JsonIO.write(path, JSON.stringify(json, null, 2))
 }
 
 function jsonDataForBatchMachine(machineName, mainCasing, mainOverlays){
+    global.langCustomStuff[`block.mi_tweaks.${machineName}`] = Object.assign({ "en_us": idToName(machineName)})
+    global.langCustomStuff[`rei_categories.modern_industrialization.${machineName}`] = Object.assign({ "en_us": idToName(machineName)})
+    global.langCustomStuff[`rei_categories.mi_tweaks.${machineName}`] = Object.assign({ "en_us": idToName(machineName)})
+    global.miTweaksTags.push(`mi_tweaks:${machineName}`)
+    return;
     let blockstatesPath = `kubejs/assets/mi_tweaks/blockstates/${machineName}.json`;
     let blockstatesJson = {
         "variants": {
@@ -239,5 +327,4 @@ function jsonDataForBatchMachine(machineName, mainCasing, mainOverlays){
         "random_sequence": `mi_tweaks:blocks/${machineName}`
     }
     saveJsonToPath(dataPath, dataJson)
-
 }

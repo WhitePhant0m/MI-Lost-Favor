@@ -126,6 +126,33 @@ ServerEvents.recipes(event => {
 
     );
 
+    anvil_recipe(
+        [
+            [{ "item": "yo_hooks:iron_grappling_hook" }, 1],
+            [{ "item": "modern_industrialization:gold_plate" }, 3]
+        ],
+        [{ "id": 'yo_hooks:gold_grappling_hook' }, 1]
+
+    );
+
+    anvil_recipe(
+        [
+            [{ "item": "yo_hooks:gold_grappling_hook" }, 1],
+            [{ "item": "modern_industrialization:diamond_plate" }, 3]
+        ],
+        [{ "id": 'yo_hooks:diamond_grappling_hook' }, 1]
+
+    );
+
+    anvil_recipe(
+        [
+            [{ "item": "yo_hooks:diamond_grappling_hook" }, 1],
+            [{ "item": "modern_industrialization:netherite_dust" }, 1]
+        ],
+        [{ "id": 'yo_hooks:netherite_grappling_hook' }, 1]
+
+    );
+
     //#region mi stuff
 
     anvil_recipe(
@@ -214,6 +241,15 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/bronze" }, 8],
         ],
         [{ "id": 'modern_industrialization:bronze_plated_bricks' }, 1]
+    );
+
+    anvil_recipe(
+        [
+            [{ "tag": "c:bolts/steel" }, 8],
+            [{ "item": "modern_industrialization:fire_clay_bricks" }, 1],
+            [{ "tag": "c:plates/steel" }, 8],
+        ],
+        [{ "id": 'extended_industrialization:steel_plated_bricks' }, 1]
     );
 
     anvil_recipe(

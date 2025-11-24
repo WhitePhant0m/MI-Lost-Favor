@@ -3998,7 +3998,7 @@
 		{
 			dependencies: ["55756CD3B1F8F89F"]
 			id: "2F10BA3C4E457AE5"
-			shape: "octagon"
+			shape: "hexagon"
 			tasks: [{
 				id: "16F596CEC63DF9E5"
 				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
@@ -4010,7 +4010,7 @@
 		{
 			dependencies: ["55756CD3B1F8F89F"]
 			id: "522539A6C9F9C87E"
-			shape: "octagon"
+			shape: "hexagon"
 			tasks: [{
 				id: "0DC8826EBBC6A44D"
 				item: { count: 1, id: "extended_industrialization:steam_chainsaw" }
@@ -4064,7 +4064,7 @@
 				item: { count: 1, id: "minecraft:flint_and_steel" }
 				type: "item"
 			}]
-			x: -15.5d
+			x: -16.5d
 			y: 4.0d
 		}
 		{
@@ -4082,7 +4082,7 @@
 				id: "5185610C55BE45D6"
 				type: "dimension"
 			}]
-			x: -15.5d
+			x: -17.5d
 			y: 5.0d
 		}
 		{
@@ -4094,8 +4094,68 @@
 				item: { count: 1, id: "measurements:tape_measure" }
 				type: "item"
 			}]
-			x: -17.0d
-			y: 4.5d
+			x: -15.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55756CD3B1F8F89F"]
+			id: "468A8B2EA06FD87C"
+			shape: "pentagon"
+			tasks: [{
+				id: "3CF51E4C7C17A283"
+				item: { count: 1, id: "yo_hooks:iron_grappling_hook" }
+				type: "item"
+			}]
+			x: -15.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4DD1404D1B9CA7F7"]
+			id: "5101603AB4BC16F6"
+			shape: "rsquare"
+			tasks: [{
+				id: "5978739EA75AA90D"
+				item: { count: 1, id: "immersiveengineering:blastbrick" }
+				type: "item"
+			}]
+			x: -17.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DD1404D1B9CA7F7"]
+			id: "3E50296FA44AA7BF"
+			shape: "rsquare"
+			tasks: [{
+				id: "4B5AEFD5EFACDF3A"
+				item: { count: 1, id: "immersiveengineering:alloybrick" }
+				type: "item"
+			}]
+			x: -18.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5101603AB4BC16F6"]
+			id: "67872228B316D5C9"
+			shape: "octagon"
+			tasks: [{
+				id: "3696314B057AEA77"
+				item: { count: 1, id: "mi_tweaks:advanced_steam_blast_furnace" }
+				type: "item"
+			}]
+			x: -18.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3E50296FA44AA7BF"]
+			id: "47DC24D4B1E5EF4A"
+			shape: "octagon"
+			tasks: [{
+				id: "094B884A20544321"
+				item: { count: 1, id: "mi_tweaks:advanced_steam_alloy_smelter" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 6.0d
 		}
 	]
 }

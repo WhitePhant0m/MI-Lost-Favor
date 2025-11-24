@@ -37,7 +37,7 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     }
 
     inputs.forEach((input) => {
-        let inp = Object.assign({}, input[0], {amount:input[1] || 1}, {probability:input[2]})
+        let inp = Object.assign({}, input[0], {amount:input[1] ?? input[0]?.amount ?? 1}, {probability:input[2]})
         if (inp.count) {
             inp.amount = inp.count
             delete inp.count
@@ -82,7 +82,15 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
         })
     }
     event.custom(recipe)
+    if(Object.keys(miMachinesCompat).some(key => key.includes(args.machine))){
+        args.machine = miMachinesCompat[args.machine]
+        miMachineCraft(event, args)
+    }
 };
+
+let miMachinesCompat = {
+    "extended_industrialization:alloy_smelter" : "modern_industrialization:advanced_steam_alloy_smelter"
+}
 
 MIRecipeEvents.customCondition(event => {
     event.register("milf:placer_craft_condition",

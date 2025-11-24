@@ -22,6 +22,16 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
+            [{ "item": "modern_industrialization:steel_ring" }, 6],
+            [{ "item": "yo_hooks:iron_hook_head" }, 1],
+            [{ "item": "minecraft:stick" }, 1]
+        ],
+        { "item": "yo_hooks:iron_grappling_hook" },
+        miTools
+    ); 
+
+    blueprint_recipe(
+        [
             [{ "item": "modern_industrialization:steel_curved_plate" }, 2],
             [{ "item": "modern_industrialization:steel_nugget" }, 1],
             [{ "item": "modern_industrialization:iron_plate" }, 1]
