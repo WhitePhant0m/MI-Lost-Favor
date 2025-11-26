@@ -24,12 +24,6 @@
             "ingredient": {
                 "item": "modern_industrialization:aluminum_plate"
             }
-        },
-        {
-            "amount": 1,
-            "ingredient": {
-                "item": "occultism:afrit_essence"
-            }
         }
     ],
     "magic_circle": "forbidden_arcanus:create_item",
