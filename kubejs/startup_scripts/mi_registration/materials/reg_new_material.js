@@ -52,6 +52,7 @@ MIMaterialEvents.addMaterials(event => {
             .addExternalPart('ingot', 'ae2:certus_quartz_crystal')
             .addExternalPart('dust', 'ae2:certus_quartz_dust')
             .addParts('rod', "plate", "large_plate")
+            .machineCasing(8.0)
             .defaultRecipes()
     })
 
@@ -61,15 +62,17 @@ MIMaterialEvents.addMaterials(event => {
             .materialSet('shiny')
             .addExternalPart('ingot', 'justdirethings:ferricore_ingot')
             .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .machineCasing(8.0)
             .defaultRecipes()
     })
 
-    event.createMaterial('Blaze gold', 'blaze_gold', 0xb0501c,
+    event.createMaterial('Blazegold', 'blazegold', 0xb0501c,
         builder => {
         builder
             .materialSet('shiny')
             .addExternalPart('ingot', 'justdirethings:blazegold_ingot')
             .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .machineCasing(8.0)
             .defaultRecipes()
     })
 
@@ -79,6 +82,17 @@ MIMaterialEvents.addMaterials(event => {
             .materialSet('shiny')
             .addExternalPart('ingot', 'justdirethings:eclipsealloy_ingot')
             .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .machineCasing(8.0)
+            .defaultRecipes()
+    })
+
+    event.createMaterial('Celestigem', 'celestigem', 0x54ccc2,
+        builder => {
+        builder
+            .materialSet('shiny')
+            .addExternalPart('ingot', 'justdirethings:celestigem')
+            .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
+            .machineCasing(8.0)
             .defaultRecipes()
     })
 

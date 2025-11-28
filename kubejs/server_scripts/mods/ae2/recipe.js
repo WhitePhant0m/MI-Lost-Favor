@@ -3,6 +3,18 @@ ServerEvents.recipes(event => {
 
     ]
 
+    const REMOVE_BY_OUTPUT = [
+        "extendedae:quartz_blend",
+        "ae2:quartz_glass",
+        "ae2:quartz_vibrant_glass",
+        "extendedae:caner"
+    ]
+
+    //default recipes removal
+    event.forEachRecipe({output:REMOVE_BY_OUTPUT}, r => {
+        event.remove({output: r.getOriginalRecipeResult()})
+    })
+
     removing_by_recipe_id.forEach(id => {
         event.remove({ id: id })
     })

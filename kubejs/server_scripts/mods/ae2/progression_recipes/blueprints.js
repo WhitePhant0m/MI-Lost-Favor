@@ -44,6 +44,17 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
+            [{ "item": "ae2:fluix_crystal" }, 3],
+            [{ "item": "modern_industrialization:rubber_sheet" }, 12],
+            [{ "item": "modern_industrialization:basic_machine_hull" }, 1],
+            [{ "item": "modern_industrialization:certus_quartz_plate" }, 4]
+        ],
+        { "item": "modern_industrialization:microbial_fabricator" },
+        tier1bp
+    );
+
+    blueprint_recipe(
+        [
             [{ "item": "ae2:fluix_crystal" }, 4],
             [{ "item": "ae2:terminal" }, 1],
             [{ "item": "minecraft:crafting_table" }, 1],

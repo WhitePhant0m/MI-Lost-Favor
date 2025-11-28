@@ -72,6 +72,16 @@ function createNewBlock(id, args) {
     global.langCustomStuff[`block.kubejs.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
 
+function createNewFluid(id, args) {
+    args = args || {}
+    StartupEvents.registry('fluid', event => {
+        let fluid = args.textureType ? event.create(id, args.textureType) : event.create(id)
+        args.color && fluid.tint.apply(fluid, [args.color])
+        itemBuilder(fluid.bucketItem, args)
+    })
+    global.langCustomStuff[`item.kubejs.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+}
+
 function idToName(id) {
     return id.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
 }
@@ -79,6 +89,8 @@ function idToName(id) {
 global.setOnFire = ctx => {
     ctx.player.setRemainingFireTicks(200)
 }
+
+//createNewFluid("test_fluid", {textureType:"thin", color:"0xFF0000"})
 
 //#region Easter eggs
 createNewBlock("saeta_plush", { blockType: "cardinal", renderType: "cutout", notSolid: true, waterlogged: true, soundType: "wool", stackSize: 1, rarity: "epic", box: [4, 0, 4, 12, 12, 12] })
@@ -153,6 +165,14 @@ createNewItem('old_notes', { stackSize: 1, lang: { "en_us": "Old notes", "ru_ru"
 
 createNewItem('punched_card', { stackSize: 1, lang: { "en_us": "Punched card", "ru_ru": "Перфокарта" } })
 createNewItem('blank_blueprint', { stackSize: 63, lang: { "en_us": "Blank blueprint", "ru_ru": "Пустой чертеж" } })
+
+createNewItem('bioactive_coating', { stackSize: 1 })
+createNewItem('thermophilic_dermis', { stackSize: 1 })
+createNewItem('symbiote_membrane', { stackSize: 1 })
+
+createNewItem('goo_coated_blank_blueprint', { stackSize: 1 })
+
+
 
 //cores
 createNewItem('core_hull', { lang: { "en_us": "Core hull", "ru_ru": "Основа ядра" } })

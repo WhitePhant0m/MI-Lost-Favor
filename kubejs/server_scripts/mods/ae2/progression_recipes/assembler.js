@@ -6,235 +6,315 @@ ServerEvents.recipes(event => {
     var tier4token = "kubejs:quantum_disk"
     */
 
-    var tier1token = "#mi_lost_favor:tier_1_recipes"
-    var tier2token = "#mi_lost_favor:tier_2_recipes"
-    var tier3token = "#mi_lost_favor:tier_3_recipes"
-    var tier4token = "#mi_lost_favor:tier_4_recipes"
+    const T1_TOKEN = {tag:"mi_lost_favor:tier_1_recipes"}
+    const T2_TOKEN = {tag:"mi_lost_favor:tier_2_recipes"}
+    const T3_TOKEN = {tag:"mi_lost_favor:tier_3_recipes"}
+    const T4_TOKEN = {tag:"mi_lost_favor:tier_4_recipes"}
 
-    var tier1DefaultEnergy = 4
-    var tier2DefaultEnergy = 8
-    var tier3DefaultEnergy = 12
-    var tier4DefaultEnergy = 20
-    var tier5DefaultEnergy = 28
+    const T1_ENERGY = 4
+    const T2_ENERGY = 8
+    const T3_ENERGY = 12
+    const T4_ENERGY = 20
+    const T5_ENERGY = 28
 
-    var tier1DefaultTime = 100
-    var tier2DefaultTime = 200
-    var tier3DefaultTime = 400
-    var tier4DefaultTime = 800
-    var tier5DefaultTime = 1600
-
-    let craft_removal_list = [
-        "extendedae:quartz_blend",
-        "ae2:quartz_glass",
-        "ae2:quartz_vibrant_glass",
-        "extendedae:caner"
-    ]
-
-    //main function, called in every helper function
-    function assembler_recipe(energy,time,inputs,outputs,fluids,token){
-        fluids = fluids || [];
-        energy = energy + inputs.length * (energy / 4)
-        var recipe = event.recipes.modern_industrialization.assembler(energy, time);
-        inputs.forEach((input) => {
-            if (Array.isArray(input)) {
-                recipe.itemIn(input[0], input[1]);
-            } else {
-                recipe.itemIn(input);
-            }
-        })
-        fluids.forEach((fluid) => {recipe.fluidIn(fluid[0], fluid[1])})
-        outputs.forEach((out) => {
-            recipe.itemOut(out)
-            craft_removal_list.push(out.split(" ").length == 2 ? out.split(" ")[1] : out)
-        })
-        if (token != undefined){recipe.itemIn(token, 0)}
-    }
+    const T1_TIME = 100
+    const T2_TIME = 200
+    const T3_TIME = 400
+    const T4_TIME = 800
+    const T5_TIME = 1600
 
     //#region helper functions
     function ae_item_cell (cellComponent, output, token, housing) {
         housing = housing || "ae2:item_cell_housing"
-        var inputs = [
-            "2x ae2:quartz_glass",
-            housing,
-            cellComponent
-        ];
-        var fluids = [
-            ["modern_industrialization:molten_redstone", 250],
-            ["modern_industrialization:soldering_alloy", 100]
-        ];
-        assembler_recipe(16, 200, inputs, [output], fluids, token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: "ae2:quartz_glass"}, 2],
+                [{item: housing}, 1],
+                [{item: cellComponent}, 1]
+            ],
+            inputFluids: [
+                [{fluid: "modern_industrialization:molten_redstone"}, 250],
+                [{fluid: "modern_industrialization:soldering_alloy"}, 100]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
 
     function ae_fluid_cell (cellComponent, output, token, housing) {
         housing = housing || "ae2:fluid_cell_housing"
-        var inputs = [
-            "2x ae2:quartz_glass",
-            housing,
-            cellComponent
-        ];
-        var fluids = [
-            ["modern_industrialization:molten_redstone", 250],
-            ["modern_industrialization:soldering_alloy", 100]
-        ];
-        assembler_recipe(16, 200, inputs, [output], fluids, token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: "ae2:quartz_glass"}, 2],
+                [{item: housing}, 1],
+                [{item: cellComponent}, 1]
+            ],
+            inputFluids: [
+                [{fluid: "modern_industrialization:molten_redstone"}, 250],
+                [{fluid: "modern_industrialization:soldering_alloy"}, 100]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
 
     function ae_cell_component (cellComponent, upgradeMaterial, processor, output, token) {
-        var inputs = [
-            "4x " + cellComponent,
-            processor,
-            "4x " + upgradeMaterial
-        ];
-        assembler_recipe(16, 200, inputs, [output], [], token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: cellComponent}, 4],
+                [{item: processor}, 1],
+                [{item: upgradeMaterial}, 4]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
 
     function ae_processor (printedCircuit, output, token) {
-        var inputs = [
-            "ae2:printed_silicon",
-            printedCircuit
-        ];
-        var fluids = [
-            ["modern_industrialization:molten_redstone", 250]
-        ];
-        assembler_recipe(16, 200, inputs, [output], fluids, token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: "ae2:printed_silicon"}, 1],
+                [{item: printedCircuit}, 1]
+            ],
+            inputFluids: [
+                [{fluid: "modern_industrialization:molten_redstone"}, 250]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
 
     function ae_core (coreMaterial, output, token) {
-        var inputs = [
-            "kubejs:core_hull",
-            "4x ae2:quartz_glass",
-            coreMaterial
-        ];
-        var fluids = [
-            ["modern_industrialization:polyethylene", 250]
-        ];
-        assembler_recipe(16, 200, inputs, [output], fluids, token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: "kubejs:core_hull"}, 1],
+                [{item: "ae2:quartz_glass"}, 4],
+                [{item: coreMaterial}, 1]
+            ],
+            inputFluids: [
+                [{fluid: "modern_industrialization:polyethylene"}, 250]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
 
     function ae_card (base, upgradeMaterial, output, token) {
-        var inputs = [
-            base,
-            "4x " + upgradeMaterial
-        ];
-        var fluids = [
-            ["modern_industrialization:molten_redstone", 250]
-        ];
-        assembler_recipe(16, 200, inputs, [output], fluids, token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: base}, 1],
+                [{item: upgradeMaterial}, 4]
+            ],
+            inputFluids: [
+                [{fluid: "modern_industrialization:molten_redstone"}, 250]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
 
     function cell_upgrade (baseCell, nextCellComponent, upgradeMaterial, output, token) {
-        var inputs = [
-            baseCell,
-            nextCellComponent,
-            "2x " + upgradeMaterial
-        ];
-        assembler_recipe(16, 200, inputs, [output], [], token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: baseCell}, 1],
+                [{item: nextCellComponent}, 1],
+                [{tag: upgradeMaterial}, 2]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
 
     function ae_crafting_storage (cellComponent, wireMaterial, output, token) {
-        var inputs = [
-            cellComponent,
-            "ae2:calculation_processor",
-            "ae2:crafting_unit",
-            "8x #c:dusts/aluminum",
-            "4x " + "#c:wires/" + wireMaterial
-        ];
-        assembler_recipe(16, 200, inputs, [output], [], token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: cellComponent}, 1],
+                [{item: "ae2:calculation_processor"}, 1],
+                [{item: "ae2:crafting_unit"}, 1],
+                [{tag: "c:dusts/aluminum"}, 8],
+                [{tag: "c:wires/" + wireMaterial}, 4]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
 
     function ae_crafting_storage_upgrade (cellComponent, craftingStorage, wireMaterial, output, token) {
-        var inputs = [
-            cellComponent,
-            craftingStorage,
-            "2x " + "#c:wires/" + wireMaterial
-        ];
-        assembler_recipe(16, 200, inputs, [output], [], token);
+        miMachineCraft(event, {
+            energy: 16,
+            time: 200,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: cellComponent}, 1],
+                [{item: craftingStorage}, 1],
+                [{tag: "c:wires/" + wireMaterial}, 2]
+            ],
+            outputItems: [
+                [{item: output}, 1]
+            ],
+            token: token,
+            removeRecipe: true
+        });
     }
+
     function ae_assembler_knife_reversable_recipe(item1, item2){
-        assembler_recipe(8,60,[item1, ["ae2:certus_quartz_cutting_knife", 0]],[item2])
-        assembler_recipe(8,60,[item2, ["ae2:certus_quartz_cutting_knife", 0]],[item1])
+        miMachineCraft(event, {
+            energy: 8,
+            time: 60,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: item1}, 1],
+                [{item: "ae2:certus_quartz_cutting_knife"}, 1, 0]
+            ],
+            outputItems: [
+                [{item: item2}, 1]
+            ],
+            removeRecipe: true
+        });
+        
+        miMachineCraft(event, {
+            energy: 8,
+            time: 60,
+            machine: "modern_industrialization:assembler",
+            inputItems: [
+                [{item: item2}, 1],
+                [{item: "ae2:certus_quartz_cutting_knife"}, 1, 0]
+            ],
+            outputItems: [
+                [{item: item1}, 1]
+            ],
+            removeRecipe: true
+        });
     }
     //#endregion
 
     // #region cell components
-    ae_cell_component("#c:plates/aluminum", "#c:dusts/certus_quartz", "ae2:logic_processor", "ae2:cell_component_1k", tier1token)
+    ae_cell_component("modern_industrialization:aluminum_plate", "ae2:certus_quartz_dust", "ae2:logic_processor", "ae2:cell_component_1k", T1_TOKEN)
 
-    ae_cell_component("ae2:cell_component_1k", "#c:dusts/fluix", "ae2:calculation_processor", "ae2:cell_component_4k", tier2token)
-    ae_cell_component("ae2:cell_component_4k", "#c:dusts/aluminum", "ae2:calculation_processor", "ae2:cell_component_16k", tier2token)
-    ae_cell_component("ae2:cell_component_16k", "#c:dusts/sodium", "ae2:engineering_processor", "ae2:cell_component_64k", tier2token)
-    ae_cell_component("ae2:cell_component_64k", "#c:dusts/ruby", "ae2:engineering_processor", "ae2:cell_component_256k", tier2token)
+    ae_cell_component("ae2:cell_component_1k", "ae2:fluix_dust", "ae2:calculation_processor", "ae2:cell_component_4k", T2_TOKEN)
+    ae_cell_component("ae2:cell_component_4k", "modern_industrialization:aluminum_dust", "ae2:calculation_processor", "ae2:cell_component_16k", T2_TOKEN)
+    ae_cell_component("ae2:cell_component_16k", "modern_industrialization:sodium_dust", "ae2:engineering_processor", "ae2:cell_component_64k", T2_TOKEN)
+    ae_cell_component("ae2:cell_component_64k", "modern_industrialization:ruby_dust", "ae2:engineering_processor", "ae2:cell_component_256k", T2_TOKEN)
 
-    ae_cell_component("ae2:cell_component_256k", "ae2:sky_dust", "megacells:accumulation_processor", "megacells:cell_component_1m", tier3token)
-    ae_cell_component("megacells:cell_component_1m", "advanced_ae:quantum_infused_dust", "megacells:accumulation_processor", "megacells:cell_component_4m", tier3token)
-    ae_cell_component("megacells:cell_component_4m", "advanced_ae:quantum_infused_dust", "megacells:accumulation_processor", "megacells:cell_component_16m", tier3token)
-    ae_cell_component("ae2:fluix_pearl", "advanced_ae:quantum_infused_dust", "megacells:accumulation_processor", "ae2:spatial_cell_component_2", tier3token)
-    ae_cell_component("ae2:spatial_cell_component_2", "advanced_ae:quantum_infused_dust", "advanced_ae:quantum_processor", "ae2:spatial_cell_component_16", tier3token)
-    ae_cell_component("ae2:spatial_cell_component_16", "advanced_ae:quantum_infused_dust", "extendedae:concurrent_processor", "ae2:spatial_cell_component_128", tier3token)
-    ae_cell_component("ae2:cell_component_256k", "advanced_ae:quantum_infused_dust", "megacells:accumulation_processor", "bigger_ae2:quantum_cell_component", tier3token)
-    ae_cell_component("ae2:singularity", "advanced_ae:quantum_infused_dust", "bigger_ae2:quantum_cell_component", "bigger_ae2:digital_singularity_cell_component", tier3token)
+    ae_cell_component("ae2:cell_component_256k", "ae2:sky_dust", "megacells:accumulation_processor", "megacells:cell_component_1m", T3_TOKEN)
+    ae_cell_component("megacells:cell_component_1m", "advanced_ae:quantum_infused_dust", "megacells:accumulation_processor", "megacells:cell_component_4m", T3_TOKEN)
+    ae_cell_component("megacells:cell_component_4m", "advanced_ae:quantum_infused_dust", "megacells:accumulation_processor", "megacells:cell_component_16m", T3_TOKEN)
+    ae_cell_component("ae2:fluix_pearl", "advanced_ae:quantum_infused_dust", "megacells:accumulation_processor", "ae2:spatial_cell_component_2", T3_TOKEN)
+    ae_cell_component("ae2:spatial_cell_component_2", "advanced_ae:quantum_infused_dust", "advanced_ae:quantum_processor", "ae2:spatial_cell_component_16", T3_TOKEN)
+    ae_cell_component("ae2:spatial_cell_component_16", "advanced_ae:quantum_infused_dust", "extendedae:concurrent_processor", "ae2:spatial_cell_component_128", T3_TOKEN)
+    ae_cell_component("ae2:cell_component_256k", "advanced_ae:quantum_infused_dust", "megacells:accumulation_processor", "bigger_ae2:quantum_cell_component", T3_TOKEN)
+    ae_cell_component("ae2:singularity", "advanced_ae:quantum_infused_dust", "bigger_ae2:quantum_cell_component", "bigger_ae2:digital_singularity_cell_component", T3_TOKEN)
 
-    ae_cell_component("extendedae:concurrent_processor", "advanced_ae:quantum_infused_dust", "bigger_ae2:digital_singularity_cell_component", "megacells:bulk_cell_component", tier4token)
-    ae_cell_component("megacells:cell_component_16m", "extendedae:entro_dust", "extendedae:concurrent_processor", "megacells:cell_component_64m", tier4token)
-    ae_cell_component("megacells:cell_component_64m", "extendedae:entro_dust", "extendedae:concurrent_processor", "megacells:cell_component_256m", tier4token)
+    ae_cell_component("extendedae:concurrent_processor", "advanced_ae:quantum_infused_dust", "bigger_ae2:digital_singularity_cell_component", "megacells:bulk_cell_component", T4_TOKEN)
+    ae_cell_component("megacells:cell_component_16m", "extendedae:entro_dust", "extendedae:concurrent_processor", "megacells:cell_component_64m", T4_TOKEN)
+    ae_cell_component("megacells:cell_component_64m", "extendedae:entro_dust", "extendedae:concurrent_processor", "megacells:cell_component_256m", T4_TOKEN)
     // #endregion
 
     // #region cells
-    ae_item_cell("ae2:spatial_cell_component_2", "ae2:spatial_storage_cell_2", tier3token)
-    ae_item_cell("ae2:spatial_cell_component_16", "ae2:spatial_storage_cell_16", tier3token)
-    ae_item_cell("ae2:spatial_cell_component_128", "ae2:spatial_storage_cell_128", tier4token)
+    ae_item_cell("ae2:spatial_cell_component_2", "ae2:spatial_storage_cell_2", T3_TOKEN)
+    ae_item_cell("ae2:spatial_cell_component_16", "ae2:spatial_storage_cell_16", T3_TOKEN)
+    ae_item_cell("ae2:spatial_cell_component_128", "ae2:spatial_storage_cell_128", T4_TOKEN)
 
-    ae_item_cell("ae2:cell_component_1k", "ae2:item_storage_cell_1k", tier2token)
-    ae_item_cell("ae2:cell_component_4k", "ae2:item_storage_cell_4k", tier3token)
-    ae_item_cell("ae2:cell_component_16k", "ae2:item_storage_cell_16k", tier3token)
-    ae_item_cell("ae2:cell_component_64k", "ae2:item_storage_cell_64k", tier3token)
-    ae_item_cell("ae2:cell_component_256k", "ae2:item_storage_cell_256k", tier3token)
+    ae_item_cell("ae2:cell_component_1k", "ae2:item_storage_cell_1k", T2_TOKEN)
+    ae_item_cell("ae2:cell_component_4k", "ae2:item_storage_cell_4k", T3_TOKEN)
+    ae_item_cell("ae2:cell_component_16k", "ae2:item_storage_cell_16k", T3_TOKEN)
+    ae_item_cell("ae2:cell_component_64k", "ae2:item_storage_cell_64k", T3_TOKEN)
+    ae_item_cell("ae2:cell_component_256k", "ae2:item_storage_cell_256k", T3_TOKEN)
 
-    ae_item_cell("megacells:cell_component_1m", "megacells:item_storage_cell_1m", tier3token, "megacells:mega_item_cell_housing")
-    ae_item_cell("megacells:cell_component_4m", "megacells:item_storage_cell_4m", tier3token, "megacells:mega_item_cell_housing")
-    ae_item_cell("megacells:cell_component_16m", "megacells:item_storage_cell_16m", tier3token, "megacells:mega_item_cell_housing")
-    ae_item_cell("bigger_ae2:quantum_cell_component", "bigger_ae2:quantum_item_storage_cell", tier3token, "bigger_ae2:advanced_item_cell_housing")
-    ae_item_cell("bigger_ae2:digital_singularity_cell_component", "bigger_ae2:digital_singularity_item_storage_cell", tier3token, "bigger_ae2:advanced_item_cell_housing")
+    ae_item_cell("megacells:cell_component_1m", "megacells:item_storage_cell_1m", T3_TOKEN, "megacells:mega_item_cell_housing")
+    ae_item_cell("megacells:cell_component_4m", "megacells:item_storage_cell_4m", T3_TOKEN, "megacells:mega_item_cell_housing")
+    ae_item_cell("megacells:cell_component_16m", "megacells:item_storage_cell_16m", T3_TOKEN, "megacells:mega_item_cell_housing")
+    ae_item_cell("bigger_ae2:quantum_cell_component", "bigger_ae2:quantum_item_storage_cell", T3_TOKEN, "bigger_ae2:advanced_item_cell_housing")
+    ae_item_cell("bigger_ae2:digital_singularity_cell_component", "bigger_ae2:digital_singularity_item_storage_cell", T3_TOKEN, "bigger_ae2:advanced_item_cell_housing")
 
-    ae_item_cell("megacells:cell_component_64m", "megacells:item_storage_cell_64m", tier4token, "megacells:mega_item_cell_housing")
-    ae_item_cell("megacells:cell_component_256m", "megacells:item_storage_cell_256m", tier4token, "megacells:mega_item_cell_housing")
+    ae_item_cell("megacells:cell_component_64m", "megacells:item_storage_cell_64m", T4_TOKEN, "megacells:mega_item_cell_housing")
+    ae_item_cell("megacells:cell_component_256m", "megacells:item_storage_cell_256m", T4_TOKEN, "megacells:mega_item_cell_housing")
 
-    ae_fluid_cell("ae2:cell_component_1k", "ae2:fluid_storage_cell_1k", tier2token)
-    ae_fluid_cell("ae2:cell_component_4k", "ae2:fluid_storage_cell_4k", tier3token)
-    ae_fluid_cell("ae2:cell_component_16k", "ae2:fluid_storage_cell_16k", tier3token)
-    ae_fluid_cell("ae2:cell_component_64k", "ae2:fluid_storage_cell_64k", tier3token)
-    ae_fluid_cell("ae2:cell_component_256k", "ae2:fluid_storage_cell_256k", tier3token)
+    ae_fluid_cell("ae2:cell_component_1k", "ae2:fluid_storage_cell_1k", T2_TOKEN)
+    ae_fluid_cell("ae2:cell_component_4k", "ae2:fluid_storage_cell_4k", T3_TOKEN)
+    ae_fluid_cell("ae2:cell_component_16k", "ae2:fluid_storage_cell_16k", T3_TOKEN)
+    ae_fluid_cell("ae2:cell_component_64k", "ae2:fluid_storage_cell_64k", T3_TOKEN)
+    ae_fluid_cell("ae2:cell_component_256k", "ae2:fluid_storage_cell_256k", T3_TOKEN)
 
-    ae_fluid_cell("megacells:cell_component_1m", "megacells:fluid_storage_cell_1m", tier3token, "megacells:mega_item_cell_housing")
-    ae_fluid_cell("megacells:cell_component_4m", "megacells:fluid_storage_cell_4m", tier3token, "megacells:mega_item_cell_housing")
-    ae_fluid_cell("megacells:cell_component_16m", "megacells:fluid_storage_cell_16m", tier3token, "megacells:mega_item_cell_housing")
-    ae_fluid_cell("bigger_ae2:quantum_cell_component", "bigger_ae2:quantum_fluid_storage_cell", tier3token, "bigger_ae2:advanced_fluid_cell_housing")
-    ae_fluid_cell("bigger_ae2:digital_singularity_cell_component", "bigger_ae2:digital_singularity_fluid_storage_cell", tier3token, "bigger_ae2:advanced_fluid_cell_housing")
+    ae_fluid_cell("megacells:cell_component_1m", "megacells:fluid_storage_cell_1m", T3_TOKEN, "megacells:mega_item_cell_housing")
+    ae_fluid_cell("megacells:cell_component_4m", "megacells:fluid_storage_cell_4m", T3_TOKEN, "megacells:mega_item_cell_housing")
+    ae_fluid_cell("megacells:cell_component_16m", "megacells:fluid_storage_cell_16m", T3_TOKEN, "megacells:mega_item_cell_housing")
+    ae_fluid_cell("bigger_ae2:quantum_cell_component", "bigger_ae2:quantum_fluid_storage_cell", T3_TOKEN, "bigger_ae2:advanced_fluid_cell_housing")
+    ae_fluid_cell("bigger_ae2:digital_singularity_cell_component", "bigger_ae2:digital_singularity_fluid_storage_cell", T3_TOKEN, "bigger_ae2:advanced_fluid_cell_housing")
 
-    ae_fluid_cell("megacells:cell_component_64m", "megacells:fluid_storage_cell_64m", tier4token, "megacells:mega_item_cell_housing")
-    ae_fluid_cell("megacells:cell_component_256m", "megacells:fluid_storage_cell_256m", tier4token, "megacells:mega_item_cell_housing")
+    ae_fluid_cell("megacells:cell_component_64m", "megacells:fluid_storage_cell_64m", T4_TOKEN, "megacells:mega_item_cell_housing")
+    ae_fluid_cell("megacells:cell_component_256m", "megacells:fluid_storage_cell_256m", T4_TOKEN, "megacells:mega_item_cell_housing")
 
-    cell_upgrade("ae2:item_storage_cell_1k", "ae2:cell_component_4k", "#c:dusts/fluix", "ae2:item_storage_cell_4k", tier3token)
-    cell_upgrade("ae2:item_storage_cell_4k", "ae2:cell_component_16k", "#c:dusts/aluminum", "ae2:item_storage_cell_16k", tier3token)
-    cell_upgrade("ae2:item_storage_cell_16k", "ae2:cell_component_64k", "#c:dusts/sodium", "ae2:item_storage_cell_64k", tier3token)
-    cell_upgrade("ae2:item_storage_cell_64k", "ae2:cell_component_256k", "#c:dusts/ruby", "ae2:item_storage_cell_256k", tier3token)
+    cell_upgrade("ae2:item_storage_cell_1k", "ae2:cell_component_4k", "c:dusts/fluix", "ae2:item_storage_cell_4k", T3_TOKEN)
+    cell_upgrade("ae2:item_storage_cell_4k", "ae2:cell_component_16k", "c:dusts/aluminum", "ae2:item_storage_cell_16k", T3_TOKEN)
+    cell_upgrade("ae2:item_storage_cell_16k", "ae2:cell_component_64k", "c:dusts/sodium", "ae2:item_storage_cell_64k", T3_TOKEN)
+    cell_upgrade("ae2:item_storage_cell_64k", "ae2:cell_component_256k", "c:dusts/ruby", "ae2:item_storage_cell_256k", T3_TOKEN)
 
-    cell_upgrade("ae2:fluid_storage_cell_1k", "ae2:cell_component_4k", "#c:dusts/fluix", "ae2:fluid_storage_cell_4k", tier3token)
-    cell_upgrade("ae2:fluid_storage_cell_4k", "ae2:cell_component_16k", "#c:dusts/aluminum", "ae2:fluid_storage_cell_16k", tier3token)
-    cell_upgrade("ae2:fluid_storage_cell_16k", "ae2:cell_component_64k", "#c:dusts/sodium", "ae2:fluid_storage_cell_64k", tier3token)
-    cell_upgrade("ae2:fluid_storage_cell_64k", "ae2:cell_component_256k", "#c:dusts/ruby", "ae2:fluid_storage_cell_256k", tier3token)
+    cell_upgrade("ae2:fluid_storage_cell_1k", "ae2:cell_component_4k", "c:dusts/fluix", "ae2:fluid_storage_cell_4k", T3_TOKEN)
+    cell_upgrade("ae2:fluid_storage_cell_4k", "ae2:cell_component_16k", "c:dusts/aluminum", "ae2:fluid_storage_cell_16k", T3_TOKEN)
+    cell_upgrade("ae2:fluid_storage_cell_16k", "ae2:cell_component_64k", "c:dusts/sodium", "ae2:fluid_storage_cell_64k", T3_TOKEN)
+    cell_upgrade("ae2:fluid_storage_cell_64k", "ae2:cell_component_256k", "c:dusts/ruby", "ae2:fluid_storage_cell_256k", T3_TOKEN)
     // #endregion
 
     // #region crafting storage
-    ae_crafting_storage("ae2:cell_component_1k", "electrum", "ae2:1k_crafting_storage", tier2token)
-    ae_crafting_storage("ae2:cell_component_4k", "electrum", "ae2:4k_crafting_storage", tier2token)
-    ae_crafting_storage("ae2:cell_component_16k", "electrum", "ae2:16k_crafting_storage", tier2token)
-    ae_crafting_storage("ae2:cell_component_64k", "aluminum", "ae2:64k_crafting_storage", tier2token)
-    ae_crafting_storage("ae2:cell_component_256k", "aluminum", "ae2:256k_crafting_storage", tier2token)
+    ae_crafting_storage("ae2:cell_component_1k", "electrum", "ae2:1k_crafting_storage", T2_TOKEN)
+    ae_crafting_storage("ae2:cell_component_4k", "electrum", "ae2:4k_crafting_storage", T2_TOKEN)
+    ae_crafting_storage("ae2:cell_component_16k", "electrum", "ae2:16k_crafting_storage", T2_TOKEN)
+    ae_crafting_storage("ae2:cell_component_64k", "aluminum", "ae2:64k_crafting_storage", T2_TOKEN)
+    ae_crafting_storage("ae2:cell_component_256k", "aluminum", "ae2:256k_crafting_storage", T2_TOKEN)
 
-    ae_crafting_storage_upgrade("ae2:cell_component_4k", "ae2:1k_crafting_storage", "electrum", "ae2:4k_crafting_storage", tier2token)
-    ae_crafting_storage_upgrade("ae2:cell_component_16k", "ae2:4k_crafting_storage", "electrum", "ae2:16k_crafting_storage", tier2token)
-    ae_crafting_storage_upgrade("ae2:cell_component_64k", "ae2:16k_crafting_storage", "electrum", "ae2:64k_crafting_storage", tier2token)
-    ae_crafting_storage_upgrade("ae2:cell_component_256k", "ae2:64k_crafting_storage", "electrum", "ae2:256k_crafting_storage", tier2token)
+    ae_crafting_storage_upgrade("ae2:cell_component_4k", "ae2:1k_crafting_storage", "electrum", "ae2:4k_crafting_storage", T2_TOKEN)
+    ae_crafting_storage_upgrade("ae2:cell_component_16k", "ae2:4k_crafting_storage", "electrum", "ae2:16k_crafting_storage", T2_TOKEN)
+    ae_crafting_storage_upgrade("ae2:cell_component_64k", "ae2:16k_crafting_storage", "electrum", "ae2:64k_crafting_storage", T2_TOKEN)
+    ae_crafting_storage_upgrade("ae2:cell_component_256k", "ae2:64k_crafting_storage", "electrum", "ae2:256k_crafting_storage", T2_TOKEN)
     // #endregion
 
     // #region reversable_recipes
@@ -252,1105 +332,1648 @@ ServerEvents.recipes(event => {
     // #endregion
 
     // #region cell housings
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-           "2x kubejs:cell_half",
-           "2x modern_industrialization:aluminum_plate",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "modern_industrialization:aluminum_plate"}, 2]
         ],
-        ["ae2:item_cell_housing"],
-        [["modern_industrialization:soldering_alloy", 500]],
-        tier3token
-    )
+        inputFluids: [
+            [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+        ],
+        outputItems: [
+            [{item: "ae2:item_cell_housing"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-           "2x kubejs:cell_half",
-           "2x modern_industrialization:copper_plate",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "modern_industrialization:copper_plate"}, 2]
         ],
-        ["ae2:fluid_cell_housing"],
-        [["modern_industrialization:soldering_alloy", 500]],
-        tier3token
-    )
+        inputFluids: [
+            [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+        ],
+        outputItems: [
+            [{item: "ae2:fluid_cell_housing"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-           "2x kubejs:cell_half",
-           "4x megacells:sky_steel_ingot",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "megacells:sky_steel_ingot"}, 4]
         ],
-        ["megacells:mega_item_cell_housing"],
-        [["modern_industrialization:soldering_alloy", 500]],
-        tier3token
-    )
+        inputFluids: [
+            [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+        ],
+        outputItems: [
+            [{item: "megacells:mega_item_cell_housing"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-           "2x kubejs:cell_half",
-           "4x megacells:sky_bronze_ingot",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "megacells:sky_bronze_ingot"}, 4]
         ],
-        ["megacells:mega_fluid_cell_housing"],
-        [["modern_industrialization:soldering_alloy", 500]],
-        tier3token
-    )
+        inputFluids: [
+            [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+        ],
+        outputItems: [
+            [{item: "megacells:mega_fluid_cell_housing"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-           "2x kubejs:cell_half",
-           "8x modern_industrialization:gold_plate",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "modern_industrialization:gold_plate"}, 8]
         ],
-        ["bigger_ae2:advanced_item_cell_housing"],
-        [["modern_industrialization:soldering_alloy", 500]],
-        tier3token
-    )
+        inputFluids: [
+            [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+        ],
+        outputItems: [
+            [{item: "bigger_ae2:advanced_item_cell_housing"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-           "2x kubejs:cell_half",
-           "8x modern_industrialization:titanium_plate",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "modern_industrialization:titanium_plate"}, 8]
         ],
-        ["bigger_ae2:advanced_fluid_cell_housing"],
-        [["modern_industrialization:soldering_alloy", 500]],
-        tier3token
-    )
+        inputFluids: [
+            [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+        ],
+        outputItems: [
+            [{item: "bigger_ae2:advanced_fluid_cell_housing"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-           "2x kubejs:cell_half",
-           "8x modern_industrialization:titanium_plate",
-           "4x ars_nouveau:source_gem"
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "modern_industrialization:titanium_plate"}, 8],
+            [{item: "ars_nouveau:source_gem"}, 4]
         ],
-        ["bigger_ae2:advanced_source_cell_housing"],
-        [["modern_industrialization:soldering_alloy", 500]],
-        tier3token
-    )
+        inputFluids: [
+            [{fluid: "modern_industrialization:soldering_alloy"}, 500]
+        ],
+        outputItems: [
+            [{item: "bigger_ae2:advanced_source_cell_housing"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
     // #endregion
 
     // #region tier 2 recipes
-    ae_processor("ae2:printed_logic_processor", "ae2:logic_processor", tier3token)
+    ae_processor("ae2:printed_logic_processor", "ae2:logic_processor", T3_TOKEN)
 
-    ae_card("ae2:basic_card", "#c:dusts/redstone", "ae2:redstone_card", tier1token)
-    ae_card("ae2:basic_card", "minecraft:chest", 'ae2:capacity_card', tier1token)
-    ae_card("ae2:basic_card", "minecraft:magma_block", 'ae2:void_card', tier1token)
-    ae_card("ae2:basic_card", "minecraft:crafting_table", 'ae2:crafting_card', tier1token)
+    ae_card("ae2:basic_card", "minecraft:redstone", "ae2:redstone_card", T1_TOKEN)
+    ae_card("ae2:basic_card", "minecraft:chest", 'ae2:capacity_card', T1_TOKEN)
+    ae_card("ae2:basic_card", "minecraft:magma_block", 'ae2:void_card', T1_TOKEN)
+    ae_card("ae2:basic_card", "minecraft:crafting_table", 'ae2:crafting_card', T1_TOKEN)
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "4x modern_industrialization:aluminum_large_plate",
-            "16x modern_industrialization:certus_quartz_rod",
-            "4x kubejs:cell_half",
-            "4x ae2:logic_processor"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "modern_industrialization:aluminum_large_plate"}, 4],
+            [{item: "modern_industrialization:certus_quartz_rod"}, 16],
+            [{item: "kubejs:cell_half"}, 4],
+            [{item: "ae2:logic_processor"}, 4]
         ],
-        ["ae2:cell_workbench"],
-        [],
-        tier1token
-    );
-
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "ae2:import_bus",
-            "ae2:export_bus",
-            "ae2:logic_processor"
+        outputItems: [
+            [{item: "ae2:cell_workbench"}, 1]
         ],
-        ["advanced_ae:import_export_bus_part"],
-        [],
-        tier1token
-    );
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "6x #c:rods/aluminum",
-            "8x #c:wires/electrum",
-            "4x #c:plates/iron",
-            "2x ae2:fluix_crystal",
-            "ae2:logic_processor"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:import_bus"}, 1],
+            [{item: "ae2:export_bus"}, 1],
+            [{item: "ae2:logic_processor"}, 1]
         ],
-        ["extendedae:me_packing_tape"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "advanced_ae:import_export_bus_part"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "ae2:fluid_storage_cell_1k",
-            "ae2:item_storage_cell_1k",
-            "2x ae2:logic_processor",
-            "4x #c:plates/aluminum",
-            "ae2:quartz_glass"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:rods/aluminum"}, 6],
+            [{tag: "c:wires/electrum"}, 8],
+            [{tag: "c:plates/iron"}, 4],
+            [{item: "ae2:fluix_crystal"}, 2],
+            [{item: "ae2:logic_processor"}, 1]
         ],
-        ["extendedae:ingredient_buffer"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "extendedae:me_packing_tape"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "6x modern_industrialization:aluminum_large_plate",
-            "24x modern_industrialization:certus_quartz_rod",
-            "10x kubejs:cell_half",
-            "20x modern_industrialization:rubber_sheet",
-            "2x ae2:fluix_glass_cable",
-            "4x ae2:logic_processor"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:fluid_storage_cell_1k"}, 1],
+            [{item: "ae2:item_storage_cell_1k"}, 1],
+            [{item: "ae2:logic_processor"}, 2],
+            [{tag: "c:plates/aluminum"}, 4],
+            [{item: "ae2:quartz_glass"}, 1]
         ],
-        ["ae2:drive"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "extendedae:ingredient_buffer"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "2x #c:plates/aluminum",
-            "4x ae2:fluix_glass_cable",
-            "modern_industrialization:steel_item_input_hatch",
-            "ae2:logic_processor"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "modern_industrialization:aluminum_large_plate"}, 6],
+            [{item: "modern_industrialization:certus_quartz_rod"}, 24],
+            [{item: "kubejs:cell_half"}, 10],
+            [{item: "modern_industrialization:rubber_sheet"}, 20],
+            [{item: "ae2:fluix_glass_cable"}, 2],
+            [{item: "ae2:logic_processor"}, 4]
         ],
-        ["ae2:import_bus"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "ae2:drive"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "2x #c:plates/aluminum",
-            "4x ae2:fluix_glass_cable",
-            "modern_industrialization:steel_item_output_hatch",
-            "ae2:logic_processor"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:plates/aluminum"}, 2],
+            [{item: "ae2:fluix_glass_cable"}, 4],
+            [{item: "modern_industrialization:steel_item_input_hatch"}, 1],
+            [{item: "ae2:logic_processor"}, 1]
         ],
-        ["ae2:export_bus"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "ae2:import_bus"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "modern_industrialization:mv_energy_input_hatch",
-            "4x ae2:fluix_glass_cable",
-            "8x modern_industrialization:electrum_wire",
-            "2x ae2:logic_processor"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:plates/aluminum"}, 2],
+            [{item: "ae2:fluix_glass_cable"}, 4],
+            [{item: "modern_industrialization:steel_item_output_hatch"}, 1],
+            [{item: "ae2:logic_processor"}, 1]
         ],
-        ["ae2:energy_acceptor"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "ae2:export_bus"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "2x kubejs:cell_half",
-            "4x modern_industrialization:electrum_wire",
-            "2x #c:plates/gold",
-            "ae2:logic_processor"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "modern_industrialization:mv_energy_input_hatch"}, 1],
+            [{item: "ae2:fluix_glass_cable"}, 4],
+            [{item: "modern_industrialization:electrum_wire"}, 8],
+            [{item: "ae2:logic_processor"}, 2]
         ],
-        ["ae2:basic_card"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "ae2:energy_acceptor"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "moderndynamics:item_pipe",
-            "2x ae2:fluix_crystal"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "modern_industrialization:electrum_wire"}, 4],
+            [{tag: "c:plates/gold"}, 2],
+            [{item: "ae2:logic_processor"}, 1]
         ],
-        ["2x ae2:fluix_glass_cable"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "ae2:basic_card"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "4x ae2:fluix_crystal",
-            "8x #c:wires/electrum",
-            "ae2:quartz_glass",
-            "ae2:logic_processor",
-            "8x modern_industrialization:redstone_battery"
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "moderndynamics:item_pipe"}, 1],
+            [{item: "ae2:fluix_crystal"}, 2]
         ],
-        ["ae2:energy_cell"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "ae2:fluix_glass_cable"}, 2]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier2DefaultEnergy, tier2DefaultTime,
-        [
-            "ae2:fluid_cell_housing",
-            "ae2:item_cell_housing",
-            "#ae2:glass_cable",
-            "ae2:logic_processor",
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:fluix_crystal"}, 4],
+            [{tag: "c:wires/electrum"}, 8],
+            [{item: "ae2:quartz_glass"}, 1],
+            [{item: "ae2:logic_processor"}, 1],
+            [{item: "modern_industrialization:redstone_battery"}, 8]
         ],
-        ["megacells:cell_dock"],
-        [],
-        tier1token
-    );
+        outputItems: [
+            [{item: "ae2:energy_cell"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:fluid_cell_housing"}, 1],
+            [{item: "ae2:item_cell_housing"}, 1],
+            [{tag: "ae2:glass_cable"}, 1],
+            [{item: "ae2:logic_processor"}, 1]
+        ],
+        outputItems: [
+            [{item: "megacells:cell_dock"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
 
     // #endregion
 
     // #region tier 3 recipes
-    ae_processor("ae2:printed_engineering_processor", "ae2:engineering_processor", tier3token)
-    ae_processor("ae2:printed_calculation_processor", "ae2:calculation_processor", tier3token)
+    ae_processor("ae2:printed_engineering_processor", "ae2:engineering_processor", T3_TOKEN)
+    ae_processor("ae2:printed_calculation_processor", "ae2:calculation_processor", T3_TOKEN)
 
-    ae_core ("ae2:calculation_processor", "ae2:annihilation_core", tier3token)
-    ae_core ("ae2:engineering_processor", "ae2:formation_core", tier3token)
+    ae_core ("ae2:calculation_processor", "ae2:annihilation_core", T3_TOKEN)
+    ae_core ("ae2:engineering_processor", "ae2:formation_core", T3_TOKEN)
 
-    ae_card("ae2:advanced_card", "#minecraft:wool", "ae2:fuzzy_card", tier2token)
-    ae_card("ae2:advanced_card", "#c:dusts/glowstone", 'ae2:speed_card', tier2token)
-    ae_card("ae2:advanced_card", "minecraft:redstone_torch", "ae2:inverter_card", tier2token)
-    ae_card("ae2:advanced_card", "ae2:fluix_crystal", 'ae2:equal_distribution_card', tier2token)
-    ae_card("ae2:advanced_card", "ae2:charged_certus_quartz_crystal", 'ae2:energy_card', tier2token)
+    ae_card("ae2:advanced_card", "modern_industrialization:lead_dust", "ae2:fuzzy_card", T2_TOKEN)
+    ae_card("ae2:advanced_card", "minecraft:glowstone_dust", 'ae2:speed_card', T2_TOKEN)
+    ae_card("ae2:advanced_card", "minecraft:redstone_torch", "ae2:inverter_card", T2_TOKEN)
+    ae_card("ae2:advanced_card", "ae2:fluix_crystal", 'ae2:equal_distribution_card', T2_TOKEN)
+    ae_card("ae2:advanced_card", "ae2:charged_certus_quartz_crystal", 'ae2:energy_card', T2_TOKEN)
 
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:level_emitter", "modern_industrialization:silicon_battery"], ["ae2:energy_level_emitter"], [], tier2token)
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:energy_level_emitter", "2x ae2:logic_processor"], ["extendedae:threshold_level_emitter"], [], tier2token)
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["#ae2:illuminated_panel", "ae2:level_emitter"], ["ae2:storage_monitor"], [], tier2token)
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:storage_monitor", "2x ae2:logic_processor"], ["advanced_ae:throughput_monitor"], [], tier2token)
-
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:storage_bus", "2x ae2:logic_processor"], ["extendedae:tag_storage_bus"], [], tier2token)
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:storage_bus", "2x ae2:engineering_processor"], ["extendedae:mod_storage_bus"], [], tier2token)
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:storage_bus", "2x ae2:calculation_processor"], ["extendedae:precise_storage_bus"], [], tier2token)
-
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["4x ae2:cable_anchor", "ae2:charged_certus_quartz_crystal"], ["ae2:quartz_fixture"], [], tier2token)
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:quartz_fixture", "ae2:calculation_processor"], ["ae2:light_detector"], [], tier2token)
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:quartz_fiber", "ae2:calculation_processor"], ["ae2:toggle_bus"], [], tier2token)
-
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:semi_dark_monitor", "pastel:shimmerstone_gem"], ["ae2:monitor"], [], tier2token)
-    assembler_recipe(tier3DefaultEnergy, tier3DefaultTime, ["ae2:semi_dark_monitor", "#c:dusts/coal"], ["ae2:dark_monitor"], [], tier2token)
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "2x kubejs:cell_half",
-            "4x modern_industrialization:aluminum_wire",
-            "2x #c:plates/diamond",
-            "ae2:calculation_processor",
-            "ae2:engineering_processor"
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:level_emitter"}, 1],
+            [{item: "modern_industrialization:silicon_battery"}, 1]
         ],
-        ["ae2:advanced_card"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "3x ae2:quartz_vibrant_glass",
-            "4x modern_industrialization:aluminum_wire",
-            "modern_industrialization:aluminum_large_plate",
-            "ae2:engineering_processor"
+        outputItems: [
+            [{item: "ae2:energy_level_emitter"}, 1]
         ],
-        ["ae2:semi_dark_monitor"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "3x ae2:fluix_crystal",
-            "#ae2:illuminated_panel",
-            "ae2:formation_core"
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:energy_level_emitter"}, 1],
+            [{item: "ae2:logic_processor"}, 2]
         ],
-        ["ae2:formation_plane"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "3x ae2:fluix_crystal",
-            "#ae2:illuminated_panel",
-            "ae2:annihilation_core"
+        outputItems: [
+            [{item: "extendedae:threshold_level_emitter"}, 1]
         ],
-        ["ae2:annihilation_plane"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "2x #c:plates/aluminum",
-            "6x ae2:fluix_glass_cable",
-            "18x modern_industrialization:rubber_sheet",
-            "ae2:calculation_processor"
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "ae2:illuminated_panel"}, 1],
+            [{item: "ae2:level_emitter"}, 1]
         ],
-        ["4x ae2:fluix_smart_dense_cable"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "4x ae2:fluix_crystal",
-            "8x #c:wires/aluminum",
-            "ae2:quartz_glass",
-            "ae2:calculation_processor",
-            "8x modern_industrialization:silicon_battery"
+        outputItems: [
+            [{item: "ae2:storage_monitor"}, 1]
         ],
-        ["ae2:dense_energy_cell"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "6x #c:rods/certus_quartz",
-            "8x #c:wires/aluminum",
-            "4x #c:plates/iron",
-            "2x ae2:fluix_crystal",
-            "ae2:calculation_processor",
-            "extendedae:threshold_level_emitter"
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:storage_monitor"}, 1],
+            [{item: "ae2:logic_processor"}, 2]
         ],
-        ["ae2:network_tool"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "2x #c:wires/aluminum",
-            "ae2:calculation_processor",
-            "ae2:fluix_crystal",
-            "#c:rods/certus_quartz"
+        outputItems: [
+            [{item: "advanced_ae:throughput_monitor"}, 1]
         ],
-        ["ae2:level_emitter"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "4x #c:wires/aluminum",
-            "3x ae2:quartz_glass",
-            "6x ae2:certus_quartz_crystal",
-            ["ae2:certus_quartz_cutting_knife", 0]
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:storage_bus"}, 1],
+            [{item: "ae2:logic_processor"}, 2]
         ],
-        ["12x ae2:quartz_fiber"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "4x #c:wires/copper",
-            "#c:rods/wooden",
-            "2x ae2:calculation_processor",
-            "6x ae2:certus_quartz_crystal",
-            "2x modern_industrialization:motor"
+        outputItems: [
+            [{item: "extendedae:tag_storage_bus"}, 1]
         ],
-        ["ae2:certus_quartz_cutting_knife"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "#c:stones",
-            "6x ae2:certus_quartz_crystal",
-            ["ae2:certus_quartz_cutting_knife", 0]
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:storage_bus"}, 1],
+            [{item: "ae2:engineering_processor"}, 2]
         ],
-        ["16x ae2:cable_anchor"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "#ae2:illuminated_panel",
-            "2x ae2:fluix_smart_dense_cable",
-            "4x ae2:fluix_crystal"
+        outputItems: [
+            [{item: "extendedae:mod_storage_bus"}, 1]
         ],
-        ["ae2:me_p2p_tunnel"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:formation_core",
-            "ae2:annihilation_core",
-            "#ae2:illuminated_panel",
-            "4x ae2:logic_processor"
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:storage_bus"}, 1],
+            [{item: "ae2:calculation_processor"}, 2]
         ],
-        ["ae2:terminal"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:formation_core",
-            "ae2:annihilation_core",
-            "4x ae2:logic_processor",
-            "4x #c:plates/aluminum",
+        outputItems: [
+            [{item: "extendedae:precise_storage_bus"}, 1]
         ],
-        ["ae2:crafting_unit"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:crafting_unit",
-            "minecraft:crafting_table",
-            "4x #c:rods/aluminum",
-            "4x ae2:quartz_glass",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:cable_anchor"}, 4],
+            [{item: "ae2:charged_certus_quartz_crystal"}, 1]
         ],
-        ["ae2:molecular_assembler"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "2x ae2:engineering_processor",
-            "ae2:crafting_unit",
+        outputItems: [
+            [{item: "ae2:quartz_fixture"}, 1]
         ],
-        ["ae2:crafting_accelerator"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "2x ae2:calculation_processor",
-            "ae2:crafting_unit",
-            "advanced_ae:import_export_bus_part",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:quartz_fixture"}, 1],
+            [{item: "ae2:calculation_processor"}, 1]
         ],
-        ["ae2:pattern_provider"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "2x ae2:calculation_processor",
-            "#ae2:illuminated_panel",
-            "2x ae2:formation_core",
+        outputItems: [
+            [{item: "ae2:light_detector"}, 1]
         ],
-        ["ae2:pattern_encoding_terminal"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "advanced_ae:throughput_monitor",
-            "2x #c:rods/aluminum",
-            "4x ae2:fluix_crystal",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:quartz_fiber"}, 1],
+            [{item: "ae2:calculation_processor"}, 1]
         ],
-        ["advanced_ae:throughput_monitor_configurator"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "2x kubejs:cell_half",
-            "2x ae2:quartz_glass",
-            "2x #c:gems/certus_quartz",
-            "2x #c:plates/aluminum",
-            "modern_industrialization:electronic_circuit",
+        outputItems: [
+            [{item: "ae2:toggle_bus"}, 1]
         ],
-        ["ae2:blank_pattern"],
-        [["modern_industrialization:polyethylene", 250]],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:calculation_processor",
-            "advanced_ae:import_export_bus_part",
-            "4x #c:plates/aluminum",
-            "6x ae2:fluix_glass_cable",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:semi_dark_monitor"}, 1],
+            [{item: "pastel:shimmerstone_gem"}, 1]
         ],
-        ["ae2:io_port"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:engineering_processor",
-            "2x ae2:quartz_glass",
-            "4x #c:plates/aluminum",
-            "ae2:fluix_block",
+        outputItems: [
+            [{item: "ae2:monitor"}, 1]
         ],
-        ["ae2:growth_accelerator"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:pattern_provider",
-            "ae2:formation_core",
-            "ae2:fluix_block",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:semi_dark_monitor"}, 1],
+            [{tag: "c:dusts/coal"}, 1]
         ],
-        ["advanced_ae:small_adv_pattern_provider"],
-        [],
-        tier2token
-    );
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:blank_pattern",
-            "ae2:formation_core",
-            "2x ae2:fluix_crystal",
+        outputItems: [
+            [{item: "ae2:dark_monitor"}, 1]
         ],
-        ["advanced_ae:adv_pattern_encoder"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:formation_core",
-            "ae2:annihilation_core",
-            "4x #c:plates/aluminum",
-            "advanced_ae:import_export_bus_part"
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "modern_industrialization:aluminum_wire"}, 4],
+            [{tag: "c:plates/diamond"}, 2],
+            [{item: "ae2:calculation_processor"}, 1],
+            [{item: "ae2:engineering_processor"}, 1]
         ],
-        ["ae2:interface"],
-        [],
-        tier2token
-    );
-
-
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "4x ae2:calculation_processor",
-            "4x ae2:engineering_processor",
-            "ae2:interface",
-            "4x #c:plates/stainless_steel",
+        outputItems: [
+            [{item: "ae2:advanced_card"}, 1]
         ],
-        ["extendedae:ex_interface"],
-        [],
-        tier2token
-    );
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:quartz_fixture",
-            "16x #c:wires/copper",
-            "4x #c:plates/iron",
-            "ae2:fluix_block"
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:quartz_vibrant_glass"}, 3],
+            [{item: "modern_industrialization:aluminum_wire"}, 4],
+            [{item: "modern_industrialization:aluminum_large_plate"}, 1],
+            [{item: "ae2:engineering_processor"}, 1]
         ],
-        ["ae2:crystal_resonance_generator"],
-        [],
-        tier2token
-    );
+        outputItems: [
+            [{item: "ae2:semi_dark_monitor"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "megacells:cell_dock",
-            "ae2:toggle_bus",
-            "4x #c:plates/iron",
-            "ae2:fluix_block"
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:fluix_crystal"}, 3],
+            [{tag: "ae2:illuminated_panel"}, 1],
+            [{item: "ae2:formation_core"}, 1]
         ],
-        ["ae2:chest"],
-        [],
-        tier2token
-    );
+        outputItems: [
+            [{item: "ae2:formation_plane"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:drive",
-            "2x ae2:capacity_card",
-            "ae2:formation_core",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:fluix_crystal"}, 3],
+            [{tag: "ae2:illuminated_panel"}, 1],
+            [{item: "ae2:annihilation_core"}, 1]
         ],
-        ["extendedae:ex_drive"],
-        [],
-        tier2token
-    );
+        outputItems: [
+            [{item: "ae2:annihilation_plane"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:charger",
-            "2x ae2:capacity_card",
-            "ae2:annihilation_core",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:plates/aluminum"}, 2],
+            [{item: "ae2:fluix_glass_cable"}, 6],
+            [{item: "modern_industrialization:rubber_sheet"}, 18],
+            [{item: "ae2:calculation_processor"}, 1]
         ],
-        ["extendedae:ex_charger"],
-        [],
-        tier2token
-    );
+        outputItems: [
+            [{item: "ae2:fluix_smart_dense_cable"}, 4]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "advanced_ae:small_adv_pattern_provider",
-            "2x ae2:crafting_accelerator",
-            "ae2:engineering_processor",
-            "4x #c:plates/aluminum",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:fluix_crystal"}, 4],
+            [{tag: "c:wires/aluminum"}, 8],
+            [{item: "ae2:quartz_glass"}, 1],
+            [{item: "ae2:calculation_processor"}, 1],
+            [{item: "modern_industrialization:silicon_battery"}, 8]
         ],
-        ["merequester:requester"],
-        [],
-        tier2token
-    );
+        outputItems: [
+            [{item: "ae2:dense_energy_cell"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier3DefaultEnergy, tier3DefaultTime,
-        [
-            "ae2:blank_pattern",
-            "ae2:certus_quartz_crystal",
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:rods/certus_quartz"}, 6],
+            [{tag: "c:wires/aluminum"}, 8],
+            [{tag: "c:plates/iron"}, 4],
+            [{item: "ae2:fluix_crystal"}, 2],
+            [{item: "ae2:calculation_processor"}, 1],
+            [{item: "extendedae:threshold_level_emitter"}, 1]
         ],
-        ["ae2:view_cell"],
-        [],
-        tier2token
-    );
+        outputItems: [
+            [{item: "ae2:network_tool"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:wires/aluminum"}, 2],
+            [{item: "ae2:calculation_processor"}, 1],
+            [{item: "ae2:fluix_crystal"}, 1],
+            [{tag: "c:rods/certus_quartz"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:level_emitter"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:wires/aluminum"}, 4],
+            [{item: "ae2:quartz_glass"}, 3],
+            [{item: "ae2:certus_quartz_crystal"}, 6],
+            [{item: "ae2:certus_quartz_cutting_knife"}, 1, 0]
+        ],
+        outputItems: [
+            [{item: "ae2:quartz_fiber"}, 12]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:wires/copper"}, 4],
+            [{tag: "c:rods/wooden"}, 1],
+            [{item: "ae2:calculation_processor"}, 2],
+            [{item: "ae2:certus_quartz_crystal"}, 6],
+            [{item: "modern_industrialization:motor"}, 2]
+        ],
+        outputItems: [
+            [{item: "ae2:certus_quartz_cutting_knife"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:stones"}, 1],
+            [{item: "ae2:certus_quartz_crystal"}, 6],
+            [{item: "ae2:certus_quartz_cutting_knife"}, 1, 0]
+        ],
+        outputItems: [
+            [{item: "ae2:cable_anchor"}, 16]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "ae2:illuminated_panel"}, 1],
+            [{item: "ae2:fluix_smart_dense_cable"}, 2],
+            [{item: "ae2:fluix_crystal"}, 4]
+        ],
+        outputItems: [
+            [{item: "ae2:me_p2p_tunnel"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:formation_core"}, 1],
+            [{item: "ae2:annihilation_core"}, 1],
+            [{tag: "ae2:illuminated_panel"}, 1],
+            [{item: "ae2:logic_processor"}, 4]
+        ],
+        outputItems: [
+            [{item: "ae2:terminal"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:formation_core"}, 1],
+            [{item: "ae2:annihilation_core"}, 1],
+            [{item: "ae2:logic_processor"}, 4],
+            [{tag: "c:plates/aluminum"}, 4]
+        ],
+        outputItems: [
+            [{item: "ae2:crafting_unit"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:crafting_unit"}, 1],
+            [{item: "minecraft:crafting_table"}, 1],
+            [{tag: "c:rods/aluminum"}, 4],
+            [{item: "ae2:quartz_glass"}, 4]
+        ],
+        outputItems: [
+            [{item: "ae2:molecular_assembler"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:engineering_processor"}, 2],
+            [{item: "ae2:crafting_unit"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:crafting_accelerator"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:calculation_processor"}, 2],
+            [{item: "ae2:crafting_unit"}, 1],
+            [{item: "advanced_ae:import_export_bus_part"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:pattern_provider"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:calculation_processor"}, 2],
+            [{tag: "ae2:illuminated_panel"}, 1],
+            [{item: "ae2:formation_core"}, 2]
+        ],
+        outputItems: [
+            [{item: "ae2:pattern_encoding_terminal"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "advanced_ae:throughput_monitor"}, 1],
+            [{tag: "c:rods/aluminum"}, 2],
+            [{item: "ae2:fluix_crystal"}, 4]
+        ],
+        outputItems: [
+            [{item: "advanced_ae:throughput_monitor_configurator"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "ae2:quartz_glass"}, 2],
+            [{tag: "c:gems/certus_quartz"}, 2],
+            [{tag: "c:plates/aluminum"}, 2],
+            [{item: "modern_industrialization:electronic_circuit"}, 1]
+        ],
+        inputFluids: [
+            [{fluid: "modern_industrialization:polyethylene"}, 250]
+        ],
+        outputItems: [
+            [{item: "ae2:blank_pattern"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:calculation_processor"}, 1],
+            [{item: "advanced_ae:import_export_bus_part"}, 1],
+            [{tag: "c:plates/aluminum"}, 4],
+            [{item: "ae2:fluix_glass_cable"}, 6]
+        ],
+        outputItems: [
+            [{item: "ae2:io_port"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:engineering_processor"}, 1],
+            [{item: "ae2:quartz_glass"}, 2],
+            [{tag: "c:plates/aluminum"}, 4],
+            [{item: "ae2:fluix_block"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:growth_accelerator"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:pattern_provider"}, 1],
+            [{item: "ae2:formation_core"}, 1],
+            [{item: "ae2:fluix_block"}, 1]
+        ],
+        outputItems: [
+            [{item: "advanced_ae:small_adv_pattern_provider"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:blank_pattern"}, 1],
+            [{item: "ae2:formation_core"}, 1],
+            [{item: "ae2:fluix_crystal"}, 2]
+        ],
+        outputItems: [
+            [{item: "advanced_ae:adv_pattern_encoder"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:formation_core"}, 1],
+            [{item: "ae2:annihilation_core"}, 1],
+            [{tag: "c:plates/aluminum"}, 4],
+            [{item: "advanced_ae:import_export_bus_part"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:interface"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:calculation_processor"}, 4],
+            [{item: "ae2:engineering_processor"}, 4],
+            [{item: "ae2:interface"}, 1],
+            [{tag: "c:plates/stainless_steel"}, 4]
+        ],
+        outputItems: [
+            [{item: "extendedae:ex_interface"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:quartz_fixture"}, 1],
+            [{tag: "c:wires/copper"}, 16],
+            [{tag: "c:plates/iron"}, 4],
+            [{item: "ae2:fluix_block"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:crystal_resonance_generator"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "megacells:cell_dock"}, 1],
+            [{item: "ae2:toggle_bus"}, 1],
+            [{tag: "c:plates/iron"}, 4],
+            [{item: "ae2:fluix_block"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:chest"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:drive"}, 1],
+            [{item: "ae2:capacity_card"}, 2],
+            [{item: "ae2:formation_core"}, 1]
+        ],
+        outputItems: [
+            [{item: "extendedae:ex_drive"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:charger"}, 1],
+            [{item: "ae2:capacity_card"}, 2],
+            [{item: "ae2:annihilation_core"}, 1]
+        ],
+        outputItems: [
+            [{item: "extendedae:ex_charger"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "advanced_ae:small_adv_pattern_provider"}, 1],
+            [{item: "ae2:crafting_accelerator"}, 2],
+            [{item: "ae2:engineering_processor"}, 1],
+            [{tag: "c:plates/aluminum"}, 4]
+        ],
+        outputItems: [
+            [{item: "merequester:requester"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T3_ENERGY,
+        time: T3_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:blank_pattern"}, 1],
+            [{item: "ae2:certus_quartz_crystal"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:view_cell"}, 1]
+        ],
+        token: T2_TOKEN,
+        removeRecipe: true
+    });
     // #endregion
 
     // #region tier 4 recipes
 
-    ae_processor("advanced_ae:printed_quantum_processor", "advanced_ae:quantum_processor", tier3token)
+    ae_processor("advanced_ae:printed_quantum_processor", "advanced_ae:quantum_processor", T3_TOKEN)
 
-    ae_card("ae2:advanced_card", "ae2:matter_ball", "megacells:compression_card", tier3token)
+    ae_card("ae2:advanced_card", "ae2:matter_ball", "megacells:compression_card", T3_TOKEN)
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "ae2:wireless_receiver",
-            "advanced_ae:quantum_processor",
-            "4x ae2:fluix_glass_cable",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:wireless_receiver"}, 1],
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "ae2:fluix_glass_cable"}, 4]
         ],
-        ["ae2:wireless_access_point"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "2x #c:plates/stainless_steel",
-            "ae2:quartz_fiber",
-            "ae2:fluix_pearl",
+        outputItems: [
+            [{item: "ae2:wireless_access_point"}, 1]
         ],
-        ["ae2:wireless_receiver"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "advanced_ae:quantum_processor",
-            "ae2:quartz_glass",
-            "4x ae2:fluix_pearl",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:plates/stainless_steel"}, 2],
+            [{item: "ae2:quartz_fiber"}, 1],
+            [{item: "ae2:fluix_pearl"}, 1]
         ],
-        ["ae2:quantum_link"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "4x #c:plates/stainless_steel",
-            "2x #ae2:smart_dense_cable",
-            "ae2:dense_energy_cell",
+        outputItems: [
+            [{item: "ae2:wireless_receiver"}, 1]
         ],
-        ["ae2:quantum_ring"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "bigger_ae2:digital_singularity_cell_component",
-            "advanced_ae:quantum_processor",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "ae2:quartz_glass"}, 1],
+            [{item: "ae2:fluix_pearl"}, 4]
         ],
-        ["advanced_ae:quantum_storage_component"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "advanced_ae:small_adv_pattern_provider",
-            "4x megacells:accumulation_processor",
+        outputItems: [
+            [{item: "ae2:quantum_link"}, 1]
         ],
-        ["megacells:mega_pattern_provider"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "megacells:mega_pattern_provider",
-            "advanced_ae:quantum_storage_component",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:plates/stainless_steel"}, 4],
+            [{tag: "ae2:smart_dense_cable"}, 2],
+            [{item: "ae2:dense_energy_cell"}, 1]
         ],
-        ["extendedae:ex_pattern_provider"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "2x kubejs:cell_half",
-            "advanced_ae:quantum_processor",
-            "ae2:wireless_receiver",
-            "6x modern_industrialization:superconductor_wire"
+        outputItems: [
+            [{item: "ae2:quantum_ring"}, 1]
         ],
-        ["extendedae:wireless_tool"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "4x #ae2:smart_dense_cable",
-            "advanced_ae:quantum_processor",
-            "2x ae2:wireless_receiver",
-            "8x #c:plates/stainless_steel",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "bigger_ae2:digital_singularity_cell_component"}, 1],
+            [{item: "advanced_ae:quantum_processor"}, 1]
         ],
-        ["2x extendedae:wireless_connect"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "ae2:quartz_glass",
-            "megacells:accumulation_processor",
-            "8x modern_industrialization:superconductor_wire",
-            "8x modern_industrialization:cadmium_battery",
-            "4x ae2:fluix_crystal"
+        outputItems: [
+            [{item: "advanced_ae:quantum_storage_component"}, 1]
         ],
-        ["megacells:mega_energy_cell"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "extendedae:ex_interface",
-            "megacells:accumulation_processor",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "extendedae:ex_pattern_provider"}, 1],
+            [{item: "extendedae:concurrent_processor"}, 4]
         ],
-        ["megacells:mega_interface"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "megacells:mega_interface",
-            "advanced_ae:quantum_processor",
-            "4x ae2:capacity_card"
+        outputItems: [
+            [{item: "advanced_ae:adv_pattern_provider"}, 1]
         ],
-        ["extendedae:oversize_interface"],
-        [],
-        tier3token
-    );
+        token: T4_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "ae2:crafting_unit",
-            "2x megacells:accumulation_processor",
-            "megacells:sky_steel_block"
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "advanced_ae:small_adv_pattern_provider"}, 1],
+            [{item: "megacells:accumulation_processor"}, 4]
         ],
-        ["megacells:mega_crafting_unit"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "4x ae2:crafting_accelerator",
-            "2x megacells:accumulation_processor",
-            "megacells:sky_steel_block"
+        outputItems: [
+            [{item: "megacells:mega_pattern_provider"}, 1]
         ],
-        ["megacells:mega_crafting_accelerator"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "ae2:io_port",
-            "4x megacells:accumulation_processor",
-            "2x ae2:speed_card"
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "megacells:mega_pattern_provider"}, 1],
+            [{item: "advanced_ae:quantum_storage_component"}, 1]
         ],
-        ["extendedae:ex_io_port"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "ae2:molecular_assembler",
-            "4x megacells:accumulation_processor",
-            "2x ae2:speed_card",
-            "4x ae2:capacity_card"
-
+        outputItems: [
+            [{item: "extendedae:ex_pattern_provider"}, 1]
         ],
-        ["extendedae:ex_molecular_assembler"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "#extendedae:extended_pattern_provider",
-            "extendedae:assembler_matrix_wall",
-            "advanced_ae:quantum_processor",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "kubejs:cell_half"}, 2],
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "ae2:wireless_receiver"}, 1],
+            [{item: "modern_industrialization:superconductor_wire"}, 6]
         ],
-        ["extendedae:assembler_matrix_pattern"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "extendedae:ex_molecular_assembler",
-            "extendedae:assembler_matrix_wall",
-            "advanced_ae:quantum_processor",
-            "advanced_ae:shattered_singularity",
+        outputItems: [
+            [{item: "extendedae:wireless_tool"}, 1]
         ],
-        ["extendedae:assembler_matrix_crafter"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "megacells:mega_energy_cell",
-            "extendedae:assembler_matrix_wall",
-            "advanced_ae:quantum_processor",
-            "advanced_ae:shattered_singularity",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "ae2:smart_dense_cable"}, 4],
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "ae2:wireless_receiver"}, 2],
+            [{tag: "c:plates/stainless_steel"}, 8]
         ],
-        ["extendedae:assembler_matrix_speed"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "4x #c:plates/stainless_steel",
-            "2x ae2:fluix_crystal",
-            "megacells:sky_bronze_ingot",
-            "2x pastel:white_pigment"
+        outputItems: [
+            [{item: "extendedae:wireless_connect"}, 2]
         ],
-        ["extendedae:assembler_matrix_wall"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "2x #c:plates/stainless_steel",
-            "2x ae2:fluix_crystal",
-            "megacells:sky_bronze_ingot",
-            "2x pastel:white_pigment",
-            "ae2:quartz_glass"
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:quartz_glass"}, 1],
+            [{item: "megacells:accumulation_processor"}, 1],
+            [{item: "modern_industrialization:superconductor_wire"}, 8],
+            [{item: "modern_industrialization:cadmium_battery"}, 8],
+            [{item: "ae2:fluix_crystal"}, 4]
         ],
-        ["extendedae:assembler_matrix_glass"],
-        [],
-        tier3token
-    );
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "pastel:pure_azurite",
-            "ae2:quartz_glass",
-            "megacells:sky_steel_ingot",
-            "4x #c:plates/stainless_steel"
+        outputItems: [
+            [{item: "megacells:mega_energy_cell"}, 1]
         ],
-        ["extendedae:assembler_matrix_frame"],
-        [],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-           "megacells:printed_accumulation_processor",
-           "ae2:printed_silicon",
-           "3x ae2:fluix_dust"
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "extendedae:ex_interface"}, 1],
+            [{item: "megacells:accumulation_processor"}, 1]
         ],
-        ["megacells:accumulation_processor"],
-        [["pastel:liquid_crystal", 500]],
-        tier3token
-    )
-
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "advanced_ae:quantum_processor",
-            "32x ae2:quartz_glass",
-            "16x ae2:fluix_glass_cable",
-            "4x ae2:fluix_block"
+        outputItems: [
+            [{item: "megacells:mega_interface"}, 1]
         ],
-        ["16x ae2:spatial_pylon"],
-        [["advanced_ae:quantum_infusion_source", 4000]],
-        tier3token
-    );
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "advanced_ae:quantum_processor",
-            "ae2:io_port",
-            "4x ae2:quartz_glass",
-            "4x #c:plates/stainless_steel",
-            "2x megacells:sky_steel_ingot",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "megacells:mega_interface"}, 1],
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "ae2:capacity_card"}, 4]
         ],
-        ["ae2:spatial_io_port"],
-        [["advanced_ae:quantum_infusion_source", 1000]],
-        tier3token
-    );
+        outputItems: [
+            [{item: "extendedae:oversize_interface"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "ae2:advanced_card",
-            "simplemagnets:advancedmagnet",
-            "advanced_ae:quantum_processor",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:crafting_unit"}, 1],
+            [{item: "megacells:accumulation_processor"}, 2],
+            [{item: "megacells:sky_steel_block"}, 1]
         ],
-        ["ae2wtlib:magnet_card"],
-        [],
-        tier3token
-    );
+        outputItems: [
+            [{item: "megacells:mega_crafting_unit"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "ae2:advanced_card",
-            "ae2:quantum_link",
-            "advanced_ae:quantum_processor",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:crafting_accelerator"}, 4],
+            [{item: "megacells:accumulation_processor"}, 2],
+            [{item: "megacells:sky_steel_block"}, 1]
         ],
-        ["ae2wtlib:quantum_bridge_card"],
-        [],
-        tier3token
-    );
+        outputItems: [
+            [{item: "megacells:mega_crafting_accelerator"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier4DefaultEnergy, tier4DefaultTime,
-        [
-            "ae2:advanced_card",
-            "ae2:wireless_receiver",
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:io_port"}, 1],
+            [{item: "megacells:accumulation_processor"}, 4],
+            [{item: "ae2:speed_card"}, 2]
         ],
-        ["ae2:wireless_booster"],
-        [],
-        tier3token
-    );
+        outputItems: [
+            [{item: "extendedae:ex_io_port"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:molecular_assembler"}, 1],
+            [{item: "megacells:accumulation_processor"}, 4],
+            [{item: "ae2:speed_card"}, 2],
+            [{item: "ae2:capacity_card"}, 4]
+        ],
+        outputItems: [
+            [{item: "extendedae:ex_molecular_assembler"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "extendedae:extended_pattern_provider"}, 1],
+            [{item: "extendedae:assembler_matrix_wall"}, 1],
+            [{item: "advanced_ae:quantum_processor"}, 1]
+        ],
+        outputItems: [
+            [{item: "extendedae:assembler_matrix_pattern"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "extendedae:ex_molecular_assembler"}, 1],
+            [{item: "extendedae:assembler_matrix_wall"}, 1],
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "advanced_ae:shattered_singularity"}, 1]
+        ],
+        outputItems: [
+            [{item: "extendedae:assembler_matrix_crafter"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "megacells:mega_energy_cell"}, 1],
+            [{item: "extendedae:assembler_matrix_wall"}, 1],
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "advanced_ae:shattered_singularity"}, 1]
+        ],
+        outputItems: [
+            [{item: "extendedae:assembler_matrix_speed"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:plates/stainless_steel"}, 4],
+            [{item: "ae2:fluix_crystal"}, 2],
+            [{item: "megacells:sky_bronze_ingot"}, 1],
+            [{item: "pastel:white_pigment"}, 2]
+        ],
+        outputItems: [
+            [{item: "extendedae:assembler_matrix_wall"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{tag: "c:plates/stainless_steel"}, 2],
+            [{item: "ae2:fluix_crystal"}, 2],
+            [{item: "megacells:sky_bronze_ingot"}, 1],
+            [{item: "pastel:white_pigment"}, 2],
+            [{item: "ae2:quartz_glass"}, 1]
+        ],
+        outputItems: [
+            [{item: "extendedae:assembler_matrix_glass"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "pastel:pure_azurite"}, 1],
+            [{item: "ae2:quartz_glass"}, 1],
+            [{item: "megacells:sky_steel_ingot"}, 1],
+            [{tag: "c:plates/stainless_steel"}, 4]
+        ],
+        outputItems: [
+            [{item: "extendedae:assembler_matrix_frame"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "megacells:printed_accumulation_processor"}, 1],
+            [{item: "ae2:printed_silicon"}, 1],
+            [{item: "ae2:fluix_dust"}, 3]
+        ],
+        inputFluids: [
+            [{fluid: "pastel:liquid_crystal"}, 500]
+        ],
+        outputItems: [
+            [{item: "megacells:accumulation_processor"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "ae2:quartz_glass"}, 32],
+            [{item: "ae2:fluix_glass_cable"}, 16],
+            [{item: "ae2:fluix_block"}, 4]
+        ],
+        inputFluids: [
+            [{fluid: "advanced_ae:quantum_infusion_source"}, 4000]
+        ],
+        outputItems: [
+            [{item: "ae2:spatial_pylon"}, 16]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "advanced_ae:quantum_processor"}, 1],
+            [{item: "ae2:io_port"}, 1],
+            [{item: "ae2:quartz_glass"}, 4],
+            [{tag: "c:plates/stainless_steel"}, 4],
+            [{item: "megacells:sky_steel_ingot"}, 2]
+        ],
+        inputFluids: [
+            [{fluid: "advanced_ae:quantum_infusion_source"}, 1000]
+        ],
+        outputItems: [
+            [{item: "ae2:spatial_io_port"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:advanced_card"}, 1],
+            [{item: "simplemagnets:advancedmagnet"}, 1],
+            [{item: "advanced_ae:quantum_processor"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2wtlib:magnet_card"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:advanced_card"}, 1],
+            [{item: "ae2:quantum_link"}, 1],
+            [{item: "advanced_ae:quantum_processor"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2wtlib:quantum_bridge_card"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T4_ENERGY,
+        time: T4_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:advanced_card"}, 1],
+            [{item: "ae2:wireless_receiver"}, 1]
+        ],
+        outputItems: [
+            [{item: "ae2:wireless_booster"}, 1]
+        ],
+        token: T3_TOKEN,
+        removeRecipe: true
+    });
 
     // #endregion
 
     // #region tier 5 recipes
-    ae_processor("extendedae:concurrent_processor_print","extendedae:concurrent_processor", tier4token)
+    ae_processor("extendedae:concurrent_processor_print","extendedae:concurrent_processor", T4_TOKEN)
 
-    assembler_recipe(
-        tier5DefaultEnergy, tier5DefaultTime,
-        [
-            "extendedae:ex_pattern_provider",
-            "4x extendedae:concurrent_processor",
+    miMachineCraft(event, {
+        energy: T5_ENERGY,
+        time: T5_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "extendedae:ex_pattern_provider"}, 1],
+            [{item: "extendedae:concurrent_processor"}, 4]
         ],
-        ["advanced_ae:adv_pattern_provider"],
-        [],
-        tier4token
-    );
+        outputItems: [
+            [{item: "advanced_ae:adv_pattern_provider"}, 1]
+        ],
+        token: T4_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier5DefaultEnergy, tier5DefaultTime,
-        [
-            "ae2:spatial_cell_component_128",
-            "16x extendedae:concurrent_processor",
-            "4x ae2:spatial_pylon",
-            "2x advanced_ae:quantum_processor",
-            "4x #c:plates/stainless_steel"
+    miMachineCraft(event, {
+        energy: T5_ENERGY,
+        time: T5_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:spatial_cell_component_128"}, 1],
+            [{item: "extendedae:concurrent_processor"}, 16],
+            [{item: "ae2:spatial_pylon"}, 4],
+            [{item: "advanced_ae:quantum_processor"}, 2],
+            [{tag: "c:plates/stainless_steel"}, 4]
         ],
-        ["ae2:spatial_anchor"],
-        [],
-        tier4token
-    );
+        outputItems: [
+            [{item: "ae2:spatial_anchor"}, 1]
+        ],
+        token: T4_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier5DefaultEnergy, tier5DefaultTime,
-        [
-            "ae2:item_cell_housing",
-            "16x extendedae:concurrent_processor",
-            "2x ae2:quartz_glass",
-            "bigger_ae2:digital_singularity_cell_component",
+    miMachineCraft(event, {
+        energy: T5_ENERGY,
+        time: T5_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:item_cell_housing"}, 1],
+            [{item: "extendedae:concurrent_processor"}, 16],
+            [{item: "ae2:quartz_glass"}, 2],
+            [{item: "bigger_ae2:digital_singularity_cell_component"}, 1]
         ],
-        ["extendedae:infinity_water_cell"],
-        [["minecraft:water", 32000]],
-        tier4token
-    );
+        inputFluids: [
+            [{fluid: "minecraft:water"}, 32000]
+        ],
+        outputItems: [
+            [{item: "extendedae:infinity_water_cell"}, 1]
+        ],
+        token: T4_TOKEN,
+        removeRecipe: true
+    });
 
-    assembler_recipe(
-        tier5DefaultEnergy, tier5DefaultTime,
-        [
-            "ae2:item_cell_housing",
-            "16x extendedae:concurrent_processor",
-            "2x ae2:quartz_glass",
-            "bigger_ae2:digital_singularity_cell_component",
+    miMachineCraft(event, {
+        energy: T5_ENERGY,
+        time: T5_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "ae2:item_cell_housing"}, 1],
+            [{item: "extendedae:concurrent_processor"}, 16],
+            [{item: "ae2:quartz_glass"}, 2],
+            [{item: "bigger_ae2:digital_singularity_cell_component"}, 1]
         ],
-        ["extendedae:infinity_cobblestone_cell"],
-        [["minecraft:water", 16000], ["minecraft:lava", 16000]],
-        tier4token
-    );
+        inputFluids: [
+            [{fluid: "minecraft:water"}, 16000],
+            [{fluid: "minecraft:lava"}, 16000]
+        ],
+        outputItems: [
+            [{item: "extendedae:infinity_cobblestone_cell"}, 1]
+        ],
+        token: T4_TOKEN,
+        removeRecipe: true
+    });
 
     // #endregion
-
-    //default recipes removal
-    event.forEachRecipe({output:craft_removal_list}, r => {
-        event.remove({output: r.getOriginalRecipeResult()})
-    })
 
 });

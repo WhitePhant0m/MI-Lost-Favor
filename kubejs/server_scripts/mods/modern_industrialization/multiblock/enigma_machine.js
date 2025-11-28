@@ -24,10 +24,10 @@ ServerEvents.recipes(event => {
         .itemIn('kubejs:holy_book_of_color', 0)
         .itemOut("kubejs:quantum_blueprint")
 
-    event.recipes.modern_industrialization.enigma_machine(42, 10000)
+/*     event.recipes.modern_industrialization.enigma_machine(42, 10000)
         .itemIn('kubejs:blueprint_pack', 0)
         .itemIn('kubejs:quantum_blueprint', 0)
         .itemIn('kubejs:old_notes', 0)
-        .itemOut("kubejs:divine_blueprint")
+        .itemOut("kubejs:divine_blueprint") */
 
 })

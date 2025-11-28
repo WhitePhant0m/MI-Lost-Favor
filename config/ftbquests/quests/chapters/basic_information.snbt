@@ -7,15 +7,25 @@
 		id: "kubejs:holy_book_of_color"
 	}
 	id: "4E4F6FF3EEEB1E51"
-	images: [{
-		height: 2.0d
-		image: "occultism:textures/gui/book/familiar_devil.png"
-		order: 1
-		rotation: 0.0d
-		width: 2.0d
-		x: -3.8820329743200617d
-		y: -1.8399330927084137d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "occultism:textures/gui/book/familiar_devil.png"
+			order: 1
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.8820329743200617d
+			y: -1.8399330927084137d
+		}
+		{
+			height: 2.0d
+			image: "quest_pics:textures/saetactually.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 4.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
