@@ -1,0 +1,13 @@
+{
+  "values": {
+    "kubejs:bioactive_coating": {
+      "extraMaxEu": 1
+    },
+    "kubejs:thermophilic_dermis": {
+      "extraMaxEu": 2
+    },
+    "kubejs:symbiote_membrane": {
+      "extraMaxEu": 3
+    }
+  }
+}

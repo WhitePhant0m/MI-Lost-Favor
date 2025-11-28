@@ -1293,11 +1293,6 @@
 		""
 		"А еще &#FEECD6не пытайся&r делать из него мосты, ради бога, я предупредил"
 	]
-	quest.454D157B4C9AF35E.quest_desc: [
-		"Simpliest ME system is made out of ME terminal, any form of items storage and acces point, all of them connected via fluix cables and provided with energy (either directly to ME terminal or via energy acceptors)"
-		"Each ME terminal as well as each cable has limited channels, each connected system element (such as import bus, storage bus etc.) takes one channel to operate, so you a little bit limited in that regard, but ME terminals could be stacked to provide more channels to operate."
-		"More info could be found iside ingame guide (Seriously, it's very good, with examples and pictures)"
-	]
 	quest.464E6E68F80377D1.quest_desc: ["Можно зачаровать, добавить описания того на что "]
 	quest.4662695201019F94.quest_desc: [
 		"Adding fume funnels to the left and right of your witch's oven can drastically improve it's yield."

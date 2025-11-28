@@ -13,15 +13,8 @@
 			id: "40C555118DABB51D"
 			linked_quest: "6C9D001FF1B265FB"
 			shape: "octagon"
-			x: -11.0d
-			y: 0.0d
-		}
-		{
-			id: "32C183F451644FF7"
-			linked_quest: "5666EC7EBCE18EBA"
-			shape: "octagon"
-			x: -8.0d
-			y: 0.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			id: "08495798461A6163"
@@ -30,31 +23,38 @@
 			x: 7.5d
 			y: 1.0d
 		}
+		{
+			id: "38BC2D5AD5985817"
+			linked_quest: "5666EC7EBCE18EBA"
+			shape: "octagon"
+			x: -6.0d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
 			dependencies: ["6C9D001FF1B265FB"]
 			id: "37E81A0F2015DFE9"
-			shape: "rsquare"
+			shape: "octagon"
 			tasks: [{
 				id: "777FB0AD8F13FA9F"
 				item: { count: 1, id: "ae2:mysterious_cube" }
 				type: "item"
 			}]
-			x: -9.5d
+			x: -6.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5666EC7EBCE18EBA"]
 			id: "7460A2152BF3AEF2"
-			shape: "rsquare"
+			shape: "octagon"
 			tasks: [{
 				id: "7292D65510F249C1"
 				item: { count: 1, id: "kubejs:blueprint_pack" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 0.0d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -96,10 +96,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"01161CA5FC3822D6"
-				"41D59A044D841532"
-			]
+			dependencies: ["01161CA5FC3822D6"]
 			dependency_requirement: "one_completed"
 			id: "685FA68A7D47018E"
 			shape: "diamond"
@@ -267,9 +264,8 @@
 		}
 		{
 			dependencies: [
-				"1F905B94015D7B5F"
 				"62D84921B93F2FAE"
-				"3BFF88D91BD73922"
+				"3392F7799A810F38"
 			]
 			id: "24D3487EB912CEA7"
 			shape: "rsquare"
@@ -343,7 +339,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["24D3487EB912CEA7"]
+			dependencies: [
+				"24D3487EB912CEA7"
+				"3CA010E8BE135BA6"
+			]
 			id: "32BF1BBD35EF70BF"
 			shape: "diamond"
 			tasks: [{
@@ -451,8 +450,8 @@
 				item: { count: 1, id: "extendedae:entro_crystal" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 10.0d
+			x: -4.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -482,7 +481,7 @@
 		{
 			dependencies: [
 				"20E5D8E3BC27B0CB"
-				"11C7933BE216569B"
+				"0C03D5A1E2D62BF2"
 			]
 			id: "6A72EA1A9B063596"
 			shape: "diamond"
@@ -610,30 +609,6 @@
 			}]
 			x: -0.5d
 			y: -6.0d
-		}
-		{
-			dependencies: [
-				"65883D51925AB432"
-				"3D1B8A903D7EDADE"
-				"32C58BE0544F85B4"
-			]
-			hide_dependency_lines: true
-			id: "454D157B4C9AF35E"
-			rewards: [{
-				id: "75CB8A65E38ACF02"
-				item: {
-					count: 1
-					id: "ae2:guide"
-				}
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [{
-				id: "15F9629F86649AB6"
-				type: "checkmark"
-			}]
-			x: -4.5d
-			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -1041,7 +1016,7 @@
 		{
 			dependencies: [
 				"34F61C7CFB7CB515"
-				"3246CBB843309CCD"
+				"3F58299BC156F359"
 			]
 			dependency_requirement: "one_started"
 			id: "1917645AF554C72E"
@@ -1457,7 +1432,10 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["0AB4145A720562AD"]
+			dependencies: [
+				"0AB4145A720562AD"
+				"685FA68A7D47018E"
+			]
 			id: "41D59A044D841532"
 			shape: "pentagon"
 			tasks: [{
@@ -1821,30 +1799,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["5666EC7EBCE18EBA"]
-			id: "53FA9770F8B7C103"
-			shape: "rsquare"
-			tasks: [{
-				id: "4F6850C3D4E09D6B"
-				item: { count: 1, id: "ae2:quartz_glass" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["5666EC7EBCE18EBA"]
-			id: "33F9D3CE991AEB2D"
-			shape: "rsquare"
-			tasks: [{
-				id: "01AE3A1D789454C4"
-				item: { count: 1, id: "ae2:quartz_vibrant_glass" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: 1.5d
-		}
-		{
 			dependencies: ["75A7593F48CAA3CD"]
 			id: "08101C8E428B3A17"
 			shape: "diamond"
@@ -2038,17 +1992,6 @@
 			}]
 			x: -4.0d
 			y: -5.5d
-		}
-		{
-			id: "3BFF88D91BD73922"
-			shape: "octagon"
-			tasks: [{
-				id: "2F88522B1B8E1B46"
-				item: { count: 1, id: "kubejs:old_notes" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 2.0d
 		}
 		{
 			dependencies: ["26E6CEEF81EF802F"]
@@ -2655,18 +2598,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["0C03D5A1E2D62BF2"]
-			id: "11C7933BE216569B"
-			shape: "diamond"
-			tasks: [{
-				id: "1149817A4DFB5C75"
-				item: { count: 1, id: "extendedae:entro_block" }
-				type: "item"
-			}]
-			x: -4.0d
-			y: 9.0d
-		}
-		{
 			dependencies: ["3246CBB843309CCD"]
 			id: "0C03D5A1E2D62BF2"
 			shape: "diamond"
@@ -2675,8 +2606,8 @@
 				item: { count: 1, id: "extendedae:entro_ingot" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 9.5d
+			x: -4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1653CDAB85B173BD"]
@@ -2850,6 +2781,541 @@
 			}]
 			x: 1.5d
 			y: -8.0d
+		}
+		{
+			dependencies: ["552C3F17C3FC7259"]
+			id: "46C42546894AB95C"
+			shape: "diamond"
+			tasks: [{
+				id: "62C7682BECA48B00"
+				item: { count: 1, id: "justdirethings:gooblock_tier1" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2D5A34C1AA29624B"]
+			id: "6629C3460CF83045"
+			shape: "diamond"
+			tasks: [{
+				id: "0495280F6380AFE3"
+				item: { count: 1, id: "justdirethings:gooblock_tier2" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["282BC4FCF91CF0DB"]
+			id: "0F834074490E1059"
+			shape: "diamond"
+			tasks: [{
+				id: "113CF96646C05DF1"
+				item: { count: 1, id: "justdirethings:gooblock_tier3" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F115745F029B774"]
+			id: "79AB8DF94DBE46D3"
+			shape: "pentagon"
+			tasks: [{
+				id: "7E32D5E4BA78CF2E"
+				item: { count: 1, id: "justdirethings:gooblock_tier4" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["46C42546894AB95C"]
+			id: "41473B2927F7B123"
+			shape: "diamond"
+			tasks: [{
+				id: "5CB0B9CC31C87CCE"
+				item: { count: 1, id: "justdirethings:ferricore_ingot" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6629C3460CF83045"]
+			id: "360FDC4594702039"
+			shape: "diamond"
+			tasks: [{
+				id: "1F9399185E3939A4"
+				item: { count: 1, id: "justdirethings:blazegold_ingot" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79AB8DF94DBE46D3"]
+			id: "12C8A4055B30CC3D"
+			tasks: [{
+				id: "7AFB707821064366"
+				item: { count: 1, id: "justdirethings:eclipsealloy_ingot" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3246CBB843309CCD"]
+			id: "5F115745F029B774"
+			shape: "diamond"
+			tasks: [{
+				id: "62E8FE2FCB8E3B78"
+				item: { count: 1, id: "kubejs:symbiote_membrane" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0F834074490E1059"]
+			id: "5BB9AD94C7E05A65"
+			shape: "diamond"
+			tasks: [{
+				id: "4FEB4E7E2FD67516"
+				item: { count: 1, id: "justdirethings:celestigem" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["79AB8DF94DBE46D3"]
+			id: "34BBA31E237D0AD3"
+			tasks: [{
+				id: "430904E2762CAF4C"
+				item: { count: 1, id: "justdirethings:coal_t4" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6629C3460CF83045"]
+			id: "282BC4FCF91CF0DB"
+			shape: "pentagon"
+			tasks: [{
+				id: "4F88FA2652137DDE"
+				item: { count: 1, id: "kubejs:thermophilic_dermis" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46C42546894AB95C"]
+			id: "2D5A34C1AA29624B"
+			shape: "pentagon"
+			tasks: [{
+				id: "53E9369DF7BB6821"
+				item: { count: 1, id: "kubejs:bioactive_coating" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["685FA68A7D47018E"]
+			id: "552C3F17C3FC7259"
+			shape: "pentagon"
+			tasks: [{
+				id: "07BA42D73B8B1835"
+				item: { count: 1, id: "modern_industrialization:microbial_fabricator" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["41473B2927F7B123"]
+			id: "370CF6A932DA10D9"
+			shape: "diamond"
+			tasks: [{
+				id: "0ADF489D96E67139"
+				item: { count: 1, id: "modern_industrialization:ferricore_machine_casing" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["360FDC4594702039"]
+			id: "78D76FC9F6637546"
+			shape: "pentagon"
+			tasks: [{
+				id: "313A48A2E0745BFD"
+				item: { count: 1, id: "modern_industrialization:blazegold_machine_casing" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0F834074490E1059"
+				"3FD7BA9A0D97FAB1"
+			]
+			id: "3392F7799A810F38"
+			shape: "rsquare"
+			tasks: [{
+				id: "35E9A7FE3FDD4DDD"
+				item: { count: 1, id: "justdirethings:refined_t3_fluid_bucket" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6629C3460CF83045"
+				"0A7A95409C574C29"
+			]
+			id: "3FD7BA9A0D97FAB1"
+			shape: "rsquare"
+			tasks: [{
+				id: "672BCB0EED8E38D5"
+				item: { count: 1, id: "justdirethings:refined_t2_fluid_bucket" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"46C42546894AB95C"
+				"01161CA5FC3822D6"
+			]
+			id: "0A7A95409C574C29"
+			shape: "rsquare"
+			tasks: [{
+				id: "23782B02E79339AE"
+				item: { count: 1, id: "justdirethings:polymorphic_fluid_bucket" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5BB9AD94C7E05A65"]
+			id: "64131179095DC984"
+			shape: "diamond"
+			tasks: [{
+				id: "70E68FA35F6B9FD0"
+				item: { count: 1, id: "modern_industrialization:celestigem_machine_casing" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0F834074490E1059"]
+			id: "3CA010E8BE135BA6"
+			shape: "pentagon"
+			tasks: [{
+				id: "5CB3BBA2F495BDBE"
+				item: { count: 1, id: "kubejs:goo_coated_blank_blueprint" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			id: "4BA4D45124A2CEC5"
+			shape: "diamond"
+			tasks: [{
+				id: "585CAFC6165465F1"
+				item: { count: 1, id: "justdirethings:blockplacert1" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			id: "00231BCE359060FC"
+			shape: "diamond"
+			tasks: [{
+				id: "4B6D92451854C037"
+				item: { count: 1, id: "justdirethings:blockbreakert1" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			id: "6181B23290DD52DF"
+			shape: "diamond"
+			tasks: [{
+				id: "4C943097973265F0"
+				item: { count: 1, id: "justdirethings:itemcollector" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			id: "6EFB02C1BA848E73"
+			shape: "diamond"
+			tasks: [{
+				id: "7E84EF290BF28AAE"
+				item: { count: 1, id: "justdirethings:clickert1" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			id: "566F95E633EDA862"
+			shape: "diamond"
+			tasks: [{
+				id: "14355289485FAD04"
+				item: { count: 1, id: "justdirethings:fluidplacert1" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			id: "2253678071DB590A"
+			shape: "diamond"
+			tasks: [{
+				id: "3B148567459EADE6"
+				item: { count: 1, id: "justdirethings:fluidcollectort1" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			id: "2052A6C85CAA93FC"
+			shape: "diamond"
+			tasks: [{
+				id: "3EC66E1296F6A9F7"
+				item: { count: 1, id: "justdirethings:droppert1" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			disable_toast: true
+			id: "5202D8E21E616F6F"
+			shape: "diamond"
+			tasks: [{
+				id: "38C4BE3E9BF951CD"
+				item: { count: 1, id: "justdirethings:sensort1" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["370CF6A932DA10D9"]
+			id: "7C56FE01BB6467A8"
+			shape: "octagon"
+			tasks: [{
+				id: "69E0431EF460A1CA"
+				item: { count: 1, id: "justdirethings:upgrade_blank" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["78D76FC9F6637546"]
+			id: "5745B86C22840CC4"
+			shape: "diamond"
+			tasks: [{
+				id: "08EDA93ED7A43A32"
+				item: { count: 1, id: "justdirethings:blockswappert1" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78D76FC9F6637546"]
+			id: "169E32EF002B427C"
+			shape: "diamond"
+			tasks: [{
+				id: "65621013B4A53A52"
+				item: { count: 1, id: "justdirethings:playeraccessor" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["78D76FC9F6637546"]
+			id: "0502316312E1FE9B"
+			shape: "diamond"
+			tasks: [{
+				id: "64964112354BE2E4"
+				item: { count: 1, id: "justdirethings:inventory_holder" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["78D76FC9F6637546"]
+			id: "17DADABD99CE41D8"
+			shape: "diamond"
+			tasks: [{
+				id: "4621905B8CAD9DAD"
+				item: { count: 1, id: "justdirethings:experienceholder" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -2.0d
+		}
+		{
+			id: "782801380770D26C"
+			shape: "diamond"
+			tasks: [{
+				id: "6E70B2E14E86FAD4"
+				item: { count: 1, id: "justdirethings:energytransmitter" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["78D76FC9F6637546"]
+			id: "0F59C865BFD1525E"
+			shape: "diamond"
+			tasks: [{
+				id: "2EB0CE75B4298F21"
+				item: { count: 1, id: "justdirethings:totem_of_death_recall" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["78D76FC9F6637546"]
+			id: "67C426D7F84072DA"
+			shape: "diamond"
+			tasks: [{
+				id: "3D812252C2412381"
+				item: { count: 1, id: "justdirethings:blazejet_wand" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78D76FC9F6637546"]
+			id: "734B3552E30575A4"
+			shape: "diamond"
+			tasks: [{
+				id: "04A302E2353DB33B"
+				item: { count: 1, id: "justdirethings:creaturecatcher" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64131179095DC984"]
+			id: "51E5FDA298BABD2A"
+			shape: "diamond"
+			tasks: [{
+				id: "73802EC78B66020D"
+				item: { count: 1, id: "justdirethings:blockbreakert2" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["64131179095DC984"]
+			id: "669622D1578A3C4D"
+			shape: "diamond"
+			tasks: [{
+				id: "5935837F8A5E0268"
+				item: { count: 1, id: "justdirethings:blockplacert2" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["64131179095DC984"]
+			id: "2FB7C976CEA4683F"
+			shape: "diamond"
+			tasks: [{
+				id: "7D7CC45ACB93D065"
+				item: { count: 1, id: "justdirethings:clickert2" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["64131179095DC984"]
+			id: "1F6B1AA476BB577C"
+			shape: "diamond"
+			tasks: [{
+				id: "0F41AEE8ED4BDB36"
+				item: { count: 1, id: "justdirethings:sensort2" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["64131179095DC984"]
+			id: "04EE7F6C22E41964"
+			shape: "diamond"
+			tasks: [{
+				id: "3FC52A7964D9EB01"
+				item: { count: 1, id: "justdirethings:droppert2" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["64131179095DC984"]
+			id: "34CE0E8F6CB34A6B"
+			shape: "diamond"
+			tasks: [{
+				id: "7E5FA9662FC93A7C"
+				item: { count: 1, id: "justdirethings:fluidplacert2" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["64131179095DC984"]
+			id: "2B3B7CBCE7504065"
+			shape: "diamond"
+			tasks: [{
+				id: "0C3AC1058A7EC3AD"
+				item: { count: 1, id: "justdirethings:fluidcollectort2" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 7.0d
 		}
 	]
 }

@@ -17,6 +17,8 @@
 
 */
 
+let uniqueIDS = []
+
 const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     const fluidsin = args.inputFluids || [];
     const fluidsout = args.outputFluids || [];
@@ -59,8 +61,15 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     })
     fluidsin.forEach((input) => {recipe.fluid_inputs.push(Object.assign({}, input[0], {amount:input[1] || 1000} , {probability:input[2]}))})
     fluidsout.forEach((out) => {recipe.fluid_outputs.push(Object.assign({}, out[0], {amount:out[1] || 1000}, {probability:out[2]}))})
-
-    if(args.removeRecipe){outputs.forEach((out) => {event.remove({output: out})})}
+    let id = []
+    if(args.removeRecipe){
+        outputs.forEach((out) => {
+/*             event.forEachRecipe({output: out[0].item}, r =>{
+                id.push("milf:" + r.getId().split(':')[1])
+            }) */
+            event.remove({output: out})
+        })
+    }
     if(args.token){recipe.item_inputs.push(Object.assign({}, args.token, {amount:1}, {probability:0}))}
     if(args.dimension){
         recipe.process_conditions.push({
@@ -81,7 +90,8 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
             custom_id:args.custom_condition
         })
     }
-    event.custom(recipe)
+    console.log(id);
+    id.length == 1 ? event.custom(recipe).id(id[0]) : event.custom(recipe)
     if(Object.keys(miMachinesCompat).some(key => key.includes(args.machine))){
         args.machine = miMachinesCompat[args.machine]
         miMachineCraft(event, args)
