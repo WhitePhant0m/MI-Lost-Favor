@@ -215,31 +215,6 @@
 		}
 		{
 			hide_dependency_lines: true
-			id: "76DAECF378BA3F19"
-			rewards: [
-				{
-					id: "33068FEF0FFB1911"
-					type: "xp"
-					xp: 5
-				}
-				{
-					exclude_from_claim_all: true
-					id: "61A32621F26F549B"
-					table_id: 2501998888776764148L
-					type: "random"
-				}
-			]
-			tasks: [{
-				advancement: "dungeons_arise:find_mining_system"
-				criterion: ""
-				id: "2416EC8365995B78"
-				type: "advancement"
-			}]
-			x: -6.5d
-			y: 0.0d
-		}
-		{
-			hide_dependency_lines: true
 			id: "0CE50A7F4F1A0E4D"
 			rewards: [
 				{
@@ -795,30 +770,6 @@
 			y: 4.5d
 		}
 		{
-			id: "53AF2B722A69DCDC"
-			rewards: [
-				{
-					id: "44BD510D09138907"
-					type: "xp"
-					xp: 5
-				}
-				{
-					exclude_from_claim_all: true
-					id: "234856D465CA0EDA"
-					table_id: 2501998888776764148L
-					type: "random"
-				}
-			]
-			tasks: [{
-				advancement: "dungeons_arise:find_small_prairie_house"
-				criterion: ""
-				id: "1CD253C5AFF33D7F"
-				type: "advancement"
-			}]
-			x: -4.5d
-			y: -1.5d
-		}
-		{
 			id: "4118927D9D079DC8"
 			rewards: [
 				{
@@ -1045,8 +996,8 @@
 				id: "0DF120A4018239A2"
 				type: "advancement"
 			}]
-			x: -8.0d
-			y: 21.0d
+			x: -6.5d
+			y: 31.5d
 		}
 		{
 			id: "6544003D913C8203"
@@ -2258,16 +2209,6 @@
 			y: 12.5d
 		}
 		{
-			id: "664C1E9A9647B737"
-			tasks: [{
-				id: "536457A1FD6C0B78"
-				item: { count: 1, id: "endrem:blossom_eye" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 12.5d
-		}
-		{
 			id: "63A54EC92B8FB185"
 			tasks: [{
 				id: "0AB9B93E449128AC"
@@ -2357,8 +2298,587 @@
 				structure: "the_catamount:haunting_grounds"
 				type: "structure"
 			}]
-			x: 2.0d
+			x: -15.0d
 			y: 12.5d
+		}
+		{
+			id: "76753D335CE353A7"
+			tasks: [{
+				id: "0A5029669890B84A"
+				item: { count: 1, id: "apotheosis:simple_reforging_table" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 31.5d
+		}
+		{
+			id: "5261760A41F297B7"
+			tasks: [{
+				id: "04420B2C4DA53914"
+				item: { count: 1, id: "apotheosis:reforging_table" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 32.5d
+		}
+		{
+			id: "4A1990442A5389BF"
+			tasks: [{
+				id: "52B72D1AD2547056"
+				item: { count: 1, id: "apotheosis:gem_cutting_table" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: 31.5d
+		}
+		{
+			id: "77A34810F2B2C769"
+			tasks: [{
+				id: "6976F56270304A3E"
+				item: { count: 1, id: "apotheosis:salvaging_table" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 31.5d
+		}
+		{
+			id: "355834F8507CE535"
+			tasks: [{
+				id: "3D737789F8C7A246"
+				item: { count: 1, id: "apotheosis:gem_fused_slate" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: 31.5d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "526EC9E1802B0C9A"
+			tasks: [{
+				id: "39D81EC0E0120F0B"
+				item: { count: 1, id: "apotheosis:sigil_of_socketing" }
+				type: "item"
+			}]
+			x: -19.0d
+			y: 33.5d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "23996BD01E0B4ED7"
+			tasks: [{
+				id: "6071FA7CBA62FD4A"
+				item: { count: 1, id: "apotheosis:sigil_of_withdrawal" }
+				type: "item"
+			}]
+			x: -18.5d
+			y: 34.5d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "2698A4A16A251437"
+			tasks: [{
+				id: "4E4444E1009B8F52"
+				item: { count: 1, id: "apotheosis:sigil_of_rebirth" }
+				type: "item"
+			}]
+			x: -17.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "5F17A0D1B56A03AB"
+			tasks: [{
+				id: "68AB28376144D96E"
+				item: { count: 1, id: "apotheosis:sigil_of_enhancement" }
+				type: "item"
+			}]
+			x: -16.5d
+			y: 35.5d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "6D1F5EBF12BA945C"
+			tasks: [{
+				id: "24508269A35BD4DD"
+				item: { count: 1, id: "apotheosis:sigil_of_unnaming" }
+				type: "item"
+			}]
+			x: -15.5d
+			y: 35.5d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "1425A74F3CD250C3"
+			tasks: [{
+				id: "3AD9CB536D9C451C"
+				item: { count: 1, id: "apotheosis:iron_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "4200C3F79FA3037B"
+			tasks: [{
+				id: "36A7F91873865725"
+				item: { count: 1, id: "apotheosis:gold_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 34.5d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "0A83778BAB88864E"
+			tasks: [{
+				id: "6CDC5CB317290E4A"
+				item: { count: 1, id: "apotheosis:diamond_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 33.5d
+		}
+		{
+			id: "6A959906395E2C39"
+			tasks: [{
+				id: "69716A8398AE1B11"
+				item: { count: 1, id: "apotheosis:augmenting_table" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 31.5d
+		}
+		{
+			id: "0E00A150DB450FAC"
+			tasks: [{
+				id: "370860A6B9B367CD"
+				item: { count: 1, id: "apothic_enchanting:prismatic_web" }
+				type: "item"
+			}]
+			x: -25.0d
+			y: 31.5d
+		}
+		{
+			id: "4F4CC67B8B51E88C"
+			tasks: [{
+				id: "2DF500580E08E034"
+				item: { count: 1, id: "apothic_enchanting:scrap_tome" }
+				type: "item"
+			}]
+			x: -23.0d
+			y: 31.5d
+		}
+		{
+			dependencies: ["4F4CC67B8B51E88C"]
+			id: "019E386D2E2125F6"
+			tasks: [{
+				id: "6700F992DECA9E2F"
+				item: { count: 1, id: "apothic_enchanting:improved_scrap_tome" }
+				type: "item"
+			}]
+			x: -23.0d
+			y: 32.5d
+		}
+		{
+			dependencies: ["019E386D2E2125F6"]
+			id: "2E682B13BDE77E63"
+			tasks: [{
+				id: "64781304C9CF700F"
+				item: { count: 1, id: "apothic_enchanting:extraction_tome" }
+				type: "item"
+			}]
+			x: -23.0d
+			y: 33.5d
+		}
+		{
+			id: "1751D13041775276"
+			tasks: [{
+				id: "44C8D804719614B5"
+				item: { count: 1, id: "apothic_enchanting:helmet_tome" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 31.5d
+		}
+		{
+			id: "15B3AFECD77757E9"
+			tasks: [{
+				id: "16CA7F32BC6C023D"
+				item: { count: 1, id: "apothic_enchanting:chestplate_tome" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 32.5d
+		}
+		{
+			id: "197B8CEECA61C12A"
+			tasks: [{
+				id: "50D1EB0B9E014CCF"
+				item: { count: 1, id: "apothic_enchanting:leggings_tome" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 33.5d
+		}
+		{
+			id: "2FD815964A918D4E"
+			tasks: [{
+				id: "27DE3553862143DF"
+				item: { count: 1, id: "apothic_enchanting:boots_tome" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 34.5d
+		}
+		{
+			id: "7C9EC97D1C3F9CBA"
+			tasks: [{
+				id: "2D49F111DE52AAC1"
+				item: { count: 1, id: "apothic_enchanting:weapon_tome" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 31.5d
+		}
+		{
+			id: "421018A5285593B1"
+			tasks: [{
+				id: "54721F884F7E01C4"
+				item: { count: 1, id: "apothic_enchanting:bow_tome" }
+				type: "item"
+			}]
+			x: -20.0d
+			y: 31.5d
+		}
+		{
+			id: "41BF9135970F1E51"
+			tasks: [{
+				id: "4F6528018FA2B209"
+				item: { count: 1, id: "apothic_enchanting:pickaxe_tome" }
+				type: "item"
+			}]
+			x: -19.0d
+			y: 31.5d
+		}
+		{
+			id: "6BA662C9EDAB419D"
+			tasks: [{
+				id: "62DE9789EDC1233F"
+				item: { count: 1, id: "apothic_enchanting:fishing_tome" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: 31.5d
+		}
+		{
+			id: "38C9E92573A25F80"
+			tasks: [{
+				id: "48D40217692E5963"
+				item: { count: 1, id: "apothic_enchanting:other_tome" }
+				type: "item"
+			}]
+			x: -17.0d
+			y: 31.5d
+		}
+		{
+			id: "7FD9FC37882FC35C"
+			tasks: [{
+				id: "2E771AC6782CB192"
+				item: { count: 1, id: "apothic_enchanting:library" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 31.5d
+		}
+		{
+			dependencies: ["7FD9FC37882FC35C"]
+			id: "3717B7F8B66F0C89"
+			tasks: [{
+				id: "34D2E18ACEC762B3"
+				item: { count: 1, id: "apothic_enchanting:ender_library" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 32.5d
+		}
+		{
+			id: "47A50CC620E9B45B"
+			tasks: [{
+				id: "0F9EC5C4322C6A26"
+				item: { count: 1, id: "apotheosis:sigil_of_malice" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 31.5d
+		}
+		{
+			id: "2970A92E392587CB"
+			tasks: [{
+				id: "1C9112C2D7AFD48D"
+				item: { count: 1, id: "apotheosis:sigil_of_supremacy" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 31.5d
+		}
+		{
+			dependencies: ["7F948F8750E26B9A"]
+			id: "6A1DA8ABA8F13FC2"
+			tasks: [{
+				advancement: "apotheosis:progression/frontier"
+				criterion: ""
+				id: "05AD4594BDD7AF7F"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: 32.5d
+		}
+		{
+			dependencies: ["6A1DA8ABA8F13FC2"]
+			id: "3BB0FE129E37B19E"
+			tasks: [{
+				advancement: "apotheosis:progression/ascent"
+				criterion: ""
+				id: "310FDA29DDD8C2AB"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: 33.5d
+		}
+		{
+			dependencies: ["3BB0FE129E37B19E"]
+			id: "3D5FB6D17EC9693F"
+			tasks: [{
+				advancement: "apotheosis:progression/summit"
+				criterion: ""
+				id: "467E61C60DD4055B"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: 34.5d
+		}
+		{
+			dependencies: ["3D5FB6D17EC9693F"]
+			id: "10DF8F26503CA411"
+			tasks: [{
+				advancement: "apotheosis:progression/pinnacle"
+				criterion: ""
+				id: "4734F5F0BA739CF6"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: 35.5d
+		}
+		{
+			id: "2028D7D5077F5471"
+			tasks: [{
+				id: "5CC9FE2A470CC8EE"
+				item: { count: 1, id: "endrem:black_eye" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 12.5d
+		}
+		{
+			id: "5E17A54BC0DC94C6"
+			tasks: [{
+				id: "5AD11DD36423D80F"
+				item: { count: 1, id: "endrem:cold_eye" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 12.5d
+		}
+		{
+			id: "6B54A081A72E8605"
+			tasks: [{
+				id: "1C5DB363EC1F5123"
+				item: { count: 1, id: "endrem:corrupted_eye" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 12.5d
+		}
+		{
+			id: "64668A2DCC727071"
+			tasks: [{
+				id: "1987580FBEE8938D"
+				item: { count: 1, id: "endrem:cryptic_eye" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.5d
+		}
+		{
+			id: "3353B2935C6B0BC9"
+			tasks: [{
+				id: "42845D1F0820448D"
+				item: { count: 1, id: "endrem:cursed_eye" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 12.5d
+		}
+		{
+			id: "3DB07D9EB21FE788"
+			tasks: [{
+				id: "0D90C8CCFCB7BFAE"
+				item: { count: 1, id: "endrem:evil_eye" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 12.5d
+		}
+		{
+			id: "6D80B7B958E66DCC"
+			tasks: [{
+				id: "09FFD19EE8BEDC12"
+				item: { count: 1, id: "endrem:exotic_eye" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 12.5d
+		}
+		{
+			id: "47869A4625D3C5CD"
+			tasks: [{
+				id: "6BEF6E131D39BDD7"
+				item: { count: 1, id: "endrem:guardian_eye" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 12.5d
+		}
+		{
+			id: "6BD505CB5F3FC5CB"
+			tasks: [{
+				id: "267C3EF60DB71C4F"
+				item: { count: 1, id: "endrem:lost_eye" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 12.5d
+		}
+		{
+			id: "0B6C43D4E60C596E"
+			tasks: [{
+				id: "5F1E728F4F92194B"
+				item: { count: 1, id: "endrem:magical_eye" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 13.5d
+		}
+		{
+			id: "78F3829CADF4E3D0"
+			tasks: [{
+				id: "5B6D9558BFF6356F"
+				item: { count: 1, id: "endrem:nether_eye" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 13.5d
+		}
+		{
+			id: "2CAF18925DB5AAEA"
+			tasks: [{
+				id: "07A3B59437108411"
+				item: { count: 1, id: "endrem:old_eye" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 13.5d
+		}
+		{
+			id: "6ECBD883A491B450"
+			tasks: [{
+				id: "5EA401693DD1816D"
+				item: { count: 1, id: "endrem:rogue_eye" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.5d
+		}
+		{
+			id: "6EC86F6DFD014125"
+			tasks: [{
+				id: "38D723D08031199A"
+				item: { count: 1, id: "endrem:undead_eye" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 13.5d
+		}
+		{
+			id: "1AB38B4C36829D74"
+			tasks: [{
+				id: "49D06F51E34B6FE6"
+				item: { count: 1, id: "endrem:witch_eye" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 13.5d
+		}
+		{
+			id: "275DDDBD9D1BFB6B"
+			tasks: [{
+				id: "72258234EA7190CC"
+				item: { count: 1, id: "endrem:wither_eye" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 13.5d
+		}
+		{
+			id: "7CBD2AF5059D33AD"
+			tasks: [{
+				id: "42F1D37A300DE394"
+				item: { count: 1, id: "endrem:fishing_eye" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.5d
+		}
+		{
+			id: "32C69BC16480E736"
+			tasks: [{
+				id: "29551F3631182EC5"
+				item: { count: 1, id: "endrem:potato_eye" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 13.5d
+		}
+		{
+			id: "2A1AF1457E32F93C"
+			tasks: [{
+				id: "2F696183365A3EDE"
+				item: { count: 1, id: "endrem:trial_eye" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 14.5d
+		}
+		{
+			id: "70F4C4891CB043CC"
+			tasks: [{
+				id: "380FD8DDC0D5B5BF"
+				item: { count: 1, id: "endrem:sculk_eye" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 14.5d
+		}
+		{
+			id: "2C68F3A0742EE34F"
+			tasks: [{
+				id: "149DBA3DCE6AEAB8"
+				item: { count: 1, id: "endrem:blossom_eye" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 14.5d
 		}
 	]
 }
