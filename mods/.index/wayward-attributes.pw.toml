@@ -1,16 +1,16 @@
-filename = 'Clavis-NEOFORGE-0.2.9+1.21.1.jar'
-name = 'Clavis'
+filename = 'wayward_attributes-1.21.1-1.0.jar'
+name = 'Wayward Attributes'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '395ec99e34ba5de2664787384ced3235fa766a83'
+hash = 'cef464698fa2b5daa75839e28538d47ef95b93c3'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7276358
-project-id = 1296431
+file-id = 7250744
+project-id = 1389954

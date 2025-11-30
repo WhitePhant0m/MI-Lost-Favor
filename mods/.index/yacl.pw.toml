@@ -1,4 +1,4 @@
-filename = 'yet_another_config_lib_v3-3.8.0+1.21.1-neoforge.jar'
+filename = 'yet_another_config_lib_v3-3.7.1+1.21.1-neoforge.jar'
 name = 'YetAnotherConfigLib'
 side = 'both'
 x-prismlauncher-loaders = [ 'neoforge' ]
@@ -6,11 +6,11 @@ x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = 'bba4a04d57f41e615630dbf088f8cb548186258e'
+hash = '7567715bd90e6f3420eee6d468eec1db861a03f2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7036475
+file-id = 6662857
 project-id = 667299
