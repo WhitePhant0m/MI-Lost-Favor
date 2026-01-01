@@ -1,0 +1,16 @@
+filename = 'InventoryParticles-1.2.1+1.21.1+neoforge.jar'
+name = 'Inventory Particles'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'e7c463acc183958f3aeec3c50d9fa528c6b2fd74'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7310438
+project-id = 1339689

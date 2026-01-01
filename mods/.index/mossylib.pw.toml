@@ -1,16 +1,16 @@
-filename = 'apothic_compats-0.2.0.2.jar'
-name = 'Apothic Compats'
-side = 'both'
+filename = 'MossyLib-1.0.4+1.21.1+neoforge.jar'
+name = 'MossyLib'
+side = 'client'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
 
 [download]
-hash = '3efdfcaed96f3cd1a1fae77bc796f733c8a142cb'
+hash = '61d824e3b1c317a013f735bfce6fff38bb336c91'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7197009
-project-id = 1188699
+file-id = 7310403
+project-id = 1399257
