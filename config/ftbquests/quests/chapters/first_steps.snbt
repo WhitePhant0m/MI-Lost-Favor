@@ -13,7 +13,7 @@
 		rotation: 0.0d
 		width: 1.0d
 		x: 16.0d
-		y: 6.0d
+		y: 5.0d
 	}]
 	order_index: 0
 	quest_links: [ ]
@@ -1287,18 +1287,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["1714360882474479"]
-			id: "2D59B34E1B4F8D9E"
-			shape: "heart"
-			tasks: [{
-				id: "1675824DE1DFF7A5"
-				item: { count: 1, id: "butcher:butchers_knife" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 5.0d
-		}
-		{
 			dependencies: ["71CC5CD5F8018F02"]
 			id: "57A91C641FE38999"
 			shape: "hexagon"
@@ -1309,128 +1297,6 @@
 			}]
 			x: 24.0d
 			y: -1.5d
-		}
-		{
-			id: "5C3FC7DB916463ED"
-			shape: "diamond"
-			tasks: [{
-				id: "76736763041D3761"
-				item: { count: 1, id: "minecraft:gold_block" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: 9.5d
-		}
-		{
-			id: "70E54004E06B222D"
-			shape: "diamond"
-			tasks: [{
-				id: "05BD9B74A403B058"
-				item: { count: 1, id: "minecraft:gold_block" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 9.5d
-		}
-		{
-			id: "435DFA3342D78D96"
-			shape: "diamond"
-			tasks: [{
-				id: "4682CA12D7913D27"
-				item: { count: 1, id: "minecraft:gold_block" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 8.5d
-		}
-		{
-			id: "03AA8A311A8D5B29"
-			shape: "diamond"
-			tasks: [{
-				id: "710A71DDBB775E5B"
-				item: { count: 1, id: "minecraft:gold_block" }
-				type: "item"
-			}]
-			x: 15.5d
-			y: 9.5d
-		}
-		{
-			id: "519BCB4F74718EDB"
-			shape: "diamond"
-			tasks: [{
-				id: "710C3182D0463255"
-				item: { count: 1, id: "minecraft:gold_block" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 10.5d
-		}
-		{
-			id: "2D8B6D7C76D384C0"
-			shape: "diamond"
-			tasks: [{
-				id: "4F5A2042B2407BC3"
-				item: { count: 1, id: "minecraft:netherrack" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 9.5d
-		}
-		{
-			id: "55B42FD4526BE9CE"
-			shape: "diamond"
-			tasks: [{
-				id: "494CEFA5059E4D67"
-				item: { count: 1, id: "minecraft:redstone_torch" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 9.0d
-		}
-		{
-			id: "6459DA2D1ABBC9BF"
-			shape: "diamond"
-			tasks: [{
-				id: "765CDB60A4B526D5"
-				item: { count: 1, id: "minecraft:redstone_torch" }
-				type: "item"
-			}]
-			x: 14.0d
-			y: 9.0d
-		}
-		{
-			id: "2754BA5EB706823C"
-			shape: "diamond"
-			tasks: [{
-				id: "0C36F1AB90520D7D"
-				item: { count: 1, id: "minecraft:redstone_torch" }
-				type: "item"
-			}]
-			x: 14.0d
-			y: 10.0d
-		}
-		{
-			id: "7A8EE7A79EF6073A"
-			shape: "diamond"
-			tasks: [{
-				id: "6077FC7F381499B2"
-				item: { count: 1, id: "minecraft:redstone_torch" }
-				type: "item"
-			}]
-			x: 15.0d
-			y: 10.0d
-		}
-		{
-			id: "4420CC25B4101B61"
-			shape: "none"
-			size: 3.0d
-			tasks: [{
-				id: "447D06D392D21F38"
-				item: { count: 1, id: "butcher:playercorpseitem" }
-				type: "item"
-			}]
-			x: 14.5d
-			y: 7.0d
 		}
 		{
 			dependencies: ["1714360882474479"]
@@ -1919,13 +1785,13 @@
 		{
 			dependencies: ["55B031B4D7E5DEE3"]
 			icon: {
-				id: "butcher:featheredchickenhead"
+				id: "pastel:chicken_head"
 			}
 			id: "06BE29E29EEF3EA0"
 			shape: "octagon"
 			tasks: [{
 				icon: {
-					id: "butcher:featheredchickenhead"
+					id: "pastel:chicken_head"
 				}
 				id: "6148EAAB6FECF6E5"
 				observe_type: 0
