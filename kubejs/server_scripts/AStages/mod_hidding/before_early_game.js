@@ -3,7 +3,6 @@
 //     "supplementaries",
 //     "suppsquared", //supplementaries addon
 //     "framedblocks",
-//     "butcher",
 //     "sophisticatedcore",
 //     "chunkloaders",
 //     "rocks",
