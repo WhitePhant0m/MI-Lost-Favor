@@ -1,16 +1,17 @@
-filename = 'yet_another_industrialization-1.1.2-1.21.1.jar'
+filename = 'yet_another_industrialization-1.2.1-1.21.1.jar'
 name = 'Yet Another Industrialization!'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.2.1-1.21.1'
 
 [download]
-hash = '561d35fc76ec670560504c36dcd7bdf5488f86d5'
+hash = 'c3cee2abdae78d7c844bc53ac1b0a611b429a546'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7219487
+file-id = 7322563
 project-id = 1358516

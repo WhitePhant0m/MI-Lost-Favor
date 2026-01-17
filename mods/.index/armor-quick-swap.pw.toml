@@ -1,16 +1,17 @@
-filename = 'ArmorQuickSwap-v21.1.1-1.21.1-NeoForge.jar'
+filename = 'ArmorQuickSwap-v21.1.2-1.21.1-NeoForge.jar'
 name = 'Armor Quick Swap'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NEOFORGE] [1.21.1] ArmorQuickSwap-v21.1.2'
 
 [download]
-hash = '2f0852a0637d04e3415d3522704e304f8217abe0'
+hash = 'aab5fa5e9450bcf46624491ca876186cea15b46c'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7129174
+file-id = 7382542
 project-id = 1367068

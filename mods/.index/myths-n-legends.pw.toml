@@ -1,16 +1,17 @@
-filename = '[NeoForge] mythsandlegends-0.0.7.2.jar'
+filename = 'mythsandlegends-0.0.8.5.jar'
 name = 'Myths & Legends'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge] mythsandlegends-0.0.8.5.jar'
 
 [download]
-hash = '509b5142cc19e05a200e0b833b89d7d2c4c9a8c0'
+hash = 'e3fc8e03783b241dfc68237911b122ae13b5509d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7110179
+file-id = 7374690
 project-id = 1133244

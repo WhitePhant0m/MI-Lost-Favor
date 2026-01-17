@@ -1,16 +1,17 @@
-filename = 'Jade-1.21.1-NeoForge-15.10.3.jar'
-name = 'Jade 🔍'
-side = 'both'
+filename = 'Jade-1.21.1-NeoForge-15.10.4.jar'
+name = 'Jade'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge 1.21.1] 15.10.4'
 
 [download]
-hash = '0c7e9b04e2481d26c9080dd5d32351490d1fed3a'
+hash = '7d23a1dd515872bd6498b8edd06bb84e61f2c4e7'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6853386
+file-id = 7428884
 project-id = 324717

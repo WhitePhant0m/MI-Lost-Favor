@@ -1,16 +1,17 @@
-filename = 'framework-neoforge-1.21.1-0.13.1.jar'
+filename = 'framework-neoforge-1.21.1-0.13.10.jar'
 name = 'Framework'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'Framework 0.13.10'
 
 [download]
-hash = '224d36da132e660b6933f2c71ea2db36d30b035e'
+hash = '26e7ff80783db0e11021a710236cc474a6532c27'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7172783
+file-id = 7462477
 project-id = 549225

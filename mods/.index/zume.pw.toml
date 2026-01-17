@@ -1,6 +1,6 @@
-filename = 'zume-1.2.0.jar'
+filename = 'zume-1.2.1.jar'
 name = 'Zume'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric' ]
 x-prismlauncher-mc-versions = [
     '1.10',
@@ -57,6 +57,8 @@ x-prismlauncher-mc-versions = [
     '1.21-Snapshot',
     '1.21.1',
     '1.21.1-Snapshot',
+    '1.21.10',
+    '1.21.11',
     '1.21.2',
     '1.21.2-Snapshot',
     '1.21.3',
@@ -98,13 +100,14 @@ x-prismlauncher-mc-versions = [
     'Beta 1.7.3'
 ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.2.1'
 
 [download]
-hash = '9c38b682fe6833f7cc79efa7c6a51e4c70aceaef'
+hash = '433406987269d89cf4fc0170a1f1d1c9b8ddd504'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7071992
+file-id = 7351339
 project-id = 927564

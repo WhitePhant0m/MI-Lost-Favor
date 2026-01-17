@@ -1,16 +1,17 @@
-filename = 'enchantmentdisabler-3.3.3+1.21.1.jar'
+filename = 'enchantmentdisabler-3.4.3+1.21.1-neoforge.jar'
 name = 'EnchantmentDisabler'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.4.3 for Neoforge 1.21.1'
 
 [download]
-hash = '02dc7d5a5a9b4b1c456277009d6cfc4ad4bf9aa7'
+hash = '97291aa42908428801a4ad41069f2a3201c22af1'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6904411
+file-id = 7375027
 project-id = 912326

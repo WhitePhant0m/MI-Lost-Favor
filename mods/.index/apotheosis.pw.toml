@@ -1,16 +1,17 @@
-filename = 'Apotheosis-1.21.1-8.4.1.jar'
+filename = 'Apotheosis-1.21.1-8.4.2.jar'
 name = 'Apotheosis'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Apotheosis-1.21.1-8.4.2.jar'
 
 [download]
-hash = 'e2b31f6960fdf685e02411f01e209d134fd8fa90'
+hash = '96829edaabd04ee8fbcc6967239db8828806109b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7180713
+file-id = 7444906
 project-id = 313970

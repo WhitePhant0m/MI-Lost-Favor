@@ -1,16 +1,17 @@
-filename = 'Cognition-v2.4.8.1-1.21.1.jar'
+filename = 'Cognition-v2.4.10-1.21.1.jar'
 name = 'Cognition'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Cognition-v2.4.10-1.21.1.jar'
 
 [download]
-hash = '0f8119c4afc012a0acc9def49ca45994480ab559'
+hash = '2d9286416b7b61af65f1112030142157d46af981'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7191756
+file-id = 7356255
 project-id = 579484

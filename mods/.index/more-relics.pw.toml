@@ -1,16 +1,17 @@
-filename = 'morerelics-1.5.1-1.21.1.jar'
+filename = 'morerelics-1.6.2-1.21.1.jar'
 name = 'More Relics'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'morerelics-1.6.2-1.21.1.jar'
 
 [download]
-hash = '48b1985bae2ece5edaa42beadffb8b5a2b7b9996'
+hash = '88be577999c49210c61926c0da6a20764ee67d04'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7160721
+file-id = 7468866
 project-id = 1269280

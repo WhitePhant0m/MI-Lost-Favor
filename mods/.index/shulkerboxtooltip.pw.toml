@@ -1,16 +1,17 @@
-filename = 'shulkerboxtooltip-neoforge-5.1.7+1.21.1.jar'
-name = 'Shulker Box Tooltip [Fabric/Forge/NeoForge]'
-side = 'both'
+filename = 'shulkerboxtooltip-neoforge-5.1.8+1.21.1.jar'
+name = 'ShulkerBoxTooltip'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge 1.21.1] v5.1.8+1.21.1'
 
 [download]
-hash = 'e15fb37b7e5ee68c3fd1aad867b3151ab49a95c3'
+hash = '40042b29c1db8835cdd8194a36ae60502d84f229'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7075379
+file-id = 7204317
 project-id = 315811

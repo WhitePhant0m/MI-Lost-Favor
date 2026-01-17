@@ -1,16 +1,17 @@
-filename = 'CodeChickenLib-1.21.1-4.6.1.524.jar'
-name = 'CodeChicken Lib 1.8.+'
-side = 'both'
+filename = 'CodeChickenLib-1.21.1-4.6.1.526.jar'
+name = 'CodeChicken Lib'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'CodeChicken Lib 1.21.1-4.6.1.526'
 
 [download]
-hash = '650681ac5a20b9db08c29e85fc1ca3ebc9a315ac'
+hash = '6a278b5a2788c2fee7ae52d17f24187332d436b2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6583751
+file-id = 7281427
 project-id = 242818

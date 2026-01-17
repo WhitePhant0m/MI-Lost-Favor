@@ -1,16 +1,17 @@
-filename = 'TextAnimator-1.21.1-NeoForge-3.1.0.jar'
+filename = 'TextAnimator-1.21.1-NeoForge-3.2.2.jar'
 name = 'Text Animator'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge 1.21.1] 3.2.2'
 
 [download]
-hash = '3395019c6e964afce65e46dd31873a01a850ae71'
+hash = 'd2bee98193280fdae8a90d1518657f1b4810fae8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7094332
+file-id = 7379653
 project-id = 881778

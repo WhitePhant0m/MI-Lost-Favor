@@ -1,16 +1,17 @@
-filename = 'golemoverhaul-neoforge-1.21.1-1.0.2.jar'
+filename = 'golemoverhaul-neoforge-1.21.1-1.0.3.jar'
 name = 'Golem Overhaul'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[NeoForge] Golem Overhaul 1.0.3'
 
 [download]
-hash = '56056ce427a858f2259e6f66b91b12fa470ba48a'
+hash = '97d1a1cf901eb4dada64d970508cdbb7cdccffd2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6894947
+file-id = 7257032
 project-id = 618752

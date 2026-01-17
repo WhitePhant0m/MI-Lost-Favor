@@ -1,16 +1,17 @@
-filename = 'dynamic-fps-3.9.5+minecraft-1.21.0-neoforge.jar'
+filename = 'dynamic-fps-3.11.3+minecraft-1.21.0-neoforge.jar'
 name = 'Dynamic FPS'
-side = 'client'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'v3.11.3'
 
 [download]
-hash = '270170fe01aa7fa45d0755cddb5a609bc857c10c'
+hash = '7fd7557ce08e8692eae9518df5491e997658ac18'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6662069
+file-id = 7413010
 project-id = 335493

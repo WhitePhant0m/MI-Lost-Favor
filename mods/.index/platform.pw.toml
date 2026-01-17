@@ -1,16 +1,17 @@
-filename = 'platform-neoforge-1.21.1-1.2.10.2.jar'
+filename = 'platform-neoforge-1.21.1-1.2.11.3.jar'
 name = 'Platform'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'platform-neoforge-1.21.1-1.2.11.3.jar'
 
 [download]
-hash = '0cdfb25956b29fc555a46787e6ee5a82a7291ccf'
+hash = 'abd9437448d930c62871fd214ff37a3a6c74da60'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6677047
+file-id = 7227585
 project-id = 997634

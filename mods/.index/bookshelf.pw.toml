@@ -1,16 +1,17 @@
-filename = 'bookshelf-neoforge-1.21.1-21.1.78.jar'
+filename = 'bookshelf-neoforge-1.21.1-21.1.80.jar'
 name = 'Bookshelf'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'bookshelf-neoforge-1.21.1-21.1.80.jar'
 
 [download]
-hash = 'f3e521df9a8fb056f497abb39bb266fadf20c9c2'
+hash = '04faab5a3e3fde909601145ac7dd8d806087958d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7161606
+file-id = 7335846
 project-id = 228525

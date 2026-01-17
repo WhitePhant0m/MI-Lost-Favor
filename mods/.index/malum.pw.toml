@@ -1,16 +1,17 @@
-filename = 'malum-1.21.1-1.8.jar'
+filename = 'malum-1.21.1-1.8.2.jar'
 name = 'Malum'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'malum-1.21.1-1.8.2.jar'
 
 [download]
-hash = '27b33f857356df7a0e7aaf59a37cfd810ef8378b'
+hash = '7bea3f874f186a17ad3e271df145c179e81c2a1d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7250754
+file-id = 7307339
 project-id = 484064

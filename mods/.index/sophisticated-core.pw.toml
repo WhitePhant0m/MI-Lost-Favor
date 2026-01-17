@@ -1,16 +1,17 @@
-filename = 'sophisticatedcore-1.21.1-1.3.89.1239.jar'
+filename = 'sophisticatedcore-1.21.1-1.3.102.1368.jar'
 name = 'Sophisticated Core'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'sophisticatedcore-1.21.1-1.3.102.1368.jar'
 
 [download]
-hash = '5ac6fafc45a9b343d45efc5f6532619782765c0f'
+hash = '5d18b80707f3d624106b2f321ea2be5e9caf9669'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7168230
+file-id = 7455018
 project-id = 618298
