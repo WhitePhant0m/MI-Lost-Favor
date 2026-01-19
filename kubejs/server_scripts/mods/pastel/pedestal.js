@@ -23,6 +23,26 @@ const customPedestalCraft = (event, args) => {
   });
 };
 
+const customPedestalCraftShapeless = (event, args) => {
+  event.custom({
+    "type": "pastel:pedestal_shapeless",
+    "time": args.time,
+    "tier": args.tier || "basic",
+    "colors": {
+      "pastel:magenta": args.amethyst || 0,
+      "pastel:yellow": args.citrine || 0,
+      "pastel:cyan": args.topaz || 0,
+      "pastel:black": args.onyx || 0,
+      "pastel:white": args.moonstone || 0
+    },
+    "experience": args.experience || 0.0,
+    "ingredients": args.ingredients || [],
+    "result": args.result,
+    "required_advancement": args.advancement
+  });
+};
+
+
 ServerEvents.recipes(event => {
 
 })
