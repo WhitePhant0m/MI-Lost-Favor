@@ -3630,5 +3630,296 @@
 			x: -17.0d
 			y: 35.5d
 		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			hide_dependent_lines: true
+			id: "4E984D0C4BB23055"
+			tasks: [{
+				id: "4A063D4E3817C6CC"
+				item: { count: 1, id: "ars_nouveau:ritual_brazier" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E984D0C4BB23055"]
+			id: "375FA73F69985377"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "30E70937D9CE72DA"
+				item: { count: 1, id: "ars_nouveau:ritual_flowering" }
+				type: "item"
+			}]
+			x: -20.3d
+			y: -0.7d
+		}
+		{
+			dependencies: ["4E984D0C4BB23055"]
+			id: "1763CEFDDA6A8345"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "61AC9C5E8EC0A0B6"
+				item: { count: 1, id: "ars_nouveau:ritual_forestation" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 1.05d
+		}
+		{
+			dependencies: ["4E984D0C4BB23055"]
+			id: "243DDA89DAF959BD"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "32F4299EC2060C62"
+				item: { count: 1, id: "ars_nouveau:ritual_moonfall" }
+				type: "item"
+			}]
+			x: -20.3d
+			y: 0.7d
+		}
+		{
+			dependencies: ["4E984D0C4BB23055"]
+			id: "476269AC9FBA0CBB"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "4B598E8A86F2ACC9"
+				item: { count: 1, id: "ars_nouveau:ritual_sunrise" }
+				type: "item"
+			}]
+			x: -21.7d
+			y: 0.7d
+		}
+		{
+			dependencies: ["4E984D0C4BB23055"]
+			id: "0815418270F269BD"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "2109112E510B95BC"
+				item: { count: 1, id: "ars_nouveau:ritual_challenge" }
+				type: "item"
+			}]
+			x: -21.7d
+			y: -0.7d
+		}
+		{
+			dependencies: ["4E984D0C4BB23055"]
+			id: "2D1B464A517E3B8B"
+			shape: "diamond"
+			size: 0.7d
+			tasks: [{
+				id: "3E30F896A8593376"
+				item: { count: 1, id: "ars_nouveau:ritual_burrowing" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: -1.05d
+		}
+		{
+			dependencies: [
+				"4B801253049DAC2F"
+				"4E984D0C4BB23055"
+			]
+			id: "426F71334E75DDD0"
+			shape: "gear"
+			tasks: [{
+				id: "0FC4E5ADDF74B638"
+				item: { count: 1, id: "ars_additions:ritual_locate_structure" }
+				type: "item"
+			}]
+			x: -40.0d
+			y: 23.5d
+		}
+		{
+			dependencies: [
+				"4B801253049DAC2F"
+				"4E984D0C4BB23055"
+			]
+			id: "241798617470B6AF"
+			tasks: [{
+				id: "1A9781E2A5B72BC2"
+				item: { count: 1, id: "ars_nouveau:ritual_cloudshaping" }
+				type: "item"
+			}]
+			x: -42.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"4B801253049DAC2F"
+				"4E984D0C4BB23055"
+			]
+			id: "5B15D03CD15ED209"
+			tasks: [{
+				id: "3099907E8F6EA416"
+				item: { count: 1, id: "ars_elemental:ritual_repulsion" }
+				type: "item"
+			}]
+			x: -41.5d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"4B801253049DAC2F"
+				"4E984D0C4BB23055"
+			]
+			id: "1D27AC8D84F5AA7B"
+			tasks: [{
+				id: "347C5513056734D0"
+				item: { count: 1, id: "ars_nouveau:ritual_animal_summon" }
+				type: "item"
+			}]
+			x: -41.0d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"4B801253049DAC2F"
+				"4E984D0C4BB23055"
+			]
+			id: "0A45B1778E152E71"
+			tasks: [{
+				id: "1D361E5773506EE9"
+				item: { count: 1, id: "ars_elemental:ritual_attraction" }
+				type: "item"
+			}]
+			x: -39.0d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"4B801253049DAC2F"
+				"4E984D0C4BB23055"
+			]
+			id: "6793A528AD1FDE21"
+			tasks: [{
+				id: "77D3077DCE1860C0"
+				item: { count: 1, id: "ars_nouveau:ritual_scrying" }
+				type: "item"
+			}]
+			x: -38.5d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"4B801253049DAC2F"
+				"4E984D0C4BB23055"
+			]
+			id: "2EF1E02C395CBBFE"
+			tasks: [{
+				id: "577EF2897968C955"
+				item: { count: 1, id: "ars_elemental:ritual_detection" }
+				type: "item"
+			}]
+			x: -38.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "6BF70D81E65F2F4B"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "bosses_of_mass_destruction:item/blazing_eye"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "5755F56DA8D5938F"
+				structure: "bosses_of_mass_destruction:gauntlet_arena"
+				type: "structure"
+			}]
+			x: -41.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "041B31CCAB569B71"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "bosses_of_mass_destruction:item/ancient_anima"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "670D85BD48F1F54C"
+				structure: "bosses_of_mass_destruction:lich_tower"
+				type: "structure"
+			}]
+			x: -40.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "7B54BBAA9D346DD8"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "bosses_of_mass_destruction:item/obsidian_heart"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1D60979E5ED5A368"
+				structure: "bosses_of_mass_destruction:obsidilith_arena"
+				type: "structure"
+			}]
+			x: -39.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "75E72BED18FC6B05"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "bosses_of_mass_destruction:item/void_thorn"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "02206AC8E46525CE"
+				structure: "bosses_of_mass_destruction:void_blossom"
+				type: "structure"
+			}]
+			x: -38.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "7015BD53EBE64378"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "supplementaries:textures/map/decorations/pillager_outpost.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "61BC1F3B5742BD09"
+				structure: "takesapillage:bastille"
+				type: "structure"
+			}]
+			x: -42.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "170549C1D01D801B"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "particle_effects:textures/particle/trial_omen/1.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "3187B766555468F5"
+				structure: "hellish_trials:nether_trial"
+				type: "structure"
+			}]
+			x: -38.0d
+			y: 25.0d
+		}
 	]
 }
