@@ -91,3 +91,12 @@ FTBQuestsEvents.customReward('7650FE6CA0220DA3', event => {
 
     event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
 });
+
+// reward for 12 eyes
+FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+    let stage = "the_end_access"
+
+    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+});

@@ -1,5 +1,6 @@
 const dim_list = [
     {name: "minecraft:the_nether", stage: "the_nether_access"}, 
+    {name: "minecraft:the_end", stage: "the_end_access"}, 
     {name: "eternal_starlight:starlight", stage: "the_gatekeeper"},
 ]
 
