@@ -9,6 +9,18 @@
         "category": "MiniMap"
       }
     },
+    "1": {
+      "title": "Toggled Reacharound Placement",
+      "icon": {
+        "stack": "{count:1,id:\"minecraft:scaffolding\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.bridgingmod.toggle_bridging",
+          "toggle": false
+        }
+      }
+    },
     "4": {
       "title": "World Tier Select",
       "icon": {
