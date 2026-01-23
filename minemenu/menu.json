@@ -21,6 +21,30 @@
         }
       }
     },
+    "2": {
+      "title": "Team",
+      "icon": {
+        "stack": "{count:1,id:\"ftblibrary:icon_item\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.ftbteams.open_gui",
+          "toggle": false
+        }
+      }
+    },
+    "3": {
+      "title": "Quests",
+      "icon": {
+        "stack": "{count:1,id:\"ftbquests:book\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.ftbquests.quests",
+          "toggle": false
+        }
+      }
+    },
     "4": {
       "title": "World Tier Select",
       "icon": {
