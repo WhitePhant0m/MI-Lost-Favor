@@ -66,8 +66,8 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
         outputs.forEach((out) => {
 /*             event.forEachRecipe({output: out[0].item}, r =>{
                 id.push("milf:" + r.getId().split(':')[1])
-            }) */
-            event.remove({output: out})
+            }) */           
+            event.remove({output: out[0].item})
         })
     }
     if(args.token){recipe.item_inputs.push(Object.assign({}, args.token, {amount:1}, {probability:0}))}

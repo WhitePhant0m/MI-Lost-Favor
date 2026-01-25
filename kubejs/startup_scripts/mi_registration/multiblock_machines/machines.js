@@ -207,6 +207,22 @@ registerMIMachine('multiblock_packer_3000_safety_regulations_edition', {steam:tr
     mainCasing:'treated_wood_casing', mainOverlays: 'enigma_overlays', frontOverlay: true
 })
 
+registerMIMachine('electric_coke_oven', {itemsIn: true, itemsOut: true, fluidsIn:true, fluidsOut:true, casing: 'heatproof_machine_casing',
+    shape: [['HHH', 'aaa', 'AaA', 'AaA'], 
+            ['HHH', 'a a', 'A A', 'AAA'], 
+            ['BAB', 'B#B', 'BAB', 'BAB']],
+    shapeKeys: {"A":"modern_industrialization:heatproof_machine_casing",
+                "a":"modern_industrialization:cupronickel_coil",
+                "B":"modern_industrialization:invar_machine_casing_pipe",
+                "H":{id:"modern_industrialization:heatproof_machine_casing", hatches:MI_HATCHES_ALL}},
+    pBar: {x: 77, y: 33, name: 'arrow'},
+    itemInputSlots: [[56, 35, 1, 2]],
+    itemOutputSlots: [[102, 35, 1, 1]],
+    fluidInputSlots:[[36, 35,1,1]],
+    fluidOutputSlots: [[122, 35, 1, 1]],
+    mainCasing:'heatproof_machine_casing', mainOverlays: 'coke_oven', frontOverlay: true
+})
+
 registerBatchMIMachineFromExisting('advanced_large_steam_furnace', {steam:true, casing: 'modern_industrialization:fire_clay_bricks', recipeType:"modern_industrialization:mi_furnace",
     emiWorkstations:["modern_industrialization:bronze_mi_furnace"],
     shape: [['AAA', 'aaa', 'aaa'], 

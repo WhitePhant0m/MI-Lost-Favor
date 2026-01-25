@@ -65,7 +65,7 @@ registerSingleMIMachine('mi_furnace', {name:"Furnace", itemsIn: true, itemsOut: 
 })
 
 registerSingleMIMachine('microbial_fabricator', {name:"Microbial Fabricator", itemsIn: true, itemsOut: true,
-    pBar: {x: 58, y: 33, name: 'enigma_arrow'}, efBar: {x: 80, y: 62}, enBar: {x: 18, y: 35},
+    pBar: {x: 58, y: 33, name: 'enigma_arrow'}, efBar: {x: 62, y: 75000}, enBar: {x: 18, y: 35},
     slots:{iIn:3, iOut:1},
     itemSlots: [[50, 15, 1, 1], [40, 35, 1, 1], [50, 55, 1, 1], [80, 35, 1, 1]],
     frontOverlay: true, sideOverlay:true
