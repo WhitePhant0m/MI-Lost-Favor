@@ -1,5 +1,5 @@
 const renameItems = global.langRenames;
-console.log("langlangRenames:", renameItems);
+// console.log("langlangRenames:", renameItems);
 
 Object.entries(renameItems).forEach(([itemName, translations]) => {
     const langs = translations.langs || translations;

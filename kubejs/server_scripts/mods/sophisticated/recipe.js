@@ -31,7 +31,7 @@ ServerEvents.tags("item", event => {
         let regex = new RegExp(`sophisticatedstorage:.*${type}.*`)
         chests.forEach(chest =>{
             if(regex.test(chest.toString())) event.add(`milf:${type}_storage`, chest)
-            console.log(chest);
+            // console.log(chest);
         })
     })
 

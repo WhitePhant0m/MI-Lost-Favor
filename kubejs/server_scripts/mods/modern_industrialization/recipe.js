@@ -90,7 +90,7 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
             custom_id:args.custom_condition
         })
     }
-    console.log(id);
+    // console.log(id);
     id.length == 1 ? event.custom(recipe).id(id[0]) : event.custom(recipe)
     if(Object.keys(miMachinesCompat).some(key => key.includes(args.machine))){
         args.machine = miMachinesCompat[args.machine]
