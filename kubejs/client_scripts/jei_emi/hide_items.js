@@ -167,6 +167,9 @@ const list = [
 	'apothic_enchanting:flimsy_ender_lead',
 	'apothic_enchanting:ender_lead',
 	'apothic_enchanting:occult_ender_lead',
+	'gag:hearthstone',
+	'gag:energized_hearthstone',
+	'farmersdelight:flint_knife',
 ]
 
 // Hide items
