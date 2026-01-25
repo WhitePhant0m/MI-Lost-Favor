@@ -4070,6 +4070,14 @@
 		{
 			dependencies: ["336C43BDBE0A0995"]
 			id: "4DD1404D1B9CA7F7"
+			rewards: [{
+				id: "1DA7C7FDA684F89C"
+				item: {
+					count: 1
+					id: "recall_potion:nether_potion"
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -4155,6 +4163,27 @@
 				type: "item"
 			}]
 			x: -19.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DD1404D1B9CA7F7"]
+			id: "3AADB215552DAA5B"
+			rewards: [{
+				count: 2
+				id: "72FBC5E4272E7CC1"
+				item: {
+					count: 1
+					id: "recall_potion:nether_potion"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "65578A74B692853E"
+				item: { count: 1, id: "recall_potion:nether_potion" }
+				type: "item"
+			}]
+			x: -18.5d
 			y: 6.0d
 		}
 	]

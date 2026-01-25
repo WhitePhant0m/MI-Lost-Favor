@@ -2143,22 +2143,52 @@
 			]
 			id: "6E11ECC7B831480C"
 			min_required_dependencies: 12
-			rewards: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/the_end.png"
+			rewards: [
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/the_end.png"
+						}
+						id: "ftbquests:custom_icon"
 					}
-					id: "ftbquests:custom_icon"
+					id: "2BD4B3CA5BEDBA19"
+					type: "custom"
 				}
-				id: "2BD4B3CA5BEDBA19"
-				type: "custom"
-			}]
+				{
+					id: "75689A5F2838585E"
+					item: {
+						count: 1
+						id: "recall_potion:end_potion"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "608727F73B6EDF0F"
 				type: "checkmark"
 			}]
 			x: 5.0d
 			y: 14.0d
+		}
+		{
+			dependencies: ["6E11ECC7B831480C"]
+			id: "3D1D640461E3E94E"
+			rewards: [{
+				count: 2
+				id: "708E81D900DD5C20"
+				item: {
+					count: 1
+					id: "recall_potion:end_potion"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "42D9E8E9A5017AF8"
+				item: { count: 1, id: "recall_potion:end_potion" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 15.5d
 		}
 	]
 }

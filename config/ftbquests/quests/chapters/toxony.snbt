@@ -3246,5 +3246,26 @@
 			x: 1.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			id: "199BAB67264283C1"
+			rewards: [{
+				count: 2
+				id: "4ABFA2562EC676A0"
+				item: {
+					count: 1
+					id: "recall_potion:recall_potion"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "30FF83632FF59FE3"
+				item: { count: 1, id: "recall_potion:recall_potion" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
 	]
 }

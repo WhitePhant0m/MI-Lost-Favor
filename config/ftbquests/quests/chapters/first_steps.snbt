@@ -132,11 +132,24 @@
 			dependencies: ["244621C9368A3934"]
 			id: "29F05931D0564717"
 			shape: "diamond"
-			tasks: [{
-				id: "020311F4DEE019DA"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ytech:tanning_racks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "020311F4DEE019DA"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ytech:tanning_racks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:oak_tanning_rack"
+					}
+					id: "60CD83338D0F0A3E"
+					observe_type: 1
+					timer: 0L
+					to_observe: "ytech:tanning_racks"
+					type: "observation"
+				}
+			]
 			x: 3.0d
 			y: -8.0d
 		}
@@ -165,11 +178,24 @@
 				type: "custom"
 			}]
 			shape: "octagon"
-			tasks: [{
-				id: "23A1CB41EDA3F5BF"
-				item: { count: 1, id: "minecraft:crafting_table" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "23A1CB41EDA3F5BF"
+					item: { count: 1, id: "minecraft:crafting_table" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:crafting_table"
+					}
+					id: "2E98A75D544B6CDB"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecraft:crafting_table"
+					type: "observation"
+				}
+			]
 			x: 8.5d
 			y: -8.0d
 		}
@@ -299,11 +325,24 @@
 			dependencies: ["315C6C30D4EFB4FB"]
 			id: "16E9CEC9B10725B7"
 			shape: "rsquare"
-			tasks: [{
-				id: "47B88E7DC5BDF56B"
-				item: { count: 1, id: "minecraft:furnace" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "47B88E7DC5BDF56B"
+					item: { count: 1, id: "minecraft:furnace" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:furnace"
+					}
+					id: "537ACBD90FBBAF2F"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecraft:furnace"
+					type: "observation"
+				}
+			]
 			x: 9.5d
 			y: -2.0d
 		}
@@ -315,6 +354,7 @@
 				{
 					id: "1ABAB1A1FCA7B3EA"
 					item: { count: 1, id: "ytech:primitive_smelter" }
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -323,6 +363,16 @@
 					item: { count: 1, id: "ytech:brick_chimney" }
 					optional_task: true
 					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:primitive_smelter"
+					}
+					id: "159896A4BEC5A688"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:primitive_smelter"
+					type: "observation"
 				}
 			]
 			x: 5.5d
@@ -387,22 +437,51 @@
 			]
 			id: "0528A7114DC06152"
 			shape: "rsquare"
-			tasks: [{
-				id: "72B8B548D6DDE028"
-				item: { count: 1, id: "ytech:tree_stump" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "72B8B548D6DDE028"
+					item: { count: 1, id: "ytech:tree_stump" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:tree_stump"
+					}
+					id: "2B9CA877CE717558"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:tree_stump"
+					type: "observation"
+				}
+			]
 			x: 3.5d
 			y: -9.0d
 		}
 		{
 			dependencies: ["389A4181732368E0"]
+			icon: {
+				id: "ytech:strainer"
+			}
 			id: "00DD7D7D33A1B40E"
-			tasks: [{
-				id: "0CA62AD7781A55D8"
-				item: { count: 1, id: "ytech:strainer" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0CA62AD7781A55D8"
+					item: { count: 1, id: "ytech:strainer" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:strainer"
+					}
+					id: "2D912ADBBFF1493B"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:strainer"
+					type: "observation"
+				}
+			]
 			x: 5.0d
 			y: -7.0d
 		}
@@ -449,11 +528,24 @@
 			dependencies: ["3C6ECDD40EF2395A"]
 			id: "42D28603172F49D3"
 			shape: "diamond"
-			tasks: [{
-				id: "5BA143DB888D20E9"
-				item: { count: 1, id: "minecraft:chest" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5BA143DB888D20E9"
+					item: { count: 1, id: "minecraft:chest" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:chest"
+					}
+					id: "6393DC0B9B21B3B8"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecraft:chest"
+					type: "observation"
+				}
+			]
 			x: 20.5d
 			y: -1.0d
 		}
@@ -475,11 +567,24 @@
 		{
 			dependencies: ["173695E379285022"]
 			id: "4A0DF37960C686FF"
-			tasks: [{
-				id: "0022B0CCD3C67EA6"
-				item: { count: 1, id: "ytech:primitive_alloy_smelter" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0022B0CCD3C67EA6"
+					item: { count: 1, id: "ytech:primitive_alloy_smelter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:primitive_alloy_smelter"
+					}
+					id: "02343710256D4B41"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:primitive_alloy_smelter"
+					type: "observation"
+				}
+			]
 			x: 11.5d
 			y: 0.0d
 		}
@@ -510,11 +615,24 @@
 		{
 			dependencies: ["1A029535714421E5"]
 			id: "5477C20059FD00FF"
-			tasks: [{
-				id: "79D95B9177F6FFD3"
-				item: { count: 1, id: "ytech:bronze_anvil" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "79D95B9177F6FFD3"
+					item: { count: 1, id: "ytech:bronze_anvil" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:bronze_anvil"
+					}
+					id: "427C47CA423D92C5"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:bronze_anvil"
+					type: "observation"
+				}
+			]
 			x: 14.5d
 			y: -2.0d
 		}
@@ -527,7 +645,7 @@
 			rewards: [{
 				auto: "invisible"
 				icon: {
-					id: "lootr:lootr_chest"
+					id: "minecraft:iron_ingot"
 				}
 				id: "4002784F5F537B2D"
 				team_reward: true
@@ -557,11 +675,24 @@
 			}]
 			shape: "octagon"
 			size: 2.0d
-			tasks: [{
-				id: "7F4E833FD5A4AE31"
-				item: { count: 1, id: "modern_industrialization:forge_hammer" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7F4E833FD5A4AE31"
+					item: { count: 1, id: "modern_industrialization:forge_hammer" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "modern_industrialization:forge_hammer"
+					}
+					id: "6F72263637CD6A4C"
+					observe_type: 0
+					timer: 0L
+					to_observe: "modern_industrialization:forge_hammer"
+					type: "observation"
+				}
+			]
 			x: 16.0d
 			y: 0.0d
 		}
@@ -856,11 +987,24 @@
 		{
 			dependencies: ["596449EE3EC10493"]
 			id: "5F151FBC5A68433F"
-			tasks: [{
-				id: "58E52E0413E151B3"
-				item: { count: 1, id: "ytech:millstone" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "58E52E0413E151B3"
+					item: { count: 1, id: "ytech:millstone" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:millstone"
+					}
+					id: "260001D50057E36D"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:millstone"
+					type: "observation"
+				}
+			]
 			x: 14.0d
 			y: 1.0d
 		}
@@ -983,25 +1127,48 @@
 			dependencies: ["0ACD0476CE4CAED1"]
 			id: "552B1FFCECBD0652"
 			shape: "rsquare"
-			tasks: [{
-				id: "6D2D1E62929B7E6D"
-				item: { count: 1, id: "ytech:well_pulley" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6D2D1E62929B7E6D"
+					item: { count: 1, id: "ytech:well_pulley" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:well_pulley"
+					}
+					id: "5EA6C098FCDDCCD8"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:well_pulley"
+					type: "observation"
+				}
+			]
 			x: 15.0d
 			y: -8.0d
 		}
 		{
 			dependencies: ["19F4ECE3B256B396"]
 			id: "26D3721A292E8E8C"
-			rewards: [{
-				id: "699023E8CB8CF8D7"
-				item: {
-					count: 1
-					id: "minecraft:bamboo"
+			rewards: [
+				{
+					id: "699023E8CB8CF8D7"
+					item: {
+						count: 1
+						id: "minecraft:bamboo"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "20353B09CFDB3167"
+					item: {
+						count: 1
+						id: "recall_potion:recall_potion"
+					}
+					type: "item"
+				}
+			]
 			shape: "none"
 			tasks: [{
 				id: "554FC37840711010"
@@ -1380,11 +1547,24 @@
 			]
 			id: "389A4181732368E0"
 			shape: "rsquare"
-			tasks: [{
-				id: "564A715BBA556437"
-				item: { count: 1, id: "ytech:wooden_box" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "564A715BBA556437"
+					item: { count: 1, id: "ytech:wooden_box" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:wooden_box"
+					}
+					id: "3B6F9FEF15D9A7A8"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:wooden_box"
+					type: "observation"
+				}
+			]
 			x: 3.5d
 			y: -7.0d
 		}
@@ -1438,11 +1618,24 @@
 			dependencies: ["1714360882474479"]
 			id: "099181A23CEBA921"
 			shape: "hexagon"
-			tasks: [{
-				id: "0F17E6C26316117B"
-				item: { count: 1, id: "minecraft:barrel" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0F17E6C26316117B"
+					item: { count: 1, id: "minecraft:barrel" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:barrel"
+					}
+					id: "7EEA725B0EDCC93F"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecraft:barrel"
+					type: "observation"
+				}
+			]
 			x: 15.5d
 			y: 3.0d
 		}
@@ -1553,11 +1746,24 @@
 			dependencies: ["2EEEC6F9C1EDBCB0"]
 			id: "0ACD0476CE4CAED1"
 			shape: "rsquare"
-			tasks: [{
-				id: "5102040796ED0872"
-				item: { count: 1, id: "ytech:aqueduct_valve" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5102040796ED0872"
+					item: { count: 1, id: "ytech:aqueduct_valve" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:aqueduct_valve"
+					}
+					id: "1DA6E41744EB4EDB"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:aqueduct_valve"
+					type: "observation"
+				}
+			]
 			x: 14.5d
 			y: -6.0d
 		}
@@ -1598,11 +1804,24 @@
 			dependencies: ["4D19F9C67E2C134E"]
 			id: "72BD3F0CD728C914"
 			shape: "pentagon"
-			tasks: [{
-				id: "457DD6DE923AD7A3"
-				item: { count: 1, id: "ytech:aqueduct_fertilizer" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "457DD6DE923AD7A3"
+					item: { count: 1, id: "ytech:aqueduct_fertilizer" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:aqueduct_fertilizer"
+					}
+					id: "028214180BEFF603"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:aqueduct_fertilizer"
+					type: "observation"
+				}
+			]
 			x: 13.5d
 			y: -7.0d
 		}
@@ -1610,11 +1829,24 @@
 			dependencies: ["0ACD0476CE4CAED1"]
 			id: "4D19F9C67E2C134E"
 			shape: "rsquare"
-			tasks: [{
-				id: "3D11DA8EE55917C3"
-				item: { count: 1, id: "ytech:aqueduct_hydrator" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3D11DA8EE55917C3"
+					item: { count: 1, id: "ytech:aqueduct_hydrator" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:aqueduct_hydrator"
+					}
+					id: "6AD67C76E3C921A7"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:aqueduct_hydrator"
+					type: "observation"
+				}
+			]
 			x: 14.0d
 			y: -8.0d
 		}
@@ -1689,21 +1921,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"51E3EA7E70ECE842"
-				"33C4EBFA08980E30"
-			]
-			id: "7DFBC74614BA7B57"
-			shape: "diamond"
-			tasks: [{
-				id: "2ADAED46C021266D"
-				item: { count: 1, id: "sophisticatedbackpacks:copper_backpack" }
-				type: "item"
-			}]
-			x: 18.5d
-			y: 1.5d
-		}
-		{
 			dependencies: ["51E3EA7E70ECE842"]
 			id: "19C9F5C94F3F8853"
 			shape: "diamond"
@@ -1746,11 +1963,24 @@
 			]
 			id: "1088CA0F063465EF"
 			shape: "diamond"
-			tasks: [{
-				id: "4CB596601E1A5455"
-				item: { count: 1, id: "ytech:potters_wheel" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4CB596601E1A5455"
+					item: { count: 1, id: "ytech:potters_wheel" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "ytech:potters_wheel"
+					}
+					id: "2D70A31FB49C2483"
+					observe_type: 0
+					timer: 0L
+					to_observe: "ytech:potters_wheel"
+					type: "observation"
+				}
+			]
 			x: 3.5d
 			y: 0.0d
 		}

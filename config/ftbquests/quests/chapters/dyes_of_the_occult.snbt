@@ -4116,5 +4116,20 @@
 			x: -40.0d
 			y: 27.5d
 		}
+		{
+			dependencies: [
+				"33C4EBFA08980E30"
+				"51E3EA7E70ECE842"
+			]
+			id: "7DFBC74614BA7B57"
+			shape: "diamond"
+			tasks: [{
+				id: "2ADAED46C021266D"
+				item: { count: 1, id: "sophisticatedbackpacks:copper_backpack" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
 	]
 }
