@@ -1,5 +1,8 @@
 const item_interact_block = [
     { id: "lootr_chest", item: "lootr:lootr_chest", stage: "early_items" },
+    { id: "lootr_decorated_pot", item: "lootr:decorated_pot", stage: "early_items" },
+    { id: "lootr_suspicious_gravel", item: "lootr:suspicious_gravel", stage: "early_items" },
+    { id: "lootr_suspicious_sand", item: "lootr:suspicious_sand", stage: "early_items" },
     { id: "lootr_barrel", item: "lootr:lootr_barrel", stage: "early_items" },
     { id: "lootr_shulker", item: "lootr:lootr_shulker", stage: "early_items" },
     { id: "lootr_trapped_chest", item: "lootr:lootr_trapped_chest", stage: "early_items" },
@@ -22,6 +25,7 @@ const entity_interact_block = [
     { id: "wandering_trader", entity: "minecraft:wandering_trader", langKey: "entity.minecraft.wandering_trader", stage: "early_items" },
     { id: "armor_stand", entity: "minecraft:armor_stand", langKey: "entity.minecraft.armor_stand", customeText: "milf.text.entity.interact.part2", stage: "early_items" },
     { id: "lootr_minecart", entity: "lootr:lootr_minecart", langKey: "entity.lootr.lootr_minecart", customeText: "milf.text.entity.interact.part2", stage: "early_items" },
+    { id: "lootr_item_frame", entity: "lootr:item_frame", langKey: "entity.lootr.item_frame", customeText: "milf.text.entity.interact.part2", stage: "early_items" },
 ]
 
 
