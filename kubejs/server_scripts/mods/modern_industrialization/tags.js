@@ -12,7 +12,7 @@ ServerEvents.tags('item', event => {
 
     const unTaggedParts = ["bolt", "wire", "curved_plate", "large_plate", "ring", "double_ingot"].join("|")
 
-    let pattern = patternJavaClass.compile(`^modern_industrialization:(?<material>.*)(?<![_:](me|fine))_(?<partName>${unTaggedParts})$`)
+    const pattern = patternJavaClass.compile(`^modern_industrialization:(?<material>.*)(?<![_:](me|fine))_(?<partName>${unTaggedParts})$`)
     modIngredient.stacks.toList().forEach((itemStack) => {
         let matcher = pattern.matcher(itemStack.id)
         if (matcher.matches()){

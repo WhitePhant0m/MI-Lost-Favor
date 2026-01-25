@@ -13,7 +13,7 @@ function sendImmersiveMessage(text, player, args, event){
     args = args || {}
     let duration = args.duration || 2.2
     //let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, TextIcons.warn().append(TextIcons.smallSpace()).append(text))
-    args.applyWarn && (text = TextIcons.warn().append(TextIcons.smallSpace()).append(text))
+    args.applyWarn && (text = Component.of("⚠ ").append(text))
     let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, text)
     args.bold && message.bold()
     args.italic && message.italic()

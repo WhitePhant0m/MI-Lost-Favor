@@ -79,7 +79,7 @@ BlockEvents.rightClicked(BOX_BLOCKS, event => {
 
     if (checkStructure(event, template, modName, structureDataRelativeToBlock)) {
         event.block.set(event.block.id.toString().slice(0,-10) + "_placer", Object.assign({}, event.block.getProperties(), {enabled:false}))
-        BlockPos.betweenClosedStream(new BlockPos(blockPosRelativeStart), new BlockPos(blockPosRelativeStart.offset(structureVec3iRotated).offset(rotateVec3i(new Vec3i(-1,-1,-1), angleRad)))).forEach(pos => {
+        BlockPos.betweenClosedStream(new BlockPos(blockPosRelativeStart), new BlockPos(blockPosRelativeStart.offset(Vec3itoBlockPos(structureVec3iRotated)).offset(Vec3itoBlockPos(rotateVec3i(new Vec3i(-1,-1,-1), angleRad))))).forEach(pos => {
             event.level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3)
         })
         event.server.runCommandSilent(`playsound block.bamboo.break block @p ${boxPos.x} ${boxPos.y} ${boxPos.z}`)
@@ -116,7 +116,7 @@ function handlePreview(/**@type {$BlockRightClickedKubeEvent_} */ event, templat
 
 function handlePlacement(event, template, modName, playerStructureData, blockStructureData){
     if(event.block.getProperties().enabled == "false"){
-        sendImmersiveMessage(Text.translatable("milf.placers.notification2"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event)
+        sendImmersiveMessage(Component.translatable("milf.placers.notification2"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event)
         event.cancel()
     }
     removePreview(event, blockStructureData, true)
@@ -175,7 +175,7 @@ function placeStructure(/**@type {$BlockRightClickedKubeEvent_} */ event, templa
 
 function handlePreviewFailure(event, playerStructureData, blockStructureData){
     event.server.runCommandSilent(`playsound block.chain.break block @p ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posY}`)
-    sendImmersiveMessage(Text.translatable("milf.placers.notification1"), 
+    sendImmersiveMessage(Component.translatable("milf.placers.notification1"), 
         event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event)
     removePreview(event, playerStructureData)
     removePreview(event, blockStructureData, true)
@@ -204,7 +204,7 @@ function getTemplateBlockData(template, structureData, blockNumber){
     let relativeBlockProperties = getRelativeBlockProperties(blockProperties, structureData, blockID)
     return {
         blockID : blockID,
-        rotatedVec3i : rotatedVec3i,
+        rotatedVec3i : Vec3itoBlockPos(rotatedVec3i),
         relativeBlockProperties : relativeBlockProperties
     }
 }
@@ -239,18 +239,18 @@ function removePreview(event, structureData, withoutParticles) {
 
 function validateArea(event, bounds) {
     const { xMin, xMax, zMin, zMax, yMin, yMax, posX, posY, posZ} = bounds;
-    
+    let valid = true
     for(let xa = xMin; xa <= xMax; xa++) {
         for(let ya = yMin; ya <= yMax; ya++) {
             for(let za = zMin; za <= zMax; za++) {
                 if(event.level.getBlock(posX + xa, posY + ya, posZ + za) !== AIR_ID) {
                     event.getLevel().spawnParticles(PARTICLES.error, false, posX + xa + 0.5, posY + ya + 0.5, posZ + za + 0.5, 0.2, 0.2, 0.2, 1, 0)
-                    return false
+                    valid = false
                 }
             }
         }
     }
-    return true
+    return valid
 }
 
 function getTemplateData(event, blockMap) {
@@ -260,13 +260,18 @@ function getTemplateData(event, blockMap) {
     return { modName:modName, template:template }
 }
 
-function getStructureRelativeData(template, facing, blockPos){
+function getStructureRelativeData(template, facing, /**@type {$BlockPos_} */ blockPos){
     const angle = ANGLE_TO_FACING[facing]
     const angleRad = angle * (Math.PI / 180)
     const structureVec3i = Vec3i(template.size[0], template.size[1], template.size[2])
     const structureVec3iRotated = rotateVec3i(structureVec3i, angleRad)
     const offsetVec3i = new Vec3i(-Math.floor(structureVec3i.getX() / 2), 0, -structureVec3i.getZ())
-    const blockPosRelativeStart = blockPos.offset(rotateVec3i(offsetVec3i, angleRad))
+    const blockPosRelativeStart = blockPos.offset(Vec3itoBlockPos(rotateVec3i(offsetVec3i, angleRad)))
+    console.log(blockPos);
+    
+    console.log(blockPosRelativeStart);
+    
+    
 
     return {
         facing:facing,
@@ -307,7 +312,7 @@ function checkStructure(event, template, modName, blockStructureData){
     if (canRemove) {
         return canRemove
     } else {
-        sendImmersiveMessage(Text.translatable("milf.placers.notification3"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event)
+        sendImmersiveMessage(Component.translatable("milf.placers.notification3"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event)
         event.server.runCommandSilent(`playsound block.chain.break block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
         return canRemove
     }
@@ -318,6 +323,10 @@ function checkStructure(event, template, modName, blockStructureData){
 /**@returns {$Vec3i_} */ 
 function rotateVec3i(vec3i, angle){
     return Vec3i(Math.round(vec3i.getX() * Math.cos(angle) + vec3i.getZ() * Math.sin(angle)), vec3i.getY(), Math.round(-vec3i.getX() * Math.sin(angle) + vec3i.getZ() * Math.cos(angle)))
+}
+
+function Vec3itoBlockPos(/**@type {$Vec3i_} */ vec3i){
+    return BlockPos(vec3i.x, vec3i.y, vec3i.z)
 }
 
 function textAnimatorString(text, type){
