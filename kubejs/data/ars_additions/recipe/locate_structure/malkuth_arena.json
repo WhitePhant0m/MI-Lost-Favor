@@ -1,0 +1,45 @@
+{
+	"type": "ars_additions:locate_structure",
+	"augments": [
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		},
+		{
+			"key": "fdbosses:eye_of_malkuth"
+		}
+	],
+	"id": "ars_additions:malkuth_arena",
+	"structure": {
+		"tag": "ars_additions:malkuth_arena"
+	}
+}
