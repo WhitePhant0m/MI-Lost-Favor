@@ -35,7 +35,6 @@ ServerEvents.recipes(event => {
         })
     }
 
-
     anvil_recipe(
         [
             [{ "tag": "c:bolts/copper" }, 1],
@@ -155,84 +154,26 @@ ServerEvents.recipes(event => {
 
     //#region mi stuff
 
-    anvil_recipe(
-        [
-            [{ "tag": "c:plates/copper" }, 2],
-            [{ "tag": "c:bolts/copper" }, 4],
-        ],
-        [{ "id": 'kubejs:small_copper_fluid_container' }, 1]
-    );
+    function casingMIRecipe(material, outputID) {
+        anvil_recipe(
+            [
+                [{ "tag": `c:bolts/${material}` }, 8],
+                [{ "tag": `c:gears/${material}` }, 1],
+                [{ "tag": `c:plates/${material}` }, 8],
+            ],
+            [{ "id": outputID ?? `modern_industrialization:${material}_machine_casing` }, 1]
+        );
+    }
 
-    anvil_recipe(
-        [
-            [{ "tag": "c:plates/steel" }, 2],
-            [{ "tag": "c:bolts/steel" }, 4],
-        ],
-        [{ "id": 'kubejs:small_steel_fluid_container' }, 1]
-    );
-
-    anvil_recipe(
-        [
-            [{ "item": "immersiveengineering:fluid_pipe" }, 5],
-            [{ "item": "kubejs:steel_infused_glass" }, 1],
-            [{ "item": "kubejs:steel_machine_bit" }, 12],
-        ],
-        [{ "id": 'modern_industrialization:steel_upgrade' }, 1]
-    );
-
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/bronze" }, 8],
-            [{ "tag": "c:gears/bronze" }, 1],
-            [{ "tag": "c:plates/bronze" }, 8],
-        ],
-        [{ "id": 'modern_industrialization:bronze_machine_casing' }, 1]
-    );
-
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/steel" }, 8],
-            [{ "tag": "c:gears/steel" }, 1],
-            [{ "tag": "c:plates/steel" }, 8],
-        ],
-        [{ "id": 'modern_industrialization:steel_machine_casing' }, 1]
-    );
-
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/invar" }, 8],
-            [{ "tag": "c:gears/invar" }, 1],
-            [{ "tag": "c:plates/invar" }, 8],
-        ],
-        [{ "id": 'modern_industrialization:heatproof_machine_casing' }, 1]
-    );
-
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/titanium" }, 8],
-            [{ "tag": "c:gears/titanium" }, 1],
-            [{ "tag": "c:plates/titanium" }, 8],
-        ],
-        [{ "id": 'modern_industrialization:solid_titanium_machine_casing' }, 1]
-    );
-
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/stainless_steel" }, 8],
-            [{ "tag": "c:gears/stainless_steel" }, 1],
-            [{ "tag": "c:plates/stainless_steel" }, 8],
-        ],
-        [{ "id": 'modern_industrialization:clean_stainless_steel_machine_casing' }, 1]
-    );
-
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/aluminum" }, 8],
-            [{ "tag": "c:gears/aluminum" }, 1],
-            [{ "tag": "c:plates/aluminum" }, 8],
-        ],
-        [{ "id": 'modern_industrialization:frostproof_machine_casing' }, 1]
-    );
+    casingMIRecipe('bronze')
+    casingMIRecipe('steel')
+    casingMIRecipe('invar', 'modern_industrialization:heatproof_machine_casing')
+    casingMIRecipe('titanium', 'modern_industrialization:solid_titanium_machine_casing')
+    casingMIRecipe('stainless_steel', 'modern_industrialization:clean_stainless_steel_machine_casing')
+    casingMIRecipe('aluminum', 'modern_industrialization:frostproof_machine_casing')
+    casingMIRecipe('ferricore')
+    casingMIRecipe('blazegold');
+    casingMIRecipe('celestigem');
 
     anvil_recipe(
         [
@@ -241,7 +182,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/bronze" }, 8],
         ],
         [{ "id": 'modern_industrialization:bronze_plated_bricks' }, 1]
-    );
+    )
 
     anvil_recipe(
         [
@@ -250,7 +191,32 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/steel" }, 8],
         ],
         [{ "id": 'extended_industrialization:steel_plated_bricks' }, 1]
-    );
+    )
+
+    anvil_recipe(
+        [
+            [{ "tag": "c:plates/copper" }, 2],
+            [{ "tag": "c:bolts/copper" }, 4],
+        ],
+        [{ "id": 'kubejs:small_copper_fluid_container' }, 1]
+    )
+
+    anvil_recipe(
+        [
+            [{ "tag": "c:plates/steel" }, 2],
+            [{ "tag": "c:bolts/steel" }, 4],
+        ],
+        [{ "id": 'kubejs:small_steel_fluid_container' }, 1]
+    )
+
+    anvil_recipe(
+        [
+            [{ "item": "immersiveengineering:fluid_pipe" }, 5],
+            [{ "item": "kubejs:steel_infused_glass" }, 1],
+            [{ "item": "kubejs:steel_machine_bit" }, 12],
+        ],
+        [{ "id": 'modern_industrialization:steel_upgrade' }, 1]
+    )
 
     anvil_recipe(
         [
@@ -259,7 +225,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/bronze" }, 2],
         ],
         [{ "id": 'modern_industrialization:wrench' }, 1]
-    );
+    )
 
     //#endregion
 
