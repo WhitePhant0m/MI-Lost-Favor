@@ -4,7 +4,8 @@ version = 1
 [disabler]
 disablerEnabled = true
 disabledEnchantments = [
-    "apothic_enchanting:knowledge_of_the_ages"
+    "apothic_enchanting:knowledge_of_the_ages",
+    "apothic_enchanting:chainsaw"
 ]
 
 [maxLevel]
