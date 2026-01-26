@@ -17,7 +17,12 @@ ServerEvents.tags('item', event => {
             'endrem:rogue_eye', 
             'endrem:undead_eye', 
             'endrem:witch_eye', 
-            'endrem:wither_eye'
+            'endrem:wither_eye',
+            'endrem:fishing_eye', 
+            'endrem:potato_eye', 
+            'endrem:trial_eye', 
+            'endrem:sculk_eye', 
+            'endrem:blossom_eye',
         ])
 
 })
