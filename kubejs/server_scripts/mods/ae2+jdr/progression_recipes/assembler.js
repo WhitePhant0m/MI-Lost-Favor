@@ -460,7 +460,9 @@ ServerEvents.recipes(event => {
     });
     // #endregion
 
-    // #region tier 2 recipes
+    // #region tier 1 recipes
+
+    // #region AE
     ae_processor("ae2:printed_logic_processor", "ae2:logic_processor", T3_TOKEN)
 
     ae_card("ae2:basic_card", "minecraft:redstone", "ae2:redstone_card", T1_TOKEN)
@@ -676,7 +678,113 @@ ServerEvents.recipes(event => {
 
     // #endregion
 
-    // #region tier 3 recipes
+    // #region JDT
+
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "pastel:block_placer"}, 1],
+            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
+            [{item: "ae2:logic_processor"}, 2],
+            [{item: "ae2:item_cell_housing"}, 1]
+        ],
+        outputItems: [
+            [{item: "justdirethings:blockplacert1"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "pastel:block_placer"}, 1],
+            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
+            [{item: "ae2:logic_processor"}, 2],
+            [{item: "ae2:fluid_cell_housing"}, 1]
+        ],
+        outputItems: [
+            [{item: "justdirethings:fluidplacert1"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "modern_industrialization:steel_drill_head"}, 1],
+            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
+            [{item: "ae2:logic_processor"}, 2],
+            [{item: "ae2:item_cell_housing"}, 1]
+        ],
+        outputItems: [
+            [{item: "justdirethings:blockbreakert1"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "minecraft:bucket"}, 4],
+            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
+            [{item: "ae2:logic_processor"}, 2],
+            [{item: "ae2:fluid_cell_housing"}, 1]
+        ],
+        outputItems: [
+            [{item: "justdirethings:fluidcollectort1"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "minecraft:dropper"}, 1],
+            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
+            [{item: "ae2:logic_processor"}, 2]
+        ],
+        outputItems: [
+            [{item: "justdirethings:droppert1"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{item: "minecraft:observer"}, 1],
+            [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
+            [{item: "ae2:logic_processor"}, 2]
+        ],
+        outputItems: [
+            [{item: "justdirethings:sensort1"}, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
+
+    // #endregion
+
+    // #endregion
+
+    // #region tier 2 recipes
     ae_processor("ae2:printed_engineering_processor", "ae2:engineering_processor", T3_TOKEN)
     ae_processor("ae2:printed_calculation_processor", "ae2:calculation_processor", T3_TOKEN)
 
@@ -1408,7 +1516,7 @@ ServerEvents.recipes(event => {
     });
     // #endregion
 
-    // #region tier 4 recipes
+    // #region tier 3 recipes
 
     ae_processor("advanced_ae:printed_quantum_processor", "advanced_ae:quantum_processor", T3_TOKEN)
 
@@ -1897,7 +2005,7 @@ ServerEvents.recipes(event => {
 
     // #endregion
 
-    // #region tier 5 recipes
+    // #region tier 4 recipes
     ae_processor("extendedae:concurrent_processor_print","extendedae:concurrent_processor", T4_TOKEN)
 
     miMachineCraft(event, {

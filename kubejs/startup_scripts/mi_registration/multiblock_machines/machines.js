@@ -4,7 +4,7 @@ MIMachineEvents.registerCasings(event => {
     event.registerBlockImitation("fire_clay_bricks", "modern_industrialization:fire_clay_bricks");
     event.registerBlockImitation("blast_brick", "immersiveengineering:blastbrick");
     event.registerBlockImitation("steel_plated_bricks", "extended_industrialization:steel_plated_bricks");
-
+    event.registerBlockImitation("bioresistant_machine_casing", "modern_industrialization:bioresistant_machine_casing");
 })
 
 global.miTweaksTags = global.miTweaksTags || []
@@ -28,7 +28,7 @@ function registerMIMachine(name, args){
         shape = shape.build()
         const multiTypeFunction = args.steam ? event.simpleSteamCraftingMultiBlock : event.simpleElectricCraftingMultiBlock
         multiTypeFunction.apply(event, [
-            idToName(name), name, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+            args.customName || idToName(name), name, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
             itemInputs => {
                 if(!args.itemInputSlots) {return itemInputs}
                 args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
@@ -70,6 +70,55 @@ function registerBatchMIMachine(name, args){
             shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
         })
         shape = shape.build()
+        const multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
+        multiTypeFunction.apply(event, [
+            idToName(name), name, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+            itemInputs => {
+                if(!args.itemInputSlots) {return itemInputs}
+                args.itemInputSlots.forEach(slot => itemInputs.addSlots.apply(itemInputs, slot))
+                return itemInputs
+            },
+            itemOutputs => {
+                if(!args.itemOutputSlots) {return itemOutputs}
+                args.itemOutputSlots.forEach(slot => itemOutputs.addSlots.apply(itemOutputs, slot))
+                return itemOutputs
+            },
+            fluidInputs => {
+                if(!args.fluidInputSlots) {return fluidInputs}
+                args.fluidInputSlots.forEach(slot => fluidInputs.addSlots.apply(fluidInputs, slot))
+                return fluidInputs
+            },
+            fluidOutputs => {
+                if(!args.fluidOutputSlots) {return fluidOutputs}
+                args.fluidOutputSlots.forEach(slot => fluidOutputs.addSlots.apply(fluidOutputs, slot))
+                return fluidOutputs
+            },
+            args.mainCasing || 'treated_wood_casing', args.mainOverlays || 'enigma_overlays', args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
+            args.batchsize || 8, args.costMulti || 1
+        ]) 
+    })
+    jsonDataForBatchMachine(name, args.mainCasing, args.mainOverlays)
+}
+
+function registerTieredMIMachine(name, args){
+    let recipe
+    MIMachineEvents.registerRecipeTypes(event => {
+        recipe = event.register(name)
+        args.itemsIn && (recipe = recipe.withItemInputs())
+        args.itemsOut && (recipe = recipe.withItemOutputs())
+        args.fluidsIn && (recipe = recipe.withFluidInputs())
+        args.fluidsOut && (recipe = recipe.withFluidOutputs())
+    })
+    MITweaksMachineEvents.registerTieredMultiblocks(event => {
+
+        args.shapes.forEach(shape => {
+            let layeredShape = event.layeredShape(shape.casing , shape.shape)
+            Object.entries(args.shape.shapeKeys).forEach(([key, block]) => {
+                let actualBlock = (typeof block === "string") ? block : block.id
+                shape = shape.key(key, event.memberOfBlock(actualBlock), block.hatches ? event.hatchOf(block.hatches) : event.noHatch())
+            })
+            shape = shape.build()
+        })
         const multiTypeFunction = args.steam ? event.steamStandalone : event.electricStandalone
         multiTypeFunction.apply(event, [
             idToName(name), name, recipe, shape, event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
@@ -236,7 +285,7 @@ registerBatchMIMachineFromExisting('advanced_large_steam_furnace', {steam:true, 
     batchsize:8, costMulti:0.75
 })
 
-registerBatchMIMachineFromExisting('large_electric_furnace', {steam:true, casing: 'modern_industrialization:heatproof_machine_casing', recipeType:"modern_industrialization:mi_furnace",
+registerBatchMIMachineFromExisting('large_electric_furnace', {casing: 'modern_industrialization:heatproof_machine_casing', recipeType:"modern_industrialization:mi_furnace",
     emiWorkstations:["modern_industrialization:bronze_mi_furnace"],
     shape: [['AAA', 'aaa', 'aaa', 'AAA'], 
             ['BAB', 'B B', 'B B', 'BAB'], 
@@ -279,6 +328,40 @@ registerBatchMIMachine('advanced_steam_alloy_smelter', {steam:true, itemsIn: tru
     mainCasing:'steel_plated_bricks', mainOverlays: 'coke_oven', frontOverlay: true,
     batchsize:8, costMulti:0.75
 })
+
+registerMIMachine('bioactive_chamber_top', {itemsIn: true, itemsOut: true, casing: 'bioresistant_machine_casing', customName: "Bioactive Chamber Additional Part",
+    shape: [['     ', ' AAA ', '     ', ' aAa ', '     ', ' AAA ', '     '], 
+            [' AAA ', 'AABAA', '  B  ', 'aABAa', '  B  ', 'AABAA', ' AAA '], 
+            [' AAA ', 'AB BA', ' B B ', 'AB BA', ' B B ', 'AB BA', ' AAA '], 
+            [' AAA ', 'AABAA', '  B  ', 'aABAa', '  B  ', 'AABAA', ' AAA '], 
+            ['     ', ' ADA ', '     ', ' aAa ', '     ', ' A#A ', '     ']],
+    shapeKeys: {"A":"modern_industrialization:bioresistant_machine_casing",
+                "a":"modern_industrialization:ferricore_machine_casing",
+                "B":"ae2:quartz_vibrant_glass",
+                "D":"modern_industrialization:bioactive_chamber_bottom"},
+    pBar: {x: 54, y: 69, name: 'square'},
+    itemInputSlots: [[20, 35, 2, 1], [20, 53, 1, 1], [74, 35, 2, 1], [92, 53, 1, 1], [20, 107, 2, 1], [20, 89, 1, 1], [74, 107, 2, 1], [92, 89, 1, 1]],
+    itemOutputSlots: [[56, 71, 1, 1]],
+    mainCasing:'bioresistant_machine_casing', mainOverlays: 'enigma_overlays', frontOverlay: true
+})
+
+registerMIMachine('bioactive_chamber_bottom', {itemsIn: true, itemsOut: true, casing: 'bioresistant_machine_casing', customName: "Bioactive Chamber Main Part",
+    shape: [['     ', ' AAA ', '     ', ' aAa ', '     ', ' AAA ', '     '], 
+            [' AAA ', 'AABAA', '  B  ', 'aABAa', '  B  ', 'AABAA', ' AAA '], 
+            [' AAA ', 'AB BA', ' B B ', 'AB BA', ' B B ', 'AB BA', ' AAA '], 
+            [' AAA ', 'AABAA', '  B  ', 'aABAa', '  B  ', 'AABAA', ' AAA '], 
+            ['     ', ' A#A ', '     ', ' aAa ', '     ', ' ADA ', '     ']],
+    shapeKeys: {"A":"modern_industrialization:bioresistant_machine_casing",
+                "a":"modern_industrialization:ferricore_machine_casing",
+                "B":"ae2:quartz_vibrant_glass",
+                "D":"modern_industrialization:bioactive_chamber_top"},
+    pBar: {x: 54, y: 69, name: 'square'},
+    itemInputSlots: [[20, 35, 2, 1], [20, 53, 1, 1], [74, 35, 2, 1], [92, 53, 1, 1], [20, 107, 2, 1], [20, 89, 1, 1], [74, 107, 2, 1], [92, 89, 1, 1]],
+    itemOutputSlots: [[56, 71, 1, 1]],
+    mainCasing:'bioresistant_machine_casing', mainOverlays: 'enigma_overlays', frontOverlay: true
+})
+
+
 
 function saveJsonToPath(path, json){
     JsonIO.write(path, JSON.stringify(json, null, 2))

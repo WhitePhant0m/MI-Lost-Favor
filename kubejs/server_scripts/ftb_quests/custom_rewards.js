@@ -1,5 +1,4 @@
 // TODO: refactor in future
-
 // reward for Forge Hammer
 FTBQuestsEvents.customReward('0DC887212398806D', event => {
     let player = event.entity;
@@ -16,8 +15,10 @@ FTBQuestsEvents.customReward('0DC887212398806D', event => {
 FTBQuestsEvents.customReward('41C8354D477A8899', event => {
     let player = event.entity;
     let player_name = player.profile.name
-    let stage = "tier_1_access_ore"
-    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+
+    const stage = "tier_1_access_ore"
+    addStagesToTeamMembers(event, stage)
+
     event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}_ore`).string)
     player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
 });
@@ -26,8 +27,10 @@ FTBQuestsEvents.customReward('41C8354D477A8899', event => {
 FTBQuestsEvents.customReward('0E7A91DD8F37AF4D', event => {
     let player = event.entity;
     let player_name = player.profile.name
-    let stage = "saturation"
-    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+
+    const stage = "saturation"
+    addStagesToTeamMembers(event, stage)
+
     event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}`).string)
     player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
 });
@@ -37,13 +40,8 @@ FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
     let player = event.entity;
     let player_name = player.profile.name
 
-    let stage_list = [
-        "minecraft_mobs",
-        "variants_and_ventures_mobs",
-    ]
-    stage_list.forEach(stage => {
-        event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
-    });
+    const stages = ["minecraft_mobs","variants_and_ventures_mobs"]
+    addStagesToTeamMembers(event, stages)
     
     event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.minecraft_mobs`).string)
     player.tell(Text.translate(`milf.stage.minecraft_mobs`).color("#ac6cba").bold())
@@ -53,50 +51,57 @@ FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
 FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
     let player = event.entity;
     let player_name = player.profile.name
-    let stage_list = [
-        "early_items",
-        "blast_furnace",
-    ]
-    stage_list.forEach(stage => {
-        event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
-    });
-    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.early_items"`).string)
+
+    const stages = ["early_items", "blast_furnace"]
+    addStagesToTeamMembers(event, stages)
+
+    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.early_items`).string)
     player.tell(Text.translate(`milf.stage.early_items"`).color("#ac6cba").bold())
 });
 
 // reward for Iron Ingot
 FTBQuestsEvents.customReward('4002784F5F537B2D', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-    let stage = "post_iron"
-
-    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+    const stage = "post_iron"
+    addStagesToTeamMembers(event, stage)
 });
 
 // reward for Enter in Eternal Starlight
 FTBQuestsEvents.customReward('3922C9ACA47723BA', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-    let stage = "forbidden_arcanus_mobs"
-
-    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+    const stage = "forbidden_arcanus_mobs"
+    addStagesToTeamMembers(event, stage)
 });
 
-
 // reward for flint and steel
-FTBQuestsEvents.customReward('7650FE6CA0220DA3', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-    let stage = "the_nether_access"
-
-    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+FTBQuestsEvents.customReward('7650FE6CA0220DA3',  event => {
+    const stage = "the_nether_access"
+    addStagesToTeamMembers(event, stage)
 });
 
 // reward for 12 eyes
 FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-    let stage = "the_end_access"
-
-    event.server.runCommandSilent(`/astages add ${player_name} ${stage}`)
+    const stage = "the_end_access"
+    addStagesToTeamMembers(event, stage)
 });
+
+function addStagesToTeamMembers(event, stages){
+    
+    let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
+    let teamManager = $FTBTeamsAPI.getManager()
+
+    let uuid = event.getPlayer().getUuid()
+    let playerList = event.server.getPlayerList()
+    let team = teamManager.getTeamForPlayerID(uuid).get()
+    let teamMembersUUIDS = team.getMembers()
+    stages = Array.isArray(stages) ? stages : [stages]
+
+    teamMembersUUIDS.forEach(memberUUID => {
+        let player = playerList.getPlayer(memberUUID)
+
+        for (const stage of stages){
+            AStages.addStageToPlayer(stage, player)
+        }
+
+        //console.log(player)
+        //console.log(team.getName())
+    })
+}

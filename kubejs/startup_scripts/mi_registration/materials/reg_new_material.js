@@ -63,6 +63,7 @@ MIMaterialEvents.addMaterials(event => {
             .addExternalPart('ingot', 'justdirethings:ferricore_ingot')
             .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
             .machineCasing(8.0)
+            .specialCasing("Bioresistant Machine Casing", "bioresistant_machine_casing", 8.0)
             .defaultRecipes()
     })
 
@@ -73,6 +74,7 @@ MIMaterialEvents.addMaterials(event => {
             .addExternalPart('ingot', 'justdirethings:blazegold_ingot')
             .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
             .machineCasing(8.0)
+            .specialCasing("Bioactive Machine Casing", "bioactive_machine_casing", 8.0)
             .defaultRecipes()
     })
 
@@ -93,6 +95,7 @@ MIMaterialEvents.addMaterials(event => {
             .addExternalPart('ingot', 'justdirethings:celestigem')
             .addParts('rod', "plate", "large_plate", "ring", "curved_plate", "bolt", "gear", "dust")
             .machineCasing(8.0)
+            .specialCasing("Biointensive Machine Casing", "biointensive_machine_casing", 8.0)
             .defaultRecipes()
     })
 
