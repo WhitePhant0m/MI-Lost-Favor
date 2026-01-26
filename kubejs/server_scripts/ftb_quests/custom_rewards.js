@@ -1,4 +1,7 @@
 // TODO: refactor in future
+
+let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
+
 // reward for Forge Hammer
 FTBQuestsEvents.customReward('0DC887212398806D', event => {
     let player = event.entity;
@@ -84,8 +87,7 @@ FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
 });
 
 function addStagesToTeamMembers(event, stages){
-    
-    let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
+
     let teamManager = $FTBTeamsAPI.getManager()
 
     let uuid = event.getPlayer().getUuid()
@@ -105,3 +107,38 @@ function addStagesToTeamMembers(event, stages){
         //console.log(team.getName())
     })
 }
+
+
+PlayerEvents.loggedIn(event => {
+    let teamManager = $FTBTeamsAPI.getManager()
+    let uuid = event.getPlayer().getUuid()
+    let playerList = event.server.getPlayerList()
+    let team = teamManager.getTeamForPlayerID(uuid).get()
+    let teamMembersUUIDS = team.getMembers()
+    let teamStagesSet = new Set()
+
+    teamMembersUUIDS.forEach(memberUUID => {
+        let player = playerList.getPlayer(memberUUID)
+        let playerStages = AStages.getStagesFromPlayer(player)
+
+        for (const stage of playerStages){
+            teamStagesSet.add(stage)
+        }
+    })
+    let playerStagesSet = new Set()
+    let playerStagesList = AStages.getStagesFromPlayer(event.getPlayer())
+
+    for(const stage of playerStagesList){
+        playerStagesSet.add(stage)
+    }
+
+    teamStagesSet.forEach(stage =>{
+        if (!playerStagesSet.has(stage)){
+            AStages.addStageToPlayer(stage, event.getPlayer())
+            console.log("New stage: " + stage);
+        } else {
+            console.log("Stage: " + stage);
+        }
+    })
+
+})
