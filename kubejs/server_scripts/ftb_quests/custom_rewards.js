@@ -6,12 +6,12 @@ let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
 FTBQuestsEvents.customReward('0DC887212398806D', event => {
     let player = event.entity;
     let dimension = player.getLevel().getDimension()
-
-    event.server.runCommandSilent(`/title ${player.profile.name} times 20 100 20`)
-    event.server.runCommandSilent(`/title ${player.profile.name} title {"text":"Congratulations!!!","bold":true,"color":"#9A52FF"}`)
-    event.server.runCommandSilent(`/title ${player.profile.name} subtitle ["",{"text":"You have passed into the ","bold":true},{"text":"Bronze Age","bold":true,"color":"#CD7F32"},{"text":"!","bold":true}]`)
+    //event.server.runCommandSilent(`/title ${player.profile.name} times 20 100 20`)
+    //event.server.runCommandSilent(`/title ${player.profile.name} title {"text":"Congratulations!!!","bold":true,"color":"#9A52FF"}`)
+    //event.server.runCommandSilent(`/title ${player.profile.name} subtitle ["",{"text":"You have passed into the ","bold":true},{"text":"Bronze Age","bold":true,"color":"#CD7F32"},{"text":"!","bold":true}]`)
     event.server.runCommandSilent(`/playsound immersiveengineering:birthday_party ambient ${player.profile.name} ${player.x} ${player.y} ${player.z}`)
     event.server.runCommandSilent(`/execute in ${dimension} run particle minecraft:witch ${player.x} ${player.y} ${player.z} 8 8 8 1 5000 normal`)
+    sendImmersiveMessageWithSubtext(Text.translate('milf.stage.congratulations'), Text.translate('milf.stage.bronze_age'), event.player, DEFAULT_NEW_AGE_NOTIFICATION_STYLE, DEFAULT_NEW_AGE_SUBTEXT_STYLE, event.server)
 });
 
 // reward for Bronze Machine Bit
@@ -21,45 +21,40 @@ FTBQuestsEvents.customReward('41C8354D477A8899', event => {
 
     const stage = "tier_1_access_ore"
     addStagesToTeamMembers(event, stage)
-
-    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}_ore`).string)
-    player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
+    defaultMilestoneNotification(event, stage)
+    //sendImmersiveMessageWithSubtext(Text.translate('milf.stage.something_changed'), Text.translate('milf.stage.bronze_age'), event.player, DEFAULT_NEW_AGE_NOTIFICATION_STYLE, DEFAULT_NEW_AGE_SUBTEXT_STYLE, event.server)
+    //event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}_ore`).string)
+    //player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
 });
 
 // reward for Crafting Table
 FTBQuestsEvents.customReward('0E7A91DD8F37AF4D', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
     const stage = "saturation"
     addStagesToTeamMembers(event, stage)
-
-    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}`).string)
-    player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
+    defaultMilestoneNotification(event, stage)
+    //event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}`).string)
 });
 
 // reward for Iron Bloom
 FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
+    // let player = event.entity;
+    // let player_name = player.profile.name
     const stages = ["minecraft_mobs","variants_and_ventures_mobs"]
     addStagesToTeamMembers(event, stages)
-    
-    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.minecraft_mobs`).string)
-    player.tell(Text.translate(`milf.stage.minecraft_mobs`).color("#ac6cba").bold())
+    defaultMilestoneNotification(event, stages[0])
+    // event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.minecraft_mobs`).string)
+    // player.tell(Text.translate(`milf.stage.minecraft_mobs`).color("#ac6cba").bold())
 });
 
 // reward for Steel Ingot
 FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
-    let player = event.entity;
-    let player_name = player.profile.name
-
+    // let player = event.entity;
+    // let player_name = player.profile.name
     const stages = ["early_items", "blast_furnace"]
     addStagesToTeamMembers(event, stages)
-
-    event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.early_items`).string)
-    player.tell(Text.translate(`milf.stage.early_items"`).color("#ac6cba").bold())
+    defaultMilestoneNotification(event, stages[0])
+    // event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.early_items`).string)
+    // player.tell(Text.translate(`milf.stage.early_items"`).color("#ac6cba").bold())
 });
 
 // reward for Iron Ingot
@@ -86,6 +81,15 @@ FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
     addStagesToTeamMembers(event, stage)
 });
 
+function defaultMilestoneNotification(event, stage){
+    let player = event.player;
+    sendImmersiveMessageWithSubtext(Text.translate('milf.stage.something_changed'), Text.translate(`milf.stage.${stage}`), player, DEFAULT_MILESTONE_NOTIFICATION_STYLE, DEFAULT_MILESTONE_SUBTEXT_STYLE, event.server)
+    event.server.scheduleInTicks(DEFAULT_MILESTONE_SUBTEXT_STYLE.delay * 20, _ =>  {
+        event.server.runCommandSilent(`/playsound immersiveengineering:spark ambient ${player.profile.name} ${player.x} ${player.y} ${player.z}`)
+        player.tell(Text.translate(`milf.stage.${stage}`))
+    })
+}
+
 function addStagesToTeamMembers(event, stages){
 
     let teamManager = $FTBTeamsAPI.getManager()
@@ -107,7 +111,6 @@ function addStagesToTeamMembers(event, stages){
         //console.log(team.getName())
     })
 }
-
 
 PlayerEvents.loggedIn(event => {
     let teamManager = $FTBTeamsAPI.getManager()

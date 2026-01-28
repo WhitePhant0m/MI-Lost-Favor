@@ -6,12 +6,19 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.text.block.interact.part0', 'Strange magic prevents you from using this block')
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Strange magic prevents you from using this block')
 
-    event.add('milf.stage.tier_1_access_ore', 'Unlocked: quartz / debris / emerald / diamond / lapis / gold / antimony / bauxite / lead / monazite / nickel / salt ore')
+    event.add('milf.stage.congratulations', `${textAnimatorString("Congratulations!!!", "wave", {a:0.25, w:0.25, f:0.5})}`)
+    event.add('milf.stage.something_changed', `${textAnimatorString("You feel like something has changed...", "wiggle", {a:0.25, f:0.35})}`)
+
+    event.add('milf.stage.bronze_age', `You have passed into the ${textAnimatorString("Bronze Age", "grad", {from:"#CD7F32", to:"#F6BA7D", f:0.5})}`)
+
+    //event.add('milf.stage.tier_1_access_ore', 'Unlocked: quartz / debris / emerald / diamond / lapis / gold / antimony / bauxite / lead / monazite / nickel / salt ore')
+    event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${textAnimatorString("new ores", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
-    event.add('milf.stage.saturation', 'You\'ve lost your saturation!')
+    event.add('milf.stage.saturation', `You have lost your ${textAnimatorString("saturation", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})}...`)
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
-    event.add('milf.stage.minecraft_mobs', 'You started hearing strange noises at night')
-    event.add('milf.stage.early_items', 'You can trade with villagers, loot chests, and interact with spawners and blast furnace')
+    event.add('milf.stage.minecraft_mobs', `You started hearing ${textAnimatorString("strange noises", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} at night...`)
+    //event.add('milf.stage.early_items', 'You can trade with villagers, loot chests, and interact with spawners and blast furnace')
+    event.add('milf.stage.early_items', `This world no longer ${textAnimatorString("rejects", "glitch")} you...`)
 
     event.add('advancements.apotheosis.progression.ascent.criteria.nether_gauntlet', 'Kill Nether Gauntlet')
 
@@ -39,6 +46,7 @@ ClientEvents.lang('en_us', event => {
 
     event.add('milf.flags.claimed', "Chunk claimed")
     event.add('milf.flags.unclaimed', "Chunk unclaimed")
+    event.add('milf.flags.occupied', "Chunk already claimed by: ")
 
     event.add('gateways.basic/deer', "Deer Gateway")
 
@@ -58,14 +66,21 @@ ClientEvents.lang('en_us', event => {
  
 })
 
-function textAnimatorString(text, type){
-    return `<${type}>${text}</${type}>`
+function textAnimatorString(text, type, params){
+    if (params){
+        return `<${type} ${Object.entries(params).reduce((acc, [param, value]) => `${acc}${param}=${value} `, '').trim()}>${text}</${type}>`
+
+    } else {
+        return `<${type}>${text}</${type}>`
+    }
 }
 
-function textAnimatorStringForEach(text, type){
+function textAnimatorStringForEach(text, type, params){
 	let newText = ""
+
 	for(let char of text){
-		newText += textAnimatorString(char, type)
+		newText += textAnimatorString(char, type, params)
 	}
+
     return newText
 }
