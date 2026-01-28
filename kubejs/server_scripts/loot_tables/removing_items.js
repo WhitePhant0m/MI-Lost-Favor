@@ -60,6 +60,7 @@ LootJS.modifiers(event => {
         { item_name: 'cognition:astute_assembly' },
         { item_name: 'cognition:cognitive_flux' },
         { item_name: 'cognition:forgotten_dust' },
+        { item_name: 'forbidden_arcanus:tentacle' },
     ]
     const loot_types = [LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC]
 
