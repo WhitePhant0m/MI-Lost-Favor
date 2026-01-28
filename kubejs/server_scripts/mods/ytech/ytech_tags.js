@@ -44,10 +44,20 @@ ServerEvents.tags("item", event => {
         "malum:arcane_charcoal"
     ])
 
+    event.add("ytech:sharp_flints", ["ytech:flint_knife", ""])
+
+    const tags_for_meat = [
+        "c:foods",
+        "c:foods/cooked_meats",
+        "minecraft:wolf_food",
+        "more_sounds:food"
+    ]
+    tags_for_meat.forEach(tag => {
+        event.add(tag, "ytech:cooked_venison")
+    });
+
 })
 
 ServerEvents.tags("block", event => {
     event.add("minecraft:mineable/pickaxe", "#ytech:aqueducts")
-
-
 })

@@ -100,134 +100,6 @@ ServerEvents.recipes(event => {
     event.replaceOutput({ output: 'ytech:tin_bolt' }, 'ytech:tin_bolt', 'modern_industrialization:tin_bolt')
     event.replaceOutput({ output: 'ytech:bronze_bolt' }, 'ytech:bronze_bolt', 'modern_industrialization:bronze_bolt')
 
-    // same recipe only for MI compat
-    global.dyeColors.forEach(color => {
-        yTechShaped(event, {
-            pattern: [
-                "# @",
-                "WWW",
-                "PPP"
-            ],
-            key: {
-                "#": { "tag": "c:hammers" },
-                "P": { "tag": "minecraft:wooden_slabs" },
-                "@": { "tag": "c:saws" },
-                "W": { "item": `minecraft:${color.name}_wool` }
-            },
-            outputItems: [[{ id: `minecraft:${color.name}_bed` }, 1]],
-            removeRecipeType: "minecraft:crafting_shaped"
-        })
-    });
-
-    yTechShaped(event, {
-        pattern: [
-            "SHS",
-            "bHb",
-            "s#s"
-        ],
-        key: {
-            "#": { "tag": "c:saws" },
-            "H": { "item": "minecraft:hay_block" },
-            "S": { "item": "minecraft:stick" },
-            "s": { "tag": "minecraft:wooden_slabs" },
-            "b": { "item": "ytech:wooden_bolt" }
-        },
-        outputItems: [[{ id: "dummmmmmy:target_dummy" }, 1]],
-        removeRecipeType: "minecraft:crafting_shaped"
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            "SLS",
-            "L#L",
-            "SSS"
-        ],
-        key: {
-            "#": { "tag": "ytech:bone_needles" },
-            "L": { "item": "minecraft:leather" },
-            "S": { "tag": "ytech:leather_strips" }
-        },
-        outputItems: [[{ id: "toolbelt:belt" }, 1]],
-        removeRecipeType: "minecraft:crafting_shaped"
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            "S#S",
-            "SSS",
-            " L "
-        ],
-        key: {
-            "#": { "tag": "ytech:bone_needles" },
-            "L": { "item": "minecraft:leather" },
-            "S": { "tag": "ytech:leather_strips" }
-        },
-        outputItems: [[{ id: "toolbelt:pouch" }, 1]],
-        removeRecipeType: "minecraft:crafting_shaped"
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            "#S ",
-            "SN ",
-            "  S"
-        ],
-        key: {
-            "#": { "tag": "ytech:bone_needles" },
-            "N": { "item": "modern_industrialization:tin_nugget" },
-            "S": { "tag": "ytech:leather_strips" }
-        },
-        outputItems: [[{ id: "minecraft:lead" }, 1]],
-        removeRecipeType: "minecraft:crafting_shaped"
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            "SP ",
-            "SB#",
-            "SP "
-        ],
-        key: {
-            "#": { "tag": "ytech:bone_needles" },
-            "P": { "item": "minecraft:paper" },
-            "S": { "tag": "ytech:leather_strips" },
-            "B": { "item": "minecraft:writable_book" }
-        },
-        outputItems: [[{ id: "map_atlases:atlas" }, 1]],
-        removeRecipeType: "minecraft:crafting_shaped"
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            " S ",
-            "PBP",
-            "P#P"
-        ],
-        key: {
-            "#": { "tag": "ytech:bone_needles" },
-            "P": { "item": "ytech:grass_twine" },
-            "S": { "tag": "ytech:leather_strips" },
-            "B": { "item": "ytech:basket" }
-        },
-        outputItems: [[{ id: "supplementaries:lunch_basket" }, 1]],
-        removeRecipeType: "minecraft:crafting_shaped"
-    })
-
-    yTechShaped(event, {
-        pattern: [
-            "SB ",
-            "SB#",
-            "SB "
-        ],
-        key: {
-            "#": { "tag": "ytech:bone_needles" },
-            "S": { "tag": "ytech:leather_strips" },
-            "B": { "item": "minecraft:writable_book" }
-        },
-        outputItems: [[{ id: "eccentrictome:tome" }, 1]],
-        removeRecipeType: "minecraft:crafting_shapeless"
-    })
-
     event.custom({
         "type": "ytech:remaining_shapeless_crafting",
         "category": "misc",
@@ -235,7 +107,7 @@ ServerEvents.recipes(event => {
             { "tag": "c:bricks" },
             { "tag": "c:mortar_and_pestles" }
         ],
-        "result": { "count": 1, "id": "modern_industrialization:brick_dust" }
+        "result": { "id": "modern_industrialization:brick_dust", "count": 1 }
     })
 
     event.remove({ type: "map_atlases:crafting_atlas" })
