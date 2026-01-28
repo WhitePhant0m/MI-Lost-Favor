@@ -198,6 +198,156 @@
 				},
 				{
 					"type": "item",
+					"name": "rusticdelight:cotton_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "rusticdelight:bell_pepper_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "fruitsdelight:durian_sapling",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "fruitsdelight:lemon_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "fruitsdelight:hamimelon_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "enchanted:water_artichoke_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "enchanted:belladonna_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "enchanted:mandrake_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "enchanted:snowbell_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "supplementaries:flax_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "immersiveengineering:seed",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "hexerei:sage_seed",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "farmersdelight:cabbage_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "farmersdelight:tomato_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "enchanted:wolfsbane_seeds",
+					"conditions": [
+						{
+							"condition": "random_chance",
+							"chance": 0.04
+						}
+					]
+				},
+				{
+					"type": "item",
 					"name": "minecraft:redstone",
 					"functions": [
 						{
