@@ -13,18 +13,6 @@ const ANGLE_TO_FACING = {
     "east":270,"north":0,"west":90,"south":180
 }
 
-const DEFAULT_WARN_NOTIFICATION_STYLE = {
-    anchor:"CENTER_RIGHT",
-    slideIn:"right",
-    //slideOut:"right",
-    fadeIn:1,
-    fadeOut:0.3,
-    background:true,
-    y:140,
-    queue:true,
-    applyWarn:true
-}
-
 const PARTICLES = {
     placed:"pastel:shooting_star",
     dispersed:"minecraft:instant_effect",
@@ -116,7 +104,7 @@ function handlePreview(/**@type {$BlockRightClickedKubeEvent_} */ event, templat
 
 function handlePlacement(event, template, modName, playerStructureData, blockStructureData){
     if(event.block.getProperties().enabled == "false"){
-        sendImmersiveMessage(Component.translatable("milf.placers.notification2"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event)
+        sendImmersiveMessage(Component.translatable("milf.placers.notification2"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
         event.cancel()
     }
     removePreview(event, blockStructureData, true)
@@ -176,7 +164,7 @@ function placeStructure(/**@type {$BlockRightClickedKubeEvent_} */ event, templa
 function handlePreviewFailure(event, playerStructureData, blockStructureData){
     event.server.runCommandSilent(`playsound block.chain.break block @p ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posY}`)
     sendImmersiveMessage(Component.translatable("milf.placers.notification1"), 
-        event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event)
+        event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
     removePreview(event, playerStructureData)
     removePreview(event, blockStructureData, true)
     event.cancel()
@@ -266,12 +254,7 @@ function getStructureRelativeData(template, facing, /**@type {$BlockPos_} */ blo
     const structureVec3i = Vec3i(template.size[0], template.size[1], template.size[2])
     const structureVec3iRotated = rotateVec3i(structureVec3i, angleRad)
     const offsetVec3i = new Vec3i(-Math.floor(structureVec3i.getX() / 2), 0, -structureVec3i.getZ())
-    const blockPosRelativeStart = blockPos.offset(Vec3itoBlockPos(rotateVec3i(offsetVec3i, angleRad)))
-    console.log(blockPos);
-    
-    console.log(blockPosRelativeStart);
-    
-    
+    const blockPosRelativeStart = blockPos.offset(Vec3itoBlockPos(rotateVec3i(offsetVec3i, angleRad)))    
 
     return {
         facing:facing,
@@ -312,7 +295,7 @@ function checkStructure(event, template, modName, blockStructureData){
     if (canRemove) {
         return canRemove
     } else {
-        sendImmersiveMessage(Component.translatable("milf.placers.notification3"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event)
+        sendImmersiveMessage(Component.translatable("milf.placers.notification3"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
         event.server.runCommandSilent(`playsound block.chain.break block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
         return canRemove
     }
