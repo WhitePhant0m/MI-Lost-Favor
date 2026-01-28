@@ -12,6 +12,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
     event.add('milf.stage.minecraft_mobs', 'You started hearing strange noises at night')
     event.add('milf.stage.early_items', 'You can trade with villagers, loot chests, and interact with spawners and blast furnace')
+    event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest')
 
     event.add('advancements.apotheosis.progression.ascent.criteria.nether_gauntlet', 'Kill Nether Gauntlet')
 
