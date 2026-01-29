@@ -139,6 +139,7 @@
 						count: 1
 						id: "solcarrot:food_book"
 					}
+					team_reward: false
 					type: "item"
 				}
 				{
@@ -148,6 +149,7 @@
 						count: 1
 						id: "farmersdelight:hamburger"
 					}
+					team_reward: false
 					type: "item"
 				}
 			]

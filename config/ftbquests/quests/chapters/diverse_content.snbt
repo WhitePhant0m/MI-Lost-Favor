@@ -64,30 +64,14 @@
 			x: -28.5d
 			y: 3.5d
 		}
-	]
-	quests: [
 		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "47D368E38E50F477"
-			tasks: [{
-				id: "18D39897424A8A0C"
-				item: { count: 1, id: "mechtrowel:wand_template" }
-				type: "item"
-			}]
-			x: -12.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "30D35F600411F4E6"
-			tasks: [{
-				id: "4E14E1E457054A36"
-				item: { count: 1, id: "mechtrowel:wand_capacity_template" }
-				type: "item"
-			}]
-			x: -12.0d
+			id: "1E0D4420E982DF21"
+			linked_quest: "2EF484C39D617CD2"
+			x: -31.5d
 			y: 3.5d
 		}
+	]
+	quests: [
 		{
 			id: "3ACEAB25342B053C"
 			tasks: [{
@@ -118,17 +102,6 @@
 			}]
 			x: -10.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "2EF484C39D617CD2"
-			tasks: [{
-				id: "08FB162A2504D5C5"
-				item: { count: 1, id: "labels:label" }
-				type: "item"
-			}]
-			x: -9.0d
-			y: 3.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -230,28 +203,6 @@
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
-			id: "39708F775FD73B1E"
-			tasks: [{
-				id: "60B4D5E0E0ECEAE4"
-				item: { count: 1, id: "gag:energized_hearthstone" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "2DA293BC1836C729"
-			tasks: [{
-				id: "6314CA41462916A8"
-				item: { count: 1, id: "gag:escape_rope" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
 			id: "4DB5FC1D5811955A"
 			tasks: [{
 				id: "621E14B3EDA6F69A"
@@ -259,7 +210,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -379,17 +330,6 @@
 				}
 			]
 			x: -16.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "73DFBE8FE9BDEBD5"
-			tasks: [{
-				id: "0BFF560E4083520B"
-				item: { count: 1, id: "birdnest:birds_nest" }
-				type: "item"
-			}]
-			x: 10.5d
 			y: 3.5d
 		}
 		{
@@ -520,8 +460,8 @@
 				item: { count: 1, id: "angelring:angel_ring" }
 				type: "item"
 			}]
-			x: -22.0d
-			y: 9.0d
+			x: -4.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -544,17 +484,6 @@
 			}]
 			x: -19.5d
 			y: 3.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "0D3FDE0A04F82F94"
-			tasks: [{
-				id: "681ACE860463E4A6"
-				item: { count: 1, id: "naturescompass:naturescompass" }
-				type: "item"
-			}]
-			x: -20.5d
-			y: 1.0d
 		}
 	]
 }
