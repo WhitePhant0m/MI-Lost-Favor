@@ -3505,8 +3505,8 @@
 			shape: "octagon"
 			size: 2.0d
 			tasks: [{
-				id: "5803852FB47F6DA6"
-				item: { count: 1, id: "modern_industrialization:multiblock_packer_3000_safety_regulations_edition" }
+				id: "52AA0C0C0C0CCD15"
+				item: { count: 1, id: "mi_tweaks:multiblock_packer_3000_safety_regulations_edition" }
 				type: "item"
 			}]
 			x: -9.5d

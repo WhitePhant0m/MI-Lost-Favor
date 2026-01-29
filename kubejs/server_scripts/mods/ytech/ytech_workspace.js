@@ -727,7 +727,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P")
         ],
         {S:'immersiveengineering:basic_engineering', R:'modern_industrialization:steel_rod', P:"modern_industrialization:steel_plate", C:"modern_industrialization:analog_circuit"},
-        'modern_industrialization:multiblock_packer_3000_safety_regulations_edition', {} , "immersiveengineering:hammer"
+        'mi_tweaks:multiblock_packer_3000_safety_regulations_edition', {} , "immersiveengineering:hammer"
     )
 
     workspace_recipe([

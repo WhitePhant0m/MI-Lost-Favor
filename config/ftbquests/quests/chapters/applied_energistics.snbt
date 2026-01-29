@@ -3050,11 +3050,10 @@
 				item: { count: 1, id: "justdirethings:blockbreakert1" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: -6.0d
+			x: -10.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["370CF6A932DA10D9"]
 			id: "6181B23290DD52DF"
 			shape: "diamond"
 			tasks: [{
@@ -3063,10 +3062,9 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -4.0d
+			y: 7.0d
 		}
 		{
-			dependencies: ["370CF6A932DA10D9"]
 			id: "6EFB02C1BA848E73"
 			shape: "diamond"
 			tasks: [{
@@ -3074,8 +3072,8 @@
 				item: { count: 1, id: "justdirethings:clickert1" }
 				type: "item"
 			}]
-			x: -8.5d
-			y: -6.0d
+			x: -11.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["370CF6A932DA10D9"]
@@ -3086,7 +3084,7 @@
 				item: { count: 1, id: "justdirethings:fluidplacert1" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -9.5d
 			y: -7.0d
 		}
 		{
@@ -3098,8 +3096,8 @@
 				item: { count: 1, id: "justdirethings:fluidcollectort1" }
 				type: "item"
 			}]
-			x: -9.5d
-			y: -7.0d
+			x: -8.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["370CF6A932DA10D9"]
@@ -3135,8 +3133,8 @@
 				item: { count: 1, id: "justdirethings:upgrade_blank" }
 				type: "item"
 			}]
-			x: -12.5d
-			y: -8.0d
+			x: -11.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["78D76FC9F6637546"]
@@ -3316,6 +3314,26 @@
 			}]
 			x: -8.5d
 			y: 7.0d
+		}
+		{
+			id: "2A6831D31626D1A8"
+			tasks: [{
+				id: "2C9AE38E3A249972"
+				item: { count: 1, id: "justdirethings:time_wand" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 13.0d
+		}
+		{
+			id: "6B282AAC8700D18D"
+			tasks: [{
+				id: "4078D6861322FD2E"
+				item: { count: 1, id: "justdirethings:time_fluid_bucket" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 13.0d
 		}
 	]
 }

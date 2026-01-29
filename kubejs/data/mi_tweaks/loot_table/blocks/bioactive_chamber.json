@@ -11,11 +11,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "mi_tweaks:large_electric_furnace"
+					"name": "mi_tweaks:bioactive_chamber"
 				}
 			],
 			"rolls": 1
 		}
 	],
-	"random_sequence": "mi_tweaks:blocks/large_electric_furnace"
+	"random_sequence": "mi_tweaks:blocks/bioactive_chamber"
 }
