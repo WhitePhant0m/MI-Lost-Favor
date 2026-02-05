@@ -425,6 +425,11 @@
 		""
 		"Что еще более любопытно, так это то, что если мне в руки попадет зачарованная книга, которая переводится как «Refill», то содержимое моей пустой фляги будет пополняться, просто если я просплю всю ночь! Хотя у меня есть свои сомнения по поводу зачарования, я не могу отрицать его полезность в моих экспериментах!"
 	]
+	quest.15054A95EDCBE33D.quest_desc: [
+		"Allows to store &otime&r while the &mbottle&r Pouch is in the player inventory. When enough time is stored, you can speed up block entities. More clicks = more speed increase. "
+		"{@pagebreak}"
+		"Позволяет накапливать время в &mбутылочке&r мешке находясь в инвентаре, как только вы скопили много времени - вы можете начать ускорять любые блоки, чем больше раз кликнуть на блок данным мешком, тем быстрее работать он начнёт."
+	]
 	quest.1521EE6E13B1A7AF.quest_desc: [
 		"One &#FEECD6Ink Flask&r can have only &#9BB8EDone ink type&r. Ink Assortment can contain all types at once, but has less storage space."
 		"{@pagebreak}"
@@ -499,9 +504,13 @@
 	quest.19720A27E00D46F5.quest_desc: [
 		"Bridging allows for placing blocks in gaps in front, above, or below blocks, even if the surface isn't visible! When it's available, a crosshair is shown to indicate where that block will be placed. When the F3 menu is visible, there's an extra outline showing the exact position it's placing in (but you can turn it on all the time in the config)"
 		""
+		"You can turn this mode on and off in the radial menu; press «R» to open it."
+		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/bridging-mod\" } }, \".\" ]"
 		"{@pagebreak}"
 		"Бриджинг позволяет размещать блоки в промежутках перед, над или под блоками, даже если поверхность не видна! Когда эта функция доступна, появляется перекрестье, указывающее место, где будет размещен блок. Когда отображается меню F3, появляется дополнительная обводка, показывающая точное место размещения (но вы можете включить ее на постоянной основе в настройках)."
+		""
+		"Включение и выключение этого режима есть в радиальном меню, нажмите «R» для его открытия."
 		""
 		"[ \"Более подробно можно прочитать \", { \"text\": \"тут\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/bridging-mod\" } }, \".\" ]"
 	]
@@ -849,6 +858,31 @@
 		"&lChalice (Filled)&r:"
 		"• +2x Power Capacity"
 	]
+	quest.2EF484C39D617CD2.quest_desc: [
+		"Labels functions similar to &9&lItem Frames&r&r but can adapt to all surfaces and be physically connected to any solid block no matter the shape."
+		""
+		"• By &l&eshift-clicking&r&r on a Label with an item you'll be able to change its image, showing that item you selected. "
+		""
+		"• Clicking on a &lLabel&r will let the player &l&9interact&r&r with the &9block&r behind, making it perfect for your &9storage systems&r. "
+		""
+		"• Can accept &lGlow Ink Sacks&r to make then &lglow&r in the &8dark&r. "
+		""
+		"• Can be &4<shake>c</shake>&r&6<shake>o</shake>&r&e<shake>l</shake>&r&2<shake>o</shake>&r&b<shake>r</shake>&r&9<shake>e</shake>&r&5<shake>d</shake>&r with &nany&r dye. "
+		""
+		"• Using a &7Feather&r on them will display the item name. "
+		"{@pagebreak}"
+		"По функционалу &e&lэтикетки&r&r похожи на рамки, но могут &oприспосабливаться&r к любым &oповерхностям&r и физически &lсоединяться&r с &oлюбым твердым блоком&r независимо от его формы."
+		""
+		"• Щелкнув &eПКМ&r по &l&eэтикетке&r&r с каким-либо предметом, вы сможете изменить её изображение, отобразив выбранный вами предмет.  "
+		""
+		"• Нажав на &lэтикетку&r, игрок сможет &nвзаимодействовать с блоком&r, который находится за ней, что делает её идеальной для &9систем хранения&r. "
+		""
+		"• Вы можете применить &lсветящийся чернильный мешок&r, чтобы заставить этикетку &lсветиться&r в &8темноте&r.  "
+		""
+		"• Вы можете перекрасить &e&lэтикетку&r&r в любой понравившийся вам цвет используя &4<shake>к</shake>&r&6<shake>р</shake>&r&e<shake>а</shake>&r&2<shake>с</shake>&r&b<shake>и</shake>&r&9<shake>т</shake>&r&5<shake>е</shake>&r&4<shake>л</shake>&r&6<shake>и</shake>&r. "
+		""
+		"• Используя &7перо&r на этикетке вы отобразите название предмета."
+	]
 	quest.2F728B18B7B4C5FE.quest_desc: [
 		"Boss Checklist adds a list of all bosses from the modpack to the game, which can be accessed via the radial menu \"R.\""
 		""
@@ -1114,6 +1148,7 @@
 		"{@pagebreak}"
 		"Заставь баночку с гибелью съесть обсидиан, получишь &l&5неолит&r&r"
 	]
+	quest.3CD90B1C85449343.quest_subtitle: "A way to easily teleport your way out of caves"
 	quest.3CED97E478F793D3.quest_subtitle: "TPS-metr"
 	quest.3CF855190F944C3E.quest_desc: [
 		"This map shifts and changes as I move, almost as if it were alive, sensing my intentions."
@@ -1155,6 +1190,8 @@
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a poisoned squid."]
 	quest.3F076989AA64CD64.quest_desc: [
 		"Mod adds a keybind which zooms in your FOV while it's held down, allowing you to see further away, and keybinds for increasing and decreasing the zoom level."
+		""
+		"By default on «G» button!"
 		""
 		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/zume\" } }, \".\" ]"
 	]
@@ -1513,8 +1550,12 @@
 	quest.5643AEC296D95BE9.quest_desc: ["Slowness and weakness."]
 	quest.56956E24B043B41A.quest_desc: [
 		"&mUse an axe for the combat instead, as it's more powerful. But shh, I didn't tell you that&r"
+		""
+		"Can also collect Grass Fibers from grass"
 		"{@pagebreak}"
 		"&mВместо этого используйте топор, он более мощный. Но тише, я вам этого не говорил&r"
+		""
+		"Так же может собирать волокна из травы"
 	]
 	quest.56AE77021D975ACD.quest_desc: [
 		"This mesh can catch basic resources, such as sand, gravel, clay and fish"
@@ -1919,6 +1960,11 @@
 		"{@pagebreak}"
 		"Будьте осторожны, &bплатериевый самоцвет&r почти сразу же улетает вверх при выпадение, когда копаете руду - ставьте над ней блок или придумайте что-то умнее! "
 	]
+	quest.6E11ECC7B831480C.quest_desc: [
+		"Collect 12 unique eyes to activate the portal."
+		"{@pagebreak}"
+		"Соберите 12 уникальных глаз для активации портала."
+	]
 	quest.6E57514B8D09F6D8.quest_desc: [
 		"nearby pets teleport with you"
 		""
@@ -2050,11 +2096,20 @@
 		""
 		"Ну… Или… Воспользуйтесь дробителем…"
 	]
+	quest.73DFBE8FE9BDEBD5.quest_desc: [
+		"Bird nests can sometimes be obtained from foliage when you cut down trees. Birds are very useful because they collect all kinds of debris in their nests. Who knows what you might find there?"
+		"{@pagebreak}"
+		"Иногда выпадает из листвы когда вы срубаете деревья, птицы очень полезны т.к. собирают всякий мусор у себя в гнёздах, кто знает, что там можно найти?"
+	]
 	quest.7411203C75645676.quest_desc: ["From undead(zombie/zoglin/husk/zombie villager/piglin) with scythe"]
 	quest.742D4F5A2D903B69.quest_desc: [
 		"Dropped by deer. It slightly resembles a half-pickaxe if you look at it from a specific angle..."
+		""
+		"It is important that the deer model has antlers. There are deer without antlers!"
 		"{@pagebreak}"
 		"Выпадает из оленя. Если посмотреть под определенным углом, он немного напоминает половину кирки..."
+		""
+		"Важно, необходимо чтобы на модели оленя были рога, бывают олени без рогов!"
 	]
 	quest.745BE9DA293006D1.quest_desc: [
 		"Bundle's lil bro, look at it, so cute ❤"
@@ -2131,6 +2186,7 @@
 	quest.7EF5D915FEC62EE0.quest_subtitle: "elevator for source"
 	reward.0DC887212398806D.title: "New Quest Chapter"
 	reward.0E7A91DD8F37AF4D.title: "Desaturation"
+	reward.2BD4B3CA5BEDBA19.title: "The End Access"
 	reward.3922C9ACA47723BA.title: "forbidden arcanus mobs"
 	reward.4002784F5F537B2D.title: "You can interact with everything made of iron!"
 	reward.41C8354D477A8899.title: "Access to most ore"
@@ -2248,6 +2304,7 @@
 	task.587A56D8D8AFA800.title: "Any #malum:runewood_logs"
 	task.5D063D32D1C6BB2C.title: "Any #ytech:aqueducts"
 	task.5EC8E0E987CF862A.title: "More plants"
+	task.608727F73B6EDF0F.title: "The End?!"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
 	task.64E7E65976B570B4.title: "Posuc's Convication"
 	task.651818A1418ADDFB.title: "Any #minecraft:saplings"
