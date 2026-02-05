@@ -1913,6 +1913,10 @@
 		""
 		"It can for example be used to charge a Creeper or to create an Arcane Crystal Obelisk. It it also needed to activate the Hephaestus Forge."
 	]
+	quest.6D68EF9352B93B19.quest_desc: [
+		"As a true apex predator of this blocky world, you have to mark your territory to assure your dominance over this particular domain (and protect it from others just as apex and just as predators as yourself), and that's where this handy new flag comes into play! "
+		"Place it on unclaimed soil to claim it for your team (or yourself if that's what you fancy). Works similar to the claim chunk FTB function, just without the actual map involved (since you haven't unlocked one yet)."
+	]
 	quest.6DD0AB27900F46E3.quest_desc: [""]
 	quest.6DF1AD7EA7689F68.quest_desc: [
 		"Note that &bpaltaeria fragments&r will float away once they're mined! Place something above to catch them, or come up with something more clever. "

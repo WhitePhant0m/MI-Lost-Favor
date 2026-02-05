@@ -16,7 +16,9 @@ BlockEvents.rightClicked("kubejs:chunk_flag", event =>{
         event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:true}))
         //chunkManager.getChunk($ChunkDimPos(event.player)).teamData.claim(event.player, $ChunkDimPos(event.player), true)
         $FTBChunksAPI.claimAsPlayer(event.player, event.level.dimension, blockChunkPos, false);
-        sendImmersiveMessage(Text.translatable("milf.flags.claimed"), event.getPlayer(), DEFAULT_CHUNK_CLAIM_NOTIFICATION_STYLE, event.server)     
+        let color = chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos)).teamData.team.coloredName.getStyle().getColor().getArgb()
+
+        sendImmersiveMessage(Text.translatable("milf.flags.claimed"), event.getPlayer(), Object.assign({}, DEFAULT_CHUNK_CLAIM_NOTIFICATION_STYLE, {background:{borderTopColor:color}}) , event.server)
         
     } else if (event.block.getProperties().enabled == "true"){
         if (chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos))){
@@ -42,7 +44,7 @@ BlockEvents.placed("kubejs:chunk_flag", event =>{
     }   
 
     $FTBChunksAPI.claimAsPlayer(event.player, event.level.dimension, blockChunkPos, false);
-    const color = chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos)).teamData.team.coloredName.getStyle().getColor().getArgb()
+    let color = chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos)).teamData.team.coloredName.getStyle().getColor().getArgb()
     //console.log(chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos)).teamData.team.coloredName.getStyle().getColor().getIntValue())
     sendImmersiveMessage(Text.translatable("milf.flags.claimed"), event.getPlayer(), Object.assign({}, DEFAULT_CHUNK_CLAIM_NOTIFICATION_STYLE, {background:{borderTopColor:color}}) , event.server)    
 })
