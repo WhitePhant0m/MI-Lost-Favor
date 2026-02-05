@@ -82,11 +82,15 @@ FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
 });
 
 function defaultMilestoneNotification(event, stage){
-    let player = event.player;
-    sendImmersiveMessageWithSubtext(Text.translate('milf.stage.something_changed'), Text.translate(`milf.stage.${stage}`), player, DEFAULT_MILESTONE_NOTIFICATION_STYLE, DEFAULT_MILESTONE_SUBTEXT_STYLE, event.server)
-    event.server.scheduleInTicks(DEFAULT_MILESTONE_SUBTEXT_STYLE.delay * 20, _ =>  {
-        event.server.runCommandSilent(`/playsound immersiveengineering:spark ambient ${player.profile.name} ${player.x} ${player.y} ${player.z}`)
-        player.tell(Text.translate(`milf.stage.${stage}`))
+    let teamManager = $FTBTeamsAPI.getManager()
+    let team = teamManager.getTeamForPlayer(event.getPlayer()).get()
+    let teamMembers = team.getOnlineMembers()
+    teamMembers.forEach(player => {
+        sendImmersiveMessageWithSubtext(Text.translate('milf.stage.something_changed'), Text.translate(`milf.stage.${stage}`), player, DEFAULT_MILESTONE_NOTIFICATION_STYLE, DEFAULT_MILESTONE_SUBTEXT_STYLE, event.server)
+        event.server.scheduleInTicks(DEFAULT_MILESTONE_SUBTEXT_STYLE.delay * 20, _ =>  {
+            event.server.runCommandSilent(`/playsound immersiveengineering:spark ambient ${player.profile.name} ${player.x} ${player.y} ${player.z}`)
+            player.tell(Text.translate(`milf.stage.${stage}`))
+        })
     })
 }
 
@@ -94,36 +98,31 @@ function addStagesToTeamMembers(event, stages){
 
     let teamManager = $FTBTeamsAPI.getManager()
 
-    let uuid = event.getPlayer().getUuid()
-    let playerList = event.server.getPlayerList()
-    let team = teamManager.getTeamForPlayerID(uuid).get()
-    let teamMembersUUIDS = team.getMembers()
+    let team = teamManager.getTeamForPlayer(event.getPlayer()).get()
+    let teamMembers = team.getOnlineMembers()
     stages = Array.isArray(stages) ? stages : [stages]
 
-    teamMembersUUIDS.forEach(memberUUID => {
-        let player = playerList.getPlayer(memberUUID)
-
+    teamMembers.forEach(member => {
+        //console.log(member);
         for (const stage of stages){
-            AStages.addStageToPlayer(stage, player)
+            AStages.addStageToPlayer(stage, member)
         }
-
-        //console.log(player)
-        //console.log(team.getName())
     })
 }
 
 PlayerEvents.loggedIn(event => {
     let teamManager = $FTBTeamsAPI.getManager()
-    let uuid = event.getPlayer().getUuid()
-    let playerList = event.server.getPlayerList()
-    let team = teamManager.getTeamForPlayerID(uuid).get()
-    let teamMembersUUIDS = team.getMembers()
+    //let uuid = event.getPlayer().getUuid()
+    //let playerList = event.server.getPlayerList()
+    //let team = teamManager.getTeamForPlayerID(uuid).get()
+    let team = teamManager.getTeamForPlayer(event.getPlayer()).get()
+    //let teamMembersUUIDS = team.getMembers()
+    let teamMembers = team.getOnlineMembers()
     let teamStagesSet = new Set()
 
-    teamMembersUUIDS.forEach(memberUUID => {
-        let player = playerList.getPlayer(memberUUID)
-        let playerStages = AStages.getStagesFromPlayer(player)
-
+    teamMembers.forEach(member => {
+        //let player = playerList.getPlayer(memberUUID)
+        let playerStages = AStages.getStagesFromPlayer(member)
         for (const stage of playerStages){
             teamStagesSet.add(stage)
         }
@@ -138,9 +137,9 @@ PlayerEvents.loggedIn(event => {
     teamStagesSet.forEach(stage =>{
         if (!playerStagesSet.has(stage)){
             AStages.addStageToPlayer(stage, event.getPlayer())
-            console.log("New stage: " + stage);
+            //console.log("New stage: " + stage);
         } else {
-            console.log("Stage: " + stage);
+            //console.log("Stage: " + stage);
         }
     })
 
