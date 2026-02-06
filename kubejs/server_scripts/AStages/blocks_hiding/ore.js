@@ -32,7 +32,6 @@ const ores = [
 
     { stage: "tier_2_access_ore", id: "ore_iridium", origin: "modern_industrialization:iridium_ore", replace: "minecraft:stone" },
     { stage: "tier_2_access_ore", id: "ore_raw_iridium", origin: "modern_industrialization:raw_iridium_block", replace: "minecraft:stone" },
-    { stage: "tier_2_access_ore", id: "ore_deepslate_iridium", origin: "modern_industrialization:deepslate_iridium_ore", replace: "minecraft:deepslate" },
     { stage: "tier_2_access_ore", id: "ore_platinum", origin: "modern_industrialization:platinum_ore", replace: "minecraft:stone" },
     { stage: "tier_2_access_ore", id: "ore_raw_platinum", origin: "modern_industrialization:raw_platinum_block", replace: "minecraft:stone" },
     { stage: "tier_2_access_ore", id: "ore_titanium", origin: "modern_industrialization:titanium_ore", replace: "minecraft:stone" },
@@ -42,22 +41,7 @@ const ores = [
     { stage: "tier_2_access_ore", id: "ore_raw_tungsten", origin: "modern_industrialization:raw_tungsten_block", replace: "minecraft:stone" },
     { stage: "tier_2_access_ore", id: "ore_uranium", origin: "modern_industrialization:uranium_ore", replace: "minecraft:stone" },
     { stage: "tier_2_access_ore", id: "ore_deepslate_uranium", origin: "modern_industrialization:deepslate_uranium_ore", replace: "minecraft:deepslate" },
-    { stage: "tier_2_access_ore", id: "ore_raw_uranium", origin: "modern_industrialization:raw_uranium_block", replace: "minecraft:stone" },
-    // {id: "ore_deepslate_tin", origin: "modern_industrialization:deepslate_tin_ore", replace: "minecraft:deepslate"},
-    // {id: "ore_tin", origin: "modern_industrialization:tin_ore", replace: "minecraft:stone"},
-    // {id: "ore_raw_tin", origin: "modern_industrialization:raw_tin_block", replace: "minecraft:stone"},
-    // {id: "ore_raw_iron", origin: "minecraft:raw_iron_block", replace: "minecraft:stone"},
-    // {id: "ore_deepslate_iron", origin: "minecraft:deepslate_iron_ore", replace: "minecraft:deepslate"},
-    // {id: "ore_iron", origin: "minecraft:iron_ore", replace: "minecraft:stone"},
-    // {id: "ore_deepslate_copper", origin: "minecraft:deepslate_copper_ore", replace: "minecraft:deepslate"},
-    // {id: "ore_raw_copper", origin: "minecraft:raw_copper_block", replace: "minecraft:stone"},
-    // {id: "ore_copper", origin: "minecraft:copper_ore", replace: "minecraft:stone"},
-    // {id: "ore_coal", origin: "minecraft:coal_ore", replace: "minecraft:stone"},
-    // {id: "ore_deepslate_coal", origin: "minecraft:deepslate_coal_ore", replace: "minecraft:deepslate"},
-    // {id: "ore_lignite_coal", origin: "modern_industrialization:lignite_coal_ore", replace: "minecraft:stone"},
-    // {id: "ore_deepslate_lignite_coal", origin: "modern_industrialization:deepslate_lignite_coal_ore", replace: "minecraft:deepslate"},
-    // {id: "ore_coal_block", origin: "minecraft:coal_block", replace: "minecraft:stone"},
-    // {id: "ore_lignite_coal_block", origin: "modern_industrialization:lignite_coal_block", replace: "minecraft:stone"},
+    { stage: "tier_2_access_ore", id: "ore_raw_uranium", origin: "modern_industrialization:raw_uranium_block", replace: "minecraft:stone" }
 ]
 ores.forEach(element => {
     AStages.addRestrictionForOre(`astages/ore_${element.id}`, element.stage, element.origin, element.replace)
