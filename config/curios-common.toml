@@ -1,0 +1,25 @@
+#List of slots to create or modify.
+#See documentation for syntax: https://docs.illusivesoulworks.com/curios/configuration#slot-configuration
+#
+slots = [
+"id=ring;size=0", 
+"id=charm;size=1", 
+"id=feet;size=0", 
+"id=shoulders;size=0",
+"id=bracelet;size=1",
+"id=bundle;size=0",
+"id=brooch;size=0",
+"id=hands;size=0",
+"id=back;size=0",
+"id=head;size=0",
+"id=pouch;size=0",
+"id=face;size=0",
+"id=necklace;size=1",
+"id=an_focus;size=0",
+"id=deep_learner;size=0",
+"id=body;size=0",
+"id=pin;size=0",
+"id=belt;size=0",
+"id=adv_pattern_encoder;size=0",
+"id=pigment_palette;size=0"
+]

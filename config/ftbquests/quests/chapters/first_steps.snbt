@@ -1176,6 +1176,18 @@
 					}
 					type: "item"
 				}
+				{
+					auto: "disabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_hands_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "679412F522B788D9"
+					team_reward: false
+					type: "custom"
+				}
 			]
 			shape: "none"
 			tasks: [{

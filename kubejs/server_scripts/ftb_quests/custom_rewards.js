@@ -39,7 +39,7 @@ FTBQuestsEvents.customReward('0E7A91DD8F37AF4D', event => {
 FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
     // let player = event.entity;
     // let player_name = player.profile.name
-    const stages = ["minecraft_mobs","variants_and_ventures_mobs"]
+    const stages = ["minecraft_mobs", "variants_and_ventures_mobs", "player_mobs_mobs"]
     addStagesToTeamMembers(event, stages)
     defaultMilestoneNotification(event, stages[0])
     // event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.minecraft_mobs`).string)
@@ -70,7 +70,7 @@ FTBQuestsEvents.customReward('3922C9ACA47723BA', event => {
 });
 
 // reward for flint and steel
-FTBQuestsEvents.customReward('7650FE6CA0220DA3',  event => {
+FTBQuestsEvents.customReward('7650FE6CA0220DA3', event => {
     const stage = "the_nether_access"
     addStagesToTeamMembers(event, stage)
 });
@@ -81,20 +81,41 @@ FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
     addStagesToTeamMembers(event, stage)
 });
 
-function defaultMilestoneNotification(event, stage){
+// ring, charm, feet, shoulders, bracelet, bundle, brooch, hands, back, head, pouch, face, 
+// necklace, an_focus, deep_learner, body, pin, belt, adv_pattern_encoder, pigment_palette
+const trinkets_slot_list_reward = [
+    { quest_id: '679412F522B788D9', trinket_slot: 'hands' },
+]
+
+trinkets_slot_list_reward.forEach(reward => {
+    FTBQuestsEvents.customReward(reward.quest_id, event => {
+        let pData = event.player.persistentData
+        let player = event.entity;
+        let player_name = player.profile.name
+        let pDataName = player_name + "_trinket_reward_" + reward.trinket_slot + "_" + reward.quest_id
+
+        if (!pData.getBoolean(pDataName)) {
+            pData.putBoolean(pDataName, true)
+            
+            event.server.runCommandSilent(`/curios add ${reward.trinket_slot} ${player_name} 1`)
+        }
+    });
+});
+
+function defaultMilestoneNotification(event, stage) {
     let teamManager = $FTBTeamsAPI.getManager()
     let team = teamManager.getTeamForPlayer(event.getPlayer()).get()
     let teamMembers = team.getOnlineMembers()
     teamMembers.forEach(player => {
         sendImmersiveMessageWithSubtext(Text.translate('milf.stage.something_changed'), Text.translate(`milf.stage.${stage}`), player, DEFAULT_MILESTONE_NOTIFICATION_STYLE, DEFAULT_MILESTONE_SUBTEXT_STYLE, event.server)
-        event.server.scheduleInTicks(DEFAULT_MILESTONE_SUBTEXT_STYLE.delay * 20, _ =>  {
+        event.server.scheduleInTicks(DEFAULT_MILESTONE_SUBTEXT_STYLE.delay * 20, _ => {
             event.server.runCommandSilent(`/playsound immersiveengineering:spark ambient ${player.profile.name} ${player.x} ${player.y} ${player.z}`)
             player.tell(Text.translate(`milf.stage.${stage}`))
         })
     })
 }
 
-function addStagesToTeamMembers(event, stages){
+function addStagesToTeamMembers(event, stages) {
 
     let teamManager = $FTBTeamsAPI.getManager()
 
@@ -104,7 +125,7 @@ function addStagesToTeamMembers(event, stages){
 
     teamMembers.forEach(member => {
         //console.log(member);
-        for (const stage of stages){
+        for (const stage of stages) {
             AStages.addStageToPlayer(stage, member)
         }
     })
@@ -123,19 +144,19 @@ PlayerEvents.loggedIn(event => {
     teamMembers.forEach(member => {
         //let player = playerList.getPlayer(memberUUID)
         let playerStages = AStages.getStagesFromPlayer(member)
-        for (const stage of playerStages){
+        for (const stage of playerStages) {
             teamStagesSet.add(stage)
         }
     })
     let playerStagesSet = new Set()
     let playerStagesList = AStages.getStagesFromPlayer(event.getPlayer())
 
-    for(const stage of playerStagesList){
+    for (const stage of playerStagesList) {
         playerStagesSet.add(stage)
     }
 
-    teamStagesSet.forEach(stage =>{
-        if (!playerStagesSet.has(stage)){
+    teamStagesSet.forEach(stage => {
+        if (!playerStagesSet.has(stage)) {
             AStages.addStageToPlayer(stage, event.getPlayer())
             //console.log("New stage: " + stage);
         } else {
