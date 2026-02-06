@@ -10,7 +10,6 @@ const grimoireofgaia_mobs = [
     {id:"behender", mob: "grimoireofgaia:behender"},
     {id:"bone_knight", mob: "grimoireofgaia:bone_knight"},
     {id:"cecaelia", mob: "grimoireofgaia:cecaelia"},
-    {id:"cecaelia", mob: "grimoireofgaia:cecaelia"},
     {id:"chest", mob: "grimoireofgaia:chest"},
     {id:"cobble_golem", mob: "grimoireofgaia:cobble_golem"},
     {id:"cobblestone_golem", mob: "grimoireofgaia:cobblestone_golem"},

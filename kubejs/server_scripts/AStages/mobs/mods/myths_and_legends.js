@@ -6,7 +6,6 @@ const mythsandlegends_mobs = [
     {id:"candle_keeper", mob: "mythsandlegends:candle_keeper"},
     {id:"condemned", mob: "mythsandlegends:condemned"},
     {id:"gargoyle", mob: "mythsandlegends:gargoyle"},
-    {id:"gargoyle", mob: "mythsandlegends:gargoyle"},
     {id:"karakondjul", mob: "mythsandlegends:karakondjul"},
     {id:"lampad", mob: "mythsandlegends:lampad"},
     {id:"possessed_armor", mob: "mythsandlegends:possessed_armor"},
