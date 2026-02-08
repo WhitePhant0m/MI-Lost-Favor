@@ -1750,7 +1750,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(hexerei:brooms)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
@@ -1762,7 +1762,7 @@
 				item: { count: 1, id: "hexerei:small_satchel" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 2.5d
 		}
 		{
@@ -1774,7 +1774,7 @@
 				item: { count: 1, id: "hexerei:medium_satchel" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 3.5d
 		}
 		{
@@ -1786,7 +1786,7 @@
 				item: { count: 1, id: "hexerei:ender_satchel" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 14.0d
 			y: 4.0d
 		}
 		{
@@ -1798,7 +1798,7 @@
 				item: { count: 1, id: "hexerei:replacer_satchel" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 12.0d
 			y: 4.0d
 		}
 		{
@@ -1810,7 +1810,7 @@
 				item: { count: 1, id: "hexerei:large_satchel" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 4.5d
 		}
 		{
@@ -1822,7 +1822,7 @@
 				item: { count: 1, id: "hexerei:gold_rings" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: -2.0d
 		}
 		{
@@ -1834,7 +1834,7 @@
 				item: { count: 1, id: "hexerei:broom_keychain" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: -1.0d
 		}
 		{
@@ -1846,7 +1846,7 @@
 				item: { count: 1, id: "hexerei:broom_netherite_tip" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: -2.0d
 		}
 		{
@@ -1858,7 +1858,7 @@
 				item: { count: 1, id: "hexerei:broom_waterproof_tip" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: -1.0d
 		}
 		{
@@ -1870,7 +1870,7 @@
 				item: { count: 1, id: "hexerei:broom_brush" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: 1.0d
 		}
 		{
@@ -1882,7 +1882,7 @@
 				item: { count: 1, id: "hexerei:herb_enhanced_broom_brush" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: 2.0d
 		}
 		{
@@ -1894,7 +1894,7 @@
 				item: { count: 1, id: "hexerei:moon_dust_brush" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 1.0d
 		}
 		{
@@ -1906,7 +1906,7 @@
 				item: { count: 1, id: "hexerei:broom_thruster_brush" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 1.5d
 		}
 		{
@@ -1918,7 +1918,7 @@
 				item: { count: 1, id: "hexerei:broom_seat" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: -2.5d
 		}
 		{
@@ -2151,7 +2151,7 @@
 				item: { count: 1, id: "hexerei:broom_whistle" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: -1.5d
 		}
 		{
@@ -2269,7 +2269,7 @@
 				item: { count: 1, id: "ars_hex:archwood_broom" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -2284,7 +2284,7 @@
 				item: { count: 1, id: "ars_hex:magebloom_brush" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 2.0d
 		}
 		{
@@ -2806,7 +2806,7 @@
 				item: { count: 1, id: "enchanted:flying_ointment" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 0.0d
 		}
 		{
@@ -3324,6 +3324,18 @@
 			}]
 			x: -4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["41F553F6D1E972F3"]
+			id: "054589529C185AE1"
+			shape: "heart"
+			tasks: [{
+				id: "7B31EBF696F8A459"
+				item: { count: 1, id: "crittersandcompanions:grappling_hook" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
 		}
 	]
 }

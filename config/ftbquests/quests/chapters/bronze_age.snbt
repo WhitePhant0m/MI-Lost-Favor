@@ -137,7 +137,6 @@
 		}
 		{
 			dependencies: [
-				"590167B593FE267A"
 				"13134EE8E1631EBB"
 				"5C3CDA0A5FE47019"
 			]
@@ -2874,7 +2873,7 @@
 				"590167B593FE267A"
 			]
 			id: "42B6798C0C2BD9E5"
-			shape: "pentagon"
+			shape: "octagon"
 			tasks: [{
 				id: "6891D41B11F8CDCA"
 				item: { count: 1, id: "modern_industrialization:bronze_boiler" }

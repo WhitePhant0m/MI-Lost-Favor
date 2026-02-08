@@ -12,7 +12,7 @@
 		image: "morered:item/placeholder"
 		rotation: 0.0d
 		width: 1.0d
-		x: 16.5d
+		x: 17.0d
 		y: 4.5d
 	}]
 	order_index: 0
@@ -27,7 +27,7 @@
 				item: { count: 1, id: "minecraft:gravel" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: -8.0d
 		}
 		{
@@ -39,7 +39,7 @@
 				item: { count: 1, id: "ytech:sharp_flint" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: -7.0d
 		}
 		{
@@ -52,7 +52,7 @@
 				item: { count: 1, id: "ytech:grass_fibers" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.0d
 			y: -8.0d
 		}
 		{
@@ -64,7 +64,7 @@
 				item: { count: 1, id: "ytech:grass_twine" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: -8.0d
 		}
 		{
@@ -76,7 +76,7 @@
 				item: { count: 1, id: "minecraft:stick" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.5d
 			y: -8.5d
 		}
 		{
@@ -89,7 +89,7 @@
 				item: { count: 1, id: "ytech:pebble" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.5d
 			y: -8.5d
 		}
 		{
@@ -101,7 +101,7 @@
 				item: { count: 1, id: "ytech:flint_axe" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -7.0d
 		}
 		{
@@ -113,7 +113,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: -7.0d
 		}
 		{
@@ -125,7 +125,7 @@
 				item: { count: 1, id: "ytech:crafting_workspace" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: -8.0d
 		}
 		{
@@ -211,7 +211,7 @@
 				item: { count: 1, id: "ytech:fire_pit" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: -9.0d
 		}
 		{
@@ -222,7 +222,7 @@
 				item: { count: 1, id: "ytech:antler_pickaxe" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -10.0d
 		}
 		{
@@ -301,7 +301,7 @@
 			id: "4085CB643DA032AF"
 			shape: "rsquare"
 			tasks: [{
-				count: 64L
+				count: 8L
 				id: "21C00B24B2880F30"
 				item: { count: 1, id: "ytech:unfired_brick" }
 				type: "item"
@@ -316,7 +316,7 @@
 			]
 			id: "173695E379285022"
 			tasks: [{
-				count: 64L
+				count: 8L
 				id: "258E2FB9E0FD9D4A"
 				item: { count: 1, id: "minecraft:brick" }
 				type: "item"
@@ -390,7 +390,7 @@
 				item: { count: 1, id: "ytech:flint_knife" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -9.0d
 		}
 		{
@@ -528,7 +528,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["3C6ECDD40EF2395A"]
+			dependencies: ["389A4181732368E0"]
 			id: "42D28603172F49D3"
 			shape: "diamond"
 			tasks: [
@@ -549,8 +549,8 @@
 					type: "observation"
 				}
 			]
-			x: 20.5d
-			y: -1.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -817,8 +817,8 @@
 					type: "item"
 				}
 			]
-			x: 18.5d
-			y: 2.5d
+			x: 19.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -839,13 +839,25 @@
 			dependencies: ["51E3EA7E70ECE842"]
 			id: "3E3ED1063839E3F3"
 			shape: "diamond"
-			tasks: [{
-				id: "15CFA1FEF0F230FF"
-				item: { count: 1, id: "ytech:bronze_shovel" }
-				type: "item"
-			}]
-			x: 18.0d
-			y: 2.0d
+			tasks: [
+				{
+					id: "15CFA1FEF0F230FF"
+					item: { count: 1, id: "ytech:bronze_shovel" }
+					type: "item"
+				}
+				{
+					id: "4FF12A1F04326A1D"
+					item: { count: 1, id: "ytech:bronze_axe" }
+					type: "item"
+				}
+				{
+					id: "0202EF348444FA8A"
+					item: { count: 1, id: "ytech:bronze_pickaxe" }
+					type: "item"
+				}
+			]
+			x: 18.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["51E3EA7E70ECE842"]
@@ -904,7 +916,7 @@
 				item: { count: 1, id: "ytech:bronze_spear" }
 				type: "item"
 			}]
-			x: 19.0d
+			x: 18.0d
 			y: 2.0d
 		}
 		{
@@ -916,7 +928,7 @@
 				item: { count: 1, id: "ytech:chlorite_bracelet" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: -5.5d
 		}
 		{
@@ -928,7 +940,7 @@
 				item: { count: 1, id: "ytech:lion_man" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.0d
 			y: -5.5d
 		}
 		{
@@ -940,7 +952,7 @@
 				item: { count: 1, id: "ytech:shell_beads" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: -5.5d
 		}
 		{
@@ -952,7 +964,7 @@
 				item: { count: 1, id: "ytech:venus_of_hohle_fels" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.5d
 			y: -5.0d
 		}
 		{
@@ -964,7 +976,7 @@
 				item: { count: 1, id: "ytech:wild_horse" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.5d
 			y: -5.0d
 		}
 		{
@@ -1293,7 +1305,7 @@
 				item: { count: 1, id: "minecraft:cobblestone" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -10.0d
 		}
 		{
@@ -1305,7 +1317,7 @@
 				item: { count: 1, id: "minecraft:flint" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.5d
 			y: -7.5d
 		}
 		{
@@ -1505,7 +1517,7 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
+			x: 14.5d
 			y: 4.0d
 		}
 		{
@@ -1599,7 +1611,7 @@
 				item: { count: 1, id: "ytech:antler" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: -9.0d
 		}
 		{
@@ -1622,7 +1634,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -6.0d
 		}
 		{
@@ -1634,13 +1646,13 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:wooden_slabs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -6.0d
 		}
 		{
-			dependencies: ["1714360882474479"]
+			dependencies: ["389A4181732368E0"]
 			id: "099181A23CEBA921"
-			shape: "hexagon"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "0F17E6C26316117B"
@@ -1659,8 +1671,8 @@
 					type: "observation"
 				}
 			]
-			x: 15.0d
-			y: 4.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["17A44FD7738F4496"]
@@ -1906,7 +1918,7 @@
 				item: { count: 1, id: "mechtrowel:mech_trowel" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 13.5d
 			y: 3.5d
 		}
 		{
@@ -1935,11 +1947,24 @@
 		}
 		{
 			id: "3A3202170DDE2113"
-			tasks: [{
-				id: "614D5F3434973A56"
-				item: { count: 1, id: "hexerei:pestle_and_mortar" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "614D5F3434973A56"
+					item: { count: 1, id: "hexerei:pestle_and_mortar" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "hexerei:pestle_and_mortar"
+					}
+					id: "4233DD6D52035B5C"
+					observe_type: 0
+					timer: 0L
+					to_observe: "hexerei:pestle_and_mortar"
+					type: "observation"
+				}
+			]
 			x: 9.5d
 			y: 0.0d
 		}
@@ -1964,7 +1989,7 @@
 				item: { count: 1, id: "kubejs:needle" }
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: 3.5d
 		}
 		{
@@ -2123,7 +2148,7 @@
 				item: { count: 1, id: "birdnest:birds_nest" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -8.0d
 		}
 		{
@@ -2277,6 +2302,18 @@
 			]
 			x: 16.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["6B8190158D968891"]
+			id: "586308E0B5B5E030"
+			shape: "diamond"
+			tasks: [{
+				id: "18C25A47F69169EB"
+				item: { count: 1, id: "minecraft:saddle" }
+				type: "item"
+			}]
+			x: 20.5d
+			y: -1.0d
 		}
 	]
 }

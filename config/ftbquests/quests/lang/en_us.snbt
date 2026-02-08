@@ -151,6 +151,11 @@
 		"{@pagebreak}"
 		"При распиловке бревен на доски дает соотношение 1 к 2, в отличие от соотношения 1 к 1 в верстаке."
 	]
+	quest.054589529C185AE1.quest_desc: [
+		"in skilled hands, a &lvery&r fast way to move around"
+		"{@pagebreak}"
+		"в умелых руках — &lочень&r быстрый способ передвижения"
+	]
 	quest.056505A2F0A197CB.quest_desc: [
 		"Improve your final pedestal!"
 		""
@@ -240,6 +245,7 @@
 		"{@pagebreak}"
 		"Чудо голосование добавило чудо летающих червей, а теперь их нет..."
 	]
+	quest.0BF78D040CA973B7.quest_desc: ["Each chimney provides +50° but the maximum number of Chimneys that can be installed is 4 Brick Chimneys and 4 reinforced Brick Chimneys."]
 	quest.0C1A0D4E0DF5CE9C.quest_desc: ["The Quantum Catcher can be used to capture and transport entities. To obtain it, you can combine Spawner Scrap and an Arcane Crystal Block in a Smithing Table"]
 	quest.0C6231CE410086A5.title: "Affrit Crusher"
 	quest.0C6CEA409B38B70C.quest_desc: [
@@ -436,6 +442,11 @@
 		"Одна &#FEECD6баночка&r вмещает только &#9BB8ED1 тип&r краски, палитра вмещает больше типов, но в ней &#FEECD6не так много места&r как в баночках!"
 	]
 	quest.16219C02EDE3F680.quest_desc: ["Получает сурс из сурс джаров и превращает его в жидкий сурс, далее с ним можно много приколов делать, например генератор сурс стоуна лава + ликвид сурс "]
+	quest.1664E9D5D87BDF33.quest_desc: [
+		"It has been noted that the book on this table consumes quite a lot of FPS, so keep that in mind!"
+		"{@pagebreak}"
+		"Было замечено что книга на этом столе потребляет достаточно много FPS, имейте ввиду!"
+	]
 	quest.16CEDB259696495B.quest_desc: [
 		"As with previous familiars and Possessed mobs, read about them in the book."
 		"{@pagebreak}"
@@ -688,6 +699,11 @@
 		"{@pagebreak}"
 		"Все крафты на пьедесталах можно запускать &#FEECD6кисточкой&r, либо же &#FEC6DFредстоун сигналом&r, кому как удобнее."
 	]
+	quest.22867AA942456658.quest_desc: [
+		"It has been noted that the book on this table consumes quite a lot of FPS, so keep that in mind!"
+		"{@pagebreak}"
+		"Было замечено что книга на этом столе потребляет достаточно много FPS, имейте ввиду!"
+	]
 	quest.22B7317BB018972A.quest_desc: [
 		"&4Separates&r resources into their components via fast motor go brrr."
 		"{@pagebreak}"
@@ -887,6 +903,11 @@
 		"Boss Checklist adds a list of all bosses from the modpack to the game, which can be accessed via the radial menu \"R.\""
 		""
 		"The menu displays all bosses from various mods, which you can mark as defeated, or they will be marked automatically if the mod is installed on the server. For each boss, you can view their model/image, mod name, drops, spawn conditions, and other additional info."
+	]
+	quest.2F8C776248EC39A4.quest_desc: [
+		"It has been noted that the book on this table consumes quite a lot of FPS, so keep that in mind!"
+		"{@pagebreak}"
+		"Было замечено что книга на этом столе потребляет достаточно много FPS, имейте ввиду!"
 	]
 	quest.2F9109DBADADEE10.quest_desc: ["Charms are a set of curios enchanted with strong protection magics. They range from allowing you to walk on Powdered Snow, to saving you from the Warden's powerful Sonic Boom. Each charm has a specific amount of charges available to protect you. Once the charges have been depleted, pop them into an Imbuement chamber to charge them back up."]
 	quest.2FBB9E95379CD74A.quest_desc: [
@@ -1570,6 +1591,11 @@
 		"{@pagebreak}"
 		"&#FEECD6Создайте&r свой первый &4ц&r&6в&r&eе&r&2т&r&bн&r&9о&r&5й&r &#CAE4C8саженец&r! "
 	]
+	quest.586308E0B5B5E030.quest_desc: [
+		"[ \"Keep in mind that the horses have been greatly \", { \"text\": \"improved\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B66EF3877866949\" } }, \"!\" ]"
+		"{@pagebreak}"
+		"[ \"Имейте ввиду что лошади сильно \", { \"text\": \"улучшены\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B66EF3877866949\" } }, \"!\" ]"
+	]
 	quest.5878E984A314D177.quest_desc: [
 		"In this &9structure&r, you have found a Hibernating Bulb, wonder if you can revive it."
 		"{@pagebreak}"
@@ -1993,6 +2019,11 @@
 		"{@pagebreak}"
 		"Однажды мне пришла идея смешать огненный порошок с ядом, они и по отдельности сильны, но вместе... ДА ЭТО ЧЁРТОВ ВЕДЬМИН ОГОНЬ!!!"
 	]
+	quest.6EDA8467F491B3D2.quest_desc: [
+		"Each chimney provides +50° but the maximum number of Chimneys that can be installed is 4 Brick Chimneys and 4 reinforced Brick Chimneys."
+		"{@pagebreak}"
+		"Каждый chimney даёт +50°, но максимум можно поставить 4 обычных chimney и 4 укрепленных chimney."
+	]
 	quest.6F85911351916741.quest_desc: ["An Edelwood Bucket can hold multiple fluids at once (4 buckets for water and 3buckets for lava). Can also hold stews and some small entities. The Edelwood Bucket will require the Permafrost enchantment in order to hold lava safely."]
 	quest.6FBA4C72D386837A.quest_desc: [
 		"A &#DEB3E0Fabrication Chest&r has four special slots for &#FEECD6Crafting Tablets&r."
@@ -2056,6 +2087,11 @@
 	]
 	quest.71721385710E5EB0.quest_desc: ["You can press \"C\" to crawl and say hi to all your worm-like friends!"]
 	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
+	quest.71DD1AE71C4E1B9F.quest_desc: [
+		"[ \"Don't forget to decorate your base with \", { \"text\": \"flags!\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6D68EF9352B93B19\" } }, \" \" ]"
+		"{@pagebreak}"
+		"[ \"не забудьте украсить свою базу \", { \"text\": \"флажками!\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6D68EF9352B93B19\" } }, \" \" ]"
+	]
 	quest.71E39806A0B7D79D.quest_desc: [
 		"You can read about most rituals in the guidebook!"
 		"{@pagebreak}"
@@ -2117,10 +2153,14 @@
 		"Dropped by deer. It slightly resembles a half-pickaxe if you look at it from a specific angle..."
 		""
 		"It is important that the deer model has antlers. There are deer without antlers!"
+		""
+		"Deer have been spotted in the vicinity of taiga, savannahs, forests, plains, and badlands!"
 		"{@pagebreak}"
 		"Выпадает из оленя. Если посмотреть под определенным углом, он немного напоминает половину кирки..."
 		""
 		"Важно, необходимо чтобы на модели оленя были рога, бывают олени без рогов!"
+		""
+		"Оленей замечали в окрестностях тайги, саванн, лесов, равнин и бесплодных земель!"
 	]
 	quest.745BE9DA293006D1.quest_desc: [
 		"Bundle's lil bro, look at it, so cute ❤"
