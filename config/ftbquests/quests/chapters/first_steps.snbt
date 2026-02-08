@@ -12,8 +12,8 @@
 		image: "morered:item/placeholder"
 		rotation: 0.0d
 		width: 1.0d
-		x: 16.0d
-		y: 5.0d
+		x: 16.5d
+		y: 4.5d
 	}]
 	order_index: 0
 	quest_links: [ ]
@@ -242,6 +242,9 @@
 		}
 		{
 			dependencies: ["19F4ECE3B256B396"]
+			icon: {
+				id: "minecraft:leather_helmet"
+			}
 			id: "3311BAD6D1B590DE"
 			shape: "none"
 			tasks: [
@@ -1502,8 +1505,8 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
-			y: 3.0d
+			x: 14.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1656,8 +1659,8 @@
 					type: "observation"
 				}
 			]
-			x: 14.5d
-			y: 4.5d
+			x: 15.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["17A44FD7738F4496"]
@@ -1903,8 +1906,8 @@
 				item: { count: 1, id: "mechtrowel:mech_trowel" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 4.0d
+			x: 13.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["19F4ECE3B256B396"]
@@ -1961,8 +1964,8 @@
 				item: { count: 1, id: "kubejs:needle" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: 4.0d
+			x: 16.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4692844BA629A00B"]
@@ -2124,16 +2127,16 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["1714360882474479"]
+			dependencies: ["51BC2EDB324F7ECD"]
 			id: "3CD90B1C85449343"
-			shape: "hexagon"
+			shape: "pentagon"
 			tasks: [{
 				id: "6C4884F275C1D2FA"
 				item: { count: 1, id: "gag:escape_rope" }
 				type: "item"
 			}]
 			x: 16.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6E680C846961BFE3"]
@@ -2178,6 +2181,102 @@
 			}]
 			x: 8.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["51BC2EDB324F7ECD"]
+			icon: {
+				id: "minecraft:chainmail_helmet"
+			}
+			id: "02A736963A8815BE"
+			shape: "pentagon"
+			tasks: [
+				{
+					id: "4140ECF05FBFF1EE"
+					item: { count: 1, id: "minecraft:chainmail_helmet" }
+					type: "item"
+				}
+				{
+					id: "203EDD0A361783CC"
+					item: { count: 1, id: "minecraft:chainmail_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2D0192EC9BC6453D"
+					item: { count: 1, id: "minecraft:chainmail_leggings" }
+					type: "item"
+				}
+				{
+					id: "2863BB3C4DF12FEC"
+					item: { count: 1, id: "minecraft:chainmail_boots" }
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51BC2EDB324F7ECD"]
+			icon: {
+				id: "minecraft:golden_helmet"
+			}
+			id: "118F1F53D1353A5B"
+			shape: "pentagon"
+			tasks: [
+				{
+					id: "18AC8F4243FAB57F"
+					item: { count: 1, id: "minecraft:golden_helmet" }
+					type: "item"
+				}
+				{
+					id: "05B8EC5FF5FC93A5"
+					item: { count: 1, id: "minecraft:golden_chestplate" }
+					type: "item"
+				}
+				{
+					id: "6B11A240FDAAD093"
+					item: { count: 1, id: "minecraft:golden_leggings" }
+					type: "item"
+				}
+				{
+					id: "373F2AEF23ADB71A"
+					item: { count: 1, id: "minecraft:golden_boots" }
+					type: "item"
+				}
+			]
+			x: 15.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51BC2EDB324F7ECD"]
+			icon: {
+				id: "minecraft:iron_helmet"
+			}
+			id: "52A28BD429FE5F3C"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1BDA14AC835ABD57"
+					item: { count: 1, id: "minecraft:iron_helmet" }
+					type: "item"
+				}
+				{
+					id: "532B769604581B18"
+					item: { count: 1, id: "minecraft:iron_chestplate" }
+					type: "item"
+				}
+				{
+					id: "54D061F43B23978F"
+					item: { count: 1, id: "minecraft:iron_leggings" }
+					type: "item"
+				}
+				{
+					id: "2BAD26AEEB8A1257"
+					item: { count: 1, id: "minecraft:iron_boots" }
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: -2.5d
 		}
 	]
 }

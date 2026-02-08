@@ -1511,6 +1511,7 @@
 		"{@pagebreak}"
 		"Перед улучшением алтаря убедитесь что у вас есть все блоки для его улучшения, некоторые необходимо создать в предыдущем алтаре!"
 	]
+	quest.516F8BD76AA0DE20.quest_subtitle: "Generates naturally in deserts and badlands"
 	quest.52DE3396BBC36B30.quest_desc: [
 		"Crystal Apothecary automatically collects gemstone clusters. Anything - &6Topaz&r, &5Amethyst&r, &bCertus Quartz&r etc. It doesn't even need to be loaded!"
 		"{@pagebreak}"
@@ -1655,6 +1656,11 @@
 	quest.5ECC8454B6CFAD89.quest_desc: [
 		"&lCandle&r"
 		"• +1x Recharge Rate"
+	]
+	quest.5ED184B7A33F6AE2.quest_desc: [
+		"The armor can be crafted using amarok pelt."
+		""
+		"Amarok can be found in Snowy Biomes only at Full Moon Phase."
 	]
 	quest.5EF6EA7CCBBC8A96.quest_desc: [""]
 	quest.5EF6EA7CCBBC8A96.quest_subtitle: "Moonshine!"
@@ -1859,6 +1865,7 @@
 		"{@pagebreak}"
 		"Медь, пригодная для плавки"
 	]
+	quest.68B64BBF3CC18E1C.quest_subtitle: "[Right-click] on a block to summon a loyal Gargoyle guardian."
 	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a poisoned wolf."]
 	quest.6902C00ECD02ACEA.quest_desc: [
 		"Mouse Tweaks replaces the standard RMB dragging mechanic, adds two new LMB dragging mechanics and an ability to quickly move items with the scroll wheel."
@@ -2193,9 +2200,11 @@
 	reward.2BD4B3CA5BEDBA19.title: "The End Access"
 	reward.3922C9ACA47723BA.title: "forbidden arcanus mobs"
 	reward.4002784F5F537B2D.title: "You can interact with everything made of iron!"
+	reward.4178A18CA2E5A74F.title: "New dangers"
 	reward.41C8354D477A8899.title: "Access to most ore"
 	reward.5BA06D58446F6FDD.title: "Unlimited supply of boxes"
-	reward.670CBE4973B6F390.title: "New interactions: chest looting, villagers, spawners, wandering trader"
+	reward.670CBE4973B6F390.title: "New interactions: chest looting, villagers, spawners, wandering trader and mobs"
+	reward.679412F522B788D9.title: "Trinket hands slot"
 	reward.74E5C7C4B8A33E55.title: "New monsters"
 	reward.7650FE6CA0220DA3.title: "Nether Access"
 	reward_table.77E899F6A1C7866E.title: "crystals"

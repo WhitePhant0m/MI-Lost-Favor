@@ -1499,7 +1499,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["11DDFA1D0917DD5B"]
@@ -1555,7 +1555,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["18173B817094E01A"]
@@ -1785,7 +1785,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["590167B593FE267A"]
@@ -1874,7 +1874,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["78A99BB9231CB18A"]
@@ -1886,7 +1886,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1913,7 +1913,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["144DEA3CFC2456E3"]
@@ -1925,7 +1925,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["18173B817094E01A"]
@@ -2773,7 +2773,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["144DEA3CFC2456E3"]
@@ -2812,7 +2812,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["00544E360CE5F0F6"]
@@ -4185,6 +4185,102 @@
 			}]
 			x: -18.5d
 			y: 6.0d
+		}
+		{
+			dependencies: ["2B815502453269AF"]
+			icon: {
+				id: "immersiveengineering:armor_steel_helmet"
+			}
+			id: "62C5B9FB001E26A5"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "693670185693A3F3"
+					item: { count: 1, id: "immersiveengineering:armor_steel_helmet" }
+					type: "item"
+				}
+				{
+					id: "5ED731C593ADE4A4"
+					item: { count: 1, id: "immersiveengineering:armor_steel_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0E95FB39DDCB822F"
+					item: { count: 1, id: "immersiveengineering:armor_steel_leggings" }
+					type: "item"
+				}
+				{
+					id: "5FC2E809E2AA3E82"
+					item: { count: 1, id: "immersiveengineering:armor_steel_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["002562156B0D8E9F"]
+			icon: {
+				id: "minecraft:diamond_helmet"
+			}
+			id: "6388891962FA9721"
+			shape: "pentagon"
+			tasks: [
+				{
+					id: "5DD6EC6A068452B0"
+					item: { count: 1, id: "minecraft:diamond_helmet" }
+					type: "item"
+				}
+				{
+					id: "7C10D85AFB44E07B"
+					item: { count: 1, id: "minecraft:diamond_chestplate" }
+					type: "item"
+				}
+				{
+					id: "4BED38C2BB29B8BD"
+					item: { count: 1, id: "minecraft:diamond_leggings" }
+					type: "item"
+				}
+				{
+					id: "5F56D9FF207A76A3"
+					item: { count: 1, id: "minecraft:diamond_boots" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4DD1404D1B9CA7F7"]
+			icon: {
+				id: "minecraft:netherite_helmet"
+			}
+			id: "5B7D16976F48364A"
+			shape: "pentagon"
+			tasks: [
+				{
+					id: "595CFBB6748ADD77"
+					item: { count: 1, id: "minecraft:netherite_helmet" }
+					type: "item"
+				}
+				{
+					id: "0B1E4AD84D28CB64"
+					item: { count: 1, id: "minecraft:netherite_chestplate" }
+					type: "item"
+				}
+				{
+					id: "19ADE4B87EAB74D6"
+					item: { count: 1, id: "minecraft:netherite_leggings" }
+					type: "item"
+				}
+				{
+					id: "2C013012C3D987B2"
+					item: { count: 1, id: "minecraft:netherite_boots" }
+					type: "item"
+				}
+			]
+			x: -19.5d
+			y: 7.0d
 		}
 	]
 }

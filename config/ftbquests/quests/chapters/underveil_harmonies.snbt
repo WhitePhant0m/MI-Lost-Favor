@@ -4103,13 +4103,8 @@
 			shape: "diamond"
 			tasks: [
 				{
-					id: "442829E5FC7C0B69"
-					item: { components: { "minecraft:enchantments": { levels: { "minecraft:fire_protection": 5 } } }, count: 1, id: "pastel:bedrock_boots" }
-					type: "item"
-				}
-				{
-					id: "25D91488C626B582"
-					item: { components: { "minecraft:enchantments": { levels: { "minecraft:blast_protection": 5 } } }, count: 1, id: "pastel:bedrock_leggings" }
+					id: "0B61E287335381CD"
+					item: { components: { "minecraft:enchantments": { levels: { "minecraft:projectile_protection": 5 } } }, count: 1, id: "pastel:bedrock_helmet" }
 					type: "item"
 				}
 				{
@@ -4118,8 +4113,13 @@
 					type: "item"
 				}
 				{
-					id: "0B61E287335381CD"
-					item: { components: { "minecraft:enchantments": { levels: { "minecraft:projectile_protection": 5 } } }, count: 1, id: "pastel:bedrock_helmet" }
+					id: "25D91488C626B582"
+					item: { components: { "minecraft:enchantments": { levels: { "minecraft:blast_protection": 5 } } }, count: 1, id: "pastel:bedrock_leggings" }
+					type: "item"
+				}
+				{
+					id: "442829E5FC7C0B69"
+					item: { components: { "minecraft:enchantments": { levels: { "minecraft:fire_protection": 5 } } }, count: 1, id: "pastel:bedrock_boots" }
 					type: "item"
 				}
 			]

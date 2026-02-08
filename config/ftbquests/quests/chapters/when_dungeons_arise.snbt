@@ -11,7 +11,74 @@
 	id: "231570DE6A7FCD52"
 	order_index: 2
 	progression_mode: "flexible"
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "4AB9F489DA828DFE"
+			linked_quest: "3311BAD6D1B590DE"
+			x: 5.0d
+			y: 25.5d
+		}
+		{
+			id: "018AC95FDF256807"
+			linked_quest: "02A736963A8815BE"
+			x: 6.0d
+			y: 25.5d
+		}
+		{
+			id: "05E9F1661B42FDD3"
+			linked_quest: "118F1F53D1353A5B"
+			x: 6.0d
+			y: 24.5d
+		}
+		{
+			id: "483F5A45FE3A2843"
+			linked_quest: "51C0876E925B1FF1"
+			x: 6.0d
+			y: 23.5d
+		}
+		{
+			id: "3F6EF53203FE88E1"
+			linked_quest: "52A28BD429FE5F3C"
+			x: 7.0d
+			y: 25.5d
+		}
+		{
+			id: "565D376C3C65A288"
+			linked_quest: "400E4777C506724C"
+			x: 8.0d
+			y: 24.5d
+		}
+		{
+			id: "68B7124395056383"
+			linked_quest: "62C5B9FB001E26A5"
+			x: 8.0d
+			y: 25.5d
+		}
+		{
+			id: "680E1E03F0AB7C71"
+			linked_quest: "6388891962FA9721"
+			x: 10.0d
+			y: 25.5d
+		}
+		{
+			id: "00872690310295CD"
+			linked_quest: "09D1CCA04959E0ED"
+			x: 10.0d
+			y: 23.5d
+		}
+		{
+			id: "623BFF8AD2B7A386"
+			linked_quest: "5B7D16976F48364A"
+			x: 11.0d
+			y: 25.5d
+		}
+		{
+			id: "408EB970203A9597"
+			linked_quest: "0987D26A943A7B60"
+			x: 16.0d
+			y: 25.5d
+		}
+	]
 	quests: [
 		{
 			icon: {
@@ -1317,7 +1384,7 @@
 				item: { count: 1, id: "cataclysm:mech_eye" }
 				type: "item"
 			}]
-			x: -24.0d
+			x: -23.0d
 			y: 8.5d
 		}
 		{
@@ -1327,7 +1394,7 @@
 				item: { count: 1, id: "cataclysm:flame_eye" }
 				type: "item"
 			}]
-			x: -23.0d
+			x: -25.0d
 			y: 8.5d
 		}
 		{
@@ -1337,7 +1404,7 @@
 				item: { count: 1, id: "cataclysm:void_eye" }
 				type: "item"
 			}]
-			x: -22.0d
+			x: -21.0d
 			y: 8.5d
 		}
 		{
@@ -1347,7 +1414,7 @@
 				item: { count: 1, id: "cataclysm:monstrous_eye" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -26.0d
 			y: 8.5d
 		}
 		{
@@ -1367,17 +1434,25 @@
 				item: { count: 1, id: "cataclysm:desert_eye" }
 				type: "item"
 			}]
-			x: -19.0d
+			x: -24.0d
 			y: 8.5d
 		}
 		{
 			id: "6714DBE6494ABB1D"
-			tasks: [{
-				id: "3A9E290115053BFA"
-				item: { count: 1, id: "cataclysm:cursed_eye" }
-				type: "item"
-			}]
-			x: -18.0d
+			tasks: [
+				{
+					id: "3A9E290115053BFA"
+					item: { count: 1, id: "cataclysm:cursed_eye" }
+					type: "item"
+				}
+				{
+					id: "5014B9B63F940F12"
+					item: { count: 1, id: "cataclysm:strange_key" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -22.0d
 			y: 8.5d
 		}
 		{
@@ -1389,19 +1464,6 @@
 			}]
 			x: -17.0d
 			y: 8.5d
-		}
-		{
-			id: "3C2C12DB2DD8AFE8"
-			tasks: [{
-				icon: {
-					id: "the_catamount:monstrous_skull"
-				}
-				id: "56051EC58E269FAB"
-				structure: "the_catamount:haunting_grounds"
-				type: "structure"
-			}]
-			x: -15.0d
-			y: 12.5d
 		}
 		{
 			id: "76753D335CE353A7"
@@ -2183,12 +2245,798 @@
 				type: "item"
 			}]
 			tasks: [{
+				count: 4L
 				id: "42D9E8E9A5017AF8"
 				item: { count: 1, id: "recall_potion:end_potion" }
 				type: "item"
 			}]
 			x: 5.0d
 			y: 15.5d
+		}
+		{
+			dependencies: ["2B815502453269AF"]
+			icon: {
+				id: "mythsandlegends:soulpiercer_helmet"
+			}
+			id: "4A4E96D0E4B7BCD2"
+			min_required_dependencies: 1
+			tasks: [
+				{
+					id: "1106D17377AA1ACF"
+					item: { count: 1, id: "mythsandlegends:soulpiercer_helmet" }
+					type: "item"
+				}
+				{
+					id: "076F474AE26A824E"
+					item: { count: 1, id: "mythsandlegends:soulpiercer_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0442077A96988B94"
+					item: { count: 1, id: "mythsandlegends:soulpiercer_leggings" }
+					type: "item"
+				}
+				{
+					id: "2B307448F48B08D4"
+					item: { count: 1, id: "mythsandlegends:soulpiercer_boots" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2B815502453269AF"]
+			icon: {
+				id: "mythsandlegends:frosthowl_helmet"
+			}
+			id: "5ED184B7A33F6AE2"
+			tasks: [
+				{
+					id: "7BD0B15FE28A1985"
+					item: { count: 1, id: "mythsandlegends:frosthowl_helmet" }
+					type: "item"
+				}
+				{
+					id: "3D326785821EC4BD"
+					item: { count: 1, id: "mythsandlegends:frosthowl_chestplate" }
+					type: "item"
+				}
+				{
+					id: "70DD97A154606CFE"
+					item: { count: 1, id: "mythsandlegends:frosthowl_leggings" }
+					type: "item"
+				}
+				{
+					id: "426DE16F4DBFA136"
+					item: { count: 1, id: "mythsandlegends:frosthowl_boots" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 24.5d
+		}
+		{
+			icon: {
+				id: "born_in_chaos_v1:nightmare_mantleofthe_night_helmet"
+			}
+			id: "3E562C053D920EC9"
+			tasks: [
+				{
+					id: "0626E7AB3C436032"
+					item: { count: 1, id: "born_in_chaos_v1:nightmare_mantleofthe_night_helmet" }
+					type: "item"
+				}
+				{
+					id: "748713FAD4137283"
+					item: { count: 1, id: "born_in_chaos_v1:nightmare_mantleofthe_night_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0A9241B66437345C"
+					item: { count: 1, id: "born_in_chaos_v1:nightmare_mantleofthe_night_leggings" }
+					type: "item"
+				}
+				{
+					id: "7FEA614C10F9C76F"
+					item: { count: 1, id: "born_in_chaos_v1:nightmare_mantleofthe_night_boots" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 24.5d
+		}
+		{
+			icon: {
+				id: "born_in_chaos_v1:spiny_shell_armor_helmet"
+			}
+			id: "197962274B3A4E4B"
+			tasks: [
+				{
+					id: "269DA6737651D427"
+					item: { count: 1, id: "born_in_chaos_v1:spiny_shell_armor_helmet" }
+					type: "item"
+				}
+				{
+					id: "31828EA7C20D95AF"
+					item: { count: 1, id: "born_in_chaos_v1:spiny_shell_armor_chestplate" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2B815502453269AF"]
+			icon: {
+				id: "mythsandlegends:ironshade_helmet"
+			}
+			id: "41277956E35DD5C0"
+			min_required_dependencies: 1
+			tasks: [
+				{
+					id: "1AAAB99B6697CA2D"
+					item: { count: 1, id: "mythsandlegends:ironshade_helmet" }
+					type: "item"
+				}
+				{
+					id: "5A45F03961F7050B"
+					item: { count: 1, id: "mythsandlegends:ironshade_chestplate" }
+					type: "item"
+				}
+				{
+					id: "1AD7E4EC002D7D85"
+					item: { count: 1, id: "mythsandlegends:ironshade_leggings" }
+					type: "item"
+				}
+				{
+					id: "626F60DD206C7C23"
+					item: { count: 1, id: "mythsandlegends:ironshade_boots" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["60F83295651EE0CF"]
+			icon: {
+				id: "monsterplus:crystal_helmet"
+			}
+			id: "2BCFC04BC77BC094"
+			tasks: [
+				{
+					id: "765322C586EC0D26"
+					item: { count: 1, id: "monsterplus:crystal_helmet" }
+					type: "item"
+				}
+				{
+					id: "6FBBCCDADF75881B"
+					item: { count: 1, id: "monsterplus:crystal_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0077E6CDF72D17D9"
+					item: { count: 1, id: "monsterplus:crystal_leggings" }
+					type: "item"
+				}
+				{
+					id: "1AD9C21580BDF624"
+					item: { count: 1, id: "monsterplus:crystal_boots" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 24.5d
+		}
+		{
+			dependencies: ["60F83295651EE0CF"]
+			icon: {
+				id: "monsterplus:dark_helmet"
+			}
+			id: "37F37E90A5872D5E"
+			tasks: [
+				{
+					id: "5FD90C48CD6A952C"
+					item: { count: 1, id: "monsterplus:dark_helmet" }
+					type: "item"
+				}
+				{
+					id: "0A28F1D5EBF3BDCE"
+					item: { count: 1, id: "monsterplus:dark_chestplate" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 24.5d
+		}
+		{
+			icon: {
+				id: "cataclysm:cursium_helmet"
+			}
+			id: "53BE8EFE44CBA5DB"
+			tasks: [
+				{
+					id: "0CA8CF3F032326D8"
+					item: { count: 1, id: "cataclysm:cursium_helmet" }
+					type: "item"
+				}
+				{
+					id: "6096EB8C44949B86"
+					item: { count: 1, id: "cataclysm:cursium_chestplate" }
+					type: "item"
+				}
+				{
+					id: "00E4758DAE26F41D"
+					item: { count: 1, id: "cataclysm:cursium_leggings" }
+					type: "item"
+				}
+				{
+					id: "239C85E8A7C97EF0"
+					item: { count: 1, id: "cataclysm:cursium_boots" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 25.5d
+		}
+		{
+			icon: {
+				id: "born_in_chaos_v1:dark_metal_armor_helmet"
+			}
+			id: "167AA4965BE76204"
+			tasks: [
+				{
+					id: "515AD78B67CEEC9F"
+					item: { count: 1, id: "born_in_chaos_v1:dark_metal_armor_helmet" }
+					type: "item"
+				}
+				{
+					id: "0DAF40EC76A0A8AE"
+					item: { count: 1, id: "born_in_chaos_v1:dark_metal_armor_chestplate" }
+					type: "item"
+				}
+				{
+					id: "32DE68BDE72E3F63"
+					item: { count: 1, id: "born_in_chaos_v1:dark_metal_armor_leggings" }
+					type: "item"
+				}
+				{
+					id: "56429DA05740C8D9"
+					item: { count: 1, id: "born_in_chaos_v1:dark_metal_armor_boots" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 25.5d
+		}
+		{
+			icon: {
+				id: "cataclysm:ignitium_helmet"
+			}
+			id: "38F8984A7A07B2E5"
+			tasks: [
+				{
+					id: "6D046EF32AC0F12B"
+					item: { count: 1, id: "cataclysm:ignitium_helmet" }
+					type: "item"
+				}
+				{
+					id: "01D1070D52A6E462"
+					item: { count: 1, id: "cataclysm:ignitium_chestplate" }
+					type: "item"
+				}
+				{
+					id: "297E9FFD275EF50D"
+					item: { count: 1, id: "cataclysm:ignitium_leggings" }
+					type: "item"
+				}
+				{
+					id: "5D0B62F462EA9669"
+					item: { count: 1, id: "cataclysm:ignitium_boots" }
+					type: "item"
+				}
+				{
+					id: "193E044F843FCC22"
+					item: { count: 1, id: "cataclysm:ignitium_elytra_chestplate" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 15.0d
+			y: 25.5d
+		}
+		{
+			icon: {
+				id: "cataclysm:bone_reptile_helmet"
+			}
+			id: "0EDF059611941D69"
+			tasks: [
+				{
+					id: "57CFDF711065BC67"
+					item: { count: 1, id: "cataclysm:bone_reptile_helmet" }
+					type: "item"
+				}
+				{
+					id: "1BF7BB816AF266B7"
+					item: { count: 1, id: "cataclysm:bone_reptile_chestplate" }
+					type: "item"
+				}
+			]
+			x: 15.0d
+			y: 24.5d
+		}
+		{
+			icon: {
+				id: "companions:crystallized_blood_helmet"
+			}
+			id: "195CF47A59D161BA"
+			tasks: [
+				{
+					id: "23ED268A713492F1"
+					item: { count: 1, id: "companions:crystallized_blood_helmet" }
+					type: "item"
+				}
+				{
+					id: "426CF5E387B5F26E"
+					item: { count: 1, id: "companions:crystallized_blood_chestplate" }
+					type: "item"
+				}
+				{
+					id: "4DE105826CE08647"
+					item: { count: 1, id: "companions:crystallized_blood_leggings" }
+					type: "item"
+				}
+				{
+					id: "5251CAB7142CE8CC"
+					item: { count: 1, id: "companions:crystallized_blood_boots" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 24.5d
+		}
+		{
+			icon: {
+				id: "companions:mage_hat"
+			}
+			id: "78E8737955BCE5C8"
+			tasks: [
+				{
+					id: "6A2E80405E098BBD"
+					item: { count: 1, id: "companions:mage_hat" }
+					type: "item"
+				}
+				{
+					id: "71AAF9D890BED93C"
+					item: { count: 1, id: "companions:mage_coat" }
+					type: "item"
+				}
+				{
+					id: "57F41B502325E4A6"
+					item: { count: 1, id: "companions:mage_leggings" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 23.5d
+		}
+		{
+			icon: {
+				id: "companions:holy_robe_mask"
+			}
+			id: "71B7E63741324ED6"
+			tasks: [
+				{
+					id: "359D3BF6B48096B1"
+					item: { count: 1, id: "companions:holy_robe_mask" }
+					type: "item"
+				}
+				{
+					id: "0C8872C182C7F7AD"
+					item: { count: 1, id: "companions:holy_robe_coat" }
+					type: "item"
+				}
+				{
+					id: "47AE10CA3FC85A6D"
+					item: { count: 1, id: "companions:holy_robe_leggings" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 23.5d
+		}
+		{
+			icon: {
+				id: "mythsandlegends:umbras_whisper"
+			}
+			id: "6D3B47471BD99C33"
+			tasks: [
+				{
+					entity: "mythsandlegends:black_charro"
+					id: "0514F1BACC0B03C2"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "57D3612A8A09240D"
+					item: { count: 1, id: "mythsandlegends:umbras_whisper" }
+					type: "item"
+				}
+			]
+			x: -38.5d
+			y: 32.5d
+		}
+		{
+			id: "516F8BD76AA0DE20"
+			tasks: [
+				{
+					id: "7C6E9E96C385C317"
+					structure: "mythsandlegends:graveyard"
+					type: "structure"
+				}
+				{
+					id: "189D631F1BD17F81"
+					item: { count: 1, id: "mythsandlegends:ethereal_flame" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6850FD67C45261BD"
+					item: { count: 1, id: "mythsandlegends:soulbinder_amulet" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -38.5d
+			y: 31.0d
+		}
+		{
+			icon: {
+				id: "mythsandlegends:gargoyle_torso"
+			}
+			id: "69876AF147198368"
+			tasks: [{
+				entity: "mythsandlegends:gargoyle"
+				id: "1AC2808B2EF33D44"
+				type: "kill"
+				value: 1L
+			}]
+			x: -37.0d
+			y: 31.0d
+		}
+		{
+			dependencies: ["779A518117286DCF"]
+			id: "0148634AF45EAFC7"
+			tasks: [{
+				id: "195AB09BA884CEE6"
+				item: { count: 1, id: "mythsandlegends:stone_sanctum_table" }
+				type: "item"
+			}]
+			x: -37.0d
+			y: 33.0d
+		}
+		{
+			dependencies: ["69876AF147198368"]
+			id: "779A518117286DCF"
+			tasks: [
+				{
+					id: "561BF4881CB7D0C4"
+					item: { count: 1, id: "mythsandlegends:gargoyle_head" }
+					type: "item"
+				}
+				{
+					id: "6A399F73C326274A"
+					item: { count: 1, id: "mythsandlegends:gargoyle_arm" }
+					type: "item"
+				}
+				{
+					id: "715E5521DA630D7B"
+					item: { count: 1, id: "mythsandlegends:gargoyle_leg" }
+					type: "item"
+				}
+				{
+					id: "5D89A0B3D13C0A8D"
+					item: { count: 1, id: "mythsandlegends:gargoyle_wing" }
+					type: "item"
+				}
+				{
+					id: "24B713FA4A2E8B21"
+					item: { count: 1, id: "mythsandlegends:gargoyle_torso" }
+					type: "item"
+				}
+				{
+					id: "1B8C12BD4D2E0FA1"
+					item: { count: 1, id: "mythsandlegends:cursed_core" }
+					type: "item"
+				}
+			]
+			x: -37.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["0148634AF45EAFC7"]
+			id: "68B64BBF3CC18E1C"
+			tasks: [{
+				id: "40E1751066AF43A4"
+				item: { count: 1, id: "mythsandlegends:gargoyle_effigy" }
+				type: "item"
+			}]
+			x: -37.0d
+			y: 34.0d
+		}
+		{
+			id: "7C4731645AB0DE12"
+			tasks: [{
+				id: "05DB2C15752E073D"
+				item: { count: 1, id: "mythsandlegends:necklace_of_torngarsuk" }
+				type: "item"
+			}]
+			x: -39.5d
+			y: 29.5d
+		}
+		{
+			id: "3BF24FABE89AF1E7"
+			tasks: [{
+				id: "4231BEC5201FCA0F"
+				item: { count: 1, id: "mythsandlegends:svarogs_ring" }
+				type: "item"
+			}]
+			x: -38.5d
+			y: 29.5d
+		}
+		{
+			id: "56A0663FAD014D6A"
+			tasks: [{
+				id: "3CF07E9D2866114A"
+				item: { count: 1, id: "mythsandlegends:antique_emblem" }
+				type: "item"
+			}]
+			x: -37.5d
+			y: 29.5d
+		}
+		{
+			id: "712111A10327D184"
+			tasks: [{
+				id: "67289D7DA7EFD1C5"
+				item: { count: 1, id: "mythsandlegends:fire_heart" }
+				type: "item"
+			}]
+			x: -36.5d
+			y: 29.5d
+		}
+		{
+			id: "7F3F2EF3588115FD"
+			tasks: [{
+				id: "75AC3173FBDEC7B4"
+				item: { count: 1, id: "mythsandlegends:stony_shield" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 28.5d
+		}
+		{
+			id: "447C3D2FD4A46D52"
+			tasks: [{
+				id: "41F72AB8CCBF5A3D"
+				item: { count: 1, id: "minecraft:shield" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 28.5d
+		}
+		{
+			id: "586E4E113D555270"
+			tasks: [{
+				id: "3C199C77A2F64375"
+				item: { count: 1, id: "cataclysm:azure_sea_shield" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 28.5d
+		}
+		{
+			id: "36FE21FD27173902"
+			tasks: [{
+				id: "35CB585708DB2A9E"
+				item: { count: 1, id: "endermanoverhaul:corrupted_shield" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 28.5d
+		}
+		{
+			id: "6CB0501561F1358F"
+			tasks: [{
+				id: "5FA1537D59925EB5"
+				item: { count: 1, id: "eternal_starlight:glacite_shield" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 28.5d
+		}
+		{
+			id: "2EAB289A2D70B5CD"
+			tasks: [{
+				id: "3D5497D883E45F6F"
+				item: { count: 1, id: "eternal_starlight:flowglaze_shield" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 28.5d
+		}
+		{
+			id: "79D9660EC456083B"
+			tasks: [{
+				id: "0D8AAE0CA4F9DD1C"
+				item: { count: 1, id: "immersiveengineering:shield" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 28.5d
+		}
+		{
+			icon: {
+				id: "fdbosses:geburah_trophy"
+			}
+			id: "3056F19142720FB0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					entity: "fdbosses:geburah"
+					id: "3C52CDB275D5B488"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "722692C4B7F49E17"
+					optional_task: true
+					structure: "fdbosses:geburah_arena"
+					type: "structure"
+				}
+			]
+			x: -12.5d
+			y: 12.5d
+		}
+		{
+			id: "6150509913ECC9FE"
+			tasks: [{
+				entity: "companions:sacred_pontiff"
+				id: "4CD8949B26F31FB9"
+				type: "kill"
+				value: 1L
+			}]
+			x: -10.5d
+			y: 20.0d
+		}
+		{
+			id: "35A57388AA3AB5F4"
+			tasks: [{
+				entity: "born_in_chaos_v1:lord_pumpkinhead_head"
+				id: "287098876F267E57"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["7A95DF56D410401A"]
+			id: "3F8BF0BE75DDA98D"
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				id: "642305242FD5E809"
+				type: "kill"
+				value: 1L
+			}]
+			x: -21.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["59E77C995CE50B23"]
+			id: "05E3FDBA060F1CA6"
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				id: "37F6F96E63E8E25F"
+				type: "kill"
+				value: 1L
+			}]
+			x: -26.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["392FA0DF0D35134D"]
+			id: "721E7D2A5FB776D7"
+			tasks: [
+				{
+					entity: "cataclysm:ignis"
+					id: "02FE44C7B3DC3195"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "16126DE256F62107"
+					item: { count: 1, id: "cataclysm:burning_ashes" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -25.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63A54EC92B8FB185"]
+			id: "1BE616ADE422AD7F"
+			tasks: [
+				{
+					entity: "cataclysm:the_harbinger"
+					id: "43007CFEB48AB1DA"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "75964BCD51A14471"
+					item: { count: 1, id: "minecraft:nether_star" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -23.0d
+			y: 7.0d
+		}
+		{
+			id: "226CB78407422242"
+			tasks: [{
+				id: "2B13C8075B578DEE"
+				item: { count: 1, id: "cataclysm:bloom_stone_pauldrons" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["30056F7174102B2E"]
+			id: "706043A4CD58FF1F"
+			tasks: [
+				{
+					entity: "cataclysm:ancient_remnant"
+					id: "18B81DFDFC4AB02E"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "21D37A511ADF36B0"
+					item: { count: 1, id: "cataclysm:necklace_of_the_desert" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -24.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6714DBE6494ABB1D"]
+			id: "6FB19077F74D8653"
+			tasks: [{
+				entity: "cataclysm:maledictus"
+				id: "226603B8D66BAD2E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -22.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0012C2CDB61C26A0"]
+			id: "1648F458FA2F75D9"
+			tasks: [{
+				id: "2EEF7659B91F7C78"
+				item: { count: 1, id: "cataclysm:abyssal_sacrifice" }
+				type: "item"
+			}]
+			x: -20.0d
+			y: 7.0d
 		}
 	]
 }

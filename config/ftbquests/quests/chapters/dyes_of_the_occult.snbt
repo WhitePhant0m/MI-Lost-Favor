@@ -2897,6 +2897,9 @@
 				"39EEE142E0F05A1A"
 				"77472788A5914815"
 			]
+			icon: {
+				id: "pastel:fetchling_helmet"
+			}
 			id: "400E4777C506724C"
 			shape: "octagon"
 			tasks: [

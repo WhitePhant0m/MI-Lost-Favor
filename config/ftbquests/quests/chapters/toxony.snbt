@@ -800,6 +800,14 @@
 				id: "toxony:alchemical_forge_part"
 			}
 			id: "60F83295651EE0CF"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "monsterplus:ancient_crystal"
+				}
+				id: "4178A18CA2E5A74F"
+				type: "custom"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [
@@ -1939,6 +1947,9 @@
 		}
 		{
 			dependencies: ["2F8F7B3250ADBBC2"]
+			icon: {
+				id: "hexerei:witch_helmet"
+			}
 			id: "09D1CCA04959E0ED"
 			tasks: [
 				{
@@ -3265,6 +3276,53 @@
 				type: "item"
 			}]
 			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			icon: {
+				id: "usefulslime:slime_helmet"
+			}
+			id: "51C0876E925B1FF1"
+			shape: "gear"
+			tasks: [
+				{
+					id: "6A3D52C0E596860F"
+					item: { count: 1, id: "usefulslime:slime_helmet" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "76AD25B97AEB9AC8"
+					item: { count: 1, id: "usefulslime:slime_chestplate" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "194BB818C10B6691"
+					item: { count: 1, id: "usefulslime:slime_leggings" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "427495B3C335A883"
+					item: { count: 1, id: "usefulslime:slime_boots" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7E470E4F941A62BB"]
+			id: "5116FA2F58C59929"
+			shape: "gear"
+			tasks: [{
+				id: "09564A9BE5B03CB0"
+				item: { count: 1, id: "usefulslime:slime_sling" }
+				type: "item"
+			}]
+			x: -4.0d
 			y: 0.0d
 		}
 	]
