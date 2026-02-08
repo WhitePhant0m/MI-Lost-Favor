@@ -821,15 +821,6 @@ ServerEvents.recipes(event => {
     //#region YTech
 
     workspace_recipe([
-            ['   ','   ','   '],
-            ['   ','   ','   '].layerSides("P").layerCorners("S"),
-            ['   ','   ','   '].layerAll("P").layerCentre("s")
-        ],
-        {P:'#minecraft:planks',S:"minecraft:stick",s:"#minecraft:wooden_slabs"},
-        'ytech:wooden_box', {} , "ytech:sharp_flint", true
-    )
-
-    workspace_recipe([
             ['   ','   ','   '].layerCentre("L").layerSides("T"),
             ['   ','   ','   '].layerCentre("L").layerSides("T"),
             ['   ','   ','   '].layerAll("P")
@@ -912,20 +903,37 @@ ServerEvents.recipes(event => {
 
     workspace_recipe([
             ['   ','   ','   '].layerAll("s"),
-            ['   ','   ','   '].layerAll("P").layerCentre("S").layerCorners("n"),
-            ['   ','   ','   '].layerAll("P").layerCorners("n")
-        ],
-        {P:'#minecraft:planks', s:"#minecraft:wooden_slabs", S:"ytech:wooden_box", n:"minecraft:iron_nugget"},
-        'minecraft:barrel', {} , "#c:hammers", true
-    )
-
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("s"),
             ['   ','   ','   '].layerCentre("S"),
             ['   ','   ','   '].layerAll("s").layerCentre("S").layerSides("C").layerFront("T").layerBack("T")
         ],
         {s:"#minecraft:wooden_slabs", S:"minecraft:stick", C:"minecraft:copper_ingot", T:"modern_industrialization:tin_ingot"},
         'ytech:potters_wheel', {} , "#c:hammers", true
+    )
+    workspace_recipe([
+            ['   ','   ','   '],
+            ['   ','   ','   '].layerAll("S").layerCentre(" "),
+            ['   ','   ','   '].layerAll("S")
+        ],
+        {S:"#minecraft:planks"},
+        'ytech:wooden_box', {} ,"ytech:sharp_flint"
+    )
+
+    workspace_recipe([
+            ['   ','   ','   '],
+            ['   ','   ','   '],
+            ['PPP','PSP','PPP']
+        ],
+        {P:'#minecraft:planks', S:"ytech:wooden_box"},
+        'minecraft:chest', {} , "#c:hammers"
+    )
+    
+    workspace_recipe([
+            ['   ','   ','   '],
+            ['   ','   ','   '],
+            ['PPP',' S ','PPP']
+        ],
+        {P:'#minecraft:planks', S:"ytech:wooden_box"},
+        'minecraft:barrel', {} , "#c:hammers"
     )
     //#endregion
 
