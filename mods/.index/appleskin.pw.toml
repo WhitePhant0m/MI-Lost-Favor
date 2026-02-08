@@ -1,16 +1,17 @@
-filename = 'appleskin-neoforge-mc1.21-3.0.7.jar'
+filename = 'appleskin-neoforge-mc1.21-3.0.8.jar'
 name = 'AppleSkin'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'appleskin-neoforge-mc1.21-3.0.8.jar'
 
 [download]
-hash = '8f76d97a7f61f8d61db6d84a83baf29a3bb56330'
+hash = '32be58815905e472016b6413175a27e6cbf05b90'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6616291
+file-id = 7517379
 project-id = 248787

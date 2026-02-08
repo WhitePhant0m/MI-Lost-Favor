@@ -1,16 +1,17 @@
-filename = 'Almanac-1.21.1-2-neoforge-1.5.0.jar'
+filename = 'Almanac-1.21.1-2-neoforge-1.5.2.jar'
 name = 'Almanac'
-side = 'server'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.1-Snapshot', '1.21.2', '1.21.2-Snapshot' ]
+x-prismlauncher-mc-versions = [ '1.21.1', '1.21.2' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Almanac-1.21.1-2-neoforge-1.5.2.jar'
 
 [download]
-hash = '8316c8bb645f5b9f44c66e0f6c4379fef61365d2'
+hash = 'd613dbc38ca5bcc718408db432385c2e67ac763f'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7150137
+file-id = 7489091
 project-id = 1115285

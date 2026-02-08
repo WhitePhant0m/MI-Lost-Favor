@@ -1,17 +1,17 @@
-filename = 'mechtrowel-1.2.9.jar'
+filename = 'mechtrowel-1.2.13.jar'
 name = 'Mech Trowel'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '[NeoForge] mechtrowel-1.2.9.jar'
+x-prismlauncher-version-number = '[NeoForge] mechtrowel-1.2.13.jar'
 
 [download]
-hash = '0c1dee44cafb4a609acb653f99381405a7700eb0'
+hash = '7ee9516509ced640e54f54c519aa5e3700fd81d4'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7386105
+file-id = 7535081
 project-id = 1288799
