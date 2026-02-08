@@ -3,22 +3,24 @@ ItemEvents.modifyTooltips(event => {
     
 
     let simpleShiftText = (args) => {
-        event.add(
-            args.item,
-            { shift: false },
-            Text.translate("kubejs.press_button").color("#f5c25b")
-                .append(Text.of("Shift ").bold().color("#ffb319"))
-                .append(Text.translate("kubejs.for_details").color("#f5c25b"))
-        )
+    const raw = args.items ?? args.item;
+    const items = Array.isArray(raw) ? raw : [raw];
 
-        event.add(
-            args.item,
-            { shift: true },
-            Text.translate(args.text).color(args.color)
-        )
-    };
+    const hint = Text.translate("kubejs.press_button")
+        .color("#f5c25b")
+        .append(Text.of("Shift ").bold().color("#ffb319"))
+        .append(Text.translate("kubejs.for_details").color("#f5c25b"));
+
+    const details = Text.translate(args.text).color(args.color);
+
+    items.forEach(item => {
+        event.add(item, { shift: false }, hint);
+        event.add(item, { shift: true }, details);
+    });
+};
 
     simpleShiftText({item: "kubejs:amber_visage", text: "kubejs.amber_visage.tooltip", color: "#5ca5e0"})
+    simpleShiftText({ items: ["minecraft:lantern", "minecraft:soul_lantern"],text: "kubejs.beltborne_lanterns.tooltip", color: "#43B747"});
 
     const seeds_tooltip = [
         'rusticdelight:cotton_seeds', 
