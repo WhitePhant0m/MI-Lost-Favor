@@ -15,6 +15,7 @@ const mythsandlegends_mobs = [
     {id:"warborn_aegis", mob: "mythsandlegends:warborn_aegis"},
     {id:"imp", mob: "mythsandlegends:imp"},
     {id:"imp_clone", mob: "mythsandlegends:imp_clone"},
+    {id:"amarok", mob: "mythsandlegends:amarok"},
 ]
 
 mobRestriction("mythsandlegends", mythsandlegends_mobs)

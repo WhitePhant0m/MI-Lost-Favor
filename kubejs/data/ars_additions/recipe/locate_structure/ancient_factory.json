@@ -3,39 +3,6 @@
 	"augments": [
 		{
 			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
-		},
-		{
-			"key": "cataclysm:mech_eye"
 		}
 	],
 	"id": "ars_additions:ancient_factory",

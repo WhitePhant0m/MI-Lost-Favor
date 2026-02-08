@@ -198,178 +198,65 @@ ServerEvents.recipes(event => {
         },
         {
             id: "cataclysm:acropolis", name: "acropolis", augments: [
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
-                { "key": "cataclysm:storm_eye" },
+                { "key": "cataclysm:storm_eye" }
             ]
         },
         {
             id: "cataclysm:ancient_factory", name: "ancient_factory", augments: [
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
-                { "key": "cataclysm:mech_eye" },
+                { "key": "cataclysm:mech_eye" }
             ]
         },
         {
             id: "cataclysm:cursed_pyramid", name: "cursed_pyramid", augments: [
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
-                { "key": "cataclysm:desert_eye" },
+                { "key": "cataclysm:desert_eye" }
             ]
         },
         {
             id: "cataclysm:frosted_prison", name: "frosted_prison", augments: [
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
-                { "key": "cataclysm:cursed_eye" },
+                { "key": "cataclysm:cursed_eye" }
             ]
         },
         {
             id: "cataclysm:sunken_city", name: "sunken_city", augments: [
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
-                { "key": "cataclysm:abyss_eye" },
+                { "key": "cataclysm:abyss_eye" }
             ]
         },
         {
             id: "cataclysm:burning_arena", name: "burning_arena", augments: [
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
-                { "key": "cataclysm:flame_eye" },
+                { "key": "cataclysm:flame_eye" }
             ]
         },
         {
             id: "cataclysm:soul_black_smith", name: "soul_black_smith", augments: [
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
-                { "key": "cataclysm:monstrous_eye" },
+                { "key": "cataclysm:monstrous_eye" }
             ]
         },
         {
             id: "cataclysm:ruined_citadel", name: "ruined_citadel", augments: [
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
-                { "key": "cataclysm:void_eye" },
+                { "key": "cataclysm:void_eye" }
             ]
         },
         {
             id: "fdbosses:chesed_arena", name: "chesed_arena", augments: [
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
-                { "key": "fdbosses:eye_of_chesed" },
+                { "key": "fdbosses:eye_of_chesed" }
             ]
         },
         {
             id: "fdbosses:geburah_arena", name: "geburah_arena", augments: [
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
-                { "key": "fdbosses:eye_of_geburah" },
+                { "key": "fdbosses:eye_of_geburah" }
             ]
         },
         {
             id: "fdbosses:malkuth_arena", name: "malkuth_arena", augments: [
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
-                { "key": "fdbosses:eye_of_malkuth" },
+                { "key": "fdbosses:eye_of_malkuth" }
+            ]
+        },
+        {
+            id: "mythsandlegends:graveyard", name: "myths_and_legends_graveyard", augments: [
+                { "key": "minecraft:skeleton_skull" },
+                { "key": "minecraft:wither_skeleton_skull" },
+                { "key": "minecraft:skeleton_skull" },
+                { "key": "minecraft:wither_skeleton_skull" }
             ]
         },
     ]
