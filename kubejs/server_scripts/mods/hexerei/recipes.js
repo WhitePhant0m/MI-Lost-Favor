@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-
     const remove_by_id = [
         "hexerei:leather_from_drying_rack",
         "hexerei:mixing_cauldron",
@@ -12,6 +11,15 @@ ServerEvents.recipes(event => {
     remove_by_id.forEach(id => {
         event.remove({ id: id })
     });
+
+    event.remove({ output: [
+        'hexerei:mahogany_woodcutter', 
+        'hexerei:willow_woodcutter', 
+        'hexerei:witch_hazel_woodcutter',
+        'hexerei:witch_hazel_planks',
+        'hexerei:willow_planks',
+        'hexerei:mahogany_planks',
+    ] });
 
 
     event.shaped("hexerei:mixing_cauldron", [
