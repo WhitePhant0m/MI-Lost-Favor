@@ -6,9 +6,6 @@ let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
 FTBQuestsEvents.customReward('0DC887212398806D', event => {
     let player = event.entity;
     let dimension = player.getLevel().getDimension()
-    //event.server.runCommandSilent(`/title ${player.profile.name} times 20 100 20`)
-    //event.server.runCommandSilent(`/title ${player.profile.name} title {"text":"Congratulations!!!","bold":true,"color":"#9A52FF"}`)
-    //event.server.runCommandSilent(`/title ${player.profile.name} subtitle ["",{"text":"You have passed into the ","bold":true},{"text":"Bronze Age","bold":true,"color":"#CD7F32"},{"text":"!","bold":true}]`)
     event.server.runCommandSilent(`/playsound immersiveengineering:birthday_party ambient ${player.profile.name} ${player.x} ${player.y} ${player.z}`)
     event.server.runCommandSilent(`/execute in ${dimension} run particle minecraft:witch ${player.x} ${player.y} ${player.z} 8 8 8 1 5000 normal`)
     sendImmersiveMessageWithSubtext(Text.translate('milf.stage.congratulations'), Text.translate('milf.stage.bronze_age'), event.player, DEFAULT_NEW_AGE_NOTIFICATION_STYLE, DEFAULT_NEW_AGE_SUBTEXT_STYLE, event.server)
@@ -22,9 +19,15 @@ FTBQuestsEvents.customReward('41C8354D477A8899', event => {
     const stage = "tier_1_access_ore"
     addStagesToTeamMembers(event, stage)
     defaultMilestoneNotification(event, stage)
-    //sendImmersiveMessageWithSubtext(Text.translate('milf.stage.something_changed'), Text.translate('milf.stage.bronze_age'), event.player, DEFAULT_NEW_AGE_NOTIFICATION_STYLE, DEFAULT_NEW_AGE_SUBTEXT_STYLE, event.server)
-    //event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}_ore`).string)
-    //player.tell(Text.translate(`milf.stage.${stage}`).color("#ac6cba").bold())
+});
+// reward for toxony:alchemical_forge_part (root whispering chapter)
+FTBQuestsEvents.customReward('4178A18CA2E5A74F', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+
+    const stage = "monsterplus_mobs"
+    addStagesToTeamMembers(event, stage)
+    defaultMilestoneNotification(event, stage)
 });
 
 // reward for Crafting Table
@@ -32,29 +35,20 @@ FTBQuestsEvents.customReward('0E7A91DD8F37AF4D', event => {
     const stage = "saturation"
     addStagesToTeamMembers(event, stage)
     defaultMilestoneNotification(event, stage)
-    //event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.${stage}`).string)
 });
 
 // reward for Iron Bloom
 FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
-    // let player = event.entity;
-    // let player_name = player.profile.name
-    const stages = ["minecraft_mobs", "variants_and_ventures_mobs", "player_mobs_mobs"]
+    const stages = ["minecraft_mobs", "variants_and_ventures_mobs", "player_mobs_mobs", "creeperoverhaul_mobs", "endermanoverhaul_mobs"]
     addStagesToTeamMembers(event, stages)
     defaultMilestoneNotification(event, stages[0])
-    // event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.minecraft_mobs`).string)
-    // player.tell(Text.translate(`milf.stage.minecraft_mobs`).color("#ac6cba").bold())
 });
 
 // reward for Steel Ingot
 FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
-    // let player = event.entity;
-    // let player_name = player.profile.name
-    const stages = ["early_items", "blast_furnace"]
+    const stages = ["early_items", "blast_furnace", "mythsandlegends_mobs"]
     addStagesToTeamMembers(event, stages)
     defaultMilestoneNotification(event, stages[0])
-    // event.server.runCommandSilent(`/immersivemessages sendcustom ${player_name} {color:"#ac6cba", bold:1, align:3, wave:1, obfuscate:1} 20  ` + Text.translate(`milf.stage.early_items`).string)
-    // player.tell(Text.translate(`milf.stage.early_items"`).color("#ac6cba").bold())
 });
 
 // reward for Iron Ingot
