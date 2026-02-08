@@ -5,18 +5,24 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.entity.interact.part2', 'Что-то магическое запрещает вам использовать ')
     event.add('milf.text.block.interact.part0', 'Странная магия мешает вам использовать этот блок')
     
-    event.add('milf.stage.tier_1_access_ore', 'Unlocked: quartz / debris / emerald / diamond / lapis / gold / antimony / bauxite / lead / monazite / nickel / salt ore')
+    event.add('milf.stage.congratulations', `${textAnimatorString("Поздравляем!!!", "wave", {a:0.25, w:0.25, f:0.5})}`)
+    event.add('milf.stage.something_changed', `${textAnimatorString("Вы чувствуете, что что-то изменилось...", "wiggle", {a:0.25, f:0.35})}`)
+
+    event.add('milf.stage.bronze_age', `Вы перешли в ${textAnimatorString("Бронзовую Эпоху", "grad", {from:"#CD7F32", to:"#F6BA7D", f:0.5})}`)
+    event.add('milf.stage.monsterplus_mobs', `Вы начали слышать ${textAnimatorString("крики мертвых", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} ночью`)
+    event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${textAnimatorString("новыми рудами", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
-    event.add('milf.stage.saturation', 'Вы потеряли насыщение!')
+    event.add('milf.stage.saturation', `Вы потеряли свое ${textAnimatorString("насыщение", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})}...`)
     event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
-    event.add('milf.stage.minecraft_mobs', 'Вы стали слышать странные звуки в ночи')
-    event.add('milf.stage.early_items', 'Вам доступна торговля с жителями, лутинг сундуков, взаимодействие с спавнерами и Плавильной печью')
+    event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${textAnimatorString("странные звуки", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} ночью...`)
+    event.add('milf.stage.early_items', `Этот мир больше не ${textAnimatorString("отвергает", "glitch")} вас...`)
     event.add('milf.how_to_seed.tooltip', 'Можно найти в птичьем гнезде')
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
     event.add('kubejs.press_button', 'Зажми ')
     event.add('kubejs.for_details', 'для подробной информации')
     event.add('kubejs.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
+    event.add('kubejs.beltborne_lanterns.tooltip', 'Нажмите B, держа фонарь — он прикрепится к твоему поясу. Нужно вернуть его в руки? Нажмите B снова.')
 
     event.add('milf.placers.notification1', `Не хватает места, чтобы ${textAnimatorString("это", "bounce")} разместить`)
     event.add('milf.placers.notification2', `Сначала необходимо выбрать ${textAnimatorString("правильное направление", "glitch")}`)

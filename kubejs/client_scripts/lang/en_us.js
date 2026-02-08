@@ -8,19 +8,14 @@ ClientEvents.lang('en_us', event => {
 
     event.add('milf.stage.congratulations', `${textAnimatorString("Congratulations!!!", "wave", {a:0.25, w:0.25, f:0.5})}`)
     event.add('milf.stage.something_changed', `${textAnimatorString("You feel like something has changed...", "wiggle", {a:0.25, f:0.35})}`)
-
     event.add('milf.stage.bronze_age', `You have passed into the ${textAnimatorString("Bronze Age", "grad", {from:"#CD7F32", to:"#F6BA7D", f:0.5})}`)
-
-    //event.add('milf.stage.tier_1_access_ore', 'Unlocked: quartz / debris / emerald / diamond / lapis / gold / antimony / bauxite / lead / monazite / nickel / salt ore')
+    event.add('milf.stage.monsterplus_mobs', `You began to hear the ${textAnimatorString("cries of the dead", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} at night`)
     event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${textAnimatorString("new ores", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.saturation', `You have lost your ${textAnimatorString("saturation", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})}...`)
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
-    event.add('milf.stage.minecraft_mobs', 'You started hearing strange noises at night')
-    event.add('milf.stage.early_items', 'You can trade with villagers, loot chests, and interact with spawners and blast furnace')
     event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest')
     event.add('milf.stage.minecraft_mobs', `You started hearing ${textAnimatorString("strange noises", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} at night...`)
-    //event.add('milf.stage.early_items', 'You can trade with villagers, loot chests, and interact with spawners and blast furnace')
     event.add('milf.stage.early_items', `This world no longer ${textAnimatorString("rejects", "glitch")} you...`)
 
     event.add('advancements.apotheosis.progression.ascent.criteria.nether_gauntlet', 'Kill Nether Gauntlet')
@@ -29,6 +24,7 @@ ClientEvents.lang('en_us', event => {
     event.add('kubejs.press_button', 'Hold ')
     event.add('kubejs.for_details', 'for more information')
     event.add('kubejs.amber_visage.tooltip', 'Used as fuel in the transmogrification table to change the appearance of items without modifying their behavior at all')
+    event.add('kubejs.beltborne_lanterns.tooltip', 'Press B while holding a lantern — it snaps onto your belt. Need it back in your hands? Press B again.')
 
 
     event.add('milf.placers.notification1', `Not enough space to place ${textAnimatorString("this", "bounce")} one`)
