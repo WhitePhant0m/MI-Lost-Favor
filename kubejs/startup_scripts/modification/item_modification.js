@@ -1,12 +1,54 @@
 ItemEvents.modification(event => {
+    
+    const ytech_tool_modification = [
+        { itemName: 'ytech:copper_pickaxe', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'pickaxe' },
+        { itemName: 'ytech:copper_shovel', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'shovel' },
+        { itemName: 'ytech:copper_axe', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'axe' },
+        { itemName: 'ytech:copper_hoe', maxDamage: 64, multiplier: 3, speed: 5.5, type: 'hoe' },
+        { itemName: 'ytech:lead_pickaxe', maxDamage: 32, multiplier: 3, speed: 3, type: 'pickaxe' },
+        { itemName: 'ytech:lead_shovel', maxDamage: 32, multiplier: 3, speed: 3, type: 'shovel' },
+        { itemName: 'ytech:lead_axe', maxDamage: 32, multiplier: 3, speed: 3, type: 'axe' },
+        { itemName: 'ytech:lead_hoe', maxDamage: 32, multiplier: 3, speed: 3, type: 'hoe' },
+        { itemName: 'ytech:tin_pickaxe', maxDamage: 28, multiplier: 3, speed: 16, type: 'pickaxe' },
+        { itemName: 'ytech:tin_shovel', maxDamage: 28, multiplier: 3, speed: 16, type: 'shovel' },
+        { itemName: 'ytech:tin_axe', maxDamage: 28, multiplier: 3, speed: 16, type: 'axe' },
+        { itemName: 'ytech:tin_hoe', maxDamage: 28, multiplier: 3, speed: 16, type: 'hoe' },
+        { itemName: 'ytech:bronze_pickaxe', maxDamage: 384, multiplier: 2, speed: 5.5, type: 'pickaxe' },
+        { itemName: 'ytech:bronze_shovel', maxDamage: 384, multiplier: 2, speed: 5.5, type: 'shovel' },
+        { itemName: 'ytech:bronze_axe', maxDamage: 384, multiplier: 2, speed: 5.5, type: 'axe' },
+        { itemName: 'ytech:bronze_hoe', maxDamage: 384, multiplier: 2, speed: 5.5, type: 'hoe' },
+        { itemName: 'minecraft:iron_pickaxe', maxDamage: 384, multiplier: 1, speed: 6, type: 'pickaxe' },
+    ];
 
-    const pickaxe_modification = [
-        { itemName: 'ytech:copper_pickaxe', maxDamage: 64, multiplier: 3, speed: 5.5 },
-        { itemName: 'ytech:lead_pickaxe', maxDamage: 32, multiplier: 3, speed: 3 },
-        { itemName: 'ytech:tin_pickaxe', maxDamage: 28, multiplier: 3, speed: 4 },
-        { itemName: 'ytech:bronze_pickaxe', maxDamage: 384, multiplier: 2, speed: 5.5 },
-        { itemName: 'minecraft:iron_pickaxe', maxDamage: 384, multiplier: 1, speed: 6 },
-    ]
+    const blockTagByType = {
+        pickaxe: "#minecraft:mineable/pickaxe",
+        shovel: "#minecraft:mineable/shovel",
+        axe: "#minecraft:mineable/axe",
+        hoe: "#minecraft:mineable/hoe"
+    };
+
+    ytech_tool_modification.forEach(tool => {
+        event.modify(tool.itemName, item => {
+            const tag = blockTagByType[tool.type] || "#minecraft:incorrect_for_iron_tool";
+
+            const correctRule = {
+                correctForDrops: true,
+                blocks: tag
+            };
+            if (tool.speed !== undefined) correctRule.speed = tool.speed;
+
+            item.setTool({
+                damagePerBlock: item.tool?.damagePerBlock || 1,
+                rules: [
+                    correctRule,
+                    { correctForDrops: false, blocks: "#minecraft:incorrect_for_iron_tool" }
+                ]
+            });
+
+            item.maxDamage = tool.maxDamage * tool.multiplier;
+        });
+    });
+
     const hammer_modification = [
         { itemName: 'ytech:stone_hammer', maxDamage: 70 },
         { itemName: 'ytech:bronze_hammer', maxDamage: 300 },
@@ -16,19 +58,6 @@ ItemEvents.modification(event => {
         { itemName: 'ytech:golden_hammer', maxDamage: 64 },
         { itemName: 'ytech:copper_hammer', maxDamage: 150 },
     ]
-
-    pickaxe_modification.forEach(pickaxe => {
-        event.modify(pickaxe.itemName, item => {
-            item.setTool({
-                damagePerBlock: item.tool?.damagePerBlock || 1,
-                rules: [
-                    { correctForDrops: true, speed: pickaxe.speed, blocks: "#minecraft:mineable/pickaxe" },
-                    { correctForDrops: false, blocks: "#minecraft:incorrect_for_iron_tool" },
-                ]
-            });
-            item.maxDamage = pickaxe.maxDamage * pickaxe.multiplier
-        })
-    });
 
     hammer_modification.forEach(hammer => {
         event.modify(hammer.itemName, item => {
