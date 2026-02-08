@@ -1,0 +1,17 @@
+filename = 'overlapless-1.21.1-1.0.3.jar'
+name = 'StructureOverlapless'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'overlapless-1.21.1-1.0.3'
+
+[download]
+hash = '1a215c241e5d25eeb3e0d7acbdc4e53d82ecacc2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7575467
+project-id = 1451998
