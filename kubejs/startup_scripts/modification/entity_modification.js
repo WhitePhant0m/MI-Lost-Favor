@@ -286,7 +286,7 @@ const rottencreatures_mobs = [
 // mowziesmobs_mobs
 // mythsandlegends_mobs
 // netherskeletons_mobs
-// rottencreatures_mobs
+//  rottencreatures_mobs
 EntityJSEvents.attributes(function (event) {
     let mobToMultipliers = {};
 
