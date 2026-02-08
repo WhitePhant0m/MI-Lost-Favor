@@ -40,7 +40,23 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.empty_box.gui3_1', `Attention, breaking this box will `)
     event.add('milf.empty_box.gui3_2', `${textAnimatorString("DESTROY", "glitch")}`)
     event.add('milf.empty_box.gui3_3', " it")
-    
+
+    event.add('milf.orbcraft.changes', `${textAnimatorString("Item altered!", "wave", {a:0.25, w:0.25, f:0.5})}`)
+    event.add('milf.orbcraft.added', `Orb energy infuses the item with `)
+    event.add('milf.orbcraft.removed', `${textAnimatorString(" REMOVED", "glitch")}`)
+    event.add('milf.orbcraft.absorbed', ` ${textAnimatorString("absorbed", "shake")} the strength of all the other enchantments!`)
+    event.add('milf.orbcraft.destroyed', `The orb's energy overwhelms the item, ${textAnimatorString("destroying", "glitch")} it utterly!`)
+    event.add('milf.orbcraft.overenchantment', `You feel ${textAnimatorString("otherworldly", "glitch")} power stemming from the item!`)
+    event.add('milf.orbcraft.maxed', ` already ${textAnimatorStringForEach("maxed out", "wave", {a:0.2})}`)
+    event.add('milf.orbcraft.error.type', `${textAnimatorString("Inappropriate", "glitch")} item for this type of orb!`)
+    event.add('milf.orbcraft.error.enchantments', `This item has no more ${textAnimatorString("applicable", "glitch")} enchantments!`)
+
+    event.add('milf.orbcraft.tooltip.transmutation_orb', `Adds up to ${textAnimatorString("two", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} enchantments to an item.`)
+    event.add('milf.orbcraft.tooltip.regal_orb', `Adds up to ${textAnimatorString("four", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})} enchantments to an item that already has at least two.`)
+    event.add('milf.orbcraft.tooltip.divine_orb', `Randomly alters all enchantments, either ${textAnimatorString("upgrading", "grad", {from:"#55E408", to:"#D3FFAA", f:0.5})} or ${textAnimatorString("downgrading", "grad", {from:"#E40808", to:"#FFAAAA", f:0.5})} each one.`)
+    event.add('milf.orbcraft.tooltip.orb_of_annulment', `Removes all but one random enchantment. That enchantment is ${textAnimatorStringForEach("maximized", "wave", {a:0.2})}. Can only be used on an item with 4 or more enchantments.`)
+    event.add('milf.orbcraft.tooltip.orb_of_corruption', `Either ${textAnimatorString("destroys", "glitch")} an item or ${textAnimatorString("overenchants", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} one of the level 3+ enchantments. Requires 10+ total levels of enchantments on an item. The chance of success is reduced for each enchantment beyond the 4th one.`)
+
     event.add('milf.text.dim.cant_visit', `${textAnimatorString("Some kind of magic is stopping you", "glitch")}`)
 
     event.add('milf.flags.claimed', "Chunk claimed")

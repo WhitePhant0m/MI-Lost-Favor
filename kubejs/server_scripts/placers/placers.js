@@ -48,7 +48,7 @@ BlockEvents.rightClicked(PLACER_BLOCKS, event => {
 
     if (event.player.mainHandItem.isEmpty()) {
         handlePreview(event, template, structureDataRelativeToPlayer, structureDataRelativeToBlock)
-    } else if (event.player.getMainHandItem().getTags().toString().includes("c:tools/wrench")){
+    } else if (event.player.getMainHandItem().getTags().toString().includes("milf:hammers")){
         handlePlacement(event, template, modName, structureDataRelativeToPlayer, structureDataRelativeToBlock)
     }
 })
@@ -311,10 +311,6 @@ function rotateVec3i(vec3i, angle){
 function Vec3itoBlockPos(/**@type {$Vec3i_} */ vec3i){
     return BlockPos(vec3i.x, vec3i.y, vec3i.z)
 }
-
-function textAnimatorString(text, type){
-    return `<${type}>${text}</${type}>`
-} 
 
 /* NetworkEvents.dataReceived("milf:immersiveMessageQueue", event => {
     console.log("hello");

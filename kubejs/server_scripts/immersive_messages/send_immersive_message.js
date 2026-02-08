@@ -20,6 +20,20 @@ const DEFAULT_WARN_NOTIFICATION_STYLE = {
     applyWarn:true
 }
 
+const DEFAULT_CENTER_MESSAGE_STYLE = (duration) => {
+    let style = {
+        anchor:"CENTER_CENTER",
+        fadeIn:0.2,
+        fadeOut:0.2,
+        background:true,
+        y:40,
+        queue:true,
+        duration:duration
+    }
+    return style
+}
+
+
 const DEFAULT_CHUNK_CLAIM_NOTIFICATION_STYLE = {
     anchor:"CENTER_CENTER",
     slideIn:"down",
@@ -146,3 +160,12 @@ function applyArgsToImmersiveMessage(message, args){
 PlayerEvents.loggedOut(event => {
     if(event.player.persistentData.immersiveMessageQueue) event.player.persistentData.remove("immersiveMessageQueue")
 })
+
+function textAnimatorString(text, type, params){
+    if (params){
+        return `<${type} ${Object.entries(params).reduce((acc, [param, value]) => `${acc}${param}=${value} `, '').trim()}>${text}</${type}>`
+
+    } else {
+        return `<${type}>${text}</${type}>`
+    }
+}

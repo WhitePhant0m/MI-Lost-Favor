@@ -1,4 +1,4 @@
-const trusted_players = ['Kisuny', 'saeta_'] //['Optimal', 'Kisuny', 'Sipep', 'error1number404']
+const trusted_players = ['Kisuny'] //['Optimal', 'Kisuny', 'Sipep', 'error1number404', 'saeta_']
 
 function list_all_inventory(player) {
     let items_str = ''

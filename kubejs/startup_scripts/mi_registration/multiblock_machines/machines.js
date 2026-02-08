@@ -449,6 +449,7 @@ function jsonDataForMITweaksMachine(machineName, mainCasing, mainOverlays){
     global.langCustomStuff[`rei_categories.modern_industrialization.${machineName}`] = Object.assign({ "en_us": idToName(machineName)})
     global.langCustomStuff[`rei_categories.mi_tweaks.${machineName}`] = Object.assign({ "en_us": idToName(machineName)})
     global.miTweaksTags.push(`mi_tweaks:${machineName}`)
+    return
     let blockstatesPath = `kubejs/assets/mi_tweaks/blockstates/${machineName}.json`;
     let blockstatesJson = {
         "variants": {

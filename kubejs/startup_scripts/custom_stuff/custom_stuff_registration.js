@@ -38,6 +38,13 @@ function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
         args.food.alwaysEdible && food.alwaysEdible()
         args.food.eaten && food.eaten(ctx => global.get(args.food.eaten).call(global.get(args.food.eaten), ctx))
     })
+    if (args.use){
+        item.use((level, player, hand) => args.use.conditions ? args.use.conditions(level, player, hand)  : true)
+        item.useDuration(itemStack => args.use.duration || 64)
+        item.useAnimation(args.use.animation || "bow")
+        item.finishUsing((itemstack, level, entity) => args.use.finishUsing ? args.use.finishUsing(itemstack, level, entity) : itemstack)
+        args.use.releaseUsing && item.releaseUsing((itemstack, level, entity, tick) =>args.use.releaseUsing(itemstack, level, entity, tick))
+    }
 }
 
 function createNewBlock(id, args) {
@@ -123,8 +130,16 @@ createNewItem('amber_visage', { stackSize: 16, rarity: 'epic', lang: { "en_us": 
 createNewItem('table_core', {rarity: 'rare', lang: { "en_us": "Table Core", "ru_ru": "Ядро Стола" } })
 createNewItem('onyx_table_core', {rarity: 'rare', lang: { "ru_ru": "Ониксовое Ядро Стола" } })
 createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Луннокаменное Ядро Стола" } })
+
 createNewItem('dev_pen')
 createNewItem('destruction_pen')
+
+createNewItem('divine_orb', {use:{animation:"block"}})
+createNewItem('transmutation_orb', {use:{animation:"block"}})
+createNewItem('orb_of_annulment', {use:{animation:"block"}})
+createNewItem('orb_of_corruption', {use:{animation:"block"}})
+createNewItem('regal_orb', {use:{animation:"block"}})
+
 //#endregion
 
 //#region Ytech stuff

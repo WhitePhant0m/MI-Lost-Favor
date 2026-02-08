@@ -47,4 +47,10 @@ ItemEvents.modifyTooltips(event => {
     seeds_tooltip.forEach(seed => {
         event.add(seed, Text.translate("milf.how_to_seed.tooltip").color("#43BD24"));
     });
+
+    const orbs = ['kubejs:orb_of_corruption', 'kubejs:transmutation_orb', 'kubejs:regal_orb', 'kubejs:orb_of_annulment', 'kubejs:divine_orb']
+
+    orbs.forEach(orb =>{
+        event.add(orb, Text.translatable(`milf.orbcraft.tooltip.${orb.slice(7)}`))
+    })
 })
