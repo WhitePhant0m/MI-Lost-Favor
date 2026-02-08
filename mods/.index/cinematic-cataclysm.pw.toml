@@ -1,16 +1,17 @@
-filename = 'cinematiccataclysm-1.0.0-1.21.1.jar'
+filename = 'cinematiccataclysm-1.0.1-1.21.1.jar'
 name = 'Cinematic Cataclysm'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = "cinematiccataclysm-1.0.1-1.21.1 (L_Ender's Cataclysm 3.17+)"
 
 [download]
-hash = '616e6dd592a75c96fda149ba4bf9a1596acc2ae0'
+hash = '5f9db3880861bbda3d22c98d130fad24924c2bac'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7302277
+file-id = 7550281
 project-id = 1399324

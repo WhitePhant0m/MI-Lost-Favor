@@ -21,5 +21,7 @@ slots = [
 "id=pin;size=0",
 "id=belt;size=0",
 "id=adv_pattern_encoder;size=0",
-"id=pigment_palette;size=0"
+"id=pigment_palette;size=0",
+"id=rings;size=0",
+"id=waist;size=0"
 ]
