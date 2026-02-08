@@ -55,6 +55,17 @@ ServerEvents.recipes(event => {
             'ytech:raw_galena_block',
             'ytech:raw_cassiterite_block',
             "ytech:crushed_iron",
+            'ytech:copper_helmet', 
+            'ytech:copper_chestplate', 
+            'ytech:copper_leggings', 
+            'ytech:copper_boots', 
+            'ytech:bronze_helmet', 
+            'ytech:bronze_chestplate', 
+            'ytech:bronze_leggings', 
+            'ytech:bronze_boots',
+            'ytech:bread_dough',
+            'ytech:flour',
+
 
         ]
     })
