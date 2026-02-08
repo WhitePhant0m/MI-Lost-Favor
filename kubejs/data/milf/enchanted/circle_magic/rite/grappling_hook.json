@@ -1,0 +1,26 @@
+{
+    "items": [
+        {
+            "id": "crittersandcompanions:silk",
+            "count": 4
+        },
+        {
+            "id": "enchanted:flying_ointment",
+            "count": 1
+        }
+    ],
+    "shapes": {
+        "enchanted:small_circle": "enchanted:ritual_chalk",
+        "enchanted:medium_circle": "enchanted:ritual_chalk"
+    },
+    "power": 1000,
+    "factory": {
+        "type": "enchanted:create_item",
+        "items": [
+            {
+                "id": "crittersandcompanions:grappling_hook",
+                "count": 1
+            }
+        ]
+    }
+}
