@@ -134,11 +134,14 @@ createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Лун�
 createNewItem('dev_pen')
 createNewItem('destruction_pen')
 
-createNewItem('divine_orb', {use:{animation:"block"}})
 createNewItem('transmutation_orb', {use:{animation:"block"}})
-createNewItem('orb_of_annulment', {use:{animation:"block"}})
-createNewItem('orb_of_corruption', {use:{animation:"block"}})
 createNewItem('regal_orb', {use:{animation:"block"}})
+createNewItem('divine_orb', {use:{animation:"block"}})
+createNewItem('orb_of_alchemy', {use:{animation:"block"}})
+createNewItem('orb_of_chance', {use:{animation:"block"}})
+createNewItem('orb_of_annulment', {use:{animation:"block"}})
+createNewItem('orb_of_regret', {use:{animation:"block"}})
+createNewItem('orb_of_corruption', {use:{animation:"block"}})
 
 //#endregion
 

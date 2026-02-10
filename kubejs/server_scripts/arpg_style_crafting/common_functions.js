@@ -5,24 +5,38 @@ let ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 let ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 let DisabledEnchantmentsConfig = Java.loadClass("me.pajic.enchantmentdisabler.ED").CONFIG
 
-function addRandomEnchantment(event, /**@type { $ItemStack }*/ item){
+const ORBCRAFT_BLACK_LIST = [  
+
+]
+
+const ORBCRAFT_CURSES = [
+    "vanishing_curse", "binding_curse"
+]
+
+const ENCHANTMENT_REGISTRY_KEY = ResourceKey.createRegistryKey(ResourceLocation.parse('minecraft:enchantment'))
+
+function addRandomEnchantment(event, /**@type { import("net.minecraft.world.item.ItemStack").$ItemStack$$Original}*/ item, level, /**@type { (id: import("net.minecraft.resources.ResourceLocation").$ResourceLocation, enchantment: import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original) => boolean}*/ additionalEnchantmentConditions){
+    /**@type {import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original[]}*/
     let applicableEnchantments = []
     /**@type {import("java.util.ArrayList").$ArrayList}*/
     let disabledEnchantments = DisabledEnchantmentsConfig.disabler.disabledEnchantments
 
-    const ENCHANTMENT_REGISTRY_KEY = ResourceKey.createRegistryKey(ResourceLocation.parse('minecraft:enchantment'))
-    const enchantmentRegistry = event.server.registryAccess().registryOrThrow(ENCHANTMENT_REGISTRY_KEY)
+    if(additionalEnchantmentConditions == undefined){
+        additionalEnchantmentConditions = () => { return true}
+    }
+
+    let enchantmentRegistry = event.server.registryAccess().registryOrThrow(ENCHANTMENT_REGISTRY_KEY)
+
     enchantmentRegistry.entrySet().forEach((entry) => {
         /**@type {import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original}*/ 
         let enchantment = entry.getValue()
         let id = entry.getKey()
-        
         let fullEnchantmentName =  `${id.getNamespace()}:${id.getPath()}`
         if(disabledEnchantments.stream().anyMatch(e => e == fullEnchantmentName)) {
             //console.log(`Disabled:${fullEnchantmentName}`);
             return
         }
-        if(id.getNamespace() == "minecraft" && item.canBeEnchantedWith(enchantment, "primary") && !item.enchantments.keySet().contains(enchantmentRegistry.wrapAsHolder(enchantment))){
+        if(id.getNamespace() == "minecraft" && item.canBeEnchantedWith(enchantment, "primary") && !item.enchantments.keySet().contains(enchantmentRegistry.wrapAsHolder(enchantment)) && additionalEnchantmentConditions(id, enchantment)){
             //vanillaEnchantments.set(id, enchantment)
             applicableEnchantments.push(enchantment)
         }
@@ -31,15 +45,84 @@ function addRandomEnchantment(event, /**@type { $ItemStack }*/ item){
     
     if(applicableEnchantments.length > 0){
         let randomEnchantment = applicableEnchantments[Math.floor(Math.random() * applicableEnchantments.length)]
-        item.enchant(randomEnchantment, 1)
+        let enchantmentLVL = 1
+        switch (level) {
+            case -1:
+                enchantmentLVL = randomEnchantment.getMaxLevel()
+                break;
+            case -2:
+                enchantmentLVL = randomEnchantment.getMaxLevel() + 2
+                break;
+            default:
+                enchantmentLVL = level || 1
+                break;
+        }
+        item.enchant(randomEnchantment, enchantmentLVL)
         //item.enchantments.enchantments["put(java.lang.Object,int)"](randomEnchantment, 1)
         orbChangesMessage(event)
         event.player.tell(Text.translatable("milf.orbcraft.added").append(randomEnchantment.description()))
     } else {
         sendImmersiveMessage(Text.translatable("milf.orbcraft.error.enchantments"), event.player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+        let orb = event.player.getMainHandItem()
+        orb.count++
         //event.player.tell("This item has no more applicable enchantments")
     }
-    event.player.inventoryMenu.broadcastFullState()
+}
+
+/**@returns { import("net.minecraft.resources.ResourceLocation").$ResourceLocation}*/
+function getEnchantmentIdFromRegistry(enchantmentRegistry, enchantment){
+    return enchantmentRegistry.getKey(enchantment)
+}
+
+function removeRandomEnchantment(event, /**@type { import("net.minecraft.world.item.ItemStack").$ItemStack$$Original}*/ item){
+    let {randomEnchantment} = getAllEnchantments(item)
+    item.enchantments.enchantments.remove(randomEnchantment)
+    orbChangesMessage(event)
+    event.player.tell(Text.translatable("milf.orbcraft.orb_removed").append(randomEnchantment.value().description()))
+}
+
+function applyOrb(/**@type { import("dev.latvian.mods.kubejs.item.ItemClickedKubeEvent").$ItemClickedKubeEvent$$Original}*/ event, /**@type { (item: import("net.minecraft.world.item.ItemStack").$ItemStack$$Original) => boolean }*/ condition, /**@type { (item: import("net.minecraft.world.item.ItemStack").$ItemStack$$Original) => boolean }*/ effect){
+    if (event.hand == "OFF_HAND") return false
+    if (event.level.isClientSide()) return false
+    let item = event.player.getOffHandItem()
+    if (item.id == "minecraft:air") return false
+    if(!item.enchantable && !item.enchanted) return false
+    if(ORBCRAFT_BLACK_LIST.includes(item.id)) return false
+
+    if(condition(item)){
+        if(effect(item) != false){
+            if(!event.player.creative){
+                let orb = event.player.getMainHandItem()
+                orb.count--
+            }
+        }
+        event.player.inventoryMenu.broadcastFullState()
+    } else {
+        sendImmersiveMessage(Text.translatable("milf.orbcraft.error.type"), event.player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+    }
+    return true
+
+}
+
+function getAllEnchantments(/**@type { import("net.minecraft.world.item.ItemStack").$ItemStack$$Original}*/ item){
+    return getAllEnchantmentsWithCondition(item, (enchantment, level) => {return true})
+}
+
+function getAllEnchantmentsWithCondition(/**@type { import("net.minecraft.world.item.ItemStack").$ItemStack$$Original}*/ item, /**@type { (enchantment: import("net.minecraft.core.Holder").$Holder<import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original>, level: number) => boolean}*/ condition){
+    /**@type {import("net.minecraft.core.Holder").$Holder<import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original>[]}*/
+    let enchantments = []
+    /** @type {Map<import("net.minecraft.core.Holder").$Holder<import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original>, number>} */
+    let enchantmentsMap = new Map()
+    let totalLVL = 0, totalCLVL = 0
+    item.enchantments.enchantments.forEach((enchantment, level) => {
+        if(condition(enchantment, level)){
+            enchantments.push(enchantment)
+            totalCLVL += level
+            enchantmentsMap.set(enchantment, level)
+        }
+        totalLVL += level
+    })
+    return { enchantments:enchantments, enchantmentsMap:enchantmentsMap, totalLVL:totalLVL, totalCLVL:totalCLVL, enchantmentsCount:enchantments.length, randomEnchantment:enchantments[Math.floor(Math.random() * enchantments.length)]}
 }
 
 function getExponentialSuccessChance(enchantmentsSize, baseSize, baseChance, decayFactor) {
@@ -52,6 +135,6 @@ function getExponentialSuccessChance(enchantmentsSize, baseSize, baseChance, dec
 }
 
 function orbChangesMessage(event){
-    sendImmersiveMessage(Text.translatable("milf.orbcraft.changes"), event.player, DEFAULT_CENTER_MESSAGE_STYLE(1.5), event.server)
-     event.player.tell(Text.translatable("milf.orbcraft.changes"))
+    //sendImmersiveMessage(Text.translatable("milf.orbcraft.changes"), event.player, DEFAULT_CENTER_MESSAGE_STYLE(1.5), event.server)
+    event.player.tell(Text.translatable("milf.orbcraft.changes"))
 }
