@@ -44,18 +44,24 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.orbcraft.changes', `${textAnimatorString("Item altered!", "wave", {a:0.25, w:0.25, f:0.5})}`)
     event.add('milf.orbcraft.added', `Orb energy infuses the item with `)
     event.add('milf.orbcraft.removed', `${textAnimatorString(" REMOVED", "glitch")}`)
+    event.add('milf.orbcraft.orb_removed', `Orb energy cleanses the item from `)
     event.add('milf.orbcraft.absorbed', ` ${textAnimatorString("absorbed", "shake")} the strength of all the other enchantments!`)
     event.add('milf.orbcraft.destroyed', `The orb's energy overwhelms the item, ${textAnimatorString("destroying", "glitch")} it utterly!`)
     event.add('milf.orbcraft.overenchantment', `You feel ${textAnimatorString("otherworldly", "glitch")} power stemming from the item!`)
     event.add('milf.orbcraft.maxed', ` already ${textAnimatorStringForEach("maxed out", "wave", {a:0.2})}`)
+
     event.add('milf.orbcraft.error.type', `${textAnimatorString("Inappropriate", "glitch")} item for this type of orb!`)
+    event.add('milf.orbcraft.error.no_valid', `Item has no more ${textAnimatorString("valid", "glitch")} enchantments to alter!`)
     event.add('milf.orbcraft.error.enchantments', `This item has no more ${textAnimatorString("applicable", "glitch")} enchantments!`)
 
     event.add('milf.orbcraft.tooltip.transmutation_orb', `Adds up to ${textAnimatorString("two", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} enchantments to an item.`)
     event.add('milf.orbcraft.tooltip.regal_orb', `Adds up to ${textAnimatorString("four", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})} enchantments to an item that already has at least two.`)
-    event.add('milf.orbcraft.tooltip.divine_orb', `Randomly alters all enchantments, either ${textAnimatorString("upgrading", "grad", {from:"#55E408", to:"#D3FFAA", f:0.5})} or ${textAnimatorString("downgrading", "grad", {from:"#E40808", to:"#FFAAAA", f:0.5})} each one.`)
-    event.add('milf.orbcraft.tooltip.orb_of_annulment', `Removes all but one random enchantment. That enchantment is ${textAnimatorStringForEach("maximized", "wave", {a:0.2})}. Can only be used on an item with 4 or more enchantments.`)
-    event.add('milf.orbcraft.tooltip.orb_of_corruption', `Either ${textAnimatorString("destroys", "glitch")} an item or ${textAnimatorString("overenchants", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} one of the level 3+ enchantments. Requires 10+ total levels of enchantments on an item. The chance of success is reduced for each enchantment beyond the 4th one.`)
+    event.add('milf.orbcraft.tooltip.divine_orb', `Randomly alters all enchantments, either ${textAnimatorString("upgrading", "grad", {from:"#55E408", to:"#D3FFAA", f:0.5})} or ${textAnimatorString("downgrading", "grad", {from:"#E40808", to:"#FFAAAA", f:0.5})} each one. Does not affect ${textAnimatorString("overenchanted", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} or ${textAnimatorString("curse-based", "glitch")} enchantments.`)
+    event.add('milf.orbcraft.tooltip.orb_of_regret', `Removes all but one random enchantment. That enchantment is ${textAnimatorStringForEach("maximized", "wave", {a:0.2})}. Can only be used on an item with 4 or more enchantments.`)
+    event.add('milf.orbcraft.tooltip.orb_of_chance', `Either ${textAnimatorString("destroys", "glitch")} an item or ${textAnimatorString("overenchants", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} one of the level 3+ enchantments. Requires 10+ total levels of enchantments on an item. The chance of success is reduced for each enchantment beyond the 4th one.`)
+    event.add('milf.orbcraft.tooltip.orb_of_annulment', `Removes one ${textAnimatorString("random", "shake")} enchantment from an item.`)
+    event.add('milf.orbcraft.tooltip.orb_of_corruption', `Adds one ${textAnimatorString("overenchanted", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} enchantment to an item, along with the ${textAnimatorString("Curse of Vanishing", "glitch")}. Can only be used on an item with 4 or more enchantments that doesn't already have the ${textAnimatorString("Curse of Vanishing", "glitch")}.`)
+    event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Absorbs up to 4 enchantments from an item, ${textAnimatorString("destroying", "glitch")} it in the process. Using the enchanted orb on another item ${textAnimatorString("replaces", "fade")} all of that item's enchantments with the absorbed ones.`)
 
     event.add('milf.text.dim.cant_visit', `${textAnimatorString("Some kind of magic is stopping you", "glitch")}`)
 
