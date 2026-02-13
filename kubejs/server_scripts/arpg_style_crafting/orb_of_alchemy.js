@@ -2,7 +2,7 @@ ItemEvents.firstRightClicked("kubejs:orb_of_alchemy", event => {
     if(!applyOrb(event,
         (item) => {
             let enchantmentsCount = item.enchantments.keySet().size()
-            return enchantmentsCount <= 4 || event.player.getMainHandItem().enchantments.keySet().size() != 0
+            return (enchantmentsCount <= 4 && enchantmentsCount != 0) || event.player.getMainHandItem().enchantments.keySet().size() != 0
         },
         (/**@type { import("net.minecraft.world.item.ItemStack").$ItemStack$$Original}*/ item) => { 
             let orb = event.player.getMainHandItem()
