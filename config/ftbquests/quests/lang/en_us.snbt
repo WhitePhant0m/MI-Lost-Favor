@@ -193,9 +193,9 @@
 	quest.07B3FFC9267C5861.quest_desc: ["The Maledictus Pact Enhancer allows the creation of cursed items in the Hephaestus Forge. It can be found as loot in bastion treasure rooms with a chance of 18% per chest. "]
 	quest.07E78D29C898CE55.quest_desc: ["Wild sheep"]
 	quest.08136C156A331A52.quest_desc: [
-		"A convenient way to store food. A lot of food. LMB to change mode, RMB with the closed one to change selected food, RMB with the opened one to eat said food"
+		"A convenient way to store food. A lot of food. LMB to change mode, RMB with the closed one to change selected food, RMB with the opened one to eat said food. To put food in the box, RMB on the box with food."
 		"{@pagebreak}"
-		"Удобный способ хранения еды. Многооо еды. ЛКМ для смены режима, ПКМ с закрытым режимом для смены выбранной еды, ПКМ с открытым режимом для употребления указанной еды."
+		"Удобный способ хранения еды. Многооо еды. ЛКМ для смены режима, ПКМ с закрытым режимом для смены выбранной еды, ПКМ с открытым режимом для употребления указанной еды. Чтобы засунуть еду в бокс намите едой на бокс ПКМ."
 	]
 	quest.083BEEC631645C14.quest_desc: ["Summon Possessed Bee with Ihagan's Enthrallment and kill"]
 	quest.085A58908A521A63.quest_desc: [
@@ -244,6 +244,17 @@
 		"No more phantoms!"
 		"{@pagebreak}"
 		"Чудо голосование добавило чудо летающих червей, а теперь их нет..."
+	]
+	quest.0BAE1463A33045D0.quest_desc: [
+		"In this modpack, there are &epings&r for players, set to &3button 5&r on the mouse by default. For convenience, we recommend setting pings to &3ALT&r or the middle mouse button (&3wheel&r)."
+		""
+		"You can also &lspecify a channel for pings&r, so you don't have to listen to the sounds of other people's pings. To do this, use the command &l&3/pingwheel channel NameChannel&r&r"
+		""
+		"{@pagebreak}"
+		"В модпаке существуют &eметки&r для игроков, по умолчанию эта кнопка «&3button 5&r» на мышке, рекомендуем поставить эту кнопку на &3ALT&r или же среднюю кнопку мышки(&3колесико&r), для удобства."
+		""
+		"Вы так же можете &lуказать свой канал для меток&r, чтобы &nне слушать звуки чужих меток&r командой &l&3/pingwheel channel НазваниеКанала&r&r"
+		"Либо же &l&3/pingwheel config&r&r и написать в меню &3channel&r нужный вам канал, удаление канала из меню ввода канала позволит вернуться в &oобщий канал&r. Так же командой &l&3/pingwheel config&r&r можно настроить другие функции мода, в случае надобности."
 	]
 	quest.0BF78D040CA973B7.quest_desc: ["Each chimney provides +50° but the maximum number of Chimneys that can be installed is 4 Brick Chimneys and 4 reinforced Brick Chimneys."]
 	quest.0C1A0D4E0DF5CE9C.quest_desc: ["The Quantum Catcher can be used to capture and transport entities. To obtain it, you can combine Spawner Scrap and an Arcane Crystal Block in a Smithing Table"]
@@ -818,13 +829,6 @@
 		"Рунический заряд - это простой способ пополнить запасы рунных плит после того, как они истощились в ходе ритуала."
 		""
 		"Так же используется для создания ведьмовских машин"
-	]
-	quest.2B3E3C5AB2CDFAB9.quest_desc: [
-		"Take control over your inventory. Sort. Move matching items. Throw all. Lock slots. Make gear sets! And much more."
-		""
-		"ALT + SHIFT + LMB to lock item slot"
-		""
-		"[ \"You can read more details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next\" } }, \".\" ]"
 	]
 	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain non-obvious mechanics. You can read them whenever, we won't judge."]
 	quest.2BB85B5FB4A2E943.quest_desc: [
@@ -2297,6 +2301,7 @@
 	task.23F8EEA1AF4C1A9B.title: "Rituals"
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
 	task.25CB2D0B385D4533.title: "Spectrum?"
+	task.2629C2F369B3D084.title: "&#A39FE1PINGS!!! THEY'RE EVERYWHERE"
 	task.2693375290DFFFE2.title: "<glitch>Hello World!"
 	task.26FC76B546262768.title: "Inventory Profiles Next"
 	task.271E89A2A2B37CFC.title: "Showcase Item"

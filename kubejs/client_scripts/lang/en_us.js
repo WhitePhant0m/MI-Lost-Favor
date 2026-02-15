@@ -4,6 +4,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.text.entity.interact.part1', ' doesn\'t want to interact with you')
     event.add('milf.text.entity.interact.part2', 'Something magical prevents you from using ')
     event.add('milf.text.block.interact.part0', 'Strange magic prevents you from using this block')
+    event.add('milf.text.first_join', `Welcome to the ${textAnimatorString("MI:Lost Favor", "grad", {from:"#848dcb", to:"#45509d", f:0.5})}!`)
     event.add('desc.immersiveengineering.info.mineral.nether_silt', 'Strange magic prevents you from using this block')
 
     event.add('milf.stage.congratulations', `${textAnimatorString("Congratulations!!!", "wave", {a:0.25, w:0.25, f:0.5})}`)

@@ -4,6 +4,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.text.entity.interact.part1', ' не хочет взаимодействовать с тобой')
     event.add('milf.text.entity.interact.part2', 'Что-то магическое запрещает вам использовать ')
     event.add('milf.text.block.interact.part0', 'Странная магия мешает вам использовать этот блок')
+    event.add('milf.text.first_join', `Добро пожаловать в ${textAnimatorString("MI:Lost Favor", "grad", {from:"#848dcb", to:"#45509d", f:0.5})}!`)
     
     event.add('milf.stage.congratulations', `${textAnimatorString("Поздравляем!!!", "wave", {a:0.25, w:0.25, f:0.5})}`)
     event.add('milf.stage.something_changed', `${textAnimatorString("Вы чувствуете, что что-то изменилось...", "wiggle", {a:0.25, f:0.35})}`)

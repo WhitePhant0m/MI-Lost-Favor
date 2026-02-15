@@ -262,22 +262,6 @@
 			dependencies: ["2B7F14733C000C22"]
 			icon: {
 				components: {
-					"ftbquests:icon": "ars_nouveau:item/ender_inventory"
-				}
-				id: "ftbquests:custom_icon"
-			}
-			id: "2B3E3C5AB2CDFAB9"
-			tasks: [{
-				id: "26FC76B546262768"
-				type: "checkmark"
-			}]
-			x: -3.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["2B7F14733C000C22"]
-			icon: {
-				components: {
 					"ftbquests:icon": "minecraft:textures/painting/fighters.png"
 				}
 				id: "ftbquests:custom_icon"
@@ -426,6 +410,22 @@
 			}]
 			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			icon: {
+				components: {
+					"ftbquests:icon": "clavis:textures/minigame/gear/center_warning_off.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "0BAE1463A33045D0"
+			tasks: [{
+				id: "2629C2F369B3D084"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 3.0d
 		}
 	]
 }
