@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         ],
         auxiliary: [
             {
-                "item": "enchanted:demonic_blood"
+                "item": "enchanted:spirit_of_otherwhere"
             },
             {
                 "item": "enchanted:attuned_stone_charged"
