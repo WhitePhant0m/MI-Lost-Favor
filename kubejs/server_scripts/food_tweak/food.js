@@ -34,7 +34,7 @@ ItemEvents.foodEaten(event => {
   try { player.persistentData.putInt(key, notifyCount) } catch (e) { player.persistentData[key] = notifyCount }
 
   
-  if (notifyCount === 2) {
+  if (notifyCount === 6) {
     player.potionEffects.add('minecraft:poison', 100, 0);
     player.attack(player, 1.0) 
     sendImmersiveMessage(
