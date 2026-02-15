@@ -8,20 +8,23 @@
   "type": "sophisticatedbackpacks:basic_backpack",
   "category": "misc",
   "key": {
-    "C": {
+    "A": {
       "item": "ars_elemental:curio_bag"
     },
-    "L": {
-      "tag": "c:leathers"
+    "B": {
+      "item": "enchanted:attuned_stone_charged"
     },
-    "S": {
-      "tag": "c:strings"
+    "C": {
+      "item": "hexerei:infused_fabric"
+    },
+    "D": {
+      "item": "paganbless:runic_charge"
     }
   },
   "pattern": [
-    "SLS",
-    "SCS",
-    "LLL"
+    "CDC",
+    "CAC",
+    "CBC"
   ],
   "result": {
     "count": 1,

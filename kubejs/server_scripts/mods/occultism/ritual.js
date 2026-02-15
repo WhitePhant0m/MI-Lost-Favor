@@ -2,18 +2,18 @@
 
 ServerEvents.recipes(event => {
 
-    event.remove({output: "ars_elemental:curio_bag"})
-    event.recipes.occultism.ritual(
-        'ars_elemental:curio_bag',
-        [
-            "hexerei:infused_fabric",
-            "hexerei:infused_fabric",
-            "hexerei:infused_fabric",
-            "enchanted:creeper_heart"
-        ],
-        '#c:chests',
-        'occultism:craft_foliot'
-    ).dummy("kubejs:craft_curio_bag")
+    
+    // event.recipes.occultism.ritual(
+    //     'ars_elemental:curio_bag',
+    //     [
+    //         "hexerei:infused_fabric",
+    //         "hexerei:infused_fabric",
+    //         "hexerei:infused_fabric",
+    //         "enchanted:creeper_heart"
+    //     ],
+    //     '#c:chests',
+    //     'occultism:craft_foliot'
+    // ).dummy("kubejs:craft_curio_bag")
 
     event.recipes.occultism.ritual(
         'kubejs:vial_of_liquid_confidence',
