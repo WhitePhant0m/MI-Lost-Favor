@@ -35,3 +35,4 @@ key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.grave.accent
 key_key.socialInteractions:key.keyboard.unknown
+key_key.mechtrowel.toggle_build_mode:key.keyboard.y
