@@ -70,6 +70,24 @@
 			x: -31.5d
 			y: 3.5d
 		}
+		{
+			id: "0D37CB6F4FDFBC3B"
+			linked_quest: "51C0876E925B1FF1"
+			x: -33.0d
+			y: 3.5d
+		}
+		{
+			id: "2964F8CE510521AD"
+			linked_quest: "5116FA2F58C59929"
+			x: -33.0d
+			y: 2.5d
+		}
+		{
+			id: "6BF2E6F06E9C7D3A"
+			linked_quest: "15054A95EDCBE33D"
+			x: -8.0d
+			y: 3.5d
+		}
 	]
 	quests: [
 		{
@@ -89,7 +107,7 @@
 				item: { components: { "shrink:scale": -1.0d }, count: 1, id: "shrink:shrinking_device" }
 				type: "item"
 			}]
-			x: -10.5d
+			x: -13.5d
 			y: 3.5d
 		}
 		{
@@ -100,46 +118,7 @@
 				item: { count: 1, id: "shrink:shrink_bottle" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "7ECB33B070C2F289"
-			tasks: [{
-				id: "102CF8F61CF37AC0"
-				item: { count: 1, id: "usefulslime:slime_sling" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "75DD3B55C9FD2279"
-			tasks: [
-				{
-					id: "07DDBD737880789B"
-					item: { count: 1, id: "usefulslime:slime_boots" }
-					type: "item"
-				}
-				{
-					id: "01AA7FA749861354"
-					item: { count: 1, id: "usefulslime:slime_leggings" }
-					type: "item"
-				}
-				{
-					id: "16F6BCC497E927F6"
-					item: { count: 1, id: "usefulslime:slime_chestplate" }
-					type: "item"
-				}
-				{
-					id: "24B39F3B01834307"
-					item: { count: 1, id: "usefulslime:slime_helmet" }
-					type: "item"
-				}
-			]
-			x: -6.0d
+			x: -13.5d
 			y: 2.5d
 		}
 		{
@@ -162,7 +141,7 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
+			x: -10.5d
 			y: 3.5d
 		}
 		{
@@ -180,7 +159,7 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: -9.0d
 			y: 3.5d
 		}
 		{
@@ -198,19 +177,8 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: -9.0d
 			y: 2.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "4DB5FC1D5811955A"
-			tasks: [{
-				id: "621E14B3EDA6F69A"
-				item: { components: { "gag:grains_of_time": 140 }, count: 1, id: "gag:time_sand_pouch" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -220,7 +188,7 @@
 				item: { count: 1, id: "tempad:tempad" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: -6.5d
 			y: 3.5d
 		}
 		{
@@ -243,7 +211,7 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
+			x: -5.0d
 			y: 3.5d
 		}
 		{
@@ -261,7 +229,7 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
+			x: -3.5d
 			y: 3.5d
 		}
 		{
@@ -272,7 +240,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(elevatorid:elevators)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: -2.0d
 			y: 3.5d
 		}
 		{
@@ -290,7 +258,7 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
+			x: -0.5d
 			y: 3.5d
 		}
 		{
@@ -301,7 +269,7 @@
 				item: { count: 1, id: "tesseract:tesseract" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 1.0d
 			y: 3.5d
 		}
 		{
@@ -340,7 +308,7 @@
 				item: { count: 1, id: "solcarrot:food_book" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 4.0d
 			y: 3.5d
 		}
 		{
@@ -351,7 +319,7 @@
 				item: { count: 1, id: "transmog:transmogrification_table" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 5.5d
 			y: 3.5d
 		}
 		{
@@ -362,7 +330,7 @@
 				item: { count: 1, id: "transmog:void_fragment" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 5.5d
 			y: 2.5d
 		}
 		{
@@ -373,7 +341,7 @@
 				item: { count: 1, id: "kubejs:amber_visage" }
 				type: "item"
 			}]
-			x: 13.5d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
@@ -384,7 +352,7 @@
 				item: { count: 1, id: "cursedearth:cursed_earth" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 7.0d
 			y: 3.5d
 		}
 		{
@@ -395,7 +363,7 @@
 				item: { count: 1, id: "cursedearth:blessed_earth" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 7.0d
 			y: 2.5d
 		}
 		{
@@ -406,7 +374,7 @@
 				item: { count: 1, id: "cursedearth:blessed_flower" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 7.0d
 			y: 1.5d
 		}
 		{
@@ -417,7 +385,7 @@
 				item: { count: 1, id: "chunkloaders:single_chunk_loader" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -12.0d
 			y: 3.5d
 		}
 		{
@@ -428,7 +396,7 @@
 				item: { count: 1, id: "chunkloaders:basic_chunk_loader" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -12.0d
 			y: 2.5d
 		}
 		{
@@ -439,7 +407,7 @@
 				item: { count: 1, id: "chunkloaders:advanced_chunk_loader" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -12.0d
 			y: 4.5d
 		}
 		{
@@ -450,7 +418,7 @@
 				item: { count: 1, id: "chunkloaders:ultimate_chunk_loader" }
 				type: "item"
 			}]
-			x: -7.5d
+			x: -12.0d
 			y: 5.5d
 		}
 		{
@@ -460,8 +428,8 @@
 				item: { count: 1, id: "angelring:angel_ring" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 11.5d
+			x: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -471,7 +439,7 @@
 				item: { count: 1, id: "hostilenetworks:sim_chamber" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -15.0d
 			y: 3.5d
 		}
 		{

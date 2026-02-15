@@ -645,15 +645,34 @@
 				"5477C20059FD00FF"
 			]
 			id: "1714360882474479"
-			rewards: [{
-				auto: "invisible"
-				icon: {
-					id: "minecraft:iron_ingot"
+			rewards: [
+				{
+					auto: "invisible"
+					icon: {
+						id: "minecraft:iron_ingot"
+					}
+					id: "4002784F5F537B2D"
+					team_reward: true
+					type: "custom"
 				}
-				id: "4002784F5F537B2D"
-				team_reward: true
-				type: "custom"
-			}]
+				{
+					id: "31A9EC6E57164F31"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_iron"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "52127FC921E17D99"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_overworld"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "67DF4C19348071B9"
 				item: { count: 1, id: "minecraft:iron_ingot" }
@@ -668,14 +687,24 @@
 				"5477C20059FD00FF"
 			]
 			id: "51BC2EDB324F7ECD"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					id: "modern_industrialization:bronze_boiler"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						id: "modern_industrialization:bronze_boiler"
+					}
+					id: "0DC887212398806D"
+					type: "custom"
 				}
-				id: "0DC887212398806D"
-				type: "custom"
-			}]
+				{
+					id: "64F3D2DDE2035FA8"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_overworld"
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 2.0d
 			tasks: [
@@ -775,6 +804,27 @@
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
 			id: "51E3EA7E70ECE842"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "justdirethings:textures/gui/buttons/oreminer.png"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "7EF0A7794783232F"
+					type: "custom"
+				}
+				{
+					id: "6B5DF3FB2FA5BC3F"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_overworld"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "0B33E65E35652780"
@@ -862,6 +912,14 @@
 		{
 			dependencies: ["51E3EA7E70ECE842"]
 			id: "76EE22339E6D11BC"
+			rewards: [{
+				id: "7A77F600DE5A7633"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_iron"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "705888F8B837B52E"
@@ -886,6 +944,14 @@
 		{
 			dependencies: ["51E3EA7E70ECE842"]
 			id: "29E7DCA048748C62"
+			rewards: [{
+				id: "478F3F3A2D43B838"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_iron"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "4BBC77DC47B56BC9"
@@ -1541,6 +1607,24 @@
 				"6B8190158D968891"
 			]
 			id: "71CC5CD5F8018F02"
+			rewards: [
+				{
+					id: "4E8098BB6941E506"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_iron"
+					}
+					type: "item"
+				}
+				{
+					id: "5684482B65DA7764"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_hat"
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.0d
 			tasks: [{
@@ -1888,6 +1972,14 @@
 		{
 			dependencies: ["183336DC1AF8137B"]
 			id: "0259E6A6CC9E6B34"
+			rewards: [{
+				id: "0926F5D9FE0377CB"
+				item: {
+					count: 1
+					id: "grimoireofgaia:bag_book"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "37F18FD16964F222"
@@ -1900,6 +1992,14 @@
 		{
 			dependencies: ["183336DC1AF8137B"]
 			id: "6443864802D04B07"
+			rewards: [{
+				id: "282DF442C7B67461"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_overworld"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "49C1237D393FF8C9"
@@ -2117,6 +2217,14 @@
 		{
 			dependencies: ["7C002DE8DFC45FD9"]
 			id: "5C6F64DF2FA17AA2"
+			rewards: [{
+				id: "71A3FEB265C467F7"
+				item: {
+					count: 1
+					id: "grimoireofgaia:bag_record"
+				}
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "47B8EBF174217BF3"
@@ -2154,6 +2262,14 @@
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
 			id: "3CD90B1C85449343"
+			rewards: [{
+				id: "3D256F37B56F02FE"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_overworld"
+				}
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "6C4884F275C1D2FA"
@@ -2213,6 +2329,14 @@
 				id: "minecraft:chainmail_helmet"
 			}
 			id: "02A736963A8815BE"
+			rewards: [{
+				id: "543ECFD406DCFF3C"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_overworld"
+				}
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [
 				{
@@ -2245,6 +2369,14 @@
 				id: "minecraft:golden_helmet"
 			}
 			id: "118F1F53D1353A5B"
+			rewards: [{
+				id: "012AC807A9656470"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_overworld"
+				}
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [
 				{
@@ -2277,6 +2409,14 @@
 				id: "minecraft:iron_helmet"
 			}
 			id: "52A28BD429FE5F3C"
+			rewards: [{
+				id: "2D8267C990341D71"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_iron"
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -2306,6 +2446,24 @@
 		{
 			dependencies: ["6B8190158D968891"]
 			id: "586308E0B5B5E030"
+			rewards: [
+				{
+					id: "3E1FE1D6DA4FDDDF"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_iron"
+					}
+					type: "item"
+				}
+				{
+					id: "692117EA0A947DEF"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_overworld"
+					}
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
 				id: "18C25A47F69169EB"

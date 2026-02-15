@@ -395,6 +395,14 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "2B7F14733C000C22"
+			rewards: [{
+				id: "121EAA7839A300A0"
+				item: {
+					count: 1
+					id: "grimoireofgaia:deco_garden_gnome"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4C9B71D2BC1CA752"
 				type: "checkmark"

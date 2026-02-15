@@ -67,13 +67,33 @@
 				id: "kubejs:bronze_machine_bit"
 			}
 			id: "590167B593FE267A"
-			rewards: [{
-				icon: {
-					id: "minecraft:stone"
+			rewards: [
+				{
+					count: 5
+					id: "2AD1F588E074BDE1"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_overworld"
+					}
+					type: "item"
 				}
-				id: "41C8354D477A8899"
-				type: "custom"
-			}]
+				{
+					id: "1A5B7797093E5817"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_iron"
+					}
+					type: "item"
+				}
+				{
+					id: "4099D9FE19A24CC7"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_hat"
+					}
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 2.0d
 			tasks: [
@@ -3403,10 +3423,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"2B815502453269AF"
-				"33C4EBFA08980E30"
-			]
+			dependencies: ["2B815502453269AF"]
 			id: "06EAC7034ACFA220"
 			shape: "pentagon"
 			tasks: [{
@@ -3418,10 +3435,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"0BCD76587F2DB00F"
-				"33C4EBFA08980E30"
-			]
+			dependencies: ["0BCD76587F2DB00F"]
 			id: "137C9C8D6C96D777"
 			shape: "heart"
 			tasks: [{
@@ -4223,6 +4237,14 @@
 				id: "minecraft:diamond_helmet"
 			}
 			id: "6388891962FA9721"
+			rewards: [{
+				id: "159203DF1BCFC14C"
+				item: {
+					count: 1
+					id: "grimoireofgaia:box_diamond"
+				}
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [
 				{

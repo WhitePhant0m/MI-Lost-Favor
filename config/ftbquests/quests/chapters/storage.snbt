@@ -76,12 +76,6 @@
 			y: -2.0d
 		}
 		{
-			id: "472EA9410A122C18"
-			linked_quest: "33C4EBFA08980E30"
-			x: 2.0d
-			y: 3.0d
-		}
-		{
 			id: "708C1B04DF5B827B"
 			linked_quest: "06EAC7034ACFA220"
 			x: 4.0d
@@ -212,12 +206,6 @@
 			linked_quest: "4D6ED0D6DEBF3308"
 			x: 5.0d
 			y: 9.5d
-		}
-		{
-			id: "3B03898BD88078EA"
-			linked_quest: "57E0048DCD1B80FE"
-			x: 3.0d
-			y: 5.0d
 		}
 		{
 			id: "0611F2F1299C42DA"

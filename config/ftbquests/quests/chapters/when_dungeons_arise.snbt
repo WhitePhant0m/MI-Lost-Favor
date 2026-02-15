@@ -49,12 +49,6 @@
 			y: 24.5d
 		}
 		{
-			id: "68B7124395056383"
-			linked_quest: "62C5B9FB001E26A5"
-			x: 8.0d
-			y: 25.5d
-		}
-		{
 			id: "680E1E03F0AB7C71"
 			linked_quest: "6388891962FA9721"
 			x: 10.0d
@@ -76,6 +70,12 @@
 			id: "408EB970203A9597"
 			linked_quest: "0987D26A943A7B60"
 			x: 16.0d
+			y: 25.5d
+		}
+		{
+			id: "3EC3028B3D4878BE"
+			linked_quest: "62C5B9FB001E26A5"
+			x: 8.0d
 			y: 25.5d
 		}
 	]

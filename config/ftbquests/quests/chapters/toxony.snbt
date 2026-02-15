@@ -2199,7 +2199,7 @@
 				type: "structure"
 			}]
 			x: 0.5d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -2213,7 +2213,7 @@
 				type: "structure"
 			}]
 			x: -0.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -2227,7 +2227,7 @@
 				type: "structure"
 			}]
 			x: 0.5d
-			y: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -2241,7 +2241,7 @@
 				type: "structure"
 			}]
 			x: -0.5d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
@@ -2255,7 +2255,7 @@
 				type: "structure"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -2556,8 +2556,8 @@
 				item: { count: 1, id: "enchanted:wool_of_bat" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.5d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2269A11BFEF41742"]
@@ -2580,8 +2580,8 @@
 				item: { count: 1, id: "enchanted:creeper_heart" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.0d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2269A11BFEF41742"]
@@ -3336,6 +3336,41 @@
 			}]
 			x: 11.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["7E931DB1E3794703"]
+			id: "3D25B3BBFD462747"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "devices:item/empty_pouch_slot"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "73D93A782AD2E4AE"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "7A148F88DD34DDBD"
+				item: { count: 1, id: "ars_elemental:curio_bag" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3784CF017C0CB226"]
+			id: "4D4DCC8BF72CB593"
+			shape: "gear"
+			tasks: [{
+				id: "2DED2E4CFB83E45D"
+				item: { components: { "sophisticatedcore:number_of_inventory_slots": 27, "sophisticatedcore:number_of_upgrade_slots": 1, "sophisticatedcore:render_info_tag": { upgradeItems: [{ }] }, "sophisticatedcore:storage_uuid": [I; 1916723092, -1992474304, -1306188761, -717481051 ] }, count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
 		}
 	]
 }
