@@ -11,8 +11,8 @@ FTBQuestsEvents.customReward('0DC887212398806D', event => {
     sendImmersiveMessageWithSubtext(Text.translate('milf.stage.congratulations'), Text.translate('milf.stage.bronze_age'), event.player, DEFAULT_NEW_AGE_NOTIFICATION_STYLE, DEFAULT_NEW_AGE_SUBTEXT_STYLE, event.server)
 });
 
-// reward for Bronze Machine Bit
-FTBQuestsEvents.customReward('41C8354D477A8899', event => {
+// reward for Bronze Plate (First steps)
+FTBQuestsEvents.customReward('7EF0A7794783232F  ', event => {
     let player = event.entity;
     let player_name = player.profile.name
 
@@ -79,6 +79,7 @@ FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
 // necklace, an_focus, deep_learner, body, pin, belt, adv_pattern_encoder, pigment_palette
 const trinkets_slot_list_reward = [
     { quest_id: '679412F522B788D9', trinket_slot: 'hands' },
+    { quest_id: '73D93A782AD2E4AE', trinket_slot: 'bundle' },
 ]
 
 trinkets_slot_list_reward.forEach(reward => {
