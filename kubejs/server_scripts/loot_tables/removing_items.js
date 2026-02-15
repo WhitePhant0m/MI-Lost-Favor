@@ -61,6 +61,12 @@ LootJS.modifiers(event => {
         { item_name: 'cognition:cognitive_flux' },
         { item_name: 'cognition:forgotten_dust' },
         { item_name: 'forbidden_arcanus:tentacle' },
+        { item_name: 'grimoireofgaia:box_overworld' },
+        { item_name: 'grimoireofgaia:box_iron' },
+        { item_name: 'grimoireofgaia:box_diamond' },
+        { item_name: 'grimoireofgaia:bag_record' },
+        { item_name: 'grimoireofgaia:box_hat' },
+        { item_name: 'grimoireofgaia:bag_book' },
     ]
     const loot_types = [LootType.CHEST, LootType.ENTITY, LootType.FISHING, LootType.ARCHAEOLOGY, LootType.VAULT, LootType.GIFT, LootType.PIGLIN_BARTER, LootType.GENERIC]
 
