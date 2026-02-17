@@ -678,6 +678,16 @@
 		""
 		"• Left-click the barrel item on an empty slot to extract some items from it."
 	]
+	quest.20B05A54BEFA8EDC.quest_desc: [
+		"You can craft an «TreeCapitator» that will chop down an entire tree at once. however, it can only be made of iron."
+		""
+		"&lPay attention to the dependencies of this quest.&r"
+		"{@pagebreak}"
+		"Вы можете создать топор, который будет срубать всё дерево, но, только железный. "
+		""
+		"&lОбратите внимания на зависимости данного квеста!&r"
+	]
+	quest.20B05A54BEFA8EDC.quest_subtitle: "Tree Capitator?!"
 	quest.2141539997D6480F.quest_desc: [
 		"Hunger - none."
 		""
