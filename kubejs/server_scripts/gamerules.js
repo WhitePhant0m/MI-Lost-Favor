@@ -8,5 +8,6 @@ ServerEvents.loaded(event => {
         server.runCommandSilent('gamerule coinDropPercent 0')
         server.runCommandSilent('gamerule doPatrolSpawning false')
         server.runCommandSilent('gamerule playersSleepingPercentage 20')
+        server.runCommandSilent('gamerule doFireTick false')
     }
 })
