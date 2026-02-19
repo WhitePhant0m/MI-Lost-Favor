@@ -175,4 +175,19 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:diamond_boots" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
+
+    yTechShaped(event, {
+        pattern: [
+            "S F",
+            "l l",
+            " l ",
+        ],
+        key: {
+            "S": { "tag": "c:saws" },
+            "F": { "tag": "c:files" },
+            "l": { "tag": "minecraft:logs" },
+        },
+        outputItems: [[{ id: "minecraft:chest" }, 1]],
+        compatOff:true
+    })
 })

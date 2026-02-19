@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
 
     ["sophisticatedstorage", "sophisticatedbackpacks"].forEach(mod => {
         event.replaceInput({ mod: mod }, "minecraft:redstone_torch", "modern_industrialization:rubber_sheet")
+        event.replaceInput({ mod: mod }, "minecraft:lever", "modern_industrialization:rubber_sheet")
     })
 
     //WIP
