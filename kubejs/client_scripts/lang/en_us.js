@@ -74,6 +74,15 @@ ClientEvents.lang('en_us', event => {
 
     event.add('rei_categories.modern_industrialization.blast_furnace', "Steam Blast Furnace")
 
+    //#region Food tweak
+    event.add("milf.food.feel_bit_better", "You feel a bit better after eating something other than fruits and vegetables.")
+    event.add("milf.food.poison_1", "You have eaten too many fruits and vegetables and are now poisoned!")
+    event.add("milf.food.poison_2", "You feel sick after eating too many fruits and vegetables. Be careful!")
+    event.add("milf.food.poison_3", "You feel a bit sick after eating too many fruits and vegetables. Try to eat something else.")
+    event.add("milf.food.poison_4", "You have eaten way too many fruits and vegetables and are feeling very sick! Consider eating something else for a while.")
+    event.add("milf.food.poison_5", "You have eaten an extreme amount of fruits and vegetables and are now critically poisoned! Please eat something else immediately to recover. If you continue to eat fruits or vegetables while poisoned, you may die from the poison!")
+    //#region
+
     //#region rituals
     event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
     event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")

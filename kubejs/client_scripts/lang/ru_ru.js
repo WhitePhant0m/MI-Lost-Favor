@@ -46,6 +46,15 @@ ClientEvents.lang('ru_ru', event => {
 
     event.add('gateways.basic/deer', "Врата Оленя")
 
+    //#region Food tweak
+    event.add("milf.food.feel_bit_better", "Вы чувствуете себя немного лучше после того, как съели что-то, кроме фруктов и овощей.")
+    event.add("milf.food.poison_1", "Вы съели слишком много фруктов и овощей и теперь чувствуете себя плохо!")
+    event.add("milf.food.poison_2", "После употребления большого количества фруктов и овощей вы чувствуете себя плохо. Будьте осторожны!")
+    event.add("milf.food.poison_3", "После того, как вы съели слишком много фруктов и овощей, вам стало ещё хуже. Попробуйте съесть что-нибудь другое.")
+    event.add("milf.food.poison_4", "Вы съели слишком много фруктов и овощей вы чувствуете себя очень плохо! Подумайте о том, чтобы какое-то время есть что-нибудь другое.")
+    event.add("milf.food.poison_5", "Вы съели чрезмерное количество фруктов и овощей и теперь находитесь в критическом состоянии от отравления! Пожалуйста, немедленно съешьте что-нибудь другое, чтобы прийти в себя. Если вы продолжите есть фрукты или овощи во время отравления, вы можете умереть от яда!")
+    //#region
+
     //#region rituals
         event.add('ritual.occultism.craft_curio_bag.started', "Starting the ritual: Craft Trinkets Pouch.")
         event.add('ritual.occultism.craft_curio_bag.conditions', "Not all requirements for this ritual are met.")
