@@ -2276,7 +2276,7 @@
 				item: { count: 1, id: "gag:escape_rope" }
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: 1.5d
 		}
 		{
@@ -2472,6 +2472,18 @@
 			}]
 			x: 20.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["51BC2EDB324F7ECD"]
+			id: "1FE16BABD524C29B"
+			shape: "pentagon"
+			tasks: [{
+				id: "69F85095F5AF2C61"
+				item: { components: { "minecraft:enchantments": { levels: { "apothic_enchanting:chainsaw": 1 } } }, count: 1, id: "minecraft:iron_axe" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 1.5d
 		}
 	]
 }
