@@ -137,4 +137,12 @@ ServerEvents.recipes(event => {
     aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"kubejs:cell_half"}, 1], "kubejs:cell_press", 3200);
     aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"kubejs:core_hull"}, 1], "kubejs:core_press", 3200);
 
+    iePressCraft(event, {
+        inputItems:[[{"tag": "minecraft:logs"}, 9]],
+        outputItems:[[{id :"minecraft:chest"}, 3]],
+        mold: {item : "immersiveengineering:mold_packing_9"},
+        energy: 3200,
+        compatOff:true
+    })
+
 })

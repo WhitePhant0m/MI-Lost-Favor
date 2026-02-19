@@ -107,6 +107,24 @@
 		"Голубой азурит позволяет вам открыть путь к закрытым загадкам, а так же увеличивает вашу выживаемость!"
 	]
 	quest.02DD191C0682BFD6.quest_desc: ["You can put water/lava/essences in Utrem Jars with a bucket or any other similar items in hand, allowing you to store lava without taking up space in chests."]
+	quest.02F9C9866E4ECB53.quest_desc: [
+		"\"Seek the truth for all-truth's sake,"
+		"Always learn from your mistake,"
+		"Never end your search to break,"
+		"And never let your thoughts be fake."
+		""
+		"Let the colors lead your mind,"
+		"Free your soul from all-time twine,"
+		"Spectrum takes and spectrum blinds,"
+		"But your goals are still aligned."
+		""
+		"Don't be humbled, don't you fear,"
+		"This rite'll not leave you seared,"
+		"And when the world around you smears"
+		"Just accept this gift and steer.\" "
+		""
+		"- Words of passion that each of the Great Surface Explorer recieves after undergoing severe mutations to be able to walk outside of the Spectrum Depths"
+	]
 	quest.0309870114418120.quest_desc: [
 		"By harnessing the powers of &#C7E2E9onyx&r, you have discovered a way to to create a &#d33b2bwireless redstone transmitter&r! It has a range of 12 blocks and can be set to different frequencies by applying pigment. RMB to swap between sending and recieving a signal."
 		""
@@ -1336,6 +1354,24 @@
 		""
 		"&#4B98C0Топаз&r жеоды находятся в высоких слоях шахт, можно сказать что их можно найти буквально на верхушках гор! "
 	]
+	quest.43BC2E23878BD134.quest_desc: [
+		"\"Be they ever so humble, "
+		"Or ever so bold, "
+		"Not a single contender "
+		"Will withstand them all."
+		""
+		"If you think you could try it, "
+		"Or even succeed, "
+		"Then beware of the changes,"
+		"They'll come from within."
+		""
+		"All the past is forgotten,"
+		"As the future's your goal, "
+		"Be afraid of the stasis"
+		"To progress us all.\""
+		""
+		"- Extract from the Holy Book of Color on the ceremony to become the High Hierarch of Spectrum"
+	]
 	quest.43EE44FBD36E1051.quest_desc: ["From skeletons(strat/skeleton/wither skeleton/bogged/) with scythe"]
 	quest.4411D3E177F394CE.quest_desc: [
 		"&lPlayer Skull&r:"
@@ -2224,6 +2260,24 @@
 		"With this bad boy you can forget about all the hassle of manually building structures FOREVER! With advanced compacting technology, we accomplished the ability to pack ANY multiblock into a single small box! You can carry it around, you can place it anywhere, and you can even take it back whenever you wish to! Our engineers at PLACERS™ (Packing Logistics And Controlled Erections of Rebuildable Structures) have made the real revolution by discovering the new PUSH® (Piston it Until Shit Happens) technique, which allowed us to pack such great possibilities in such a tiny device."
 		"Craft one for yourself today, and you'll get an unlimited supply of boxes, as well as a little plushie of our demure CEO for free!"
 		"<fade>ⓘ (We are not responsible for any injuries inflicted on the user by the machine. May contain traces of radioactive waste, horsehairs, and insulin. Not recommended for use for infants, piglins, and fairies) </fade>"
+	]
+	quest.7A1E51EF37A6ADFE.quest_desc: [
+		"\"Deeper went we for powers,"
+		"As our needs came to play,"
+		"We could gain grain in hours,"
+		"If we knew whom to praise."
+		""
+		"We then went even deeper,"
+		"To a land never seen,"
+		"'Cause the colors transfigure"
+		"Only things so pristine."
+		""
+		"If we find what we search for,"
+		"We could settle for good, "
+		"Otherwise, we will try more,"
+		"Till we blaspheme sainthood\""
+		""
+		"- In Search Of Greatness, by the Fifth Herald of Color"
 	]
 	quest.7A406C30B9862C6D.quest_subtitle: "elevator in lava"
 	quest.7A5F66121C4BCC2B.quest_desc: ["Charges items. That's it"]

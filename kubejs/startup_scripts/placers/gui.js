@@ -1,9 +1,7 @@
 
 let $RegisterGuiLayersEvent = Java.loadClass("net.neoforged.neoforge.client.event.RegisterGuiLayersEvent");
 let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type");
-let $TooltipRenderUtil = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil")
-let $ClientTooltipComponent = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent")
-let $DefaultTooltipPositioner = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE
+
 NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
 	event.registerBelowAll(ID.kjs("placers_tooltips"), (gui, delta) => global.renderBlockTooltips(gui, delta))
 })
@@ -32,6 +30,9 @@ const tooltipHeight = 44
 global.renderBlockTooltips = (guiGraphics, deltaTracker) => {
 	if (!Client || Client.hitResult.type != $HitResult$Type.BLOCK) return
 	if (!Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:placers") && !Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:empty_box")) return
+	let $TooltipRenderUtil = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil")
+	let $ClientTooltipComponent = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent")
+	let $DefaultTooltipPositioner = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE
 	const block = Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block
 	const clientTooltipComponents = block.hasTag("milf:placers") ? [
 		$ClientTooltipComponent.create(block.name.visualOrderText),

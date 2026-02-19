@@ -1,6 +1,5 @@
 //priority: 100
 
-let $ImmersiveMessage = Java.loadClass("toni.immersivemessages.api.ImmersiveMessage")
 let $ImmersiveFont = Java.loadClass("toni.immersivemessages.ImmersiveFont")
 let $ChatFormatting = Java.loadClass("net.minecraft.ChatFormatting")
 let $SoundEffect = Java.loadClass("toni.immersivemessages.api.SoundEffect")
@@ -102,6 +101,7 @@ function sendImmersiveMessage(text, player, args, server){
     if(player.persistentData.immersiveMessageQueue) {
         return
     }
+    let $ImmersiveMessage = Java.loadClass("toni.immersivemessages.api.ImmersiveMessage")
     args = args || {}
     let duration = args.duration || 2.2
     //let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, TextIcons.warn().append(TextIcons.smallSpace()).append(text))

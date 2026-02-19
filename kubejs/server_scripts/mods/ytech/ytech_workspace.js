@@ -924,7 +924,7 @@ ServerEvents.recipes(event => {
             ['PPP','PSP','PPP']
         ],
         {P:'#minecraft:planks', S:"ytech:wooden_box"},
-        'minecraft:chest', {} , "#c:hammers"
+        'minecraft:chest', {} , "#c:hammers", true
     )
     
     workspace_recipe([
@@ -933,7 +933,7 @@ ServerEvents.recipes(event => {
             ['PPP',' S ','PPP']
         ],
         {P:'#minecraft:planks', S:"ytech:wooden_box"},
-        'minecraft:barrel', {} , "#c:hammers"
+        'minecraft:barrel', {} , "#c:hammers", true
     )
     //#endregion
 
