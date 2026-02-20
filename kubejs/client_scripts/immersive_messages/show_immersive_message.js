@@ -19,7 +19,7 @@ function I_HATE_COMPOUND_TAGS(/**@type {import("net.minecraft.nbt.CompoundTag").
     let prettyJSObject = {}
     for(let [key,  value] of Object.entries(stupidFreakingCompoundTag)){
         if(key == "content"){
-            console.log(value);
+            //console.log(value);
             prettyJSObject[key] = COMPOUND_TAGS_ME_ARSE(value)
             continue
         }
@@ -31,7 +31,9 @@ function I_HATE_COMPOUND_TAGS(/**@type {import("net.minecraft.nbt.CompoundTag").
                 prettyJSObject[key] = value.getAsInt()
                 break;
             case "BYTE":
-                prettyJSObject[key] = true
+                //console.log(key + " " + value);
+                //console.log(value == true);
+                prettyJSObject[key] = (value == true)
                 break;
             case "STRING":
                 prettyJSObject[key] = value.getAsString()
@@ -40,8 +42,8 @@ function I_HATE_COMPOUND_TAGS(/**@type {import("net.minecraft.nbt.CompoundTag").
                 prettyJSObject[key] = I_HATE_COMPOUND_TAGS(value)
                 break;
             default:
-                console.log(value.getType().getName());
-                console.log(value);
+                //console.log(value.getType().getName());
+                //console.log(value);
                 break;
         }
     }
@@ -69,8 +71,11 @@ function COMPOUND_TAGS_ME_ARSE(tagLikeText){
                     case "":
                         text.append(Text.of(value.getAsString()))
                         break;
+                    case "text":
+                        text.append(Text.of(value.getAsString()))
+                        break;
                     default:
-                        console.log("whoao :(" + value.getAsString());
+                        //console.log("whoao :( " + value.getAsString());
                         break;
                 }
             }
@@ -86,11 +91,11 @@ function sendImmersiveMessage(text, player, args){
     let textComponent = COMPOUND_TAGS_ME_ARSE(text)
     let argsJS = I_HATE_COMPOUND_TAGS(args)
     let duration = argsJS.duration || 2.2
-    console.log(text);
-    console.log(Text.of("Full text: ").append(textComponent));
-    console.log(argsJS)
+    //console.log(text);
+    //console.log(Text.of("Full text: ").append(textComponent));
+    //console.log(argsJS)
     //let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, TextIcons.warn().append(TextIcons.smallSpace()).append(text))
-    args.applyWarn && (text = Component.of("⚠ ").append(text))
+    argsJS.applyWarn && (text = Component.of("⚠ ").append(text))
     let message = $ImmersiveMessage["builder(float,net.minecraft.network.chat.MutableComponent)"](duration, textComponent)
     
     applyArgsToImmersiveMessage(message, argsJS)
