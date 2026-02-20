@@ -18,6 +18,11 @@ NetworkEvents.dataReceived('immersive_message', (event) => {
 function I_HATE_COMPOUND_TAGS(/**@type {import("net.minecraft.nbt.CompoundTag").$CompoundTag$$Original}*/ stupidFreakingCompoundTag){
     let prettyJSObject = {}
     for(let [key,  value] of Object.entries(stupidFreakingCompoundTag)){
+        if(key == "content"){
+            console.log(value);
+            prettyJSObject[key] = COMPOUND_TAGS_ME_ARSE(value)
+            continue
+        }
         switch (value.getType().getName()) {
             case "DOUBLE":
                 prettyJSObject[key] = value.getAsDouble()
@@ -129,6 +134,6 @@ function applyArgsToImmersiveMessage(message, args){
         args.background.borderTopColor && message.borderTopColor(args.background.borderTopColor)
         args.background.borderBottomColor && message.borderBottomColor(args.background.borderBottomColor)
     }
-    args.subtext && message.subtext(args.subtext.delay || 0, args.subtext.content, args.subtext.offset || 8, (subtext) => applyArgsToImmersiveMessage(subtext, args.subtext))
+    args.subtext && message.subtext(args.subtext.delay || 0, args.subtext.content.string, args.subtext.offset || 8, (subtext) => applyArgsToImmersiveMessage(subtext, args.subtext))
     args.animation && message.animation.transition(args.animation.bindingType, args.animation.inTime || 0, args.animation.outTime || args.duration || 2.2, args.animation.inValue || 0, args.animation.outValue || 5, args.animation.easingFunction || $ToniEasingType.EaseOutCubic)
 }

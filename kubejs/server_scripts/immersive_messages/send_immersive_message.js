@@ -166,7 +166,7 @@ function sendImmersiveMessage(text, /**@type {import("net.minecraft.server.level
 // }
 
 function sendImmersiveMessageWithSubtext(text, subtext, player, textArgs, subtextArgs, server){
-    sendImmersiveMessage(text, player, Object.assign({}, textArgs, {subtext: Object.assign({}, subtextArgs, {content:subtext.string})}), server)
+    sendImmersiveMessage(text, player, Object.assign({}, textArgs, {subtext: Object.assign({}, subtextArgs, {content:subtext})}), server)
 }
 
 PlayerEvents.loggedOut(event => {
