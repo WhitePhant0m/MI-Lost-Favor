@@ -10,3 +10,7 @@ BlockEvents.rightClicked("grimoireofgaia:deco_garden_gnome", event => {
     const playerName = player.profile.name;
     player.server.runCommandSilent(`/playsound kubejs:wooo ambient ${playerName} ${player.x} ${player.y} ${player.z}`);
 });
+
+PlayerEvents.loggedOut(event => {
+    if(event.player.persistentData.gnomeCooldown) event.player.persistentData.remove("gnomeCooldown")
+})
