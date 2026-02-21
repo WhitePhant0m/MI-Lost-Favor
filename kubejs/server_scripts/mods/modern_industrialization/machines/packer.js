@@ -73,5 +73,16 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+        outputItems:[
+            [{item:"modern_industrialization:fire_clay_bricks"}]
+        ],
+        inputItems:[
+            [{item:"modern_industrialization:fire_clay_brick"}, 4],
+            [{item:"architects_palette:cerebral_plate"}, 5]
+        ],
+        removeRecipe:true
+    })
+
 
 })

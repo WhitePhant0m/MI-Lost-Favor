@@ -28,18 +28,18 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     const time = args.time || 100
 
     let recipe = {
-        "type" : args.machine || "modern_industrialization:chemical_reactor",
-        "eu" : energy,
-        "duration" : time,
-        "item_inputs" : [],
-        "item_outputs" : [],
-        "fluid_inputs" : [],
-        "fluid_outputs" : [],
-        "process_conditions": []        
+        "type": args.machine || "modern_industrialization:chemical_reactor",
+        "eu": energy,
+        "duration": time,
+        "item_inputs": [],
+        "item_outputs": [],
+        "fluid_inputs": [],
+        "fluid_outputs": [],
+        "process_conditions": []
     }
 
     inputs.forEach((input) => {
-        let inp = Object.assign({}, input[0], {amount:input[1] ?? input[0]?.amount ?? 1}, {probability:input[2]})
+        let inp = Object.assign({}, input[0], { amount: input[1] ?? input[0]?.amount ?? 1 }, { probability: input[2] })
         if (inp.count) {
             inp.amount = inp.count
             delete inp.count
@@ -48,7 +48,7 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     })
     outputs.forEach((out) => {
         if (out[1] === 0) return
-        let output = Object.assign({}, out[0], {amount:out[1] ?? out[0]?.amount ?? 1}, {probability:out[2]})
+        let output = Object.assign({}, out[0], { amount: out[1] ?? out[0]?.amount ?? 1 }, { probability: out[2] })
         if (output.id) {
             output.item = output.id
             delete output.id
@@ -56,67 +56,67 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
         if (output.count) {
             output.amount = output.count
             delete output.count
-        }        
+        }
         recipe.item_outputs.push(output)
     })
-    fluidsin.forEach((input) => {recipe.fluid_inputs.push(Object.assign({}, input[0], {amount:input[1] || 1000} , {probability:input[2]}))})
-    fluidsout.forEach((out) => {recipe.fluid_outputs.push(Object.assign({}, out[0], {amount:out[1] || 1000}, {probability:out[2]}))})
+    fluidsin.forEach((input) => { recipe.fluid_inputs.push(Object.assign({}, input[0], { amount: input[1] || 1000 }, { probability: input[2] })) })
+    fluidsout.forEach((out) => { recipe.fluid_outputs.push(Object.assign({}, out[0], { amount: out[1] || 1000 }, { probability: out[2] })) })
     let id = []
-    if(args.removeRecipe){
+    if (args.removeRecipe) {
         outputs.forEach((out) => {
-/*             event.forEachRecipe({output: out[0].item}, r =>{
-                id.push("milf:" + r.getId().split(':')[1])
-            }) */           
-            event.remove({output: out[0].item})
+            /*             event.forEachRecipe({output: out[0].item}, r =>{
+                            id.push("milf:" + r.getId().split(':')[1])
+                        }) */
+            event.remove({ output: out[0].item })
         })
     }
-    if(args.token){recipe.item_inputs.push(Object.assign({}, args.token, {amount:1}, {probability:0}))}
-    if(args.dimension){
+    if (args.token) { recipe.item_inputs.push(Object.assign({}, args.token, { amount: 1 }, { probability: 0 })) }
+    if (args.dimension) {
         recipe.process_conditions.push({
-            type:"modern_industrialization:dimension",
-            dimension:args.dimension
+            type: "modern_industrialization:dimension",
+            dimension: args.dimension
         })
     }
-    if(args.adjacent_block){
+    if (args.adjacent_block) {
         recipe.process_conditions.push({
-            type:"modern_industrialization:adjacent_block",
-            position:args.adjacent_block.position,
-            block:args.adjacent_block.block
+            type: "modern_industrialization:adjacent_block",
+            position: args.adjacent_block.position,
+            block: args.adjacent_block.block
         })
     }
-    if(args.custom_condition){
+    if (args.custom_condition) {
         recipe.process_conditions.push({
-            type:"modern_industrialization:custom",
-            custom_id:args.custom_condition
+            type: "modern_industrialization:custom",
+            custom_id: args.custom_condition
         })
     }
     // console.log(id);
     id.length == 1 ? event.custom(recipe).id(id[0]) : event.custom(recipe)
-    if(Object.keys(miMachinesCompat).some(key => key.includes(args.machine))){
+    if (Object.keys(miMachinesCompat).some(key => key.includes(args.machine))) {
         args.machine = miMachinesCompat[args.machine]
         miMachineCraft(event, args)
     }
 };
 
 let miMachinesCompat = {
-    "extended_industrialization:alloy_smelter" : "modern_industrialization:advanced_steam_alloy_smelter"
+    "extended_industrialization:alloy_smelter": "modern_industrialization:advanced_steam_alloy_smelter"
 }
 
 MIRecipeEvents.customCondition(event => {
     event.register("milf:placer_craft_condition",
-            // condition itself, receives the machine context and the recipe that is being checked
-            (context, recipe) => {
-                if(context.level.getBlockState(context.getBlockEntity().getBlockPos().above())["is(net.minecraft.resources.ResourceKey)"]("minecraft:stripped_bamboo_block")){
-                    //context.level.setBlockAndUpdate(context.getBlockEntity().getBlockPos().above(), recipe.itemOutputs.first.stack.block)
-                    //console.log(context.level.getBlockEntity(context.getBlockEntity().getBlockPos().above().offset(2,0,0)).blockState.properties);
-                    //console.log("something");
-                    return true
-                } 
-                return false
-                //return context.level.getBlockState(context.getBlockEntity().getBlockPos().above())["is(net.minecraft.resources.ResourceKey)"]("minecraft:stripped_bamboo_block")
-            },
-            // description for REI-like mods
-            Text.of("Must be placed on an odd X position"));
+        // condition itself, receives the machine context and the recipe that is being checked
+        (context, recipe) => {
+            if (context.level.getBlockState(context.getBlockEntity().getBlockPos().above())["is(net.minecraft.resources.ResourceKey)"]("minecraft:stripped_bamboo_block")) {
+                //context.level.setBlockAndUpdate(context.getBlockEntity().getBlockPos().above(), recipe.itemOutputs.first.stack.block)
+                //console.log(context.level.getBlockEntity(context.getBlockEntity().getBlockPos().above().offset(2,0,0)).blockState.properties);
+                //console.log("something");
+                return true
+            }
+            return false
+            //return context.level.getBlockState(context.getBlockEntity().getBlockPos().above())["is(net.minecraft.resources.ResourceKey)"]("minecraft:stripped_bamboo_block")
+        },
+        // description for REI-like mods
+        Text.of("Must be placed on an odd X position"));
 });
 
 ServerEvents.recipes(event => {
@@ -135,10 +135,10 @@ ServerEvents.recipes(event => {
 
     customPestleAndMortarCraft(event, {
         ingredients: [
-            { "item": "clay_ball" },
-            { "item": "clay_ball"},
-            { "item": "modern_industrialization:brick_dust"},
-            { "item": "modern_industrialization:brick_dust"},
+            { "item": "architects_palette:algal_blend" },
+            { "item": "architects_palette:algal_blend" },
+            { "item": "modern_industrialization:brick_dust" },
+            { "item": "modern_industrialization:brick_dust" },
         ],
         output: "modern_industrialization:fire_clay_dust",
         amount: 3,
@@ -146,8 +146,25 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "WQW",
+            "QWQ",
+            "WQW"
+        ],
+        key: {
+            Q: { item: "modern_industrialization:fire_clay_brick" },
+            W: { item: "architects_palette:cerebral_plate" }
+
+        },
+        outputItems: [[{ id: "modern_industrialization:fire_clay_bricks" }]],
+        removeRecipe:true,
+        compatOff:true
+    })
+
+
+    milfShaped(event, {
+        pattern: [
             'ASA',
-            'S S', 
+            'S S',
             'ASA'
         ],
         key: {
@@ -170,7 +187,7 @@ ServerEvents.recipes(event => {
     milfShaped(event, {
         pattern: [
             ' PC',
-            'PWP', 
+            'PWP',
             'RP '
         ],
         key: {
@@ -180,7 +197,7 @@ ServerEvents.recipes(event => {
             R: { item: "minecraft:redstone" },
         },
         outputItems: [[{ id: "modern_industrialization:resistor" }, 6]],
-        compatOff:true
+        compatOff: true
     })
 
     milfShaped(event, {
@@ -208,11 +225,11 @@ ServerEvents.recipes(event => {
             r: { tag: "c:rods/aluminum" },
             p: { tag: "c:paper" }
         },
-        outputItems: [[{ 
-            "components": {"immersiveengineering:blueprint": "MI components"},
+        outputItems: [[{
+            "components": { "immersiveengineering:blueprint": "MI components" },
             "id": "immersiveengineering:blueprint"
         }, 1]],
-        compatOff:true
+        compatOff: true
     })
 
     event.replaceOutput(
@@ -244,23 +261,23 @@ ServerEvents.recipes(event => {
         'extended_industrialization:steel_canning_machine',
         'extended_industrialization:steel_honey_extractor',
         'modern_industrialization:steel_upgrade',
-        'extended_industrialization:hv_solar_panel', 
-        'extended_industrialization:lv_solar_panel', 
-        'modern_industrialization:pump', 
-        'modern_industrialization:advanced_pump', 
-        'modern_industrialization:electric_water_pump', 
-        'modern_industrialization:electric_mixer', 
-        'modern_industrialization:distillery', 
-        'modern_industrialization:hv_steam_turbine', 
-        'modern_industrialization:lv_steam_turbine', 
-        'modern_industrialization:mv_steam_turbine', 
-        'modern_industrialization:steel_unpacker', 
-        'modern_industrialization:steel_packer', 
-        'modern_industrialization:oil_drilling_rig', 
-        'modern_industrialization:steel_wiremill', 
-        'modern_industrialization:aluminum_drill', 
-        'modern_industrialization:bronze_drill', 
-        'modern_industrialization:copper_drill', 
+        'extended_industrialization:hv_solar_panel',
+        'extended_industrialization:lv_solar_panel',
+        'modern_industrialization:pump',
+        'modern_industrialization:advanced_pump',
+        'modern_industrialization:electric_water_pump',
+        'modern_industrialization:electric_mixer',
+        'modern_industrialization:distillery',
+        'modern_industrialization:hv_steam_turbine',
+        'modern_industrialization:lv_steam_turbine',
+        'modern_industrialization:mv_steam_turbine',
+        'modern_industrialization:steel_unpacker',
+        'modern_industrialization:steel_packer',
+        'modern_industrialization:oil_drilling_rig',
+        'modern_industrialization:steel_wiremill',
+        'modern_industrialization:aluminum_drill',
+        'modern_industrialization:bronze_drill',
+        'modern_industrialization:copper_drill',
         'modern_industrialization:stainless_steel_drill',
     ]
 
@@ -273,15 +290,15 @@ ServerEvents.recipes(event => {
     });
 
     const craftWithItemPipes = [
-        'modern_industrialization:steam_quarry', 
-        'modern_industrialization:steel_packer', 
-        'modern_industrialization:steel_unpacker', 
-        'modern_industrialization:bronze_drill', 
-        'modern_industrialization:copper_drill', 
-        'modern_industrialization:gold_drill', 
-        'modern_industrialization:stainless_steel_drill', 
-        'modern_industrialization:steel_drill', 
-        'modern_industrialization:titanium_drill', 
+        'modern_industrialization:steam_quarry',
+        'modern_industrialization:steel_packer',
+        'modern_industrialization:steel_unpacker',
+        'modern_industrialization:bronze_drill',
+        'modern_industrialization:copper_drill',
+        'modern_industrialization:gold_drill',
+        'modern_industrialization:stainless_steel_drill',
+        'modern_industrialization:steel_drill',
+        'modern_industrialization:titanium_drill',
         'extended_industrialization:machine_chainer_relay'
     ]
 
@@ -318,7 +335,7 @@ ServerEvents.recipes(event => {
 
 })
 
-KubeJSTweaks.beforeRecipes(event =>{
+KubeJSTweaks.beforeRecipes(event => {
 
     const disableByRecipeID = [
         /modern_industrialization:materials\/.*\/craft\/ring/,
@@ -334,17 +351,17 @@ KubeJSTweaks.beforeRecipes(event =>{
         "modern_industrialization:vanilla_recipes/torch"
     ]
 
-    disableByRecipeID.forEach(id =>{
+    disableByRecipeID.forEach(id => {
         event.disable(id)
     })
-    
+
 
     const oresToChange = ['iron', 'gold', 'copper', 'tin', 'lead']
-    oresToChange.forEach(ore =>{
-/*      event.disable(`modern_industrialization:materials/${ore}/macerator/raw_metal`)
-        event.disable(`modern_industrialization:materials/${ore}/forge_hammer/raw_metal_to_dust_with_tool`)
-        event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust_with_tool`)
-        event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust`) */
+    oresToChange.forEach(ore => {
+        /*      event.disable(`modern_industrialization:materials/${ore}/macerator/raw_metal`)
+                event.disable(`modern_industrialization:materials/${ore}/forge_hammer/raw_metal_to_dust_with_tool`)
+                event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust_with_tool`)
+                event.disable(`modern_industrialization:materials/${ore}/forge_hammer/ore_to_crushed_dust`) */
         const regex = new RegExp(`modern_industrialization:materials\\/${ore}\\/(?:macerator|forge_hammer)\\/raw_metal.*`)
         event.getEntry(regex).forEach(entry => {
             entry.fromPath("item_inputs").ifPresent(input => input.second.asJsonArray.get(0).asJsonObject.add("tag", `c:crushed_ores/${ore}`))

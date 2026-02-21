@@ -6,6 +6,7 @@ ServerEvents.tags('item', event => {
         "modern_industrialization:blastproof_alloy_plate",
         "minecraft:stick",
         "minecraft:chain",
+        "modern_industrialization:fire_clay_bricks",
     ]
 
     remove.forEach(output => {

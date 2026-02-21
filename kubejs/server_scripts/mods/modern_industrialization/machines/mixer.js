@@ -19,5 +19,39 @@ ServerEvents.recipes(event => {
             [{item:"modern_industrialization:diamond_tiny_dust"}, 4]
         ]
     })
+
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:"minecraft:clay_ball"}, 2],
+            [{item:"minecraft:kelp"}],
+        ],
+        outputItems:[
+            [{item:"architects_palette:algal_blend"}, 4]
+        ]
+    })
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:"modern_industrialization:brick_dust"}, 2],
+            [{item:"architects_palette:algal_blend"}, 2],
+        ],
+        outputItems:[
+            [{item:"modern_industrialization:fire_clay_dust"}, 4]
+        ],
+        removeRecipe: true
+    })
+    
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:"modern_industrialization:salt_crushed_dust"}],
+            [{item:"minecraft:tuff"}],
+        ],
+        inputFluids:[
+            [{fluid:"minecraft:water"}, 1000],
+            [{fluid:"modern_industrialization:creosote"}, 500]
+        ],
+        outputItems:[
+            [{item:"architects_palette:cerebral_plate"}, 16]
+        ]
+    })
     
 })
