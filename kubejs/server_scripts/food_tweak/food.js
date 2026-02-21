@@ -1,5 +1,9 @@
 ItemEvents.foodEaten(event => {
 
+  const actor = event.player;
+  if (!actor) {
+    return;
+  }
 
   const player = event.player;
   let eatenItem = event.item;
