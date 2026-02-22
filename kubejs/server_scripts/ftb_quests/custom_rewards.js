@@ -12,7 +12,7 @@ FTBQuestsEvents.customReward('0DC887212398806D', event => {
 });
 
 // reward for Bronze Plate (First steps)
-FTBQuestsEvents.customReward('7EF0A7794783232F  ', event => {
+FTBQuestsEvents.customReward('7EF0A7794783232F', event => {
     let player = event.entity;
     let player_name = player.profile.name
 
