@@ -1,0 +1,17 @@
+filename = 'chest_item-1.21.1-1.1.3.8.jar'
+name = 'Chest Curio Items'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'chest_item-1.21.1-1.1.3.8.jar'
+
+[download]
+hash = 'd64cb830b5d61a8beaccf745abfb88042870fd86'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7588275
+project-id = 1323819
