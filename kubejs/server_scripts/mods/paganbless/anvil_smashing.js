@@ -37,24 +37,6 @@ ServerEvents.recipes(event => {
 
     anvil_recipe(
         [
-            [{ "tag": "c:bolts/copper" }, 1],
-            [{ "tag": "c:rods/iron" }, 4],
-            [{ "tag": "c:plates/iron" }, 4],
-        ],
-        [{ "id": 'adfinders:mineral_finder' }, 1]
-    );
-
-    anvil_recipe(
-        [
-            [{ "tag": "c:bolts/copper" }, 1],
-            [{ "tag": "c:rods/bronze" }, 4],
-            [{ "tag": "c:plates/bronze" }, 4],
-        ],
-        [{ "id": 'adfinders:metal_finder' }, 1]
-    );
-
-    anvil_recipe(
-        [
             [{ "tag": "c:bolts/aluminum" }, 4],
             [{ "tag": "c:rods/aluminum" }, 4],
             [{ "tag": "c:ingots/aluminum" }, 2],

@@ -12,7 +12,6 @@
 //     "javd",
 //     "naturescompass",
 //     "measurements",
-//     "adfinders",
 //     "tempad",
 //     "dankstorage",
 //     "gag",
