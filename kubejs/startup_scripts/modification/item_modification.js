@@ -65,4 +65,6 @@ ItemEvents.modification(event => {
         })
     });
 
+    event.modify("ytech:bronze_mesh", item => {item.maxDamage = 64})
+
 });
