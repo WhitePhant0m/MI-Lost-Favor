@@ -56,6 +56,9 @@ ServerEvents.tags("item", event => {
         event.add(tag, "ytech:cooked_venison")
     });
 
+    event.add("c:buckets", "ytech:water_clay_bucket")
+    event.add("c:buckets/water", "ytech:water_clay_bucket")
+
 })
 
 ServerEvents.tags("block", event => {

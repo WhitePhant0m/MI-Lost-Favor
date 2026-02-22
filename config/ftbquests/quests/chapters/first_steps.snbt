@@ -1832,8 +1832,8 @@
 			dependencies: ["7A4BF1F1B52D40F0"]
 			id: "601FA84B53876508"
 			tasks: [{
-				id: "3649EF5594EEE18E"
-				item: { count: 1, id: "ytech:bread_dough" }
+				id: "4A71371A61D8E82A"
+				item: { count: 1, id: "farmersdelight:wheat_dough" }
 				type: "item"
 			}]
 			x: 3.0d
