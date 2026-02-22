@@ -11,6 +11,10 @@ ServerEvents.recipes(event => {
         }
         let inputItems = []
         Object.entries(blocksCount).forEach(([blockID, count]) => {
+            if(blockID == "immersiveengineering:fluid_pump") {
+                inputItems.push([{item:blockID}, count / 2])
+                return
+            }
             inputItems.push([{item:blockID}, count])
         })
         miMachineCraft(event, {energy:1, time:200, machine:"modern_industrialization:multiblock_packer_3000_safety_regulations_edition",
