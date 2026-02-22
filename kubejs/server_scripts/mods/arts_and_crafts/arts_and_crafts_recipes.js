@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-
+    event.remove({ id: "arts_and_crafts:terracotta_shingles" })
     yTechShaped(event, {
         pattern: [
             "# @",
