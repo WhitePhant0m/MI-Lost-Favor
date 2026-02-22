@@ -3,12 +3,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'minecraft:tinted_glass' })
     event.remove({ id: 'minecraft:bread' })
 
-
-    event.replaceInput(
-        { output: "minecraft:flint_and_steel" },
-        "iron_ingot",
-        "modern_industrialization:steel_ingot"
-    )
+    event.replaceInput({ output:"minecraft:flint_and_steel" }, "iron_ingot","modern_industrialization:steel_ingot")
+    event.replaceInput({ output:"minecraft:hopper" }, "iron_ingot","modern_industrialization:iron_plate")
     // YTech why do u change vanilla recipes with minecraft id :(
     event.replaceInput({mod: "minecraft"}, "ytech:flour", "minecraft:wheat")
 
@@ -26,6 +22,8 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:lead" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
+
+    event.shapeless(Item.of("minecraft:flint"), ["minecraft:gravel", "minecraft:gravel", "minecraft:gravel"]);
 
     // same recipe only for MI compat
     global.dyeColors.forEach(color => {
