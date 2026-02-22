@@ -80,6 +80,30 @@
           "toggle": false
         }
       }
+    },
+    "7": {
+      "title": "Accessories Box",
+      "icon": {
+        "stack": "{count:1,id:\"chest_item:end_effect\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.chest_item.r",
+          "toggle": false
+        }
+      }
+    },
+    "8": {
+      "title": "Chronicle",
+      "icon": {
+        "stack": "{count:1,id:\"rpgtimeline:chronicle_world_first\"}"
+      },
+      "action": {
+        "key": {
+          "key": "key.rpgtimeline.open_chronicle",
+          "toggle": false
+        }
+      }
     }
   },
   "MiniMap": {
