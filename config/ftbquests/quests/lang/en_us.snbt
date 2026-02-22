@@ -247,6 +247,15 @@
 		"ТОКСИЧНОЕ МАСЛО! Ещё более летучий и опасный вариант! Оно уже может приводить к летальному исходу. Я КАЖДОМУ дам попробовать моё невероятное творение!"
 	]
 	quest.0A8264D255BE5EF5.quest_desc: ["Душу в вторую руку пкм  по земле - ставит светящийся блок душ"]
+	quest.0ACD0476CE4CAED1.quest_desc: [
+		"Allows water to be pumped from rivers into the aqueduct network!"
+		""
+		"In the future, you will have the opportunity to generate water infinitely!"
+		"{@pagebreak}"
+		"Позволяет выкачивать воду из рек в систему акведуков!"
+		""
+		"В будущем у вас появится возможность генерировать воду бесконечно!"
+	]
 	quest.0B05E1DBD3F26E44.quest_subtitle: "Efficient!"
 	quest.0B37EB64F02A743F.quest_desc: [
 		"Enchant your boots with power. More power, more speed!"
@@ -2145,6 +2154,11 @@
 	]
 	quest.71721385710E5EB0.quest_desc: ["You can press \"C\" to crawl and say hi to all your worm-like friends!"]
 	quest.7189776839551466.quest_subtitle: "Can be found in dungeons"
+	quest.71CC5CD5F8018F02.quest_desc: [
+		"[ \"Later on, you will need to craft many items using the anvil crafting. Pay attention to the \", { \"text\": \"winch\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"52E47CD2A5102410\" } }, \"! You can craft several items at once with it, and it won't break the anvil!\" ]"
+		"{@pagebreak}"
+		"[ \"В дальнейшем вам понадобится создавать множество вещей использую наковальню для крафта, обратите внимание на \", { \"text\": \"лебедку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"52E47CD2A5102410\" } }, \"! В ней вы можете одновременно создавать несколько предметов, а так же в ней не ломается наковальня!\" ]"
+	]
 	quest.71DD1AE71C4E1B9F.quest_desc: [
 		"[ \"Don't forget to decorate your base with \", { \"text\": \"flags!\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6D68EF9352B93B19\" } }, \" \" ]"
 		"{@pagebreak}"
@@ -2364,6 +2378,7 @@
 	task.1858B5DCA97FF142.title: "Any #ars_nouveau:horn_food"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
 	task.1AE53C37C664CA3B.title: "Clavis"
+	task.1B1769A882258EBC.title: "Any #justaraftmod:rafts"
 	task.1DB3762470DC4D9D.title: "Any #milf:chiseled_base_blocks"
 	task.1FA40B43BF41A3BE.title: "Only Fight Or Flight"
 	task.1FC975DB259AA8A8.title: "Any #milf:gemstone_lamp"

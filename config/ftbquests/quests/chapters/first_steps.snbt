@@ -1555,18 +1555,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["71CC5CD5F8018F02"]
-			id: "57A91C641FE38999"
-			shape: "hexagon"
-			tasks: [{
-				id: "5F52A27AABE147A8"
-				item: { count: 1, id: "adfinders:mineral_finder" }
-				type: "item"
-			}]
-			x: 24.0d
-			y: -1.5d
-		}
-		{
 			dependencies: ["1714360882474479"]
 			id: "7D5DCEA36FF46987"
 			shape: "hexagon"
@@ -1627,11 +1615,24 @@
 			]
 			shape: "octagon"
 			size: 1.0d
-			tasks: [{
-				id: "42DB6552FF2C75A1"
-				item: { count: 1, id: "minecraft:anvil" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "42DB6552FF2C75A1"
+					item: { count: 1, id: "minecraft:anvil" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					icon: {
+						id: "minecraft:anvil"
+					}
+					id: "38CBD5614651AC1C"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecraft:anvil"
+					type: "observation"
+				}
+			]
 			x: 22.5d
 			y: 0.0d
 		}
@@ -1646,18 +1647,6 @@
 			}]
 			x: 21.0d
 			y: -1.5d
-		}
-		{
-			dependencies: ["71CC5CD5F8018F02"]
-			id: "7E2EE5415555CB44"
-			shape: "hexagon"
-			tasks: [{
-				id: "342C73496983C40F"
-				item: { count: 1, id: "adfinders:metal_finder" }
-				type: "item"
-			}]
-			x: 24.0d
-			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -2484,6 +2473,17 @@
 			}]
 			x: 16.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["3B77EDA3E715F8ED"]
+			id: "6CF95225CD1F0602"
+			tasks: [{
+				id: "1B1769A882258EBC"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(justaraftmod:rafts)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
 		}
 	]
 }

@@ -1620,40 +1620,8 @@
 				item: { count: 1, id: "apothic_enchanting:prismatic_web" }
 				type: "item"
 			}]
-			x: -25.0d
+			x: -24.0d
 			y: 31.5d
-		}
-		{
-			id: "4F4CC67B8B51E88C"
-			tasks: [{
-				id: "2DF500580E08E034"
-				item: { count: 1, id: "apothic_enchanting:scrap_tome" }
-				type: "item"
-			}]
-			x: -23.0d
-			y: 31.5d
-		}
-		{
-			dependencies: ["4F4CC67B8B51E88C"]
-			id: "019E386D2E2125F6"
-			tasks: [{
-				id: "6700F992DECA9E2F"
-				item: { count: 1, id: "apothic_enchanting:improved_scrap_tome" }
-				type: "item"
-			}]
-			x: -23.0d
-			y: 32.5d
-		}
-		{
-			dependencies: ["019E386D2E2125F6"]
-			id: "2E682B13BDE77E63"
-			tasks: [{
-				id: "64781304C9CF700F"
-				item: { count: 1, id: "apothic_enchanting:extraction_tome" }
-				type: "item"
-			}]
-			x: -23.0d
-			y: 33.5d
 		}
 		{
 			id: "1751D13041775276"
@@ -1752,7 +1720,7 @@
 				item: { count: 1, id: "apothic_enchanting:library" }
 				type: "item"
 			}]
-			x: -24.0d
+			x: -23.0d
 			y: 31.5d
 		}
 		{
@@ -1763,7 +1731,7 @@
 				item: { count: 1, id: "apothic_enchanting:ender_library" }
 				type: "item"
 			}]
-			x: -24.0d
+			x: -23.0d
 			y: 32.5d
 		}
 		{

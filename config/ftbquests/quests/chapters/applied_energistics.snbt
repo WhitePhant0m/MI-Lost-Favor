@@ -33,7 +33,10 @@
 	]
 	quests: [
 		{
-			dependencies: ["6C9D001FF1B265FB"]
+			dependencies: [
+				"6C9D001FF1B265FB"
+				"5666EC7EBCE18EBA"
+			]
 			id: "37E81A0F2015DFE9"
 			shape: "octagon"
 			tasks: [{
