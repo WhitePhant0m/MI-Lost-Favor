@@ -159,6 +159,7 @@
 			dependencies: [
 				"13134EE8E1631EBB"
 				"5C3CDA0A5FE47019"
+				"590167B593FE267A"
 			]
 			id: "1E195026745014C0"
 			shape: "rsquare"
@@ -438,8 +439,13 @@
 					type: "item"
 				}
 				{
-					id: "437DF73060001F79"
-					item: { count: 1, id: "modern_industrialization:bronze_fluid_output_hatch" }
+					id: "2DE28D70E493975C"
+					item: { count: 1, id: "modern_industrialization:bronze_item_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "0133DE286CBDFAD2"
+					item: { count: 1, id: "yet_another_industrialization:bronze_mixed_input_hatch" }
 					type: "item"
 				}
 			]
@@ -457,8 +463,13 @@
 					type: "item"
 				}
 				{
-					id: "6BC701F91DD94612"
-					item: { count: 1, id: "modern_industrialization:bronze_item_input_hatch" }
+					id: "32A16A677B2D1488"
+					item: { count: 1, id: "modern_industrialization:bronze_fluid_output_hatch" }
+					type: "item"
+				}
+				{
+					id: "5BEDAAD4FB288E37"
+					item: { count: 1, id: "yet_another_industrialization:bronze_mixed_output_hatch" }
 					type: "item"
 				}
 			]
@@ -760,7 +771,7 @@
 				item: { count: 1, id: "immersiveengineering:workbench" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -4421,45 +4432,6 @@
 			]
 			x: -19.5d
 			y: 7.0d
-		}
-		{
-			dependencies: ["2A770E2C788BFA02"]
-			id: "64A0B8881BC8D60C"
-			tasks: [{
-				id: "12C8AE4BDB1B3288"
-				item: { count: 1, id: "immersiveengineering:craftingtable" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"7204D7ED210430A0"
-				"38AC9B9A78A6B95D"
-			]
-			id: "5B7FC7DF4A197D1F"
-			tasks: [{
-				id: "3E3F50FACBB17E85"
-				item: { count: 1, id: "yet_another_industrialization:bronze_mixed_input_hatch" }
-				type: "item"
-			}]
-			x: -1.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"7204D7ED210430A0"
-				"38AC9B9A78A6B95D"
-			]
-			id: "588E09719FDA9B3D"
-			tasks: [{
-				id: "4BCEE10271CF660E"
-				item: { count: 1, id: "yet_another_industrialization:bronze_mixed_output_hatch" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: -1.0d
 		}
 	]
 }

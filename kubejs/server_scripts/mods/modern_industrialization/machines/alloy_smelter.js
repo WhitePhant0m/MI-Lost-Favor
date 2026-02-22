@@ -33,6 +33,39 @@ ServerEvents.recipes(event => {
         outputItems:[[{"item": "modern_industrialization:constantan_ingot"}, 2]]
     })
 
+    // miMachineCraft(event, {
+    //     machine:"extended_industrialization:alloy_smelter",
+    //     energy:4,
+    //     time:200,
+    //     inputItems:[
+    //         [{
+    //             "type": "neoforge:compound",
+    //             "amount": 9,
+    //             "children": [
+    //                 {
+    //                     "tag": "c:tiny_dusts/nickel"
+    //                 },
+    //                 {
+    //                     "tag": "c:nuggets/nickel"
+    //                 }
+    //             ]
+    //         }],
+    //         [{
+    //             "type": "neoforge:compound",
+    //             "amount": 9,
+    //             "children": [
+    //                 {
+    //                     "tag": "c:tiny_dusts/copper"
+    //                 },
+    //                 {
+    //                     "tag": "c:nuggets/copper"
+    //                 }
+    //             ]
+    //         }]
+    //     ],
+    //     outputItems:[[{"item": "modern_industrialization:constantan_ingot"}, 2]]
+    // })
+
     miMachineCraft(event, {
         machine:"extended_industrialization:alloy_smelter",
         energy:4,
@@ -40,7 +73,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{
                 "type": "neoforge:compound",
-                "amount": 9,
+                "amount": 3,
                 "children": [
                     {
                         "tag": "c:tiny_dusts/nickel"
@@ -52,7 +85,7 @@ ServerEvents.recipes(event => {
             }],
             [{
                 "type": "neoforge:compound",
-                "amount": 9,
+                "amount": 6,
                 "children": [
                     {
                         "tag": "c:tiny_dusts/copper"
@@ -63,7 +96,38 @@ ServerEvents.recipes(event => {
                 ]
             }]
         ],
-        outputItems:[[{"item": "modern_industrialization:constantan_ingot"}, 2]]
+        outputItems:[[{"item": "modern_industrialization:cupronickel_ingot"}, 1]],
+        removeRecipeType:"extended_industrialization:alloy_smelter"
+
+    })
+
+    miMachineCraft(event, {
+        machine:"modern_industrialization:mixer",
+        energy:2,
+        time:200,
+        inputItems:[
+            [{
+                "type": "neoforge:compound",
+                "amount": 3,
+                "children": [
+                    {
+                        "tag": "c:tiny_dusts/nickel"
+                    }
+                ]
+            }],
+            [{
+                "type": "neoforge:compound",
+                "amount": 6,
+                "children": [
+                    {
+                        "tag": "c:tiny_dusts/copper"
+                    }
+                ]
+            }]
+        ],
+        outputItems:[[{"item": "modern_industrialization:cupronickel_dust"}, 1]],
+        removeRecipeType:"modern_industrialization:mixer"
+
     })
 
     miMachineCraft(event, {energy:4, time:400, machine:"extended_industrialization:alloy_smelter",

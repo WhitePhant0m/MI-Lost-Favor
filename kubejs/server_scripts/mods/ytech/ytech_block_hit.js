@@ -16,6 +16,11 @@ const ytechBlockHitCraft = (event, args) => {
         result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
     }
     if(!args.compatOff){
+        //console.log(args.outputItems[0][0].id.slice(1));
+        
+        if(args.outputItems[0][0].id.slice(-4) == "_bit") {            
+            args.outputItems[0][1] = args.outputItems[0][1] * 1.5
+        }
         iePressCraft(event, {energy:3200,
             inputItems:args.inputItems,
             outputItems:args.outputItems,
