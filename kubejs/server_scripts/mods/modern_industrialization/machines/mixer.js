@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             [{item:"architects_palette:algal_blend"}, 2],
         ],
         outputItems:[
-            [{item:"modern_industrialization:fire_clay_dust"}, 4]
+            [{item:"kubejs:fire_clay_ball"}, 4]
         ],
         removeRecipe: true
     })

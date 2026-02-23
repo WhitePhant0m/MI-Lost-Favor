@@ -1525,17 +1525,21 @@
 			id: "6FABBCC7CB80AF62"
 			tasks: [
 				{
-					count: 12L
-					id: "3BFEF06E1313D7DC"
-					item: { count: 1, id: "modern_industrialization:fire_clay_dust" }
-					optional_task: true
+					count: 16L
+					id: "42DC2CCFD80ADE9C"
+					item: { count: 1, id: "kubejs:fire_clay_ball" }
 					type: "item"
 				}
 				{
-					count: 12L
-					id: "0BA5C81DA6666B7E"
+					count: 16L
+					id: "643CA63DED5E5718"
+					item: { count: 1, id: "kubejs:unfired_fire_clay_brick" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3F9228780F8B5153"
 					item: { count: 1, id: "modern_industrialization:fire_clay_brick" }
-					optional_task: true
 					type: "item"
 				}
 			]

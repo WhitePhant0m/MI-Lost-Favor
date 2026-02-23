@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+    miMachineCraft(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"modern_industrialization:fire_clay_bricks"}]
         ],

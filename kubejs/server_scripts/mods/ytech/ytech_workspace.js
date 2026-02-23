@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     let craft_removal_list = [
        
     ]
-
+    const miMachines = "MI machines"
     //#region Array functions
 
     Array.prototype.layerAll = function(letter) {
@@ -70,23 +70,23 @@ ServerEvents.recipes(event => {
 
     //#endregion
 
-    function assembler_recipe(energy,time,inputs,outputs,fluids,token){
-        fluids = fluids || [];
-        energy = energy + inputs.length * (energy / 4)
-        var recipe = event.recipes.modern_industrialization.assembler(energy, time);
-        inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
-        fluids.forEach((fluid) => {recipe.fluidIn(fluid[0], fluid[1])})
-        outputs.forEach((out) => {recipe.itemOut(out)})
-        if (token != undefined){recipe.itemIn(token, 0)}
-    }
+    // function assembler_recipe(energy,time,inputs,outputs,fluids,token){
+    //     fluids = fluids || [];
+    //     energy = energy + inputs.length * (energy / 4)
+    //     var recipe = event.recipes.modern_industrialization.assembler(energy, time);
+    //     inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
+    //     fluids.forEach((fluid) => {recipe.fluidIn(fluid[0], fluid[1])})
+    //     outputs.forEach((out) => {recipe.itemOut(out)})
+    //     if (token != undefined){recipe.itemIn(token, 0)}
+    // }
 
-    function packer_recipe(energy,time,inputs,outputs){
-        var recipe = event.recipes.modern_industrialization.packer(energy, time);
-        inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
-        outputs.forEach((out) => {
-            recipe.itemOut(out)
-        })
-    }
+    // function packer_recipe(energy,time,inputs,outputs){
+    //     var recipe = event.recipes.modern_industrialization.packer(energy, time);
+    //     inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
+    //     outputs.forEach((out) => {
+    //         recipe.itemOut(out)
+    //     })
+    // }
 
     function workspace_recipe(grid, materials, output, materialset, tool, nocompat){
         nocompat = nocompat || false
@@ -103,41 +103,69 @@ ServerEvents.recipes(event => {
         if (!nocompat) {
             let mats = []
             var amounts = grid[0].concat(grid[1],grid[2]).join("")
+            let isMiMachine = true
             switch(materialset){
                 case bronzeMaterialset:
-                    mats.push("modern_industrialization:bronze_machine_casing","4x moderndynamics:fluid_pipe","kubejs:bronze_glass","kubejs:small_copper_fluid_container")
+                    mats.push([{item:"modern_industrialization:bronze_machine_casing"}],[{item:"moderndynamics:fluid_pipe"}, 4],[{item:"kubejs:bronze_glass"}],[{item:"kubejs:small_copper_fluid_container"}])
                     break;
                 case bronzeBits:
-                    mats.push("modern_industrialization:bronze_machine_casing")
+                    mats.push([{item:"modern_industrialization:bronze_machine_casing"}])
                     break;
                 case steelUpgrade:
-                    mats.push("modern_industrialization:steel_upgrade")
+                    mats.push([{item:"modern_industrialization:steel_upgrade"}])
                     Object.entries(materials).forEach(m =>{
                         let regex = new RegExp(m[0],'g')
-                        mats.push((amounts.match(regex) || []).length + "x " + m[1])
+                        let isTag = m[1][0] == "#"
+                        if (isTag){
+                            mats.push([{tag: m[1].slice(1)}, (amounts.match(regex) || []).length])
+                        } else {
+                            mats.push([{item: m[1]}, (amounts.match(regex) || []).length])
+                        }
+                        
                     })
-                    packer_recipe(4,400,mats,[output])
+                    miMachineCraft(event, {energy:4, time:400, machine:"modern_industrialization:packer",
+                        inputItems:mats,
+                        outputItems:[[{item:output}]]
+                    })
                     return;
                 case steelBits:
-                    mats.push("modern_industrialization:steel_machine_casing")
+                    mats.push([{item:"modern_industrialization:steel_machine_casing"}])
                     break;
                 case steelMaterialset:
-                    mats.push("modern_industrialization:steel_machine_casing","immersiveengineering:fluid_pipe","kubejs:steel_infused_glass","kubejs:small_steel_fluid_container")
+                    mats.push([{item:"modern_industrialization:steel_machine_casing"}], [{item:"immersiveengineering:fluid_pipe"}, 5], [{item:"kubejs:steel_infused_glass"}], [{item:"kubejs:small_steel_fluid_container"}])
                     break;
                 case basicMaterialset:
-                    mats.push("modern_industrialization:basic_machine_hull")
+                    mats.push([{item:"modern_industrialization:basic_machine_hull"}])
                     break;
                 case basicBits:
-                    mats.push("modern_industrialization:frostproof_machine_casing")
+                    mats.push([{item:"modern_industrialization:frostproof_machine_casing"}])
                     break;
-
+                default:
+                    isMiMachine = false
+                    break;
             }
             Object.entries(materials).forEach(m =>{
                 let regex = new RegExp(m[0],'g')
-                mats.push((amounts.match(regex) || []).length + "x " + m[1])
+                //mats.push((amounts.match(regex) || []).length + "x " + m[1])
+                let isTag = m[1][0] == "#"
+                if (isTag){
+                    mats.push([{tag: m[1].slice(1)}, (amounts.match(regex) || []).length])
+                } else {
+                    mats.push([{item: m[1]}, (amounts.match(regex) || []).length])
+                }
             })
-            //event.remove({ type: 'modern_industrialization:assembler', output: output})
-            assembler_recipe(8,400,mats,[output])
+
+            if(isMiMachine){
+                miMachineCraft(event, {energy:1, time:400, machine:"modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
+                    inputItems:mats,
+                    outputItems:[[{item:output}]]
+                })
+                return
+            }
+            miMachineCraft(event, {energy:8, time:400, machine:"modern_industrialization:assembler",
+                inputItems:mats,
+                outputItems:[[{item:output}]]
+            })
         }
     }
 

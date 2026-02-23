@@ -12,6 +12,71 @@ MIMachineEvents.registerCasings(event => {
 global.miTweaksTags = global.miTweaksTags || []
 
 const MI_HATCHES_ALL = ["energy_input", "item_input", "item_output", "fluid_input", "fluid_output"]
+
+const machineTiersAll = ["bronze", "steel", "electric"]
+
+function registerSingleMIMachine(name, args){
+    let recipe
+    MIMachineEvents.registerRecipeTypes(event => {
+        recipe = event.register(name)
+        args.itemsIn && (recipe = recipe.withItemInputs())
+        args.itemsOut && (recipe = recipe.withItemOutputs())
+        args.fluidsIn && (recipe = recipe.withFluidInputs())
+        args.fluidsOut && (recipe = recipe.withFluidOutputs())
+    })
+    MIMachineEvents.registerMachines(event => {
+        event.craftingSingleBlock(
+            args.name || idToName(name), name, recipe, args.tiers || ["electric"], args.guiheight || -1, 
+            event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+            event.efficiencyBar(args.efBar?.x || 48, args.efBar?.y || 86), event.energyBar(args.enBar?.x || 14, args.enBar?.y || 44),
+            args.slots?.iIn || 0, args.slots?.iOut || 0, args.slots?.fIn || 0, args.slots?.fOut || 0, args.slots?.capacity || 16,
+            items => {
+                if(!args.itemSlots) {return items}
+                args.itemSlots.forEach(slot => items.addSlots.apply(items, slot))
+                return items
+            },
+            fluids => {
+                if(!args.fluidSlots) {return fluids}
+                args.fluidSlots.forEach(slot => fluids.addSlots.apply(fluids, slot))
+                return fluids
+            },
+            args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false
+        ) 
+    })
+}
+
+function registerSinglePowerlessMIMachine(name, args){
+    let recipe
+    MIMachineEvents.registerRecipeTypes(event => {
+        recipe = event.register(name)
+        args.itemsIn && (recipe = recipe.withItemInputs())
+        args.itemsOut && (recipe = recipe.withItemOutputs())
+        args.fluidsIn && (recipe = recipe.withFluidInputs())
+        args.fluidsOut && (recipe = recipe.withFluidOutputs())
+    })
+    MITweaksMachineEvents.registerPowerlessMachines(event => {
+        event.singleblock(
+            args.name || idToName(name), name, recipe, args.guiheight || -1, 
+            event.progressBar(args.pBar?.x || 60, args.pBar?.y || 60, args.pBar?.name || "arrow"),
+            args.slots?.iIn || 0, args.slots?.iOut || 0, args.slots?.fIn || 0, args.slots?.fOut || 0, args.slots?.capacity || 16,
+            items => {
+                if(!args.itemSlots) {return items}
+                args.itemSlots.forEach(slot => items.addSlots.apply(items, slot))
+                return items
+            },
+            fluids => {
+                if(!args.fluidSlots) {return fluids}
+                args.fluidSlots.forEach(slot => fluids.addSlots.apply(fluids, slot))
+                return fluids
+            },
+            args.mainCasing || "steel", args.mainOverlays || 'enigma_overlays', 
+            args.frontOverlay || false, args.topOverlay || false, args.sideOverlay || false,
+            args.baseEU || 1, args.redstone || true
+        ) 
+    })
+    jsonDataForMITweaksMachine(name, args.mainCasing, args.mainOverlays)
+}
+
 function registerMIMachine(name, args){
     let recipe
     MIMachineEvents.registerRecipeTypes(event => {
@@ -428,6 +493,27 @@ registerTieredMIMachine('bioactive_chamber', {itemsIn: true, itemsOut: true, cas
     itemInputSlots: [[20, 35, 2, 1], [20, 53, 1, 1], [74, 35, 2, 1], [92, 53, 1, 1], [20, 107, 2, 1], [20, 89, 1, 1], [74, 107, 2, 1], [92, 89, 1, 1]],
     itemOutputSlots: [[56, 71, 1, 1]],
     mainCasing:'bioresistant_machine_casing', mainOverlays: 'bioactive_chamber', frontOverlay: true
+})
+
+registerSingleMIMachine('mi_furnace', {name:"Furnace", itemsIn: true, itemsOut: true, tiers:machineTiersAll,
+    pBar: {x: 77, y: 33, name: 'arrow'}, efBar: {x: 38, y: 62}, enBar: {x: 18, y: 30},
+    slots:{iIn:1, iOut:1},
+    itemSlots: [[56, 35, 1, 1], [102, 35, 1, 1]],
+    frontOverlay: true
+})
+
+registerSingleMIMachine('microbial_fabricator', {name:"Microbial Fabricator", itemsIn: true, itemsOut: true,
+    pBar: {x: 58, y: 33, name: 'enigma_arrow'}, efBar: {x: 62, y: 75000}, enBar: {x: 18, y: 35},
+    slots:{iIn:3, iOut:1},
+    itemSlots: [[50, 15, 1, 1], [40, 35, 1, 1], [50, 55, 1, 1], [80, 35, 1, 1]],
+    frontOverlay: true, sideOverlay:true
+})
+
+registerSinglePowerlessMIMachine('not_so_multi_but_still_block_packer_2099_3x3x3_edition', { itemsIn: true, itemsOut: true,
+    pBar: {x: 78, y: 69, name: 'square'}, guiheight: 240,
+    slots:{iIn:12, iOut:1},
+    itemSlots: [[44, 35, 2, 1], [44, 53, 1, 1], [98, 35, 2, 1], [116, 53, 1, 1], [44, 107, 2, 1], [44, 89, 1, 1], [98, 107, 2, 1], [116, 89, 1, 1], [80, 71, 1, 1]],
+    mainCasing:'treated_wood_casing', mainOverlays: 'multiblock_packer', frontOverlay: true
 })
 
 
