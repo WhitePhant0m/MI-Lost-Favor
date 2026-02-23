@@ -152,6 +152,9 @@ createNewItem('crushed_gold', { tag: ["c:crushed_ores", "c:crushed_ores/gold"], 
 createNewItem('crushed_iron', { tag: ["c:crushed_ores", "c:crushed_ores/iron"], lang: { "en_us": "Сrushed iron", "ru_ru": "Измельченное железо" }})
 createNewItem('crushed_lead', { tag: ["c:crushed_ores", "c:crushed_ores/lead"], lang: { "en_us": "Сrushed lead", "ru_ru": "Измельченный свинец" }})
 createNewItem('crushed_tin', { tag: ["c:crushed_ores", "c:crushed_ores/tin"], lang: { "en_us": "Сrushed tin", "ru_ru": "Измельченное олово" }})
+
+createNewItem('unfired_fire_clay_brick')
+createNewItem('fire_clay_ball')
 //#endregion
 
 //#region MI stuff

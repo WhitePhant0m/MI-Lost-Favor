@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"conditions": [
+				{
+					"condition": "minecraft:survives_explosion"
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "mi_tweaks:not_so_multi_but_still_block_packer_2099_3x3x3_edition"
+				}
+			],
+			"rolls": 1
+		}
+	],
+	"random_sequence": "mi_tweaks:blocks/not_so_multi_but_still_block_packer_2099_3x3x3_edition"
+}

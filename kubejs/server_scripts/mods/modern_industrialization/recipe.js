@@ -142,8 +142,28 @@ ServerEvents.recipes(event => {
             { "item": "modern_industrialization:brick_dust" },
             { "item": "modern_industrialization:brick_dust" },
         ],
-        output: "modern_industrialization:fire_clay_dust",
+        output: "kubejs:fire_clay_ball",
         amount: 3,
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            "ccc",
+            "c#c",
+            "ccc",
+        ],
+        key: {
+            "#": { "tag": "ytech:brick_molds" },
+            "c": { "item": "kubejs:fire_clay_ball" },
+        },
+        outputItems: [[{ id: "kubejs:unfired_fire_clay_brick" }, 8]],
+        compatOff:true
+    })
+
+    milfSmelting(event, {
+        inputItems: [[{ item: "kubejs:unfired_fire_clay_brick" }]],
+        outputItems: [[{ id: "modern_industrialization:fire_clay_brick" }]],
+        removeRecipe:true
     })
 
     milfShaped(event, {

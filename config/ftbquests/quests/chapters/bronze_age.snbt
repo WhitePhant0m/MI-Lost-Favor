@@ -4433,5 +4433,18 @@
 			x: -19.5d
 			y: 7.0d
 		}
+		{
+			dependencies: ["79CE5FF7EB605456"]
+			id: "582F02F8A2F308E7"
+			shape: "octagon"
+			size: 0.5d
+			tasks: [{
+				id: "62A7463F82B25BDF"
+				item: { count: 1, id: "mi_tweaks:not_so_multi_but_still_block_packer_2099_3x3x3_edition" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 6.5d
+		}
 	]
 }

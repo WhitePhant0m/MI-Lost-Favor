@@ -1656,6 +1656,10 @@
 		"{@pagebreak}"
 		"&#FEECD6Создайте&r свой первый &4ц&r&6в&r&eе&r&2т&r&bн&r&9о&r&5й&r &#CAE4C8саженец&r! "
 	]
+	quest.582F02F8A2F308E7.quest_desc: [
+		"Another breakthrough invention of PLACERS™ (Packing Logistics And Controlled Erections of Rebuildable Structures) engineers - the lesser one, but not less artifice: Not So Multi But Still Block Packer 2099 3x3x3 Edition! This small device can do what most of us can, but less most of us want to do - turn complex details into not-less-complex machines! Just shove all the constituents of a whole into one of the BIG square holes this thing has, and BOOM - the HOLE® (Hidden and Originally Least Expected) mechanism will do all the hard work for you!"
+		"(The inner workings of this apparatus are considered a corporate secret, but we can assure you that it's most logical that to make this thing you have to unpack one of the newer models in a similar lineup of machines, specifically the Multiblock Packer 3000 (Safety regulations edition))"
+	]
 	quest.586308E0B5B5E030.quest_desc: [
 		"[ \"Keep in mind that the horses have been greatly \", { \"text\": \"improved\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5B66EF3877866949\" } }, \"!\" ]"
 		"{@pagebreak}"
