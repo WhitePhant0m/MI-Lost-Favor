@@ -111,6 +111,9 @@ ServerEvents.recipes(event => {
     event.replaceOutput({ output: 'ytech:tin_bolt' }, 'ytech:tin_bolt', 'modern_industrialization:tin_bolt')
     event.replaceOutput({ output: 'ytech:bronze_bolt' }, 'ytech:bronze_bolt', 'modern_industrialization:bronze_bolt')
 
+    event.replaceInput({ output: 'ytech:leather_strips' }, '#ytech:sharp_flints', '#c:knives')
+    event.replaceInput({ output: 'minecraft:leather' }, '#ytech:sharp_flints', '#c:knives')
+
     event.custom({
         "type": "ytech:remaining_shapeless_crafting",
         "category": "misc",
