@@ -2886,7 +2886,7 @@
 				}
 			]
 			x: 0.5d
-			y: 9.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6852D3C3660C9385"]
@@ -2910,7 +2910,7 @@
 				}
 			]
 			x: -0.5d
-			y: 9.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7D9C31E5FE076F2C"]
@@ -3237,7 +3237,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["61A1D4E5159C9719"]
@@ -3460,12 +3460,13 @@
 			dependencies: ["0BCD76587F2DB00F"]
 			id: "640DC65E9255BECE"
 			shape: "heart"
+			size: 0.7d
 			tasks: [{
 				id: "1F0D6D058B31E805"
 				item: { count: 1, id: "hangglider:hang_glider" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.0d
 			y: 10.5d
 		}
 		{
@@ -3555,7 +3556,7 @@
 		{
 			dependencies: ["2B815502453269AF"]
 			id: "06EAC7034ACFA220"
-			shape: "pentagon"
+			shape: "gear"
 			tasks: [{
 				id: "6FC96B0DAC5D1AC5"
 				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
@@ -4335,7 +4336,7 @@
 				id: "immersiveengineering:armor_steel_helmet"
 			}
 			id: "62C5B9FB001E26A5"
-			shape: "pentagon"
+			shape: "gear"
 			tasks: [
 				{
 					id: "693670185693A3F3"
@@ -4358,8 +4359,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 2.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["002562156B0D8E9F"]
@@ -4445,6 +4446,30 @@
 			}]
 			x: -9.5d
 			y: 6.5d
+		}
+		{
+			dependencies: ["2B815502453269AF"]
+			id: "6764DDAB2ABE11F4"
+			shape: "gear"
+			tasks: [{
+				id: "394C0DCD751AD692"
+				item: { count: 1, id: "travelertoolbelt:iron_belt" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0BCD76587F2DB00F"]
+			id: "65700530D320078C"
+			shape: "heart"
+			tasks: [{
+				id: "3DC345DCD7A02CDE"
+				item: { count: 1, id: "travelertoolbelt:gold_belt" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.5d
 		}
 	]
 }

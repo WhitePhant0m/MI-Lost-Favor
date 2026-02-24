@@ -269,8 +269,8 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
-			y: -10.5d
+			x: 5.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["19F4ECE3B256B396"]
@@ -281,7 +281,7 @@
 				item: { count: 1, id: "ytech:basket" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -10.5d
 		}
 		{
@@ -1276,7 +1276,7 @@
 				item: { components: { "map_atlases:empty_maps": { vanilla: 9 }, "map_atlases:map_collection": { vanilla: [I; 8, 16, 23, 29, 34, 38, 41, 43, 44 ] } }, count: 1, id: "map_atlases:atlas" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.5d
 			y: -11.0d
 		}
 		{
@@ -1288,7 +1288,7 @@
 				item: { count: 1, id: "eccentrictome:tome" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 7.5d
 			y: -11.0d
 		}
 		{
@@ -1320,7 +1320,7 @@
 				item: { count: 1, id: "supplementaries:lunch_basket" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -11.5d
 		}
 		{
@@ -2019,24 +2019,12 @@
 			id: "23D5012F534D8098"
 			shape: "none"
 			tasks: [{
-				id: "2D71883EF836C1EA"
-				item: { count: 1, id: "toolbelt:belt" }
+				id: "45DD59F5FC6A169F"
+				item: { count: 1, id: "travelertoolbelt:belt" }
 				type: "item"
 			}]
 			x: 7.5d
-			y: -10.5d
-		}
-		{
-			dependencies: ["23D5012F534D8098"]
-			id: "72469A4BC17070AB"
-			shape: "none"
-			tasks: [{
-				id: "4EE998050BCE416C"
-				item: { count: 1, id: "toolbelt:pouch" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: -11.5d
+			y: -10.0d
 		}
 		{
 			id: "3A3202170DDE2113"
@@ -2488,6 +2476,18 @@
 			}]
 			x: -1.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			id: "323D9F643F4609F7"
+			shape: "diamond"
+			tasks: [{
+				id: "6181B4C643D3C8FA"
+				item: { count: 1, id: "travelertoolbelt:copper_belt" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 1.5d
 		}
 	]
 }

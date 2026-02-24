@@ -17,7 +17,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			id: "1B6B111F04DC9771"
@@ -53,6 +53,18 @@
 			}]
 			x: -1.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["1B6B111F04DC9771"]
+			id: "4CE09E73A0DB368F"
+			shape: "none"
+			tasks: [{
+				id: "308768F2EC752A9B"
+				item: { count: 1, id: "travelertoolbelt:netherite_belt" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
 		}
 	]
 }

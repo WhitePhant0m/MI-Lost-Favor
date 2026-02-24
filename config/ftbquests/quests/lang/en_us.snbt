@@ -2173,11 +2173,6 @@
 		"{@pagebreak}"
 		"О большинстве ритуалов можно прочитать в гайдбуке!"
 	]
-	quest.72469A4BC17070AB.quest_desc: [
-		"Used to increase toolbelt capacity. The first upgrade can be applied via needle, which will increase the toolbelt tool limit by 2, ensuing upgrades will require an anvil and will only add 1 additional slot"
-		"{@pagebreak}"
-		"Используется для увеличения емкости пояса для инструментов. Первое улучшение можно применить с помощью иглы, что увеличит лимит инструментов на поясе на 2, последующие улучшения потребуют наковальни и добавят только 1 дополнительный слот."
-	]
 	quest.725F8D9DA52207FB.quest_desc: [
 		"&#DEB3E0Pylons&r allows to &#FEECD6speed up&r crafts in &l&#e4affaSpectrum&r&r multiblocks. Also, they can be used as upgrades for &#9BB8EDModern Industrialization&r machines."
 		"{@pagebreak}"

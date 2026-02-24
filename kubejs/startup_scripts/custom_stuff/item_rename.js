@@ -84,3 +84,43 @@ addRename(
     types: ["Block", "Item"]
   }
 )
+
+addRename(
+  "travelertoolbelt:netherite_belt",
+  {
+    langs: { "en_us": "Blastproof Belt", "ru_ru": "Взрывостойкий пояс" },
+    types: ["Item"]
+  }
+)
+
+addRename(
+  "travelertoolbelt:diamond_belt",
+  {
+    langs: { "en_us": "Stainless Steel Belt", "ru_ru": "Пояс из нержавеющей стали" },
+    types: ["Item"]
+  }
+)
+
+addRename(
+  "travelertoolbelt:gold_belt",
+  {
+    langs: { "en_us": "Aluminum Belt", "ru_ru": "Алюминиевый пояс" },
+    types: ["Item"]
+  }
+)
+
+addRename(
+  "travelertoolbelt:iron_belt",
+  {
+    langs: { "en_us": "Steel Belt", "ru_ru": "Стальной пояс" },
+    types: ["Item"]
+  }
+)
+
+addRename(
+  "travelertoolbelt:copper_belt",
+  {
+    langs: { "en_us": "Bronze Belt", "ru_ru": "Бронзовый пояс" },
+    types: ["Item"]
+  }
+)
