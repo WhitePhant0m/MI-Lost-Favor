@@ -1708,7 +1708,7 @@
 				item: { count: 1, id: "ytech:raw_hide" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: -8.0d
 		}
 		{
@@ -2475,17 +2475,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3B77EDA3E715F8ED"]
-			id: "6CF95225CD1F0602"
-			tasks: [{
-				id: "1B1769A882258EBC"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(justaraftmod:rafts)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -5.5d
-		}
-		{
 			dependencies: ["51E3EA7E70ECE842"]
 			id: "323D9F643F4609F7"
 			shape: "diamond"
@@ -2508,6 +2497,18 @@
 			}]
 			x: 8.0d
 			y: -9.5d
+		}
+		{
+			dependencies: ["6E680C846961BFE3"]
+			id: "56EC2021ADCE895D"
+			shape: "diamond"
+			tasks: [{
+				id: "3A5AE59EDDEBE0BA"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:boats)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -10.0d
 		}
 	]
 }

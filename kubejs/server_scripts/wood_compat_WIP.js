@@ -71,4 +71,46 @@ ServerEvents.recipes(event => {
             outputItems: [[{ item: entry.output }, 6]]
         });
     });
+
+
+    const types = ["ytech:remaining_shaped_crafting", "ytech:remaining_shapeless_crafting"];
+
+    types.forEach(type => {
+        event.forEachRecipe({
+            mod: "minecraft",
+            type: type,
+            output:
+                [
+                    "#minecraft:fences",
+                    "#minecraft:fence_gates",
+                    "#minecraft:wooden_pressure_plates",
+                    "#minecraft:wooden_stairs",
+                    "#minecraft:wooden_doors",
+                    "#minecraft:trapdoors",
+                    "#minecraft:buttons",
+                    "#minecraft:boats"
+                ]
+        }, recipe => {
+            console.log(recipe.originalRecipeResult.id);
+
+            const originalJson = JSON.parse(recipe.json);
+
+            for (const key in originalJson.key) {
+                if (originalJson.key[key].tag && ["c:files", "c:hammers", "c:saws"].includes(originalJson.key[key].tag)) {
+                    delete originalJson.key[key];
+                    originalJson.pattern = originalJson.pattern.map(row => row.replace(new RegExp(key, 'g'), ' '));
+                }
+            }
+
+            if (originalJson.ingredients) {
+                originalJson.ingredients = (originalJson.ingredients || [])
+                    .filter(i => !(i.tag && ["c:files", "c:hammers", "c:saws"].includes(i.tag)));
+            }
+
+            event.remove({ output: recipe.originalRecipeResult.id });
+            event.custom(originalJson);
+        });
+    });
+
+
 });
