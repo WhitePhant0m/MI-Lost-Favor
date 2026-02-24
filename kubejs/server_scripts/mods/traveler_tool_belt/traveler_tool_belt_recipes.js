@@ -48,5 +48,5 @@ ServerEvents.recipes(event => {
         event.remove({ output: upgrade.to })
     })
 
-    event.replaceInput({ output: 'travelertoolbelt:netherite_belt' }, 'minecraft:netherite_ingot', 'modern_industrialization:tungsten_plate')
+    event.replaceInput({ output: 'travelertoolbelt:netherite_belt' }, 'minecraft:netherite_ingot', 'modern_industrialization:blastproof_alloy_plate')
 })
