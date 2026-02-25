@@ -25,6 +25,14 @@
 			x: 0.0d
 			y: 4.5d
 		}
+		{
+			height: 4.0d
+			image: "quest_pics:textures/saeta_pointing.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.0d
+			y: -2.5d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]

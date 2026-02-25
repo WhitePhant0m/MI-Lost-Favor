@@ -38,6 +38,26 @@ const yTechShaped = (/**@type {$RecipesKubeEvent_}*/ event, args) => {
     event.custom(recipe)
 }
 
+function yTechShapeless(/**@type {$RecipesKubeEvent_}*/ event, args){
+    let ingredients = []
+    args.inputItems.forEach(item => {ingredients.push(Object.assign({}, item[0], { count: item[1] || 1 }))})
+    let recipe = {
+        type: "ytech:remaining_shapeless_crafting",
+        category: args.category || "misc",
+        ingredients: ingredients,
+        result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || args.outputItems[0][0].count || 1 }),
+    }
+    if (!args.compatOff) {
+        miMachineCraft(event, {
+            energy: 2, time: 200, machine: "modern_industrialization:assembler",
+            inputItems: args.inputItems,
+            outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
+        })
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
+    event.custom(recipe)
+}
 
 ServerEvents.recipes(event => {
     // (`･Θ･´) - Some recipes are located in data because it is easier to change a recipe there and delete the previous recipe at the same time (overwrite)
