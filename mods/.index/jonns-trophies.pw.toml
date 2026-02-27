@@ -1,17 +1,17 @@
-filename = 'trophymanager-1.21.1-2.4.0.jar'
+filename = 'trophymanager-1.21.1-2.4.1.jar'
 name = "Jonn's Trophies"
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'trophymanager-1.21.1-2.4.0.jar'
+x-prismlauncher-version-number = 'trophymanager-1.21.1-2.4.1.jar'
 
 [download]
-hash = '20fe00fed04a23a9730cb2b18d1e8e27328e9f2f'
+hash = 'b52e5df5b9ffe983e87fb5d1450095f68f488849'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7570989
+file-id = 7635928
 project-id = 510170

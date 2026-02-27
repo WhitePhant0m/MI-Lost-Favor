@@ -1,17 +1,17 @@
-filename = 'Replication-1.21.1-1.2.6.jar'
+filename = 'Replication-1.21.1-1.2.7.jar'
 name = 'Replication'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'Replication-1.21.1-1.2.6.jar'
+x-prismlauncher-version-number = 'Replication-1.21.1-1.2.7.jar'
 
 [download]
-hash = 'b82f5de31ad46a2fe8cfaa55a57ccf43ac70cff1'
+hash = 'bb433ec94394e960ba26fc2e7fd5537fcb7fbe50'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7331983
+file-id = 7662870
 project-id = 638351

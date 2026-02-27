@@ -1,17 +1,17 @@
-filename = 'waystones-neoforge-1.21.1-21.1.25.jar'
+filename = 'waystones-neoforge-1.21.1-21.1.28.jar'
 name = 'Waystones'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'waystones-neoforge-1.21.1-21.1.25.jar'
+x-prismlauncher-version-number = 'waystones-neoforge-1.21.1-21.1.28.jar'
 
 [download]
-hash = '96a4fd659aa80af18a788bf18a6110df996417fd'
+hash = 'bc37eb5228c68313099cf1d8d36b15c5e3074dc2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7354464
+file-id = 7682266
 project-id = 245755

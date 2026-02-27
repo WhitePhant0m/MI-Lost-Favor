@@ -1,17 +1,17 @@
-filename = 'clientsort-neoforge-2.2.0-beta.1+1.21.1.jar'
-name = 'Client Sort'
+filename = 'clientsort-neoforge-2.2.1+1.21.1.jar'
+name = 'ClientSort'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'v2.2.0-beta.1+1.21.1-NeoForge'
+x-prismlauncher-version-number = 'v2.2.1+1.21.1-NeoForge'
 
 [download]
-hash = 'a89e96996aa79c19b673f4ef649f09c653556f8a'
+hash = '84f74e5473e369aabb1242b0fa7efcb6c1df1471'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7592807
+file-id = 7643728
 project-id = 1049891

@@ -1,17 +1,17 @@
-filename = 'connectiblechains-neoforge-1.21.1-1.0.0.jar'
+filename = 'connectiblechains-neoforge-1.21.1-1.2.3.jar'
 name = 'Reconnectible Chains'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Reconnectible Chains NeoForge 1.21.1 - 1.0.1'
+x-prismlauncher-version-number = 'Reconnectible Chains NeoForge 1.21.1 - 1.2.3'
 
 [download]
-hash = '99a820fc89519494b4e37aea53684001b38bdf63'
+hash = '77fb50f5ad85319559e1a8df6e06253a1e11982f'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7579782
+file-id = 7679165
 project-id = 1451848

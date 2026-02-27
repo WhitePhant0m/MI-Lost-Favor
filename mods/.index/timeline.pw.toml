@@ -1,17 +1,17 @@
-filename = 'rpgtimeline-neoforge-1.21.1-2.0.4.0.jar'
+filename = 'rpgtimeline-neoforge-1.21-2.0.4.1.jar'
 name = 'Timeline'
-side = 'server'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1', '1.21.2' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'rpgtimeline-neoforge-1.21.1-2.0.4.0.jar'
+x-prismlauncher-version-number = 'rpgtimeline-neoforge-1.21-2.0.4.1.jar'
 
 [download]
-hash = 'bcd27741bd306667fb1ef68fd8bd37bdf73fd607'
+hash = '9843374a44477cb7afcf97cbcd56d049c0a7d39b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7641124
+file-id = 7678437
 project-id = 1454051

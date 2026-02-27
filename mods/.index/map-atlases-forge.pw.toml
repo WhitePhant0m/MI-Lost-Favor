@@ -1,17 +1,17 @@
-filename = 'map_atlases-1.21-6.4.0-neoforge.jar'
+filename = 'map_atlases-1.21-6.5.1-neoforge.jar'
 name = 'Map Atlases'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'map_atlases-1.21-6.4.0-neoforge.jar'
+x-prismlauncher-version-number = 'map_atlases-1.21-6.5.1-neoforge.jar'
 
 [download]
-hash = 'ee590ab07f740010f98d9c768f339f95db1226c7'
+hash = '1ec8409177fe76f589ffb0b9e590feafedfc48c3'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7540723
+file-id = 7659933
 project-id = 519759

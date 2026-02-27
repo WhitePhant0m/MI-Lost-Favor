@@ -1,17 +1,17 @@
-filename = 'rechiseled-1.2.2-neoforge-mc1.21.jar'
+filename = 'rechiseled-1.2.4-neoforge-mc1.21.jar'
 name = 'Rechiseled'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Rechiseled 1.2.2 for NeoForge 1.21'
+x-prismlauncher-version-number = 'Rechiseled 1.2.4 for NeoForge 1.21'
 
 [download]
-hash = 'aebd1dc1cee666b33c464b9328e6dff63b47621b'
+hash = 'bd8ac0c82a04179c649f40b3333ff0648f444086'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7589595
+file-id = 7687594
 project-id = 558998
