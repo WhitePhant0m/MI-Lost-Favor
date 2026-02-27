@@ -259,6 +259,24 @@ ServerEvents.recipes(event => {
                 { "key": "minecraft:wither_skeleton_skull" }
             ]
         },
+        {
+            id: "cataclysm:amethyst_nest", name: "cataclysm_amethyst_nest", augments: [
+                { "key": "occultism:amethyst_dust" },
+                { "key": "pastel:amethyst_powder" },
+            ]
+        },
+        {
+            id: "born_in_chaos_v1:infernal_pumpkin", name: "born_in_chaos_v1_infernal_pumpkin", augments: [
+                { "key": "minecraft:jack_o_lantern" },
+                { "key": "enchanted:foul_fume" },
+            ]
+        },
+        {
+            id: "companions:companions_monkey_temple", name: "companions_monkey_temple", augments: [
+                { "key": "minecraft:cocoa_beans" },
+                { "key": "enchanted:candelabra" },
+            ]
+        },
     ]
 
     locate_structure_list.forEach(structure => {
