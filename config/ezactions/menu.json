@@ -1,0 +1,79 @@
+[
+  {
+    "id": "key_19c9c2d2109",
+    "title": "Open Quests",
+    "icon": "ftbquests:book",
+    "action": {
+      "type": "KEY",
+      "name": "key.ftbquests.quests",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "key_19c9c2e3e3c",
+    "title": "FTB Team",
+    "icon": "ftblibrary:icon_item",
+    "action": {
+      "type": "KEY",
+      "name": "key.ftbteams.open_gui",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "key_19c9c2f26ad",
+    "title": "Open Chronicle",
+    "icon": "rpgtimeline:chronicle_world_first",
+    "action": {
+      "type": "KEY",
+      "name": "key.rpgtimeline.open_chronicle",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "key_19c9c36d757",
+    "title": "Toggled Reacharound Placement",
+    "icon": "minecraft:scaffolding",
+    "action": {
+      "type": "KEY",
+      "name": "key.bridgingmod.toggle_bridging",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "advancements",
+    "title": "Advancements",
+    "icon": "chipped:alchemy_book",
+    "action": {
+      "type": "KEY",
+      "name": "key.advancements",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "key_19c9c29f028",
+    "title": "Boss Checklist",
+    "icon": "kubejs:holy_book_of_color",
+    "action": {
+      "type": "KEY",
+      "name": "key.boss_checklist.open_checklist",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  },
+  {
+    "id": "key_19c9c304c19",
+    "title": "World Tier Select",
+    "icon": "apotheosis:boss_summoner",
+    "action": {
+      "type": "KEY",
+      "name": "key.apotheosis.open_world_tier_select",
+      "toggle": false,
+      "mode": "AUTO"
+    }
+  }
+]

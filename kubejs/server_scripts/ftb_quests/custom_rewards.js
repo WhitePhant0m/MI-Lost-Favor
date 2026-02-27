@@ -1,6 +1,12 @@
 // TODO: refactor in future
-
 let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
+let $EzActionAPI = Java.loadClass("org.z2six.ezactions.api.EzActions").get()
+let $menuPath = Java.loadClass("org.z2six.ezactions.api.MenuPath")
+let $ClickActionKey = Java.loadClass("org.z2six.ezactions.data.click.ClickActionKey")
+
+
+
+
 
 // reward for Forge Hammer
 FTBQuestsEvents.customReward('0DC887212398806D', event => {
@@ -82,6 +88,52 @@ const trinkets_slot_list_reward = [
     { quest_id: '73D93A782AD2E4AE', trinket_slot: 'bundle' },
 ]
 
+// xaeromap radial menu group
+FTBQuestsEvents.customReward('4D0EBC927D8AD01D', event => {
+    const EzActionMenuWriter = $EzActionAPI.menuWrite();
+    // Add bundle
+    const xaeromap_bundle = {
+        "id": "Xaeromap_test",
+        "title": "Xaeromap",
+        "icon": "minecraft:map"
+    };
+    EzActionMenuWriter.upsertFromJson($menuPath.root(), JSON.stringify(xaeromap_bundle));
+
+    const action_key_list = [
+        { "gui.xaero_new_waypoint": "New Waypoint" },
+        { "gui.xaero_waypoints_key": "Open Waypoint Screen" },
+        { "gui.xaero_minimap_settings": "Minimap Settings" }
+    ]
+    action_key_list.forEach(key => {
+        let keyName = Object.keys(key)[0];
+        let keyTitle = key[keyName];
+        $EzActionAPI.addAction("Xaeromap_test", keyTitle, null, $ClickActionKey.deserialize(JSON.stringify({
+            "type": "KEY",
+            "name": keyName,
+            "toggle": false,
+            "mode": "AUTO"
+        })));
+    });
+
+});
+
+// Radial menu button for devices:devices_pouch
+const radial_menu_buttons = [
+    { quest_id: '7108991BE6DD4A51', action_name: 'Open Money Pouch', key_name: 'key.devices.open_pouch' },
+    { quest_id: '472BCEE94E93C2FF', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch' },
+]
+
+radial_menu_buttons.forEach(element => {
+    FTBQuestsEvents.customReward(element.quest_id, event => {
+        $EzActionAPI.addAction(null, element.action_name, null, $ClickActionKey.deserialize(JSON.stringify({
+            "type": "KEY",
+            "name": element.key_name,
+            "toggle": false,
+            "mode": "AUTO"
+        })));
+    });
+});
+
 trinkets_slot_list_reward.forEach(reward => {
     FTBQuestsEvents.customReward(reward.quest_id, event => {
         let pData = event.player.persistentData
@@ -91,7 +143,7 @@ trinkets_slot_list_reward.forEach(reward => {
 
         if (!pData.getBoolean(pDataName)) {
             pData.putBoolean(pDataName, true)
-            
+
             event.server.runCommandSilent(`/curios add ${reward.trinket_slot} ${player_name} 1`)
         }
     });
