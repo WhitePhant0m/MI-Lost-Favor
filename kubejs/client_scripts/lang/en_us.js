@@ -25,7 +25,9 @@ ClientEvents.lang('en_us', event => {
     event.add('kubejs.press_button', 'Hold ')
     event.add('kubejs.for_details', 'for more information')
     event.add('kubejs.amber_visage.tooltip', 'Used as fuel in the transmogrification table to change the appearance of items without modifying their behavior at all')
-    event.add('kubejs.beltborne_lanterns.tooltip', 'Press B while holding a lantern — it snaps onto your belt. Need it back in your hands? Press B again.')
+    event.add('kubejs.beltborne_lanterns.tooltip', 'Press CTRL + B while holding a lantern — it snaps onto your belt. Need it back in your hands? Press B again.')
+    event.add('milf.money_pouch.tooltip', 'Can be opened with radial menu while in the curio slot')
+    event.add('milf.curio_bag.tooltip', 'Can be opened with radial menu while in the hotbar or in a curio slot')
 
 
     event.add('milf.placers.notification1', `Not enough space to place ${textAnimatorString("this", "bounce")} one`)

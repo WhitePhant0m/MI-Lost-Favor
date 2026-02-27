@@ -1,12 +1,14 @@
 ItemEvents.modifyTooltips(event => {
 
     const remove_tooltips = [
-        'hexerei:sage_seed'
+        {name: 'hexerei:sage_seed', line: 1},
+        {name: 'devices:devices_pouch', line: 2},
+        {name: 'ars_elemental:curio_bag', line: 2}
     ];
 
     remove_tooltips.forEach(item => {
-        event.modify(item, tooltip => {
-            tooltip.removeLine(1)
+        event.modify(item.name, tooltip => {
+            tooltip.removeLine(item.line);
         });
     });
 });
