@@ -1,0 +1,10 @@
+#Server config settings
+[server]
+	#List of items allowed in the tool belt (this overrides the blacklist) (Use registry names, for example: "minecraft:apple", "minecraft:flint")
+	whitelist = ["modern_industrialization:wrench", "advanced_ae:throughput_monitor_configurator", "yet_another_industrialization:machine_diagnoser", "hexerei:crow_flute", "chipped:watering_can", "chipped:alchemy_book", "chipped:saw", "chipped:needles", "chipped:multimeter", "chipped:chisel"]
+	#List of items not allowed in the tool belt (the whitelist takes precedence) (Use registry names, for example: "minecraft:apple", "minecraft:flint")
+	blacklist = []
+	#If true, all non-stackable items can be placed in the tool belt
+	allowAllNonStackableItems = true
+	#If true, any item can be placed in the tool belt
+	allowAllItems = false
