@@ -130,7 +130,7 @@
 	#Allows tracking pins by pressing control, making them follow you on minimap
 	pin_tracking = true
 	#Show nearby mobs on minimap. Also requires matching server config
-	mob_radar = false
+	mob_radar = true
 	# Default: 64
 	# Range: 0 ~ 256
 	radar_radius = 64
