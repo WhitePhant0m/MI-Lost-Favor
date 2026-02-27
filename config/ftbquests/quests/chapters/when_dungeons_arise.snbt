@@ -1247,8 +1247,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -5.5d
-			y: 12.5d
+			x: -4.0d
+			y: 17.5d
 		}
 		{
 			icon: {
@@ -1307,7 +1307,7 @@
 				type: "advancement"
 			}]
 			x: -5.5d
-			y: 13.5d
+			y: 12.5d
 		}
 		{
 			icon: {
@@ -1320,8 +1320,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -5.5d
-			y: 11.5d
+			x: -2.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["78B154D7DC8F7464"]
@@ -1331,8 +1331,8 @@
 				item: { count: 1, id: "mowziesmobs:sol_visage" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 10.0d
+			x: -2.0d
+			y: 16.0d
 		}
 		{
 			icon: {
@@ -1345,8 +1345,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -5.5d
-			y: 14.5d
+			x: -3.0d
+			y: 17.5d
 		}
 		{
 			id: "2A8C0D9B2C194AD2"
@@ -1374,8 +1374,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -16.5d
-			y: 17.0d
+			x: -17.5d
+			y: 12.5d
 		}
 		{
 			id: "63A54EC92B8FB185"
@@ -2048,8 +2048,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -15.5d
-			y: 17.0d
+			x: -16.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["7B54BBAA9D346DD8"]
@@ -2066,8 +2066,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -14.5d
-			y: 17.0d
+			x: -15.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["75E72BED18FC6B05"]
@@ -2084,8 +2084,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -13.5d
-			y: 17.0d
+			x: -14.5d
+			y: 12.5d
 		}
 		{
 			id: "28A7409A60FE5193"
@@ -2632,8 +2632,8 @@
 					type: "item"
 				}
 			]
-			x: -38.5d
-			y: 32.5d
+			x: -7.0d
+			y: 17.5d
 		}
 		{
 			id: "516F8BD76AA0DE20"
@@ -2871,23 +2871,44 @@
 			id: "6150509913ECC9FE"
 			tasks: [{
 				entity: "companions:sacred_pontiff"
+				icon: {
+					id: "companions:holy_robe_mask"
+				}
 				id: "4CD8949B26F31FB9"
 				type: "kill"
 				value: 1L
 			}]
-			x: -10.5d
-			y: 20.0d
+			x: -6.0d
+			y: 17.5d
 		}
 		{
+			icon: {
+				id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+			}
 			id: "35A57388AA3AB5F4"
-			tasks: [{
-				entity: "born_in_chaos_v1:lord_pumpkinhead_head"
-				id: "287098876F267E57"
-				type: "kill"
-				value: 1L
-			}]
-			x: -9.5d
-			y: 20.0d
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:lord_pumpkinhead_head"
+					icon: {
+						id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+					}
+					id: "699936573EEC8053"
+					type: "kill"
+					value: 1L
+				}
+				{
+					icon: {
+						id: "born_in_chaos_v1:soulbane"
+					}
+					id: "351EE92DDBD307A7"
+					observe_type: 5
+					timer: 0L
+					to_observe: "born_in_chaos_v1:lord_pumpkinhead"
+					type: "observation"
+				}
+			]
+			x: -5.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["7A95DF56D410401A"]
@@ -3005,6 +3026,23 @@
 			}]
 			x: -20.0d
 			y: 7.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "cataclysm:item/amethyst_crab_shell"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4128C0ADAD05A131"
+			tasks: [{
+				entity: "cataclysm:amethyst_crab"
+				id: "54030B4F0F34FBE0"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 19.0d
 		}
 	]
 }

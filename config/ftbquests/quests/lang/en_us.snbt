@@ -1607,6 +1607,11 @@
 		""
 		"Данный блок очень сильно поможет вам в будущем!"
 	]
+	quest.52E47CD2A5102410.quest_desc: [
+		"You need an undamaged anvil to use this block."
+		"{@pagebreak}"
+		"Вам необходима целая наковальня, чтобы воспользоваться этим блоком."
+	]
 	quest.52FDAC0EAAA20FB1.quest_desc: ["плейсит временный физ. портал, работает между мирами, на выпил, мб передумаю"]
 	quest.5386ADA67BEB546A.quest_desc: ["встаёшь даёт опыт из привязанного обелиска с опытом"]
 	quest.538E3976DDFD9FBF.quest_desc: ["Отображает суммарное количество бафов в кузне"]
@@ -1858,6 +1863,12 @@
 		"…"
 		""
 		"&#4EC847<fade>🛈 Токсин используется в качестве топлива!"
+	]
+	quest.6150509913ECC9FE.quest_desc: [
+		"С него падает:"
+		""
+		"companions:relic_gold (3 - 8)"
+		"companions:old_cloth (8)"
 	]
 	quest.6161B74A88A73B46.quest_subtitle: "Low HP build, pog!"
 	quest.61E590BED7EE9DA4.quest_desc: ["sooo entity magnet?!"]
@@ -2330,9 +2341,11 @@
 	reward.3922C9ACA47723BA.title: "forbidden arcanus mobs"
 	reward.4002784F5F537B2D.title: "You can interact with everything made of iron!"
 	reward.4178A18CA2E5A74F.title: "New dangers"
+	reward.472BCEE94E93C2FF.title: "Radial Menu Button"
 	reward.5BA06D58446F6FDD.title: "Unlimited supply of boxes"
 	reward.670CBE4973B6F390.title: "New interactions: chest looting, villagers, spawners, wandering trader and mobs"
 	reward.679412F522B788D9.title: "Trinket hands slot"
+	reward.7108991BE6DD4A51.title: "Radial Menu Button"
 	reward.73D93A782AD2E4AE.title: "Trinket bundle slot"
 	reward.74E5C7C4B8A33E55.title: "New monsters"
 	reward.7650FE6CA0220DA3.title: "Nether Access"
@@ -2386,6 +2399,7 @@
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
 	task.25CB2D0B385D4533.title: "Spectrum?"
 	task.2629C2F369B3D084.title: "&#A39FE1PINGS!!! THEY'RE EVERYWHERE"
+	task.268D4F85B02495FD.title: "Xaeromap"
 	task.2693375290DFFFE2.title: "<glitch>Hello World!"
 	task.26FC76B546262768.title: "Inventory Profiles Next"
 	task.271E89A2A2B37CFC.title: "Showcase Item"

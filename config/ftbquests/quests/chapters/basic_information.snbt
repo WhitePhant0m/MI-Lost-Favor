@@ -435,5 +435,25 @@
 			x: -3.5d
 			y: 3.0d
 		}
+		{
+			id: "27E158F4EA9030A0"
+			rewards: [{
+				id: "4D0EBC927D8AD01D"
+				type: "custom"
+			}]
+			tasks: [
+				{
+					id: "268D4F85B02495FD"
+					type: "checkmark"
+				}
+				{
+					id: "50686B9F322E0D77"
+					item: { count: 1, id: "minecraft:command_block" }
+					type: "item"
+				}
+			]
+			x: -13.5d
+			y: -0.5d
+		}
 	]
 }

@@ -336,10 +336,7 @@
 			y: -6.5d
 		}
 		{
-			dependencies: [
-				"7F3F56C04BFCF7BD"
-				"24A65F3E0C177185"
-			]
+			dependencies: ["7F3F56C04BFCF7BD"]
 			id: "5A26B593C3D70B56"
 			shape: "gear"
 			tasks: [{
@@ -3248,6 +3245,18 @@
 		{
 			dependencies: ["7E470E4F941A62BB"]
 			id: "3D7610F02FB93E78"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "7108991BE6DD4A51"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "heart"
 			tasks: [{
 				id: "68403CCA82BDEA08"
@@ -3340,17 +3349,31 @@
 		{
 			dependencies: ["7E931DB1E3794703"]
 			id: "3D25B3BBFD462747"
-			rewards: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "devices:item/empty_pouch_slot"
+			rewards: [
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "devices:item/empty_pouch_slot"
+						}
+						id: "ftbquests:custom_icon"
 					}
-					id: "ftbquests:custom_icon"
+					id: "73D93A782AD2E4AE"
+					team_reward: false
+					type: "custom"
 				}
-				id: "73D93A782AD2E4AE"
-				team_reward: false
-				type: "custom"
-			}]
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add.png"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "472BCEE94E93C2FF"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			shape: "gear"
 			tasks: [{
 				id: "7A148F88DD34DDBD"

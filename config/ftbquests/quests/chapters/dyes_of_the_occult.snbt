@@ -3275,7 +3275,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
 				type: "item"
 			}]
 			x: -37.0d
@@ -4093,6 +4093,54 @@
 				type: "structure"
 			}]
 			x: -40.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "241904EB139D2EC6"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "cataclysm:item/amethyst_crab_meat"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "5A6F9F935D3E602A"
+				structure: "cataclysm:amethyst_nest"
+				type: "structure"
+			}]
+			x: -38.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "5DF6397F5A9F548E"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+				}
+				id: "52A56CB936C148EB"
+				structure: "born_in_chaos_v1:infernal_pumpkin"
+				type: "structure"
+			}]
+			x: -42.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "2E23704C9B6BA584"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					id: "companions:holy_robe_mask"
+				}
+				id: "08BAB4493FB63373"
+				structure: "companions:companions_monkey_temple"
+				type: "structure"
+			}]
+			x: -42.0d
 			y: 27.5d
 		}
 	]
