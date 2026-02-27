@@ -18,6 +18,7 @@ soundCategory_neutral:0.20422535211267606
 soundCategory_player:0.5035211267605634
 soundCategory_ambient:0.5
 soundCategory_voice:0.20422535211267606
+narratorHotkey:false
 resourcePacks:["researchd:example_researches","vanilla","fabric","mod_resources","moonlight:merged_pack","enderzoology:dynamically_copied_textures","modern_industrialization/generated","file/Slightly-Improved-Font-1.1.5.zip","file/EnderEyes_1.21.8_v3.1.zip","file/Chaotix Apotheotic Tweaks v2.0 1.21.1.zip","file/Ars Nouveau Refresh 1.2.0.zip","file/Updated_Engineering_v1.7.zip","file/waystones_1.21.5.zip","file/cubic-sun-moon-v1.8.3a.zip","file/§eSlim§0 §eFire§0.zip","file/RPG_Series_Icons-1.2+1.21.1.zip","file/SodiumTranslations.zip","mod/pastel:pastel_style_amethyst","file/Modern Retexturization.zip"]
 incompatibleResourcePacks:["file/Updated_Engineering_v1.7.zip","file/waystones_1.21.5.zip"]
 menuBackgroundBlurriness:5
@@ -36,3 +37,15 @@ key_key.curios.open.desc:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.grave.accent
 key_key.socialInteractions:key.keyboard.unknown
 key_key.mechtrowel.toggle_build_mode:key.keyboard.y
+key_key.apotheosis.open_world_tier_select:key.keyboard.unknown
+key_key.ezactions.open:key.keyboard.r
+key_key.devices.open_pouch:key.keyboard.unknown
+key_key.ars_elemental.open_pouch:key.keyboard.unknown
+key_key.travelertoolbelt.open_toolbelt:key.keyboard.v
+key_gui.xaero_new_waypoint:key.keyboard.unknown
+key_key.beltborne_lanterns.open_config:key.keyboard.unknown
+key_key.beltborne_lanterns.toggle_lantern:key.keyboard.b:CONTROL
+key_key.beltborne_lanterns.open_debug:key.keyboard.unknown
+key_key.immersive_aircraft.dismount:key.keyboard.o
+key_key.ars_nouveau.open_book:key.keyboard.left.alt
+key_key.ars_nouveau.selection_hud:key.keyboard.b
