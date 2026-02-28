@@ -23,7 +23,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('kubejs.press_button', 'Зажми ')
     event.add('kubejs.for_details', 'для подробной информации')
     event.add('kubejs.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
-    event.add('kubejs.beltborne_lanterns.tooltip', 'Нажмите CTRL + B, держа фонарь — он прикрепится к твоему поясу. Нужно вернуть его в руки? Нажмите B снова.')
+    event.add('kubejs.beltborne_lanterns.tooltip', 'Нажмите CTRL + B, держа фонарь — он прикрепится к твоему поясу. Нужно вернуть его в руки? Нажмите CTRL + B снова.')
     event.add('milf.money_pouch.tooltip', 'Можно открыть с помощью радиального меню, находясь в слоте для безделушек.')
     event.add('milf.curio_bag.tooltip', 'Можно открыть с помощью радиального меню если мешок на панели быстрого доступа или в слоте для безделушек.')
 
