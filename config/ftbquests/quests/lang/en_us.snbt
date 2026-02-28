@@ -806,6 +806,10 @@
 		"- Every dimension will have its exclusive map"
 		"- You can lock the atlas by shift clicking it, preventing new maps from being created."
 		"- You can also place an Atlas on a Lectern and access the worldmap from there"
+		"- &lAtlases can be cloned and merged within a Cartography table&r"
+		"{@pagebreak}"
+		""
+		"- Атласы можно клонировать и объединять в столе картографа"
 	]
 	quest.274F9ACC0F44CDAC.quest_desc: [
 		"If you pay attention while fishing in the deep waters, you will see some strange spheres sometimes rise to the surface."
