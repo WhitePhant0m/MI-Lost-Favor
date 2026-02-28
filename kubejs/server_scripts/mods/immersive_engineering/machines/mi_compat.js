@@ -24,10 +24,13 @@ ServerEvents.recipes(event => {
             outputItems: output,
             energy: miEnergy,
             compatOff: true,
+            removeRecipeType:"immersiveengineering:crusher"
         })
-        event.remove({ type: 'immersiveengineering:crusher', output:result[0].item})
+        //event.remove({ type: 'immersiveengineering:crusher', output:result[0].item})
 
     }
+
+    event.remove({ type: 'immersiveengineering:crusher', output:"minecraft:amethyst_shard"})
 
     event.forEachRecipe({ type: 'modern_industrialization:macerator', not : {output: "#kubejs:nocompat"}}, r => {
         const rjson = JSON.parse(r.json)

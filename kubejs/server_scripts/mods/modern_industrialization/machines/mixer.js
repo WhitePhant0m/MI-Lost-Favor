@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
     
     miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
-            [{item:"modern_industrialization:salt_crushed_dust"}],
+            [{item:"modern_industrialization:salt_dust"}],
             [{item:"minecraft:tuff"}],
         ],
         inputFluids:[

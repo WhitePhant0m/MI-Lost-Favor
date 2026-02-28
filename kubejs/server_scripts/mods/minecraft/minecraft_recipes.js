@@ -188,4 +188,19 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:chest" }, 1]],
         compatOff:true
     })
+
+    yTechShaped(event, {
+        pattern: [
+            "S F",
+            "lll",
+            "   ",
+        ],
+        key: {
+            "S": { "tag": "c:saws" },
+            "F": { "tag": "c:files" },
+            "l": { "tag": "minecraft:logs" },
+        },
+        outputItems: [[{ id: "minecraft:barrel" }, 1]],
+        compatOff:true
+    })
 })

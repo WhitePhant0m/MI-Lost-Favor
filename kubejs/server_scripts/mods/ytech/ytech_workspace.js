@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     //     })
     // }
 
-    function workspace_recipe(grid, materials, output, materialset, tool, nocompat){
+    function workspace_recipe(grid, materials, output, materialset, tool, nocompat, keepOR){
         nocompat = nocompat || false
         materialset = materialset || {}
         event.recipes.ytech.workspace_crafting(
@@ -99,7 +99,9 @@ ServerEvents.recipes(event => {
             grid[0],     // top layer pattern like for shaped crafting (['XXX','XXX','XXX'])
             Object.assign({}, materials, materialset) // ingredient mapping e.g.: {X: 'minecraft:andesite'}
         );
-        craft_removal_list.push(output)
+        if(!keepOR){
+            craft_removal_list.push(output)
+        }
         if (!nocompat) {
             let mats = []
             var amounts = grid[0].concat(grid[1],grid[2]).join("")
@@ -963,6 +965,25 @@ ServerEvents.recipes(event => {
         {P:'#minecraft:planks', S:"ytech:wooden_box"},
         'minecraft:barrel', {} , "#c:knives", true
     )
+
+    workspace_recipe([
+            ['   ','LTL','   '],
+            ['   ','L L','   '],
+            ['   ','L L','   ']
+        ],
+        {L:'#milf:non_vanilla_logs', T:"ytech:grass_twine"},
+        'ytech:oak_drying_rack', {} , "#minecraft:axes", true, true
+    )
+
+    workspace_recipe([
+            ['   ','LTL','   '],
+            ['   ','L L','   '],
+            ['   ','LTL','   ']
+        ],
+        {L:'#milf:non_vanilla_logs', T:"ytech:grass_twine"},
+        'ytech:oak_tanning_rack', {} , "#minecraft:axes", true, true
+    )
+
     //#endregion
 
     //#endregion

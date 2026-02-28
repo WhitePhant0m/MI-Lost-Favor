@@ -349,7 +349,21 @@ ServerEvents.recipes(event => {
         )
     });
 
+    const hatches = ['modern_industrialization:bronze_item_input_hatch', 'modern_industrialization:steel_item_input_hatch', 'modern_industrialization:steel_fluid_input_hatch', 'modern_industrialization:bronze_fluid_input_hatch']
 
+    hatches.forEach(hatch =>{
+        yTechShapeless(event, {
+            outputItems: [[{id:hatch.replace("input", "output")}]],
+            inputItems:[[{item:hatch}]],
+            category:"misc"
+        })
+
+        yTechShapeless(event, {
+            outputItems: [[{id:hatch}]],
+            inputItems:[[{item:hatch.replace("input", "output")}]],
+            category:"misc"
+        })
+    })
 
 
 
