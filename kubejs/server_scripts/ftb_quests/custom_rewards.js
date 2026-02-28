@@ -59,7 +59,7 @@ FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
 
 // reward for Iron Ingot
 FTBQuestsEvents.customReward('4002784F5F537B2D', event => {
-    const stage = "post_iron"
+    const stage = ["post_iron", "goblin_traders_mobs"]
     addStagesToTeamMembers(event, stage)
 });
 

@@ -11,7 +11,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       }
     },
     {
@@ -48,7 +48,7 @@
       },
       "payment_item": {
         "count": 16,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       }
     },
     {

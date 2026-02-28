@@ -54,7 +54,7 @@
           "max": 28,
           "min": 12
         },
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       }
     },
     {
@@ -110,7 +110,7 @@
           "max": 28,
           "min": 12
         },
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       }
     },
     {
@@ -166,7 +166,7 @@
           "max": 28,
           "min": 12
         },
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       }
     },
     {
@@ -222,7 +222,7 @@
           "max": 28,
           "min": 12
         },
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       }
     },
     {
@@ -291,7 +291,7 @@
           "max": 64,
           "min": 16
         },
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       }
     },
     {
@@ -305,7 +305,7 @@
           "max": 28,
           "min": 16
         },
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "structure": "goblintraders:on_mystery_maps"
     },
@@ -324,7 +324,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -346,7 +346,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -368,7 +368,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -390,7 +390,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -412,7 +412,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -434,7 +434,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -456,7 +456,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -478,7 +478,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -500,7 +500,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -522,7 +522,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -544,7 +544,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -566,7 +566,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -588,7 +588,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -610,7 +610,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -632,7 +632,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
@@ -654,7 +654,7 @@
       },
       "payment_item": {
         "count": 4,
-        "id": "devices:bronze_coin"
+        "id": "devices:silver_coin"
       },
       "secondary_payment_item": {
         "count": 1,
