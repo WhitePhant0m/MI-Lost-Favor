@@ -1,17 +1,17 @@
-filename = 'ezactions-neoforge-1.21.1-1.10.4.jar'
-name = 'EZ Actions'
+filename = 'ezactions-neoforge-1.21.1-2.0.0.0.jar'
+name = 'EZActions'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'ezactions-neoforge-1.21.1-1.10.4.jar'
+x-prismlauncher-version-number = 'ezactions-neoforge-1.21.1-2.0.0.0.jar'
 
 [download]
-hash = 'ce5db2a441c27ea9b3b39c6cc24bfaa380f7b866'
+hash = 'e1aeb9922fa09e34c5e80b9c7ed564f72d55c1cd'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7425723
+file-id = 7692419
 project-id = 1340029
