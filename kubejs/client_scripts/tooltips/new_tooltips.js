@@ -21,7 +21,9 @@ ItemEvents.modifyTooltips(event => {
 
     const simpleTooltips = [
         {name: "devices:devices_pouch", tooltip: "milf.money_pouch.tooltip", color: "#f5c25b"},
-        {name: "ars_elemental:curio_bag", tooltip: "milf.curio_bag.tooltip", color: "#f5c25b"}
+        {name: "ars_elemental:curio_bag", tooltip: "milf.curio_bag.tooltip", color: "#f5c25b"},
+        {name: "kubejs:blaze_core", tooltip: "milf.how_to_get_blaze_core.tooltip", color: "#645D89"},
+        {name: "kubejs:electronic_ender_core", tooltip: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89"},
     ]
 
     simpleTooltips.forEach(element => {

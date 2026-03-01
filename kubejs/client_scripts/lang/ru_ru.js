@@ -18,6 +18,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${textAnimatorString("странные звуки", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} ночью...`)
     event.add('milf.stage.early_items', `Этот мир больше не ${textAnimatorString("отвергает", "glitch")} вас...`)
     event.add('milf.how_to_seed.tooltip', 'Можно найти в птичьем гнезде')
+    event.add('milf.how_to_get_blaze_core.tooltip', 'Можно получить с шансом 50% если убить ключом: Sacred Pontiff, Lord Pumpking, The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
+    event.add('milf.how_to_get_electronice_ender_core.tooltip', 'Можно получить с шансом 50% если убить ключом: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
     event.add('kubejs.press_button', 'Зажми ')
