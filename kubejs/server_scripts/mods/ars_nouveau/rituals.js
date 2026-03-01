@@ -277,6 +277,32 @@ ServerEvents.recipes(event => {
                 { "key": "enchanted:candelabra" },
             ]
         },
+        {
+            id: "mowziesmobs:monastery", name: "monastery", augments: [
+                { "key": "minecraft:goat_horn" },
+                { "key": "minecraft:red_terracotta" },
+            ]
+        },
+        {
+            id: "mowziesmobs:wrought_chamber", name: "wrought_chamber", augments: [
+                { "key": "minecraft:iron_sword" },
+                { "key": "minecraft:iron_sword" },
+            ]
+        },
+        {
+            id: "mowziesmobs:frostmaw_spawn", name: "frostmaw_spawn", augments: [
+                { "key": "minecraft:powder_snow_bucket" },
+                { "key": "toxony:snow_mint" },
+            ]
+        },
+        {
+            id: "mowziesmobs:umvuthana_grove", name: "umvuthana_grove", augments: [
+                { "key": "ytech:lion_man" },
+                { "key": "ytech:wild_horse" },
+                { "key": "ytech:venus_of_hohle_fels" },
+                { "key": "ytech:shell_beads" },
+            ]
+        },
     ]
 
     locate_structure_list.forEach(structure => {
