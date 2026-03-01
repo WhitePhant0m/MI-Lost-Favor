@@ -3,7 +3,49 @@ const en_usPlacer = "Placer"
 const en_usEmptyBox = "Empty Box"
 const ru_ruPlacer = "Установщик"
 const ru_ruEmptyBox = "Пустая коробка"
-const definitelyUniqueNameForIETemplatesList = [
+
+/**
+ * @typedef {Object} MultiblockEntry
+ * @property {string | string[]} name - The id of the multiblock or [NBT_file_name, id]
+ * @property {Object.<string, string>} langPlacers - Lang placer name. 
+ * @property {Object.<string, string>} langBoxes - Lang empty box name.
+ * @property {string} mod - The mod id
+ * @property {number} [activeMachineShape] - Shape index for tiered MI machines
+ */
+
+/** @type {MultiblockEntry[]} */
+const multiblocksForPlacers = [
+    //#region immersivepetroleum
+    {
+        name:"hydrotreater",
+        langPlacers: { "en_us": `High-Pressure Refinery Unit ${en_usPlacer}`},
+        langBoxes: { "en_us": `High-Pressure Refinery Unit ${en_usEmptyBox}`},
+        mod:"immersivepetroleum"
+    },
+    {
+        name:"derrick",
+        mod:"immersivepetroleum"
+    },
+    {
+        name:"oiltank",
+        mod:"immersivepetroleum"
+    },
+    {
+        name:"pumpjack",
+        mod:"immersivepetroleum"
+    },
+    {
+        name:["distillationtower","distillation_tower"],
+        mod:"immersivepetroleum"
+    },
+    {
+        name:["cokerunit","coker_unit"],
+        mod:"immersivepetroleum"
+    },
+    //#endregion
+
+    //#region immersiveengineering
+
     //{name: 'alloy_smelter', langPlacers: {"en_us": `Alloy Smelter ${en_usPlacer}`}, langBoxes: {"en_us": `Alloy Smelter ${en_usEmptyBox}`}},
     {
         name: ['arcfurnace', 'arc_furnace'],
@@ -122,6 +164,9 @@ const definitelyUniqueNameForIETemplatesList = [
         langBoxes: { "en_us": `Squeezer ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} соковыжималки` },
         mod:"immersiveengineering"
     },
+    //#endregion
+
+    //#region modern_industrialization
     {
         name: ['advanced_large_steam_boiler', 'advanced_large_steam_boiler'],
         langPlacers: {"en_us": `Advanced Large Steam Boiler ${en_usPlacer}`},
@@ -134,12 +179,12 @@ const definitelyUniqueNameForIETemplatesList = [
         langBoxes: {"en_us": `Coke Oven ${en_usEmptyBox}`},
         mod:"modern_industrialization"
     },
-    {
-        name: ['distillation_tower', 'distillation_tower'],
-        langPlacers: {"en_us": `Distillation Tower ${en_usPlacer}`},
-        langBoxes: {"en_us": `Distillation Tower ${en_usEmptyBox}`},
-        mod:"modern_industrialization"
-    },
+    // {
+    //     name: ['distillation_tower', 'distillation_tower'],
+    //     langPlacers: {"en_us": `Distillation Tower ${en_usPlacer}`},
+    //     langBoxes: {"en_us": `Distillation Tower ${en_usEmptyBox}`},
+    //     mod:"modern_industrialization"
+    // },
     {
         name: ['electric_blast_furnace_cupronickel', 'electric_blast_furnace'],
         langPlacers: {"en_us": `Electric Blast Furnace Cupronickel ${en_usPlacer}`},
@@ -265,7 +310,186 @@ const definitelyUniqueNameForIETemplatesList = [
         langPlacers: {"en_us": `Vacuum Freezer ${en_usPlacer}`},
         langBoxes: {"en_us": `Vacuum Freezer ${en_usEmptyBox}`},
         mod:"modern_industrialization"
-    }
+    },
+
+    {
+        name: ['enigma_machine', 'enigma_machine'],
+        langPlacers: {"en_us": `Enigma Machine ${en_usPlacer}`},
+        langBoxes: {"en_us": `Enigma Machine ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['radio_transcriber', 'radio_transcriber'],
+        langPlacers: {"en_us": `Radio Transcriber ${en_usPlacer}`},
+        langBoxes: {"en_us": `Radio Transcriber ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    //#endregion
+
+    //#region mi_tweaks
+    {
+        name:"advanced_steam_blast_furnace",
+        mod:"mi_tweaks"
+    },
+    {
+        name:"advanced_steam_alloy_smelter",
+        mod:"mi_tweaks"
+    },
+    {
+        name:"bioactive_chamber",
+        mod:"mi_tweaks",
+        activeMachineShape: 0
+    },
+    {
+        name:"bioactive_chamber_shape_1",
+        mod:"mi_tweaks",
+        activeMachineShape: 1
+    },
+    {
+        name:"bioactive_chamber_shape_2",
+        mod:"mi_tweaks",
+        activeMachineShape: 2
+    },
+    {
+        name:"advanced_large_steam_furnace",
+        mod:"mi_tweaks"
+    },
+    {
+        name:"multiblock_packer_3000_safety_regulations_edition",
+        mod:"mi_tweaks"
+    },
+    //#endregion
+
+    //#region extended_industrialization
+    {
+        name:"large_electric_macerator",
+        mod:"extended_industrialization"
+    },
+    {
+        name:"large_steam_macerator",
+        mod:"extended_industrialization"
+    },
+
+    {
+        name:"tesla_tower",
+        langPlacers: { "en_us": `Copper Tesla Tower ${en_usPlacer}`},
+        langBoxes: { "en_us": `Copper Tesla Tower ${en_usEmptyBox}`},
+        mod:"extended_industrialization",
+        activeMachineShape: 0
+    },
+    {
+        name:["tesla_tower_shape_1", "tesla_tower"],
+        langPlacers: { "en_us": `Electrum Tesla Tower ${en_usPlacer}`},
+        langBoxes: { "en_us": `Electrum Tesla Tower ${en_usEmptyBox}`},
+        mod:"extended_industrialization",
+        activeMachineShape: 1
+    },
+    {
+        name:["tesla_tower_shape_2", "tesla_tower"],
+        langPlacers: { "en_us": `Aluminum Tesla Tower ${en_usPlacer}`},
+        langBoxes: { "en_us": `Aluminum Tesla Tower ${en_usEmptyBox}`},
+        mod:"extended_industrialization",
+        activeMachineShape: 2
+    },
+    {
+        name:["tesla_tower_shape_3", "tesla_tower"],
+        langPlacers: { "en_us": `Annealed Copper Tesla Tower ${en_usPlacer}`},
+        langBoxes: { "en_us": `Annealed Copper Tesla Tower ${en_usEmptyBox}`},
+        mod:"extended_industrialization",
+        activeMachineShape: 3
+    },
+    {
+        name:["tesla_tower_shape_4", "tesla_tower"],
+        langPlacers: { "en_us": `Superconductor Tesla Tower ${en_usPlacer}`},
+        langBoxes: { "en_us": `Superconductor Tesla Tower ${en_usEmptyBox}`},
+        mod:"extended_industrialization",
+        activeMachineShape: 4
+    },
+    
+    //#endregion
+    
+    //#region yet_another_industrialization
+    {
+        name:"dragon_egg_energy_siphon",
+        mod:"yet_another_industrialization"
+    },
+    {
+        name:"pulse_detonation_generator",
+        mod:"yet_another_industrialization"
+    },
+
+    {
+        name:"arboreous_greenhouse",
+        langPlacers: { "en_us": `Arboreous Greenhouse Grass Type ${en_usPlacer}`},
+        langBoxes: { "en_us": `Arboreous Greenhouse Grass Type ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 0
+    },
+    {
+        name:["arboreous_greenhouse_shape_1", 'arboreous_greenhouse'],
+        langPlacers: { "en_us": `Arboreous Greenhouse Sand Type ${en_usPlacer}`},
+        langBoxes: { "en_us": `Arboreous Greenhouse Sand Type ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 1
+    },
+    {
+        name:["arboreous_greenhouse_shape_2", 'arboreous_greenhouse'],
+        langPlacers: { "en_us": `Arboreous Greenhouse Netherrack Type ${en_usPlacer}`},
+        langBoxes: { "en_us": `Arboreous Greenhouse Netherrack Type ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 2
+    },
+    {
+        name:["arboreous_greenhouse_shape_3", 'arboreous_greenhouse'],
+        langPlacers: { "en_us": `Arboreous Greenhouse End Stone Type ${en_usPlacer}`},
+        langBoxes: { "en_us": `Arboreous Greenhouse End Stone Type ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 3
+    },
+
+    {
+        name:"large_storage_unit",
+        langPlacers: { "en_us": `Large Storage Unit LV ${en_usPlacer}`},
+        langBoxes: { "en_us": `Large Storage Unit LV ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 0
+    },
+    {
+        name:["large_storage_unit_shape_1", 'large_storage_unit'],
+        langPlacers: { "en_us": `Large Storage Unit MV ${en_usPlacer}`},
+        langBoxes: { "en_us": `Large Storage Unit MV ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 1
+    },
+    {
+        name:["large_storage_unit_shape_2", 'large_storage_unit'],
+        langPlacers: { "en_us": `Large Storage Unit HV ${en_usPlacer}`},
+        langBoxes: { "en_us": `Large Storage Unit HV ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 2
+    },
+    {
+        name:["large_storage_unit_shape_3", 'large_storage_unit'],
+        langPlacers: { "en_us": `Large Storage Unit EV ${en_usPlacer}`},
+        langBoxes: { "en_us": `Large Storage Unit EV ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 3
+    },
+    {
+        name:["large_storage_unit_shape_4", 'large_storage_unit'],
+        langPlacers: { "en_us": `Large Storage Unit SV ${en_usPlacer}`},
+        langBoxes: { "en_us": `Large Storage Unit SV ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 4
+    },
+    {
+        name:["large_storage_unit_shape_5", 'large_storage_unit'],
+        langPlacers: { "en_us": `Large Storage Unit Ultimate ${en_usPlacer}`},
+        langBoxes: { "en_us": `Large Storage Unit Ultimate ${en_usEmptyBox}`},
+        mod:"yet_another_industrialization",
+        activeMachineShape: 5
+    },
+    //#endregion
 ]
 
 const en_usOreSample = "Ore Sample"
@@ -314,8 +538,11 @@ ore_list.forEach(ore => {
     })
 });
 
-definitelyUniqueNameForIETemplatesList.forEach(template => {
+multiblocksForPlacers.forEach(template => {
     const [nameString, itemName] = Array.isArray(template.name) ? [template.name[0], template.name[1]] : [template.name, template.name]
+    if(template.activeMachineShape){
+
+    }
     createNewBlock(`${nameString}_placer`, {
         blockType: "cardinal",
         defaultCutout: true,
@@ -343,51 +570,52 @@ definitelyUniqueNameForIETemplatesList.forEach(template => {
     global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `${template.mod}:${itemName}`
 });
 
-/*JSONs shenanigans
-ore_list.forEach(ore => {
-    const blockstatesJsonPath = `kubejs/assets/kubejs/blockstates/${ore.itemName}_ore_sample.json`;
-    const blockstatesJson = {"variants": {"": []}}
+//JSONs shenanigans
+// ore_list.forEach(ore => {
+//     const blockstatesJsonPath = `kubejs/assets/kubejs/blockstates/${ore.itemName}_ore_sample.json`;
+//     const blockstatesJson = {"variants": {"": []}}
 
-    for(let i = 1; i <=6; i++){
-        let modelsJsonPath = `kubejs/assets/kubejs/models/block/ore_samples/${ore.itemName}_ore_sample_${i}.json`
-        let modelsJson = {
-            "parent": `kubejs:block/ore_sample_${i}`,
-            "textures": {
-                "ore": `${ore.directory}:block/${ore.itemName}_ore`,
-            }
-        }
-        if(ore.uniqueBase){modelsJson.textures["0"] = ore.uniqueBase}
-        if(ore.uniqueOre){modelsJson.textures["ore"] = ore.uniqueOre}
-        JsonIO.write(modelsJsonPath, JSON.stringify(modelsJson, null, 2))
-        blockstatesJson.variants[""].push(
-                {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`,"weight":1},
-                {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 90,"weight":1},
-                {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 180,"weight":1},
-                {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 270,"weight":1},
-        )
-    }
-    JsonIO.write(blockstatesJsonPath, JSON.stringify(blockstatesJson, null, 2))
-})
+//     for(let i = 1; i <=6; i++){
+//         let modelsJsonPath = `kubejs/assets/kubejs/models/block/ore_samples/${ore.itemName}_ore_sample_${i}.json`
+//         let modelsJson = {
+//             "parent": `kubejs:block/ore_sample_${i}`,
+//             "textures": {
+//                 "ore": `${ore.directory}:block/${ore.itemName}_ore`,
+//             }
+//         }
+//         if(ore.uniqueBase){modelsJson.textures["0"] = ore.uniqueBase}
+//         if(ore.uniqueOre){modelsJson.textures["ore"] = ore.uniqueOre}
+//         JsonIO.write(modelsJsonPath, JSON.stringify(modelsJson, null, 2))
+//         blockstatesJson.variants[""].push(
+//                 {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`,"weight":1},
+//                 {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 90,"weight":1},
+//                 {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 180,"weight":1},
+//                 {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 270,"weight":1},
+//         )
+//     }
+//     JsonIO.write(blockstatesJsonPath, JSON.stringify(blockstatesJson, null, 2))
+// })
 
-definitelyUniqueNameForIETemplatesList.forEach(name => {
-    const [nameString, itemName] = Array.isArray(name.name) ? [name.name[0], name.name[1]] : [name.name, name.name]
-    const emiJsonPath = `kubejs/assets/emi/recipe/additions/${nameString}_placer.json`;
-    const left = {
-        "type": "item",
-        "id": `kubejs:${nameString}_placer`,
-        "remainder": `item:kubejs:${nameString}_empty_box`
-    }
-    const right = {
-        "type": "item",
-        "id": "immersiveengineering:hammer",
-        "chance": 0
-    }
-    const Json = {
-        "type": "emi:world_interaction",
-        "left":left,
-        "right":right,
-        "output": `item:${name.mod}:${itemName}`
-    }
-    JsonIO.write(emiJsonPath, JSON.stringify(Json, null, 2))
-}) 
+// multiblocksForPlacers.forEach(name => {
+//     const [nameString, itemName] = Array.isArray(name.name) ? [name.name[0], name.name[1]] : [name.name, name.name]
+//     const emiJsonPath = `kubejs/assets/emi/recipe/additions/${nameString}_placer.json`;
+//     const left = {
+//         "type": "item",
+//         "id": `kubejs:${nameString}_placer`,
+//         "remainder": `item:kubejs:${nameString}_empty_box`
+//     }
+//     const right = {
+//         "type": "item",
+//         "id": "immersiveengineering:hammer",
+//         "chance": 0
+//     }
+//     const Json = {
+//         "type": "emi:world_interaction",
+//         "left":left,
+//         "right":right,
+//         "output": `item:${name.mod}:${itemName}`
+//     }
+//     JsonIO.write(emiJsonPath, Json)
+// }) 
+/*
 */

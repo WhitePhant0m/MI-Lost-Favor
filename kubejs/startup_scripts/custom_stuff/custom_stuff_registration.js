@@ -11,7 +11,7 @@ global.langCustomStuff = global.langCustomStuff || {}
 
 const enabledProperty = $BooleanProperty.create("enabled")
 //const activeMachineShapeProperty  = $EnumProperty.create("shape", "String",["0", "1", "2", "3", "4"])
-const activeMachineShapeProperty  = $IntegerProperty.create("machine_shape", 0, 4)
+const activeMachineShapeProperty  = $IntegerProperty.create("machine_shape", 0, 5)
 
 
 function createNewItem(id, args) {
@@ -131,7 +131,7 @@ createNewItem('onyx_table_core', {rarity: 'rare', lang: { "ru_ru": "Ониксо
 createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Луннокаменное Ядро Стола" } })
 
 createNewItem('dev_pen')
-createNewItem('destruction_pen')
+createNewItem('nbt_pen')
 
 createNewItem('transmutation_orb', {use:{animation:"block"}})
 createNewItem('regal_orb', {use:{animation:"block"}})

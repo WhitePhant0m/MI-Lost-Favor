@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:advanced_steam_alloy_smelter_placer",
+		"remainder": "item:kubejs:advanced_steam_alloy_smelter_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0
+	},
+	"output": "item:mi_tweaks:advanced_steam_alloy_smelter"
+}

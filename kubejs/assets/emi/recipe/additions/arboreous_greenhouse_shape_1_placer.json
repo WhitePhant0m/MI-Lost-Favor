@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:arboreous_greenhouse_shape_1_placer",
+		"remainder": "item:kubejs:arboreous_greenhouse_shape_1_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0
+	},
+	"output": "item:yet_another_industrialization:arboreous_greenhouse"
+}
