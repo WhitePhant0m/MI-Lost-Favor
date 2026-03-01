@@ -3,10 +3,7 @@ let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
 let $EzActionAPI = Java.loadClass("org.z2six.ezactions.api.EzActions").get()
 let $menuPath = Java.loadClass("org.z2six.ezactions.api.MenuPath")
 let $ClickActionKey = Java.loadClass("org.z2six.ezactions.data.click.ClickActionKey")
-
-
-
-
+let $IconSpec = Java.loadClass("org.z2six.ezactions.data.icon.IconSpec")
 
 // reward for Forge Hammer
 FTBQuestsEvents.customReward('0DC887212398806D', event => {
@@ -81,11 +78,27 @@ FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
     addStagesToTeamMembers(event, stage)
 });
 
+// Simple stage reward
+const simple_stage_rewards = [
+    { quest_id: "4BA1212AF4BD3432", stage: "apotheosis_augmenting_table" },
+    { quest_id: "2F509B489C343BD7", stage: "apotheosis_reforging_table" },
+    { quest_id: "6E3C09D7543B99D1", stage: "apotheosis_simple_reforging_table" },
+    { quest_id: "4D0EBC927D8AD01D", stage: "xaeromap" },
+]
+
+simple_stage_rewards.forEach(element => {
+    FTBQuestsEvents.customReward(element.quest_id, event => {
+        addStagesToTeamMembers(event, element.stage)
+    });
+});
+
 // ring, charm, feet, shoulders, bracelet, bundle, brooch, hands, back, head, pouch, face, 
 // necklace, an_focus, deep_learner, body, pin, belt, adv_pattern_encoder, pigment_palette
 const trinkets_slot_list_reward = [
     { quest_id: '679412F522B788D9', trinket_slot: 'hands' },
     { quest_id: '73D93A782AD2E4AE', trinket_slot: 'bundle' },
+    { quest_id: '094072146D87AD84', trinket_slot: 'pouch' },
+    { quest_id: '4B224C18E7C6EE21', trinket_slot: 'back' },
 ]
 
 // xaeromap radial menu group
@@ -93,14 +106,14 @@ FTBQuestsEvents.customReward('4D0EBC927D8AD01D', event => {
     const EzActionMenuWriter = $EzActionAPI.menuWrite();
     // Add bundle
     const xaeromap_bundle = {
-        "id": "Xaeromap_test",
+        "id": "Xaeromap",
         "title": "Xaeromap",
         "icon": "minecraft:map"
     };
     EzActionMenuWriter.upsertFromJson($menuPath.root(), JSON.stringify(xaeromap_bundle));
 
     const action_key_list = [
-        { "gui.xaero_new_waypoint": "New Waypoint" },
+        { "gui.xaero_new_waypoint": "New Waypoint", },
         { "gui.xaero_waypoints_key": "Open Waypoint Screen" },
         { "gui.xaero_minimap_settings": "Minimap Settings" }
     ]
@@ -112,15 +125,16 @@ FTBQuestsEvents.customReward('4D0EBC927D8AD01D', event => {
             "name": keyName,
             "toggle": false,
             "mode": "AUTO"
-        })));
+        })), $IconSpec.item("minecraft:map"), true);
     });
 
 });
 
 // Radial menu button for devices:devices_pouch
 const radial_menu_buttons = [
-    { quest_id: '7108991BE6DD4A51', action_name: 'Open Money Pouch', key_name: 'key.devices.open_pouch' },
-    { quest_id: '472BCEE94E93C2FF', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch' },
+    { quest_id: '7108991BE6DD4A51', action_name: 'Open Money Pouch', key_name: 'key.devices.open_pouch', icon: "devices:devices_pouch" },
+    { quest_id: '472BCEE94E93C2FF', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch', icon: "ars_elemental:curio_bag" },
+    { quest_id: '0C6E1695C7D921E2', action_name: 'Open Backpack', key_name: 'key.sophisticatedbackpacks.open_backpack', icon: "sophisticatedbackpacks:backpack" },
 ]
 
 radial_menu_buttons.forEach(element => {
@@ -130,7 +144,7 @@ radial_menu_buttons.forEach(element => {
             "name": element.key_name,
             "toggle": false,
             "mode": "AUTO"
-        })));
+        })), $IconSpec.item(element.icon), true);
     });
 });
 
