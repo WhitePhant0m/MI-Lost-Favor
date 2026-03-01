@@ -3941,7 +3941,7 @@
 				type: "item"
 			}]
 			x: 45.5d
-			y: -38.0d
+			y: -36.0d
 		}
 		{
 			dependencies: ["4103FC453FC2CCC0"]
@@ -3998,7 +3998,7 @@
 				type: "item"
 			}]
 			x: 47.5d
-			y: -37.0d
+			y: -35.0d
 		}
 		{
 			dependencies: ["13A5CB86A2E90249"]
@@ -4878,7 +4878,7 @@
 				type: "item"
 			}]
 			x: 54.5d
-			y: -41.5d
+			y: -42.0d
 		}
 		{
 			dependencies: ["52B7F5876CF66DD1"]
@@ -4984,7 +4984,7 @@
 				type: "item"
 			}]
 			x: 45.5d
-			y: -34.5d
+			y: -32.5d
 		}
 		{
 			dependencies: [
@@ -5017,7 +5017,7 @@
 				type: "item"
 			}]
 			x: 46.5d
-			y: -34.0d
+			y: -32.0d
 		}
 		{
 			dependencies: [
@@ -5033,7 +5033,7 @@
 				type: "item"
 			}]
 			x: 44.5d
-			y: -34.0d
+			y: -32.0d
 		}
 		{
 			dependencies: [
@@ -5049,7 +5049,7 @@
 				type: "item"
 			}]
 			x: 44.5d
-			y: -33.0d
+			y: -31.0d
 		}
 		{
 			dependencies: [
@@ -5064,7 +5064,7 @@
 				type: "item"
 			}]
 			x: 45.5d
-			y: -33.5d
+			y: -31.5d
 		}
 		{
 			dependencies: [
@@ -5080,7 +5080,7 @@
 				type: "item"
 			}]
 			x: 46.5d
-			y: -33.0d
+			y: -31.0d
 		}
 		{
 			dependencies: ["7930264A840C4BDB"]
@@ -5118,7 +5118,7 @@
 				type: "item"
 			}]
 			x: 46.5d
-			y: -32.0d
+			y: -30.0d
 		}
 		{
 			dependencies: [
@@ -5133,7 +5133,7 @@
 				type: "item"
 			}]
 			x: 45.5d
-			y: -32.5d
+			y: -30.5d
 		}
 		{
 			dependencies: [
@@ -5148,7 +5148,7 @@
 				type: "item"
 			}]
 			x: 44.5d
-			y: -32.0d
+			y: -30.0d
 		}
 		{
 			dependencies: [
@@ -5164,7 +5164,7 @@
 				type: "item"
 			}]
 			x: 47.5d
-			y: -34.0d
+			y: -32.0d
 		}
 		{
 			dependencies: [
@@ -5180,7 +5180,7 @@
 				type: "item"
 			}]
 			x: 48.0d
-			y: -33.0d
+			y: -31.0d
 		}
 		{
 			dependencies: [
@@ -5195,7 +5195,7 @@
 				type: "item"
 			}]
 			x: 43.5d
-			y: -34.0d
+			y: -32.0d
 		}
 		{
 			dependencies: [
@@ -5210,7 +5210,7 @@
 				type: "item"
 			}]
 			x: 43.0d
-			y: -33.0d
+			y: -31.0d
 		}
 		{
 			dependencies: ["625DBAE6C9492790"]
@@ -5222,7 +5222,7 @@
 				type: "item"
 			}]
 			x: 43.5d
-			y: -32.0d
+			y: -30.0d
 		}
 		{
 			dependencies: ["625DBAE6C9492790"]
@@ -5234,7 +5234,7 @@
 				type: "item"
 			}]
 			x: 47.5d
-			y: -32.0d
+			y: -30.0d
 		}
 		{
 			dependencies: [
@@ -5250,7 +5250,7 @@
 				type: "item"
 			}]
 			x: 45.5d
-			y: -31.5d
+			y: -29.5d
 		}
 		{
 			dependencies: ["625DBAE6C9492790"]
@@ -5269,7 +5269,7 @@
 				}
 			]
 			x: 47.5d
-			y: -38.5d
+			y: -36.5d
 		}
 		{
 			dependencies: [
@@ -6166,8 +6166,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_arc_projectile" }
 				type: "item"
 			}]
-			x: 14.599999999999994d
-			y: -48.7d
+			x: 6.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6177,8 +6177,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_envenom" }
 				type: "item"
 			}]
-			x: 14.599999999999994d
-			y: -47.7d
+			x: 6.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6188,8 +6188,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_invisibility" }
 				type: "item"
 			}]
-			x: 14.599999999999994d
-			y: -46.7d
+			x: 6.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6199,8 +6199,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_wind_shear" }
 				type: "item"
 			}]
-			x: 14.599999999999994d
-			y: -45.7d
+			x: 6.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6210,8 +6210,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_ender_inventory" }
 				type: "item"
 			}]
-			x: 15.599999999999994d
-			y: -48.7d
+			x: 7.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6221,8 +6221,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_animate_block" }
 				type: "item"
 			}]
-			x: 16.599999999999994d
-			y: -48.7d
+			x: 8.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6232,8 +6232,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_bubble_shield" }
 				type: "item"
 			}]
-			x: 17.599999999999994d
-			y: -48.7d
+			x: 9.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6243,8 +6243,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_charm" }
 				type: "item"
 			}]
-			x: 18.599999999999994d
-			y: -48.7d
+			x: 10.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6254,8 +6254,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_cold_snap" }
 				type: "item"
 			}]
-			x: 19.599999999999994d
-			y: -48.7d
+			x: 11.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6265,8 +6265,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_conjure_water" }
 				type: "item"
 			}]
-			x: 20.599999999999994d
-			y: -48.7d
+			x: 12.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6276,8 +6276,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_crush" }
 				type: "item"
 			}]
-			x: 21.599999999999994d
-			y: -48.7d
+			x: 13.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6287,8 +6287,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_discharge" }
 				type: "item"
 			}]
-			x: 22.599999999999994d
-			y: -48.7d
+			x: 14.5d
+			y: -60.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6298,8 +6298,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_exchange" }
 				type: "item"
 			}]
-			x: 15.599999999999994d
-			y: -47.7d
+			x: 7.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6309,8 +6309,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_explosion" }
 				type: "item"
 			}]
-			x: 16.599999999999994d
-			y: -47.7d
+			x: 8.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6320,8 +6320,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_firework" }
 				type: "item"
 			}]
-			x: 17.599999999999994d
-			y: -47.7d
+			x: 9.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6331,8 +6331,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_flare" }
 				type: "item"
 			}]
-			x: 18.599999999999994d
-			y: -47.7d
+			x: 10.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6342,8 +6342,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_gravity" }
 				type: "item"
 			}]
-			x: 19.599999999999994d
-			y: -47.7d
+			x: 11.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6353,8 +6353,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_grow" }
 				type: "item"
 			}]
-			x: 20.599999999999994d
-			y: -47.7d
+			x: 12.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6364,8 +6364,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_heal" }
 				type: "item"
 			}]
-			x: 21.599999999999994d
-			y: -47.7d
+			x: 13.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6375,8 +6375,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_infuse" }
 				type: "item"
 			}]
-			x: 22.599999999999994d
-			y: -47.7d
+			x: 14.5d
+			y: -59.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6386,8 +6386,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_name" }
 				type: "item"
 			}]
-			x: 15.599999999999994d
-			y: -46.7d
+			x: 7.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6397,8 +6397,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_propagator_arc" }
 				type: "item"
 			}]
-			x: 15.599999999999994d
-			y: -45.7d
+			x: 7.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6408,8 +6408,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_phantom_grasp" }
 				type: "item"
 			}]
-			x: 16.599999999999994d
-			y: -46.7d
+			x: 8.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6419,8 +6419,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_poison_spores" }
 				type: "item"
 			}]
-			x: 17.599999999999994d
-			y: -46.7d
+			x: 9.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6430,8 +6430,8 @@
 				item: { count: 1, id: "ars_controle:glyph_precise_delay" }
 				type: "item"
 			}]
-			x: 18.599999999999994d
-			y: -46.7d
+			x: 10.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6441,8 +6441,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_slowfall" }
 				type: "item"
 			}]
-			x: 19.599999999999994d
-			y: -46.7d
+			x: 11.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6452,8 +6452,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_smelt" }
 				type: "item"
 			}]
-			x: 20.599999999999994d
-			y: -46.7d
+			x: 12.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6463,8 +6463,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_spike" }
 				type: "item"
 			}]
-			x: 21.599999999999994d
-			y: -46.7d
+			x: 13.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6474,8 +6474,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_watery_grave" }
 				type: "item"
 			}]
-			x: 22.599999999999994d
-			y: -46.7d
+			x: 14.5d
+			y: -58.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6485,8 +6485,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_aoe" }
 				type: "item"
 			}]
-			x: 16.599999999999994d
-			y: -45.7d
+			x: 8.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6496,8 +6496,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_accelerate" }
 				type: "item"
 			}]
-			x: 17.599999999999994d
-			y: -45.7d
+			x: 9.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6507,8 +6507,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_dampen" }
 				type: "item"
 			}]
-			x: 18.599999999999994d
-			y: -45.7d
+			x: 10.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6518,8 +6518,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_decelerate" }
 				type: "item"
 			}]
-			x: 19.599999999999994d
-			y: -45.7d
+			x: 11.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6529,8 +6529,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_extend_time" }
 				type: "item"
 			}]
-			x: 20.599999999999994d
-			y: -45.7d
+			x: 12.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6540,8 +6540,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_extract" }
 				type: "item"
 			}]
-			x: 21.599999999999994d
-			y: -45.7d
+			x: 13.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6551,8 +6551,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_fortune" }
 				type: "item"
 			}]
-			x: 22.599999999999994d
-			y: -45.7d
+			x: 14.5d
+			y: -57.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6562,8 +6562,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_pierce" }
 				type: "item"
 			}]
-			x: 14.599999999999994d
-			y: -44.7d
+			x: 6.5d
+			y: -56.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -6573,8 +6573,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_duration_down" }
 				type: "item"
 			}]
-			x: 15.599999999999994d
-			y: -44.7d
+			x: 7.5d
+			y: -56.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6584,8 +6584,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_homing_projectile" }
 				type: "item"
 			}]
-			x: 14.599999999999994d
-			y: -42.7d
+			x: 6.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6595,8 +6595,8 @@
 				item: { count: 1, id: "ars_additions:glyph_recall" }
 				type: "item"
 			}]
-			x: 15.599999999999994d
-			y: -42.7d
+			x: 7.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6606,8 +6606,8 @@
 				item: { count: 1, id: "ars_additions:glyph_retaliate" }
 				type: "item"
 			}]
-			x: 16.599999999999994d
-			y: -42.7d
+			x: 8.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6617,8 +6617,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_blink" }
 				type: "item"
 			}]
-			x: 17.599999999999994d
-			y: -42.7d
+			x: 9.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6628,8 +6628,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_burst" }
 				type: "item"
 			}]
-			x: 18.599999999999994d
-			y: -42.7d
+			x: 10.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6639,8 +6639,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_conflagrate" }
 				type: "item"
 			}]
-			x: 19.599999999999994d
-			y: -42.7d
+			x: 11.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6650,8 +6650,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_fangs" }
 				type: "item"
 			}]
-			x: 20.599999999999994d
-			y: -42.7d
+			x: 12.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6661,8 +6661,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_glide" }
 				type: "item"
 			}]
-			x: 21.599999999999994d
-			y: -42.7d
+			x: 13.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6672,8 +6672,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_hex" }
 				type: "item"
 			}]
-			x: 22.599999999999994d
-			y: -42.7d
+			x: 14.5d
+			y: -54.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6683,8 +6683,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_intangible" }
 				type: "item"
 			}]
-			x: 14.599999999999994d
-			y: -41.7d
+			x: 6.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6694,8 +6694,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_summon_undead" }
 				type: "item"
 			}]
-			x: 14.599999999999994d
-			y: -40.7d
+			x: 6.5d
+			y: -52.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6705,8 +6705,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_summon_vex" }
 				type: "item"
 			}]
-			x: 15.599999999999994d
-			y: -40.7d
+			x: 7.5d
+			y: -52.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6716,8 +6716,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_life_link" }
 				type: "item"
 			}]
-			x: 15.599999999999994d
-			y: -41.7d
+			x: 7.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6727,8 +6727,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_lightning" }
 				type: "item"
 			}]
-			x: 16.599999999999994d
-			y: -41.7d
+			x: 8.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6738,8 +6738,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_wall" }
 				type: "item"
 			}]
-			x: 16.599999999999994d
-			y: -40.7d
+			x: 8.5d
+			y: -52.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6749,8 +6749,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_linger" }
 				type: "item"
 			}]
-			x: 17.599999999999994d
-			y: -41.7d
+			x: 9.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6760,8 +6760,8 @@
 				item: { count: 1, id: "ars_additions:glyph_mark" }
 				type: "item"
 			}]
-			x: 18.599999999999994d
-			y: -41.7d
+			x: 10.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6771,8 +6771,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_nullify_defense" }
 				type: "item"
 			}]
-			x: 19.599999999999994d
-			y: -41.7d
+			x: 11.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6782,8 +6782,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_orbit" }
 				type: "item"
 			}]
-			x: 20.599999999999994d
-			y: -41.7d
+			x: 12.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6793,8 +6793,8 @@
 				item: { count: 1, id: "ars_nouveau:rewind" }
 				type: "item"
 			}]
-			x: 21.599999999999994d
-			y: -41.7d
+			x: 13.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6804,8 +6804,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_summon_decoy" }
 				type: "item"
 			}]
-			x: 22.599999999999994d
-			y: -41.7d
+			x: 14.5d
+			y: -53.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6815,8 +6815,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_wither" }
 				type: "item"
 			}]
-			x: 17.599999999999994d
-			y: -40.7d
+			x: 9.5d
+			y: -52.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6826,8 +6826,8 @@
 				item: { count: 1, id: "ars_elemental:glyph_propagator_homing" }
 				type: "item"
 			}]
-			x: 18.599999999999994d
-			y: -40.7d
+			x: 10.5d
+			y: -52.0d
 		}
 		{
 			dependencies: ["17B59F5CDAE38FB0"]
@@ -6837,8 +6837,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_split" }
 				type: "item"
 			}]
-			x: 19.599999999999994d
-			y: -40.7d
+			x: 11.5d
+			y: -52.0d
 		}
 		{
 			dependencies: ["3946FA56BFBE4C4C"]
@@ -7952,8 +7952,8 @@
 				item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }
 				type: "item"
 			}]
-			x: 11.099999999999994d
-			y: -46.2d
+			x: 3.0d
+			y: -57.5d
 		}
 		{
 			id: "17B59F5CDAE38FB0"
@@ -7962,8 +7962,8 @@
 				item: { count: 1, id: "ars_nouveau:archmage_spell_book" }
 				type: "item"
 			}]
-			x: 11.099999999999994d
-			y: -41.7d
+			x: 3.0d
+			y: -53.0d
 		}
 		{
 			dependencies: [
@@ -10187,8 +10187,8 @@
 				item: { count: 1, id: "starbunclemania:glyph_pickup_fluid" }
 				type: "item"
 			}]
-			x: 16.599999999999994d
-			y: -44.7d
+			x: 8.5d
+			y: -56.0d
 		}
 		{
 			dependencies: ["1E9F6AAB7EF2BE01"]
@@ -10198,8 +10198,8 @@
 				item: { count: 1, id: "starbunclemania:glyph_place_fluid" }
 				type: "item"
 			}]
-			x: 17.599999999999994d
-			y: -44.7d
+			x: 9.5d
+			y: -56.0d
 		}
 		{
 			dependencies: ["0B1C8129FBDA34D3"]
@@ -10653,8 +10653,8 @@
 				item: { count: 1, id: "ars_nouveau:glyph_sense_magic" }
 				type: "item"
 			}]
-			x: 18.599999999999994d
-			y: -44.7d
+			x: 10.5d
+			y: -56.0d
 		}
 		{
 			dependencies: ["5963025212DB7946"]
@@ -10717,8 +10717,8 @@
 				item: { count: 1, id: "ars_hex:glyph_soul_shatter" }
 				type: "item"
 			}]
-			x: 19.599999999999994d
-			y: -44.7d
+			x: 11.5d
+			y: -56.0d
 		}
 		{
 			dependencies: ["1E6F3C2742211FA8"]
@@ -10779,7 +10779,7 @@
 				item: { count: 1, id: "gaze:spirit_channel_pouch" }
 				type: "item"
 			}]
-			x: 32.5d
+			x: 33.0d
 			y: 6.0d
 		}
 		{
@@ -10804,6 +10804,92 @@
 			}]
 			x: 40.5d
 			y: -41.0d
+		}
+		{
+			dependencies: ["625DBAE6C9492790"]
+			id: "67772F96BF66540F"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "apotheosis:simple_reforging_table"
+				}
+				id: "6E3C09D7543B99D1"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "646AA3534E53BAD4"
+				item: { count: 1, id: "apotheosis:simple_reforging_table" }
+				type: "item"
+			}]
+			x: 42.5d
+			y: -36.0d
+		}
+		{
+			dependencies: ["3E4CED2E153B091F"]
+			id: "586F3FDE54D3AF06"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "apotheosis:reforging_table"
+				}
+				id: "2F509B489C343BD7"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "1A32EC9B49F5085D"
+				item: { count: 1, id: "apotheosis:reforging_table" }
+				type: "item"
+			}]
+			x: 54.5d
+			y: -41.0d
+		}
+		{
+			dependencies: ["0237945A1F6F9132"]
+			id: "6D93085985AC5BD6"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "apotheosis:augmenting_table"
+				}
+				id: "4BA1212AF4BD3432"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "21E5678558ACDF87"
+				item: { count: 1, id: "apotheosis:augmenting_table" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["67772F96BF66540F"]
+			id: "522044DBF9658AFA"
+			tasks: [{
+				id: "57CFE34595B2BD61"
+				item: { count: 1, id: "apotheosis:sigil_of_rebirth" }
+				type: "item"
+			}]
+			x: 41.0d
+			y: -36.0d
+		}
+		{
+			dependencies: ["6D93085985AC5BD6"]
+			id: "1FAD5E409BC550D0"
+			tasks: [{
+				id: "1966265C6C13B793"
+				item: { count: 1, id: "apotheosis:sigil_of_enhancement" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 7.0d
 		}
 	]
 }

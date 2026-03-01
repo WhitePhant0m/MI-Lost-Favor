@@ -1266,7 +1266,7 @@
 					type: "item"
 				}
 				{
-					auto: "disabled"
+					auto: "enabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "curios:slot/empty_hands_slot"
@@ -2509,6 +2509,98 @@
 			}]
 			x: 8.5d
 			y: -10.0d
+		}
+		{
+			dependencies: ["71CC5CD5F8018F02"]
+			id: "703F575B0690DE26"
+			tasks: [{
+				id: "1D79E92A3957B1AF"
+				item: { count: 1, id: "apotheosis:gem_dust" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["703F575B0690DE26"]
+			id: "355834F8507CE535"
+			tasks: [{
+				id: "3D737789F8C7A246"
+				item: { count: 1, id: "apotheosis:gem_fused_slate" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "526EC9E1802B0C9A"
+			shape: "diamond"
+			tasks: [{
+				id: "39D81EC0E0120F0B"
+				item: { count: 1, id: "apotheosis:sigil_of_socketing" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "23996BD01E0B4ED7"
+			shape: "diamond"
+			tasks: [{
+				id: "6071FA7CBA62FD4A"
+				item: { count: 1, id: "apotheosis:sigil_of_withdrawal" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["355834F8507CE535"]
+			id: "6D1F5EBF12BA945C"
+			shape: "diamond"
+			tasks: [{
+				id: "24508269A35BD4DD"
+				item: { count: 1, id: "apotheosis:sigil_of_unnaming" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["703F575B0690DE26"]
+			id: "4A1990442A5389BF"
+			tasks: [{
+				id: "52B72D1AD2547056"
+				item: { count: 1, id: "apotheosis:gem_cutting_table" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["703F575B0690DE26"]
+			id: "0A02202153409596"
+			tasks: [{
+				id: "7269C8E34903E9EA"
+				item: { count: 1, id: "apotheosis:salvaging_table" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A1990442A5389BF"]
+			id: "6ACF4A657414E3D6"
+			shape: "gear"
+			tasks: [{
+				id: "1D0408509AFDB009"
+				item: { count: 1, id: "apotheosis:gem_case" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: -3.0d
 		}
 	]
 }

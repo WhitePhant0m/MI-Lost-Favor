@@ -2671,7 +2671,7 @@
 					type: "item"
 				}
 			]
-			x: -21.0d
+			x: -22.0d
 			y: 2.5d
 		}
 		{
@@ -2684,7 +2684,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:basic_gemstone_powders)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -22.5d
+			x: -25.5d
 			y: 2.5d
 		}
 		{
@@ -2696,7 +2696,7 @@
 				item: { count: 1, id: "pastel:heartbound_chest" }
 				type: "item"
 			}]
-			x: -22.5d
+			x: -25.5d
 			y: 6.0d
 		}
 		{
@@ -2708,7 +2708,7 @@
 				id: "6D1B94115F98B076"
 				type: "advancement"
 			}]
-			x: -22.5d
+			x: -25.5d
 			y: 1.0d
 		}
 		{
@@ -2720,7 +2720,7 @@
 				id: "38E78F644B3C09BE"
 				type: "advancement"
 			}]
-			x: -22.5d
+			x: -25.5d
 			y: 0.0d
 		}
 		{
@@ -2732,7 +2732,7 @@
 				item: { count: 1, id: "pastel:compacting_chest" }
 				type: "item"
 			}]
-			x: -21.5d
+			x: -24.5d
 			y: 5.0d
 		}
 		{
@@ -2744,7 +2744,7 @@
 				item: { count: 1, id: "pastel:lava_sponge" }
 				type: "item"
 			}]
-			x: -23.5d
+			x: -26.5d
 			y: 6.0d
 		}
 		{
@@ -2756,7 +2756,7 @@
 				item: { count: 1, id: "pastel:glow_vision_goggles" }
 				type: "item"
 			}]
-			x: -22.5d
+			x: -25.5d
 			y: 7.0d
 		}
 		{
@@ -2814,7 +2814,7 @@
 					type: "item"
 				}
 			]
-			x: -34.5d
+			x: -37.5d
 			y: 2.5d
 		}
 		{
@@ -2826,7 +2826,7 @@
 				item: { components: { "minecraft:enchantments": { levels: { "minecraft:looting": 3 } } }, count: 1, id: "pastel:razor_falchion" }
 				type: "item"
 			}]
-			x: -23.0d
+			x: -26.0d
 			y: 5.5d
 		}
 		{
@@ -2838,7 +2838,7 @@
 				item: { components: { "minecraft:enchantments": { levels: { "minecraft:efficiency": 1 } } }, count: 1, id: "pastel:multitool" }
 				type: "item"
 			}]
-			x: -33.5d
+			x: -36.5d
 			y: 1.0d
 		}
 		{
@@ -2850,7 +2850,7 @@
 				item: { count: 1, id: "pastel:redstone_sand" }
 				type: "item"
 			}]
-			x: -34.5d
+			x: -37.5d
 			y: 0.5d
 		}
 		{
@@ -2862,7 +2862,7 @@
 				item: { count: 1, id: "pastel:block_placer" }
 				type: "item"
 			}]
-			x: -22.5d
+			x: -25.5d
 			y: 5.0d
 		}
 		{
@@ -2900,7 +2900,7 @@
 					type: "item"
 				}
 			]
-			x: -35.5d
+			x: -38.5d
 			y: 1.0d
 		}
 		{
@@ -2912,7 +2912,7 @@
 				item: { count: 1, id: "pastel:redstone_calculator" }
 				type: "item"
 			}]
-			x: -22.0d
+			x: -25.0d
 			y: 5.5d
 		}
 		{
@@ -2924,7 +2924,7 @@
 				item: { count: 1, id: "pastel:redstone_timer" }
 				type: "item"
 			}]
-			x: -21.5d
+			x: -24.5d
 			y: 6.0d
 		}
 		{
@@ -2936,7 +2936,7 @@
 				item: { count: 1, id: "pastel:shimmerstone_gem" }
 				type: "item"
 			}]
-			x: -26.0d
+			x: -29.0d
 			y: 2.5d
 		}
 		{
@@ -2948,7 +2948,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:phantom_frame)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -28.0d
+			x: -31.0d
 			y: 1.0d
 		}
 		{
@@ -2960,7 +2960,7 @@
 				item: { components: { "minecraft:enchantments": { levels: { "minecraft:fortune": 3 } } }, count: 1, id: "pastel:lucky_pickaxe" }
 				type: "item"
 			}]
-			x: -27.5d
+			x: -30.5d
 			y: 0.0d
 		}
 		{
@@ -2972,7 +2972,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(pastel:shimmerstone_lights)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -26.5d
+			x: -29.5d
 			y: -0.5d
 		}
 		{
@@ -3029,7 +3029,7 @@
 				item: { count: 1, id: "pastel:present" }
 				type: "item"
 			}]
-			x: -25.5d
+			x: -28.5d
 			y: -0.5d
 		}
 		{
@@ -3041,7 +3041,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:gemstone_lamp)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -24.5d
+			x: -27.5d
 			y: 0.0d
 		}
 		{
@@ -3053,19 +3053,19 @@
 				item: { count: 1, id: "pastel:radiant_glass" }
 				type: "item"
 			}]
-			x: -24.0d
+			x: -27.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["591843445BE8DF11"]
 			id: "4C56E87E195A4339"
-			shape: "square"
+			shape: "gear"
 			tasks: [{
 				id: "42CDFEBCA8AC5D6E"
 				item: { count: 1, id: "pastel:bottle_of_fading" }
 				type: "item"
 			}]
-			x: -29.5d
+			x: -31.5d
 			y: 2.5d
 		}
 		{
@@ -3078,7 +3078,7 @@
 				id: "3264AA0EC6F9BFB3"
 				type: "advancement"
 			}]
-			x: -31.0d
+			x: -34.0d
 			y: 2.5d
 		}
 		{
@@ -3090,7 +3090,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(pastel:colored_saplings)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -32.5d
+			x: -35.5d
 			y: 2.0d
 		}
 		{
@@ -3154,7 +3154,7 @@
 					type: "item"
 				}
 			]
-			x: -39.0d
+			x: -42.0d
 			y: 2.5d
 		}
 		{
@@ -3168,7 +3168,7 @@
 				item: { count: 1, id: "pastel:enchantment_canvas" }
 				type: "item"
 			}]
-			x: -39.5d
+			x: -42.5d
 			y: -0.5d
 		}
 		{
@@ -3179,7 +3179,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:colored_lamp)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -40.5d
+			x: -43.5d
 			y: 0.0d
 		}
 		{
@@ -3190,7 +3190,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:colored_glowblock)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -41.0d
+			x: -44.0d
 			y: 1.0d
 		}
 		{
@@ -3201,7 +3201,7 @@
 				item: { count: 1, id: "pastel:radiance_staff" }
 				type: "item"
 			}]
-			x: -37.5d
+			x: -40.5d
 			y: 0.0d
 		}
 		{
@@ -3212,7 +3212,7 @@
 				item: { count: 1, id: "pastel:molten_rod" }
 				type: "item"
 			}]
-			x: -37.0d
+			x: -40.0d
 			y: 1.0d
 		}
 		{
@@ -3223,7 +3223,7 @@
 				item: { count: 1, id: "pastel:titration_barrel" }
 				type: "item"
 			}]
-			x: -37.5d
+			x: -40.5d
 			y: 5.0d
 		}
 		{
@@ -3234,7 +3234,7 @@
 				item: { count: 1, id: "pastel:fresh_chocolate" }
 				type: "item"
 			}]
-			x: -36.0d
+			x: -39.0d
 			y: 4.5d
 		}
 		{
@@ -3245,7 +3245,7 @@
 				item: { count: 1, id: "pastel:clotted_cream" }
 				type: "item"
 			}]
-			x: -36.0d
+			x: -39.0d
 			y: 5.5d
 		}
 		{
@@ -3256,7 +3256,7 @@
 				id: "37BF27F02B385E1D"
 				type: "checkmark"
 			}]
-			x: -37.5d
+			x: -40.5d
 			y: 6.5d
 		}
 		{
@@ -3267,7 +3267,7 @@
 				item: { count: 1, id: "pastel:suspicious_brew" }
 				type: "item"
 			}]
-			x: -38.0d
+			x: -41.0d
 			y: 8.0d
 		}
 		{
@@ -3275,10 +3275,10 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
 				type: "item"
 			}]
-			x: -37.0d
+			x: -40.0d
 			y: 8.0d
 		}
 		{
@@ -3291,7 +3291,7 @@
 				id: "6293220914840748"
 				type: "advancement"
 			}]
-			x: -40.0d
+			x: -43.0d
 			y: 5.0d
 		}
 		{
@@ -3348,7 +3348,7 @@
 					type: "item"
 				}
 			]
-			x: -40.0d
+			x: -43.0d
 			y: 10.5d
 		}
 		{
@@ -3361,7 +3361,7 @@
 				item: { count: 1, id: "pastel:onyx_shard" }
 				type: "item"
 			}]
-			x: -40.0d
+			x: -43.0d
 			y: 17.5d
 		}
 		{
@@ -3373,7 +3373,7 @@
 				item: { count: 1, id: "pastel:redstone_transceiver" }
 				type: "item"
 			}]
-			x: -44.0d
+			x: -47.0d
 			y: 18.5d
 		}
 		{
@@ -3384,7 +3384,7 @@
 				item: { count: 1, id: "pastel:natures_staff" }
 				type: "item"
 			}]
-			x: -38.5d
+			x: -41.5d
 			y: -0.5d
 		}
 		{
@@ -3396,7 +3396,7 @@
 				item: { count: 1, id: "pastel:crafting_tablet" }
 				type: "item"
 			}]
-			x: -23.5d
+			x: -26.5d
 			y: 5.0d
 		}
 		{
@@ -3426,7 +3426,7 @@
 					type: "item"
 				}
 			]
-			x: -32.5d
+			x: -35.5d
 			y: 3.0d
 		}
 		{
@@ -3438,7 +3438,7 @@
 				item: { count: 1, id: "javd:portal_block" }
 				type: "item"
 			}]
-			x: -44.0d
+			x: -47.0d
 			y: 16.0d
 		}
 		{
@@ -3618,7 +3618,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_brazier" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -22.0d
 			y: 0.0d
 		}
 		{
@@ -3631,7 +3631,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_flowering" }
 				type: "item"
 			}]
-			x: -20.3d
+			x: -21.3d
 			y: -0.7d
 		}
 		{
@@ -3644,7 +3644,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_forestation" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -22.0d
 			y: 1.05d
 		}
 		{
@@ -3657,7 +3657,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_moonfall" }
 				type: "item"
 			}]
-			x: -20.3d
+			x: -21.3d
 			y: 0.7d
 		}
 		{
@@ -3670,7 +3670,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_sunrise" }
 				type: "item"
 			}]
-			x: -21.7d
+			x: -22.7d
 			y: 0.7d
 		}
 		{
@@ -3683,7 +3683,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_challenge" }
 				type: "item"
 			}]
-			x: -21.7d
+			x: -22.7d
 			y: -0.7d
 		}
 		{
@@ -3696,7 +3696,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_burrowing" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -22.0d
 			y: -1.05d
 		}
 		{
@@ -3711,8 +3711,8 @@
 				item: { count: 1, id: "ars_additions:ritual_locate_structure" }
 				type: "item"
 			}]
-			x: -40.0d
-			y: 25.5d
+			x: -43.0d
+			y: 26.0d
 		}
 		{
 			dependencies: [
@@ -3725,7 +3725,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_cloudshaping" }
 				type: "item"
 			}]
-			x: -42.0d
+			x: -45.0d
 			y: 21.0d
 		}
 		{
@@ -3739,7 +3739,7 @@
 				item: { count: 1, id: "ars_elemental:ritual_repulsion" }
 				type: "item"
 			}]
-			x: -41.5d
+			x: -44.5d
 			y: 22.0d
 		}
 		{
@@ -3753,7 +3753,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_animal_summon" }
 				type: "item"
 			}]
-			x: -41.0d
+			x: -44.0d
 			y: 23.0d
 		}
 		{
@@ -3767,7 +3767,7 @@
 				item: { count: 1, id: "ars_elemental:ritual_attraction" }
 				type: "item"
 			}]
-			x: -39.0d
+			x: -42.0d
 			y: 23.0d
 		}
 		{
@@ -3781,7 +3781,7 @@
 				item: { count: 1, id: "ars_nouveau:ritual_scrying" }
 				type: "item"
 			}]
-			x: -38.5d
+			x: -41.5d
 			y: 22.0d
 		}
 		{
@@ -3795,7 +3795,7 @@
 				item: { count: 1, id: "ars_elemental:ritual_detection" }
 				type: "item"
 			}]
-			x: -38.0d
+			x: -41.0d
 			y: 21.0d
 		}
 		{
@@ -3813,8 +3813,8 @@
 				structure: "bosses_of_mass_destruction:gauntlet_arena"
 				type: "structure"
 			}]
-			x: -41.0d
-			y: 24.5d
+			x: -44.0d
+			y: 25.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3831,8 +3831,8 @@
 				structure: "bosses_of_mass_destruction:lich_tower"
 				type: "structure"
 			}]
-			x: -41.5d
-			y: 25.0d
+			x: -44.5d
+			y: 25.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3849,8 +3849,8 @@
 				structure: "bosses_of_mass_destruction:obsidilith_arena"
 				type: "structure"
 			}]
-			x: -38.5d
-			y: 25.0d
+			x: -41.5d
+			y: 25.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3867,8 +3867,8 @@
 				structure: "bosses_of_mass_destruction:void_blossom"
 				type: "structure"
 			}]
-			x: -39.0d
-			y: 24.5d
+			x: -42.0d
+			y: 25.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3885,8 +3885,8 @@
 				structure: "takesapillage:bastille"
 				type: "structure"
 			}]
-			x: -40.5d
-			y: 24.0d
+			x: -43.5d
+			y: 24.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3903,8 +3903,8 @@
 				structure: "hellish_trials:nether_trial"
 				type: "structure"
 			}]
-			x: -39.5d
-			y: 24.0d
+			x: -42.5d
+			y: 24.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3921,8 +3921,8 @@
 				structure: "cataclysm:acropolis"
 				type: "structure"
 			}]
-			x: -41.0d
-			y: 26.5d
+			x: -44.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3939,8 +3939,8 @@
 				structure: "cataclysm:ancient_factory"
 				type: "structure"
 			}]
-			x: -41.0d
-			y: 25.5d
+			x: -44.0d
+			y: 26.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3957,8 +3957,8 @@
 				structure: "cataclysm:cursed_pyramid"
 				type: "structure"
 			}]
-			x: -40.5d
-			y: 27.0d
+			x: -43.5d
+			y: 27.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3975,8 +3975,8 @@
 				structure: "cataclysm:frosted_prison"
 				type: "structure"
 			}]
-			x: -41.5d
-			y: 26.0d
+			x: -44.5d
+			y: 26.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3993,8 +3993,8 @@
 				structure: "cataclysm:sunken_city"
 				type: "structure"
 			}]
-			x: -38.5d
-			y: 26.0d
+			x: -41.5d
+			y: 26.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4011,8 +4011,8 @@
 				structure: "cataclysm:burning_arena"
 				type: "structure"
 			}]
-			x: -39.0d
-			y: 25.5d
+			x: -42.0d
+			y: 26.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4029,8 +4029,8 @@
 				structure: "cataclysm:soul_black_smith"
 				type: "structure"
 			}]
-			x: -39.0d
-			y: 26.5d
+			x: -42.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4047,8 +4047,8 @@
 				structure: "cataclysm:ruined_citadel"
 				type: "structure"
 			}]
-			x: -39.5d
-			y: 27.0d
+			x: -42.5d
+			y: 27.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4062,8 +4062,8 @@
 				structure: "fdbosses:chesed_arena"
 				type: "structure"
 			}]
-			x: -38.0d
-			y: 25.5d
+			x: -41.0d
+			y: 26.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4077,8 +4077,8 @@
 				structure: "fdbosses:geburah_arena"
 				type: "structure"
 			}]
-			x: -42.0d
-			y: 25.5d
+			x: -45.0d
+			y: 26.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4092,8 +4092,8 @@
 				structure: "fdbosses:malkuth_arena"
 				type: "structure"
 			}]
-			x: -40.0d
-			y: 27.5d
+			x: -43.0d
+			y: 28.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4110,7 +4110,7 @@
 				structure: "cataclysm:amethyst_nest"
 				type: "structure"
 			}]
-			x: -38.0d
+			x: -41.0d
 			y: 24.0d
 		}
 		{
@@ -4125,7 +4125,7 @@
 				structure: "born_in_chaos_v1:infernal_pumpkin"
 				type: "structure"
 			}]
-			x: -42.0d
+			x: -45.0d
 			y: 24.0d
 		}
 		{
@@ -4140,8 +4140,283 @@
 				structure: "companions:companions_monkey_temple"
 				type: "structure"
 			}]
-			x: -42.0d
-			y: 27.5d
+			x: -46.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "6C8FD0DC341B404F"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					id: "mythsandlegends:umbras_whisper"
+				}
+				id: "28A689D42BE79D8A"
+				structure: "mythsandlegends:graveyard"
+				type: "structure"
+			}]
+			x: -39.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "7A1E1144E845DD8B"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					id: "mowziesmobs:ice_crystal"
+				}
+				id: "37EB29CD6B319B71"
+				structure: "mowziesmobs:frostmaw_spawn"
+				type: "structure"
+			}]
+			x: -45.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "1AE61E6DE10AEE0E"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"minecraft:damage": 0
+					}
+					id: "mowziesmobs:earthrend_gauntlet"
+				}
+				id: "0C29E60427DC71DB"
+				structure: "mowziesmobs:monastery"
+				type: "structure"
+			}]
+			x: -45.5d
+			y: 24.5d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "0909B9F372E65EB0"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					id: "mowziesmobs:sol_visage"
+				}
+				id: "424C850B8AE39F90"
+				structure: "mowziesmobs:umvuthana_grove"
+				type: "structure"
+			}]
+			x: -40.5d
+			y: 24.5d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "4EFFBFF2F8957F26"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					id: "mowziesmobs:wrought_axe"
+				}
+				id: "72B99CF9A32D2AE8"
+				structure: "mowziesmobs:wrought_chamber"
+				type: "structure"
+			}]
+			x: -43.5d
+			y: 29.5d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "20D0EB5CAD391BA4"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"hostilenetworks:data_model": "hostilenetworks:elder_guardian"
+					}
+					id: "hostilenetworks:data_model"
+				}
+				id: "55D138E216CA250E"
+				structure: "minecraft:monument"
+				type: "structure"
+			}]
+			x: -42.5d
+			y: 29.5d
+		}
+		{
+			dependencies: ["426F71334E75DDD0"]
+			id: "33255EBD3853DE59"
+			shape: "diamond"
+			tasks: [{
+				icon: {
+					components: {
+						"hostilenetworks:data_model": "hostilenetworks:warden"
+					}
+					id: "hostilenetworks:data_model"
+				}
+				id: "661480D841A4E0C3"
+				structure: "minecraft:ancient_city"
+				type: "structure"
+			}]
+			x: -40.5d
+			y: 28.5d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "1751D13041775276"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "64A45389FD69601C"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "44C8D804719614B5"
+				item: { count: 1, id: "apothic_enchanting:helmet_tome" }
+				type: "item"
+			}]
+			x: -21.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "15B3AFECD77757E9"
+			rewards: [{
+				id: "6B4A4D5A488C7C5F"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "16CA7F32BC6C023D"
+				item: { count: 1, id: "apothic_enchanting:chestplate_tome" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "197B8CEECA61C12A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6CBE3211A7574262"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "50D1EB0B9E014CCF"
+				item: { count: 1, id: "apothic_enchanting:leggings_tome" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "2FD815964A918D4E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2BCB49897E2F0AF2"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "27DE3553862143DF"
+				item: { count: 1, id: "apothic_enchanting:boots_tome" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "7C9EC97D1C3F9CBA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55690ED1E7DA8C02"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2D49F111DE52AAC1"
+				item: { count: 1, id: "apothic_enchanting:weapon_tome" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "421018A5285593B1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "609DD44C9C7E0535"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "54721F884F7E01C4"
+				item: { count: 1, id: "apothic_enchanting:bow_tome" }
+				type: "item"
+			}]
+			x: -21.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "41BF9135970F1E51"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2FFC3BE7A47C57FC"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4F6528018FA2B209"
+				item: { count: 1, id: "apothic_enchanting:pickaxe_tome" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "6BA662C9EDAB419D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "209C1E5B5312EEEC"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "62DE9789EDC1233F"
+				item: { count: 1, id: "apothic_enchanting:fishing_tome" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "38C9E92573A25F80"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C906551301B3F8C"
+				table_id: 4349622278568788484L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "48D40217692E5963"
+				item: { count: 1, id: "apothic_enchanting:other_tome" }
+				type: "item"
+			}]
+			x: -21.5d
+			y: 6.5d
 		}
 	]
 }

@@ -15,7 +15,7 @@
 			image: "toxony:textures/particle/aqua_splash_4.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 17.5d
+			x: 20.0d
 			y: -10.5d
 		}
 		{
@@ -24,7 +24,7 @@
 			image: "toxony:textures/particle/aqua_splash_4.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 17.5d
+			x: 20.0d
 			y: -3.5d
 		}
 		{
@@ -32,8 +32,8 @@
 			image: "toxony:item/flail_spin_1"
 			rotation: 0.0d
 			width: 3.0d
-			x: 27.536564625850374d
-			y: -3.8392857142857153d
+			x: 30.04846938775512d
+			y: -3.910714285714292d
 		}
 	]
 	order_index: 1
@@ -56,7 +56,7 @@
 				item: { count: 1, id: "toxony:poison_paste" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.5d
 			y: -7.0d
 		}
 		{
@@ -70,7 +70,7 @@
 				item: { count: 1, id: "toxony:ocelot_mint" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 20.5d
 			y: -3.0d
 		}
 		{
@@ -86,7 +86,7 @@
 				to_observe: "toxony:poison_farmland"
 				type: "observation"
 			}]
-			x: 11.5d
+			x: 14.0d
 			y: -8.5d
 		}
 		{
@@ -100,7 +100,7 @@
 				item: { count: 1, id: "toxony:nightshade" }
 				type: "item"
 			}]
-			x: 17.0d
+			x: 19.5d
 			y: -3.0d
 		}
 		{
@@ -114,7 +114,7 @@
 				item: { count: 1, id: "toxony:water_hemlock" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 20.5d
 			y: -4.0d
 		}
 		{
@@ -129,7 +129,7 @@
 				item: { count: 1, id: "toxony:coldsnap" }
 				type: "item"
 			}]
-			x: 17.0d
+			x: 19.5d
 			y: -4.0d
 		}
 		{
@@ -143,7 +143,7 @@
 				item: { count: 1, id: "toxony:bloodroot" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 20.0d
 			y: -3.5d
 		}
 		{
@@ -154,7 +154,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(toxony:scalpels)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 20.0d
 			y: -8.5d
 		}
 		{
@@ -168,7 +168,7 @@
 				item: { count: 1, id: "toxony:venom_tooth" }
 				type: "item"
 			}]
-			x: 17.0d
+			x: 19.5d
 			y: -11.0d
 		}
 		{
@@ -183,7 +183,7 @@
 				item: { count: 1, id: "toxony:toxic_spit" }
 				type: "item"
 			}]
-			x: 17.0d
+			x: 19.5d
 			y: -10.0d
 		}
 		{
@@ -197,7 +197,7 @@
 				item: { count: 1, id: "toxony:poison_sac" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 20.5d
 			y: -11.0d
 		}
 		{
@@ -210,7 +210,7 @@
 				item: { count: 1, id: "toxony:bog_bone" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 20.0d
 			y: -10.5d
 		}
 		{
@@ -224,7 +224,7 @@
 				item: { count: 1, id: "toxony:acid_slimeball" }
 				type: "item"
 			}]
-			x: 18.0d
+			x: 20.5d
 			y: -10.0d
 		}
 		{
@@ -236,7 +236,7 @@
 				item: { count: 1, id: "toxony:poison_blend" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 17.5d
 			y: -7.0d
 		}
 		{
@@ -256,7 +256,7 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
+			x: 14.5d
 			y: -6.0d
 		}
 		{
@@ -267,7 +267,7 @@
 				item: { count: 1, id: "toxony:poison_oil_pot" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 14.0d
 			y: -4.0d
 		}
 		{
@@ -278,7 +278,7 @@
 				item: { count: 1, id: "toxony:fatigue_oil_pot" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 13.5d
 			y: -5.0d
 		}
 		{
@@ -288,7 +288,7 @@
 				id: "46CE431166A44610"
 				type: "checkmark"
 			}]
-			x: 12.0d
+			x: 14.5d
 			y: -5.0d
 		}
 		{
@@ -299,7 +299,7 @@
 				item: { count: 1, id: "toxony:glowing_oil_pot" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 15.0d
 			y: -4.0d
 		}
 		{
@@ -310,7 +310,7 @@
 				item: { count: 1, id: "toxony:fire_resistance_oil_pot" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 15.5d
 			y: -5.0d
 		}
 		{
@@ -321,7 +321,7 @@
 				item: { count: 1, id: "toxony:tox_gauge" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 20.0d
 			y: -7.5d
 		}
 		{
@@ -332,7 +332,7 @@
 				item: { count: 1, id: "toxony:copper_crucible" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 20.0d
 			y: -6.5d
 		}
 		{
@@ -344,7 +344,7 @@
 				item: { count: 1, id: "toxony:toxic_paste" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 22.5d
 			y: -7.0d
 		}
 		{
@@ -358,7 +358,7 @@
 				item: { count: 1, id: "toxony:acid_oil_pot" }
 				type: "item"
 			}]
-			x: 18.5d
+			x: 21.0d
 			y: -6.0d
 		}
 		{
@@ -369,7 +369,7 @@
 				item: { count: 1, id: "toxony:oil_pot_sash" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 20.0d
 			y: -5.5d
 		}
 		{
@@ -384,7 +384,7 @@
 				item: { count: 1, id: "toxony:mending_oil_pot" }
 				type: "item"
 			}]
-			x: 18.5d
+			x: 21.0d
 			y: -8.0d
 		}
 		{
@@ -395,7 +395,7 @@
 				item: { count: 1, id: "toxony:toxic_blend" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 22.5d
 			y: -5.5d
 		}
 		{
@@ -406,7 +406,7 @@
 				item: { components: { "minecraft:charged_projectiles": [ { components: { "minecraft:intangible_projectile": { } }, count: 1, id: "minecraft:arrow" }, { components: { "minecraft:intangible_projectile": { } }, count: 1, id: "minecraft:arrow" }, { components: { "minecraft:intangible_projectile": { } }, count: 1, id: "minecraft:arrow" } ], "toxony:loaded_shots": 3 }, count: 1, id: "toxony:cyclebow" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 15.0d
 			y: -8.5d
 		}
 		{
@@ -418,7 +418,7 @@
 				item: { count: 1, id: "toxony:bolt" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.5d
 			y: -9.5d
 		}
 		{
@@ -429,7 +429,7 @@
 				item: { count: 1, id: "toxony:bolt_cartridge" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.5d
 			y: -10.5d
 		}
 		{
@@ -440,7 +440,7 @@
 				item: { count: 1, id: "toxony:potion_flask" }
 				type: "item"
 			}]
-			x: 20.0d
+			x: 22.5d
 			y: -8.5d
 		}
 		{
@@ -451,7 +451,7 @@
 				item: { count: 1, id: "toxony:glass_vial" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 23.5d
 			y: -7.0d
 		}
 		{
@@ -462,7 +462,7 @@
 				item: { count: 1, id: "toxony:toxin_canister" }
 				type: "item"
 			}]
-			x: 22.0d
+			x: 24.5d
 			y: -7.5d
 		}
 		{
@@ -484,7 +484,7 @@
 					type: "item"
 				}
 			]
-			x: 22.5d
+			x: 25.0d
 			y: -6.5d
 		}
 		{
@@ -502,7 +502,7 @@
 					type: "item"
 				}
 			]
-			x: 23.0d
+			x: 25.5d
 			y: -7.5d
 		}
 		{
@@ -512,7 +512,7 @@
 				id: "03D27D995554C1F6"
 				type: "checkmark"
 			}]
-			x: 23.5d
+			x: 26.0d
 			y: -6.5d
 		}
 		{
@@ -523,7 +523,7 @@
 				item: { count: 1, id: "toxony:redstone_mixture" }
 				type: "item"
 			}]
-			x: 24.0d
+			x: 26.5d
 			y: -7.5d
 		}
 		{
@@ -534,7 +534,7 @@
 				item: { count: 1, id: "toxony:redstone_solution" }
 				type: "item"
 			}]
-			x: 24.5d
+			x: 27.0d
 			y: -6.5d
 		}
 		{
@@ -552,7 +552,7 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
+			x: 27.5d
 			y: -7.5d
 		}
 		{
@@ -563,7 +563,7 @@
 				item: { count: 1, id: "toxony:copper_needle" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 28.0d
 			y: -6.5d
 		}
 		{
@@ -574,7 +574,7 @@
 				item: { count: 1, id: "toxony:magnifying_glass" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 28.5d
 			y: -7.5d
 		}
 		{
@@ -584,7 +584,7 @@
 				id: "5EC8E0E987CF862A"
 				type: "checkmark"
 			}]
-			x: 27.0d
+			x: 29.5d
 			y: -7.5d
 		}
 		{
@@ -598,7 +598,7 @@
 				item: { count: 1, id: "toxony:whirlsnap" }
 				type: "item"
 			}]
-			x: 26.5d
+			x: 29.0d
 			y: -5.0d
 		}
 		{
@@ -611,7 +611,7 @@
 				item: { count: 1, id: "toxony:moonlight_hemlock" }
 				type: "item"
 			}]
-			x: 27.5d
+			x: 30.0d
 			y: -5.0d
 		}
 		{
@@ -624,7 +624,7 @@
 				item: { count: 1, id: "toxony:snow_mint" }
 				type: "item"
 			}]
-			x: 27.5d
+			x: 30.0d
 			y: -4.0d
 		}
 		{
@@ -637,7 +637,7 @@
 				item: { count: 1, id: "toxony:warproot" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 29.5d
 			y: -4.5d
 		}
 		{
@@ -650,7 +650,7 @@
 				item: { count: 1, id: "toxony:sunspot" }
 				type: "item"
 			}]
-			x: 26.5d
+			x: 29.0d
 			y: -4.0d
 		}
 		{
@@ -661,7 +661,7 @@
 				item: { count: 1, id: "toxony:empty_tox_pot" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 29.5d
 			y: -10.0d
 		}
 		{
@@ -672,7 +672,7 @@
 				item: { count: 1, id: "toxony:toxin_tox_pot" }
 				type: "item"
 			}]
-			x: 27.0d
+			x: 29.5d
 			y: -12.0d
 		}
 		{
@@ -683,7 +683,7 @@
 				item: { count: 1, id: "toxony:smoke_tox_pot" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 30.5d
 			y: -11.5d
 		}
 		{
@@ -694,7 +694,7 @@
 				item: { count: 1, id: "toxony:regeneration_tox_pot" }
 				type: "item"
 			}]
-			x: 26.0d
+			x: 28.5d
 			y: -11.5d
 		}
 		{
@@ -705,7 +705,7 @@
 				item: { count: 1, id: "toxony:acid_tox_pot" }
 				type: "item"
 			}]
-			x: 25.5d
+			x: 28.0d
 			y: -10.5d
 		}
 		{
@@ -716,7 +716,7 @@
 				item: { count: 1, id: "toxony:witchfire_tox_pot" }
 				type: "item"
 			}]
-			x: 28.5d
+			x: 31.0d
 			y: -10.5d
 		}
 		{
@@ -727,7 +727,7 @@
 				item: { count: 1, id: "toxony:oil_base" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 30.5d
 			y: -8.5d
 		}
 		{
@@ -738,7 +738,7 @@
 				item: { count: 1, id: "toxony:toxic_leather" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 30.5d
 			y: -6.5d
 		}
 		{
@@ -766,7 +766,7 @@
 					type: "item"
 				}
 			]
-			x: 29.0d
+			x: 31.5d
 			y: -7.5d
 		}
 		{
@@ -777,7 +777,7 @@
 				item: { count: 1, id: "toxony:oil_pot_bandolier" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 32.5d
 			y: -7.5d
 		}
 		{
@@ -788,7 +788,7 @@
 				item: { count: 1, id: "toxony:toxin_flask" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 33.5d
 			y: -7.5d
 		}
 		{
@@ -822,7 +822,7 @@
 					type: "item"
 				}
 			]
-			x: 32.73979591836739d
+			x: 35.23979591836739d
 			y: -7.471343537415002d
 		}
 		{
@@ -840,7 +840,7 @@
 					type: "item"
 				}
 			]
-			x: 28.0d
+			x: 30.5d
 			y: -7.5d
 		}
 		{
@@ -3245,18 +3245,32 @@
 		{
 			dependencies: ["7E470E4F941A62BB"]
 			id: "3D7610F02FB93E78"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					components: {
-						"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add.png"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "devices:item/empty_pouch_slot"
+						}
+						id: "ftbquests:custom_icon"
 					}
-					id: "ftbquests:custom_icon"
+					id: "094072146D87AD84"
+					team_reward: false
+					type: "custom"
 				}
-				id: "7108991BE6DD4A51"
-				team_reward: false
-				type: "custom"
-			}]
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add.png"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "7108991BE6DD4A51"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			shape: "heart"
 			tasks: [{
 				id: "68403CCA82BDEA08"
@@ -3351,6 +3365,7 @@
 			id: "3D25B3BBFD462747"
 			rewards: [
 				{
+					auto: "enabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "devices:item/empty_pouch_slot"
@@ -3386,6 +3401,32 @@
 		{
 			dependencies: ["3784CF017C0CB226"]
 			id: "4D4DCC8BF72CB593"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_back_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "4B224C18E7C6EE21"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					auto: "enabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add.png"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "0C6E1695C7D921E2"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			shape: "gear"
 			tasks: [{
 				id: "2DED2E4CFB83E45D"
@@ -3394,6 +3435,39 @@
 			}]
 			x: 8.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["7162B15B452A8B2E"]
+			id: "0EC60F3FB9DFB29E"
+			tasks: [{
+				id: "13145398B47D2CAB"
+				item: { count: 1, id: "transmog:void_fragment" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0EC60F3FB9DFB29E"]
+			id: "4B4152C17573E98D"
+			tasks: [{
+				id: "7414C7BC8DE05E04"
+				item: { count: 1, id: "transmog:transmogrification_table" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0EC60F3FB9DFB29E"]
+			id: "3AA18F4C134E7ACB"
+			tasks: [{
+				id: "70C2DEAED078B45C"
+				item: { count: 1, id: "kubejs:amber_visage" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -6.0d
 		}
 	]
 }
