@@ -1,10 +1,189 @@
 LootJS.modifiers(event => {
 
+    const structuresLootTable = {
+        common: [
+            /.*:chests\/village\/.*/,
+            /.*:village\/.*/,
+            /spectrum:chests\/.*/,
+            /pastel:chests\/.*/,
+            /dungeons_arise:chests\/.*/,
+            /dungeons_arise_seven_seas:chests\/.*/,
+            'minecraft:chests/shipwreck_supply',
+            'artifacts:chests/campsite_barrel',
+            'artifacts:chests/campsite_chest',
+            'terralith:ruin/glacial/junk',
+            'terralith:spire/common',
+            'terralith:spire/junk',
+            /mvs:.*/,
+            /kaisyn:.*/,
+            /the_bumblezone:structures\/.*/,
+            'friendsandfoes:barrels/illusioner_shack_attic',
+            'betterstrongholds:chests/common'
+        ],
+        rare: [
+            /.*:chests\/stronghold_.*/,
+            /.*:chests\/underwater_ruin_.*/,
+            /dungeons_arise:chests.*treasure/,
+            'minecraft:chests/ruined_portal',
+            'minecraft:chests/bastion_other',
+            'minecraft:chests/bastion_bridge',
+            'minecraft:chests/nether_bridge',
+            'minecraft:chests/simple_dungeon',
+            'terralith:ruin/glacial/main_cs',
+            'terralith:spire/rare',
+            'terralith:underground/chest',
+            'mvs:cartographer_tower',
+            'mvs:cathedral_rare',
+            'mvs:houses_rare',
+            'mvs:large_carts',
+            'mvs:large_carts_2',
+            'mvs:jungle_tower',
+            'mvs:rare',
+            'dungeons_arise:chests/abandoned_temple/abandoned_temple_map',
+            'dungeons_arise:chests/aviary/aviary_normal',
+            'dungeons_arise_seven_seas:chests/corsair_corvette/corsair_corvette_treasure',
+            'dungeons_arise_seven_seas:chests/small_yacht/small_yacht_treasure',
+            'dungeons_arise_seven_seas:chests/unicorn_galleon/unicorn_galleon_treasure',
+            'friendsandfoes:barrels/illusioner_shack_basement',
+            'betterstrongholds:chests/prison_lg',
+            'betterstrongholds:chests/grand_library',
+            'underground_bunkers:chests/underground_bunker/underground_bunker_normal',
+        ],
+        epic: [
+            'betterstrongholds:chests/treasure',
+            'betterstrongholds:chests/trap',
+            'betterstrongholds:chests/crypt',
+            'betterstrongholds:chests/armoury',
+            'betterstrongholds:chests/library_md',
+            'minecraft:chests/abandoned_mineshaft',
+            'minecraft:chests/buried_treasure',
+            'minecraft:chests/pillager_outpost',
+            'minecraft:chests/jungle_temple',
+            'minecraft:chests/desert_pyramid',
+            'minecraft:chests/woodland_mansion',
+            'minecraft:chests/bastion_treasure',
+            'minecraft:chests/end_city_treasure',
+            'terralith:spire/treasure',
+            'mvs:crystal',
+            'probablychests:chests/gold_pc_chests',
+            'dungeons_arise:chests/abandoned_temple/abandoned_temple_top',
+            'dungeons_arise:chests/aviary/aviary_treasure',
+            'dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure',
+            'dungeons_arise_seven_seas:chests/pirate_junk/pirate_junk_treasure',
+            'dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_treasure',
+            'dungeons_arise:chests/bandit_towers/bandit_towers_treasure',
+            'friendsandfoes:chests/illusioner_shack',
+            'artifacts:entities/mimic',
+            'rottencreatures:entities/dead_beard',
+            'rottencreatures:entities/immortal',
+            'underground_bunkers:chests/underground_bunker/underground_bunker_treasure',
+            'minecraft:chests/shipwreck_treasure',
+            'minecraft:chests/igloo_chest',
+            'minecraft:chests/ancient_city',
+            'mansions:mansion_treasure'
+        ],
+        //Not yet used 
+        mines_pools: [
+            /dungeons_arise:chests\/mushroom_mines\/mushroom_mines_.*/,
+            /dungeons_arise:chests\/scorched_mines\/scorched_mines_.*/,
+            /dungeons_arise:chests\/mines_treasure_.*/,
+            'minecraft:chests/village/village_weaponsmith',
+            'minecraft:chests/village/village_toolsmith',
+            'minecraft:chests/village/village_armorer',
+            'betterstrongholds:chests/mess',
+            'underground_bunkers:chests/underground_bunker/underground_bunker_supply'
+        ]
+    }
+
+    structuresLootTable.common.forEach(table => {
+        event.addTableModifier(table).pool((pool) => {
+            pool.when(conditions => {
+                conditions.randomChance(0.1)
+            })
+            pool.addEntry(LootEntry.of("kubejs:rune_of_piercing"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_armor"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_bloodshed"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_diversity"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_fishing"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_mining"))
+        }).pool((pool) => {
+            pool.when(conditions => {
+                conditions.randomChance(0.05)
+            })
+            pool.addEntry(LootEntry.of("kubejs:amber_visage"))
+        })
+    });
+
+    structuresLootTable.rare.forEach(table => {
+        event.addTableModifier(table).pool((pool) => {
+            pool.when(conditions => {
+                conditions.randomChance(0.2)
+            })
+            pool.addEntry(LootEntry.of("kubejs:rune_of_piercing"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_armor"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_bloodshed"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_diversity"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_fishing"))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_mining"))
+        }).pool((pool) => {
+            pool.when(conditions => {
+                conditions.randomChance(0.1)
+            })
+            pool.addEntry(LootEntry.of("kubejs:amber_visage"))
+        })
+    });
+
+    structuresLootTable.epic.forEach(table => {
+        event.addTableModifier(table).pool((pool) => {
+            pool.when(conditions => {
+                conditions.randomChance(0.5)
+            })
+            pool.addEntry(LootEntry.of("kubejs:rune_of_piercing", [1, 2]))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_armor", [1, 2]))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_bloodshed", [1, 2]))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_diversity", [1, 2]))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_fishing", [1, 2]))
+            pool.addEntry(LootEntry.of("kubejs:rune_of_mining", [1, 2]))
+        }).pool((pool) => {
+            pool.when(conditions => {
+                conditions.randomChance(0.3)
+            })
+            pool.addEntry(LootEntry.of("kubejs:amber_visage"))
+        })
+    });
+
     event.addTableModifier("pastel:chests/ruined_pedestal_stone").addLoot("kubejs:old_tablet")
     event.addTableModifier("pastel:chests/ruined_pedestal_deepslate").addLoot("kubejs:old_tablet")
-    event.addTableModifier("pastel:chests/ancient_ruins_main").addLoot("kubejs:old_diary").setCount([1,1])
-    event.addTableModifier("pastel:chests/city_below/moonstone_temple_roof_ridge").addLoot("kubejs:holy_book_of_color").setCount([1,1])
-    event.addTableModifier("pastel:chests/excavation_site/hidden").addLoot("kubejs:old_notes").setCount([1,1])
+    event.addTableModifier("pastel:chests/ancient_ruins_main").addLoot("kubejs:old_diary").setCount([1, 1])
+    event.addTableModifier("pastel:chests/city_below/moonstone_temple_roof_ridge").addLoot("kubejs:holy_book_of_color").setCount([1, 1])
+    event.addTableModifier("pastel:chests/excavation_site/hidden").addLoot("kubejs:old_notes").setCount([1, 1])
+
+    const blaze_core_bosses = [
+        "companions:sacred_pontiff",
+        "born_in_chaos_v1:lord_pumpkinhead_head",
+        "mythsandlegends:black_charro",
+        "mowziesmobs:umvuthi",
+        "mowziesmobs:frostmaw",
+        "mowziesmobs:ferrous_wroughtnaut",
+        "cataclysm:amethyst_crab",
+    ]
+
+    const electronic_ender_core_bosses = [
+        "bosses_of_mass_destruction:gauntlet",
+        "bosses_of_mass_destruction:lich",
+        "bosses_of_mass_destruction:obsidilith",
+        "bosses_of_mass_destruction:void_blossom",
+        "fdbosses:geburah",
+        "fdbosses:chesed",
+        "fdbosses:malkuth",
+    ]
+    blaze_core_bosses.forEach(boss => {
+        event.addEntityModifier(boss).addLoot("kubejs:blaze_core").matchMainHand("#c:tools/wrench").randomChance(0.5)
+    });
+
+    electronic_ender_core_bosses.forEach(boss => {
+        event.addEntityModifier(boss).addLoot("kubejs:electronic_ender_core").matchMainHand("#c:tools/wrench").randomChance(0.5)
+    });
 
 
 })
