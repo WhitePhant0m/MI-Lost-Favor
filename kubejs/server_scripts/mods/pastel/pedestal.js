@@ -21,6 +21,7 @@ const customPedestalCraft = (event, args) => {
     "required_advancement": args.advancement,
     "disable_yield_upgrades": args.yield_upgrades || false,
   });
+  if(args.removeRecipe){event.remove({output: args.result.id})}
 };
 
 const customPedestalCraftShapeless = (event, args) => {
