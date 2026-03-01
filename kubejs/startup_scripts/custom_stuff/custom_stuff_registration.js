@@ -142,6 +142,14 @@ createNewItem('orb_of_chance', {use:{animation:"block"}})
 createNewItem('orb_of_annulment', {use:{animation:"block"}})
 createNewItem('orb_of_regret', {use:{animation:"block"}})
 createNewItem('orb_of_corruption', {use:{animation:"block"}})
+createNewItem('rune_of_piercing', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Piercing", "ru_ru": "Руна Пронзания" }})
+createNewItem('rune_of_armor', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Armor", "ru_ru": "Руна Брони" }})
+createNewItem('rune_of_bloodshed', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Bloodshed", "ru_ru": "Руна Кровопролития" }})
+createNewItem('rune_of_diversity', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Diversity", "ru_ru": "Руна Разнообразия" }})
+createNewItem('rune_of_fishing', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Fishing", "ru_ru": "Руна Рыбалки" }})
+createNewItem('rune_of_mining', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Mining", "ru_ru": "Руна Добычи" }})
+createNewItem('blaze_core', {stackSize: 1, rarity: 'epic', lang : { "en_us": "Blaze Core", "ru_ru": "Ядро Пламени" }})
+createNewItem('electronic_ender_core', {stackSize: 1, rarity: 'epic', lang : { "en_us": "Electronic Ender Core", "ru_ru": "Электронное Ядро Энда" }})
 
 //#endregion
 
