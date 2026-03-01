@@ -1,109 +1,142 @@
 {
-    "parent": "apotheosis:progression/frontier",
+    "parent": "apotheosis:progression/ascent",
     "criteria": {
-        "kill_ender_dragon": {
+        "kill_lich": {
             "conditions": {
                 "entity": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "minecraft:ender_dragon"
+                            "type": "bosses_of_mass_destruction:lich"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
         },
-        "kill_wither": {
+        "kill_obsidilith": {
             "conditions": {
                 "entity": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "minecraft:wither"
+                            "type": "bosses_of_mass_destruction:obsidilith"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
         },
-        "kill_elder_guardian": {
+        "kill_void_blossom": {
             "conditions": {
                 "entity": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "minecraft:elder_guardian"
+                            "type": "bosses_of_mass_destruction:void_blossom"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
         },
-        "kill_warden": {
+        "kill_gauntlet": {
             "conditions": {
                 "entity": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type": "minecraft:warden"
+                            "type": "bosses_of_mass_destruction:gauntlet"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
         },
-        "kill_apothic_invader": {
+        "kill_geburah": {
             "conditions": {
                 "entity": [
                     {
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "type_specific": {
-                                "type": "apotheosis:is_invader"
-                            }
+                            "type": "fdbosses:geburah"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_malkuth": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "fdbosses:malkuth"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        },
+        "kill_chesed": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "fdbosses:chesed"
                         }
                     }
                 ]
             },
             "trigger": "minecraft:player_killed_entity"
         }
+       
     },
     "display": {
         "background": "apotheosis:textures/advancements/bg/apoth.png",
         "description": {
-            "translate": "advancements.apotheosis.progression.ascent.desc"
+            "translate": "advancements.apotheosis.progression.summit.desc"
         },
         "frame": "goal",
         "icon": {
             "count": 1,
-            "id": "minecraft:blaze_powder"
+            "id": "minecraft:netherite_sword"
         },
         "title": {
-            "translate": "advancements.apotheosis.progression.ascent.title"
+            "translate": "advancements.apotheosis.progression.summit.title"
         }
     },
     "requirements": [
         [
-            "kill_ender_dragon"
+            "kill_lich"
         ],
         [
-            "kill_wither"
+            "kill_obsidilith"
         ],
         [
-            "kill_elder_guardian"
+            "kill_void_blossom"
         ],
         [
-            "kill_warden"
+            "kill_gauntlet"
         ],
         [
-            "kill_apothic_invader"
+            "kill_malkuth"
+        ],
+        [
+            "kill_chesed"
+        ],
+        [
+            "kill_geburah"
         ]
     ],
-    "sends_telemetry_event": false
+    "sends_telemetry_event": true
 }
