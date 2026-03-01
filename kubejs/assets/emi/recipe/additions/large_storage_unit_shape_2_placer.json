@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:large_storage_unit_shape_2_placer",
+		"remainder": "item:kubejs:large_storage_unit_shape_2_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0
+	},
+	"output": "item:yet_another_industrialization:large_storage_unit"
+}

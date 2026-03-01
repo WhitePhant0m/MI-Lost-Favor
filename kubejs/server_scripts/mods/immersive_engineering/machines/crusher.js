@@ -40,7 +40,8 @@ const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
             outputItems:args.outputItems
         })
     }
-    if(args.removeRecipe){args.outputItems.forEach((out) => {event.remove({output: out})})}
+    if(args.removeRecipe){args.outputItems.forEach((out) => {event.remove({output: out[0]})})}
+    if (args.removeRecipeType) { args.outputItems.forEach((out) => {event.remove({output: out[0], type:args.removeRecipeType})}) }
     event.custom(recipe)
 }
 

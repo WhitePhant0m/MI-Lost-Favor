@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:oiltank_placer",
+		"remainder": "item:kubejs:oiltank_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0
+	},
+	"output": "item:immersivepetroleum:oiltank"
+}

@@ -7,7 +7,7 @@ ServerEvents.tags('item', event => {
 
     const keyWords = ["log", "plank", "fence_gate"].join("|")
 
-    const pattern = patternJavaClass.compile(`^[^:]+:.*_(?<tagName>(${keyWords})s?)$`)
+    const pattern = patternJavaClass.compile(`^(?<modID>[^:]+):.*_(?<tagName>(${keyWords})s?)$`)
     allItems.stacks.toList().forEach((itemStack) => {
         let matcher = pattern.matcher(itemStack.id)
         if (matcher.matches()){
@@ -19,6 +19,13 @@ ServerEvents.tags('item', event => {
                 event.add(`minecraft:${matcher.group("tagName")}`, matcher.group())
             } else {
                 event.add(`minecraft:${matcher.group("tagName")}s`, matcher.group())
+            }
+            if(matcher.group("modID") != "minecraft"){
+                if(isLastS){
+                    event.add(`milf:non_vanilla_${matcher.group("tagName")}`, matcher.group())
+                } else {
+                    event.add(`milf:non_vanilla_${matcher.group("tagName")}s`, matcher.group())
+                }
             }
         }
         

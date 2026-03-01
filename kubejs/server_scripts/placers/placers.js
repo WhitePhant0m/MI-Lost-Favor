@@ -1,6 +1,11 @@
 //priority: 10
 let $FTBChunksAPI = Java.loadClass("dev.ftb.mods.ftbchunks.api.FTBChunksAPI").api()
 let $ChunkDimPos = Java.loadClass("dev.ftb.mods.ftblibrary.math.ChunkDimPos")
+let $NbtIo = Java.loadClass("net.minecraft.nbt.NbtIo")
+/**@type {import("net.minecraft.resources.ResourceLocation").$ResourceLocation$$Original} */
+let $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
+let $NbtAccounter = Java.loadClass("net.minecraft.nbt.NbtAccounter")
+
 
 const PLACER_BLOCKS = Object.keys(global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime)
 const BOX_BLOCKS = Object.keys(global.AnotherDefinitelyUniqueNameForBoxes)
@@ -18,11 +23,33 @@ const PARTICLES = {
     dispersed:"minecraft:instant_effect",
     error:"minecraft:gust"
 }
-
+const MI_MODS = ["modern_industrialization", "mi_tweaks", "yet_another_industrialization", "extended_industrialization"]
 const AIR_ID = "minecraft:air"
-const NBT_FILE_PATHS = {getPath: (modName, templateName) => `kubejs/data/${modName}/structure/multiblocks/${templateName}.nbt`}
+const NBT_HELPER = {
+    getNBTCompoundTag: (modName, templateName, /**@type {import("net.minecraft.server.MinecraftServer").$MinecraftServer$$Original} */ resourceManager) => {
+        try {
+            let structureLocation = $ResourceLocation.fromNamespaceAndPath(modName,`structure/multiblocks/${templateName}.nbt`)
+            let resource = resourceManager.getResource(structureLocation)
+            
+            if (!resource.isPresent()) {
+                console.log(`Structure not found: ${templateName}`)
+                return null
+            }
+
+            let inputStream = resource.get().open()
+            let nbtData = $NbtIo["readCompressed(java.io.InputStream,net.minecraft.nbt.NbtAccounter)"](inputStream, new $NbtAccounter.unlimitedHeap())
+            inputStream.close()
+            
+            return nbtData
+        } catch (error) {
+            console.log(error)
+        }        
+    }
+}
+//const NBT_FILE_PATHS = {getPath: (modName, templateName) => `${modName}:structure/multiblocks/${templateName}.nbt`}
 
 BlockEvents.rightClicked(PLACER_BLOCKS, event => {
+
     if(event.getHand()=="OFF_HAND") event.cancel()
     //#region FTB chunks stuff
     const chunkManager = $FTBChunksAPI.getManager()
@@ -118,7 +145,7 @@ function handlePlacement(event, template, modName, playerStructureData, blockStr
     placeStructure(event, template, modName, blockStructureData)
 }
 
-function placeStructure(/**@type {$BlockRightClickedKubeEvent_} */ event, template, modName, blockStructureData){
+function placeStructure(/**@type {import("dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent").$BlockRightClickedKubeEvent$$Original} */ event, template, modName, blockStructureData){
     const { blockPosRelativeStart, facing } = blockStructureData
     event.block.set(event.block.id.toString().slice(0,-7) + "_empty_box", Object.assign({}, event.block.getProperties(), {enabled:false}))
     event.server.runCommandSilent(`playsound block.anvil.land block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
@@ -126,10 +153,14 @@ function placeStructure(/**@type {$BlockRightClickedKubeEvent_} */ event, templa
         let {blockID,  rotatedVec3i, relativeBlockProperties} = getTemplateBlockData(template, blockStructureData, blockNumber)
         if (blockID != AIR_ID) {
             let block = Block.withProperties(blockID, relativeBlockProperties)
+
             event.getLevel().setBlockAndUpdate(blockPosRelativeStart.offset(rotatedVec3i), block)
-            if(modName == "modern_industrialization"){
+            if(MI_MODS.includes(modName)){
                 let blockEntity = event.getLevel().getBlockEntity(blockPosRelativeStart.offset(rotatedVec3i))
-                if (blockEntity != null){
+                if (blockEntity != null && MI_MODS.includes(blockEntity.blockState.id.split(":")[0])){
+                    // blockEntity.getActiveShape().getActiveShape().simpleMembers.forEach((blockPos, simpleMember) => {
+                    //     console.log(simpleMember.getPreviewState());
+                    // })
                     blockEntity.placedBy.placerId = event.player.uuid
                     let machineOrientation = blockEntity.orientation
                     switch (directionRelativeTo("south", facing)) {
@@ -212,6 +243,9 @@ function getRelativeBlockProperties(blockProperties, structureData, blockID){
     if (String(blockProperties.west).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("west", facing)] = true}
     if (String(blockProperties.south).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("south", facing)] = true}
     if (String(blockProperties.north).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("north", facing)] = true}
+
+    if (String(blockProperties.hanging).slice(1, -1) === "true") {relativeProperties.hanging = true}
+    if (blockProperties.orientation) {relativeProperties.orientation = String(blockProperties.orientation).slice(1, -1)}
     
     return relativeProperties
 }
@@ -244,7 +278,7 @@ function validateArea(event, bounds) {
 function getTemplateData(event, blockMap) {
     const templateName = blockMap == PLACER_BLOCKS_TO_ITEM_NAME_MAP ? event.block.getId().toString().slice(7, -7) : event.block.getId().toString().slice(7, -10)
     const modName = blockMap[event.block.getId().toString()].split(':')[0]
-    const template = NBTIO.read(NBT_FILE_PATHS.getPath(modName, templateName))
+    const template = NBT_HELPER.getNBTCompoundTag(modName, templateName, event.server.getResourceManager())
     return { modName:modName, template:template }
 }
 

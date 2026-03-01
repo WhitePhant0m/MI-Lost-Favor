@@ -334,6 +334,14 @@
 				id: "modern_industrialization:coke_oven"
 			}
 			id: "5D07A7818DC2BC1B"
+			rewards: [{
+				id: "706916E7485006F8"
+				item: {
+					count: 1
+					id: "kubejs:coke_oven_placer"
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "758B0EE479E81279"
@@ -377,6 +385,14 @@
 				id: "modern_industrialization:steam_blast_furnace"
 			}
 			id: "624A33C4995164C4"
+			rewards: [{
+				id: "34CA2A4D809FE50E"
+				item: {
+					count: 1
+					id: "kubejs:steam_blast_furnace_placer"
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "10BC2CC173A0FC1B"
@@ -430,6 +446,9 @@
 		}
 		{
 			dependencies: ["590167B593FE267A"]
+			icon: {
+				id: "yet_another_industrialization:bronze_mixed_input_hatch"
+			}
 			id: "38AC9B9A78A6B95D"
 			shape: "rsquare"
 			tasks: [
@@ -454,6 +473,9 @@
 		}
 		{
 			dependencies: ["590167B593FE267A"]
+			icon: {
+				id: "yet_another_industrialization:bronze_mixed_output_hatch"
+			}
 			id: "7204D7ED210430A0"
 			shape: "rsquare"
 			tasks: [
@@ -485,6 +507,15 @@
 				id: "immersiveengineering:excavator"
 			}
 			id: "161C42408B4B034C"
+			rewards: [{
+				count: 2
+				id: "5E523EA36C0D069D"
+				item: {
+					count: 1
+					id: "kubejs:excavator_full_placer"
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 2.0d
 			tasks: [
@@ -700,6 +731,14 @@
 				id: "immersiveengineering:metal_press"
 			}
 			id: "570E4E47D3CBC937"
+			rewards: [{
+				id: "2020C03083CEDAEE"
+				item: {
+					count: 1
+					id: "kubejs:metal_press_placer"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -824,6 +863,14 @@
 				id: "immersiveengineering:crusher"
 			}
 			id: "6290C234D1AD169B"
+			rewards: [{
+				id: "2AFBDF87645D17A6"
+				item: {
+					count: 1
+					id: "kubejs:crusher_placer"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -896,6 +943,14 @@
 				id: "immersiveengineering:refinery"
 			}
 			id: "5EB3607AEB955B3C"
+			rewards: [{
+				id: "2C58E2D3310C768D"
+				item: {
+					count: 1
+					id: "kubejs:refinery_placer"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -962,6 +1017,14 @@
 				id: "immersiveengineering:fermenter"
 			}
 			id: "4FEBFA4078794109"
+			rewards: [{
+				id: "3628C5AEF93903FA"
+				item: {
+					count: 1
+					id: "kubejs:fermenter_placer"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -1028,6 +1091,14 @@
 				id: "immersiveengineering:squeezer"
 			}
 			id: "1045516B7695F372"
+			rewards: [{
+				id: "599114D212F5CB4D"
+				item: {
+					count: 1
+					id: "kubejs:squeezer_placer"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -1372,6 +1443,14 @@
 				id: "immersiveengineering:bottling_machine"
 			}
 			id: "686F439E21ED2A67"
+			rewards: [{
+				id: "5DDCCD2238CD5C91"
+				item: {
+					count: 1
+					id: "kubejs:bottling_machine_placer"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -1656,6 +1735,14 @@
 				id: "immersiveengineering:tank"
 			}
 			id: "4EF8906CE102966A"
+			rewards: [{
+				id: "349A1C2A7899CAED"
+				item: {
+					count: 1
+					id: "kubejs:sheetmetal_tank_placer"
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -1902,25 +1989,63 @@
 		}
 		{
 			dependencies: ["6621095DCFF9AE0F"]
+			icon: {
+				id: "extended_industrialization:large_steam_macerator"
+			}
 			id: "0B43AC46CBE2FD30"
-			shape: "hexagon"
-			tasks: [{
-				id: "58480F42C2B54B4A"
-				item: { count: 1, id: "extended_industrialization:large_steam_macerator" }
+			rewards: [{
+				id: "77FF02A4B5F6A9E9"
+				item: {
+					count: 1
+					id: "kubejs:large_steam_macerator_placer"
+				}
 				type: "item"
 			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "58480F42C2B54B4A"
+					item: { count: 1, id: "extended_industrialization:large_steam_macerator" }
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "117D94FEB6C1537B"
+					item: { count: 1, id: "modern_industrialization:bronze_plated_bricks" }
+					type: "item"
+				}
+			]
 			x: 3.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["6CB0342958887169"]
+			icon: {
+				id: "mi_tweaks:advanced_large_steam_furnace"
+			}
 			id: "498922D593321422"
-			shape: "hexagon"
-			tasks: [{
-				id: "546EEF90D6C4C757"
-				item: { count: 1, id: "mi_tweaks:advanced_large_steam_furnace" }
+			rewards: [{
+				id: "6FB2FBC8EC1B9BC3"
+				item: {
+					count: 1
+					id: "kubejs:advanced_large_steam_furnace_placer"
+				}
 				type: "item"
 			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "546EEF90D6C4C757"
+					item: { count: 1, id: "mi_tweaks:advanced_large_steam_furnace" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "5FF51CDB6E285906"
+					item: { count: 1, id: "modern_industrialization:bronze_plated_bricks" }
+					type: "item"
+				}
+			]
 			x: -3.5d
 			y: -4.0d
 		}
@@ -2890,6 +3015,9 @@
 		}
 		{
 			dependencies: ["6852D3C3660C9385"]
+			icon: {
+				id: "modern_industrialization:lv_storage_unit"
+			}
 			id: "0C614115DB411C44"
 			shape: "diamond"
 			tasks: [
@@ -2914,13 +3042,44 @@
 		}
 		{
 			dependencies: ["7D9C31E5FE076F2C"]
+			icon: {
+				id: "modern_industrialization:large_steam_boiler"
+			}
 			id: "5D07A5B2F5ECF337"
-			shape: "rsquare"
-			tasks: [{
-				id: "2EE1552C3D690B7C"
-				item: { count: 1, id: "modern_industrialization:large_steam_boiler" }
+			rewards: [{
+				id: "2AA9EBDCCF1C7719"
+				item: {
+					count: 1
+					id: "kubejs:large_steam_boiler_placer"
+				}
 				type: "item"
 			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "2EE1552C3D690B7C"
+					item: { count: 1, id: "modern_industrialization:large_steam_boiler" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "74B48BBAE2AEE880"
+					item: { count: 1, id: "modern_industrialization:bronze_plated_bricks" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "41A3075B997B2708"
+					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2DA04C65CE5C263B"
+					item: { count: 1, id: "modern_industrialization:bronze_machine_casing_pipe" }
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 7.5d
 		}
@@ -3645,6 +3804,14 @@
 					id: "5BA06D58446F6FDD"
 					type: "custom"
 				}
+				{
+					id: "0FE29634A114BEAD"
+					item: {
+						count: 1
+						id: "kubejs:multiblock_packer_3000_safety_regulations_edition_placer"
+					}
+					type: "item"
+				}
 			]
 			shape: "octagon"
 			size: 2.0d
@@ -4287,25 +4454,85 @@
 		}
 		{
 			dependencies: ["5101603AB4BC16F6"]
+			icon: {
+				id: "mi_tweaks:advanced_steam_blast_furnace"
+			}
 			id: "67872228B316D5C9"
-			shape: "octagon"
-			tasks: [{
-				id: "3696314B057AEA77"
-				item: { count: 1, id: "mi_tweaks:advanced_steam_blast_furnace" }
+			rewards: [{
+				id: "7627C51F970E6FB7"
+				item: {
+					count: 1
+					id: "kubejs:advanced_steam_blast_furnace_placer"
+				}
 				type: "item"
 			}]
+			shape: "octagon"
+			tasks: [
+				{
+					id: "3696314B057AEA77"
+					item: { count: 1, id: "mi_tweaks:advanced_steam_blast_furnace" }
+					type: "item"
+				}
+				{
+					count: 44L
+					id: "3998F31D80DDBB70"
+					item: { count: 1, id: "extended_industrialization:steel_plated_bricks" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "6CEC993DDF41ADD8"
+					item: { count: 1, id: "immersiveengineering:blastbrick" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "43C1CF71625F2AC8"
+					item: { count: 1, id: "immersiveengineering:slab_blastbrick" }
+					type: "item"
+				}
+			]
 			x: -18.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["3E50296FA44AA7BF"]
+			icon: {
+				id: "mi_tweaks:advanced_steam_alloy_smelter"
+			}
 			id: "47DC24D4B1E5EF4A"
 			shape: "octagon"
-			tasks: [{
-				id: "094B884A20544321"
-				item: { count: 1, id: "mi_tweaks:advanced_steam_alloy_smelter" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "094B884A20544321"
+					item: { count: 1, id: "mi_tweaks:advanced_steam_alloy_smelter" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "1C2E1982DCAD2870"
+					item: { count: 1, id: "extended_industrialization:steel_plated_bricks" }
+					type: "item"
+				}
+				{
+					count: 44L
+					id: "4F0ED85B381EFCA9"
+					item: { count: 1, id: "immersiveengineering:alloybrick" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "475595DD1BDC4EB2"
+					item: { count: 1, id: "modern_industrialization:fire_clay_bricks" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0EC306107DAB88E6"
+					item: { count: 1, id: "immersiveengineering:slab_alloybrick" }
+					type: "item"
+				}
+			]
 			x: -19.5d
 			y: 6.0d
 		}

@@ -11,7 +11,7 @@ global.langCustomStuff = global.langCustomStuff || {}
 
 const enabledProperty = $BooleanProperty.create("enabled")
 //const activeMachineShapeProperty  = $EnumProperty.create("shape", "String",["0", "1", "2", "3", "4"])
-const activeMachineShapeProperty  = $IntegerProperty.create("machine_shape", 0, 4)
+const activeMachineShapeProperty  = $IntegerProperty.create("machine_shape", 0, 5)
 
 
 function createNewItem(id, args) {
@@ -97,7 +97,6 @@ global.setOnFire = ctx => {
     ctx.player.setRemainingFireTicks(200)
 }
 
-//createNewFluid("test_fluid", {textureType:"thin", color:"0xFF0000"})
 
 //#region Easter eggs
 createNewBlock("saeta_plush", { blockType: "cardinal", renderType: "cutout", notSolid: true, waterlogged: true, soundType: "wool", stackSize: 1, rarity: "epic", box: [4, 0, 4, 12, 12, 12] })
@@ -132,7 +131,7 @@ createNewItem('onyx_table_core', {rarity: 'rare', lang: { "ru_ru": "Ониксо
 createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Луннокаменное Ядро Стола" } })
 
 createNewItem('dev_pen')
-createNewItem('destruction_pen')
+createNewItem('nbt_pen')
 
 createNewItem('transmutation_orb', {use:{animation:"block"}})
 createNewItem('regal_orb', {use:{animation:"block"}})
@@ -178,6 +177,9 @@ createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дал�
 createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
+
+createNewItem("bits_mold")
+//createNewFluid("plastic", {textureType:"thick", color:"0xFF0000"})
 
 createNewBlock("radio_tower_block", { hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower block", "ru_ru": "Блок радио вышки" } })
 createNewBlock("radio_tower_slab", { texturePath: 'custom_stuff:blocks/radio_tower_block', blockType: "slab", hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower slab", "ru_ru": "Плита радио вышки" } })

@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:tesla_tower_shape_2_placer",
+		"remainder": "item:kubejs:tesla_tower_shape_2_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0
+	},
+	"output": "item:extended_industrialization:tesla_tower"
+}

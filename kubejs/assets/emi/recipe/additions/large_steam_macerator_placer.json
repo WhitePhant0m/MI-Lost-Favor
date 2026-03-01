@@ -1,0 +1,14 @@
+{
+	"type": "emi:world_interaction",
+	"left": {
+		"type": "item",
+		"id": "kubejs:large_steam_macerator_placer",
+		"remainder": "item:kubejs:large_steam_macerator_empty_box"
+	},
+	"right": {
+		"type": "item",
+		"id": "immersiveengineering:hammer",
+		"chance": 0
+	},
+	"output": "item:extended_industrialization:large_steam_macerator"
+}

@@ -255,8 +255,6 @@ ServerEvents.recipes(event => {
         })
     })
 
-
-
     // const unTaggedParts = ["bolt", "wire", "curved_plate", "large_plate", "ring", "double_ingot"].join("|")
 
     // const pattern = patternJavaClass.compile(`^modern_industrialization:(?<material>.*)(?<![_:](me|fine))_(?<partName>${unTaggedParts})$`)
