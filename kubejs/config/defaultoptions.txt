@@ -49,3 +49,4 @@ key_key.beltborne_lanterns.open_debug:key.keyboard.unknown
 key_key.immersive_aircraft.dismount:key.keyboard.o
 key_key.ars_nouveau.open_book:key.keyboard.left.alt
 key_key.ars_nouveau.selection_hud:key.keyboard.b
+key_key.sophisticatedbackpacks.open_backpack:key.keyboard.unknown

@@ -17,6 +17,9 @@ const item_interact_block = [
     { id: "iron_block", item: "minecraft:iron_block", stage: "post_iron" },
     { id: "gold_nugget", item: "minecraft:gold_nugget", stage: "post_iron" },
     { id: "gold_block", item: "minecraft:gold_block", stage: "post_iron" },
+    { id: "augmenting_table", item: "apotheosis:augmenting_table", stage: "apotheosis_augmenting_table" },
+    { id: "reforging_table", item: "apotheosis:reforging_table", stage: "apotheosis_reforging_table" },
+    { id: "simple_reforging_table", item: "apotheosis:simple_reforging_table", stage: "apotheosis_simple_reforging_table" },
 ]
 
 const entity_interact_block = [
