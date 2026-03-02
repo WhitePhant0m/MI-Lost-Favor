@@ -62,7 +62,7 @@ ItemEvents.modifyTooltips(event => {
         event.add(seed, Text.translate("milf.how_to_seed.tooltip").color("#43BD24"));
     });
 
-    const orbs = ['kubejs:transmutation_orb', 'kubejs:orb_of_annulment', 'kubejs:orb_of_alchemy', 'kubejs:orb_of_regret', 'kubejs:regal_orb', 'kubejs:orb_of_corruption', 'kubejs:divine_orb', 'kubejs:orb_of_chance']
+    const orbs = ['kubejs:transmutation_orb', 'kubejs:orb_of_annulment', 'kubejs:orb_of_alchemy', 'kubejs:orb_of_regret', 'kubejs:regal_orb', 'kubejs:orb_of_corruption', 'kubejs:divine_orb', 'kubejs:orb_of_chance', "kubejs:orb_of_the_forest"]
 
     orbs.forEach(orb => {
         event.add(orb, Text.translatable(`milf.orbcraft.tooltip.${orb.slice(7)}`))

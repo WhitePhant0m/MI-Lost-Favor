@@ -421,7 +421,7 @@
 		"{@pagebreak}"
 		"Может готовить еду. Также можно зажигать факелы, нажав Shift и щелкнув по костру."
 	]
-	quest.13134EE8E1631EBB.quest_desc: ["PIPES"]
+	quest.13134EE8E1631EBB.quest_desc: [""]
 	quest.1325489D5E635F06.quest_subtitle: "Banners can be repainted using souls"
 	quest.137E20A86306BF4A.quest_desc: [
 		"&#b0620eNothing&r difficult, right? "
@@ -660,7 +660,6 @@
 	quest.1E195026745014C0.quest_desc: [
 		"Turns ingots into rods and rods into bolts when provided with lubricant"
 		""
-		"PIPES"
 		"{@pagebreak}"
 		"Превращает слитки в стерниж, а стрежни в болты при наличии смазки."
 		""
@@ -690,12 +689,7 @@
 	]
 	quest.1FC26CA207964E0D.quest_desc: ["5 арканы в тотем"]
 	quest.1FD668D64C10EA51.quest_desc: ["You can create a Block Hole by throwing Dark Matter together with Corrupti Dust on the ground. It will attract items and small entities like Arrows or Experience Orbs and delete them. Once it absorbed enough experience points, it will throw out a Xpetrified Orb."]
-	quest.1FE16BABD524C29B.quest_desc: [
-		"«Tree Capitator» — that will chop down an entire tree at once. However, it can only be made of iron."
-		"Pay attention to the dependencies of this quest."
-		"{@pagebreak}"
-		"Ты можете создать топор, который будет срубать всё дерево целиком, но, только железный. Обратите внимания на зависимости данного квеста!"
-	]
+	quest.1FE16BABD524C29B.quest_desc: ["Tree Capitator that is... packed inside a small orb? Gimme two please ('-')"]
 	quest.203B742A5DB473FA.quest_desc: ["Simply smash a piece of flint against a stone to sharpen it"]
 	quest.2050AE324A7E3ABC.quest_desc: ["позволяет не дамажить метлу в лаве "]
 	quest.2071CE16FAA3FDEE.quest_desc: [
