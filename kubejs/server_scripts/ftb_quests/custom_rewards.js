@@ -134,6 +134,7 @@ const trinkets_slot_list_reward = [
     { quest_id: '73D93A782AD2E4AE', trinket_slot: 'bundle' },
     { quest_id: '094072146D87AD84', trinket_slot: 'pouch' },
     { quest_id: '4B224C18E7C6EE21', trinket_slot: 'back' },
+    { quest_id: '0BDFBA35083D9976', trinket_slot: 'belt' },
 ]
 
 trinkets_slot_list_reward.forEach(reward => {

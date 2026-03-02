@@ -3247,7 +3247,7 @@
 			id: "3D7610F02FB93E78"
 			rewards: [
 				{
-					auto: "enabled"
+					auto: "disabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "devices:item/empty_pouch_slot"
@@ -3259,7 +3259,7 @@
 					type: "custom"
 				}
 				{
-					auto: "enabled"
+					auto: "disabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add.png"
@@ -3365,7 +3365,7 @@
 			id: "3D25B3BBFD462747"
 			rewards: [
 				{
-					auto: "enabled"
+					auto: "disabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "devices:item/empty_pouch_slot"
@@ -3377,7 +3377,7 @@
 					type: "custom"
 				}
 				{
-					auto: "enabled"
+					auto: "disabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add.png"
@@ -3403,7 +3403,7 @@
 			id: "4D4DCC8BF72CB593"
 			rewards: [
 				{
-					auto: "enabled"
+					auto: "disabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "curios:slot/empty_back_slot"
@@ -3415,7 +3415,7 @@
 					type: "custom"
 				}
 				{
-					auto: "enabled"
+					auto: "disabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add.png"

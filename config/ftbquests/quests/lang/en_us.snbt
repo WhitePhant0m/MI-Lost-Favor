@@ -677,6 +677,11 @@
 		""
 		"[ \"Больее подробно \", { \"text\": \"тут\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://www.curseforge.com/minecraft/mc-mods/plonk\" } } ]"
 	]
+	quest.1EA565179E5C25AE.quest_desc: [
+		"One utility provided by Apotheosis are Tomes. These act similar to a book when being enchanted, but can only receive enchantments for a certain type of item.  There are nine tomes in total, one each for helmets, chestplates, leggings, boots, swords, bows, pickaxes, fishing poles, and a final tome that accepts enchantments which do not fit on any of the others."
+		"{@pagebreak}"
+		"Одной из полезных функций Apotheosis являются фолианты. Они действуют аналогично книгам, когда на них накладывается зачарование, но могут принимать зачарования только для определенного типа предметов.  Всего существует девять фолиантов: по одному для шлемов, нагрудников, наколенников, сапог, мечей, луков, кирок, удочек и один фолиант, который принимает зачарования, не подходящие ни для одного из остальных."
+	]
 	quest.1EE1B8261F4D85A0.quest_desc: ["Glowing for 30 seconds."]
 	quest.1F491D4829884C61.quest_desc: [
 		"Could be used to mine pure resources, as well as some fragile blocks"
@@ -774,6 +779,11 @@
 		"Вы можете генерировать глину используя грязь и Жидкие кристаллы"
 	]
 	quest.235EC6F66B8527EE.quest_subtitle: "müd"
+	quest.2369BD1B085AEDFB.quest_desc: [
+		"Overcharges every Affix on an Affix Item."
+		"{@pagebreak}"
+		"Увеличивает силу всех аффиксов на предмете с аффиксами."
+	]
 	quest.23D1FD73CC570350.quest_desc: [
 		"Used to store and transfer ink. The two ink containers equalize the amount of ink in them, so you can only really transfer half."
 		"{@pagebreak}"
@@ -878,6 +888,55 @@
 		"Так же используется для создания ведьмовских машин"
 	]
 	quest.2B7F14733C000C22.quest_desc: ["All subsequent quests in this chapter exist to make you aware of certain non-obvious mechanics. You can read them whenever, we won't judge."]
+	quest.2BAF1070D316E4A4.quest_desc: [
+		"Apotheosis overhauls Enchanting by adding Enchanting Stats.  These are special properties provided by bookshelves that change the behavior of the Enchanting Table. There are three primary stats, and a few secondary stats. In addition, the max level of the Enchanting Table is increased to 100, and the max levels of most enchantments are automatically increased."
+		""
+		"While enchanting, the most important stats are:"
+		""
+		"&aEterna&r, a measure of enchanting strength, increasing the level cost;"
+		""
+		"&cQuanta&r, a measure of randomness, changing just how much RNG is involved;"
+		""
+		"and &5Arcana&r, a measure of mystical quality, which increases the number of enchantments received and makes rare enchantments more common."
+		""
+		"Secondary Stats"
+		""
+		"Aside from the primary stats, there are a number of auxiliary stats that change some minor behaviors, or adjust how the primary stats behave."
+		""
+		"Enchanting Clues change the number of enchantments you are shown when hovering a slot in the Enchanting Table. Typically, more clues are always better."
+		""
+		"Quantic Stability ensures that Quanta will only be beneficial, instead of having a chance to cause negative effects."
+		""
+		"Allowing Treasure causes treasure enchantments (such as Mending) to show up in the Enchanting Table. Though, be warned, curses are also treasure enchantments!"
+		""
+		"Enchantment Filters allow you to blacklist certain enchantments from the Enchanting Table. Blocks which provide this stat can be used to remove unwanted enchantments from the pool."
+		""
+		""
+		""
+		"{@pagebreak}"
+		""
+		"Apotheosis перерабатывает Enchanting, добавляя характеристики для зачарования. Это специальные свойства, предоставляемые книжными полками, которые изменяют поведение стола зачарования. Есть три основных параметра и несколько второстепенных. Кроме того, максимальный уровень стола зачарования увеличен до 100, как и максимальный уровень большинства зачарований."
+		""
+		"Несмотря на всю свою привлекательность, наиболее важными характеристиками являются:"
+		""
+		"&aEterna&r — показатель силы зачарования, увеличивающий стоимость уровня;"
+		""
+		"&cQuanta&r — показатель случайности, изменяющий степень влияния на рандом;"
+		""
+		"&5Arcana&r — показатель мистического качества, увеличивающий количество получаемых зачарований и делающий редкие зачарования более частыми."
+		""
+		"Вторичные характеристики."
+		""
+		"Помимо основных характеристик, существует ряд вспомогательных характеристик, которые изменяют некоторые второстепенные поведения или корректируют поведение основных характеристик."
+		""
+		"Подсказки — изменяют количество зачарований, которые отображаются при наведении курсора на слот в таблице зачарования. Как правило, чем больше подсказок, тем лучше."
+		""
+		"Quantic Stability — гарантирует, что Quanta будет приносить только пользу, а не вызывать негативные последствия."
+		""
+		"Разрешение сокровищ — позволяет отображать зачарования сокровищ (такие как «Починка») в таблице зачарований. Однако будьте осторожны, проклятия также являются зачарованиями сокровищ!"
+		""
+		"Фильтры зачарования — позволяют занести определенные зачарования в черный список в таблице зачарования. Блоки, которые предоставляют эту характеристику, могут быть использованы для удаления нежелательных зачарований из пула."
+	]
 	quest.2BB85B5FB4A2E943.quest_desc: [
 		"Grows in dark forests."
 		""
@@ -1420,6 +1479,11 @@
 		""
 		"А еще &#FEECD6не пытайся&r делать из него мосты, ради бога, я предупредил"
 	]
+	quest.4554B1B80E375B13.quest_desc: [
+		"True perfection will still require a little luck. In your travels you may encounter the Sigil of Malice, an esoteric artifact which randomly changes an affix item. What exactly it does is a mystery."
+		"{@pagebreak}"
+		"Для достижения истинного совершенства по-прежнему потребуется немного удачи. В своих путешествиях вы можете встретить Сигил злобы — эзотерический артефакт, который случайным образом изменяет аффикс предмета. Что именно он делает, остается загадкой."
+	]
 	quest.464E6E68F80377D1.quest_desc: ["Можно зачаровать, добавить описания того на что "]
 	quest.4662695201019F94.quest_desc: [
 		"Adding fume funnels to the left and right of your witch's oven can drastically improve it's yield."
@@ -1757,6 +1821,18 @@
 		"&l&aЗелёные&r&r биомы помогут с поиском заветного удачливого растения!"
 	]
 	quest.5E6040C8BC8CAE0F.quest_desc: ["The Artisan Relic can be used as an Enhancer in the Hephaestus Forge. It will reduce the required Experience essence cost by 25%. With a chance of 18% it can be found in the chests of Armorer, Toolsmith, or Weaponsmith villager buildings.  "]
+	quest.5E639A3B6E268A89.quest_desc: [
+		"The primary means of acquiring stats is through bookshelves. Each bookshelf placed in a valid bookshelf location will contribute to the Enchanting Table. There are a total of 32 valid bookshelf locations: the ring around the table (including corners) on the same y-level, and one y-level above. There must be an air block in-between the Enchanting Table and the bookshelf to be valid. Other blocks which provide stats (such as skulls or candles) must also be placed in a valid bookshelf location to contribute to the table."
+		""
+		""
+		"Some blocks may provide stats dynamically, which means the tooltip is not completely accurate.  For example, candles can be stacked (up to 4 in a single block space), and provide more Arcana when stacked."
+		""
+		"{@pagebreak}"
+		""
+		"Основным способом получения характеристик являются книжные полки. Каждая книжная полка, размещенная в подходящем месте, будет влиять на стол зачарования. Всего есть 32 подходящих места для книжных полок: кольцо вокруг стола (включая углы) на том же уровне y и на один уровень y выше. Между столом зачарования и книжной полкой должен быть блок воздуха, чтобы место было правильным. Другие блоки, которые дают характеристики (такие как черепа или свечи), также должны быть размещены в правильном месте для книжной полки, чтобы добавлять характеристики к столу."
+		""
+		"Некоторые блоки могут предоставлять характеристики динамически, что означает, что всплывающая подсказка не является полностью точной.  Например, свечи можно устанавливать в стак (до 4 штук в одном блоке) и при этом получать больше Arcana."
+	]
 	quest.5ECC8454B6CFAD89.quest_desc: [
 		"&lCandle&r"
 		"• +1x Recharge Rate"
@@ -2339,6 +2415,9 @@
 	]
 	quest.7ED354CF6EFE61BC.quest_subtitle: "Linking tool"
 	quest.7EF5D915FEC62EE0.quest_subtitle: "elevator for source"
+	reward.094072146D87AD84.title: "Pouch slot"
+	reward.0BDFBA35083D9976.title: "Belt Slot"
+	reward.0C6E1695C7D921E2.title: "Radial Menu Button"
 	reward.0DC887212398806D.title: "New Quest Chapter"
 	reward.0E7A91DD8F37AF4D.title: "Desaturation"
 	reward.2BD4B3CA5BEDBA19.title: "The End Access"
@@ -2346,6 +2425,7 @@
 	reward.4002784F5F537B2D.title: "You can interact with everything made of iron!"
 	reward.4178A18CA2E5A74F.title: "New dangers"
 	reward.472BCEE94E93C2FF.title: "Radial Menu Button"
+	reward.4B224C18E7C6EE21.title: "Back Slot"
 	reward.5BA06D58446F6FDD.title: "Unlimited supply of boxes"
 	reward.670CBE4973B6F390.title: "New interactions: chest looting, villagers, spawners, wandering trader and mobs"
 	reward.679412F522B788D9.title: "Trinket hands slot"
@@ -2354,6 +2434,7 @@
 	reward.74E5C7C4B8A33E55.title: "New monsters"
 	reward.7650FE6CA0220DA3.title: "Nether Access"
 	reward.7EF0A7794783232F.title: "Access to most ore"
+	reward_table.4D54C0AF9946ADE6.title: "Runes"
 	reward_table.77E899F6A1C7866E.title: "crystals"
 	task.007FE725C64153E1.title: "Any #milf:pillar_base_blocks"
 	task.0201D3254268522D.title: "Kandar's Open Conjure"
@@ -2462,6 +2543,7 @@
 	task.50145BF6C914A142.title: "Any #milf:gemstone_lamp"
 	task.55A9AB2E43857E14.title: "Any #minecraft:beds"
 	task.5681B6E38A2DC015.title: "Harvest with ease"
+	task.56EE6B7B03B03D4D.title: "Tomes"
 	task.5733CBC7B63AE4B4.title: "source generation"
 	task.5811DD77B7904989.title: "AE2WTlib"
 	task.583D11B3732CE886.title: "TrashSlot"

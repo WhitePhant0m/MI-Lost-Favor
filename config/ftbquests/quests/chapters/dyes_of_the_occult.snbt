@@ -3275,7 +3275,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
 				type: "item"
 			}]
 			x: -40.0d
@@ -4258,12 +4258,12 @@
 			y: 28.5d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "1751D13041775276"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "64A45389FD69601C"
-				table_id: 4349622278568788484L
+				id: "6DB44AE4E5BC7A42"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4273,14 +4273,15 @@
 				type: "item"
 			}]
 			x: -21.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "15B3AFECD77757E9"
 			rewards: [{
-				id: "6B4A4D5A488C7C5F"
-				table_id: 4349622278568788484L
+				exclude_from_claim_all: true
+				id: "1F7BC7FF283694BA"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4290,15 +4291,15 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "197B8CEECA61C12A"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "6CBE3211A7574262"
-				table_id: 4349622278568788484L
+				id: "117AAEE065897681"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4308,15 +4309,15 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "2FD815964A918D4E"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "2BCB49897E2F0AF2"
-				table_id: 4349622278568788484L
+				id: "16D97B0B5EB81EB2"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4326,15 +4327,15 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "7C9EC97D1C3F9CBA"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "55690ED1E7DA8C02"
-				table_id: 4349622278568788484L
+				id: "3C296C3791D8CA88"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4344,15 +4345,15 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "421018A5285593B1"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "609DD44C9C7E0535"
-				table_id: 4349622278568788484L
+				id: "16A14E00A144CECB"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4362,15 +4363,15 @@
 				type: "item"
 			}]
 			x: -21.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "41BF9135970F1E51"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "2FFC3BE7A47C57FC"
-				table_id: 4349622278568788484L
+				id: "651AA0E8426FB2C6"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4380,15 +4381,15 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "6BA662C9EDAB419D"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "209C1E5B5312EEEC"
-				table_id: 4349622278568788484L
+				id: "247682AE63AF684A"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4398,15 +4399,15 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
-			dependencies: ["226EC62BA172DB5D"]
+			dependencies: ["1EA565179E5C25AE"]
 			id: "38C9E92573A25F80"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "1C906551301B3F8C"
-				table_id: 4349622278568788484L
+				id: "17C7E265760D58A1"
+				table_id: 5572290499387502054L
 				type: "random"
 			}]
 			shape: "diamond"
@@ -4416,7 +4417,17 @@
 				type: "item"
 			}]
 			x: -21.5d
-			y: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["226EC62BA172DB5D"]
+			id: "1EA565179E5C25AE"
+			tasks: [{
+				id: "56EE6B7B03B03D4D"
+				type: "checkmark"
+			}]
+			x: -22.0d
+			y: 4.0d
 		}
 	]
 }

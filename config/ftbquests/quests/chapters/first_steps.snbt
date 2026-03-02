@@ -1266,7 +1266,7 @@
 					type: "item"
 				}
 				{
-					auto: "enabled"
+					auto: "disabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "curios:slot/empty_hands_slot"
@@ -2025,6 +2025,17 @@
 		{
 			dependencies: ["19F4ECE3B256B396"]
 			id: "23D5012F534D8098"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "curios:slot/empty_belt_slot"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "0BDFBA35083D9976"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "none"
 			tasks: [{
 				id: "45DD59F5FC6A169F"
@@ -2513,6 +2524,17 @@
 		{
 			dependencies: ["71CC5CD5F8018F02"]
 			id: "703F575B0690DE26"
+			rewards: [{
+				id: "1CC2EF34E298A69D"
+				item: {
+					components: {
+						"patchouli:book": "apotheosis:apoth_chronicle"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1D79E92A3957B1AF"
 				item: { count: 1, id: "apotheosis:gem_dust" }
@@ -2601,6 +2623,50 @@
 			}]
 			x: 25.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["703F575B0690DE26"]
+			id: "4554B1B80E375B13"
+			tasks: [{
+				id: "4B04F13DED385D44"
+				item: { count: 1, id: "apotheosis:sigil_of_malice" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["703F575B0690DE26"]
+			id: "2369BD1B085AEDFB"
+			tasks: [{
+				id: "54EE21BD598E506B"
+				item: { count: 1, id: "apotheosis:sigil_of_supremacy" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 1.5d
+		}
+		{
+			id: "2BAF1070D316E4A4"
+			tasks: [{
+				id: "7142828AFBDBF9A3"
+				item: { count: 1, id: "minecraft:enchanting_table" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2BAF1070D316E4A4"]
+			id: "5E639A3B6E268A89"
+			tasks: [{
+				count: 32L
+				id: "400B755DFDFB7E34"
+				item: { count: 1, id: "minecraft:bookshelf" }
+				type: "item"
+			}]
+			x: 27.5d
+			y: 5.0d
 		}
 	]
 }
