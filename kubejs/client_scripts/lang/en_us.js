@@ -58,6 +58,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.orbcraft.error.type', `${textAnimatorString("Inappropriate", "glitch")} item for this type of orb!`)
     event.add('milf.orbcraft.error.no_valid', `Item has no more ${textAnimatorString("valid", "glitch")} enchantments to alter!`)
     event.add('milf.orbcraft.error.enchantments', `This item has no more ${textAnimatorString("applicable", "glitch")} enchantments!`)
+    event.add('milf.orbcraft.error.offhand', `The target item has to be in your ${textAnimatorString("offhand", "glitch")}!`)
 
     event.add('milf.orbcraft.tooltip.transmutation_orb', `Adds up to ${textAnimatorString("two", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} enchantments to an item.`)
     event.add('milf.orbcraft.tooltip.regal_orb', `Adds up to ${textAnimatorString("four", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})} enchantments to an item that already has at least two.`)
@@ -67,6 +68,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.orbcraft.tooltip.orb_of_annulment', `Removes one ${textAnimatorString("random", "shake")} enchantment from an item.`)
     event.add('milf.orbcraft.tooltip.orb_of_corruption', `Adds one ${textAnimatorString("overenchanted", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})} enchantment to an item, along with the ${textAnimatorString("Curse of Vanishing", "glitch")}. Can only be used on an item with 4 or more enchantments that doesn't already have the ${textAnimatorString("Curse of Vanishing", "glitch")}.`)
     event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Absorbs up to 4 enchantments from an item, ${textAnimatorString("destroying", "glitch")} it in the process. Using the enchanted orb on another item ${textAnimatorString("replaces", "fade")} all of that item's enchantments with the absorbed ones.`)
+    event.add('milf.orbcraft.tooltip.orb_of_the_forest', `Infuses the axe item with the ${textAnimatorString("Essence Of The Forest", "grad", {from:"#1DEB6C", to:"#6AFFC3", f:0.5})}, allowing it to chop the ${textAnimatorString("whole tree", "grad", {from:"#55E408", to:"#D3FFAA", f:0.5})} in one go in exchange for being only a ${textAnimatorString("tenth as effective", "grad", {from:"#E40808", to:"#FFAAAA", f:0.5})} as before. It can be applied only once, with no ability to revert downsides`)
 
     event.add('milf.text.dim.cant_visit', `${textAnimatorString("Some kind of magic is stopping you", "glitch")}`)
 

@@ -141,6 +141,8 @@ createNewItem('orb_of_chance', {use:{animation:"block"}})
 createNewItem('orb_of_annulment', {use:{animation:"block"}})
 createNewItem('orb_of_regret', {use:{animation:"block"}})
 createNewItem('orb_of_corruption', {use:{animation:"block"}})
+createNewItem('orb_of_the_forest', {use:{animation:"block"}})
+
 createNewItem('rune_of_piercing', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Piercing", "ru_ru": "Руна Пронзания" }})
 createNewItem('rune_of_armor', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Armor", "ru_ru": "Руна Брони" }})
 createNewItem('rune_of_bloodshed', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Bloodshed", "ru_ru": "Руна Кровопролития" }})

@@ -4501,6 +4501,14 @@
 				id: "mi_tweaks:advanced_steam_alloy_smelter"
 			}
 			id: "47DC24D4B1E5EF4A"
+			rewards: [{
+				id: "72EDEEC561C9CB9B"
+				item: {
+					count: 1
+					id: "kubejs:advanced_steam_alloy_smelter_placer"
+				}
+				type: "item"
+			}]
 			shape: "octagon"
 			tasks: [
 				{

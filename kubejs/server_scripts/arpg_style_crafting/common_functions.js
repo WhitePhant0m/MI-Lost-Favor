@@ -1,9 +1,13 @@
 /** @type {typeof import("net.minecraft.world.item.ItemStack").$ItemStack } */
 let $ItemStack  = Java.loadClass("net.minecraft.world.item.ItemStack")
-let Registries = Java.loadClass("net.minecraft.core.registries.Registries")
-let ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-let ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
-let DisabledEnchantmentsConfig = Java.loadClass("me.pajic.enchantmentdisabler.ED").CONFIG
+let $Registries = Java.loadClass("net.minecraft.core.registries.Registries")
+let $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
+let $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+let $DisabledEnchantmentsConfig = Java.loadClass("me.pajic.enchantmentdisabler.ED").CONFIG
+let $DataComponents = Java.loadClass("net.minecraft.core.component.DataComponents")
+let $Tool = Java.loadClass("net.minecraft.world.item.component.Tool")
+let $TagKey = Java.loadClass("net.minecraft.tags.TagKey")
+let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
 
 const ORBCRAFT_BLACK_LIST = [  
 
@@ -13,13 +17,13 @@ const ORBCRAFT_CURSES = [
     "vanishing_curse", "binding_curse"
 ]
 
-const ENCHANTMENT_REGISTRY_KEY = ResourceKey.createRegistryKey(ResourceLocation.parse('minecraft:enchantment'))
+const ENCHANTMENT_REGISTRY_KEY = $ResourceKey.createRegistryKey($ResourceLocation.parse('minecraft:enchantment'))
 
-function addRandomEnchantment(event, /**@type { import("net.minecraft.world.item.ItemStack").$ItemStack$$Original}*/ item, level, /**@type { (id: import("net.minecraft.resources.ResourceLocation").$ResourceLocation, enchantment: import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original) => boolean}*/ additionalEnchantmentConditions){
+function addRandomEnchantment(/**@type { import("dev.latvian.mods.kubejs.item.ItemClickedKubeEvent").$ItemClickedKubeEvent$$Original}*/ event, /**@type { import("net.minecraft.world.item.ItemStack").$ItemStack$$Original}*/ item, level, /**@type { (id: import("net.minecraft.resources.ResourceLocation").$ResourceLocation, enchantment: import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original) => boolean}*/ additionalEnchantmentConditions){
     /**@type {import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original[]}*/
     let applicableEnchantments = []
     /**@type {import("java.util.ArrayList").$ArrayList}*/
-    let disabledEnchantments = DisabledEnchantmentsConfig.disabler.disabledEnchantments
+    let disabledEnchantments = $DisabledEnchantmentsConfig.disabler.disabledEnchantments
 
     if(additionalEnchantmentConditions == undefined){
         additionalEnchantmentConditions = () => { return true}
@@ -69,6 +73,24 @@ function addRandomEnchantment(event, /**@type { import("net.minecraft.world.item
     }
 }
 
+function addSpecificEnchantment(/**@type { import("dev.latvian.mods.kubejs.item.ItemClickedKubeEvent").$ItemClickedKubeEvent$$Original}*/ event, /**@type { import("net.minecraft.world.item.ItemStack").$ItemStack$$Original}*/ item, level, enchantmentId, /**@type { (id: import("net.minecraft.resources.ResourceLocation").$ResourceLocation, enchantment: import("net.minecraft.world.item.enchantment.Enchantment").$Enchantment$$Original) => boolean}*/ additionalEnchantmentConditions){
+    let enchantmentRegistry = event.server.registryAccess().registryOrThrow(ENCHANTMENT_REGISTRY_KEY)
+    let enchantment = enchantmentRegistry.get(enchantmentId)
+    let enchantmentLVL = 1
+    switch (level) {
+        case -1:
+            enchantmentLVL = enchantment.getMaxLevel()
+            break;
+        case -2:
+            enchantmentLVL = enchantment.getMaxLevel() + 2
+            break;
+        default:
+            enchantmentLVL = level || 1
+            break;
+    }
+    item.enchant(enchantment, enchantmentLVL)
+}
+
 /**@returns { import("net.minecraft.resources.ResourceLocation").$ResourceLocation}*/
 function getEnchantmentIdFromRegistry(enchantmentRegistry, enchantment){
     return enchantmentRegistry.getKey(enchantment)
@@ -85,8 +107,14 @@ function applyOrb(/**@type { import("dev.latvian.mods.kubejs.item.ItemClickedKub
     if (event.hand == "OFF_HAND") return false
     if (event.level.isClientSide()) return false
     let item = event.player.getOffHandItem()
-    if (item.id == "minecraft:air") return false
-    if(!item.enchantable && !item.enchanted) return false
+    if (item.id == "minecraft:air") {
+        sendImmersiveMessage(Text.translatable("milf.orbcraft.error.offhand"), event.player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+        return false
+    }
+    if(!item.enchantable && !item.enchanted){ 
+        sendImmersiveMessage(Text.translatable("milf.orbcraft.error.enchantments"), event.player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
+        return false
+    }
     if(ORBCRAFT_BLACK_LIST.includes(item.id)) return false
 
     if(condition(item)){
@@ -97,7 +125,7 @@ function applyOrb(/**@type { import("dev.latvian.mods.kubejs.item.ItemClickedKub
             }
         }
         event.player.inventoryMenu.broadcastFullState()
-    } else {
+    } else {        
         sendImmersiveMessage(Text.translatable("milf.orbcraft.error.type"), event.player, DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
     }
     return true

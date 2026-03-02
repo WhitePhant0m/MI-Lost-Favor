@@ -2478,8 +2478,8 @@
 			id: "1FE16BABD524C29B"
 			shape: "pentagon"
 			tasks: [{
-				id: "69F85095F5AF2C61"
-				item: { components: { "minecraft:enchantments": { levels: { "apothic_enchanting:chainsaw": 1 } } }, count: 1, id: "minecraft:iron_axe" }
+				id: "73923797A83C95C0"
+				item: { count: 1, id: "kubejs:orb_of_the_forest" }
 				type: "item"
 			}]
 			x: 16.5d
