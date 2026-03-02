@@ -1,9 +1,5 @@
 // TODO: refactor in future
 let $FTBTeamsAPI = Java.loadClass("dev.ftb.mods.ftbteams.api.FTBTeamsAPI").api()
-let $EzActionAPI = Java.loadClass("org.z2six.ezactions.api.EzActions").get()
-let $menuPath = Java.loadClass("org.z2six.ezactions.api.MenuPath")
-let $ClickActionKey = Java.loadClass("org.z2six.ezactions.data.click.ClickActionKey")
-let $IconSpec = Java.loadClass("org.z2six.ezactions.data.icon.IconSpec")
 
 // reward for Forge Hammer
 FTBQuestsEvents.customReward('0DC887212398806D', event => {
@@ -92,45 +88,32 @@ simple_stage_rewards.forEach(element => {
     });
 });
 
-// ring, charm, feet, shoulders, bracelet, bundle, brooch, hands, back, head, pouch, face, 
-// necklace, an_focus, deep_learner, body, pin, belt, adv_pattern_encoder, pigment_palette
-const trinkets_slot_list_reward = [
-    { quest_id: '679412F522B788D9', trinket_slot: 'hands' },
-    { quest_id: '73D93A782AD2E4AE', trinket_slot: 'bundle' },
-    { quest_id: '094072146D87AD84', trinket_slot: 'pouch' },
-    { quest_id: '4B224C18E7C6EE21', trinket_slot: 'back' },
-]
 
-// xaeromap radial menu group
+
+// xaeromap radial menu group with actions
 FTBQuestsEvents.customReward('4D0EBC927D8AD01D', event => {
-    const EzActionMenuWriter = $EzActionAPI.menuWrite();
-    // Add bundle
-    const xaeromap_bundle = {
+
+    //bundle
+    const bundle = {
         "id": "Xaeromap",
         "title": "Xaeromap",
         "icon": "minecraft:map"
     };
-    EzActionMenuWriter.upsertFromJson($menuPath.root(), JSON.stringify(xaeromap_bundle));
+
+    sendEzBundle(event.player, bundle)
 
     const action_key_list = [
-        { "gui.xaero_new_waypoint": "New Waypoint", },
-        { "gui.xaero_waypoints_key": "Open Waypoint Screen" },
-        { "gui.xaero_minimap_settings": "Minimap Settings" }
+        { parentId: "Xaeromap", key_name: "gui.xaero_new_waypoint", action_name: "New Waypoint", icon: "minecraft:map" },
+        { parentId: "Xaeromap", key_name: "gui.xaero_waypoints_key", action_name: "Open Waypoint Screen", icon: "minecraft:map" },
+        { parentId: "Xaeromap", key_name: "gui.xaero_minimap_settings", action_name: "Minimap Settings", icon: "minecraft:map" },
     ]
     action_key_list.forEach(key => {
-        let keyName = Object.keys(key)[0];
-        let keyTitle = key[keyName];
-        $EzActionAPI.addAction("Xaeromap_test", keyTitle, null, $ClickActionKey.deserialize(JSON.stringify({
-            "type": "KEY",
-            "name": keyName,
-            "toggle": false,
-            "mode": "AUTO"
-        })), $IconSpec.item("minecraft:map"), true);
+        sendEzAction(event.player, key)
     });
 
 });
 
-// Radial menu button for devices:devices_pouch
+// Radial menu buttons in root
 const radial_menu_buttons = [
     { quest_id: '7108991BE6DD4A51', action_name: 'Open Money Pouch', key_name: 'key.devices.open_pouch', icon: "devices:devices_pouch" },
     { quest_id: '472BCEE94E93C2FF', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch', icon: "ars_elemental:curio_bag" },
@@ -139,14 +122,19 @@ const radial_menu_buttons = [
 
 radial_menu_buttons.forEach(element => {
     FTBQuestsEvents.customReward(element.quest_id, event => {
-        $EzActionAPI.addAction(null, element.action_name, null, $ClickActionKey.deserialize(JSON.stringify({
-            "type": "KEY",
-            "name": element.key_name,
-            "toggle": false,
-            "mode": "AUTO"
-        })), $IconSpec.item(element.icon), true);
+        sendEzAction(event.player, element)
     });
 });
+
+
+// ring, charm, feet, shoulders, bracelet, bundle, brooch, hands, back, head, pouch, face, 
+// necklace, an_focus, deep_learner, body, pin, belt, adv_pattern_encoder, pigment_palette
+const trinkets_slot_list_reward = [
+    { quest_id: '679412F522B788D9', trinket_slot: 'hands' },
+    { quest_id: '73D93A782AD2E4AE', trinket_slot: 'bundle' },
+    { quest_id: '094072146D87AD84', trinket_slot: 'pouch' },
+    { quest_id: '4B224C18E7C6EE21', trinket_slot: 'back' },
+]
 
 trinkets_slot_list_reward.forEach(reward => {
     FTBQuestsEvents.customReward(reward.quest_id, event => {
@@ -226,3 +214,15 @@ PlayerEvents.loggedIn(event => {
     })
 
 })
+
+function sendEzAction(player, args) {
+    player.sendData("ez_action", {
+        args: args
+    })
+}
+
+function sendEzBundle(player, args) {
+    player.sendData("ez_bundle", {
+        args: args
+    })
+}
