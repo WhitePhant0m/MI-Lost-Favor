@@ -2172,7 +2172,7 @@
 					id: "spectrum:chicken_head"
 				}
 				id: "6148EAAB6FECF6E5"
-				observe_type: 0
+				observe_type: 5
 				timer: 0L
 				to_observe: "minecraft:chicken"
 				type: "observation"
@@ -2189,7 +2189,7 @@
 					id: "spectrum:cow_head"
 				}
 				id: "4C1F13C254C005FE"
-				observe_type: 0
+				observe_type: 5
 				timer: 0L
 				to_observe: "minecraft:cow"
 				type: "observation"
@@ -2206,7 +2206,7 @@
 					id: "spectrum:pig_head"
 				}
 				id: "1EF921A1FACA14F5"
-				observe_type: 0
+				observe_type: 5
 				timer: 0L
 				to_observe: "minecraft:pig"
 				type: "observation"
