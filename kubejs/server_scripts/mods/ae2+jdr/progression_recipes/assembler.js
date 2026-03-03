@@ -685,7 +685,7 @@ ServerEvents.recipes(event => {
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "pastel:block_placer"}, 1],
+            [{item: "spectrum:block_placer"}, 1],
             [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
             [{item: "ae2:logic_processor"}, 2],
             [{item: "ae2:item_cell_housing"}, 1]
@@ -702,7 +702,7 @@ ServerEvents.recipes(event => {
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "pastel:block_placer"}, 1],
+            [{item: "spectrum:block_placer"}, 1],
             [{item: "modern_industrialization:ferricore_machine_casing"}, 1],
             [{item: "ae2:logic_processor"}, 2],
             [{item: "ae2:fluid_cell_housing"}, 1]
@@ -953,7 +953,7 @@ ServerEvents.recipes(event => {
         machine: "modern_industrialization:assembler",
         inputItems: [
             [{item: "ae2:semi_dark_monitor"}, 1],
-            [{item: "pastel:shimmerstone_gem"}, 1]
+            [{item: "spectrum:shimmerstone_gem"}, 1]
         ],
         outputItems: [
             [{item: "ae2:monitor"}, 1]
@@ -1852,7 +1852,7 @@ ServerEvents.recipes(event => {
             [{tag: "c:plates/stainless_steel"}, 4],
             [{item: "ae2:fluix_crystal"}, 2],
             [{item: "megacells:sky_bronze_ingot"}, 1],
-            [{item: "pastel:white_pigment"}, 2]
+            [{item: "spectrum:white_pigment"}, 2]
         ],
         outputItems: [
             [{item: "extendedae:assembler_matrix_wall"}, 1]
@@ -1869,7 +1869,7 @@ ServerEvents.recipes(event => {
             [{tag: "c:plates/stainless_steel"}, 2],
             [{item: "ae2:fluix_crystal"}, 2],
             [{item: "megacells:sky_bronze_ingot"}, 1],
-            [{item: "pastel:white_pigment"}, 2],
+            [{item: "spectrum:white_pigment"}, 2],
             [{item: "ae2:quartz_glass"}, 1]
         ],
         outputItems: [
@@ -1884,7 +1884,7 @@ ServerEvents.recipes(event => {
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "pastel:pure_azurite"}, 1],
+            [{item: "spectrum:pure_azurite"}, 1],
             [{item: "ae2:quartz_glass"}, 1],
             [{item: "megacells:sky_steel_ingot"}, 1],
             [{tag: "c:plates/stainless_steel"}, 4]
@@ -1906,7 +1906,7 @@ ServerEvents.recipes(event => {
             [{item: "ae2:fluix_dust"}, 3]
         ],
         inputFluids: [
-            [{fluid: "pastel:liquid_crystal"}, 500]
+            [{fluid: "spectrum:liquid_crystal"}, 500]
         ],
         outputItems: [
             [{item: "megacells:accumulation_processor"}, 1]

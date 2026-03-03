@@ -10,7 +10,7 @@
           "predicate_type": "minecraft:block_match"
         },
         "state": {
-          "Name": "pastel:shimmerstone_ore"
+          "Name": "spectrum:shimmerstone_ore"
         }
       },
       {
@@ -19,7 +19,7 @@
           "predicate_type": "minecraft:block_match"
         },
         "state": {
-          "Name": "pastel:deepslate_shimmerstone_ore"
+          "Name": "spectrum:deepslate_shimmerstone_ore"
         }
       }
     ]

@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
             "id": "ars_nouveau:ritual_brazier",
             "count": 1
         },
-        advancement: "pastel:create_onyx_shard",
+        advancement: "spectrum:create_onyx_shard",
         yield_upgrades: true
     })
     event.remove({ output: "ars_nouveau:ritual_brazier" })
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
 
     rituals.forEach(ritual => {
         event.findRecipes({ output: ritual.id }).forEach(rec => {
-            let advancement = "pastel:place_pedestal"
+            let advancement = "spectrum:place_pedestal"
             let baseJson = JSON.parse(rec.json.toString());
             let baseIngredients = baseJson.ingredients || [];
 
@@ -105,9 +105,9 @@ ServerEvents.recipes(event => {
             ingredients = ingredients.concat(baseIngredients);
 
             if (ritual.pedestal_tier == "advanced") {
-                advancement = "pastel:create_onyx_shard"
+                advancement = "spectrum:create_onyx_shard"
             } else if (ritual.pedestal_tier == "complex") {
-                advancement = "pastel:lategame/craft_moonstone_pedestal";
+                advancement = "spectrum:lategame/craft_moonstone_pedestal";
             }
             ingredients = ingredients.map(function (i) {
                 // item -> item
@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
         {
             id: "cataclysm:amethyst_nest", name: "cataclysm_amethyst_nest", augments: [
                 { "key": "occultism:amethyst_dust" },
-                { "key": "pastel:amethyst_powder" },
+                { "key": "spectrum:amethyst_powder" },
             ]
         },
         {

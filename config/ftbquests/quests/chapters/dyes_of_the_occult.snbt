@@ -2667,7 +2667,7 @@
 				}
 				{
 					id: "73FAAA1C1D141FB8"
-					item: { count: 1, id: "pastel:paintbrush" }
+					item: { count: 1, id: "spectrum:paintbrush" }
 					type: "item"
 				}
 			]
@@ -2693,7 +2693,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "21E2F470549FC8CE"
-				item: { count: 1, id: "pastel:heartbound_chest" }
+				item: { count: 1, id: "spectrum:heartbound_chest" }
 				type: "item"
 			}]
 			x: -25.5d
@@ -2703,7 +2703,7 @@
 			dependencies: ["73DAABF80C068AA2"]
 			id: "3439A90E9544512F"
 			tasks: [{
-				advancement: "pastel:find_preservation_ruins"
+				advancement: "spectrum:find_preservation_ruins"
 				criterion: ""
 				id: "6D1B94115F98B076"
 				type: "advancement"
@@ -2715,7 +2715,7 @@
 			dependencies: ["3439A90E9544512F"]
 			id: "4CD83E3F1602127A"
 			tasks: [{
-				advancement: "pastel:enter_color_mixing_preservation_ruin"
+				advancement: "spectrum:enter_color_mixing_preservation_ruin"
 				criterion: ""
 				id: "38E78F644B3C09BE"
 				type: "advancement"
@@ -2729,7 +2729,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "794D07523E540C03"
-				item: { count: 1, id: "pastel:compacting_chest" }
+				item: { count: 1, id: "spectrum:compacting_chest" }
 				type: "item"
 			}]
 			x: -24.5d
@@ -2741,7 +2741,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "580D503999E05630"
-				item: { count: 1, id: "pastel:lava_sponge" }
+				item: { count: 1, id: "spectrum:lava_sponge" }
 				type: "item"
 			}]
 			x: -26.5d
@@ -2753,7 +2753,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "24CBD65954DABF9E"
-				item: { count: 1, id: "pastel:glow_vision_goggles" }
+				item: { count: 1, id: "spectrum:glow_vision_goggles" }
 				type: "item"
 			}]
 			x: -25.5d
@@ -2768,14 +2768,14 @@
 			shape: "square"
 			tasks: [
 				{
-					advancement: "pastel:craft_cmy_pedestal"
+					advancement: "spectrum:craft_cmy_pedestal"
 					criterion: ""
 					id: "79F391EC32DC3B54"
 					type: "advancement"
 				}
 				{
 					id: "305FB63D2899C35C"
-					item: { count: 1, id: "pastel:pedestal_all_basic" }
+					item: { count: 1, id: "spectrum:pedestal_all_basic" }
 					type: "item"
 				}
 				{
@@ -2802,7 +2802,7 @@
 				{
 					count: 4L
 					id: "745285CCE59E780F"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:polished_gemstone_block)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:polished_gemstone)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					optional_task: true
 					type: "item"
 				}
@@ -2823,7 +2823,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "57D24B923DD46860"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:looting": 3 } } }, count: 1, id: "pastel:razor_falchion" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:looting": 3 } } }, count: 1, id: "spectrum:razor_falchion" }
 				type: "item"
 			}]
 			x: -26.0d
@@ -2835,7 +2835,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "32DDDE8931C4F252"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:efficiency": 1 } } }, count: 1, id: "pastel:multitool" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:efficiency": 1 } } }, count: 1, id: "spectrum:multitool" }
 				type: "item"
 			}]
 			x: -36.5d
@@ -2847,7 +2847,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "2B8CB1F887C1FFCE"
-				item: { count: 1, id: "pastel:redstone_sand" }
+				item: { count: 1, id: "spectrum:redstone_sand" }
 				type: "item"
 			}]
 			x: -37.5d
@@ -2859,7 +2859,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "4034F8D8821580E2"
-				item: { count: 1, id: "pastel:block_placer" }
+				item: { count: 1, id: "spectrum:block_placer" }
 				type: "item"
 			}]
 			x: -25.5d
@@ -2874,29 +2874,29 @@
 				"77472788A5914815"
 			]
 			icon: {
-				id: "pastel:fetchling_helmet"
+				id: "spectrum:fetchling_helmet"
 			}
 			id: "400E4777C506724C"
 			shape: "octagon"
 			tasks: [
 				{
 					id: "7465D06D353CB5DE"
-					item: { count: 1, id: "pastel:fetchling_helmet" }
+					item: { count: 1, id: "spectrum:fetchling_helmet" }
 					type: "item"
 				}
 				{
 					id: "0894A057B82B1A16"
-					item: { count: 1, id: "pastel:ferocious_chestplate" }
+					item: { count: 1, id: "spectrum:ferocious_chestplate" }
 					type: "item"
 				}
 				{
 					id: "3BD40F428C13AD44"
-					item: { count: 1, id: "pastel:sylph_leggings" }
+					item: { count: 1, id: "spectrum:sylph_leggings" }
 					type: "item"
 				}
 				{
 					id: "2F01289C6BF0A4BE"
-					item: { count: 1, id: "pastel:oread_boots" }
+					item: { count: 1, id: "spectrum:oread_boots" }
 					type: "item"
 				}
 			]
@@ -2909,7 +2909,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "70FCC67ECEFE9BDD"
-				item: { count: 1, id: "pastel:redstone_calculator" }
+				item: { count: 1, id: "spectrum:redstone_calculator" }
 				type: "item"
 			}]
 			x: -25.0d
@@ -2921,7 +2921,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "0FBD29B7CF243ADB"
-				item: { count: 1, id: "pastel:redstone_timer" }
+				item: { count: 1, id: "spectrum:redstone_timer" }
 				type: "item"
 			}]
 			x: -24.5d
@@ -2933,7 +2933,7 @@
 			shape: "square"
 			tasks: [{
 				id: "28A38676B19E5C72"
-				item: { count: 1, id: "pastel:shimmerstone_gem" }
+				item: { count: 1, id: "spectrum:shimmerstone_gem" }
 				type: "item"
 			}]
 			x: -29.0d
@@ -2957,7 +2957,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "41A2EA66018B6E50"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:fortune": 3 } } }, count: 1, id: "pastel:lucky_pickaxe" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:fortune": 3 } } }, count: 1, id: "spectrum:lucky_pickaxe" }
 				type: "item"
 			}]
 			x: -30.5d
@@ -2969,7 +2969,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "34A589CCA978ACEF"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(pastel:shimmerstone_lights)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(spectrum:shimmerstone_lights)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -29.5d
@@ -3026,7 +3026,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "78F3EF0BCF8858E7"
-				item: { count: 1, id: "pastel:present" }
+				item: { count: 1, id: "spectrum:present" }
 				type: "item"
 			}]
 			x: -28.5d
@@ -3050,7 +3050,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "73B1156EC0D314E3"
-				item: { count: 1, id: "pastel:radiant_glass" }
+				item: { count: 1, id: "spectrum:radiant_glass" }
 				type: "item"
 			}]
 			x: -27.0d
@@ -3062,7 +3062,7 @@
 			shape: "gear"
 			tasks: [{
 				id: "42CDFEBCA8AC5D6E"
-				item: { count: 1, id: "pastel:bottle_of_fading" }
+				item: { count: 1, id: "spectrum:bottle_of_fading" }
 				type: "item"
 			}]
 			x: -31.5d
@@ -3073,7 +3073,7 @@
 			id: "6071F775D9AB5DBA"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:collect_vegetal"
+				advancement: "spectrum:collect_vegetal"
 				criterion: ""
 				id: "3264AA0EC6F9BFB3"
 				type: "advancement"
@@ -3087,7 +3087,7 @@
 			shape: "square"
 			tasks: [{
 				id: "0690302B69EE721E"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(pastel:colored_saplings)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(spectrum:colored_saplings)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -35.5d
@@ -3100,57 +3100,57 @@
 			tasks: [
 				{
 					id: "47DD8773E96D807F"
-					item: { count: 1, id: "pastel:magenta_pigment" }
+					item: { count: 1, id: "spectrum:magenta_pigment" }
 					type: "item"
 				}
 				{
 					id: "3C01CA986FD396C2"
-					item: { count: 1, id: "pastel:green_pigment" }
+					item: { count: 1, id: "spectrum:green_pigment" }
 					type: "item"
 				}
 				{
 					id: "55B92B6890259084"
-					item: { count: 1, id: "pastel:lime_pigment" }
+					item: { count: 1, id: "spectrum:lime_pigment" }
 					type: "item"
 				}
 				{
 					id: "74971605013D350D"
-					item: { count: 1, id: "pastel:orange_pigment" }
+					item: { count: 1, id: "spectrum:orange_pigment" }
 					type: "item"
 				}
 				{
 					id: "01BC852842D60528"
-					item: { count: 1, id: "pastel:light_blue_pigment" }
+					item: { count: 1, id: "spectrum:light_blue_pigment" }
 					type: "item"
 				}
 				{
 					id: "5D4847B8722EDCB6"
-					item: { count: 1, id: "pastel:yellow_pigment" }
+					item: { count: 1, id: "spectrum:yellow_pigment" }
 					type: "item"
 				}
 				{
 					id: "72CCDE4B364A2B19"
-					item: { count: 1, id: "pastel:pink_pigment" }
+					item: { count: 1, id: "spectrum:pink_pigment" }
 					type: "item"
 				}
 				{
 					id: "66EC262DC2248E7B"
-					item: { count: 1, id: "pastel:blue_pigment" }
+					item: { count: 1, id: "spectrum:blue_pigment" }
 					type: "item"
 				}
 				{
 					id: "5583423F56F5FF90"
-					item: { count: 1, id: "pastel:red_pigment" }
+					item: { count: 1, id: "spectrum:red_pigment" }
 					type: "item"
 				}
 				{
 					id: "4AC064C42B58305F"
-					item: { count: 1, id: "pastel:purple_pigment" }
+					item: { count: 1, id: "spectrum:purple_pigment" }
 					type: "item"
 				}
 				{
 					id: "1C2D2D52C5CFAF4D"
-					item: { count: 1, id: "pastel:cyan_pigment" }
+					item: { count: 1, id: "spectrum:cyan_pigment" }
 					type: "item"
 				}
 			]
@@ -3165,7 +3165,7 @@
 			id: "0F4825A153097924"
 			tasks: [{
 				id: "587D4E0A5C33483A"
-				item: { count: 1, id: "pastel:enchantment_canvas" }
+				item: { count: 1, id: "spectrum:enchantment_canvas" }
 				type: "item"
 			}]
 			x: -42.5d
@@ -3198,7 +3198,7 @@
 			id: "64F723F01C41DE4E"
 			tasks: [{
 				id: "7BF1CA69A441D511"
-				item: { count: 1, id: "pastel:radiance_staff" }
+				item: { count: 1, id: "spectrum:radiance_staff" }
 				type: "item"
 			}]
 			x: -40.5d
@@ -3209,7 +3209,7 @@
 			id: "00739F6BA600ACA3"
 			tasks: [{
 				id: "6E24A583CF072423"
-				item: { count: 1, id: "pastel:molten_rod" }
+				item: { count: 1, id: "spectrum:molten_rod" }
 				type: "item"
 			}]
 			x: -40.0d
@@ -3220,7 +3220,7 @@
 			id: "03FD9E737AD73A39"
 			tasks: [{
 				id: "687D2DEE3A1DA12B"
-				item: { count: 1, id: "pastel:titration_barrel" }
+				item: { count: 1, id: "spectrum:titration_barrel" }
 				type: "item"
 			}]
 			x: -40.5d
@@ -3231,7 +3231,7 @@
 			id: "406ADA8BAE36F418"
 			tasks: [{
 				id: "1073565A2B8A1659"
-				item: { count: 1, id: "pastel:fresh_chocolate" }
+				item: { count: 1, id: "spectrum:fresh_chocolate" }
 				type: "item"
 			}]
 			x: -39.0d
@@ -3242,7 +3242,7 @@
 			id: "138BF142D6B6F964"
 			tasks: [{
 				id: "6A124A94A2C09C12"
-				item: { count: 1, id: "pastel:clotted_cream" }
+				item: { count: 1, id: "spectrum:clotted_cream" }
 				type: "item"
 			}]
 			x: -39.0d
@@ -3264,7 +3264,7 @@
 			id: "29B42E7ADFFA7AAF"
 			tasks: [{
 				id: "654AB97FF498D4F3"
-				item: { count: 1, id: "pastel:suspicious_brew" }
+				item: { count: 1, id: "spectrum:suspicious_brew" }
 				type: "item"
 			}]
 			x: -41.0d
@@ -3275,7 +3275,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "pastel:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "pastel:beverage": { days_aged: 12L, thickness: 1.0f }, "pastel:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "pastel:is_preview_item": { } }, count: 1, id: "pastel:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: -40.0d
@@ -3286,7 +3286,7 @@
 			id: "2CBD884256778D81"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:collect_all_basic_pigments_besides_brown"
+				advancement: "spectrum:collect_all_basic_pigments_besides_brown"
 				criterion: ""
 				id: "6293220914840748"
 				type: "advancement"
@@ -3297,13 +3297,13 @@
 		{
 			dependencies: ["2CBD884256778D81"]
 			icon: {
-				id: "pastel:fusion_shrine_basalt"
+				id: "spectrum:fusion_shrine_basalt"
 			}
 			id: "351C8BB52E7CD0E8"
 			shape: "gear"
 			tasks: [
 				{
-					advancement: "pastel:build_fusion_shrine"
+					advancement: "spectrum:build_fusion_shrine"
 					criterion: ""
 					id: "19B46287E88BD4A6"
 					type: "advancement"
@@ -3329,7 +3329,7 @@
 				}
 				{
 					id: "2A1B82765D957242"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:polished_gemstone_block)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:polished_gemstone)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					optional_task: true
 					type: "item"
 				}
@@ -3358,7 +3358,7 @@
 			size: 6.0d
 			tasks: [{
 				id: "6F306622573E5B66"
-				item: { count: 1, id: "pastel:onyx_shard" }
+				item: { count: 1, id: "spectrum:onyx_shard" }
 				type: "item"
 			}]
 			x: -43.0d
@@ -3370,7 +3370,7 @@
 			shape: "gear"
 			tasks: [{
 				id: "7E6E68718164E7B5"
-				item: { count: 1, id: "pastel:redstone_transceiver" }
+				item: { count: 1, id: "spectrum:redstone_transceiver" }
 				type: "item"
 			}]
 			x: -47.0d
@@ -3381,7 +3381,7 @@
 			id: "52B2052271E43B69"
 			tasks: [{
 				id: "517C1C90A9629D6D"
-				item: { count: 1, id: "pastel:natures_staff" }
+				item: { count: 1, id: "spectrum:natures_staff" }
 				type: "item"
 			}]
 			x: -41.5d
@@ -3393,7 +3393,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "0790F60A05AEAE50"
-				item: { count: 1, id: "pastel:crafting_tablet" }
+				item: { count: 1, id: "spectrum:crafting_tablet" }
 				type: "item"
 			}]
 			x: -26.5d
@@ -3405,19 +3405,19 @@
 			shape: "square"
 			tasks: [
 				{
-					advancement: "pastel:collect_all_basic_shards"
+					advancement: "spectrum:collect_all_basic_shards"
 					criterion: ""
 					id: "6B05376F31571588"
 					type: "advancement"
 				}
 				{
 					id: "3F7C31B0F37670FF"
-					item: { count: 1, id: "pastel:citrine_shard" }
+					item: { count: 1, id: "spectrum:citrine_shard" }
 					type: "item"
 				}
 				{
 					id: "3FC5F0B677B6A3F3"
-					item: { count: 1, id: "pastel:topaz_shard" }
+					item: { count: 1, id: "spectrum:topaz_shard" }
 					type: "item"
 				}
 				{

@@ -7,9 +7,9 @@ ServerEvents.recipes(event => {
             { "item": "minecraft:glass_bottle" },
             { "tag": "hexerei:flower_biproduct" },
             { "item": "minecraft:poisonous_potato" },
-            { "tag": "pastel:gemstone_shards" },
-            { "tag": "pastel:gemstone_shards" },
-            { "tag": "pastel:gemstone_shards" },
+            { "tag": "spectrum:gemstone_shards" },
+            { "tag": "spectrum:gemstone_shards" },
+            { "tag": "spectrum:gemstone_shards" },
             { "item": "minecraft:poisonous_potato" },
             { "tag": "hexerei:flower_biproduct" }
         ],

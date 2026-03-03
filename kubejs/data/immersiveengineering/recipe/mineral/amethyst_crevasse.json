@@ -16,13 +16,13 @@
     {
       "chance": 0.4,
       "output": {
-        "id": "pastel:citrine_block"
+        "id": "spectrum:citrine_block"
       }
     },
     {
       "chance": 0.4,
       "output": {
-        "id": "pastel:topaz_block"
+        "id": "spectrum:topaz_block"
       }
     },
     {

@@ -10,7 +10,7 @@
           "predicate_type": "minecraft:block_match"
         },
         "state": {
-          "Name": "pastel:azurite_ore"
+          "Name": "spectrum:azurite_ore"
         }
       },
       {
@@ -19,7 +19,7 @@
           "predicate_type": "minecraft:block_match"
         },
         "state": {
-          "Name": "pastel:deepslate_azurite_ore"
+          "Name": "spectrum:deepslate_azurite_ore"
         }
       }
     ]

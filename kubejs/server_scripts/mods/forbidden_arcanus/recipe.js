@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             "id": "forbidden_arcanus:clibano_core",
             "count": 1
         },
-        advancement: "pastel:create_onyx_shard"
+        advancement: "spectrum:create_onyx_shard"
     })
 
 });

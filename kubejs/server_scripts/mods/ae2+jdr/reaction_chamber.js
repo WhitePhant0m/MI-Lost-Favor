@@ -61,8 +61,8 @@ ServerEvents.recipes(event => {
     ae_reaction_chamber_recipe(
         [
             [{ "item": "ae2:singularity" }, 1],
-            [{ "item": "pastel:pure_bloodstone" }, 1],
-            [{ "item": "pastel:doombloom_seed" }, 1],
+            [{ "item": "spectrum:pure_bloodstone" }, 1],
+            [{ "item": "spectrum:doombloom_seed" }, 1],
 
         ],
         ["advanced_ae:shattered_singularity", 2], ["minecraft:lava", 1000], 444444
@@ -70,20 +70,20 @@ ServerEvents.recipes(event => {
 
     ae_reaction_chamber_recipe(
         [
-            [{ "item": "pastel:black_pigment" }, 16],
+            [{ "item": "spectrum:black_pigment" }, 16],
             [{ "tag": "c:ingots/steel" }, 4],
-            [{ "item": "pastel:bone_ash" }, 8],
-            [{ "item": "pastel:moonstone_powder" }, 8],
+            [{ "item": "spectrum:bone_ash" }, 8],
+            [{ "item": "spectrum:moonstone_powder" }, 8],
         ],
         ["megacells:sky_steel_ingot", 4], ["minecraft:lava", 1000], 4444
     )
 
     ae_reaction_chamber_recipe(
         [
-            [{ "item": "pastel:brown_pigment" }, 16],
+            [{ "item": "spectrum:brown_pigment" }, 16],
             [{ "tag": "c:ingots/bronze" }, 4],
-            [{ "item": "pastel:bone_ash" }, 8],
-            [{ "item": "pastel:moonstone_powder" }, 8],
+            [{ "item": "spectrum:bone_ash" }, 8],
+            [{ "item": "spectrum:moonstone_powder" }, 8],
         ],
         ["megacells:sky_bronze_ingot", 4], ["minecraft:lava", 1000], 4444
     )

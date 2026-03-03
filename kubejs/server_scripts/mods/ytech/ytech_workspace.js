@@ -817,7 +817,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].layerCorners("C").layerPlus("G"),
             ['   ','   ','   '].layerAll("C")
         ],
-        {E:'transmog:void_fragment',C:"pastel:citrine_block",G:"minecraft:glass"},
+        {E:'transmog:void_fragment',C:"spectrum:citrine_block",G:"minecraft:glass"},
         'transmog:transmogrification_table', {} , "kubejs:amber_visage", true
     )
 

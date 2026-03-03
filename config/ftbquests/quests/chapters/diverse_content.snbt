@@ -13,79 +13,79 @@
 		{
 			id: "689B85F6CDCD4945"
 			linked_quest: "6443864802D04B07"
-			x: -22.5d
+			x: -25.5d
 			y: 3.5d
 		}
 		{
 			id: "1CB69A0609779A61"
 			linked_quest: "23D5012F534D8098"
-			x: -24.0d
+			x: -27.0d
 			y: 3.5d
 		}
 		{
 			id: "3EF4CF3FBD6D0BDE"
 			linked_quest: "26D3721A292E8E8C"
-			x: -25.5d
+			x: -28.5d
 			y: 3.5d
 		}
 		{
 			id: "59713B4263DC488F"
 			linked_quest: "047487BFFB8421D5"
-			x: -27.0d
+			x: -30.0d
 			y: 3.5d
 		}
 		{
 			id: "33A296DF5D872E7A"
 			linked_quest: "2518CA7E57223D3A"
-			x: -30.0d
+			x: -33.0d
 			y: 3.5d
 		}
 		{
 			id: "22CB163FA0E88311"
 			linked_quest: "4F9AF422C4AA5B85"
-			x: -21.0d
+			x: -24.0d
 			y: 3.5d
 		}
 		{
 			id: "647E32DE455DD0F5"
 			linked_quest: "3D7610F02FB93E78"
-			x: -19.5d
+			x: -22.5d
 			y: 3.5d
 		}
 		{
 			id: "3739FD2D564F6699"
 			linked_quest: "7AB88C2D779F62E2"
-			x: -19.5d
+			x: -22.5d
 			y: 2.5d
 		}
 		{
 			id: "6B6D7BAEA7A740F5"
 			linked_quest: "468A8B2EA06FD87C"
-			x: -28.5d
+			x: -31.5d
 			y: 3.5d
 		}
 		{
 			id: "1E0D4420E982DF21"
 			linked_quest: "2EF484C39D617CD2"
-			x: -31.5d
+			x: -34.5d
 			y: 3.5d
 		}
 		{
 			id: "0D37CB6F4FDFBC3B"
 			linked_quest: "51C0876E925B1FF1"
-			x: -33.0d
+			x: -36.0d
 			y: 3.5d
 		}
 		{
 			id: "2964F8CE510521AD"
 			linked_quest: "5116FA2F58C59929"
-			x: -33.0d
+			x: -36.0d
 			y: 2.5d
 		}
 		{
 			id: "6BF2E6F06E9C7D3A"
 			linked_quest: "15054A95EDCBE33D"
-			x: -18.0d
+			x: -21.0d
 			y: 3.5d
 		}
 	]

@@ -211,8 +211,8 @@ ServerEvents.recipes(event => {
 
     //#endregion
 
-    //pastel compat
-    event.forEachRecipe({ type: 'pastel:anvil_crushing', not : {output: "#kubejs:nocompat"}}, r => {
+    //spectrum compat
+    event.forEachRecipe({ type: 'spectrum:anvil_crushing', not : {output: "#kubejs:nocompat"}}, r => {
         const rjson = JSON.parse(r.json)
         if (rjson.result.id.split(":")[0] == "ae2") return
         if (Array.isArray(rjson.ingredient)) {

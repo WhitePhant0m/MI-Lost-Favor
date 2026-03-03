@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
             "enchanted:mystic_unguent",
             "enchanted:drop_of_luck",
             "enchanted:tear_of_the_goddess",
-            "pastel:onyx_shard",
+            "spectrum:onyx_shard",
         ],
         'toxony:toxin_flask',
         'occultism:craft_afrit',

@@ -52,8 +52,8 @@ ServerEvents.recipes(event => {
     ieArcFurnaceCraft(event,{
         inputItems:[
             [{"item": "ae2:mysterious_cube"}, 1],
-            [{"item": "pastel:bottle_of_fading"}, 4],
-            [{"item": "pastel:light_blue_pigment"}, 32]
+            [{"item": "spectrum:bottle_of_fading"}, 4],
+            [{"item": "spectrum:light_blue_pigment"}, 32]
         ],
         outputItems:[
             [{"item": "ae2:controller"}, 1],
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
 
         ],
         slag:[
-            [{"item": "pastel:vegetal"}, 4]
+            [{"item": "spectrum:vegetal"}, 4]
         ]
     })
 
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
             [{"tag": "c:glass_blocks"}, 6],
             [{"tag": "c:dusts/certus_quartz"}, 7],
             [{"tag": "c:dusts/quartz"}, 2],
-            [{"item": "pastel:shimmerstone_gem"}, 12]
+            [{"item": "spectrum:shimmerstone_gem"}, 12]
         ],
         outputItems:[
             [{"item": "ae2:quartz_vibrant_glass"}, 6]
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
     ieArcFurnaceCraft(event,{
         inputItems:[
             [{"item": "minecraft:netherite_helmet"}, 1],
-            [{"item": "pastel:horse_head"}, 4],
+            [{"item": "spectrum:horse_head"}, 4],
             [{"tag": "immersiveengineering:treated_wood"}, 16],
             [{"tag": "c:nuggets/copper"}, 6],
             [{"item": "minecraft:netherite_block"}, 4]
@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
             [{"item": "kubejs:meze_109"}, 1]
         ],
         slag:[
-            [{"item": "pastel:skeleton_horse_head"}, 4]
+            [{"item": "spectrum:skeleton_horse_head"}, 4]
         ]
     })
     //#endregion

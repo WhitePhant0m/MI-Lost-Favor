@@ -28,12 +28,12 @@ ServerEvents.recipes(event => {
     });
 
     customImbuementCraft(event, {
-        input: { "item": "pastel:moonstone_shard" },
+        input: { "item": "spectrum:moonstone_shard" },
         output: "ars_nouveau:source_gem",
         source: 500
     })
     customImbuementCraft(event, {
-        input: { "item": "pastel:moonstone_block" },
+        input: { "item": "spectrum:moonstone_block" },
         output: "ars_nouveau:source_gem_block",
         source: 2000
     })

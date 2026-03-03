@@ -77,9 +77,9 @@ ServerEvents.recipes(event => {
         compatOff:true
     })
 
-    let pastelPowderTypes = ["pastel:topaz_powder", "pastel:amethyst_powder", "pastel:citrine_powder", "pastel:onyx_powder", "pastel:moonstone_powder", "pastel:quitoxic_powder"]
+    let spectrumPowderTypes = ["spectrum:topaz_powder", "spectrum:amethyst_powder", "spectrum:citrine_powder", "spectrum:onyx_powder", "spectrum:moonstone_powder", "spectrum:quitoxic_powder"]
 
-    event.forEachRecipe({ type: 'pastel:anvil_crushing', output: pastelPowderTypes}, r => {
+    event.forEachRecipe({ type: 'spectrum:anvil_crushing', output: spectrumPowderTypes}, r => {
         const rjson = JSON.parse(r.json)
         if (rjson.result.id.split(":")[0] == "ae2") return
         if (Array.isArray(rjson.ingredient)) {

@@ -4,7 +4,7 @@
 	filename: "underveil_harmonies"
 	group: "7CCD8F01A3D08612"
 	icon: {
-		id: "pastel:aether_vestiges"
+		id: "spectrum:aether_vestiges"
 	}
 	id: "0E71C46ADE360F4F"
 	order_index: 1
@@ -2954,7 +2954,7 @@
 			id: "173490A557431C56"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:collect_radiating_ender"
+				advancement: "spectrum:collect_radiating_ender"
 				criterion: ""
 				id: "3B68C46560F6D04B"
 				type: "advancement"
@@ -2967,7 +2967,7 @@
 			id: "30E5427B2F94DCEB"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:collect_all_basic_pigments"
+				advancement: "spectrum:collect_all_basic_pigments"
 				criterion: ""
 				id: "7C2BA84618A6BC12"
 				type: "advancement"
@@ -2980,7 +2980,7 @@
 			id: "2D8C9DF5E216E09C"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:collect_star_fragment"
+				advancement: "spectrum:collect_star_fragment"
 				criterion: ""
 				id: "4ACD5AF665DBCC2B"
 				type: "advancement"
@@ -2993,7 +2993,7 @@
 			id: "432926D13A924608"
 			tasks: [{
 				id: "496D73E06063C797"
-				item: { count: 1, id: "pastel:particle_spawner" }
+				item: { count: 1, id: "spectrum:particle_spawner" }
 				type: "item"
 			}]
 			x: 31.5d
@@ -3002,27 +3002,27 @@
 		{
 			dependencies: ["4B801253049DAC2F"]
 			icon: {
-				id: "pastel:pedestal_onyx"
+				id: "spectrum:pedestal_onyx"
 			}
 			id: "5145F508257EA3AA"
 			shape: "square"
 			tasks: [
 				{
-					advancement: "pastel:midgame/pastel_midgame"
+					advancement: "spectrum:midgame/spectrum_midgame"
 					criterion: ""
 					id: "06B67029436C7DA7"
 					type: "advancement"
 				}
 				{
 					id: "415F9472C58B12A5"
-					item: { count: 1, id: "pastel:pedestal_onyx" }
+					item: { count: 1, id: "spectrum:pedestal_onyx" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "78C5E8DD6BAEE398"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:polished_gemstone_block)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:polished_gemstone)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					optional_task: true
 					type: "item"
 				}
@@ -3061,29 +3061,29 @@
 		{
 			dependencies: ["5145F508257EA3AA"]
 			icon: {
-				id: "pastel:brown_sapling"
+				id: "spectrum:brown_sapling"
 			}
 			id: "137E20A86306BF4A"
 			shape: "square"
 			tasks: [
 				{
 					id: "0DA0449E0F0DCCFC"
-					item: { count: 1, id: "pastel:brown_sapling" }
+					item: { count: 1, id: "spectrum:brown_sapling" }
 					type: "item"
 				}
 				{
 					id: "4A9CD62C08E61478"
-					item: { count: 1, id: "pastel:black_sapling" }
+					item: { count: 1, id: "spectrum:black_sapling" }
 					type: "item"
 				}
 				{
 					id: "67B05066DBFE6A0C"
-					item: { count: 1, id: "pastel:brown_pigment" }
+					item: { count: 1, id: "spectrum:brown_pigment" }
 					type: "item"
 				}
 				{
 					id: "6A0C9C854CF76C6B"
-					item: { count: 1, id: "pastel:black_pigment" }
+					item: { count: 1, id: "spectrum:black_pigment" }
 					type: "item"
 				}
 			]
@@ -3095,7 +3095,7 @@
 			id: "5E0298584559E31D"
 			tasks: [{
 				id: "21ABDE9FA7A6ED0E"
-				item: { count: 1, id: "pastel:clover" }
+				item: { count: 1, id: "spectrum:clover" }
 				type: "item"
 			}]
 			x: 29.0d
@@ -3106,7 +3106,7 @@
 			id: "0E157BC29AA2A2F0"
 			tasks: [{
 				id: "20C1604B8058703A"
-				item: { count: 1, id: "pastel:four_leaf_clover" }
+				item: { count: 1, id: "spectrum:four_leaf_clover" }
 				type: "item"
 			}]
 			x: 29.0d
@@ -3117,7 +3117,7 @@
 			id: "032A57D52718A594"
 			tasks: [{
 				id: "2ECEA398E3C3A6B4"
-				item: { count: 1, id: "pastel:color_picker" }
+				item: { count: 1, id: "spectrum:color_picker" }
 				type: "item"
 			}]
 			x: 30.0d
@@ -3128,7 +3128,7 @@
 			id: "23D1FD73CC570350"
 			tasks: [{
 				id: "3685E8371905A8A0"
-				item: { count: 1, id: "pastel:ink_flask" }
+				item: { count: 1, id: "spectrum:ink_flask" }
 				type: "item"
 			}]
 			x: 30.0d
@@ -3140,7 +3140,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "01AAD3653BBE2EED"
-				item: { count: 1, id: "pastel:upgrade_speed" }
+				item: { count: 1, id: "spectrum:upgrade_speed" }
 				type: "item"
 			}]
 			x: 29.5d
@@ -3152,7 +3152,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "71E2BCA2C60B8DB2"
-				item: { count: 1, id: "pastel:crescent_clock" }
+				item: { count: 1, id: "spectrum:crescent_clock" }
 				type: "item"
 			}]
 			x: 30.5d
@@ -3166,7 +3166,7 @@
 			id: "1521EE6E13B1A7AF"
 			tasks: [{
 				id: "3DB8DDFAF0A77996"
-				item: { count: 1, id: "pastel:ink_assortment" }
+				item: { count: 1, id: "spectrum:ink_assortment" }
 				type: "item"
 			}]
 			x: 29.5d
@@ -3178,7 +3178,7 @@
 			shape: "square"
 			tasks: [{
 				id: "326AFC835958E31B"
-				item: { count: 1, id: "pastel:stratine_fragments" }
+				item: { count: 1, id: "spectrum:stratine_fragments" }
 				type: "item"
 			}]
 			x: 34.5d
@@ -3190,7 +3190,7 @@
 			shape: "square"
 			tasks: [{
 				id: "1BBBCB516D6667DA"
-				item: { count: 1, id: "pastel:mermaids_gem" }
+				item: { count: 1, id: "spectrum:mermaids_gem" }
 				type: "item"
 			}]
 			x: 34.5d
@@ -3202,7 +3202,7 @@
 			shape: "square"
 			tasks: [{
 				id: "4E9D6F67D336EE40"
-				item: { count: 1, id: "pastel:bottle_of_failing" }
+				item: { count: 1, id: "spectrum:bottle_of_failing" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -3214,7 +3214,7 @@
 			shape: "square"
 			tasks: [{
 				id: "2EF1DB442D467581"
-				item: { count: 1, id: "pastel:neolith" }
+				item: { count: 1, id: "spectrum:neolith" }
 				type: "item"
 			}]
 			x: 40.5d
@@ -3226,7 +3226,7 @@
 			shape: "square"
 			tasks: [{
 				id: "71F3FF95B231F126"
-				item: { count: 1, id: "pastel:raw_azurite" }
+				item: { count: 1, id: "spectrum:raw_azurite" }
 				type: "item"
 			}]
 			x: 43.5d
@@ -3238,7 +3238,7 @@
 			shape: "square"
 			tasks: [{
 				id: "0DA4B076BEC5BAB3"
-				item: { count: 1, id: "pastel:storm_stone" }
+				item: { count: 1, id: "spectrum:storm_stone" }
 				type: "item"
 			}]
 			x: 43.5d
@@ -3249,7 +3249,7 @@
 			id: "3EA2FDD972EB4226"
 			tasks: [{
 				id: "23242BE1DF676084"
-				item: { count: 1, id: "pastel:bottle_of_decay_away" }
+				item: { count: 1, id: "spectrum:bottle_of_decay_away" }
 				type: "item"
 			}]
 			x: 43.0d
@@ -3265,7 +3265,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "626AE0B03444BF43"
-				item: { count: 1, id: "pastel:liquid_crystal_bucket" }
+				item: { count: 1, id: "spectrum:liquid_crystal_bucket" }
 				type: "item"
 			}]
 			x: 40.5d
@@ -3276,7 +3276,7 @@
 			id: "53D189F7EF7CD121"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:midgame/create_midnight_aberration"
+				advancement: "spectrum:midgame/create_midnight_aberration"
 				criterion: ""
 				id: "7607416654EE7C6F"
 				type: "advancement"
@@ -3290,7 +3290,7 @@
 			shape: "square"
 			tasks: [{
 				id: "09220E971D64EC0A"
-				item: { count: 1, id: "pastel:midnight_chip" }
+				item: { count: 1, id: "spectrum:midnight_chip" }
 				type: "item"
 			}]
 			x: 49.0d
@@ -3302,7 +3302,7 @@
 			shape: "square"
 			tasks: [{
 				id: "6143260F3E591A5F"
-				item: { count: 1, id: "pastel:midnight_solution_bucket" }
+				item: { count: 1, id: "spectrum:midnight_solution_bucket" }
 				type: "item"
 			}]
 			x: 50.5d
@@ -3317,7 +3317,7 @@
 			shape: "square"
 			tasks: [{
 				id: "5A707523DE3E8D68"
-				item: { count: 1, id: "pastel:bottle_of_ruin" }
+				item: { count: 1, id: "spectrum:bottle_of_ruin" }
 				type: "item"
 			}]
 			x: 49.0d
@@ -3329,7 +3329,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "3EF1C29995B6864E"
-				item: { count: 1, id: "pastel:knowledge_gem" }
+				item: { count: 1, id: "spectrum:knowledge_gem" }
 				type: "item"
 			}]
 			x: 30.0d
@@ -3338,13 +3338,13 @@
 		{
 			dependencies: ["4081617269AD644A"]
 			icon: {
-				id: "pastel:spirit_instiller"
+				id: "spectrum:spirit_instiller"
 			}
 			id: "4F92A69453C8CE16"
 			tasks: [
 				{
 					id: "1EA975A39A996783"
-					item: { count: 1, id: "pastel:spirit_instiller" }
+					item: { count: 1, id: "spectrum:spirit_instiller" }
 					type: "item"
 				}
 				{
@@ -3398,7 +3398,7 @@
 				{
 					count: 2L
 					id: "5B51F6F9E42BBC6C"
-					item: { count: 1, id: "pastel:topaz_chime" }
+					item: { count: 1, id: "spectrum:topaz_chime" }
 					optional_task: true
 					type: "item"
 				}
@@ -3412,7 +3412,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6B253AF6B2785E19"
-				item: { count: 1, id: "pastel:crystal_apothecary" }
+				item: { count: 1, id: "spectrum:crystal_apothecary" }
 				type: "item"
 			}]
 			x: 46.0d
@@ -3424,7 +3424,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "1EE40453ACC5689C"
-				item: { count: 1, id: "pastel:humus_bucket" }
+				item: { count: 1, id: "spectrum:sludge_bucket" }
 				type: "item"
 			}]
 			x: 36.5d
@@ -3435,7 +3435,7 @@
 			id: "6FBA4C72D386837A"
 			tasks: [{
 				id: "620683246981D24A"
-				item: { count: 1, id: "pastel:fabrication_chest" }
+				item: { count: 1, id: "spectrum:fabrication_chest" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -3447,7 +3447,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "230C3FF1C95EA790"
-				item: { count: 1, id: "pastel:block_detector" }
+				item: { count: 1, id: "spectrum:block_detector" }
 				type: "item"
 			}]
 			x: 45.5d
@@ -3460,7 +3460,7 @@
 			tasks: [{
 				count: 4L
 				id: "7493F97FBC1549F0"
-				item: { count: 1, id: "pastel:block_flooder" }
+				item: { count: 1, id: "spectrum:block_flooder" }
 				type: "item"
 			}]
 			x: 36.0d
@@ -3472,7 +3472,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "062B8E584C33851A"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:lure": 3 } } }, count: 1, id: "pastel:lagoon_rod" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:lure": 3 } } }, count: 1, id: "spectrum:lagoon_rod" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -3484,7 +3484,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6CCB86BCA8AE3967"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:silk_touch": 1 } } }, count: 1, id: "pastel:tender_pickaxe" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:silk_touch": 1 } } }, count: 1, id: "spectrum:tender_pickaxe" }
 				type: "item"
 			}]
 			x: 36.5d
@@ -3495,7 +3495,7 @@
 			id: "69B63B5F93071543"
 			tasks: [{
 				id: "00723628E7C1BE60"
-				item: { count: 1, id: "pastel:constructors_staff" }
+				item: { count: 1, id: "spectrum:constructors_staff" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -3507,7 +3507,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6F75306FF32664F2"
-				item: { count: 1, id: "pastel:take_off_belt" }
+				item: { count: 1, id: "spectrum:take_off_belt" }
 				type: "item"
 			}]
 			x: 45.5d
@@ -3520,7 +3520,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "268349CAC4EB1774"
-				item: { count: 1, id: "pastel:radiance_pin" }
+				item: { count: 1, id: "spectrum:radiance_pin" }
 				type: "item"
 			}]
 			x: 41.0d
@@ -3532,7 +3532,7 @@
 			shape: "square"
 			tasks: [{
 				id: "73E0549BC78B5CAD"
-				item: { count: 1, id: "pastel:quitoxic_reeds" }
+				item: { count: 1, id: "spectrum:quitoxic_reeds" }
 				type: "item"
 			}]
 			x: 34.5d
@@ -3543,7 +3543,7 @@
 			id: "754E0F5DDA39F8C1"
 			tasks: [{
 				id: "6B9BD98F751AA7F5"
-				item: { count: 1, id: "pastel:quitoxic_powder" }
+				item: { count: 1, id: "spectrum:quitoxic_powder" }
 				type: "item"
 			}]
 			x: 36.0d
@@ -3557,7 +3557,7 @@
 			id: "1C223281C108DA0A"
 			tasks: [{
 				id: "77DDFCA8711E4160"
-				item: { count: 1, id: "pastel:potion_workshop" }
+				item: { count: 1, id: "spectrum:potion_workshop" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -3568,7 +3568,7 @@
 			id: "2A60D184399CE876"
 			tasks: [{
 				id: "6AE9DFE4E3C0C213"
-				item: { count: 1, id: "pastel:bottomless_bundle" }
+				item: { count: 1, id: "spectrum:bottomless_bundle" }
 				type: "item"
 			}]
 			x: 35.5d
@@ -3579,7 +3579,7 @@
 			id: "3C0AA6B0C3E4BFE5"
 			tasks: [{
 				id: "5955CAE2982E47EA"
-				item: { components: { "minecraft:enchantments": { levels: { "pastel:voiding": 1 } } }, count: 1, id: "pastel:oblivion_pickaxe" }
+				item: { components: { "minecraft:enchantments": { levels: { "spectrum:voiding": 1 } } }, count: 1, id: "spectrum:oblivion_pickaxe" }
 				type: "item"
 			}]
 			x: 36.5d
@@ -3592,7 +3592,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "30ACF78399680F12"
-				item: { count: 1, id: "pastel:gleaming_pin" }
+				item: { count: 1, id: "spectrum:gleaming_pin" }
 				type: "item"
 			}]
 			x: 40.0d
@@ -3605,7 +3605,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "189B5D76EB43FDEE"
-				item: { count: 1, id: "pastel:gloves_of_dawns_grasp" }
+				item: { count: 1, id: "spectrum:gloves_of_dawns_grasp" }
 				type: "item"
 			}]
 			x: 42.0d
@@ -3618,7 +3618,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6DE8347928E32D87"
-				item: { count: 1, id: "pastel:heartsingers_reward" }
+				item: { count: 1, id: "spectrum:heartsingers_reward" }
 				type: "item"
 			}]
 			x: 41.5d
@@ -3641,7 +3641,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "3C112239F963D6A6"
-				item: { count: 1, id: "pastel:upgrade_experience" }
+				item: { count: 1, id: "spectrum:upgrade_experience" }
 				type: "item"
 			}]
 			x: 45.0d
@@ -3652,7 +3652,7 @@
 			id: "0B05E1DBD3F26E44"
 			tasks: [{
 				id: "2B75D53303AB4793"
-				item: { count: 1, id: "pastel:upgrade_efficiency" }
+				item: { count: 1, id: "spectrum:upgrade_efficiency" }
 				type: "item"
 			}]
 			x: 44.0d
@@ -3664,7 +3664,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6798D3D1FA1D6206"
-				item: { count: 1, id: "pastel:ender_glass" }
+				item: { count: 1, id: "spectrum:ender_glass" }
 				type: "item"
 			}]
 			x: 36.0d
@@ -3676,7 +3676,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "1FEE0BC24A369BC3"
-				item: { count: 1, id: "pastel:bag_of_holding" }
+				item: { count: 1, id: "spectrum:bag_of_holding" }
 				type: "item"
 			}]
 			x: 36.0d
@@ -3688,7 +3688,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "303DE8227BDA07F1"
-				item: { count: 1, id: "pastel:ender_dropper" }
+				item: { count: 1, id: "spectrum:ender_dropper" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -3700,7 +3700,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "3B365516ADC80E70"
-				item: { count: 1, id: "pastel:ender_hopper" }
+				item: { count: 1, id: "spectrum:ender_hopper" }
 				type: "item"
 			}]
 			x: 37.0d
@@ -3717,7 +3717,7 @@
 			tasks: [{
 				count: 4L
 				id: "647F9B29CDD93214"
-				item: { count: 1, id: "pastel:ender_splice" }
+				item: { count: 1, id: "spectrum:ender_splice" }
 				type: "item"
 			}]
 			x: 36.5d
@@ -3733,7 +3733,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "5A257268FAEAD761"
-				item: { count: 1, id: "pastel:weeping_circlet" }
+				item: { count: 1, id: "spectrum:weeping_circlet" }
 				type: "item"
 			}]
 			x: 39.5d
@@ -3749,7 +3749,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "47BE4C29F9C924F4"
-				item: { count: 1, id: "pastel:seven_league_boots" }
+				item: { count: 1, id: "spectrum:seven_league_boots" }
 				type: "item"
 			}]
 			x: 39.0d
@@ -3765,7 +3765,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "01A9134AE8FCAE2A"
-				item: { count: 1, id: "pastel:cotton_cloud_boots" }
+				item: { count: 1, id: "spectrum:cotton_cloud_boots" }
 				type: "item"
 			}]
 			x: 42.0d
@@ -3779,7 +3779,7 @@
 			id: "3CF855190F944C3E"
 			tasks: [{
 				id: "2959A2037D96E448"
-				item: { count: 1, id: "pastel:artisans_atlas" }
+				item: { count: 1, id: "spectrum:artisans_atlas" }
 				type: "item"
 			}]
 			x: 30.5d
@@ -3790,7 +3790,7 @@
 			id: "1BBD0967E43849FF"
 			tasks: [{
 				id: "33BC65628F30592A"
-				item: { count: 1, id: "pastel:stratine_gem" }
+				item: { count: 1, id: "spectrum:stratine_gem" }
 				type: "item"
 			}]
 			x: 34.5d
@@ -3801,7 +3801,7 @@
 			id: "1A144AF45E9C2525"
 			tasks: [{
 				id: "72136B8ABF9EFA16"
-				item: { count: 1, id: "pastel:black_hole_chest" }
+				item: { count: 1, id: "spectrum:black_hole_chest" }
 				type: "item"
 			}]
 			x: 33.5d
@@ -3810,13 +3810,13 @@
 		{
 			dependencies: ["1BBD0967E43849FF"]
 			icon: {
-				id: "pastel:cinderhearth"
+				id: "spectrum:cinderhearth"
 			}
 			id: "1E136FE5D9294481"
 			tasks: [
 				{
 					id: "7AC0C4370CD34D76"
-					item: { count: 1, id: "pastel:cinderhearth" }
+					item: { count: 1, id: "spectrum:cinderhearth" }
 					type: "item"
 				}
 				{
@@ -3843,7 +3843,7 @@
 				{
 					count: 2L
 					id: "3398A391FA1FF698"
-					item: { count: 1, id: "pastel:chiseled_polished_basalt" }
+					item: { count: 1, id: "spectrum:chiseled_polished_basalt" }
 					optional_task: true
 					type: "item"
 				}
@@ -3868,7 +3868,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "76B28B7CCF421F36"
-				item: { count: 1, id: "pastel:ashen_circlet" }
+				item: { count: 1, id: "spectrum:ashen_circlet" }
 				type: "item"
 			}]
 			x: 41.5d
@@ -3884,7 +3884,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "1C5207CF1E79C6F0"
-				item: { count: 1, id: "pastel:jeopardant" }
+				item: { count: 1, id: "spectrum:jeopardant" }
 				type: "item"
 			}]
 			x: 40.0d
@@ -3900,7 +3900,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "32B30875476B5AFF"
-				item: { count: 1, id: "pastel:ring_of_denser_steps" }
+				item: { count: 1, id: "spectrum:ring_of_denser_steps" }
 				type: "item"
 			}]
 			x: 41.0d
@@ -3910,7 +3910,7 @@
 			dependencies: ["02BF6162E5CF3F09"]
 			id: "4103FC453FC2CCC0"
 			tasks: [{
-				advancement: "pastel:enter_dike_gate_preservation_ruin"
+				advancement: "spectrum:enter_dike_gate_preservation_ruin"
 				criterion: ""
 				id: "3748DE7A1137764C"
 				type: "advancement"
@@ -3922,7 +3922,7 @@
 			dependencies: ["24103CFEEA1D14CE"]
 			id: "687B1322DCFCBE98"
 			tasks: [{
-				advancement: "pastel:midgame/enter_liquid_crystal"
+				advancement: "spectrum:midgame/enter_liquid_crystal"
 				criterion: ""
 				id: "4723F8711793A1C9"
 				type: "advancement"
@@ -3937,7 +3937,7 @@
 			size: 3.0d
 			tasks: [{
 				id: "35FC1AA17FC5EFBF"
-				item: { count: 1, id: "pastel:enchanter" }
+				item: { count: 1, id: "spectrum:enchanter" }
 				type: "item"
 			}]
 			x: 45.5d
@@ -3948,7 +3948,7 @@
 			id: "5878E984A314D177"
 			tasks: [{
 				id: "4E8EC0B58D84C968"
-				item: { count: 1, id: "pastel:germinated_jade_vine_bulb" }
+				item: { count: 1, id: "spectrum:germinated_jade_vine_bulb" }
 				type: "item"
 			}]
 			x: 42.0d
@@ -3960,17 +3960,17 @@
 			tasks: [
 				{
 					icon: {
-						id: "pastel:germinated_jade_vine_bulb"
+						id: "spectrum:germinated_jade_vine_bulb"
 					}
 					id: "31EDD7C36DCAC7AF"
 					observe_type: 0
 					timer: 0L
-					to_observe: "pastel:jave_vine_bulb"
+					to_observe: "spectrum:jave_vine_bulb"
 					type: "observation"
 				}
 				{
 					id: "33AFFB4C49CD49E9"
-					item: { count: 1, id: "pastel:jade_vine_petals" }
+					item: { count: 1, id: "spectrum:jade_vine_petals" }
 					type: "item"
 				}
 			]
@@ -3983,7 +3983,7 @@
 			id: "5FA4EE37B3CC549D"
 			tasks: [{
 				id: "635B4A36110BB15A"
-				item: { count: 1, id: "pastel:moonstruck_nectar" }
+				item: { count: 1, id: "spectrum:moonstruck_nectar" }
 				type: "item"
 			}]
 			x: 42.0d
@@ -3994,7 +3994,7 @@
 			id: "34A5134B00D988B5"
 			tasks: [{
 				id: "016178F40C015397"
-				item: { count: 1, id: "pastel:gilded_book" }
+				item: { count: 1, id: "spectrum:gilded_book" }
 				type: "item"
 			}]
 			x: 47.5d
@@ -4006,7 +4006,7 @@
 			shape: "square"
 			tasks: [{
 				id: "56A8E942CFF3DBEE"
-				item: { count: 1, id: "pastel:bedrock_dust" }
+				item: { count: 1, id: "spectrum:bedrock_dust" }
 				type: "item"
 			}]
 			x: 48.0d
@@ -4021,13 +4021,13 @@
 			shape: "gear"
 			tasks: [
 				{
-					advancement: "pastel:midgame/open_deeper_down_portal"
+					advancement: "spectrum:midgame/open_deeper_down_portal"
 					criterion: ""
 					id: "7801B814870E6BD5"
 					type: "advancement"
 				}
 				{
-					advancement: "pastel:midgame/enter_dimension"
+					advancement: "spectrum:midgame/enter_dimension"
 					criterion: ""
 					id: "2D2D7F98B4281FDA"
 					optional_task: true
@@ -4043,7 +4043,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "23463818EC7A592A"
-				item: { count: 1, id: "pastel:bedrock_anvil" }
+				item: { count: 1, id: "spectrum:bedrock_anvil" }
 				type: "item"
 			}]
 			x: 48.5d
@@ -4055,7 +4055,7 @@
 			shape: "square"
 			tasks: [{
 				id: "6B6E6FF513883EA8"
-				item: { count: 1, id: "pastel:bismuth_flake" }
+				item: { count: 1, id: "spectrum:bismuth_flake" }
 				type: "item"
 			}]
 			x: 56.0d
@@ -4064,20 +4064,20 @@
 		{
 			dependencies: ["758BF8F1AA3DBAE6"]
 			icon: {
-				id: "pastel:resonance_shard"
+				id: "spectrum:resonance_shard"
 			}
 			id: "767B848C6344AA12"
 			shape: "square"
 			tasks: [
 				{
-					advancement: "pastel:lategame/strike_up_hummingstone_hymn"
+					advancement: "spectrum:lategame/strike_up_hummingstone_hymn"
 					criterion: ""
 					id: "767DAE8E89F4359D"
 					type: "advancement"
 				}
 				{
 					id: "62D043FEF1BBE553"
-					item: { count: 1, id: "pastel:resonance_shard" }
+					item: { count: 1, id: "spectrum:resonance_shard" }
 					type: "item"
 				}
 			]
@@ -4089,7 +4089,7 @@
 			id: "5EF6EA7CCBBC8A96"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:lategame/collect_moonstone"
+				advancement: "spectrum:lategame/collect_moonstone"
 				criterion: ""
 				id: "5438E98DF380B158"
 				type: "advancement"
@@ -4104,22 +4104,22 @@
 			tasks: [
 				{
 					id: "0B61E287335381CD"
-					item: { components: { "minecraft:enchantments": { levels: { "minecraft:projectile_protection": 5 } } }, count: 1, id: "pastel:bedrock_helmet" }
+					item: { components: { "minecraft:enchantments": { levels: { "minecraft:projectile_protection": 5 } } }, count: 1, id: "spectrum:bedrock_helmet" }
 					type: "item"
 				}
 				{
 					id: "3626D06DF3304CD8"
-					item: { components: { "minecraft:enchantments": { levels: { "minecraft:protection": 5 } } }, count: 1, id: "pastel:bedrock_chestplate" }
+					item: { components: { "minecraft:enchantments": { levels: { "minecraft:protection": 5 } } }, count: 1, id: "spectrum:bedrock_chestplate" }
 					type: "item"
 				}
 				{
 					id: "25D91488C626B582"
-					item: { components: { "minecraft:enchantments": { levels: { "minecraft:blast_protection": 5 } } }, count: 1, id: "pastel:bedrock_leggings" }
+					item: { components: { "minecraft:enchantments": { levels: { "minecraft:blast_protection": 5 } } }, count: 1, id: "spectrum:bedrock_leggings" }
 					type: "item"
 				}
 				{
 					id: "442829E5FC7C0B69"
-					item: { components: { "minecraft:enchantments": { levels: { "minecraft:fire_protection": 5 } } }, count: 1, id: "pastel:bedrock_boots" }
+					item: { components: { "minecraft:enchantments": { levels: { "minecraft:fire_protection": 5 } } }, count: 1, id: "spectrum:bedrock_boots" }
 					type: "item"
 				}
 			]
@@ -4132,7 +4132,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6E27CA7959D2DC61"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(pastel:bedrock_equipment)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(spectrum:bedrock_equipment)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 47.5d
@@ -4145,7 +4145,7 @@
 			tasks: [{
 				count: 2L
 				id: "00B05524C55EE852"
-				item: { count: 1, id: "pastel:myceylon" }
+				item: { count: 1, id: "spectrum:myceylon" }
 				type: "item"
 			}]
 			x: 56.0d
@@ -4157,10 +4157,10 @@
 			shape: "square"
 			tasks: [{
 				icon: {
-					id: "pastel:longing_chimera"
+					id: "spectrum:longing_chimera"
 				}
 				id: "749F8BE6BA08AC7A"
-				structure: "pastel:undergrowth_manor"
+				structure: "spectrum:undergrowth_manor"
 				type: "structure"
 			}]
 			x: 56.0d
@@ -4173,7 +4173,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "1DFDC6455DDE5BB9"
-				item: { count: 1, id: "pastel:nightdew_sprout" }
+				item: { count: 1, id: "spectrum:nightdew_sprout" }
 				type: "item"
 			}]
 			x: 60.0d
@@ -4189,7 +4189,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "78643061A5AA5D7C"
-				item: { count: 1, id: "pastel:whispy_circlet" }
+				item: { count: 1, id: "spectrum:whispy_circlet" }
 				type: "item"
 			}]
 			x: 40.5d
@@ -4202,7 +4202,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "0A65E6D71371C902"
-				item: { count: 1, id: "pastel:knotted_sword" }
+				item: { count: 1, id: "spectrum:knotted_sword" }
 				type: "item"
 			}]
 			x: 60.5d
@@ -4215,7 +4215,7 @@
 			tasks: [{
 				count: 6L
 				id: "539A56C3C03E16F9"
-				item: { components: { "pastel:is_preview_item": { } }, count: 1, id: "pastel:night_salts" }
+				item: { components: { "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:night_salts" }
 				type: "item"
 			}]
 			x: 60.5d
@@ -4231,7 +4231,7 @@
 			shape: "square"
 			tasks: [{
 				id: "7175DF013BE5892F"
-				item: { count: 1, id: "pastel:pedestal_moonstone" }
+				item: { count: 1, id: "spectrum:pedestal_moonstone" }
 				type: "item"
 			}]
 			x: 58.0d
@@ -4244,7 +4244,7 @@
 			shape: "square"
 			tasks: [{
 				id: "270A4AA48FBCDD7F"
-				item: { count: 1, id: "pastel:bismuth_crystal" }
+				item: { count: 1, id: "spectrum:bismuth_crystal" }
 				type: "item"
 			}]
 			x: 56.0d
@@ -4255,7 +4255,7 @@
 			id: "6258FF8ED82C98C6"
 			tasks: [{
 				id: "2E725F0E1DA4ACBA"
-				item: { components: { "minecraft:enchantments": { levels: { "pastel:resonance": 1 } } }, count: 1, id: "pastel:resonant_pickaxe" }
+				item: { components: { "minecraft:enchantments": { levels: { "spectrum:resonance": 1 } } }, count: 1, id: "spectrum:resonant_pickaxe" }
 				type: "item"
 			}]
 			x: 64.5d
@@ -4271,7 +4271,7 @@
 			shape: "gear"
 			tasks: [{
 				id: "48F14C0D0A05490D"
-				item: { count: 1, id: "pastel:crystallarieum" }
+				item: { count: 1, id: "spectrum:crystallarieum" }
 				type: "item"
 			}]
 			x: 58.0d
@@ -4281,18 +4281,18 @@
 			dependencies: ["056505A2F0A197CB"]
 			icon: {
 				components: {
-					"pastel:beverage": {
+					"spectrum:beverage": {
 						alcohol_percent: 15
 					}
 				}
-				id: "pastel:incandescent_amalgam"
+				id: "spectrum:incandescent_amalgam"
 			}
 			id: "316DB511541398F4"
 			shape: "square"
 			tasks: [
 				{
 					id: "10C123870D968E9D"
-					item: { components: { "pastel:beverage": { alcohol_percent: 15 } }, count: 1, id: "pastel:incandescent_amalgam" }
+					item: { components: { "spectrum:beverage": { alcohol_percent: 15 } }, count: 1, id: "spectrum:incandescent_amalgam" }
 					optional_task: true
 					type: "item"
 				}
@@ -4317,7 +4317,7 @@
 			tasks: [{
 				count: 2L
 				id: "5FD9EB28561083C9"
-				item: { count: 1, id: "pastel:dragonbone_chunk" }
+				item: { count: 1, id: "spectrum:dragonbone_chunk" }
 				type: "item"
 			}]
 			x: 66.0d
@@ -4329,7 +4329,7 @@
 			shape: "square"
 			tasks: [{
 				id: "7CBA33204CB922CD"
-				item: { components: { "minecraft:entity_data": { id: "pastel:kindling" }, "pastel:memory": { ticks_to_manifest: 8 } }, count: 1, id: "pastel:memory" }
+				item: { components: { "minecraft:entity_data": { id: "spectrum:kindling" }, "spectrum:memory": { ticks_to_manifest: 8 } }, count: 1, id: "spectrum:memory" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -4342,7 +4342,7 @@
 			shape: "square"
 			tasks: [{
 				id: "376E911A4654468B"
-				item: { count: 1, id: "pastel:raw_malachite" }
+				item: { count: 1, id: "spectrum:raw_malachite" }
 				type: "item"
 			}]
 			x: 64.5d
@@ -4353,7 +4353,7 @@
 			id: "3FB8F384D3E7D931"
 			tasks: [{
 				id: "1D92B802D1F03736"
-				item: { count: 1, id: "pastel:block_breaker" }
+				item: { count: 1, id: "spectrum:block_breaker" }
 				type: "item"
 			}]
 			x: 68.0d
@@ -4366,7 +4366,7 @@
 			tasks: [{
 				count: 2L
 				id: "3B309EA647911146"
-				item: { count: 1, id: "pastel:paltaeria_fragments" }
+				item: { count: 1, id: "spectrum:paltaeria_fragments" }
 				type: "item"
 			}]
 			x: 64.5d
@@ -4378,7 +4378,7 @@
 			shape: "square"
 			tasks: [{
 				id: "5C50DA9D55A49C76"
-				item: { count: 1, id: "pastel:paltaeria_gem" }
+				item: { count: 1, id: "spectrum:paltaeria_gem" }
 				type: "item"
 			}]
 			x: 66.0d
@@ -4390,7 +4390,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "34E8D6B89974F8F6"
-				item: { count: 1, id: "pastel:upgrade_yield" }
+				item: { count: 1, id: "spectrum:upgrade_yield" }
 				type: "item"
 			}]
 			x: 67.5d
@@ -4406,7 +4406,7 @@
 			tasks: [{
 				count: 3L
 				id: "3A0FF7433239C144"
-				item: { count: 1, id: "pastel:pure_malachite" }
+				item: { count: 1, id: "spectrum:pure_malachite" }
 				type: "item"
 			}]
 			x: 66.0d
@@ -4421,7 +4421,7 @@
 			tasks: [{
 				count: 4L
 				id: "0EB445986B854662"
-				item: { count: 1, id: "pastel:pure_azurite" }
+				item: { count: 1, id: "spectrum:pure_azurite" }
 				type: "item"
 			}]
 			x: 59.0d
@@ -4433,7 +4433,7 @@
 			shape: "gear"
 			tasks: [{
 				id: "6BBA032203BE2A53"
-				item: { count: 1, id: "pastel:omni_accelerator" }
+				item: { count: 1, id: "spectrum:omni_accelerator" }
 				type: "item"
 			}]
 			x: 69.0d
@@ -4445,7 +4445,7 @@
 			shape: "square"
 			tasks: [{
 				id: "58240F5F3B790DE1"
-				item: { count: 1, id: "pastel:downstone_fragments" }
+				item: { count: 1, id: "spectrum:downstone_fragments" }
 				type: "item"
 			}]
 			x: 56.0d
@@ -4454,19 +4454,19 @@
 		{
 			dependencies: ["056505A2F0A197CB"]
 			icon: {
-				id: "pastel:moonstone_core"
+				id: "spectrum:moonstone_core"
 			}
 			id: "00008EF7BB7DE6DF"
 			shape: "square"
 			tasks: [
 				{
 					id: "76BEE603B1AAD1E0"
-					item: { count: 1, id: "pastel:moonstone_core" }
+					item: { count: 1, id: "spectrum:moonstone_core" }
 					type: "item"
 				}
 				{
 					id: "71E505B06600ED81"
-					item: { count: 1, id: "pastel:mysterious_locket" }
+					item: { count: 1, id: "spectrum:mysterious_locket" }
 					type: "item"
 				}
 			]
@@ -4479,7 +4479,7 @@
 			shape: "square"
 			tasks: [{
 				id: "23937F56C733D925"
-				item: { components: { "pastel:socketed": { } }, count: 1, id: "pastel:mysterious_locket" }
+				item: { components: { "spectrum:socketed": { } }, count: 1, id: "spectrum:mysterious_locket" }
 				type: "item"
 			}]
 			x: 66.0d
@@ -4490,7 +4490,7 @@
 			id: "28044EAC12575B59"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:remember_kindling"
+				advancement: "spectrum:remember_kindling"
 				criterion: ""
 				id: "3BA3EAE63C33F26F"
 				type: "advancement"
@@ -4504,7 +4504,7 @@
 			shape: "square"
 			tasks: [{
 				id: "0739D700B608D827"
-				item: { count: 1, id: "pastel:resplendent_feather" }
+				item: { count: 1, id: "spectrum:resplendent_feather" }
 				type: "item"
 			}]
 			x: 71.0d
@@ -4516,7 +4516,7 @@
 			shape: "square"
 			tasks: [{
 				id: "6E6A4EBB332A52CA"
-				item: { count: 1, id: "pastel:raw_bloodstone" }
+				item: { count: 1, id: "spectrum:raw_bloodstone" }
 				type: "item"
 			}]
 			x: 72.5d
@@ -4528,7 +4528,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "6B7613DA1FCB9312"
-				item: { components: { "minecraft:attribute_modifiers": { modifiers: [ { amount: 13.0d, id: "minecraft:base_attack_damage", operation: "add_value", slot: "mainhand", type: "minecraft:generic.attack_damage" }, { amount: -3.0d, id: "minecraft:base_attack_speed", operation: "add_value", slot: "mainhand", type: "minecraft:generic.attack_speed" } ] } }, count: 1, id: "pastel:draconic_twinsword" }
+				item: { components: { "minecraft:attribute_modifiers": { modifiers: [ { amount: 13.0d, id: "minecraft:base_attack_damage", operation: "add_value", slot: "mainhand", type: "minecraft:generic.attack_damage" }, { amount: -3.0d, id: "minecraft:base_attack_speed", operation: "add_value", slot: "mainhand", type: "minecraft:generic.attack_speed" } ] } }, count: 1, id: "spectrum:draconic_twinsword" }
 				type: "item"
 			}]
 			x: 74.0d
@@ -4541,7 +4541,7 @@
 			tasks: [{
 				count: 4L
 				id: "6B045DD8E1D76DF7"
-				item: { count: 1, id: "pastel:pure_bloodstone" }
+				item: { count: 1, id: "spectrum:pure_bloodstone" }
 				type: "item"
 			}]
 			x: 74.0d
@@ -4558,7 +4558,7 @@
 			size: 2.0d
 			tasks: [{
 				id: "15C73260D55942C8"
-				item: { count: 1, id: "pastel:aether_vestiges" }
+				item: { count: 1, id: "spectrum:aether_vestiges" }
 				type: "item"
 			}]
 			x: 69.0d
@@ -4570,7 +4570,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "2AFA4C392864FE9F"
-				item: { count: 1, id: "pastel:upgrade_yield2" }
+				item: { count: 1, id: "spectrum:upgrade_yield2" }
 				type: "item"
 			}]
 			x: 68.0d
@@ -4582,7 +4582,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "3261AC271A9F2064"
-				item: { count: 1, id: "pastel:upgrade_efficiency2" }
+				item: { count: 1, id: "spectrum:upgrade_efficiency2" }
 				type: "item"
 			}]
 			x: 68.0d
@@ -4594,7 +4594,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "31B2EED9E1267207"
-				item: { count: 1, id: "pastel:upgrade_speed3" }
+				item: { count: 1, id: "spectrum:upgrade_speed3" }
 				type: "item"
 			}]
 			x: 67.5d
@@ -4604,39 +4604,39 @@
 			dependencies: ["056505A2F0A197CB"]
 			hide_dependent_lines: true
 			icon: {
-				id: "pastel:white_sapling"
+				id: "spectrum:white_sapling"
 			}
 			id: "44EBFBDC7AACC7C4"
 			shape: "square"
 			tasks: [
 				{
 					id: "0BCD12CA54481BD7"
-					item: { count: 1, id: "pastel:white_sapling" }
+					item: { count: 1, id: "spectrum:white_sapling" }
 					type: "item"
 				}
 				{
 					id: "3EF56ACDA0194C67"
-					item: { count: 1, id: "pastel:light_gray_sapling" }
+					item: { count: 1, id: "spectrum:light_gray_sapling" }
 					type: "item"
 				}
 				{
 					id: "0E68F6EA4D3F0A1D"
-					item: { count: 1, id: "pastel:gray_sapling" }
+					item: { count: 1, id: "spectrum:gray_sapling" }
 					type: "item"
 				}
 				{
 					id: "161464C8D5A1BFAE"
-					item: { count: 1, id: "pastel:light_gray_pigment" }
+					item: { count: 1, id: "spectrum:light_gray_pigment" }
 					type: "item"
 				}
 				{
 					id: "2B461882433AD1C9"
-					item: { count: 1, id: "pastel:gray_pigment" }
+					item: { count: 1, id: "spectrum:gray_pigment" }
 					type: "item"
 				}
 				{
 					id: "276AF2C4BAD0B156"
-					item: { count: 1, id: "pastel:white_pigment" }
+					item: { count: 1, id: "spectrum:white_pigment" }
 					type: "item"
 				}
 			]
@@ -4651,7 +4651,7 @@
 			id: "650EB42A35DC8763"
 			tasks: [{
 				id: "7F6A97FA4453D264"
-				item: { count: 1, id: "pastel:exchanging_staff" }
+				item: { count: 1, id: "spectrum:exchanging_staff" }
 				type: "item"
 			}]
 			x: 66.0d
@@ -4666,7 +4666,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "5B3B2CCF7CF74A68"
-				item: { count: 1, id: "pastel:puff_circlet" }
+				item: { count: 1, id: "spectrum:puff_circlet" }
 				type: "item"
 			}]
 			x: 67.5d
@@ -4678,7 +4678,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "708050C1602EA77E"
-				item: { count: 1, id: "pastel:azuresque_dike_core" }
+				item: { count: 1, id: "spectrum:azuresque_dike_core" }
 				type: "item"
 			}]
 			x: 71.0d
@@ -4690,7 +4690,7 @@
 			id: "1F491D4829884C61"
 			tasks: [{
 				id: "34EC981AA3A1ACD7"
-				item: { components: { "minecraft:enchantments": { levels: { "pastel:resonance": 1 } } }, count: 1, id: "pastel:resonant_pickaxe" }
+				item: { components: { "minecraft:enchantments": { levels: { "spectrum:resonance": 1 } } }, count: 1, id: "spectrum:resonant_pickaxe" }
 				type: "item"
 			}]
 			x: 57.5d
@@ -4702,7 +4702,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "1CF5B99493C73D11"
-				item: { count: 1, id: "pastel:nectardew_burgeon" }
+				item: { count: 1, id: "spectrum:nectardew_burgeon" }
 				type: "item"
 			}]
 			x: 61.0d
@@ -4714,7 +4714,7 @@
 			shape: "gear"
 			tasks: [{
 				id: "7BCF32203810EABA"
-				item: { count: 1, id: "pastel:laurels_of_serenity" }
+				item: { count: 1, id: "spectrum:laurels_of_serenity" }
 				type: "item"
 			}]
 			x: 62.5d
@@ -4728,7 +4728,7 @@
 			id: "4014BC4C9F378011"
 			shape: "square"
 			tasks: [{
-				advancement: "pastel:lategame/enter_strange_preservation_ruin"
+				advancement: "spectrum:lategame/enter_strange_preservation_ruin"
 				criterion: ""
 				id: "168C7ED9C5B9C7D8"
 				type: "advancement"
@@ -4741,7 +4741,7 @@
 			id: "36C470F59F1F003C"
 			tasks: [{
 				id: "57BD884AD4C5E622"
-				item: { count: 1, id: "pastel:poisoners_handbook" }
+				item: { count: 1, id: "spectrum:poisoners_handbook" }
 				type: "item"
 			}]
 			x: 70.5d
@@ -4752,7 +4752,7 @@
 			id: "1AD3FF230C4CA5F9"
 			tasks: [{
 				id: "3B62AC85E49306A6"
-				item: { count: 1, id: "pastel:aether_graced_nectar_gloves" }
+				item: { count: 1, id: "spectrum:aether_graced_nectar_gloves" }
 				type: "item"
 			}]
 			x: 72.0d
@@ -4767,7 +4767,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "5CF6E43B626965EF"
-				item: { count: 1, id: "pastel:nectar_lance" }
+				item: { count: 1, id: "spectrum:nectar_lance" }
 				type: "item"
 			}]
 			x: 71.0d
@@ -4780,7 +4780,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "04DE1BFE81AAC28A"
-				item: { count: 1, id: "pastel:evernectar" }
+				item: { count: 1, id: "spectrum:evernectar" }
 				type: "item"
 			}]
 			x: 61.5d
@@ -4792,7 +4792,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "1F7B6CE4851E17D0"
-				item: { count: 1, id: "pastel:soothing_bouquet" }
+				item: { count: 1, id: "spectrum:soothing_bouquet" }
 				type: "item"
 			}]
 			x: 61.5d
@@ -4805,7 +4805,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "467BEFBCC165747A"
-				item: { count: 1, id: "pastel:frostbite_crystal" }
+				item: { count: 1, id: "spectrum:frostbite_crystal" }
 				type: "item"
 			}]
 			x: 42.0d
@@ -4818,7 +4818,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "0C951B497FFFA52E"
-				item: { count: 1, id: "pastel:blazing_crystal" }
+				item: { count: 1, id: "spectrum:blazing_crystal" }
 				type: "item"
 			}]
 			x: 39.0d
@@ -4831,7 +4831,7 @@
 			shape: "square"
 			tasks: [{
 				id: "0C3D576B95935389"
-				item: { count: 1, id: "pastel:pyrite_chunk" }
+				item: { count: 1, id: "spectrum:pyrite_chunk" }
 				type: "item"
 			}]
 			x: 56.0d
@@ -4843,7 +4843,7 @@
 			id: "50EC01B287F4170C"
 			tasks: [{
 				id: "24CEF65F8F180E79"
-				item: { count: 1, id: "pastel:pure_quartz" }
+				item: { count: 1, id: "spectrum:pure_quartz" }
 				type: "item"
 			}]
 			x: 58.0d
@@ -4859,7 +4859,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "0C4DDE409D9EDD48"
-				item: { count: 1, id: "pastel:nightfalls_blade" }
+				item: { count: 1, id: "spectrum:nightfalls_blade" }
 				type: "item"
 			}]
 			x: 58.0d
@@ -4874,7 +4874,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "47705348AB0BB4B0"
-				item: { count: 1, id: "pastel:dreamflayer" }
+				item: { count: 1, id: "spectrum:dreamflayer" }
 				type: "item"
 			}]
 			x: 54.5d
@@ -4885,7 +4885,7 @@
 			id: "191E43963284540C"
 			tasks: [{
 				id: "2C85CFE549734459"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:fortune": 4 } } }, count: 1, id: "pastel:malachite_workstaff" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:fortune": 4 } } }, count: 1, id: "spectrum:malachite_workstaff" }
 				type: "item"
 			}]
 			x: 69.0d
@@ -4896,7 +4896,7 @@
 			id: "3D188C648F50FF7D"
 			tasks: [{
 				id: "73EE6ABA57A6CEB0"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:sweeping_edge": 4 } } }, count: 1, id: "pastel:malachite_ultra_greatsword" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:sweeping_edge": 4 } } }, count: 1, id: "spectrum:malachite_ultra_greatsword" }
 				type: "item"
 			}]
 			x: 68.0d
@@ -4907,7 +4907,7 @@
 			id: "1D2A38BF3DA1F6BD"
 			tasks: [{
 				id: "5094348331A8032C"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:piercing": 5 } } }, count: 1, id: "pastel:malachite_crossbow" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:piercing": 5 } } }, count: 1, id: "spectrum:malachite_crossbow" }
 				type: "item"
 			}]
 			x: 68.0d
@@ -4918,7 +4918,7 @@
 			id: "1160D00F9553C276"
 			tasks: [{
 				id: "5DA601432578C49E"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:impaling": 6 } } }, count: 1, id: "pastel:malachite_bident" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:impaling": 6 } } }, count: 1, id: "spectrum:malachite_bident" }
 				type: "item"
 			}]
 			x: 68.0d
@@ -4929,7 +4929,7 @@
 			id: "6DAD83F70561F7E5"
 			tasks: [{
 				id: "1A022C7CFD54F228"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:impaling": 6 } } }, count: 1, id: "pastel:ferocious_glass_crest_bident" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:impaling": 6 } } }, count: 1, id: "spectrum:ferocious_glass_crest_bident" }
 				type: "item"
 			}]
 			x: 69.0d
@@ -4940,7 +4940,7 @@
 			id: "12AC008BBADAE6BD"
 			tasks: [{
 				id: "22DFF178638E8EB7"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:piercing": 5 } } }, count: 1, id: "pastel:glass_crest_crossbow" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:piercing": 5 } } }, count: 1, id: "spectrum:glass_crest_crossbow" }
 				type: "item"
 			}]
 			x: 69.0d
@@ -4951,7 +4951,7 @@
 			id: "190932F122A64FB3"
 			tasks: [{
 				id: "2002B340A78DBAF1"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:sweeping_edge": 4 } } }, count: 1, id: "pastel:glass_crest_ultra_greatsword" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:sweeping_edge": 4 } } }, count: 1, id: "spectrum:glass_crest_ultra_greatsword" }
 				type: "item"
 			}]
 			x: 69.0d
@@ -4962,7 +4962,7 @@
 			id: "139C74DF994FAF92"
 			tasks: [{
 				id: "1C3155E7D8DA4176"
-				item: { components: { "minecraft:enchantments": { levels: { "minecraft:fortune": 4 } } }, count: 1, id: "pastel:glass_crest_workstaff" }
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:fortune": 4 } } }, count: 1, id: "spectrum:glass_crest_workstaff" }
 				type: "item"
 			}]
 			x: 68.0d
@@ -4980,7 +4980,7 @@
 			id: "15F5C2CE46140306"
 			tasks: [{
 				id: "077511419FBB24EE"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:resonance": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:resonance": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 45.5d
@@ -4998,7 +4998,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "16284ABBB4B2FBB5"
-				item: { count: 1, id: "pastel:ring_of_pursuit" }
+				item: { count: 1, id: "spectrum:ring_of_pursuit" }
 				type: "item"
 			}]
 			x: 39.5d
@@ -5013,7 +5013,7 @@
 			id: "1E39F9ECD801D32B"
 			tasks: [{
 				id: "34DFFAD0DDF6891F"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:foundry": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:foundry": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 46.5d
@@ -5029,7 +5029,7 @@
 			id: "6898DFA57A1087FF"
 			tasks: [{
 				id: "46BF0545A77742D5"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:razing": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:razing": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 44.5d
@@ -5045,7 +5045,7 @@
 			id: "07CDE47969529AA5"
 			tasks: [{
 				id: "58A747E363F1AB45"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:pest_control": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:pest_control": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 44.5d
@@ -5060,7 +5060,7 @@
 			id: "592A0AC8A65F30A9"
 			tasks: [{
 				id: "034CEF65DC184164"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:inertia": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:inertia": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 45.5d
@@ -5076,7 +5076,7 @@
 			id: "7759AE955E365142"
 			tasks: [{
 				id: "71A7059E2B91B626"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:indestructible": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:indestructible": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 46.5d
@@ -5087,7 +5087,7 @@
 			id: "1818EA35A681E94E"
 			tasks: [{
 				id: "5A9BEC9CD21BC51A"
-				item: { count: 1, id: "pastel:pure_netherite_scrap" }
+				item: { count: 1, id: "spectrum:pure_netherite_scrap" }
 				type: "item"
 			}]
 			x: 57.0d
@@ -5098,7 +5098,7 @@
 			id: "129EB25851367B82"
 			tasks: [{
 				id: "43E1668559B2A3A7"
-				item: { count: 1, id: "pastel:pure_copper" }
+				item: { count: 1, id: "spectrum:pure_copper" }
 				type: "item"
 			}]
 			x: 57.0d
@@ -5114,7 +5114,7 @@
 			id: "469020955561F00F"
 			tasks: [{
 				id: "68B19FE7E56E8050"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:inexorable": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:inexorable": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 46.5d
@@ -5129,7 +5129,7 @@
 			id: "0936E2D2491B402E"
 			tasks: [{
 				id: "769B58E095FBF984"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:exuberance": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:exuberance": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 45.5d
@@ -5144,7 +5144,7 @@
 			id: "2D6506164AB07802"
 			tasks: [{
 				id: "07B640EED2C7CCB6"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:treasure_hunter": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:treasure_hunter": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 44.5d
@@ -5160,7 +5160,7 @@
 			id: "01D6F2B5A87692B1"
 			tasks: [{
 				id: "612BC0D95CE6B670"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:big_catch": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:big_catch": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 47.5d
@@ -5176,7 +5176,7 @@
 			id: "7554C04C66D8B369"
 			tasks: [{
 				id: "06DBA0EDABCAFA96"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:serendipity_reel": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:serendipity_reel": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 48.0d
@@ -5191,7 +5191,7 @@
 			id: "06FC74CC41560D63"
 			tasks: [{
 				id: "21045D7D309F211F"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:tight_grip": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:tight_grip": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 43.5d
@@ -5206,7 +5206,7 @@
 			id: "5343472F7C0F03D7"
 			tasks: [{
 				id: "23BFDD2FF21EF5CD"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:clovers_favor": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:clovers_favor": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 43.0d
@@ -5218,7 +5218,7 @@
 			id: "79BFB9595D21FE28"
 			tasks: [{
 				id: "5881072DC0EAA2C1"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:first_strike": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:first_strike": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 43.5d
@@ -5230,7 +5230,7 @@
 			id: "0B326DB3C881BD24"
 			tasks: [{
 				id: "5E3843AD891983DA"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:improved_critical": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:improved_critical": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 47.5d
@@ -5246,7 +5246,7 @@
 			id: "3122E1132339926A"
 			tasks: [{
 				id: "341D792466A7906F"
-				item: { components: { "minecraft:stored_enchantments": { levels: { "pastel:disarming": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				item: { components: { "minecraft:stored_enchantments": { levels: { "spectrum:disarming": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
 				type: "item"
 			}]
 			x: 45.5d
@@ -5258,7 +5258,7 @@
 			tasks: [
 				{
 					id: "4491C2CF16799DD1"
-					item: { components: { "minecraft:enchantments": { levels: { "minecraft:power": 5 } } }, count: 1, id: "pastel:seven_league_boots" }
+					item: { components: { "minecraft:enchantments": { levels: { "minecraft:power": 5 } } }, count: 1, id: "spectrum:seven_league_boots" }
 					match_components: "fuzzy"
 					type: "item"
 				}
@@ -5281,7 +5281,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "40B6A38A92743C59"
-				item: { count: 1, id: "pastel:ring_of_aerial_grace" }
+				item: { count: 1, id: "spectrum:ring_of_aerial_grace" }
 				type: "item"
 			}]
 			x: 68.0d
@@ -5292,7 +5292,7 @@
 			id: "7499F2EC77590805"
 			tasks: [{
 				id: "12133E1F49459432"
-				item: { count: 1, id: "pastel:blood_orchid_petal" }
+				item: { count: 1, id: "spectrum:blood_orchid_petal" }
 				type: "item"
 			}]
 			x: 49.5d
@@ -5309,7 +5309,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "6C88E6DC73696E07"
-				item: { count: 1, id: "pastel:circlet_of_arrogance" }
+				item: { count: 1, id: "spectrum:circlet_of_arrogance" }
 				type: "item"
 			}]
 			x: 49.5d
@@ -5326,7 +5326,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "58708CEDF27777E5"
-				item: { count: 1, id: "pastel:totem_pendant" }
+				item: { count: 1, id: "spectrum:totem_pendant" }
 				type: "item"
 			}]
 			x: 39.0d
@@ -5339,7 +5339,7 @@
 				id: "589294453A770CA7"
 				observe_type: 0
 				timer: 0L
-				to_observe: "pastel:sag_leaf"
+				to_observe: "spectrum:sag_leaf"
 				type: "observation"
 			}]
 			x: 56.0d
@@ -5355,7 +5355,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "73043671DBF156ED"
-				item: { count: 1, id: "pastel:resonant_lily" }
+				item: { count: 1, id: "spectrum:resonant_lily" }
 				type: "item"
 			}]
 			x: 56.0d
@@ -5371,7 +5371,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "14EBB97D185C655B"
-				item: { count: 1, id: "pastel:neat_ring" }
+				item: { count: 1, id: "spectrum:neat_ring" }
 				type: "item"
 			}]
 			x: 40.5d
@@ -5387,7 +5387,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "53CFFC03238F6F36"
-				item: { count: 1, id: "pastel:lesser_potion_pendant" }
+				item: { count: 1, id: "spectrum:lesser_potion_pendant" }
 				type: "item"
 			}]
 			x: 39.5d
@@ -5403,7 +5403,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "2F7C023D1A077716"
-				item: { count: 1, id: "pastel:greater_potion_pendant" }
+				item: { count: 1, id: "spectrum:greater_potion_pendant" }
 				type: "item"
 			}]
 			x: 41.5d
@@ -5414,7 +5414,7 @@
 			id: "7C1FCF3A76C6E4DA"
 			tasks: [{
 				id: "3BDE84887F02D266"
-				item: { count: 1, id: "pastel:prickly_bayleaf" }
+				item: { count: 1, id: "spectrum:prickly_bayleaf" }
 				type: "item"
 			}]
 			x: 56.0d
@@ -5425,7 +5425,7 @@
 			id: "6D30F1913CBFB525"
 			tasks: [{
 				id: "26C1609F6D1407C6"
-				item: { count: 1, id: "pastel:doombloom_seed" }
+				item: { count: 1, id: "spectrum:doombloom_seed" }
 				type: "item"
 			}]
 			x: 56.0d
@@ -5435,7 +5435,7 @@
 			dependencies: ["758BF8F1AA3DBAE6"]
 			id: "27B5155AD94E6900"
 			tasks: [{
-				advancement: "pastel:lategame/find_forgotten_city"
+				advancement: "spectrum:lategame/find_forgotten_city"
 				criterion: ""
 				id: "1AC7E6003D29CB60"
 				type: "advancement"

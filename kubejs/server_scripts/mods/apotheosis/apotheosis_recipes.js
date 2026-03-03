@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:other_tome",
             "count": 6
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:fishing_tome",
             "count": 2
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:pickaxe_tome",
             "count": 3
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:bow_tome",
             "count": 3
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:weapon_tome",
             "count": 2
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:helmet_tome",
             "count": 5
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:chestplate_tome",
             "count": 8
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -207,7 +207,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:leggings_tome",
             "count": 7
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
             "id": "apothic_enchanting:boots_tome",
             "count": 4
         },
-        advancement: "pastel:craft_cmy_pedestal",
+        advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
         removeRecipe: true
     })
@@ -251,14 +251,14 @@ ServerEvents.recipes(event => {
         key: {
             q: 'kubejs:blaze_core',
             w: 'apotheosis:epic_material',
-            e: 'pastel:enchanter',
+            e: 'spectrum:enchanter',
             r: 'minecraft:smooth_stone',
         },
         result: {
             "id": "apotheosis:simple_reforging_table",
             "count": 1
         },
-        advancement: "pastel:midgame/enter_liquid_crystal",
+        advancement: "spectrum:midgame/enter_liquid_crystal",
         yield_upgrades: false,
         removeRecipe: true
     })
@@ -279,13 +279,13 @@ ServerEvents.recipes(event => {
             q: 'kubejs:electronic_ender_core',
             w: 'apotheosis:mythic_material',
             e: 'apotheosis:simple_reforging_table',
-            r: 'pastel:bismuth_crystal',
+            r: 'spectrum:bismuth_crystal',
         },
         result: {
             "id": "apotheosis:reforging_table",
             "count": 1
         },
-        advancement: "pastel:lategame/collect_bismuth_crystal",
+        advancement: "spectrum:lategame/collect_bismuth_crystal",
         yield_upgrades: false,
         removeRecipe: true
     })
@@ -303,7 +303,7 @@ ServerEvents.recipes(event => {
             'rrr'
         ],
         key: {
-            q: 'pastel:aether_vestiges',
+            q: 'spectrum:aether_vestiges',
             w: 'apotheosis:mythic_material',
             e: 'malum:umbral_spirit',
             r: 'malum:block_of_malignant_pewter',
@@ -312,7 +312,7 @@ ServerEvents.recipes(event => {
             "id": "apotheosis:augmenting_table",
             "count": 1
         },
-        advancement: "pastel:lategame/collect_aether_vestiges",
+        advancement: "spectrum:lategame/collect_aether_vestiges",
         yield_upgrades: false,
         removeRecipe: true
     })

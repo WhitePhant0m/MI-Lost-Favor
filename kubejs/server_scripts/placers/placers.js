@@ -19,7 +19,7 @@ const ANGLE_TO_FACING = {
 }
 
 const PARTICLES = {
-    placed:"pastel:shooting_star",
+    placed:"spectrum:shooting_star",
     dispersed:"minecraft:instant_effect",
     error:"minecraft:gust"
 }

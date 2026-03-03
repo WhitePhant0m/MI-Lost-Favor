@@ -16,6 +16,6 @@ ServerEvents.recipes(event => {
             "id": "javd:portal_block",
             "count": 1
         },
-        advancement: "pastel:create_onyx_shard"
+        advancement: "spectrum:create_onyx_shard"
     });
 })

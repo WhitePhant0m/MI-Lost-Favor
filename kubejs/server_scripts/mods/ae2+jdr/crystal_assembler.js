@@ -66,9 +66,9 @@ ServerEvents.recipes(event => {
     ae_crystal_assembler_recipe(
         [
             [{ "item": "extendedae:entro_shard" }, 8],
-            [{ "item": "pastel:doombloom_seed" }, 1],
+            [{ "item": "spectrum:doombloom_seed" }, 1],
         ],
-        ["extendedae:entro_seed", 1], ["pastel:liquid_crystal", 500]
+        ["extendedae:entro_seed", 1], ["spectrum:liquid_crystal", 500]
     )
 
     ae_crystal_assembler_recipe(
@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
 
     ae_crystal_assembler_recipe(
         [
-            [{ "item":"pastel:moonstone_powder"}, 4],
+            [{ "item":"spectrum:moonstone_powder"}, 4],
             [{ "item":"ae2:quartz_glass"}, 1],
             [{ "item":"extendedae:entro_ingot"}, 4],
             [{ "item":"modern_industrialization:stainless_steel_ingot"}, 4],
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
             [{ "item":"extendedae:entro_dust"}, 4],
             [{ "item":"ae2:ender_dust"}, 4],
         ],
-        ["extendedae:entro_ingot", 4], ["pastel:liquid_crystal", 2000]
+        ["extendedae:entro_ingot", 4], ["spectrum:liquid_crystal", 2000]
     );
 
     ae_crystal_assembler_recipe(
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
             [{ "item":"extendedae:concurrent_processor"}, 4],
             [{ "item":"modern_industrialization:stainless_steel_rod_magnetic"}, 4],
             [{ "item":"extendedae:machine_frame"}, 1],
-            [{ "item":"pastel:storm_stone"}, 8],
+            [{ "item":"spectrum:storm_stone"}, 8],
         ],
         ["extendedae:crystal_fixer", 1]
     );

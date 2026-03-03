@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     customShrineRecipe(event, {
         time: 24000,
         experience: 16.0,
-        fluid: "pastel:liquid_crystal",
+        fluid: "spectrum:liquid_crystal",
         ingredients: [
             { "item": "bosses_of_mass_destruction:blazing_eye", count: 1 },
             { "item": "minecraft:bundle", count: 1 },
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
             "id": "gag:time_sand_pouch",
             "count": 1
         },
-        advancement: "pastel:midgame/enter_liquid_crystal"
+        advancement: "spectrum:midgame/enter_liquid_crystal"
     })
     event.remove({ output: 'gag:time_sand_pouch' })
 

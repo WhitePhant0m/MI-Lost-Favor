@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.modern_industrialization.enigma_machine(42, 100)
         .itemIn('kubejs:blueprint_pack', 0)
-        .itemIn('pastel:guidebook', 0)
+        .itemIn('spectrum:guidebook', 0)
         .itemIn('kubejs:disk_from_space', 0)
         .itemOut("kubejs:mysterious_blueprint")
 

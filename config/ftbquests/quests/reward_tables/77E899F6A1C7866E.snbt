@@ -8,7 +8,7 @@
 			id: "428A815594B43637"
 			item: {
 				count: 1
-				id: "pastel:citrine_shard"
+				id: "spectrum:citrine_shard"
 			}
 		}
 		{
@@ -24,7 +24,7 @@
 			id: "77EF191D68B1E195"
 			item: {
 				count: 1
-				id: "pastel:topaz_shard"
+				id: "spectrum:topaz_shard"
 			}
 		}
 	]

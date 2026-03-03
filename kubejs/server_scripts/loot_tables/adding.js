@@ -5,7 +5,7 @@ LootJS.modifiers(event => {
             /.*:chests\/village\/.*/,
             /.*:village\/.*/,
             /spectrum:chests\/.*/,
-            /pastel:chests\/.*/,
+            /spectrum:chests\/.*/,
             /dungeons_arise:chests\/.*/,
             /dungeons_arise_seven_seas:chests\/.*/,
             'minecraft:chests/shipwreck_supply',
@@ -152,11 +152,11 @@ LootJS.modifiers(event => {
         })
     });
 
-    event.addTableModifier("pastel:chests/ruined_pedestal_stone").addLoot("kubejs:old_tablet")
-    event.addTableModifier("pastel:chests/ruined_pedestal_deepslate").addLoot("kubejs:old_tablet")
-    event.addTableModifier("pastel:chests/ancient_ruins_main").addLoot("kubejs:old_diary").setCount([1, 1])
-    event.addTableModifier("pastel:chests/city_below/moonstone_temple_roof_ridge").addLoot("kubejs:holy_book_of_color").setCount([1, 1])
-    event.addTableModifier("pastel:chests/excavation_site/hidden").addLoot("kubejs:old_notes").setCount([1, 1])
+    event.addTableModifier("spectrum:chests/ruined_pedestal_stone").addLoot("kubejs:old_tablet")
+    event.addTableModifier("spectrum:chests/ruined_pedestal_deepslate").addLoot("kubejs:old_tablet")
+    event.addTableModifier("spectrum:chests/ancient_ruins_main").addLoot("kubejs:old_diary").setCount([1, 1])
+    event.addTableModifier("spectrum:chests/city_below/moonstone_temple_roof_ridge").addLoot("kubejs:holy_book_of_color").setCount([1, 1])
+    event.addTableModifier("spectrum:chests/excavation_site/hidden").addLoot("kubejs:old_notes").setCount([1, 1])
 
     const blaze_core_bosses = [
         "companions:sacred_pontiff",

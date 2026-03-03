@@ -4,7 +4,7 @@
     "input_fluid": {
         "amount": 2000,
         "ingredient": {
-            "fluid": "pastel:dragonrot"
+            "fluid": "spectrum:dragonrot"
         }
     },
     "input_items": [

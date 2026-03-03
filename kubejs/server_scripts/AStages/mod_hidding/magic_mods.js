@@ -6,7 +6,7 @@
 //     "ars_elemental",
 //     "reliquified_ars_nouveau",
 //     "occultism",
-//     "pastel",
+//     "spectrum",
 //     "enchanted",
 //     "toxony",
 //     "theurgy",

@@ -1302,13 +1302,13 @@
 		{
 			dependencies: ["07E78D29C898CE55"]
 			icon: {
-				id: "pastel:sheep_head"
+				id: "spectrum:sheep_head"
 			}
 			id: "0EA1539F81C66D74"
 			shape: "octagon"
 			tasks: [{
 				icon: {
-					id: "pastel:sheep_head"
+					id: "spectrum:sheep_head"
 				}
 				id: "21696546970F8CA4"
 				observe_type: 5
@@ -2163,13 +2163,13 @@
 		{
 			dependencies: ["55B031B4D7E5DEE3"]
 			icon: {
-				id: "pastel:chicken_head"
+				id: "spectrum:chicken_head"
 			}
 			id: "06BE29E29EEF3EA0"
 			shape: "octagon"
 			tasks: [{
 				icon: {
-					id: "pastel:chicken_head"
+					id: "spectrum:chicken_head"
 				}
 				id: "6148EAAB6FECF6E5"
 				observe_type: 0
@@ -2186,7 +2186,7 @@
 			shape: "octagon"
 			tasks: [{
 				icon: {
-					id: "pastel:cow_head"
+					id: "spectrum:cow_head"
 				}
 				id: "4C1F13C254C005FE"
 				observe_type: 0
@@ -2203,7 +2203,7 @@
 			shape: "octagon"
 			tasks: [{
 				icon: {
-					id: "pastel:pig_head"
+					id: "spectrum:pig_head"
 				}
 				id: "1EF921A1FACA14F5"
 				observe_type: 0
@@ -2613,7 +2613,10 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4A1990442A5389BF"]
+			dependencies: [
+				"4A1990442A5389BF"
+				"0A02202153409596"
+			]
 			id: "6ACF4A657414E3D6"
 			shape: "gear"
 			tasks: [{
@@ -2621,8 +2624,8 @@
 				item: { count: 1, id: "apotheosis:gem_case" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: -3.0d
+			x: 28.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["703F575B0690DE26"]

@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
         [
             [{ "tag": "c:plates/blastproof_alloy" }, 4],
             [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 8],
-            [{ "item": "pastel:bedrock_dust" }, 16],
+            [{ "item": "spectrum:bedrock_dust" }, 16],
             [{ "item": "modern_industrialization:chemical_reactor" }, 1]
         ],
         { "item": "advanced_ae:reaction_chamber" },
@@ -242,9 +242,9 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
-            [{ "item": "pastel:pure_malachite" }, 4],
+            [{ "item": "spectrum:pure_malachite" }, 4],
             [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 8],
-            [{ "item": "pastel:moonstone_shard" }, 8],
+            [{ "item": "spectrum:moonstone_shard" }, 8],
             [{ "item": "modern_industrialization:assembler" }, 1]
         ],
         { "item": "extendedae:crystal_assembler" },
@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
 
     blueprint_recipe(
         [
-            [{ "item": "pastel:pure_malachite" }, 4],
+            [{ "item": "spectrum:pure_malachite" }, 4],
             [{ "item": "modern_industrialization:stainless_steel_large_plate" }, 8],
             [{ "item": "modern_industrialization:invar_rotary_blade" }, 4],
             [{ "item": "modern_industrialization:electric_cutting_machine" }, 1]

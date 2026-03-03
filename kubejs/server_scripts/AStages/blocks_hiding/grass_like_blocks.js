@@ -11,7 +11,7 @@
 
 // const grass_like_blocks = [
 //     { id: "sourceberry_bush", origin: "ars_nouveau:sourceberry_bush", replace: "rocks:rock", max_age: 3 },
-//     // { id: "clover", origin: "pastel:clover", replace: "minecraft:short_grass" },
+//     // { id: "clover", origin: "spectrum:clover", replace: "minecraft:short_grass" },
 //     // { id: "lavender_plant", origin: "paganbless:lavender_plant", replace: "minecraft:short_grass", max_age: 5 },
 //     // { id: "hags_taper_plant", origin: "paganbless:hags_taper_plant", replace: "minecraft:short_grass", max_age: 5 },
 //     // { id: "mugwort_plant", origin: "paganbless:mugwort_plant", replace: "minecraft:short_grass", max_age: 5 },

@@ -1592,10 +1592,18 @@
 		"&#FEECD6Catch&r the right phase of the moon and create your first &#4040a1onyx&r!"
 		""
 		"You can create a &ostack&r of &#4040a1onyx&r at once with 1 craft!"
+		""
+		"To create Onyx, you need a new moon."
+		""
+		"[ { \"text\": \"This\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"650A973AF6830D93\" } }, \" may help you.\" ]"
 		"{@pagebreak}"
 		"&#FEECD6Поймав&r нужную фазу луны — создай свой первый &#4040a1оникс&r!"
 		""
 		"Вы можете создать сразу &oстак&r &#4040a1оникса&r за 1 крафт!"
+		""
+		"Для создания Оникса нужно новолуние."
+		""
+		"[ \"Возможно \", { \"text\": \"это\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"650A973AF6830D93\" } }, \" вам поможет\" ]"
 	]
 	quest.4BD90DDEB289EB1C.quest_desc: ["Operates similar to the Source Relay, but will deposit to jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
 	quest.4C56E87E195A4339.quest_desc: [
