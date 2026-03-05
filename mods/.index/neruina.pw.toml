@@ -1,17 +1,17 @@
-filename = 'neruina-3.2.1+1.21.1-neoforge.jar'
+filename = 'neruina-3.2.2+1.21.1-neoforge.jar'
 name = 'Neruina'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1', '1.21.2', '1.21.3', '1.21.4' ]
 x-prismlauncher-release-type = 'beta'
-x-prismlauncher-version-number = 'Neruina Neoforge 3.2.1 for 1.21.1'
+x-prismlauncher-version-number = 'Neruina Neoforge 3.2.2 for 1.21.1'
 
 [download]
-hash = '85b95d11c00c0d7e5a4cc1d3a56e994129d46b90'
+hash = 'a1283af4abda12fe8e455a9cf480008ad554f88f'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7597009
+file-id = 7695433
 project-id = 851046
