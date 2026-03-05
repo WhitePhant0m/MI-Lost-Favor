@@ -7,6 +7,8 @@ ServerEvents.recipes(event => {
         event.remove({ id: id })
     });
 
+    event.remove({type: "ars_nouveau:enchantment"})
+
     event.remove({
         output: [
             "ars_nouveau:volcanic_sourcelink",
