@@ -1994,7 +1994,7 @@
 				type: "item"
 			}]
 			x: -18.0d
-			y: 17.5d
+			y: 24.5d
 		}
 		{
 			dependencies: ["40CC4CB2281C6FE1"]
@@ -2008,7 +2008,7 @@
 				type: "advancement"
 			}]
 			x: -18.0d
-			y: 22.0d
+			y: 29.5d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
@@ -2025,7 +2025,7 @@
 				type: "observation"
 			}]
 			x: -16.5d
-			y: 26.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
@@ -2042,7 +2042,7 @@
 				type: "observation"
 			}]
 			x: -17.5d
-			y: 26.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
@@ -2058,7 +2058,7 @@
 				type: "observation"
 			}]
 			x: -18.5d
-			y: 26.0d
+			y: 33.5d
 		}
 		{
 			dependencies: [
@@ -2073,7 +2073,7 @@
 				type: "item"
 			}]
 			x: -17.0d
-			y: 30.5d
+			y: 38.0d
 		}
 		{
 			dependencies: ["6D62B6D792D203BA"]
@@ -2084,7 +2084,7 @@
 				type: "item"
 			}]
 			x: -17.0d
-			y: 29.5d
+			y: 37.0d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
@@ -2096,7 +2096,7 @@
 				type: "item"
 			}]
 			x: -16.5d
-			y: 31.5d
+			y: 39.0d
 		}
 		{
 			dependencies: ["6D62B6D792D203BA"]
@@ -2132,7 +2132,7 @@
 				}
 			]
 			x: -17.5d
-			y: 31.5d
+			y: 39.0d
 		}
 		{
 			dependencies: [
@@ -2187,7 +2187,7 @@
 				}
 			]
 			x: -17.0d
-			y: 33.5d
+			y: 41.0d
 		}
 		{
 			dependencies: [
@@ -2218,7 +2218,7 @@
 				}
 			]
 			x: -15.5d
-			y: 32.5d
+			y: 40.0d
 		}
 		{
 			dependencies: [
@@ -2234,7 +2234,7 @@
 				type: "item"
 			}]
 			x: -15.0d
-			y: 33.5d
+			y: 41.0d
 		}
 		{
 			dependencies: ["026821F02D50FE0D"]
@@ -2262,7 +2262,7 @@
 				}
 			]
 			x: -15.5d
-			y: 34.5d
+			y: 42.0d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
@@ -2274,7 +2274,7 @@
 				type: "item"
 			}]
 			x: -14.0d
-			y: 33.0d
+			y: 40.5d
 		}
 		{
 			dependencies: ["026821F02D50FE0D"]
@@ -2285,7 +2285,7 @@
 				type: "item"
 			}]
 			x: -18.5d
-			y: 34.5d
+			y: 42.0d
 		}
 		{
 			dependencies: ["026821F02D50FE0D"]
@@ -2313,7 +2313,7 @@
 				}
 			]
 			x: -18.5d
-			y: 32.5d
+			y: 40.0d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2324,7 +2324,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 31.5d
+			y: 39.0d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2335,7 +2335,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 32.5d
+			y: 40.0d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2346,7 +2346,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 33.5d
+			y: 41.0d
 		}
 		{
 			dependencies: ["39C79097C7355375"]
@@ -2357,7 +2357,7 @@
 				type: "item"
 			}]
 			x: -23.5d
-			y: 33.5d
+			y: 41.0d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2369,7 +2369,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 34.5d
+			y: 42.0d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2380,7 +2380,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 35.5d
+			y: 43.0d
 		}
 		{
 			dependencies: ["476DA0252473C6EE"]
@@ -2391,7 +2391,7 @@
 				type: "item"
 			}]
 			x: -22.5d
-			y: 36.5d
+			y: 44.0d
 		}
 		{
 			dependencies: ["026821F02D50FE0D"]
@@ -2402,7 +2402,7 @@
 				type: "checkmark"
 			}]
 			x: -19.0d
-			y: 33.5d
+			y: 41.0d
 		}
 		{
 			dependencies: ["1D9DE7EAC8B966F9"]
@@ -2413,7 +2413,7 @@
 				type: "item"
 			}]
 			x: -17.0d
-			y: 28.5d
+			y: 36.0d
 		}
 		{
 			dependencies: ["4E062C1AFC3440ED"]
@@ -2424,7 +2424,7 @@
 				type: "item"
 			}]
 			x: -25.5d
-			y: 24.5d
+			y: 32.0d
 		}
 		{
 			dependencies: ["4E062C1AFC3440ED"]
@@ -2435,7 +2435,7 @@
 				type: "item"
 			}]
 			x: -25.5d
-			y: 26.5d
+			y: 34.0d
 		}
 		{
 			dependencies: ["6D62B6D792D203BA"]
@@ -2466,7 +2466,7 @@
 				}
 			]
 			x: -22.5d
-			y: 30.5d
+			y: 38.0d
 		}
 		{
 			dependencies: ["5B37B11A0B0A84E6"]
@@ -2477,7 +2477,7 @@
 				type: "item"
 			}]
 			x: -19.5d
-			y: 26.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["704B2659E03B8728"]
@@ -2488,7 +2488,7 @@
 				type: "item"
 			}]
 			x: -23.5d
-			y: 26.0d
+			y: 33.5d
 		}
 		{
 			dependencies: ["4E062C1AFC3440ED"]
@@ -2499,7 +2499,7 @@
 				type: "item"
 			}]
 			x: -25.5d
-			y: 27.5d
+			y: 35.0d
 		}
 		{
 			dependencies: [
@@ -2513,7 +2513,7 @@
 				type: "item"
 			}]
 			x: -23.5d
-			y: 31.0d
+			y: 38.5d
 		}
 		{
 			dependencies: ["1FC1A96DBEC7375E"]
@@ -2525,7 +2525,7 @@
 				type: "item"
 			}]
 			x: -24.5d
-			y: 31.0d
+			y: 38.5d
 		}
 		{
 			dependencies: [
@@ -2538,7 +2538,7 @@
 				type: "checkmark"
 			}]
 			x: -25.5d
-			y: 31.0d
+			y: 38.5d
 		}
 		{
 			dependencies: ["1FD668D64C10EA51"]
@@ -2549,7 +2549,7 @@
 				type: "item"
 			}]
 			x: -26.5d
-			y: 31.0d
+			y: 38.5d
 		}
 		{
 			dependencies: ["14BA9A5CAC394A27"]
@@ -2560,7 +2560,7 @@
 				type: "item"
 			}]
 			x: -18.5d
-			y: 28.0d
+			y: 35.5d
 		}
 		{
 			dependencies: ["4E062C1AFC3440ED"]
@@ -2571,7 +2571,7 @@
 				type: "item"
 			}]
 			x: -25.5d
-			y: 25.5d
+			y: 33.0d
 		}
 		{
 			dependencies: ["4057F0E61DC737E0"]
@@ -2582,7 +2582,7 @@
 				type: "item"
 			}]
 			x: -18.5d
-			y: 27.0d
+			y: 34.5d
 		}
 		{
 			dependencies: ["4057F0E61DC737E0"]
@@ -2594,7 +2594,7 @@
 				type: "item"
 			}]
 			x: -14.0d
-			y: 34.0d
+			y: 41.5d
 		}
 		{
 			dependencies: ["02DD191C0682BFD6"]
@@ -2605,7 +2605,7 @@
 				type: "item"
 			}]
 			x: -26.5d
-			y: 26.5d
+			y: 34.0d
 		}
 		{
 			dependencies: ["787735496233A905"]
@@ -2616,7 +2616,7 @@
 				type: "item"
 			}]
 			x: -13.0d
-			y: 34.0d
+			y: 41.5d
 		}
 		{
 			dependencies: ["4D5DFD75A11BE595"]
@@ -3485,7 +3485,7 @@
 				type: "dimension"
 			}]
 			x: -18.0d
-			y: 24.0d
+			y: 31.5d
 		}
 		{
 			dependencies: ["4C67A17CAAC7B5B5"]
@@ -3607,7 +3607,7 @@
 				type: "item"
 			}]
 			x: -17.0d
-			y: 35.5d
+			y: 43.0d
 		}
 		{
 			dependencies: ["226EC62BA172DB5D"]
@@ -4428,6 +4428,307 @@
 			}]
 			x: -22.0d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1751D13041775276"
+				"2FD815964A918D4E"
+				"421018A5285593B1"
+				"15B3AFECD77757E9"
+				"41BF9135970F1E51"
+				"7C9EC97D1C3F9CBA"
+				"6BA662C9EDAB419D"
+				"197B8CEECA61C12A"
+				"38C9E92573A25F80"
+				"002562156B0D8E9F"
+			]
+			id: "2BAF1070D316E4A4"
+			min_required_dependencies: 1
+			shape: "gear"
+			tasks: [{
+				id: "7142828AFBDBF9A3"
+				item: { count: 1, id: "minecraft:enchanting_table" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2BAF1070D316E4A4"]
+			id: "5E639A3B6E268A89"
+			shape: "gear"
+			tasks: [{
+				count: 15L
+				id: "400B755DFDFB7E34"
+				item: { count: 1, id: "minecraft:bookshelf" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			id: "4FD896F49FCD93CD"
+			tasks: [{
+				id: "7DA53BB73402BCFD"
+				item: { count: 1, id: "apothic_enchanting:hellshelf" }
+				type: "item"
+			}]
+			x: -20.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4FD896F49FCD93CD"]
+			id: "69DEB3E3786D81B3"
+			tasks: [{
+				id: "59096AC1056CEC94"
+				item: { count: 1, id: "apothic_enchanting:infused_hellshelf" }
+				type: "item"
+			}]
+			x: -20.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["69DEB3E3786D81B3"]
+			id: "6DFAF7C73B8D00B9"
+			tasks: [{
+				id: "40930EC8C3CD6E3E"
+				item: { count: 1, id: "apothic_enchanting:sightshelf" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["69DEB3E3786D81B3"]
+			id: "6E4CBFF9631515D7"
+			tasks: [{
+				id: "58AB7B19D408F991"
+				item: { count: 1, id: "apothic_enchanting:glowing_hellshelf" }
+				type: "item"
+			}]
+			x: -20.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["69DEB3E3786D81B3"]
+			id: "71540B1B7889D6A8"
+			tasks: [{
+				id: "119BB8525D285B99"
+				item: { count: 1, id: "apothic_enchanting:blazing_hellshelf" }
+				type: "item"
+			}]
+			x: -21.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			id: "0EB065FD617CB39A"
+			tasks: [{
+				id: "51DD67D808B429AE"
+				item: { count: 1, id: "apothic_enchanting:seashelf" }
+				type: "item"
+			}]
+			x: -25.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0EB065FD617CB39A"]
+			id: "65E85CBAE5600143"
+			tasks: [{
+				id: "1C13551642C8921D"
+				item: { count: 1, id: "apothic_enchanting:infused_seashelf" }
+				type: "item"
+			}]
+			x: -26.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["65E85CBAE5600143"]
+			id: "2B284E366F5E6D1D"
+			tasks: [{
+				id: "27F66B767D54B9D6"
+				item: { count: 1, id: "apothic_enchanting:filtering_shelf" }
+				type: "item"
+			}]
+			x: -29.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["65E85CBAE5600143"]
+			id: "7AC09418ED7CB4DA"
+			tasks: [{
+				id: "15E8B1792BF9A701"
+				item: { count: 1, id: "apothic_enchanting:heart_seashelf" }
+				type: "item"
+			}]
+			x: -28.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["65E85CBAE5600143"]
+			id: "7479DE3BBB6ABA34"
+			tasks: [{
+				id: "4A1C53EEB8BDACF2"
+				item: { count: 1, id: "apothic_enchanting:crystal_seashelf" }
+				type: "item"
+			}]
+			x: -28.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			id: "6E69C1E11989DC47"
+			tasks: [{
+				id: "79BACA2EE9E64B75"
+				item: { count: 1, id: "apothic_enchanting:dormant_deepshelf" }
+				type: "item"
+			}]
+			x: -23.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["6E69C1E11989DC47"]
+			id: "5856F34DE4934B24"
+			tasks: [{
+				id: "77162FD8292F9AA6"
+				item: { count: 1, id: "apothic_enchanting:deepshelf" }
+				type: "item"
+			}]
+			x: -23.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			id: "368ACB7BC2A1DE73"
+			tasks: [{
+				id: "61EAB15C270B7C14"
+				item: { count: 1, id: "apothic_enchanting:treasure_shelf" }
+				type: "item"
+			}]
+			x: -23.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			id: "2DEC7F525C4670EE"
+			tasks: [{
+				id: "6F1793AC9FEC1661"
+				item: { count: 1, id: "apothic_enchanting:soul_touched_deepshelf" }
+				type: "item"
+			}]
+			x: -24.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5856F34DE4934B24"]
+			id: "716BC68F5F2693D0"
+			tasks: [{
+				id: "1EE42D464C8B4B77"
+				item: { count: 1, id: "apothic_enchanting:echoing_deepshelf" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["716BC68F5F2693D0"]
+			id: "330159427597F920"
+			tasks: [{
+				id: "49F284DE794FC5B5"
+				item: { count: 1, id: "apothic_enchanting:echoing_sculkshelf" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["2DEC7F525C4670EE"]
+			id: "2C42BB85178E9422"
+			tasks: [{
+				id: "5FEB306C9807A8ED"
+				item: { count: 1, id: "apothic_enchanting:soul_touched_sculkshelf" }
+				type: "item"
+			}]
+			x: -24.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			id: "0B1A4F013022E0E5"
+			tasks: [{
+				id: "0A780D2CE270E694"
+				item: { count: 1, id: "apothic_enchanting:geode_shelf" }
+				type: "item"
+			}]
+			x: -24.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			id: "7F527222B6AD3D58"
+			tasks: [{
+				id: "1932E15FDDF226D5"
+				item: { count: 1, id: "apothic_enchanting:stoneshelf" }
+				type: "item"
+			}]
+			x: -23.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			id: "5E23EE9227E4299B"
+			tasks: [{
+				id: "7A187318119AC88B"
+				item: { count: 1, id: "apothic_enchanting:melonshelf" }
+				type: "item"
+			}]
+			x: -20.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			id: "51E631F371E999BA"
+			tasks: [{
+				id: "6D495AA334344316"
+				item: { count: 1, id: "apothic_enchanting:beeshelf" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["5E639A3B6E268A89"]
+			id: "4410D695EA7BFB2A"
+			tasks: [{
+				id: "3AEF56ADBF49342C"
+				item: { count: 1, id: "apothic_enchanting:endshelf" }
+				type: "item"
+			}]
+			x: -19.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4410D695EA7BFB2A"]
+			id: "22692EA0AF834C5C"
+			tasks: [{
+				id: "1F329D94959D496B"
+				item: { count: 1, id: "apothic_enchanting:pearl_endshelf" }
+				type: "item"
+			}]
+			x: -17.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4410D695EA7BFB2A"]
+			id: "4A82827BAB0FFDE5"
+			tasks: [{
+				id: "52AAC0151933EF1A"
+				item: { count: 1, id: "apothic_enchanting:draconic_endshelf" }
+				type: "item"
+			}]
+			x: -17.5d
+			y: 11.0d
 		}
 	]
 }

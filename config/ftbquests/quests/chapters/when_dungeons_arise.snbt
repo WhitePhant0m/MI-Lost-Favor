@@ -77,6 +77,30 @@
 			x: 8.0d
 			y: 25.5d
 		}
+		{
+			id: "1E228499A8B2C2D0"
+			linked_quest: "7737F36A9E69FB4C"
+			x: -3.0d
+			y: 36.0d
+		}
+		{
+			id: "4BB6383E80A76659"
+			linked_quest: "37F8E4788207721E"
+			x: -2.0d
+			y: 36.0d
+		}
+		{
+			id: "23F79255316AB58E"
+			linked_quest: "1D2A38BF3DA1F6BD"
+			x: -4.0d
+			y: 36.0d
+		}
+		{
+			id: "1D621ED9C7F881C5"
+			linked_quest: "12AC008BBADAE6BD"
+			x: -4.0d
+			y: 37.0d
+		}
 	]
 	quests: [
 		{
@@ -1476,57 +1500,6 @@
 			y: 21.5d
 		}
 		{
-			id: "0E00A150DB450FAC"
-			tasks: [{
-				id: "370860A6B9B367CD"
-				item: { count: 1, id: "apothic_enchanting:prismatic_web" }
-				type: "item"
-			}]
-			x: -13.5d
-			y: 30.5d
-		}
-		{
-			id: "7FD9FC37882FC35C"
-			tasks: [{
-				id: "2E771AC6782CB192"
-				item: { count: 1, id: "apothic_enchanting:library" }
-				type: "item"
-			}]
-			x: -12.5d
-			y: 30.5d
-		}
-		{
-			dependencies: ["7FD9FC37882FC35C"]
-			id: "3717B7F8B66F0C89"
-			tasks: [{
-				id: "34D2E18ACEC762B3"
-				item: { count: 1, id: "apothic_enchanting:ender_library" }
-				type: "item"
-			}]
-			x: -12.5d
-			y: 31.5d
-		}
-		{
-			id: "47A50CC620E9B45B"
-			tasks: [{
-				id: "0F9EC5C4322C6A26"
-				item: { count: 1, id: "apotheosis:sigil_of_malice" }
-				type: "item"
-			}]
-			x: -11.0d
-			y: 30.5d
-		}
-		{
-			id: "2970A92E392587CB"
-			tasks: [{
-				id: "1C9112C2D7AFD48D"
-				item: { count: 1, id: "apotheosis:sigil_of_supremacy" }
-				type: "item"
-			}]
-			x: -10.0d
-			y: 30.5d
-		}
-		{
 			dependencies: [
 				"4128C0ADAD05A131"
 				"35A57388AA3AB5F4"
@@ -2917,14 +2890,261 @@
 			y: 6.0d
 		}
 		{
-			id: "4F78E07FB69741FC"
+			id: "02A01D16B4F38869"
 			tasks: [{
-				id: "3245FFBE2B5DF21E"
-				item: { count: 1, id: "apotheosis:ender_gem_case" }
+				id: "0EA76AE328242758"
+				item: { count: 1, id: "simplybows:vine_bow/vine_bow" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: 29.0d
+			x: 0.0d
+			y: 36.0d
+		}
+		{
+			id: "55B5FF63A7C15F26"
+			tasks: [{
+				id: "2D66AB1BC69A338E"
+				item: { count: 1, id: "simplybows:ice_bow/ice_bow" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 35.5d
+		}
+		{
+			id: "2707DC8C94D6F2CB"
+			tasks: [{
+				id: "27022695158F2C78"
+				item: { count: 1, id: "simplybows:bubble_bow/bubble_bow" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 36.0d
+		}
+		{
+			id: "4C57D972FA96E59B"
+			tasks: [{
+				id: "3E4BDC43069A1E95"
+				item: { count: 1, id: "simplybows:bee_bow/bee_bow" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 36.5d
+		}
+		{
+			id: "5CF0E67A54766585"
+			tasks: [{
+				id: "16045D231DD681FC"
+				item: { count: 1, id: "simplybows:blossom_bow/blossom_bow" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 35.5d
+		}
+		{
+			id: "58ABAA09FCDBD57A"
+			tasks: [{
+				id: "3A4A17CCA551C06F"
+				item: { count: 1, id: "simplybows:earth_bow/earth_bow" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 36.5d
+		}
+		{
+			id: "638C45577A5F75C1"
+			tasks: [{
+				id: "057BF2CE37D83A57"
+				item: { count: 1, id: "simplybows:echo_bow/echo_bow" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 36.0d
+		}
+		{
+			dependencies: [
+				"55B5FF63A7C15F26"
+				"58ABAA09FCDBD57A"
+				"638C45577A5F75C1"
+				"2707DC8C94D6F2CB"
+				"4C57D972FA96E59B"
+				"5CF0E67A54766585"
+				"02A01D16B4F38869"
+			]
+			id: "6D109319B6187844"
+			min_required_dependencies: 1
+			shape: "gear"
+			tasks: [{
+				id: "2351D51179825A9C"
+				item: { count: 1, id: "simplybows:upgrades/enchanted_bow_string" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 38.0d
+		}
+		{
+			dependencies: [
+				"55B5FF63A7C15F26"
+				"58ABAA09FCDBD57A"
+				"638C45577A5F75C1"
+				"2707DC8C94D6F2CB"
+				"4C57D972FA96E59B"
+				"5CF0E67A54766585"
+				"02A01D16B4F38869"
+			]
+			id: "525A6BE4954C35A2"
+			min_required_dependencies: 1
+			shape: "gear"
+			tasks: [{
+				id: "1CEDA00E282E601A"
+				item: { count: 1, id: "simplybows:upgrades/reinforced_bow_frame" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 38.0d
+		}
+		{
+			dependencies: [
+				"55B5FF63A7C15F26"
+				"58ABAA09FCDBD57A"
+				"638C45577A5F75C1"
+				"2707DC8C94D6F2CB"
+				"4C57D972FA96E59B"
+				"5CF0E67A54766585"
+				"02A01D16B4F38869"
+			]
+			id: "72B6854C6462FF49"
+			min_required_dependencies: 1
+			shape: "gear"
+			tasks: [{
+				id: "07F53918A099E59B"
+				item: { count: 1, id: "simplybows:upgrades/rune_etching_pain" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 39.0d
+		}
+		{
+			dependencies: [
+				"55B5FF63A7C15F26"
+				"58ABAA09FCDBD57A"
+				"638C45577A5F75C1"
+				"2707DC8C94D6F2CB"
+				"4C57D972FA96E59B"
+				"5CF0E67A54766585"
+				"02A01D16B4F38869"
+			]
+			id: "42AE79A67E925EBC"
+			min_required_dependencies: 1
+			shape: "gear"
+			tasks: [{
+				id: "08C89885681DC674"
+				item: { count: 1, id: "simplybows:upgrades/rune_etching_bounty" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 39.5d
+		}
+		{
+			dependencies: [
+				"55B5FF63A7C15F26"
+				"58ABAA09FCDBD57A"
+				"638C45577A5F75C1"
+				"2707DC8C94D6F2CB"
+				"4C57D972FA96E59B"
+				"5CF0E67A54766585"
+				"02A01D16B4F38869"
+			]
+			id: "72A5EBF8F388C559"
+			min_required_dependencies: 1
+			shape: "gear"
+			tasks: [{
+				id: "700C3C1FBA3E3560"
+				item: { count: 1, id: "simplybows:upgrades/rune_etching_chaos" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 39.5d
+		}
+		{
+			dependencies: [
+				"55B5FF63A7C15F26"
+				"58ABAA09FCDBD57A"
+				"638C45577A5F75C1"
+				"2707DC8C94D6F2CB"
+				"4C57D972FA96E59B"
+				"5CF0E67A54766585"
+				"02A01D16B4F38869"
+			]
+			id: "17A58F609A5D4C97"
+			min_required_dependencies: 1
+			shape: "gear"
+			tasks: [{
+				id: "20C79C63425B3349"
+				item: { count: 1, id: "simplybows:upgrades/rune_etching_grace" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 39.0d
+		}
+		{
+			id: "0953CAFB782A7D01"
+			tasks: [{
+				id: "2D117229223DBE9B"
+				item: { count: 1, id: "minecraft:bow" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 36.0d
+		}
+		{
+			id: "66FBCC5E29C338D1"
+			tasks: [{
+				id: "7D26DD16D49E322E"
+				item: { count: 1, id: "minecraft:crossbow" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 36.0d
+		}
+		{
+			id: "5EFAAFAAAE454EEB"
+			tasks: [{
+				id: "2D6DD7CCDEE258D4"
+				item: { count: 1, id: "royalvariations:royal_bow" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 36.0d
+		}
+		{
+			dependencies: ["176AB140A797FE9B"]
+			id: "71ABC736EDD29D77"
+			tasks: [{
+				id: "1F460A349F2582D4"
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:power": 6 } } }, count: 1, id: "spectrum:bedrock_bow" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 36.0d
+		}
+		{
+			dependencies: ["176AB140A797FE9B"]
+			id: "2A53734783F2C641"
+			tasks: [{
+				id: "69233A6B25C33080"
+				item: { components: { "minecraft:enchantments": { levels: { "minecraft:quick_charge": 4 } } }, count: 1, id: "spectrum:bedrock_crossbow" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 36.0d
+		}
+		{
+			id: "309D0179B980CF6A"
+			tasks: [{
+				id: "701E2CCC21092BDF"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 30.0d
 		}
 	]
 }

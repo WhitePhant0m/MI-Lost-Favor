@@ -315,6 +315,11 @@
 		"{@pagebreak}"
 		"&#FEECD6Компактный сундук&r попытается собрать все вещи, которые вы положите в него, по схеме 3х3, 2х2 или 1х1 - это можно настроить в графическом интерфейсе."
 	]
+	quest.0E00A150DB450FAC.quest_desc: [
+		"Can be used to remove curses"
+		"{@pagebreak}"
+		"Может бы использован для удаления проклятых зачарований с предметов"
+	]
 	quest.0E157BC29AA2A2F0.quest_desc: [
 		"Where is the gold pot??"
 		"{@pagebreak}"
@@ -1024,6 +1029,11 @@
 		"If I feel particularly HORRIBLE, then I may want to produce this regeneration oil pot. Fragrant and REVOLTING to the touch, it does the opposite of what most of my oils do, and as such would be quite appealing to doctors in the field."
 		"{@pagebreak}"
 		"Если я почувствую себя ОСОБЕННО плохо, я могу изготовить это пахучее и НЕ приятное на ощупь масло. Им могут заинтересоваться местные врачи."
+	]
+	quest.309D0179B980CF6A.quest_desc: [
+		"We deliberately did not add melee weapons, as there are too many of them. Use whatever you find in the world!"
+		"{@pagebreak}"
+		"Мы намеренно не добавили оружие ближнего боя, т.к. его слишком много, используйте то, что найдете в мире!"
 	]
 	quest.30B7522161DC8B1B.quest_desc: [
 		"You know what you will use this for, don't you?"
@@ -2486,7 +2496,7 @@
 	task.2564B16B88270A18.title: "Any #milf:polished_slabs"
 	task.25CB2D0B385D4533.title: "Spectrum?"
 	task.2629C2F369B3D084.title: "&#A39FE1PINGS!!! THEY'RE EVERYWHERE"
-	task.268D4F85B02495FD.title: "Xaeromap"
+	task.268D4F85B02495FD.title: "Xaeromap [WIP]"
 	task.2693375290DFFFE2.title: "<glitch>Hello World!"
 	task.26FC76B546262768.title: "Inventory Profiles Next"
 	task.271E89A2A2B37CFC.title: "Showcase Item"
@@ -2567,6 +2577,7 @@
 	task.6E241CA073F70AD3.title: "Xeovrenth Adjure"
 	task.6E27CA7959D2DC61.title: "Any #pastel:bedrock_equipment"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
+	task.701E2CCC21092BDF.title: "Weapon/shield/armor"
 	task.715168A27BACCD77.title: "Hi wrld"
 	task.73CEC69AE2924335.title: "Any #c:logs/archwood"
 	task.7431F878DB34A30D.title: "Bridging"

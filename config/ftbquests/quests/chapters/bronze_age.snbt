@@ -55,6 +55,12 @@
 			x: 1.0d
 			y: -9.0d
 		}
+		{
+			id: "6D4F7AC62CC14D99"
+			linked_quest: "2BAF1070D316E4A4"
+			x: 5.0d
+			y: -3.5d
+		}
 	]
 	quests: [
 		{
@@ -4634,8 +4640,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: -3.0d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4DD1404D1B9CA7F7"]
