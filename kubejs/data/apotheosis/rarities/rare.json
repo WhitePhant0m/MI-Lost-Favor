@@ -53,7 +53,7 @@
     "weights": {
         "haven": {
             "quality": 5.0,
-            "weight": 40
+            "weight": 0
         },
         "frontier": {
             "quality": 5.0,

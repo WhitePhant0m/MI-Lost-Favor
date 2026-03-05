@@ -203,4 +203,21 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:barrel" }, 1]],
         compatOff:true
     })
+
+    milfShaped(event, {
+        pattern: [
+            " R ",
+            "EQE",
+            "QWQ"
+        ],
+        key: {
+            Q: { item: "minecraft:crying_obsidian" },
+            W: { item: "minecraft:obsidian" },
+            E: { item: "modern_industrialization:diamond_plate" },
+            R: { tag: "apotheosis:tomes" },
+        },
+        outputItems: [[{ id: "minecraft:enchanting_table" }]],
+        removeRecipe:true
+    })
+
 })

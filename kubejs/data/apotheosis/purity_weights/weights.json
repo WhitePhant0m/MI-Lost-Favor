@@ -10,7 +10,6 @@
                 "weight": 205
             },
             "flawed": {
-                "quality": 5.0,
                 "weight": 0
             },
             "normal": {
@@ -35,8 +34,7 @@
                 "weight": 180
             },
             "normal": {
-                "quality": 1.0,
-                "weight": 50
+                "weight": 0
             },
             "flawless": {
                 "weight": 0
@@ -47,22 +45,21 @@
         },
         "ascent": {
             "cracked": {
-                "weight": 20
+                "weight": 30
             },
             "chipped": {
-                "weight": 250
+                "weight": 300
             },
             "flawed": {
                 "quality": 2.5,
-                "weight": 560
+                "weight": 600
             },
             "normal": {
                 "quality": 5.0,
-                "weight": 160
+                "weight": 70
             },
             "flawless": {
-                "quality": 1.0,
-                "weight": 10
+                "weight": 0
             },
             "perfect": {
                 "weight": 0
@@ -88,7 +85,7 @@
                 "weight": 20
             },
             "perfect": {
-                "weight": 10
+                "weight": 0
             }
         },
         "pinnacle": {

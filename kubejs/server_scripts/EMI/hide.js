@@ -176,6 +176,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         "apothic_enchanting:scrap_tome",
         "apothic_enchanting:improved_scrap_tome",
         "apothic_enchanting:extraction_tome",
+        "apothic_enchanting:ender_library",
+        "apothic_enchanting:library",
     ]
 
     list.forEach(item => {
