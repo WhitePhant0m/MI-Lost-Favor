@@ -19,7 +19,7 @@ soundCategory_player:0.5035211267605634
 soundCategory_ambient:0.5
 soundCategory_voice:0.20422535211267606
 narratorHotkey:false
-resourcePacks:["researchd:example_researches","vanilla","fabric","mod_resources","moonlight:merged_pack","enderzoology:dynamically_copied_textures","modern_industrialization/generated","file/Slightly-Improved-Font-1.1.5.zip","file/EnderEyes_1.21.8_v3.1.zip","file/Chaotix Apotheotic Tweaks v2.0 1.21.1.zip","file/Ars Nouveau Refresh 1.2.0.zip","file/Updated_Engineering_v1.7.zip","file/waystones_1.21.5.zip","file/cubic-sun-moon-v1.8.3a.zip","file/§eSlim§0 §eFire§0.zip","file/RPG_Series_Icons-1.2+1.21.1.zip","file/SodiumTranslations.zip","mod/pastel:pastel_style_amethyst","file/Modern Retexturization.zip"]
+resourcePacks:["researchd:example_researches","vanilla","fabric","mod_resources","moonlight:merged_pack","enderzoology:dynamically_copied_textures","modern_industrialization/generated","file/Slightly-Improved-Font-1.1.5.zip","file/EnderEyes_1.21.8_v3.1.zip","file/Chaotix Apotheotic Tweaks v2.0 1.21.1.zip","file/Ars Nouveau Refresh 1.2.0.zip","file/Updated_Engineering_v1.7.zip","file/waystones_1.21.5.zip","file/cubic-sun-moon-v1.8.3a.zip","file/§eSlim§0 §eFire§0.zip","file/RPG_Series_Icons-1.2+1.21.1.zip","file/SodiumTranslations.zip","mod/spectrum:spectrum_style_amethyst","file/Modern Retexturization.zip"]
 incompatibleResourcePacks:["file/Updated_Engineering_v1.7.zip","file/waystones_1.21.5.zip"]
 menuBackgroundBlurriness:5
 key_chunkloaders.keys.open_screen:key.keyboard.unknown
@@ -50,3 +50,4 @@ key_key.immersive_aircraft.dismount:key.keyboard.o
 key_key.ars_nouveau.open_book:key.keyboard.left.alt
 key_key.ars_nouveau.selection_hud:key.keyboard.b
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.unknown
+key_key.simplytooltips.capture_gif:key.keyboard.unknown
