@@ -53,5 +53,24 @@ ServerEvents.recipes(event => {
             [{item:"architects_palette:cerebral_plate"}, 16]
         ]
     })
-    
+
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:"modern_industrialization:nickel_dust"}],
+            [{item:"modern_industrialization:copper_dust"}],
+        ],
+        outputItems:[
+            [{item:"modern_industrialization:constantan_dust"}, 2]
+        ]
+    })
+
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:"modern_industrialization:nickel_tiny_dust"}],
+            [{item:"modern_industrialization:copper_tiny_dust"}],
+        ],
+        outputItems:[
+            [{item:"modern_industrialization:constantan_tiny_dust"}, 2]
+        ]
+    })    
 })

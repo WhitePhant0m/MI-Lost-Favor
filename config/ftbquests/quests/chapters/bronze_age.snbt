@@ -4712,5 +4712,28 @@
 			x: -1.0d
 			y: 10.5d
 		}
+		{
+			dependencies: ["582F02F8A2F308E7"]
+			icon: {
+				id: "kubejs:saeta_plush"
+			}
+			id: "68EFB14826CB715C"
+			rewards: [{
+				id: "5A1F3F6BDDA355D2"
+				item: {
+					count: 1
+					id: "spectrum:skeleton_horse_head"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.25d
+			tasks: [{
+				id: "2DD9CC89EC523943"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: 7.125d
+		}
 	]
 }

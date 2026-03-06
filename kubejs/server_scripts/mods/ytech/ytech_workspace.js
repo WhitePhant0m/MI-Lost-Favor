@@ -1,405 +1,616 @@
 //priority 10
+function yTechWorkspaceRecipe(/**@type {$RecipesKubeEvent_}*/ event, args){
+    let recipe = {
+        type: "ytech:workspace_crafting",
+        key: Object.assign({}, args.key, args.materialset?.key),
+        pattern: {
+            top:args.pattern[0],
+            middle:args.pattern[1],
+            bottom:args.pattern[2]
+        },
+        result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+        tool:args.tool || { tag: "c:hammers" }
+    }
+    if (!args.compatOff) {
+        let itemInputs = []
+        let amounts = args.pattern.map(layer => layer.join("")).join("")
+        Object.entries(args.key).forEach(m => {
+            let regex = new RegExp(m[0], 'g')
+            itemInputs.push([m[1], (amounts.match(regex) || []).length])
+        })
+        if(args.materialset){
+            itemInputs.push(args.materialset.replaceWith)
+        }
+        miMachineCraft(event, {
+            energy: 2, time: 200, machine: args.miCompatMachine || "modern_industrialization:assembler",
+            inputItems: itemInputs,
+            outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
+        })
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
+    event.custom(recipe)
+}
+
+//#region materialsets
+
+const WORKSPACE_MATERIALSETS = {
+    BRONZE_BITS:{
+        key:{M:{item:'kubejs:bronze_machine_bit'}},
+        replaceWith: [{item:"modern_industrialization:bronze_machine_casing"}, 1]
+    },
+
+    STEEL_UPGRADE:{
+        key:{M:{item:'kubejs:steel_machine_bit'}, P:{item:"immersiveengineering:fluid_pipe"}, G:{item:'kubejs:steel_infused_glass'}},
+        replaceWith: [{item:"modern_industrialization:steel_upgrade"}, 1]
+    },
+    STEEL_BITS:{
+        key:{M:{item:'kubejs:steel_machine_bit'}},
+        replaceWith: [{item:"modern_industrialization:steel_machine_casing"}, 1]
+    },
+
+    BASIC:{
+        key:{M:{item:'kubejs:basic_machine_bit'}, B:{item:"modern_industrialization:portable_storage_unit"}, G:{item:'kubejs:tempered_glass'}, C:{item:'modern_industrialization:tin_cable'}},
+        replaceWith: [{item:"modern_industrialization:basic_machine_hull"}, 1]
+    },
+
+    BASIC_BITS:{
+        key:{M:{item:'kubejs:basic_machine_bit'}},
+        replaceWith: [{item:"modern_industrialization:frostproof_machine_casing"}, 1]
+    }
+}
+
+//#endregion
+
+//#region Array functions
+
+Array.prototype.workspaceFull = function(letter) {
+    this.fill(letter.repeat(3))
+    return this
+}
+
+Array.prototype.workspaceRow = function(letter, row) {
+    this.splice(row, 1, letter.repeat(3))
+    return this
+}
+
+Array.prototype.workspaceOne = function(letter, row, index) {
+    this.splice(row, 1, this[row].substring(0, index) + letter + this[row].substring(index + 1))
+    return this
+}
+
+Array.prototype.workspaceCorners = function(letter) {
+    this.splice(0, 1, letter + this[0].substring(1, 2) + letter)
+    this.splice(2, 1, letter + this[2].substring(1, 2) + letter)
+    return this
+}
+
+Array.prototype.workspaceSides = function(letter) {
+    this.splice(0, 1, this[0].substring(0, 1) + letter + this[0].substring(2, 3))
+    this.splice(1, 1, letter + this[1].substring(1, 2) + letter)
+    this.splice(2, 1, this[2].substring(0, 1) + letter + this[2].substring(2, 3))
+    return this
+}
+
+Array.prototype.workspaceCenter = function(letter) {
+    this.workspaceOne(letter,1,1)
+    return this
+}
+
+Array.prototype.workspaceFront = function(letter) {
+    this.workspaceOne(letter,2,1)
+    return this
+}
+
+Array.prototype.workspaceRight = function(letter) {
+    this.workspaceOne(letter,1,0)
+    return this
+}
+
+Array.prototype.workspaceLeft = function(letter) {
+    this.workspaceOne(letter,1,2)
+    return this
+}
+
+Array.prototype.workspaceBack = function(letter) {
+    this.workspaceOne(letter,0,1)
+    return this
+}
+
+Array.prototype.workspacePlus = function(letter) {
+    this.workspaceOne(letter,0,1)
+    this.workspaceRow(letter,1)
+    this.workspaceOne(letter,2,1)
+    return this
+}
+
+//#endregion
+
 ServerEvents.recipes(event => {
 
-    var wrench = "modern_industrialization:wrench"
-    let craft_removal_list = [
-       
-    ]
-    const miMachines = "MI machines"
-    //#region Array functions
-
-    Array.prototype.layerAll = function(letter) {
-        this.fill(letter.repeat(3))
-        return this
-    }
-
-    Array.prototype.layerRow = function(letter, row) {
-        this.splice(row, 1, letter.repeat(3))
-        return this
-    }
-
-    Array.prototype.layerOne = function(letter, row, index) {
-        this.splice(row, 1, this[row].substring(0, index) + letter + this[row].substring(index + 1))
-        return this
-    }
-
-    Array.prototype.layerCorners = function(letter) {
-        this.splice(0, 1, letter + this[0].substring(1, 2) + letter)
-        this.splice(2, 1, letter + this[2].substring(1, 2) + letter)
-        return this
-    }
-
-    Array.prototype.layerSides = function(letter) {
-        this.splice(0, 1, this[0].substring(0, 1) + letter + this[0].substring(2, 3))
-        this.splice(1, 1, letter + this[1].substring(1, 2) + letter)
-        this.splice(2, 1, this[2].substring(0, 1) + letter + this[2].substring(2, 3))
-        return this
-    }
-
-    Array.prototype.layerCentre = function(letter) {
-        this.layerOne(letter,1,1)
-        return this
-    }
-
-    Array.prototype.layerFront = function(letter) {
-        this.layerOne(letter,2,1)
-        return this
-    }
-
-    Array.prototype.layerRight = function(letter) {
-        this.layerOne(letter,1,0)
-        return this
-    }
-
-    Array.prototype.layerLeft = function(letter) {
-        this.layerOne(letter,1,2)
-        return this
-    }
-
-    Array.prototype.layerBack = function(letter) {
-        this.layerOne(letter,0,1)
-        return this
-    }
-
-    Array.prototype.layerPlus = function(letter) {
-        this.layerOne(letter,0,1)
-        this.layerRow(letter,1)
-        this.layerOne(letter,2,1)
-        return this
-    }
-
-    //#endregion
-
-    // function assembler_recipe(energy,time,inputs,outputs,fluids,token){
-    //     fluids = fluids || [];
-    //     energy = energy + inputs.length * (energy / 4)
-    //     var recipe = event.recipes.modern_industrialization.assembler(energy, time);
-    //     inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
-    //     fluids.forEach((fluid) => {recipe.fluidIn(fluid[0], fluid[1])})
-    //     outputs.forEach((out) => {recipe.itemOut(out)})
-    //     if (token != undefined){recipe.itemIn(token, 0)}
-    // }
-
-    // function packer_recipe(energy,time,inputs,outputs){
-    //     var recipe = event.recipes.modern_industrialization.packer(energy, time);
-    //     inputs.forEach((input) => {Array.isArray(input) ? recipe.itemIn(input[0], input[1]) : recipe.itemIn(input)})
-    //     outputs.forEach((out) => {
-    //         recipe.itemOut(out)
-    //     })
-    // }
-
-    function workspace_recipe(grid, materials, output, materialset, tool, nocompat, keepOR){
-        nocompat = nocompat || false
-        materialset = materialset || {}
-        event.recipes.ytech.workspace_crafting(
-            output,  // crafting result
-            tool || wrench,   
-            grid[2],  // bottom layer pattern like for shaped crafting (['XXX','XXX','XXX'])
-            grid[1],  // middle layer pattern like for shaped crafting (['XXX','XXX','XXX'])
-            grid[0],     // top layer pattern like for shaped crafting (['XXX','XXX','XXX'])
-            Object.assign({}, materials, materialset) // ingredient mapping e.g.: {X: 'minecraft:andesite'}
-        );
-        if(!keepOR){
-            craft_removal_list.push(output)
-        }
-        if (!nocompat) {
-            let mats = []
-            var amounts = grid[0].concat(grid[1],grid[2]).join("")
-            let isMiMachine = true
-            switch(materialset){
-                case bronzeMaterialset:
-                    mats.push([{item:"modern_industrialization:bronze_machine_casing"}],[{item:"moderndynamics:fluid_pipe"}, 4],[{item:"kubejs:bronze_glass"}],[{item:"kubejs:small_copper_fluid_container"}])
-                    break;
-                case bronzeBits:
-                    mats.push([{item:"modern_industrialization:bronze_machine_casing"}])
-                    break;
-                case steelUpgrade:
-                    mats.push([{item:"modern_industrialization:steel_upgrade"}])
-                    Object.entries(materials).forEach(m =>{
-                        let regex = new RegExp(m[0],'g')
-                        let isTag = m[1][0] == "#"
-                        if (isTag){
-                            mats.push([{tag: m[1].slice(1)}, (amounts.match(regex) || []).length])
-                        } else {
-                            mats.push([{item: m[1]}, (amounts.match(regex) || []).length])
-                        }
-                        
-                    })
-                    miMachineCraft(event, {energy:4, time:400, machine:"modern_industrialization:packer",
-                        inputItems:mats,
-                        outputItems:[[{item:output}]]
-                    })
-                    return;
-                case steelBits:
-                    mats.push([{item:"modern_industrialization:steel_machine_casing"}])
-                    break;
-                case steelMaterialset:
-                    mats.push([{item:"modern_industrialization:steel_machine_casing"}], [{item:"immersiveengineering:fluid_pipe"}, 5], [{item:"kubejs:steel_infused_glass"}], [{item:"kubejs:small_steel_fluid_container"}])
-                    break;
-                case basicMaterialset:
-                    mats.push([{item:"modern_industrialization:basic_machine_hull"}])
-                    break;
-                case basicBits:
-                    mats.push([{item:"modern_industrialization:frostproof_machine_casing"}])
-                    break;
-                default:
-                    isMiMachine = false
-                    break;
-            }
-            Object.entries(materials).forEach(m =>{
-                let regex = new RegExp(m[0],'g')
-                //mats.push((amounts.match(regex) || []).length + "x " + m[1])
-                let isTag = m[1][0] == "#"
-                if (isTag){
-                    mats.push([{tag: m[1].slice(1)}, (amounts.match(regex) || []).length])
-                } else {
-                    mats.push([{item: m[1]}, (amounts.match(regex) || []).length])
-                }
-            })
-
-            if(isMiMachine){
-                miMachineCraft(event, {energy:1, time:400, machine:"modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
-                    inputItems:mats,
-                    outputItems:[[{item:output}]]
-                })
-                return
-            }
-            miMachineCraft(event, {energy:8, time:400, machine:"modern_industrialization:assembler",
-                inputItems:mats,
-                outputItems:[[{item:output}]]
-            })
-        }
-    }
+    const wrench = { item: "modern_industrialization:wrench" }
+    const packer = "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition"
 
     //#region MI bronze machines
-    var bronzeMaterialset = {M:'kubejs:bronze_machine_bit', P:"moderndynamics:fluid_pipe", G:"kubejs:bronze_glass", F:"kubejs:small_copper_fluid_container"}
-    var bronzeBits = {M:'kubejs:bronze_machine_bit'}
 
     //tank
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("G"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerCentre("G")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        {G:"kubejs:bronze_glass"},
-        'modern_industrialization:bronze_tank', bronzeBits
-    )
+        key: { G: { item: "kubejs:bronze_glass" } },
+        outputItems: [[{ id: "modern_industrialization:bronze_tank" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //barrel
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("G"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerCentre("G")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        {G:"labels:label"},
-        'modern_industrialization:bronze_barrel', bronzeBits
-    )
+        key: { G: { item: "labels:label" } },
+        outputItems: [[{ id: "modern_industrialization:bronze_barrel" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //furnace
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("C"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("S").layerBack("P"),
-            ['   ','   ','   '].layerAll("B").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("C"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("S").workspaceBack("P"),
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("F")
         ],
-        {B:'modern_industrialization:fire_clay_bricks',S:"ytech:primitive_smelter",C:"ytech:reinforced_brick_chimney"},
-        'modern_industrialization:bronze_mi_furnace', bronzeMaterialset
-    )
+        key: {
+            B: { item: "modern_industrialization:fire_clay_bricks" },
+            S: { item: "ytech:primitive_smelter" },
+            C: { item: "ytech:reinforced_brick_chimney" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_mi_furnace" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //steam_blast_furnace
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("B").layerCentre("C"),
-            ['   ','   ','   '].layerAll("B").layerFront(" ").layerCentre("S"),
-            ['   ','   ','   '].layerAll("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("C"),
+            ['   ','   ','   '].workspaceFull("B").workspaceFront(" ").workspaceCenter("S"),
+            ['   ','   ','   '].workspaceFull("B")
         ],
-        {B:'modern_industrialization:fire_clay_bricks',S:"ytech:primitive_smelter",C:"ytech:reinforced_brick_chimney"},
-        'modern_industrialization:steam_blast_furnace'
-    )
+        key: {
+            B: { item: "modern_industrialization:fire_clay_bricks" },
+            S: { item: "ytech:primitive_smelter" },
+            C: { item: "ytech:reinforced_brick_chimney" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steam_blast_furnace" }, 1]],
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //coke_oven
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("B").layerCentre("C"),
-            ['   ','   ','   '].layerAll("B").layerFront(" ").layerCentre("S"),
-            ['   ','   ','   '].layerAll("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("C"),
+            ['   ','   ','   '].workspaceFull("B").workspaceFront(" ").workspaceCenter("S"),
+            ['   ','   ','   '].workspaceFull("B")
         ],
-        {B:'minecraft:bricks',S:"ytech:primitive_smelter",C:"ytech:reinforced_brick_chimney"},
-        'modern_industrialization:coke_oven'
-    )
+        key: {
+            B: { item: "minecraft:bricks" },
+            S: { item: "ytech:primitive_smelter" },
+            C: { item: "ytech:reinforced_brick_chimney" }
+        },
+        outputItems: [[{ id: "modern_industrialization:coke_oven" }, 1]],
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //macerator
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("g").layerSides("r"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("g").workspaceSides("r"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {g:"#c:gears/copper",r:"#c:rods/copper"},
-        'modern_industrialization:bronze_macerator', bronzeMaterialset
-    )
+        key: {
+            g: { tag: "c:gears/copper" },
+            r: { tag: "c:rods/copper" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_macerator" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //compressor
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("M").layerSides("r"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("M").workspaceSides("r"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("h"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {r:"#c:rods/copper",h:"modern_industrialization:forge_hammer"},
-        'modern_industrialization:bronze_compressor', bronzeMaterialset
-    )
+        key: {
+            r: { tag: "c:rods/copper" },
+            h: { item: "modern_industrialization:forge_hammer" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_compressor" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //cutting_machine
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("M").layerSides("r"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("M").workspaceSides("r"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("h"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {r:"#c:gears/copper",h:"modern_industrialization:copper_blade"},
-        'modern_industrialization:bronze_cutting_machine', bronzeMaterialset
-    )
+        key: {
+            r: { tag: "c:gears/copper" },
+            h: { item: "modern_industrialization:copper_blade" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_cutting_machine" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //composter
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("M").layerSides("r"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("M").workspaceSides("r"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("h"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {r:"#c:rods/copper",h:"minecraft:composter"},
-        'extended_industrialization:bronze_composter', bronzeMaterialset
-    )
+        key: {
+            r: { tag: "c:rods/copper" },
+            h: { item: "minecraft:composter" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "extended_industrialization:bronze_composter" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //pump
-    workspace_recipe([
-            ['   ',' P ','   '].layerCorners("g").layerSides("r"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ',' P ','   '].workspaceCorners("g").workspaceSides("r"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("h"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {r:"#c:rods/copper",h:"modern_industrialization:copper_rotor",g:"#c:gears/copper"},
-        'modern_industrialization:bronze_water_pump', bronzeMaterialset
-    )
+        key: {
+            r: { tag: "c:rods/copper" },
+            h: { item: "modern_industrialization:copper_rotor" },
+            g: { tag: "c:gears/copper" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_water_pump" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //mixer
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("G").layerSides("r").layerCorners("g"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("G").workspaceSides("r").workspaceCorners("g"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("h"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {r:"#c:rods/copper",h:"modern_industrialization:copper_rotor",g:"#c:gears/copper"},
-        'modern_industrialization:bronze_mixer', bronzeMaterialset
-    )
+        key: {
+            r: { tag: "c:rods/copper" },
+            h: { item: "modern_industrialization:copper_rotor" },
+            g: { tag: "c:gears/copper" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_mixer" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //solar_boiler
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("G").layerSides("s").layerCorners("M"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("F"),
-            ['   ','   ','   '].layerAll("B").layerCentre("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("G").workspaceSides("s").workspaceCorners("M"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("F"),
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("P")
         ],
-        {s:"#c:plates/silver",B:"modern_industrialization:fire_clay_bricks"},
-        'extended_industrialization:bronze_solar_boiler', bronzeMaterialset
-    )
+        key: {
+            s: { tag: "c:plates/silver" },
+            B: { item: "modern_industrialization:fire_clay_bricks" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "extended_industrialization:bronze_solar_boiler" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //bronze_boilder
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("F").layerSides("r").layerCorners("M"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("h"),
-            ['   ','   ','   '].layerAll("B").layerCentre("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("F").workspaceSides("r").workspaceCorners("M"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("h"),
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("P")
         ],
-        {r:"#c:rods/copper",h:"minecraft:furnace",B:"modern_industrialization:fire_clay_bricks"},
-        'modern_industrialization:bronze_boiler', bronzeMaterialset
-    )
+        key: {
+            r: { tag: "c:rods/copper" },
+            h: { item: "minecraft:furnace" },
+            B: { item: "modern_industrialization:fire_clay_bricks" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_boiler" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //waste_collector
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("m").layerSides("r").layerCorners("M"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("h"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("m").workspaceSides("r").workspaceCorners("M"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("h"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {r:"#c:rods/copper",h:"minecraft:composter",m:"ytech:copper_mesh"},
-        'extended_industrialization:bronze_waste_collector', bronzeMaterialset
-    )
-   
+        key: {
+            r: { tag: "c:rods/copper" },
+            h: { item: "minecraft:composter" },
+            m: { item: "ytech:copper_mesh" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "extended_industrialization:bronze_waste_collector" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //bending_machine
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("g").layerSides("r"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("g").workspaceSides("r"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {r:"#c:rods/copper",g:"#c:gears/copper"},
-        'extended_industrialization:bronze_bending_machine', bronzeMaterialset
-    )
+        key: {
+            r: { tag: "c:rods/copper" },
+            g: { tag: "c:gears/copper" },
+            P: { item: "moderndynamics:fluid_pipe" },
+            G: { item: "kubejs:bronze_glass" },
+            F: { item: "kubejs:small_copper_fluid_container" }
+        },
+        outputItems: [[{ id: "extended_industrialization:bronze_bending_machine" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //large_steam_furnace
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("c").layerPlus("C"),
-            ['   ',' f ','   '].layerCorners("c").layerSides("C"),
-            ['   ','   ','   '].layerCorners("c").layerPlus("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("c").workspacePlus("C"),
+            ['   ',' f ','   '].workspaceCorners("c").workspaceSides("C"),
+            ['   ','   ','   '].workspaceCorners("c").workspacePlus("P")
         ],
-        {c:"modern_industrialization:bronze_curved_plate",P:"modern_industrialization:fire_clay_bricks",f:"modern_industrialization:bronze_mi_furnace",C:"modern_industrialization:bronze_machine_casing_pipe"},
-        'mi_tweaks:advanced_large_steam_furnace'
-    )
+        key: {
+            c: { item: "modern_industrialization:bronze_curved_plate" },
+            P: { item: "modern_industrialization:fire_clay_bricks" },
+            f: { item: "modern_industrialization:bronze_mi_furnace" },
+            C: { item: "modern_industrialization:bronze_machine_casing_pipe" }
+        },
+        outputItems: [[{ id: "mi_tweaks:advanced_large_steam_furnace" }, 1]],
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //large_steam_macerator
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("c").layerPlus("C"),
-            ['   ',' f ','   '].layerCorners("c").layerSides("C"),
-            ['   ','   ','   '].layerCorners("c").layerPlus("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("c").workspacePlus("C"),
+            ['   ',' f ','   '].workspaceCorners("c").workspaceSides("C"),
+            ['   ','   ','   '].workspaceCorners("c").workspacePlus("P")
         ],
-        {c:"modern_industrialization:bronze_curved_plate",P:"modern_industrialization:bronze_plated_bricks",f:"modern_industrialization:bronze_macerator",C:"modern_industrialization:bronze_machine_casing_pipe"},
-        'extended_industrialization:large_steam_macerator'
-    )
+        key: {
+            c: { item: "modern_industrialization:bronze_curved_plate" },
+            P: { item: "modern_industrialization:bronze_plated_bricks" },
+            f: { item: "modern_industrialization:bronze_macerator" },
+            C: { item: "modern_industrialization:bronze_machine_casing_pipe" }
+        },
+        outputItems: [[{ id: "extended_industrialization:large_steam_macerator" }, 1]],
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //Large steam boiler
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("c").layerPlus("C").layerCentre("a"),
-            ['   ',' f ','   '].layerCorners("c").layerSides("C"),
-            ['   ','   ','   '].layerCorners("c").layerPlus("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("c").workspacePlus("C").workspaceCenter("a"),
+            ['   ',' f ','   '].workspaceCorners("c").workspaceSides("C"),
+            ['   ','   ','   '].workspaceCorners("c").workspacePlus("P")
         ],
-        {c:"modern_industrialization:bronze_curved_plate",P:"modern_industrialization:fire_clay_bricks",f:"modern_industrialization:bronze_boiler",C:"modern_industrialization:bronze_plated_bricks",a:"modern_industrialization:analog_circuit"},
-        'modern_industrialization:large_steam_boiler'
-    )
+        key: {
+            c: { item: "modern_industrialization:bronze_curved_plate" },
+            P: { item: "modern_industrialization:fire_clay_bricks" },
+            f: { item: "modern_industrialization:bronze_boiler" },
+            C: { item: "modern_industrialization:bronze_plated_bricks" },
+            a: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "modern_industrialization:large_steam_boiler" }, 1]],
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //Steam farmer
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("c").layerPlus("C").layerCentre("a"),
-            ['   ',' f ','   '].layerCorners("c").layerSides("C"),
-            ['   ','   ','   '].layerCorners("c").layerPlus("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("c").workspacePlus("C").workspaceCenter("a"),
+            ['   ',' f ','   '].workspaceCorners("c").workspaceSides("C"),
+            ['   ','   ','   '].workspaceCorners("c").workspacePlus("P")
         ],
-        {c:"modern_industrialization:bronze_curved_plate",P:"modern_industrialization:bronze_plated_bricks",f:"extended_industrialization:steel_combine",C:"modern_industrialization:bronze_machine_casing_pipe",a:"modern_industrialization:analog_circuit"},
-        'extended_industrialization:steam_farmer'
-    )
+        key: {
+            c: { item: "modern_industrialization:bronze_curved_plate" },
+            P: { item: "modern_industrialization:bronze_plated_bricks" },
+            f: { item: "extended_industrialization:steel_combine" },
+            C: { item: "modern_industrialization:bronze_machine_casing_pipe" },
+            a: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "extended_industrialization:steam_farmer" }, 1]],
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //item_output
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("M").layerCentre("p"),
-            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("M").layerCentre("h")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("p"),
+            ['   ','   ','   '].workspacePlus("M").workspacePlus("p").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("h")
         ],
-        {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
-        'modern_industrialization:bronze_item_output_hatch', bronzeBits
-    )
+        key: {
+            p: { item: "moderndynamics:item_pipe" },
+            h: { item: "minecraft:hopper" },
+            A: { item: "moderndynamics:extractor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_item_output_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //item_input
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("M").layerCentre("h"),
-            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("M").layerCentre("p")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("h"),
+            ['   ','   ','   '].workspacePlus("M").workspacePlus("p").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("p")
         ],
-        {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
-        'modern_industrialization:bronze_item_input_hatch', bronzeBits
-    )
+        key: {
+            p: { item: "moderndynamics:item_pipe" },
+            h: { item: "minecraft:hopper" },
+            A: { item: "moderndynamics:attractor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_item_input_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //fluid_output
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("M").layerCentre("p"),
-            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("M").layerCentre("h")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("p"),
+            ['   ','   ','   '].workspacePlus("M").workspacePlus("p").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("h")
         ],
-        {p:"moderndynamics:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
-        'modern_industrialization:bronze_fluid_output_hatch', bronzeBits
-    )
+        key: {
+            p: { item: "moderndynamics:fluid_pipe" },
+            h: { item: "minecraft:hopper" },
+            A: { item: "moderndynamics:extractor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_fluid_output_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //fluid_input
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("M").layerCentre("h"),
-            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("M").layerCentre("p")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("h"),
+            ['   ','   ','   '].workspacePlus("M").workspacePlus("p").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("p")
         ],
-        {p:"moderndynamics:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
-        'modern_industrialization:bronze_fluid_input_hatch', bronzeBits
-    )
+        key: {
+            p: { item: "moderndynamics:fluid_pipe" },
+            h: { item: "minecraft:hopper" },
+            A: { item: "moderndynamics:attractor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:bronze_fluid_input_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //#endregion
 
     //#region steel machines
-    var steelMaterialset = {M:'kubejs:steel_machine_bit', P:"immersiveengineering:fluid_pipe", G:'kubejs:steel_infused_glass', F:'kubejs:small_steel_fluid_container'}
-    var steelUpgrade = {M:'kubejs:steel_machine_bit', P:"immersiveengineering:fluid_pipe", G:'kubejs:steel_infused_glass'}
-    var steelBits = {M:'kubejs:steel_machine_bit'}
 
     function steelMachineUpgrade(base, output){
-        workspace_recipe([
-                ['   ','   ','   '].layerPlus("M"),
-                ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("B"),
-                ['   ','   ','   '].layerPlus("P")
+        yTechWorkspaceRecipe(event, {
+            pattern: [
+                ['   ','   ','   '].workspacePlus("M"),
+                ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("B"),
+                ['   ','   ','   '].workspacePlus("P")
             ],
-            {B:base},
-            output, steelUpgrade
-        )
+            key: {
+                B: { item: base }
+            },
+            outputItems: [[{ id: output }, 1]],
+            materialset: WORKSPACE_MATERIALSETS.STEEL_UPGRADE,
+            tool: wrench,
+            removeRecipe: true,
+            miCompatMachine:"modern_industrialization:packer"
+        })
     }
+
     //furnace
     steelMachineUpgrade("modern_industrialization:bronze_mi_furnace", "modern_industrialization:steel_mi_furnace")
     //boiler
@@ -424,575 +635,1113 @@ ServerEvents.recipes(event => {
     steelMachineUpgrade("extended_industrialization:bronze_composter", "extended_industrialization:steel_composter")
 
     //honey_extractor
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerSides("g"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerFront("R").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("g"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceFront("R").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {R:"modern_industrialization:tin_rotor",g:"modern_industrialization:bronze_gear"},
-        'extended_industrialization:steel_honey_extractor', steelMaterialset
-    )
+        key: {
+            R: { item: "modern_industrialization:tin_rotor" },
+            g: { item: "modern_industrialization:bronze_gear" },
+            P: { item: "immersiveengineering:fluid_pipe" },
+            G: { item: "kubejs:steel_infused_glass" },
+            F: { item: "kubejs:small_steel_fluid_container" }
+        },
+        outputItems: [[{ id: "extended_industrialization:steel_honey_extractor" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //wiremill
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCorners("R"),
-            ['   ','   ','   '].layerAll("M").layerCorners("g").layerCentre(" ").layerFront("G"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("R"),
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("g").workspaceCenter(" ").workspaceFront("G"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {R:"modern_industrialization:bronze_rotor",g:"modern_industrialization:bronze_gear"},
-        'modern_industrialization:steel_wiremill', steelMaterialset
-    )
+        key: {
+            R: { item: "modern_industrialization:bronze_rotor" },
+            g: { item: "modern_industrialization:bronze_gear" },
+            P: { item: "immersiveengineering:fluid_pipe" },
+            G: { item: "kubejs:steel_infused_glass" },
+            F: { item: "kubejs:small_steel_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_wiremill" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //alloy_smelter
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCorners("w"),
-            ['   ','   ','   '].layerAll("M").layerCorners("w").layerCentre("A").layerFront("G"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("w"),
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("w").workspaceCenter("A").workspaceFront("G"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {w:"modern_industrialization:cupronickel_wire",A:"ytech:primitive_alloy_smelter"},
-        'extended_industrialization:steel_alloy_smelter', steelMaterialset
-    )
+        key: {
+            w: { item: "modern_industrialization:cupronickel_wire" },
+            A: { item: "ytech:primitive_alloy_smelter" },
+            P: { item: "immersiveengineering:fluid_pipe" },
+            G: { item: "kubejs:steel_infused_glass" },
+            F: { item: "kubejs:small_steel_fluid_container" }
+        },
+        outputItems: [[{ id: "extended_industrialization:steel_alloy_smelter" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //packer
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCorners("g").layerCentre("p"),
-            ['   ','   ','   '].layerAll("M").layerCorners("g").layerSides("p").layerCentre(" ").layerFront("G"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("g").workspaceCenter("p"),
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("g").workspaceSides("p").workspaceCenter(" ").workspaceFront("G"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {g:"modern_industrialization:bronze_gear",p:"minecraft:piston"},
-        'modern_industrialization:steel_packer', steelMaterialset
-    )
+        key: {
+            g: { item: "modern_industrialization:bronze_gear" },
+            p: { item: "minecraft:piston" },
+            P: { item: "immersiveengineering:fluid_pipe" },
+            G: { item: "kubejs:steel_infused_glass" },
+            F: { item: "kubejs:small_steel_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_packer" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //unpacker
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCorners("g").layerCentre("p"),
-            ['   ','   ','   '].layerAll("M").layerCorners("g").layerSides("p").layerCentre(" ").layerFront("G"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("g").workspaceCenter("p"),
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("g").workspaceSides("p").workspaceCenter(" ").workspaceFront("G"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P").workspaceCenter("F")
         ],
-        {g:"modern_industrialization:bronze_gear",p:"minecraft:sticky_piston"},
-        'modern_industrialization:steel_unpacker', steelMaterialset
-    )
+        key: {
+            g: { item: "modern_industrialization:bronze_gear" },
+            p: { item: "minecraft:sticky_piston" },
+            P: { item: "immersiveengineering:fluid_pipe" },
+            G: { item: "kubejs:steel_infused_glass" },
+            F: { item: "kubejs:small_steel_fluid_container" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_unpacker" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //tank
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("G"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerCentre("G")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        {G:"kubejs:steel_infused_glass"},
-        'modern_industrialization:steel_tank', steelBits
-    )
+        key: { G: { item: "kubejs:steel_infused_glass" } },
+        outputItems: [[{ id: "modern_industrialization:steel_tank" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //barrel
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("G"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerCentre("G")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        {G:"labels:label"},
-        'modern_industrialization:steel_barrel', steelBits
-    )
+        key: { G: { item: "labels:label" } },
+        outputItems: [[{ id: "modern_industrialization:steel_barrel" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //item_output
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("M").layerCentre("p"),
-            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("M").layerCentre("h")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("p"),
+            ['   ','   ','   '].workspacePlus("M").workspacePlus("p").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("h")
         ],
-        {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
-        'modern_industrialization:steel_item_output_hatch', steelBits
-    )
+        key: {
+            p: { item: "moderndynamics:item_pipe" },
+            h: { item: "minecraft:hopper" },
+            A: { item: "moderndynamics:extractor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_item_output_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //item_input
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("M").layerCentre("h"),
-            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("M").layerCentre("p")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("h"),
+            ['   ','   ','   '].workspacePlus("M").workspacePlus("p").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("p")
         ],
-        {p:"moderndynamics:item_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
-        'modern_industrialization:steel_item_input_hatch', steelBits
-    )
+        key: {
+            p: { item: "moderndynamics:item_pipe" },
+            h: { item: "minecraft:hopper" },
+            A: { item: "moderndynamics:attractor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_item_input_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //fluid_output
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("M").layerCentre("p"),
-            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("M").layerCentre("h")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("p"),
+            ['   ','   ','   '].workspacePlus("M").workspacePlus("p").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("h")
         ],
-        {p:"immersiveengineering:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:extractor"},
-        'modern_industrialization:steel_fluid_output_hatch', steelBits
-    )
+        key: {
+            p: { item: "immersiveengineering:fluid_pipe" },
+            h: { item: "minecraft:hopper" },
+            A: { item: "moderndynamics:extractor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_fluid_output_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //fluid_input
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("M").layerCentre("h"),
-            ['   ','   ','   '].layerPlus("M").layerPlus("p").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("M").layerCentre("p")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("h"),
+            ['   ','   ','   '].workspacePlus("M").workspacePlus("p").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("M").workspaceCenter("p")
         ],
-        {p:"immersiveengineering:fluid_pipe",h:"minecraft:hopper",A:"moderndynamics:attractor"},
-        'modern_industrialization:steel_fluid_input_hatch', steelBits
-    )
+        key: {
+            p: { item: "immersiveengineering:fluid_pipe" },
+            h: { item: "minecraft:hopper" },
+            A: { item: "moderndynamics:attractor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steel_fluid_input_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerPlus("P"),
-            ['   ','   ','   '].layerAll("M").layerSides("T").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerPlus("P")
+    //large tank
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("T").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P")
         ],
-        {P:"immersiveengineering:fluid_pipe",T:"modern_industrialization:steel_tank"},
-        'modern_industrialization:large_tank', steelBits
-    )
+        key: {
+            P: { item: "immersiveengineering:fluid_pipe" },
+            T: { item: "modern_industrialization:steel_tank" }
+        },
+        outputItems: [[{ id: "modern_industrialization:large_tank" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerPlus("P"),
-            ['   ','   ','   '].layerAll("M").layerSides("P").layerCentre("T"),
-            ['   ','   ','   '].layerAll("M").layerPlus("P")
+    //large tank hatch
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("P").workspaceCenter("T"),
+            ['   ','   ','   '].workspaceFull("M").workspacePlus("P")
         ],
-        {P:"immersiveengineering:fluid_pipe",T:"modern_industrialization:steel_tank"},
-        'modern_industrialization:large_tank_hatch', steelBits
-    )
+        key: {
+            P: { item: "immersiveengineering:fluid_pipe" },
+            T: { item: "modern_industrialization:steel_tank" }
+        },
+        outputItems: [[{ id: "modern_industrialization:large_tank_hatch" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerSides("M").layerCentre("H"),
-            ['   ','   ','   '].layerSides("M").layerCentre("C"),
-            ['   ','   ','   '].layerSides("M").layerCentre("H")
+    //configurable chest
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceSides("M").workspaceCenter("H"),
+            ['   ','   ','   '].workspaceSides("M").workspaceCenter("C"),
+            ['   ','   ','   '].workspaceSides("M").workspaceCenter("H")
         ],
-        {H:"minecraft:hopper",C:"modern_industrialization:analog_circuit"},
-        'modern_industrialization:configurable_chest', steelBits
-    )
+        key: {
+            H: { item: "minecraft:hopper" },
+            C: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "modern_industrialization:configurable_chest" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("H"),
-            ['   ','   ','   '].layerAll("M").layerCorners("C").layerCentre("c"),
-            ['   ','   ','   '].layerAll("M").layerCentre("H")
+    //large configurable chest
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("H"),
+            ['   ','   ','   '].workspaceFull("M").workspaceCorners("C").workspaceCenter("c"),
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("H")
         ],
-        {H:"minecraft:hopper",C:"modern_industrialization:analog_circuit",c:"modern_industrialization:configurable_chest"},
-        'extended_industrialization:large_configurable_chest', steelBits
-    )
-
-
+        key: {
+            H: { item: "minecraft:hopper" },
+            C: { item: "modern_industrialization:analog_circuit" },
+            c: { item: "modern_industrialization:configurable_chest" }
+        },
+        outputItems: [[{ id: "extended_industrialization:large_configurable_chest" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
 
     //#endregion
-   
+
     //#region MI basic machines
-    var basicMaterialset = {M:'kubejs:basic_machine_bit', B:'modern_industrialization:portable_storage_unit', C:"modern_industrialization:tin_cable", G:'kubejs:tempered_glass'}
-    var basicBits = {M:'kubejs:basic_machine_bit'}
 
     //tank
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("G"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerCentre("G")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        {G:"kubejs:tempered_glass"},
-        'modern_industrialization:aluminum_tank', basicBits
-    )
+        key: { G: { item: "kubejs:tempered_glass" } },
+        outputItems: [[{ id: "modern_industrialization:aluminum_tank" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //barrel
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("G"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre(" "),
-            ['   ','   ','   '].layerAll("M").layerCentre("G")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        {G:"labels:label"},
-        'modern_industrialization:aluminum_barrel', basicBits
-    )
+        key: { G: { item: "labels:label" } },
+        outputItems: [[{ id: "modern_industrialization:aluminum_barrel" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC_BITS,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //polarizer
-    workspace_recipe([
-            [' W ','I I',' W '].layerCorners("I").layerCentre("c"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' W ','I I',' W '].workspaceCorners("I").workspaceCenter("c"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {I:'modern_industrialization:inductor',W:"modern_industrialization:tin_wire",c:"modern_industrialization:analog_circuit"},
-        'modern_industrialization:polarizer', basicMaterialset
-    )
+        key: {
+            I: { item: "modern_industrialization:inductor" },
+            W: { item: "modern_industrialization:tin_wire" },
+            c: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "modern_industrialization:polarizer" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //assembler
-    workspace_recipe([
-            [' W ','I I',' W '].layerCentre("c").layerCorners("A"),                    
-            ['   ','   ','   '].layerAll("M").layerLeft("D").layerFront("G").layerCentre(" "),  
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")  
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' W ','I I',' W '].workspaceCenter("c").workspaceCorners("A"),
+            ['   ','   ','   '].workspaceFull("M").workspaceLeft("D").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {D:'kubejs:cd_reader', A:'modern_industrialization:robot_arm',I:"kubejs:rangefinder", W:"modern_industrialization:conveyor",c:"modern_industrialization:analog_circuit"},
-        'modern_industrialization:assembler', basicMaterialset
-    )
+        key: {
+            D: { item: "kubejs:cd_reader" },
+            A: { item: "modern_industrialization:robot_arm" },
+            I: { item: "kubejs:rangefinder" },
+            W: { item: "modern_industrialization:conveyor" },
+            c: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "modern_industrialization:assembler" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //wiremill
-    workspace_recipe([
-            [' c ','I I',' c '].layerCentre("m").layerCorners("A"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' c ','I I',' c '].workspaceCenter("m").workspaceCorners("A"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {A:'modern_industrialization:aluminum_blade',I:"modern_industrialization:steel_rod_magnetic",c:"modern_industrialization:analog_circuit", m:"immersiveengineering:mold_wire"},
-        'modern_industrialization:electric_wiremill', basicMaterialset
-    )
+        key: {
+            A: { item: "modern_industrialization:aluminum_blade" },
+            I: { item: "modern_industrialization:steel_rod_magnetic" },
+            c: { item: "modern_industrialization:analog_circuit" },
+            m: { item: "immersiveengineering:mold_wire" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_wiremill" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //mixer
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("G").layerCorners("A").layerSides("w"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre("r"),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("G").workspaceCorners("A").workspaceSides("w"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("r"),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {A:'modern_industrialization:motor',w:"modern_industrialization:tin_wire",r:"modern_industrialization:aluminum_rotor"},
-        'modern_industrialization:electric_mixer', basicMaterialset
-    )
+        key: {
+            A: { item: "modern_industrialization:motor" },
+            w: { item: "modern_industrialization:tin_wire" },
+            r: { item: "modern_industrialization:aluminum_rotor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_mixer" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //cutting_machine
-    workspace_recipe([
-            [' c ','w w',' c '].layerCentre("c").layerCorners("A"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("r"),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' c ','w w',' c '].workspaceCenter("c").workspaceCorners("A"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("r"),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {A:'modern_industrialization:motor',w:"modern_industrialization:analog_circuit",c:"modern_industrialization:conveyor",r:"modern_industrialization:invar_rotary_blade"},
-        'modern_industrialization:electric_cutting_machine', basicMaterialset
-    )
+        key: {
+            A: { item: "modern_industrialization:motor" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            c: { item: "modern_industrialization:conveyor" },
+            r: { item: "modern_industrialization:invar_rotary_blade" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_cutting_machine" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //packer
-    workspace_recipe([
-            [' c ','w w',' c '].layerCentre("p").layerCorners("A"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("A"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {A:'modern_industrialization:piston',w:"modern_industrialization:analog_circuit",p:"modern_industrialization:motor",c:"modern_industrialization:tin_wire"},
-        'modern_industrialization:electric_packer', basicMaterialset
-    )
+        key: {
+            A: { item: "modern_industrialization:piston" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            p: { item: "modern_industrialization:motor" },
+            c: { item: "modern_industrialization:tin_wire" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_packer" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //furnace
-    workspace_recipe([
-            [' c ','w w',' c '].layerCentre("p").layerCorners("c"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("c"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {w:"modern_industrialization:analog_circuit",p:"modern_industrialization:motor",c:"modern_industrialization:cupronickel_wire_magnetic"},
-        'modern_industrialization:electric_mi_furnace', basicMaterialset
-    )
+        key: {
+            w: { item: "modern_industrialization:analog_circuit" },
+            p: { item: "modern_industrialization:motor" },
+            c: { item: "modern_industrialization:cupronickel_wire_magnetic" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_mi_furnace" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //brewery
-    workspace_recipe([
-            [' c ','w w',' c '].layerCentre("r").layerCorners("g"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre("r"),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' c ','w w',' c '].workspaceCenter("r").workspaceCorners("g"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("r"),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {g:"minecraft:glass_bottle",r:"minecraft:blaze_rod",w:"modern_industrialization:analog_circuit",c:"modern_industrialization:pump"},
-        'extended_industrialization:electric_brewery', basicMaterialset
-    )
+        key: {
+            g: { item: "minecraft:glass_bottle" },
+            r: { item: "minecraft:blaze_rod" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            c: { item: "modern_industrialization:pump" }
+        },
+        outputItems: [[{ id: "extended_industrialization:electric_brewery" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //waste_collector
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("R").layerCorners("r").layerSides("r"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre("c"),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("R").workspaceCorners("r").workspaceSides("r"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter("c"),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {r:"#c:rods/steel",R:"modern_industrialization:tin_rotor",c:"modern_industrialization:pump"},
-        'extended_industrialization:electric_waste_collector', basicMaterialset
-    )
-    //honey_extractor_collector
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("M").layerCentre("G").layerLeft("w").layerRight("w").layerFront("c"),
-            ['   ','   ','   '].layerAll("M").layerSides("G").layerCentre(" ").layerFront("R"),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+        key: {
+            r: { tag: "c:rods/steel" },
+            R: { item: "modern_industrialization:tin_rotor" },
+            c: { item: "modern_industrialization:pump" }
+        },
+        outputItems: [[{ id: "extended_industrialization:electric_waste_collector" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
+    //honey_extractor
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("M").workspaceCenter("G").workspaceLeft("w").workspaceRight("w").workspaceFront("c"),
+            ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" ").workspaceFront("R"),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {w:"modern_industrialization:analog_circuit",R:"modern_industrialization:tin_rotor",c:"modern_industrialization:pump"},
-        'extended_industrialization:electric_honey_extractor', basicMaterialset
-    )
+        key: {
+            w: { item: "modern_industrialization:analog_circuit" },
+            R: { item: "modern_industrialization:tin_rotor" },
+            c: { item: "modern_industrialization:pump" }
+        },
+        outputItems: [[{ id: "extended_industrialization:electric_honey_extractor" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //unpacker
-    workspace_recipe([
-            [' c ','w w',' c '].layerCentre("p").layerCorners("A"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("m"),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' c ','w w',' c '].workspaceCenter("p").workspaceCorners("A"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("m"),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {m:"immersiveengineering:mold_unpacking", A:'modern_industrialization:piston',w:"modern_industrialization:analog_circuit",p:"modern_industrialization:motor",c:"modern_industrialization:tin_wire"},
-        'modern_industrialization:electric_unpacker', basicMaterialset
-    )
+        key: {
+            m: { item: "immersiveengineering:mold_unpacking" },
+            A: { item: "modern_industrialization:piston" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            p: { item: "modern_industrialization:motor" },
+            c: { item: "modern_industrialization:tin_wire" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_unpacker" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //composter
-    workspace_recipe([
-            [' c ','w w',' A '].layerCentre("p").layerCorners("W"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre("m"),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' c ','w w',' A '].workspaceCenter("p").workspaceCorners("W"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter("m"),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {m:"minecraft:composter", A:'modern_industrialization:motor',w:"modern_industrialization:analog_circuit",p:"modern_industrialization:tin_rotor",c:"modern_industrialization:pump",W:"modern_industrialization:tin_wire"},
-        'extended_industrialization:electric_composter', basicMaterialset
-    )
+        key: {
+            m: { item: "minecraft:composter" },
+            A: { item: "modern_industrialization:motor" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            p: { item: "modern_industrialization:tin_rotor" },
+            c: { item: "modern_industrialization:pump" },
+            W: { item: "modern_industrialization:tin_wire" }
+        },
+        outputItems: [[{ id: "extended_industrialization:electric_composter" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //bending_machine
-    workspace_recipe([
-            [' A ','w w',' A '].layerCentre("p").layerCorners("W"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' A ','w w',' A '].workspaceCenter("p").workspaceCorners("W"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {p:"modern_industrialization:motor", A:'modern_industrialization:piston',w:"modern_industrialization:analog_circuit",W:"modern_industrialization:steel_ring"},
-        'extended_industrialization:electric_bending_machine', basicMaterialset
-    )
+        key: {
+            p: { item: "modern_industrialization:motor" },
+            A: { item: "modern_industrialization:piston" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            W: { item: "modern_industrialization:steel_ring" }
+        },
+        outputItems: [[{ id: "extended_industrialization:electric_bending_machine" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //compressor
-    workspace_recipe([
-            [' p ','w w',' p '].layerCentre("W").layerCorners("A"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' p ','w w',' p '].workspaceCenter("W").workspaceCorners("A"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {p:"modern_industrialization:motor", A:'modern_industrialization:piston',w:"modern_industrialization:analog_circuit",W:"modern_industrialization:tin_wire"},
-        'modern_industrialization:electric_compressor', basicMaterialset
-    )
+        key: {
+            p: { item: "modern_industrialization:motor" },
+            A: { item: "modern_industrialization:piston" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            W: { item: "modern_industrialization:tin_wire" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_compressor" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //alloy_smelter
-    workspace_recipe([
-            [' r ','w w',' r '].layerCentre("p").layerCorners("c"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' r ','w w',' r '].workspaceCenter("p").workspaceCorners("c"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {r:"modern_industrialization:tin_rotor",w:"modern_industrialization:analog_circuit",p:"modern_industrialization:motor",c:"modern_industrialization:cupronickel_wire_magnetic"},
-        'extended_industrialization:electric_alloy_smelter', basicMaterialset
-    )
+        key: {
+            r: { item: "modern_industrialization:tin_rotor" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            p: { item: "modern_industrialization:motor" },
+            c: { item: "modern_industrialization:cupronickel_wire_magnetic" }
+        },
+        outputItems: [[{ id: "extended_industrialization:electric_alloy_smelter" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //water_pump
-    workspace_recipe([
-            [' p ','w w',' p '].layerCentre("r").layerCorners("c"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' p ','w w',' p '].workspaceCenter("r").workspaceCorners("c"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {r:"modern_industrialization:tin_rotor",w:"modern_industrialization:analog_circuit",p:"modern_industrialization:motor",c:"modern_industrialization:pump"},
-        'modern_industrialization:electric_water_pump', basicMaterialset
-    )
+        key: {
+            r: { item: "modern_industrialization:tin_rotor" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            p: { item: "modern_industrialization:motor" },
+            c: { item: "modern_industrialization:pump" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_water_pump" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //macerator
-    workspace_recipe([
-            [' p ','w w',' p '].layerCentre("r").layerCorners("p"),
-            ['   ','   ','   '].layerAll("M").layerFront("G").layerCentre(" "),
-            ['   ','   ','   '].layerCorners("M").layerPlus("C").layerCentre("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            [' p ','w w',' p '].workspaceCenter("r").workspaceCorners("p"),
+            ['   ','   ','   '].workspaceFull("M").workspaceFront("G").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
-        {r:"modern_industrialization:invar_rotary_blade",w:"modern_industrialization:analog_circuit",p:"modern_industrialization:motor"},
-        'modern_industrialization:electric_macerator', basicMaterialset
-    )
+        key: {
+            r: { item: "modern_industrialization:invar_rotary_blade" },
+            w: { item: "modern_industrialization:analog_circuit" },
+            p: { item: "modern_industrialization:motor" }
+        },
+        outputItems: [[{ id: "modern_industrialization:electric_macerator" }, 1]],
+        materialset: WORKSPACE_MATERIALSETS.BASIC,
+        tool: wrench,
+        removeRecipe: true,
+        miCompatMachine:packer
+    })
+
     //#endregion
-    
+
     //#region misc
 
-    workspace_recipe([
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             ['WWW','WTW','WWW'],
-            ['   ',' B ','   '].layerCorners("S"),
-            ['   ','   ','   '].layerCorners("S")
+            ['   ',' B ','   '].workspaceCorners("S"),
+            ['   ','   ','   '].workspaceCorners("S")
         ],
-        {S:'immersiveengineering:stick_treated', T:'craftingstation:crafting_station_slab', W:'#immersiveengineering:treated_wood_slab',B:"immersiveengineering:wooden_barrel"},
-        'immersiveengineering:craftingtable'
-    )
+        key: {
+            S: { item: "immersiveengineering:stick_treated" },
+            T: { item: "craftingstation:crafting_station_slab" },
+            W: { tag: "immersiveengineering:treated_wood_slab" },
+            B: { item: "immersiveengineering:wooden_barrel" }
+        },
+        outputItems: [[{ id: "immersiveengineering:craftingtable" }, 1]],
+        tool: wrench,
+        removeRecipe: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P"),
-            ['   ','   ','   '].layerSides("S").layerCorners("R").layerCentre("C"),
-            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P"),
+            ['   ','   ','   '].workspaceSides("S").workspaceCorners("R").workspaceCenter("C"),
+            ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P")
         ],
-        {S:'immersiveengineering:basic_engineering', R:'modern_industrialization:steel_rod', P:"modern_industrialization:steel_plate", C:"modern_industrialization:analog_circuit"},
-        'mi_tweaks:multiblock_packer_3000_safety_regulations_edition', {} , "immersiveengineering:hammer"
-    )
+        key: {
+            S: { item: "immersiveengineering:basic_engineering" },
+            R: { item: "modern_industrialization:steel_rod" },
+            P: { item: "modern_industrialization:steel_plate" },
+            C: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "mi_tweaks:multiblock_packer_3000_safety_regulations_edition" }, 1]],
+        tool: { item: "immersiveengineering:hammer" },
+        removeRecipe: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P"),
-            ['   ','   ','   '].layerSides("S").layerCorners("R").layerCentre("C"),
-            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P"),
+            ['   ','   ','   '].workspaceSides("S").workspaceCorners("R").workspaceCenter("C"),
+            ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P")
         ],
-        {S:'modern_industrialization:fire_clay_bricks', R:'modern_industrialization:steel_rod', P:"modern_industrialization:steel_plate", C:"extended_industrialization:steel_alloy_smelter"},
-        'mi_tweaks:advanced_steam_alloy_smelter'
-    )
+        key: {
+            S: { item: "modern_industrialization:fire_clay_bricks" },
+            R: { item: "modern_industrialization:steel_rod" },
+            P: { item: "modern_industrialization:steel_plate" },
+            C: { item: "extended_industrialization:steel_alloy_smelter" }
+        },
+        outputItems: [[{ id: "mi_tweaks:advanced_steam_alloy_smelter" }, 1]],
+        tool: wrench,
+        removeRecipe: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P"),
-            ['   ','   ','   '].layerSides("S").layerCorners("R").layerCentre("C"),
-            ['   ','   ','   '].layerCentre("S").layerCorners("R").layerSides("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P"),
+            ['   ','   ','   '].workspaceSides("S").workspaceCorners("R").workspaceCenter("C"),
+            ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P")
         ],
-        {S:'modern_industrialization:fire_clay_bricks', R:'modern_industrialization:steel_rod', P:"modern_industrialization:steel_plate", C:"modern_industrialization:steam_blast_furnace"},
-        'mi_tweaks:advanced_steam_blast_furnace'
-    )
+        key: {
+            S: { item: "modern_industrialization:fire_clay_bricks" },
+            R: { item: "modern_industrialization:steel_rod" },
+            P: { item: "modern_industrialization:steel_plate" },
+            C: { item: "modern_industrialization:steam_blast_furnace" }
+        },
+        outputItems: [[{ id: "mi_tweaks:advanced_steam_blast_furnace" }, 1]],
+        tool: wrench,
+        removeRecipe: true
+    })
 
-    workspace_recipe([
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             [' B ',' B ',' B '],
             ['   ',' I ','   '],
-            ['   ',' P ','   '].layerCorners("b").layerSides("R")
+            ['   ',' P ','   '].workspaceCorners("b").workspaceSides("R")
         ],
-        {B:'minecraft:iron_block', I:'#c:ingots/iron', b:'#c:bolts/iron',R:'#c:rods/iron',P:"minecraft:heavy_weighted_pressure_plate"},
-        'minecraft:anvil', {} , "#c:hammers"
-    )
+        key: {
+            B: { item: "minecraft:iron_block" },
+            I: { tag: "c:ingots/iron" },
+            b: { tag: "c:bolts/iron" },
+            R: { tag: "c:rods/iron" },
+            P: { item: "minecraft:heavy_weighted_pressure_plate" }
+        },
+        outputItems: [[{ id: "minecraft:anvil" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("I"),
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("I"),
             ['   ',' P ','   '],
-            ['   ',' B ','   '].layerCorners("I").layerSides("I")
+            ['   ',' B ','   '].workspaceCorners("I").workspaceSides("I")
         ],
-        {B:'minecraft:iron_block', I:'#c:ingots/iron',P:"minecraft:heavy_weighted_pressure_plate"},
-        'modern_industrialization:forge_hammer', {} , "#c:hammers"
-    )
-    workspace_recipe([
-            ['   ',' B ','   '].layerCorners("I").layerSides("I"),
+        key: {
+            B: { item: "minecraft:iron_block" },
+            I: { tag: "c:ingots/iron" },
+            P: { item: "minecraft:heavy_weighted_pressure_plate" }
+        },
+        outputItems: [[{ id: "modern_industrialization:forge_hammer" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true
+    })
+
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ',' B ','   '].workspaceCorners("I").workspaceSides("I"),
             ['   ',' I ','   '],
             [' B ','BBB',' B ']
         ],
-        {B:'modern_industrialization:bronze_block', I:'#c:ingots/bronze'},
-        'ytech:bronze_anvil', {} , "#c:hammers"
-    )
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("I").layerCentre("W"),
-            ['   ','   ','   '].layerAll("I").layerSides("W").layerFront("L").layerCentre("c"),
-            ['   ','   ','   '].layerAll("I").layerCentre("W")
-        ],
-        {I:'immersiveengineering:sheetmetal_steel',W:"immersiveengineering:treated_wood_horizontal",L:"immersiveengineering:logic_unit",c:"modern_industrialization:analog_circuit"},
-        'modern_industrialization:enigma_machine', {} , "immersiveengineering:hammer"
-    )
+        key: {
+            B: { item: "modern_industrialization:bronze_block" },
+            I: { tag: "c:ingots/bronze" }
+        },
+        outputItems: [[{ id: "ytech:bronze_anvil" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("E"),
-            ['   ','   ','   '].layerCorners("C").layerPlus("G"),
-            ['   ','   ','   '].layerAll("C")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W"),
+            ['   ','   ','   '].workspaceFull("I").workspaceSides("W").workspaceFront("L").workspaceCenter("c"),
+            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W")
         ],
-        {E:'transmog:void_fragment',C:"spectrum:citrine_block",G:"minecraft:glass"},
-        'transmog:transmogrification_table', {} , "kubejs:amber_visage", true
-    )
+        key: {
+            I: { item: "immersiveengineering:sheetmetal_steel" },
+            W: { item: "immersiveengineering:treated_wood_horizontal" },
+            L: { item: "immersiveengineering:logic_unit" },
+            c: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "modern_industrialization:enigma_machine" }, 1]],
+        tool: { item: "immersiveengineering:hammer" },
+        removeRecipe: true
+    })
 
-    workspace_recipe([
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("E"),
+            ['   ','   ','   '].workspaceCorners("C").workspacePlus("G"),
+            ['   ','   ','   '].workspaceFull("C")
+        ],
+        key: {
+            E: { item: "transmog:void_fragment" },
+            C: { item: "spectrum:citrine_block" },
+            G: { item: "minecraft:glass" }
+        },
+        outputItems: [[{ id: "transmog:transmogrification_table" }, 1]],
+        tool: { item: "kubejs:amber_visage" },
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             ['   ','   ','   '],
-            ['   ','   ','   '].layerCentre("S"),
-            ['   ','   ','   '].layerAll("C").layerPlus("s")
+            ['   ','   ','   '].workspaceCenter("S"),
+            ['   ','   ','   '].workspaceFull("C").workspacePlus("s")
         ],
-        {C:'minecraft:cobblestone',S:"minecraft:stick", s:"minecraft:cobblestone_slab"},
-        'hexerei:pestle_and_mortar', {} , "ytech:sharp_flint", true
-    )
+        key: {
+            C: { item: "minecraft:cobblestone" },
+            S: { item: "minecraft:stick" },
+            s: { item: "minecraft:cobblestone_slab" }
+        },
+        outputItems: [[{ id: "hexerei:pestle_and_mortar" }, 1]],
+        tool: { item: "ytech:sharp_flint" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("S").layerCentre("H"),
-            ['   ','   ','   '].layerAll("S").layerCentre("C").layerSides("B"),
-            ['   ','   ','   '].layerAll("S").layerCentre("H")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter("H"),
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter("C").workspaceSides("B"),
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter("H")
         ],
-        {C:'modern_industrialization:analog_circuit',H:"minecraft:hopper", B:"#c:barrels", S:"#c:stones"},
-        'sophisticatedstorage:controller'
-    )
+        key: {
+            C: { item: "modern_industrialization:analog_circuit" },
+            H: { item: "minecraft:hopper" },
+            B: { tag: "c:barrels" },
+            S: { tag: "c:stones" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:controller" }, 1]],
+        tool: wrench,
+        removeRecipe: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("S").layerCentre("H"),
-            ['   ','   ','   '].layerAll("S").layerCentre("B").layerSides(" "),
-            ['   ','   ','   '].layerAll("S").layerCentre("H")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter("H"),
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter("B").workspaceSides(" "),
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter("H")
         ],
-        {H:"minecraft:hopper", B:"#c:barrels", S:"#c:stones"},
-        'sophisticatedstorage:storage_io'
-    )
+        key: {
+            H: { item: "minecraft:hopper" },
+            B: { tag: "c:barrels" },
+            S: { tag: "c:stones" }
+        },
+        outputItems: [[{ id: "sophisticatedstorage:storage_io" }, 1]],
+        tool: wrench,
+        removeRecipe: true
+    })
 
     //#region YTech
 
-    workspace_recipe([
-            ['   ','   ','   '].layerCentre("L").layerSides("T"),
-            ['   ','   ','   '].layerCentre("L").layerSides("T"),
-            ['   ','   ','   '].layerAll("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCenter("L").workspaceSides("T"),
+            ['   ','   ','   '].workspaceCenter("L").workspaceSides("T"),
+            ['   ','   ','   '].workspaceFull("P")
         ],
-        {P:'minecraft:cobblestone',L:"#minecraft:logs", T:"ytech:grass_twine"},
-        'ytech:tree_stump', {} , "ytech:sharp_flint", true
-    )
+        key: {
+            P: { item: "minecraft:cobblestone" },
+            L: { tag: "minecraft:logs" },
+            T: { item: "ytech:grass_twine" }
+        },
+        outputItems: [[{ id: "ytech:tree_stump" }, 1]],
+        tool: { item: "ytech:sharp_flint" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerCorners("T").layerSides("P"),
-            ['   ','   ','   '].layerCorners("T").layerSides("P").layerFront(" "),
-            ['   ','   ','   '].layerAll("C").layerCentre("F")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceCorners("T").workspaceSides("P"),
+            ['   ','   ','   '].workspaceCorners("T").workspaceSides("P").workspaceFront(" "),
+            ['   ','   ','   '].workspaceFull("C").workspaceCenter("F")
         ],
-        {P:'ytech:pebble', T:"ytech:grass_twine",F:"ytech:fire_pit", C:"#c:cobblestones"},
-        'minecraft:furnace', {} , "#c:hammers", true
-    )
+        key: {
+            P: { item: "ytech:pebble" },
+            T: { item: "ytech:grass_twine" },
+            F: { item: "ytech:fire_pit" },
+            C: { tag: "c:cobblestones" }
+        },
+        outputItems: [[{ id: "minecraft:furnace" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("P").layerCentre(" "),
-            ['   ','   ','   '].layerAll("P").layerCentre(" ").layerFront(" "),
-            ['   ','   ','   '].layerAll("C").layerCentre("F").layerFront("S")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("P").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("P").workspaceCenter(" ").workspaceFront(" "),
+            ['   ','   ','   '].workspaceFull("C").workspaceCenter("F").workspaceFront("S")
         ],
-        {P:'minecraft:brick',F:"ytech:fire_pit", C:"minecraft:bricks", S:"minecraft:brick_slab"},
-        'ytech:primitive_smelter', {} , "#c:hammers", true
-    )
+        key: {
+            P: { item: "minecraft:brick" },
+            F: { item: "ytech:fire_pit" },
+            C: { item: "minecraft:bricks" },
+            S: { item: "minecraft:brick_slab" }
+        },
+        outputItems: [[{ id: "ytech:primitive_smelter" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerSides("P"),
-            ['   ','   ','   '].layerSides("P"),
-            ['   ','   ','   '].layerSides("P")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceSides("P"),
+            ['   ','   ','   '].workspaceSides("P"),
+            ['   ','   ','   '].workspaceSides("P")
         ],
-        {P:'minecraft:brick'},
-        'ytech:brick_chimney', {} , "#c:hammers", true
-    )
+        key: { P: { item: "minecraft:brick" } },
+        outputItems: [[{ id: "ytech:brick_chimney" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("P").layerSides("C").layerCentre(" "),
-            ['   ','   ','   '].layerAll("P").layerSides("C").layerCentre(" ").layerFront("S"),
-            ['   ','   ','   '].layerAll("C").layerCentre("F").layerFront("S")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("P").workspaceSides("C").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("P").workspaceSides("C").workspaceCenter(" ").workspaceFront("S"),
+            ['   ','   ','   '].workspaceFull("C").workspaceCenter("F").workspaceFront("S")
         ],
-        {P:'minecraft:brick',F:"ytech:fire_pit", C:"minecraft:bricks", S:"minecraft:brick_slab"},
-        'ytech:primitive_alloy_smelter', {} , "#c:hammers", true
-    )
+        key: {
+            P: { item: "minecraft:brick" },
+            F: { item: "ytech:fire_pit" },
+            C: { item: "minecraft:bricks" },
+            S: { item: "minecraft:brick_slab" }
+        },
+        outputItems: [[{ id: "ytech:primitive_alloy_smelter" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("F").layerCentre(" "),
-            ['   ','   ','   '].layerAll("P").layerCentre(" "),
-            ['   ','   ','   '].layerAll("F").layerCentre(" ")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("F").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("P").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("F").workspaceCenter(" ")
         ],
-        {P:'minecraft:brick', F:"modern_industrialization:fire_clay_brick"},
-        'ytech:reinforced_brick_chimney', {} , "#c:hammers", true
-    )
+        key: {
+            P: { item: "minecraft:brick" },
+            F: { item: "modern_industrialization:fire_clay_brick" }
+        },
+        outputItems: [[{ id: "ytech:reinforced_brick_chimney" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("B").layerCentre("s").layerLeft("s").layerRight("s"),
-            ['   ','   ','   '].layerAll("S").layerBack("B").layerFront("B").layerCentre("A"),
-            ['   ','   ','   '].layerAll("B").layerCentre("s").layerLeft("s").layerRight("s")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("s").workspaceLeft("s").workspaceRight("s"),
+            ['   ','   ','   '].workspaceFull("S").workspaceBack("B").workspaceFront("B").workspaceCenter("A"),
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("s").workspaceLeft("s").workspaceRight("s")
         ],
-        {B:'ytech:terracotta_bricks', A:"ytech:terracotta_aqueduct", S:"minecraft:stick", s:"ytech:terracotta_brick_slab"},
-        'ytech:aqueduct_valve', {} , "#c:hammers", true
-    )
+        key: {
+            B: { item: "ytech:terracotta_bricks" },
+            A: { item: "ytech:terracotta_aqueduct" },
+            S: { item: "minecraft:stick" },
+            s: { item: "ytech:terracotta_brick_slab" }
+        },
+        outputItems: [[{ id: "ytech:aqueduct_valve" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerPlus("s").layerCorners("B").layerCentre(" "),
-            ['   ','   ','   '].layerAll("S").layerCentre("A"),
-            ['   ','   ','   '].layerPlus("s").layerCorners("B")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspacePlus("s").workspaceCorners("B").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter("A"),
+            ['   ','   ','   '].workspacePlus("s").workspaceCorners("B")
         ],
-        {B:'ytech:grass_twine', A:"ytech:aqueduct_valve", S:"minecraft:stick", s:"ytech:terracotta_brick_slab"},
-        'ytech:aqueduct_hydrator', {} , "#c:hammers", true
-    )
+        key: {
+            B: { item: "ytech:grass_twine" },
+            A: { item: "ytech:aqueduct_valve" },
+            S: { item: "minecraft:stick" },
+            s: { item: "ytech:terracotta_brick_slab" }
+        },
+        outputItems: [[{ id: "ytech:aqueduct_hydrator" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("B").layerCentre(" "),
-            ['   ','   ','   '].layerAll("s").layerCentre("A"),
-            ['   ','   ','   '].layerAll("B").layerCentre("S")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("s").workspaceCenter("A"),
+            ['   ','   ','   '].workspaceFull("B").workspaceCenter("S")
         ],
-        {B:'ytech:terracotta_bricks', A:"ytech:aqueduct_hydrator", S:"ytech:wooden_box", s:"ytech:terracotta_aqueduct"},
-        'ytech:aqueduct_fertilizer', {} , "#c:hammers", true
-    )
+        key: {
+            B: { item: "ytech:terracotta_bricks" },
+            A: { item: "ytech:aqueduct_hydrator" },
+            S: { item: "ytech:wooden_box" },
+            s: { item: "ytech:terracotta_aqueduct" }
+        },
+        outputItems: [[{ id: "ytech:aqueduct_fertilizer" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
-            ['   ','   ','   '].layerAll("s"),
-            ['   ','   ','   '].layerCentre("S"),
-            ['   ','   ','   '].layerAll("s").layerCentre("S").layerSides("C").layerFront("T").layerBack("T")
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("s"),
+            ['   ','   ','   '].workspaceCenter("S"),
+            ['   ','   ','   '].workspaceFull("s").workspaceCenter("S").workspaceSides("C").workspaceFront("T").workspaceBack("T")
         ],
-        {s:"#minecraft:wooden_slabs", S:"minecraft:stick", C:"minecraft:copper_ingot", T:"modern_industrialization:tin_ingot"},
-        'ytech:potters_wheel', {} , "#c:hammers", true
-    )
-    workspace_recipe([
+        key: {
+            s: { tag: "minecraft:wooden_slabs" },
+            S: { item: "minecraft:stick" },
+            C: { item: "minecraft:copper_ingot" },
+            T: { item: "modern_industrialization:tin_ingot" }
+        },
+        outputItems: [[{ id: "ytech:potters_wheel" }, 1]],
+        tool: { tag: "c:hammers" },
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             ['   ','   ','   '],
-            ['   ','   ','   '].layerAll("S").layerCentre(" "),
-            ['   ','   ','   '].layerAll("S")
+            ['   ','   ','   '].workspaceFull("S").workspaceCenter(" "),
+            ['   ','   ','   '].workspaceFull("S")
         ],
-        {S:"#minecraft:planks"},
-        'ytech:wooden_box', {} ,"ytech:sharp_flint"
-    )
+        key: { S: { tag: "minecraft:planks" } },
+        outputItems: [[{ id: "ytech:wooden_box" }, 1]],
+        tool: { item: "ytech:sharp_flint" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             ['   ','   ','   '],
             ['   ','   ','   '],
             ['PPP','PSP','PPP']
         ],
-        {P:'#minecraft:planks', S:"ytech:wooden_box"},
-        'minecraft:chest', {} , "#c:knives", true
-    )
-    
-    workspace_recipe([
+        key: {
+            P: { tag: "minecraft:planks" },
+            S: { item: "ytech:wooden_box" }
+        },
+        outputItems: [[{ id: "minecraft:chest" }, 1]],
+        tool: { tag: "c:knives" },
+        removeRecipe: true,
+        compatOff: true
+    })
+
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             ['   ','   ','   '],
             ['   ','   ','   '],
             ['PPP',' S ','PPP']
         ],
-        {P:'#minecraft:planks', S:"ytech:wooden_box"},
-        'minecraft:barrel', {} , "#c:knives", true
-    )
+        key: {
+            P: { tag: "minecraft:planks" },
+            S: { item: "ytech:wooden_box" }
+        },
+        outputItems: [[{ id: "minecraft:barrel" }, 1]],
+        tool: { tag: "c:knives" },
+        removeRecipe: true,
+        compatOff: true
+    })
 
-    workspace_recipe([
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             ['   ','LTL','   '],
             ['   ','L L','   '],
             ['   ','L L','   ']
         ],
-        {L:'#milf:non_vanilla_logs', T:"ytech:grass_twine"},
-        'ytech:oak_drying_rack', {} , "#minecraft:axes", true, true
-    )
+        key: {
+            L: { tag: "milf:non_vanilla_logs" },
+            T: { item: "ytech:grass_twine" }
+        },
+        outputItems: [[{ id: "ytech:oak_drying_rack" }, 1]],
+        tool: { tag: "minecraft:axes" },
+        compatOff: true,
+    })
 
-    workspace_recipe([
+    yTechWorkspaceRecipe(event, {
+        pattern: [
             ['   ','LTL','   '],
             ['   ','L L','   '],
             ['   ','LTL','   ']
         ],
-        {L:'#milf:non_vanilla_logs', T:"ytech:grass_twine"},
-        'ytech:oak_tanning_rack', {} , "#minecraft:axes", true, true
-    )
-
-    //#endregion
-
-    //#endregion
-
-
-    event.forEachRecipe({output:craft_removal_list}, r => {
-        //event.remove({ type: 'minecraft:crafting_shaped', output: r.getOriginalRecipeResult()})
-        //event.remove({ type: 'minecraft:crafting_shapeless', output: r.getOriginalRecipeResult()})
-        event.remove({output: r.getOriginalRecipeResult()})
-
+        key: {
+            L: { tag: "milf:non_vanilla_logs" },
+            T: { item: "ytech:grass_twine" }
+        },
+        outputItems: [[{ id: "ytech:oak_tanning_rack" }, 1]],
+        tool: { tag: "minecraft:axes" },
+        compatOff: true,
     })
+
 })
