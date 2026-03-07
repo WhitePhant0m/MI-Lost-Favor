@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
     });
 
     event.remove({type: "ars_nouveau:enchantment"})
+    event.remove({type: "ars_nouveau:reactive_enchantment"})
 
     event.remove({
         output: [
