@@ -1,17 +1,17 @@
-filename = 'SimplyTooltips-neoforge-0.1.1.jar'
+filename = 'SimplyTooltips-neoforge-0.1.3.jar'
 name = 'Simply Tooltips'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'SimplyTooltips-neoforge-0.1.1.jar'
+x-prismlauncher-version-number = 'SimplyTooltips-neoforge-0.1.3.jar'
 
 [download]
-hash = '8cb9f93726124123319da430085dab553526905b'
+hash = '2bbc2c8b5eb0fcc7ece66e336639a4fd554fd746'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7704235
+file-id = 7718627
 project-id = 1475755
