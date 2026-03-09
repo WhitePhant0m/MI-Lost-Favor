@@ -1,16 +1,17 @@
 # Don't change this! Version used to track needed updates.
-version = 1
+version = 2
 
 [disabler]
-disablerEnabled = true
-disabledEnchantments = [
-    "apothic_enchanting:knowledge_of_the_ages",
-    "apothic_enchanting:chainsaw"
+disabledEnchantmentsV2 = [
+    [ "apothic_enchanting:knowledge_of_the_ages", { table = false, loot = false, trade = false } ],
+    [ "apothic_enchanting:chainsaw", { table = false, loot = false, trade = false } ],
+    [ "devices:coin_magnet", { table = false, loot = false, trade = false } ]
 ]
+disabledEnchantments = [  ]
 
 [maxLevel]
-modifyMaxLevels = false
 maxLevels = [  ]
+globalMaxLevel = 0
 limitObtainableEnchantmentLevel = false
 obtainableEnchantmentLevels = [  ]
 
