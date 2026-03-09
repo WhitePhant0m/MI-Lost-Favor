@@ -1,17 +1,17 @@
-filename = 'ars_elemancy-1.21.1-1.12.4.jar'
+filename = 'ars_elemancy-1.21.1-1.13.jar'
 name = 'Ars Elemancy'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'ars_elemancy-1.21.1-1.12.4.jar'
+x-prismlauncher-version-number = 'ars_elemancy-1.21.1-1.13.jar'
 
 [download]
-hash = '51014d9bd78cda0bb404039b475ccc2862ad79de'
+hash = '106dd93b3a6dfaddf594ee07306bb9c4535a300b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7697921
+file-id = 7727106
 project-id = 1153666

@@ -1,17 +1,17 @@
-filename = 'SimplyBows-neoforge-0.1.1.jar'
+filename = 'SimplyBows-neoforge-0.1.2.jar'
 name = 'Simply Bows'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'SimplyBows-neoforge-0.1.1.jar'
+x-prismlauncher-version-number = 'SimplyBows-neoforge-0.1.2.jar'
 
 [download]
-hash = '5c63991ec3a62787845c58e6265b584c7b2a7cef'
+hash = '8472a6ee8465a3fdb8ecfbee10cf540caa8e89a2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7704376
+file-id = 7731431
 project-id = 1475770
