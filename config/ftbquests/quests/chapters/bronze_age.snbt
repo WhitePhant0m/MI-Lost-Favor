@@ -437,7 +437,7 @@
 					id: "lootr:lootr_chest"
 				}
 				id: "670CBE4973B6F390"
-				team_reward: true
+				team_reward: false
 				type: "custom"
 			}]
 			shape: "diamond"
@@ -4372,7 +4372,7 @@
 					id: "ftbquests:custom_icon"
 				}
 				id: "7650FE6CA0220DA3"
-				team_reward: true
+				team_reward: false
 				type: "custom"
 			}]
 			shape: "rsquare"

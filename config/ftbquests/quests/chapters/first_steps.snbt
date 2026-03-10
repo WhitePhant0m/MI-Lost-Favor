@@ -174,7 +174,7 @@
 					id: "minecraft:rotten_flesh"
 				}
 				id: "0E7A91DD8F37AF4D"
-				team_reward: true
+				team_reward: false
 				type: "custom"
 			}]
 			shape: "octagon"
@@ -604,7 +604,7 @@
 					id: "minecraft:zombie_head"
 				}
 				id: "74E5C7C4B8A33E55"
-				team_reward: true
+				team_reward: false
 				type: "custom"
 			}]
 			tasks: [{
@@ -647,12 +647,12 @@
 			id: "1714360882474479"
 			rewards: [
 				{
-					auto: "invisible"
+					auto: "enabled"
 					icon: {
 						id: "minecraft:iron_ingot"
 					}
 					id: "4002784F5F537B2D"
-					team_reward: true
+					team_reward: false
 					type: "custom"
 				}
 				{
@@ -694,6 +694,7 @@
 						id: "modern_industrialization:bronze_boiler"
 					}
 					id: "0DC887212398806D"
+					team_reward: false
 					type: "custom"
 				}
 				{
@@ -822,6 +823,7 @@
 						id: "ftbquests:custom_icon"
 					}
 					id: "7EF0A7794783232F"
+					team_reward: false
 					type: "custom"
 				}
 				{
