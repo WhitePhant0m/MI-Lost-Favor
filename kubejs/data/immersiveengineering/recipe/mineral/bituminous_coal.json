@@ -8,56 +8,47 @@
   "fail_chance": 0.05,
   "ores": [
     {
-      "chance": 0.5,
+      "chance": 0.6,
       "output": {
-        "tag": "c:ores/coal"
+        "id": "minecraft:coal_ore"
       }
     },
     {
       "chance": 0.3,
       "output": {
-        "tag": "c:ores/lignite_coal"
+        "id": "modern_industrialization:lignite_coal_ore"
       }
     },
     {
-      "chance": 0.2,
+      "chance": 0.05,
       "output": {
-        "tag": "c:dusts/sulfur"
+        "id": "minecraft:coal_block"
       }
     },
     {
-      "chance": 0.2,
-      "conditions": [
-        {
-          "type": "neoforge:not",
-          "value": {
-            "type": "neoforge:tag_empty",
-            "tag": "c:dusts/phosphorus"
-          }
-        }
-      ],
+      "chance": 0.05,
       "output": {
-        "tag": "c:dusts/phosphorus"
+        "id": "modern_industrialization:lignite_coal_block"
       }
     }
   ],
   "spoils": [
     {
-      "chance": 0.2,
+      "chance": 0.6,
       "output": {
         "id": "minecraft:gravel"
       }
     },
     {
-      "chance": 0.5,
+      "chance": 0.1,
       "output": {
-        "id": "minecraft:cobblestone"
+        "id": "minecraft:rooted_dirt"
       }
     },
     {
       "chance": 0.3,
       "output": {
-        "id": "minecraft:cobbled_deepslate"
+        "id": "minecraft:mud"
       }
     }
   ],

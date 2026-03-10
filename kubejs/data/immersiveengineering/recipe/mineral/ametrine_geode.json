@@ -1,0 +1,50 @@
+{
+  "type": "immersiveengineering:mineral_mix",
+  "biome_predicates": [
+    [
+      "minecraft:is_overworld"
+    ]
+  ],
+  "fail_chance": 0.6,
+  "ores": [
+    {
+      "chance": 0.15,
+      "output": {
+        "id": "spectrum:amethyst_ore"
+      }
+    },
+    {
+      "chance": 0.15,
+      "output": {
+        "id": "spectrum:citrine_ore"
+      }
+    },
+    {
+      "chance": 0.35,
+      "output": {
+        "id": "minecraft:amethyst_block"
+      }
+    },
+    {
+      "chance": 0.35,
+      "output": {
+        "id": "spectrum:citrine_block"
+      }
+    }
+  ],
+  "spoils": [
+    {
+      "chance": 0.35,
+      "output": {
+        "id": "minecraft:calcite"
+      }
+    },
+    {
+      "chance": 0.65,
+      "output": {
+        "id": "minecraft:smooth_basalt"
+      }
+    }
+  ],
+  "weight": 10
+}

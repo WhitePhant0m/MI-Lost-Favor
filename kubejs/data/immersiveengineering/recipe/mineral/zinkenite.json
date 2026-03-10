@@ -5,24 +5,24 @@
       "minecraft:is_overworld"
     ]
   ],
-  "fail_chance": 0.15,
+  "fail_chance": 0.05,
   "ores": [
     {
-      "chance": 0.5,
+      "chance": 0.55,
       "output": {
-        "tag": "c:ores/monazite"
+        "id": "modern_industrialization:antimony_ore"
       }
     },
     {
-      "chance": 0.3,
+      "chance": 0.38,
       "output": {
-        "tag": "c:ores/iron"
+        "id": "modern_industrialization:lead_ore"
       }
     },
     {
-      "chance": 0.2,
+      "chance": 0.07,
       "output": {
-        "id": "minecraft:granite"
+        "id": "modern_industrialization:raw_silver_block"
       }
     }
   ],
@@ -30,21 +30,21 @@
     {
       "chance": 0.2,
       "output": {
-        "id": "minecraft:gravel"
+        "id": "minecraft:tuff"
       }
     },
     {
-      "chance": 0.5,
+      "chance": 0.2,
+      "output": {
+        "id": "minecraft:clay"
+      }
+    },
+    {
+      "chance": 0.6,
       "output": {
         "id": "minecraft:cobblestone"
       }
-    },
-    {
-      "chance": 0.3,
-      "output": {
-        "id": "minecraft:cobbled_deepslate"
-      }
     }
   ],
-  "weight": 15
+  "weight": 20
 }

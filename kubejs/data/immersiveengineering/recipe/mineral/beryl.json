@@ -1,0 +1,56 @@
+{
+  "type": "immersiveengineering:mineral_mix",
+  "biome_predicates": [
+    [
+      "minecraft:is_overworld"
+    ]
+  ],
+  "fail_chance": 0.7,
+  "ores": [
+    {
+      "chance": 0.2,
+      "output": {
+        "id": "minecraft:lapis_ore"
+      }
+    },
+    {
+      "chance": 0.2,
+      "output": {
+        "id": "minecraft:emerald_ore"
+      }
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "id": "minecraft:diamond_ore"
+      }
+    },
+    {
+      "chance": 0.15,
+      "output": {
+        "id": "spectrum:topaz_ore"
+      }
+    },
+    {
+      "chance": 0.4,
+      "output": {
+        "id": "modern_industrialization:quartz_ore"
+      }
+    }
+  ],
+  "spoils": [
+    {
+      "chance": 0.35,
+      "output": {
+        "id": "minecraft:granite"
+      }
+    },
+    {
+      "chance": 0.65,
+      "output": {
+        "id": "minecraft:clay"
+      }
+    }
+  ],
+  "weight": 10
+}

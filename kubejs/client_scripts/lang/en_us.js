@@ -70,6 +70,13 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.orbcraft.tooltip.orb_of_alchemy', `Absorbs up to 4 enchantments from an item, ${textAnimatorString("destroying", "glitch")} it in the process. Using the enchanted orb on another item ${textAnimatorString("replaces", "fade")} all of that item's enchantments with the absorbed ones.`)
     event.add('milf.orbcraft.tooltip.orb_of_the_forest', `Infuses the axe item with the ${textAnimatorString("Essence Of The Forest", "grad", {from:"#1DEB6C", to:"#6AFFC3", f:0.5})}, allowing it to chop the ${textAnimatorString("whole tree", "grad", {from:"#55E408", to:"#D3FFAA", f:0.5})} in one go in exchange for being only a ${textAnimatorString("tenth as effective", "grad", {from:"#E40808", to:"#FFAAAA", f:0.5})} as before. It can be applied only once, with no ability to revert downsides`)
 
+    event.add('desc.immersiveengineering.info.mineral.ametrine_geode', "Ametrine Geode")
+    event.add('desc.immersiveengineering.info.mineral.zinkenite', "Zinkenite")
+    event.add('desc.immersiveengineering.info.mineral.stannite', "Stannite")
+    event.add('desc.immersiveengineering.info.mineral.brindleyite', "Brindleyite")
+    event.add('desc.immersiveengineering.info.mineral.hematite', "Hematite")
+
+    
     event.add('milf.text.dim.cant_visit', `${textAnimatorString("Some kind of magic is stopping you", "glitch")}`)
 
     event.add('milf.flags.claimed', "Chunk claimed")

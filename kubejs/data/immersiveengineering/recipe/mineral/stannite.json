@@ -8,54 +8,45 @@
   "fail_chance": 0.05,
   "ores": [
     {
-      "chance": 0.6,
+      "chance": 0.13,
       "output": {
-        "tag": "c:ores/bauxite"
+        "id": "minecraft:deepslate_iron_ore"
       }
     },
     {
       "chance": 0.3,
       "output": {
-        "tag": "c:ores/iron"
+        "id": "minecraft:deepslate_copper_ore"
       }
     },
     {
-      "chance": 0.1,
+      "chance": 0.33,
       "output": {
-        "tag": "c:ores/nickel"
+        "id": "modern_industrialization:deepslate_tin_ore"
       }
     },
     {
-      "chance": 0.1,
-      "conditions": [
-        {
-          "type": "neoforge:not",
-          "value": {
-            "type": "neoforge:tag_empty",
-            "tag": "c:ores/titanium"
-          }
-        }
-      ],
+      "chance": 0.24,
       "output": {
-        "tag": "c:ores/titanium"
+        "id": "modern_industrialization:sulfur_dust"
       }
     }
   ],
   "spoils": [
     {
-      "chance": 0.2,
+      "chance": 0.05,
       "output": {
-        "id": "minecraft:gravel"
+        "id": "minecraft:magma_block"
       }
     },
     {
-      "chance": 0.5,
+      "chance": 0.25,
       "output": {
-        "id": "minecraft:cobblestone"
+        "id": "minecraft:basalt"
       }
     },
     {
-      "chance": 0.3,
+      "chance": 0.7,
       "output": {
         "id": "minecraft:cobbled_deepslate"
       }

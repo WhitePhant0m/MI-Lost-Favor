@@ -84,5 +84,14 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineCraft(event, {energy:4, time:100, machine:"modern_industrialization:packer",
+        outputItems:[
+            [{item:"kubejs:unfired_fire_clay_brick"}]
+        ],
+        inputItems:[
+            [{item:"kubejs:fire_clay_ball"}, 1]
+        ]
+    })
+
 
 })

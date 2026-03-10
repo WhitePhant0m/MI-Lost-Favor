@@ -5,36 +5,30 @@
       "minecraft:is_overworld"
     ]
   ],
-  "fail_chance": 0.1,
+  "fail_chance": 0.05,
   "ores": [
     {
-      "chance": 0.4,
+      "chance": 0.31,
       "output": {
-        "id": "minecraft:amethyst_block"
+        "id": "minecraft:iron_ore"
       }
     },
     {
-      "chance": 0.4,
+      "chance": 0.34,
       "output": {
-        "id": "spectrum:citrine_block"
+        "id": "minecraft:copper_ore"
       }
     },
     {
-      "chance": 0.4,
+      "chance": 0.15,
       "output": {
-        "id": "spectrum:topaz_block"
+        "id": "modern_industrialization:sulfur_dust"
       }
     },
     {
-      "chance": 0.3,
+      "chance": 0.2,
       "output": {
-        "id": "minecraft:calcite"
-      }
-    },
-    {
-      "chance": 0.3,
-      "output": {
-        "id": "minecraft:smooth_basalt"
+        "id": "minecraft:gold_ore"
       }
     }
   ],
@@ -54,9 +48,9 @@
     {
       "chance": 0.3,
       "output": {
-        "id": "minecraft:cobbled_deepslate"
+        "id": "minecraft:andesite"
       }
     }
   ],
-  "weight": 10
+  "weight": 20
 }

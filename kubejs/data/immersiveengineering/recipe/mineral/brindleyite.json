@@ -1,0 +1,50 @@
+{
+  "type": "immersiveengineering:mineral_mix",
+  "biome_predicates": [
+    [
+      "minecraft:is_overworld"
+    ]
+  ],
+  "fail_chance": 0.3,
+  "ores": [
+    {
+      "chance": 0.49,
+      "output": {
+        "id": "modern_industrialization:nickel_ore"
+      }
+    },
+    {
+      "chance": 0.13,
+      "output": {
+        "id": "modern_industrialization:quartz_ore"
+      }
+    },
+    {
+      "chance": 0.38,
+      "output": {
+        "id": "modern_industrialization:bauxite_ore"
+      }
+    }
+  ],
+  "spoils": [
+    {
+      "chance": 0.1,
+      "output": {
+        "id": "minecraft:tuff"
+      }
+    },
+    {
+      "chance": 0.8,
+      "output": {
+        "id": "minecraft:clay"
+      }
+    },
+    {
+      "chance": 0.1,
+      "output": {
+        "id": "minecraft:dripstone_block"
+      }
+    }
+  ],
+  "weight": 20
+}

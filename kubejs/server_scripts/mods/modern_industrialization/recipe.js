@@ -386,7 +386,8 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:vanilla_recipes/lignite_torch",
         "modern_industrialization:vanilla_recipes/torch",
 
-        "modern_industrialization:alloy/mixer/cupronickel/tiny_dust"
+        "modern_industrialization:alloy/mixer/cupronickel/tiny_dust",
+        "modern_industrialization:materials/mixer/fire_clay_dust"
     ]
 
     disableByRecipeID.forEach(id => {
