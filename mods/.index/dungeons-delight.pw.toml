@@ -1,0 +1,17 @@
+filename = 'neoforge-dungeonsdelight-1.21.1-1.4.5.jar'
+name = 'Dungeons Delight'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'neoforge-dungeonsdelight-1.21.1-1.4.5.jar'
+
+[download]
+hash = '5c72511996f7f033a39e1d493146d4ed85911751'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7427957
+project-id = 1258923

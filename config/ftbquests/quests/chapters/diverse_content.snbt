@@ -371,5 +371,15 @@
 			x: -14.0d
 			y: 3.5d
 		}
+		{
+			id: "2A604659C308A486"
+			tasks: [{
+				id: "774A49FFDCFBB3A7"
+				item: { count: 1, id: "tradingpost:trading_post" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.5d
+		}
 	]
 }
