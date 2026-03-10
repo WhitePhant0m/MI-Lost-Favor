@@ -5,7 +5,6 @@ LootJS.modifiers(event => {
             /.*:chests\/village\/.*/,
             /.*:village\/.*/,
             /spectrum:chests\/.*/,
-            /spectrum:chests\/.*/,
             /dungeons_arise:chests\/.*/,
             /dungeons_arise_seven_seas:chests\/.*/,
             'minecraft:chests/shipwreck_supply',
@@ -106,11 +105,13 @@ LootJS.modifiers(event => {
             pool.addEntry(LootEntry.of("kubejs:rune_of_diversity"))
             pool.addEntry(LootEntry.of("kubejs:rune_of_fishing"))
             pool.addEntry(LootEntry.of("kubejs:rune_of_mining"))
+            pool.addEntry(LootEntry.empty())
         }).pool((pool) => {
             pool.when(conditions => {
                 conditions.randomChance(0.05)
             })
             pool.addEntry(LootEntry.of("kubejs:amber_visage"))
+            pool.addEntry(LootEntry.empty())
         })
     });
 
