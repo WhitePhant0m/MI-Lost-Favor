@@ -1,5 +1,13 @@
 ServerEvents.recipes(event => {
     
+    event.remove({output: [
+        "occultism:raw_silver_block",
+        "occultism:silver_ingot",
+        "occultism:silver_block",
+        "occultism:silver_nugget",
+        "occultism:raw_silver",
+    ]})
+
     customAlchemicalForgeCraft(event, {
         affinities: [
             "toxony:moon",

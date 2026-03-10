@@ -11,13 +11,16 @@ ServerEvents.recipes(event => {
             /immersiveengineering:ingot.*/,
             /immersiveengineering:raw.*/,
             /immersiveengineering:nugget.*/,
+            /immersiveengineering:storage_.*/,
             'immersiveengineering:wire_copper',
             'immersiveengineering:wire_electrum',
             'immersiveengineering:wire_aluminum',
             'immersiveengineering:wire_steel',
-            'immersiveengineering:wire_lead'
+            'immersiveengineering:wire_lead',
         ]
     })
+
+    event.remove({id: "immersiveengineering:crafting/nugget_copper_to_copper_ingot"})
 
     const materials_for_wires = ["steel", "copper", "lead"]
     materials_for_wires.forEach(material => {

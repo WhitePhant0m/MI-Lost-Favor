@@ -21,7 +21,9 @@ ServerEvents.tags('item', event => {
         'immersiveengineering:deepslate_ore_silver', 
         'immersiveengineering:deepslate_ore_nickel', 
         'immersiveengineering:ore_uranium', 
-        'immersiveengineering:deepslate_ore_uranium'
+        'immersiveengineering:deepslate_ore_uranium',
+        /immersiveengineering:storage_.*/,
+        /immersiveengineering:slab_storage_.*/,
     
     ])
 

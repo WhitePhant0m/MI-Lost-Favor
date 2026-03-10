@@ -23,6 +23,9 @@ ServerEvents.tags("item", event => {
         "ytech:lead_bolt",
         "ytech:bronze_block",
         "ytech:tin_block",
+        "ytech:nether_iron_ore",
+        "ytech:nether_copper_ore",
+        "ytech:lead_block",
     ])
 
     event.add("modern_industrialization:forge_hammer_tools", [
