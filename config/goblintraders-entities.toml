@@ -1,6 +1,6 @@
 # If true, prevents the trader from despawning if named
 # Valid values: true, false
-preventDespawnIfNamed = true
+preventDespawnIfNamed = false
 
 [goblinTrader]
 	# The chance out of one hundred that the trader will spawn in the over world
