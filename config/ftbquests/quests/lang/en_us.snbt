@@ -1321,6 +1321,7 @@
 		"The Hephaestus Forge is needed for every player that wants to dive deep into the world of forbidden magic. Gathering the required material for creating it might take a while, but it's worth the effort as it will open up the possibility of executing powerful rituals which can have various outcomes. "
 		""
 		"After having built the above pattern, place the Smithing Table in the central spot above the Gilded Chiseled Polished Darkstone block. In order to transform it into the desired Hephaestus Forge you'll now only need to sneak and right-click with the Mundabitur Dust on the Smithing Table. A bolt of corrupted lightning will strike the block and transform it. "
+		"{image:milf:textures/quest_pic/hephaestus_forge.png width:170 height:170 align:center fit:true}"
 	]
 	quest.3EB7176D4C776E9D.quest_desc: ["Drops from a poisoned squid."]
 	quest.3F076989AA64CD64.quest_desc: [
@@ -2485,14 +2486,17 @@
 	reward.0DC887212398806D.title: "New Quest Chapter"
 	reward.0E7A91DD8F37AF4D.title: "Desaturation"
 	reward.2BD4B3CA5BEDBA19.title: "The End Access"
+	reward.2F509B489C343BD7.title: "Reforging Table Access"
 	reward.3922C9ACA47723BA.title: "forbidden arcanus mobs"
 	reward.4002784F5F537B2D.title: "You can interact with everything made of iron!"
 	reward.4178A18CA2E5A74F.title: "New dangers"
 	reward.472BCEE94E93C2FF.title: "Radial Menu Button"
 	reward.4B224C18E7C6EE21.title: "Back Slot"
+	reward.4BA1212AF4BD3432.title: "Augmenting Table Access"
 	reward.5BA06D58446F6FDD.title: "Unlimited supply of boxes"
 	reward.670CBE4973B6F390.title: "New interactions: chest looting, villagers, spawners, wandering trader and mobs"
 	reward.679412F522B788D9.title: "Trinket hands slot"
+	reward.6E3C09D7543B99D1.title: "Simple Reforging Table Accses"
 	reward.7108991BE6DD4A51.title: "Radial Menu Button"
 	reward.73D93A782AD2E4AE.title: "Trinket bundle slot"
 	reward.74E5C7C4B8A33E55.title: "New monsters"

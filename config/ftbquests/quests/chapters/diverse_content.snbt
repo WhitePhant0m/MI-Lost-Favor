@@ -200,8 +200,8 @@
 				item: { count: 1, id: "tempad:tempad" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -3.0d
+			x: -9.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]

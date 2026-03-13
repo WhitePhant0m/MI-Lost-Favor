@@ -2095,7 +2095,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forbidden_arcanus:blacksmith_gavel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -16.0d
 			y: 39.0d
 		}
 		{
@@ -2131,7 +2131,7 @@
 					type: "item"
 				}
 			]
-			x: -17.5d
+			x: -18.0d
 			y: 39.0d
 		}
 		{
@@ -3607,7 +3607,7 @@
 				type: "item"
 			}]
 			x: -17.0d
-			y: 43.0d
+			y: 39.0d
 		}
 		{
 			dependencies: ["226EC62BA172DB5D"]
@@ -4729,6 +4729,39 @@
 			}]
 			x: -17.5d
 			y: 11.0d
+		}
+		{
+			dependencies: ["026821F02D50FE0D"]
+			id: "67772F96BF66540F"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "apotheosis:simple_reforging_table"
+				}
+				id: "6E3C09D7543B99D1"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "646AA3534E53BAD4"
+				item: { count: 1, id: "apotheosis:simple_reforging_table" }
+				type: "item"
+			}]
+			x: -17.0d
+			y: 43.5d
+		}
+		{
+			dependencies: ["67772F96BF66540F"]
+			id: "522044DBF9658AFA"
+			tasks: [{
+				id: "57CFE34595B2BD61"
+				item: { count: 1, id: "apotheosis:sigil_of_rebirth" }
+				type: "item"
+			}]
+			x: -17.0d
+			y: 45.5d
 		}
 	]
 }

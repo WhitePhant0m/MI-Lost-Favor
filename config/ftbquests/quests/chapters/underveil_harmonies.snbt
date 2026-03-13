@@ -10779,7 +10779,7 @@
 				item: { count: 1, id: "gaze:spirit_channel_pouch" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 32.5d
 			y: 6.0d
 		}
 		{
@@ -10806,29 +10806,11 @@
 			y: -41.0d
 		}
 		{
-			dependencies: ["625DBAE6C9492790"]
-			id: "67772F96BF66540F"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					id: "apotheosis:simple_reforging_table"
-				}
-				id: "6E3C09D7543B99D1"
-				team_reward: false
-				type: "custom"
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "646AA3534E53BAD4"
-				item: { count: 1, id: "apotheosis:simple_reforging_table" }
-				type: "item"
-			}]
-			x: 42.5d
-			y: -36.0d
-		}
-		{
-			dependencies: ["3E4CED2E153B091F"]
+			dependencies: [
+				"3E6F9ACF7C710FA4"
+				"3E4CED2E153B091F"
+				"67772F96BF66540F"
+			]
 			id: "586F3FDE54D3AF06"
 			rewards: [{
 				auto: "enabled"
@@ -10845,11 +10827,14 @@
 				item: { count: 1, id: "apotheosis:reforging_table" }
 				type: "item"
 			}]
-			x: 54.5d
-			y: -41.0d
+			x: 24.5d
+			y: -30.5d
 		}
 		{
-			dependencies: ["0237945A1F6F9132"]
+			dependencies: [
+				"0237945A1F6F9132"
+				"3926D8DF461B4AC4"
+			]
 			id: "6D93085985AC5BD6"
 			rewards: [{
 				auto: "enabled"
@@ -10866,19 +10851,8 @@
 				item: { count: 1, id: "apotheosis:augmenting_table" }
 				type: "item"
 			}]
-			x: 32.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["67772F96BF66540F"]
-			id: "522044DBF9658AFA"
-			tasks: [{
-				id: "57CFE34595B2BD61"
-				item: { count: 1, id: "apotheosis:sigil_of_rebirth" }
-				type: "item"
-			}]
-			x: 41.0d
-			y: -36.0d
+			x: 28.0d
+			y: -30.5d
 		}
 		{
 			dependencies: ["6D93085985AC5BD6"]
@@ -10888,8 +10862,8 @@
 				item: { count: 1, id: "apotheosis:sigil_of_enhancement" }
 				type: "item"
 			}]
-			x: 32.0d
-			y: 7.0d
+			x: 28.0d
+			y: -29.5d
 		}
 	]
 }
