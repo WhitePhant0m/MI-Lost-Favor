@@ -1,6 +1,16 @@
 ItemEvents.modifyTooltips(event => {
 
-
+    const wip_tooltip = [
+        /enderstorage:.*/, 
+        /tesseract:.*/,
+        /angelring:.*/,
+        /tempad:.*/,
+        /chunkloaders:.*/,
+        /hostilenetworks:.*/,
+    ]
+    wip_tooltip.forEach(element => {
+        event.add(element, Text.of(textAnimatorString("[Work in progress]", "glitch")).color("#CC4D4D"))
+    });
 
     let simpleShiftText = (args) => {
         const raw = args.items ?? args.item;
