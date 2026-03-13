@@ -51,3 +51,4 @@ key_key.ars_nouveau.open_book:key.keyboard.left.alt
 key_key.ars_nouveau.selection_hud:key.keyboard.b
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.unknown
 key_key.simplytooltips.capture_gif:key.keyboard.unknown
+key_key.rpgtimeline.open_chronicle:key.keyboard.unknown

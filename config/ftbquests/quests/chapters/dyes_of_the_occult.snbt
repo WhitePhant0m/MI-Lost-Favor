@@ -2095,7 +2095,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forbidden_arcanus:blacksmith_gavel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -16.0d
+			x: -16.5d
 			y: 39.0d
 		}
 		{
@@ -2131,7 +2131,7 @@
 					type: "item"
 				}
 			]
-			x: -18.0d
+			x: -17.5d
 			y: 39.0d
 		}
 		{
@@ -3275,7 +3275,7 @@
 			id: "106F4D5B5D4A02F7"
 			tasks: [{
 				id: "37916E3ED506B364"
-				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "protected_by_totem", "milk" ], severe: 0b, show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "protected_by_totem", "milk" ], severe: 0b, show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
+				item: { components: { "minecraft:potion_contents": { custom_effects: [ { duration: 9600, id: "minecraft:absorption", "neoforge:cures": [ "milk", "protected_by_totem" ], severe: 0b, show_icon: 1b }, { duration: 9600, id: "spectrum:nourishing", "neoforge:cures": [ "milk", "protected_by_totem" ], severe: 0b, show_icon: 1b } ] }, "spectrum:beverage": { days_aged: 12L, thickness: 1.0f }, "spectrum:infused_beverage": { color: 12018987, variant: "myceylon_apple_juice" }, "spectrum:is_preview_item": { } }, count: 1, id: "spectrum:infused_beverage" }
 				type: "item"
 			}]
 			x: -40.0d
@@ -3606,8 +3606,8 @@
 				item: { components: { "devices:pouch_data": { AutoExchange: 1b, BonusSlots: 0, Items: [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ] } }, count: 1, id: "devices:magical_pouch" }
 				type: "item"
 			}]
-			x: -17.0d
-			y: 39.0d
+			x: -18.5d
+			y: 43.5d
 		}
 		{
 			dependencies: ["226EC62BA172DB5D"]
@@ -4762,6 +4762,20 @@
 			}]
 			x: -17.0d
 			y: 45.5d
+		}
+		{
+			dependencies: [
+				"026821F02D50FE0D"
+				"35B625450DD3545F"
+			]
+			id: "51FBF0B7A92E3FD8"
+			tasks: [{
+				id: "488240DCB17BC5D7"
+				item: { components: { "simplemagnets:magnet_active": 0b }, count: 1, id: "simplemagnets:advancedmagnet" }
+				type: "item"
+			}]
+			x: -15.5d
+			y: 43.5d
 		}
 	]
 }

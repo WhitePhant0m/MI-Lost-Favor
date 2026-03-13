@@ -3511,7 +3511,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: 13.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -3522,8 +3522,8 @@
 				item: { count: 1, id: "immersiveengineering:redstone_state_cell" }
 				type: "item"
 			}]
-			x: -8.5d
-			y: 14.0d
+			x: -8.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -3558,8 +3558,8 @@
 				item: { count: 1, id: "immersiveengineering:conveyor_redstone" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: 13.5d
+			x: -8.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["5DDA25EB563D52A6"]
@@ -4600,7 +4600,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 0.5d
 			y: 1.5d
 		}
 		{
@@ -4734,6 +4734,42 @@
 			}]
 			x: -9.5d
 			y: 7.125d
+		}
+		{
+			dependencies: ["1C00BD0399683CCA"]
+			id: "35B625450DD3545F"
+			shape: "heart"
+			tasks: [{
+				id: "69E535B5832EE7A8"
+				item: { components: { "simplemagnets:magnet_active": 0b }, count: 1, id: "simplemagnets:basicmagnet" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["2B815502453269AF"]
+			id: "24EA06D833F8A3D7"
+			shape: "gear"
+			tasks: [{
+				id: "2BC250A032D3D2FE"
+				item: { count: 1, id: "travelanchors:travel_anchor" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1C00BD0399683CCA"]
+			id: "3B91D0EF4ECDE7F0"
+			shape: "heart"
+			tasks: [{
+				id: "11D690F09237B785"
+				item: { components: { "shrink:scale": -0.10000000000000014d }, count: 1, id: "shrink:shrinking_device" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 24.0d
 		}
 	]
 }

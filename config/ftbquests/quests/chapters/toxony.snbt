@@ -1,4 +1,5 @@
 {
+	autofocus_id: "7E470E4F941A62BB"
 	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
@@ -3444,8 +3445,8 @@
 				item: { count: 1, id: "transmog:void_fragment" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -5.5d
+			x: 11.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0EC60F3FB9DFB29E"]
@@ -3455,8 +3456,8 @@
 				item: { count: 1, id: "transmog:transmogrification_table" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.0d
+			x: 12.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0EC60F3FB9DFB29E"]
@@ -3466,8 +3467,19 @@
 				item: { count: 1, id: "kubejs:amber_visage" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -6.0d
+			x: 12.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7162B15B452A8B2E"]
+			id: "67417FBD65B369C7"
+			tasks: [{
+				id: "293A0AE874BFF8DD"
+				item: { count: 1, id: "travelanchors:travel_staff" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -5.0d
 		}
 	]
 }

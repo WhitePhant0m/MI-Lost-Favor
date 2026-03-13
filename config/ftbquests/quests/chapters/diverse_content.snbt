@@ -56,7 +56,7 @@
 			id: "3739FD2D564F6699"
 			linked_quest: "7AB88C2D779F62E2"
 			x: -22.5d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			id: "6B6D7BAEA7A740F5"
@@ -74,13 +74,13 @@
 			id: "0D37CB6F4FDFBC3B"
 			linked_quest: "51C0876E925B1FF1"
 			x: -36.0d
-			y: 3.5d
+			y: 4.5d
 		}
 		{
 			id: "2964F8CE510521AD"
 			linked_quest: "5116FA2F58C59929"
 			x: -36.0d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			id: "6BF2E6F06E9C7D3A"
@@ -100,6 +100,36 @@
 			x: -12.5d
 			y: 1.0d
 		}
+		{
+			id: "20700D95591E7C99"
+			linked_quest: "35B625450DD3545F"
+			x: -18.0d
+			y: 3.5d
+		}
+		{
+			id: "0960A1D1CE327DDC"
+			linked_quest: "51FBF0B7A92E3FD8"
+			x: -18.0d
+			y: 4.5d
+		}
+		{
+			id: "33597A4B9963C06D"
+			linked_quest: "67417FBD65B369C7"
+			x: -16.5d
+			y: 4.5d
+		}
+		{
+			id: "603D90E2C4EC1F3E"
+			linked_quest: "24EA06D833F8A3D7"
+			x: -16.5d
+			y: 3.5d
+		}
+		{
+			id: "7C68058F7152E7AA"
+			linked_quest: "3B91D0EF4ECDE7F0"
+			x: -15.0d
+			y: 3.5d
+		}
 	]
 	quests: [
 		{
@@ -110,28 +140,6 @@
 			}]
 			x: -2.5d
 			y: -3.0d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "42DF763B1D167A24"
-			tasks: [{
-				id: "29005772A9BB7F6E"
-				item: { components: { "shrink:scale": -1.0d }, count: 1, id: "shrink:shrinking_device" }
-				type: "item"
-			}]
-			x: -15.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "76133B623476EE39"
-			tasks: [{
-				id: "420119C38FB9E28E"
-				item: { count: 1, id: "shrink:shrink_bottle" }
-				type: "item"
-			}]
-			x: -15.0d
-			y: -5.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -153,8 +161,8 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
-			y: -4.5d
+			x: -12.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -227,32 +235,13 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "53AE8FDD3F35E182"
-			tasks: [
-				{
-					id: "6EC0B505A0E8D4C8"
-					item: { count: 1, id: "travelanchors:travel_anchor" }
-					type: "item"
-				}
-				{
-					id: "157F6D73FC006803"
-					item: { count: 1, id: "travelanchors:travel_staff" }
-					type: "item"
-				}
-			]
-			x: -8.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
 			id: "092205B6B1CC863A"
 			tasks: [{
 				id: "3A29E8F35850BD56"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(elevatorid:elevators)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -19.5d
 			y: 3.5d
 		}
 		{
@@ -268,42 +257,14 @@
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
-			id: "53C2A63761CDCBE6"
-			tasks: [
-				{
-					id: "7B730CAD55752AE2"
-					item: { count: 1, id: "simplemagnets:basicmagnet" }
-					type: "item"
-				}
-				{
-					id: "1D0E6D55087BB4AA"
-					item: { count: 1, id: "simplemagnets:advancedmagnet" }
-					type: "item"
-				}
-				{
-					id: "7F3AD0383E3A6D33"
-					item: { count: 1, id: "simplemagnets:basic_demagnetization_coil" }
-					type: "item"
-				}
-				{
-					id: "71A7B8F2040BBA0B"
-					item: { count: 1, id: "simplemagnets:advanced_demagnetization_coil" }
-					type: "item"
-				}
-			]
-			x: -17.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
 			id: "4E9E987ECB78D0EE"
 			tasks: [{
 				id: "5AC88946F9AD2923"
 				item: { count: 1, id: "chunkloaders:single_chunk_loader" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: -4.5d
+			x: -7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -313,8 +274,8 @@
 				item: { count: 1, id: "chunkloaders:basic_chunk_loader" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: -5.5d
+			x: -7.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -324,8 +285,8 @@
 				item: { count: 1, id: "chunkloaders:advanced_chunk_loader" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: -3.5d
+			x: -7.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -335,8 +296,8 @@
 				item: { count: 1, id: "chunkloaders:ultimate_chunk_loader" }
 				type: "item"
 			}]
-			x: -13.5d
-			y: -2.5d
+			x: -7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3ACEAB25342B053C"]
@@ -368,8 +329,8 @@
 				item: { count: 1, id: "morered:or_gate" }
 				type: "item"
 			}]
-			x: -14.0d
-			y: 3.5d
+			x: -6.0d
+			y: 1.0d
 		}
 		{
 			id: "2A604659C308A486"
