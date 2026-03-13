@@ -10,6 +10,9 @@ ServerEvents.recipes(event => {
             "apothic_enchanting:extraction_tome",
             "apothic_enchanting:ender_library",
             "apothic_enchanting:library",
+            "apotheosis:simple_reforging_table",
+            "apotheosis:reforging_table",
+            "apotheosis:augmenting_table",
         ]
     })
 
@@ -232,88 +235,6 @@ ServerEvents.recipes(event => {
         },
         advancement: "spectrum:craft_cmy_pedestal",
         yield_upgrades: true,
-        removeRecipe: true
-    })
-
-    //WIP, move most blocks in forbidden_arcanus hephaestus_forge
-    customPedestalCraft(event, {
-        time: 200,
-        tier: "advanced",
-        experience: 2.0,
-        citrine: 64,
-        topaz: 40,
-        onyx: 12,
-        pattern: [
-            ' q ',
-            'wew',
-            'rrr'
-        ],
-        key: {
-            q: 'kubejs:blaze_core',
-            w: 'apotheosis:epic_material',
-            e: 'spectrum:enchanter',
-            r: 'minecraft:smooth_stone',
-        },
-        result: {
-            "id": "apotheosis:simple_reforging_table",
-            "count": 1
-        },
-        advancement: "spectrum:midgame/enter_liquid_crystal",
-        yield_upgrades: false,
-        removeRecipe: true
-    })
-
-    customPedestalCraft(event, {
-        time: 200,
-        tier: "advanced",
-        experience: 2.0,
-        citrine: 64,
-        topaz: 40,
-        onyx: 12,
-        pattern: [
-            ' q ',
-            'wew',
-            'rrr'
-        ],
-        key: {
-            q: 'kubejs:electronic_ender_core',
-            w: 'apotheosis:mythic_material',
-            e: 'apotheosis:simple_reforging_table',
-            r: 'spectrum:bismuth_crystal',
-        },
-        result: {
-            "id": "apotheosis:reforging_table",
-            "count": 1
-        },
-        advancement: "spectrum:lategame/collect_bismuth_crystal",
-        yield_upgrades: false,
-        removeRecipe: true
-    })
-    customPedestalCraft(event, {
-        time: 200,
-        tier: "advanced",
-        experience: 2.0,
-        citrine: 64,
-        topaz: 64,
-        amethyst: 64,
-        onyx: 30,
-        pattern: [
-            ' q ',
-            'wew',
-            'rrr'
-        ],
-        key: {
-            q: 'spectrum:aether_vestiges',
-            w: 'apotheosis:mythic_material',
-            e: 'malum:umbral_spirit',
-            r: 'malum:block_of_malignant_pewter',
-        },
-        result: {
-            "id": "apotheosis:augmenting_table",
-            "count": 1
-        },
-        advancement: "spectrum:lategame/collect_aether_vestiges",
-        yield_upgrades: false,
         removeRecipe: true
     })
 
