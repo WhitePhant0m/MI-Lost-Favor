@@ -151,6 +151,8 @@ createNewItem('rune_of_fishing', {stackSize: 16, rarity: 'rare', lang : { "en_us
 createNewItem('rune_of_mining', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Mining", "ru_ru": "Руна Добычи" }})
 createNewItem('blaze_core', {stackSize: 1, rarity: 'epic', lang : { "en_us": "Blaze Core", "ru_ru": "Ядро Пламени" }})
 createNewItem('electronic_ender_core', {stackSize: 1, rarity: 'epic', lang : { "en_us": "Electronic Ender Core", "ru_ru": "Электронное Ядро Энда" }})
+createNewItem('magnet_part', {stackSize: 16, lang : { "en_us": "Magnet Part", "ru_ru": "Магнитная часть" }})
+createNewItem('demagnetized_magnet_part', {stackSize: 16, lang : { "en_us": "Demagnetized Magnet Part", "ru_ru": "Размагниченная Часть Магнита" }})
 
 //#endregion
 
