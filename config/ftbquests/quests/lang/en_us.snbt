@@ -2044,6 +2044,24 @@
 		"{@pagebreak}"
 		"Как и с прошлыми фамильярами и одержимыми мобами, прочтите информацию о них в книге"
 	]
+	quest.6443864802D04B07.quest_desc: [
+		"• Place the ship far away into water – they need space to spawn."
+		""
+		"• Right-click to sit in the ship."
+		""
+		"&lWhile sitting in the Ship&r:"
+		"• Press Radial Menu Button to open/close the sail."
+		"• W / S to increase or decrease sail speed."
+		""
+		"• Third Person View (F5) + Mousewheel = Adjust camera distance."
+		""
+		"• Right-click an entity to dismount it from the ship."
+		""
+		"• To open inventory outside of the ship: crouch + right-click."
+		""
+		"[ \"You can read more about each ship, their speeds, and other details \", { \"text\": \"here\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://github.com/talhanation/wiki/wiki/Small-Ships-Wiki\" } }, \"!\" ]"
+	]
+	quest.6443864802D04B07.title: "Are you sure it's Small Ships?"
 	quest.644C38FE06C3047E.quest_desc: ["можно найти в джунглях и болотах в шахтах"]
 	quest.64A80D12CB567158.quest_desc: [
 		"Time to put your shiny... well, I guess rather dull, new antler pickaxe to good use!"
@@ -2326,6 +2344,12 @@
 		""
 		"You can also buy from Wandering Trader"
 	]
+	quest.70A0A078B94FF034.quest_desc: [
+		"Вкладка подразумевает легкий способ найти практически все необходимые утилитарные предметы, или прочитать зачем он нужен."
+		""
+		"Зачастую здесь копия квеста, оригинальный квест можно найти используя кнопки зависимостей этого квеста, это правда очень удобно!"
+		"{image:milf:textures/quest_pic/dependencies_tip.png width:496 height:292 align:center fit:true}"
+	]
 	quest.70AB266645FE1C03.quest_desc: [
 		"A mod designed to encourage dietary variety! It does so by rewarding the player for eating a variety of foods instead of punishing them for failing to diversify. Instead of using the stick we use the carrot!"
 		""
@@ -2533,6 +2557,7 @@
 		"«Желтое удобрение» можно использовать на почве для предотвращения вытаптывания посевов"
 	]
 	reward.094072146D87AD84.title: "Pouch slot"
+	reward.0A58BA17068FCA2C.title: "New Radial Menu Button"
 	reward.0BDFBA35083D9976.title: "Belt Slot"
 	reward.0C6E1695C7D921E2.title: "Radial Menu Button"
 	reward.0DC887212398806D.title: "New Quest Chapter"
@@ -2673,6 +2698,7 @@
 	task.5D063D32D1C6BB2C.title: "Any #ytech:aqueducts"
 	task.5EC8E0E987CF862A.title: "More plants"
 	task.608727F73B6EDF0F.title: "The End?!"
+	task.62C0B2D1C395761B.title: "Зачем эта вкладка?"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
 	task.64E7E65976B570B4.title: "Posuc's Convication"
 	task.651818A1418ADDFB.title: "Any #minecraft:saplings"

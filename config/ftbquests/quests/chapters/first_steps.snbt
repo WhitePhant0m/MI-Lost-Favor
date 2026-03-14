@@ -1995,14 +1995,28 @@
 		{
 			dependencies: ["183336DC1AF8137B"]
 			id: "6443864802D04B07"
-			rewards: [{
-				id: "282DF442C7B67461"
-				item: {
-					count: 1
-					id: "grimoireofgaia:box_overworld"
+			rewards: [
+				{
+					id: "282DF442C7B67461"
+					item: {
+						count: 1
+						id: "grimoireofgaia:box_overworld"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					auto: "disabled"
+					icon: {
+						components: {
+							"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/validation/keybind/keybind_add_highlighted.png"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "0A58BA17068FCA2C"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			shape: "diamond"
 			tasks: [{
 				id: "49C1237D393FF8C9"
