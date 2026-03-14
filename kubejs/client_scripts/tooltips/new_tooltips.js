@@ -7,6 +7,12 @@ ItemEvents.modifyTooltips(event => {
         /tempad:.*/,
         /chunkloaders:.*/,
         /hostilenetworks:.*/,
+        /hostile_neural_industrialization:.*/,
+        /fluxnetworks:.*/,
+        /tankstorage:.*/,
+        /bankstorage:.*/,
+        /buildinggadgets2:.*/,
+        /replication:.*/,
     ]
     wip_tooltip.forEach(element => {
         event.add(element, Text.of(textAnimatorString("[Work in progress]", "glitch")).color("#CC4D4D"))
