@@ -10,7 +10,6 @@
 	chapter.4E4F6FF3EEEB1E51.title: "basic information"
 	chapter.535EA14E4BC77614.title: "Applied Energistics"
 	chapter.561B8642F13079C1.title: "Bronze Age"
-	chapter.5B0032897BBCD974.title: "cognition"
 	chapter.7A58E54E4B6B5025.title: "Storage"
 	chapter_group.414DFD996A564669.title: "Early"
 	chapter_group.4602108FDD7051BD.title: "Primitive"
@@ -691,6 +690,11 @@
 		"Could be used to mine pure resources, as well as some fragile blocks"
 		"{@pagebreak}"
 		"Может использоваться для добычи чистых ресурсов, а также некоторых хрупких блоков."
+	]
+	quest.1F5A20E076FA270E.quest_desc: [
+		"[ \"Red Fertilizer can be applied to farmland to boost growth speed. It can be combined with \", { \"text\": \"Yellow Fertilizer\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7F12E543084C6825\" } }, \".\" ]"
+		"{@pagebreak}"
+		"[ \"«Красное удобрение» можно использовать на почве для ускорения роста. Его можно сочетать с «\", { \"text\": \"Жёлтым удобрением\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7F12E543084C6825\" } }, \"».\" ]"
 	]
 	quest.1F7DF0379C917C3B.quest_desc: [
 		"Well, if it works, it works, i guess..."
@@ -1592,6 +1596,23 @@
 		"Печь покруче — но ещё и побольше!"
 	]
 	quest.49F633AB8533C593.quest_desc: ["Mends the items at the cost of oil."]
+	quest.4A1CF718DA71EAC5.quest_desc: [
+		"The feeding trough feeds nearby animals for breeding."
+		""
+		"&lUsage&r"
+		""
+		"• Right-click a feeding trough to insert animal feed."
+		"• The feeding trough will automatically feed nearby animals when they are hungry."
+		"• The feeding trough will stop feeding animals if the area gets too crowded."
+		""
+		"{@pagebreak}"
+		""
+		"Кормушка предназначена для кормления животных, находящихся рядом, в целях разведения."
+		""
+		"• Щелкните правой кнопкой мыши по кормушке, чтобы положить туда корм для животных."
+		"• Кормушка будет автоматически кормить находящихся поблизости животных, когда они проголодаются."
+		"• Кормушка прекратит кормление животных, если в зоне станет слишком тесно."
+	]
 	quest.4A87529560AC3F59.quest_desc: ["Operates similar to the Source Relay, but will automatically take from jars it is not linked to within 5 blocks. See the instructions on the Source Relay for use."]
 	quest.4ADB796A7EC14DE4.quest_desc: [
 		"The Soul Crimson Stone is an upgraded version of the normal Crimson Stone. Due to the power of the harnessed souls, this enhancer is able to completely remove the essence cost of one Hephaestus Forge ritual. After one use it loses its power and becomes a normal Crimson Stone."
@@ -1664,6 +1685,22 @@
 	]
 	quest.4F16E1AF399E74E4.quest_subtitle: "No more anvils ^o^"
 	quest.4F3E70AAD31A62A8.quest_desc: ["minecraft:swamp"]
+	quest.500B0AF8A393CC5D.quest_desc: [
+		"The chicken nest collects eggs dropped by nearby chickens and stores them for later pickup."
+		""
+		"&lUsage&r"
+		"• Right-click a chicken nest to collect eggs."
+		"• You can also use a hopper to pull eggs from the nest."
+		""
+		"{@pagebreak}"
+		""
+		"Куриное гнездо собирает яйца, снесённые находящимися поблизости курицами, и хранит их для последующего сбора."
+		""
+		"&lИспользование&r"
+		""
+		"• Щелкните правой кнопкой мыши по куриному гнезду, чтобы собрать яйца."
+		"• Вы также можете использовать воронку, чтобы достать яйца из гнезда."
+	]
 	quest.50A70151E50EC5DC.quest_desc: ["Drops from bogged."]
 	quest.51355FDCB71F9048.quest_desc: [
 		"&#C6BCE9Quitoxic Reeds&r can be found in &#CAE4C8swamps&r!"
@@ -1885,6 +1922,11 @@
 	quest.5F3B3C006860B496.quest_desc: ["Attracts items when powered"]
 	quest.5F750B9378BA292B.quest_desc: [""]
 	quest.5F97E71B27845702.quest_desc: [""]
+	quest.5F99F4F474FA0648.quest_desc: [
+		"[ \"Green Fertilizer can be applied to farmland to increase crop output. It can be combined with \", { \"text\": \"Yellow Fertilizer\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7F12E543084C6825\" } }, \".\" ]"
+		"{@pagebreak}"
+		"[ \"«Зеленое удобрение» можно использовать на почве для увеличения урожайности. Его можно сочетать с «\", { \"text\": \"Жёлтым удобрением\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7F12E543084C6825\" } }, \"».\" ]"
+	]
 	quest.5FA4EE37B3CC549D.quest_desc: [
 		"Moonstack nectar can completely repair tools or give regeneration 3 for a short period of time if you eat it!"
 		""
@@ -2485,6 +2527,11 @@
 	]
 	quest.7ED354CF6EFE61BC.quest_subtitle: "Linking tool"
 	quest.7EF5D915FEC62EE0.quest_subtitle: "elevator for source"
+	quest.7F12E543084C6825.quest_desc: [
+		"Yellow Fertilizer can be applied to farmland to prevent trampling of crops"
+		"{@pagebreak}"
+		"«Желтое удобрение» можно использовать на почве для предотвращения вытаптывания посевов"
+	]
 	reward.094072146D87AD84.title: "Pouch slot"
 	reward.0BDFBA35083D9976.title: "Belt Slot"
 	reward.0C6E1695C7D921E2.title: "Radial Menu Button"

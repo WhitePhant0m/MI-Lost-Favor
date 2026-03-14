@@ -342,5 +342,65 @@
 			x: -10.0d
 			y: 4.5d
 		}
+		{
+			id: "257157A1AA94B5E4"
+			tasks: [{
+				id: "650686BA003F15F0"
+				item: { count: 1, id: "farmingforblockheads:market" }
+				type: "item"
+			}]
+			x: -29.5d
+			y: -2.5d
+		}
+		{
+			id: "4A1CF718DA71EAC5"
+			tasks: [{
+				id: "5447F61996221BC3"
+				item: { count: 1, id: "farmingforblockheads:feeding_trough" }
+				type: "item"
+			}]
+			x: -28.5d
+			y: -2.5d
+		}
+		{
+			id: "500B0AF8A393CC5D"
+			tasks: [{
+				id: "4A7CF820E2986DC0"
+				item: { count: 1, id: "farmingforblockheads:chicken_nest" }
+				type: "item"
+			}]
+			x: -27.5d
+			y: -2.5d
+		}
+		{
+			id: "5F99F4F474FA0648"
+			tasks: [{
+				id: "279DDCCB34639ABF"
+				item: { count: 1, id: "farmingforblockheads:green_fertilizer" }
+				type: "item"
+			}]
+			x: -26.5d
+			y: -2.5d
+		}
+		{
+			id: "1F5A20E076FA270E"
+			tasks: [{
+				id: "2AE6D6A1DB03C024"
+				item: { count: 1, id: "farmingforblockheads:red_fertilizer" }
+				type: "item"
+			}]
+			x: -25.5d
+			y: -2.5d
+		}
+		{
+			id: "7F12E543084C6825"
+			tasks: [{
+				id: "0D83C7687ACA404D"
+				item: { count: 1, id: "farmingforblockheads:yellow_fertilizer" }
+				type: "item"
+			}]
+			x: -24.5d
+			y: -2.5d
+		}
 	]
 }
