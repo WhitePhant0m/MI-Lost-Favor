@@ -22,7 +22,7 @@ function yTechWorkspaceRecipe(/**@type {$RecipesKubeEvent_}*/ event, args){
             itemInputs.push(args.materialset.replaceWith)
         }
         miMachineCraft(event, {
-            energy: 2, time: 200, machine: args.miCompatMachine || "modern_industrialization:assembler",
+            energy: 1, time: 200, machine: args.miCompatMachine || "modern_industrialization:assembler",
             inputItems: itemInputs,
             outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
         })

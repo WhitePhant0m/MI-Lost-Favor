@@ -24,7 +24,8 @@ const ytechBlockHitCraft = (event, args) => {
         iePressCraft(event, {energy:3200,
             inputItems:args.inputItems,
             outputItems:args.outputItems,
-            mold:{item:"immersiveengineering:mold_unpacking"}
+            mold:{item:"immersiveengineering:mold_unpacking"},
+            reverseCompat:args.reverseCompat || false
         })
     }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}
@@ -33,21 +34,32 @@ const ytechBlockHitCraft = (event, args) => {
 
 ServerEvents.recipes(event => {
 
-    function block_hit_recipe(input, output, block){
-        ytechBlockHitCraft(event,{
-            inputItems:[[input]],
-            outputItems:[output],
-            block:block
-        })
-    }
+    ytechBlockHitCraft(event,{
+        inputItems:[[{item:"modern_industrialization:bronze_machine_casing"}]],
+        outputItems:[[{id:"kubejs:bronze_machine_bit"}, 12]],
+        block:{tag : "minecraft:anvil"},
+        reverseCompat:true
+    })
 
+    ytechBlockHitCraft(event,{
+        inputItems:[[{item:"modern_industrialization:steel_machine_casing"}]],
+        outputItems:[[{id:"kubejs:steel_machine_bit"}, 12]],
+        block:{tag : "minecraft:anvil"},
+        reverseCompat:true
+    })
 
-    block_hit_recipe({item:"modern_industrialization:bronze_machine_casing"}, [{id:"kubejs:bronze_machine_bit"}, 12], {tag : "minecraft:anvil"} )
-    block_hit_recipe({item:"modern_industrialization:frostproof_machine_casing"}, [{id:"kubejs:basic_machine_bit"}, 12], {tag : "minecraft:anvil"} )
-    block_hit_recipe({item:"modern_industrialization:steel_machine_casing"}, [{id:"kubejs:steel_machine_bit"}, 12], {tag : "minecraft:anvil"} )
-    
-    block_hit_recipe({tag:"c:cobblestones"}, [{id:"ytech:pebble"}, 4], {tag : "c:stones"} )
+    ytechBlockHitCraft(event,{
+        inputItems:[[{item:"modern_industrialization:frostproof_machine_casing"}]],
+        outputItems:[[{id:"kubejs:basic_machine_bit"}, 12]],
+        block:{tag : "minecraft:anvil"},
+        reverseCompat:true
+    })
 
+    ytechBlockHitCraft(event,{
+        inputItems:[[{tag:"c:cobblestones"}]],
+        outputItems:[[{id:"ytech:pebble"}, 4]],
+        block:{tag : "c:stones"}
+    })
 
     ytechBlockHitCraft(event, {
             inputItems:[[{item:"modern_industrialization:bronze_machine_casing"}]],

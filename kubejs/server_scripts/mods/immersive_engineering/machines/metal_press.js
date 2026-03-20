@@ -49,6 +49,12 @@ const iePressCraft = (event, args) => {
             inputItems:miInputs,
             outputItems:[[{item:recipe.result.id}, recipe.result.count]]
         })
+        if (args.reverseCompat && machine == "modern_industrialization:unpacker"){            
+            miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:packer",
+                inputItems:[[{item:recipe.result.id}, recipe.result.count]],
+                outputItems:args.inputItems
+            })
+        }
     }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].id})}
     event.custom(recipe)
