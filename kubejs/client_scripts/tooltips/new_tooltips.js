@@ -22,8 +22,7 @@ ItemEvents.modifyTooltips(event => {
         const raw = args.items ?? args.item;
         const items = Array.isArray(raw) ? raw : [raw];
 
-        const hint = Text.translate("kubejs.press_button")
-            .color("#f5c25b")
+        const hint = Text.translate("kubejs.press_button").color("#f5c25b")
             .append(Text.of("Shift ").bold().color("#ffb319"))
             .append(Text.translate("kubejs.for_details").color("#f5c25b"));
 
@@ -49,6 +48,7 @@ ItemEvents.modifyTooltips(event => {
     });
 
 
+    simpleShiftText({ item: "kubejs:orb_of_the_forest", text: "kubejs.orb_of_the_forest.tooltip", color: "#1CC433" })
     simpleShiftText({ item: "kubejs:amber_visage", text: "kubejs.amber_visage.tooltip", color: "#5ca5e0" })
     simpleShiftText({ items: ["minecraft:lantern", "minecraft:soul_lantern"], text: "kubejs.beltborne_lanterns.tooltip", color: "#43B747" });
 

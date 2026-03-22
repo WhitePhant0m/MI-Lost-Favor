@@ -27,7 +27,8 @@ ClientEvents.lang('en_us', event => {
     event.add('kubejs.press_button', 'Hold ')
     event.add('kubejs.for_details', 'for more information')
     event.add('kubejs.amber_visage.tooltip', 'Used as fuel in the transmogrification table to change the appearance of items without modifying their behavior at all')
-    event.add('kubejs.beltborne_lanterns.tooltip', 'Press CTRL + B while holding a lantern — it snaps onto your belt. Need it back in your hands? Press CTRL + B again.')
+    event.add('kubejs.orb_of_the_forest.tooltip', 'To apply this orb to an axe, hold the orb in your main hand and any axe in your off hand and click RMB')
+    event.add('kubejs.beltborne_lanterns.tooltip', 'Press CTRL + B while holding a lantern — it snaps onto your belt. Need it back in your hands? Press CTRL + B again')
     event.add('milf.money_pouch.tooltip', 'Can be opened with radial menu while in the curio slot')
     event.add('milf.curio_bag.tooltip', 'Can be opened with radial menu while in the hotbar or in a curio slot')
 
