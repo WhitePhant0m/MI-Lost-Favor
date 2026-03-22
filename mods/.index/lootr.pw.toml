@@ -1,17 +1,17 @@
-filename = 'lootr-neoforge-1.21.1-1.11.36.116.jar'
+filename = 'lootr-neoforge-1.21.1-1.11.37.118.jar'
 name = 'Lootr'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'lootr-neoforge-1.21.1-1.11.36.116'
+x-prismlauncher-version-number = 'lootr-neoforge-1.21.1-1.11.37.118'
 
 [download]
-hash = '476c757c3859fe9acd95130bd44f4443586c46ec'
+hash = '95058da06c16441211619ce46950502fd5ac1f64'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7666212
+file-id = 7769881
 project-id = 361276

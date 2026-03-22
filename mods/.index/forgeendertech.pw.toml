@@ -1,16 +1,17 @@
-filename = 'ForgeEndertech-1.21.1-12.1.1.0-NeoForge-build.0471.jar'
+filename = 'ForgeEndertech-1.21.1-12.1.2.0-NeoForge-build.0768.jar'
 name = 'ForgeEndertech'
-side = 'both'
+side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ForgeEndertech-1.21.1-12.1.2.0-NeoForge-build.0768.jar'
 
 [download]
-hash = 'a923768c0160eff0fd186dd75dc287e732fc3296'
+hash = '41b097d89ff2e52c68be14ca3c2853b9f7cd1eff'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7070495
+file-id = 7794259
 project-id = 244844

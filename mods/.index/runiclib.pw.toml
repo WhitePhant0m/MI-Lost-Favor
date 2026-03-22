@@ -1,17 +1,17 @@
-filename = 'neoforge-runiclib-1.21.1-5.0.5.1.jar'
+filename = 'neoforge-runiclib-1.21.1-5.0.6.jar'
 name = 'RunicLib'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'neoforge-runiclib-1.21.1-5.0.5.1.jar'
+x-prismlauncher-version-number = 'neoforge-runiclib-1.21.1-5.0.6.jar'
 
 [download]
-hash = '34134adeaa1e56014c66269714548e6bcf353f24'
+hash = '4db030cf38899612e364bfc63936d09b246fc69b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7664570
+file-id = 7788771
 project-id = 880879

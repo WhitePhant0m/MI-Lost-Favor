@@ -1,16 +1,17 @@
-filename = 'trashslot-neoforge-1.21.1-21.1.4.jar'
+filename = 'trashslot-neoforge-1.21.1-21.1.6.jar'
 name = 'TrashSlot'
-side = 'both'
+side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'trashslot-neoforge-1.21.1-21.1.6.jar'
 
 [download]
-hash = '0b7004a166834ae9a33cc37d769947436bb3f956'
+hash = 'b977a4df7de826ac7a56aeb10fbd4185394e6ae7'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6319145
+file-id = 7772379
 project-id = 235577

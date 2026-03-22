@@ -1,17 +1,17 @@
-filename = 'boss_checklist-neoforge-4.0.4.jar'
+filename = 'boss_checklist-neoforge-4.1.0.jar'
 name = 'Boss Checklist'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'boss_checklist-neoforge-4.0.4.jar'
+x-prismlauncher-version-number = 'boss_checklist-neoforge-4.1.0.jar'
 
 [download]
-hash = '548e9b4d31d0d2ea782183802c4dc0cf31af74d6'
+hash = 'b87129c8a74f54219e0fff083629d41e32f66cf1'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7752452
+file-id = 7789514
 project-id = 1355708

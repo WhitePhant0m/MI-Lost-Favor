@@ -1,17 +1,17 @@
-filename = 'roots-4.0.0.21-alpha.jar'
-name = 'Roots 4'
+filename = 'roots-4.0.0.23-alpha.jar'
+name = 'Roots'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'alpha'
-x-prismlauncher-version-number = 'Roots-1.21 4.0.0.21-alpha'
+x-prismlauncher-version-number = 'Roots-1.21 4.0.0.23-alpha'
 
 [download]
-hash = '01c0fc176c5690caa0d57be157272f221f129a00'
+hash = 'b4db6bfe17404e5aaf46d61897fb68531587ed91'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7517465
+file-id = 7789182
 project-id = 246183

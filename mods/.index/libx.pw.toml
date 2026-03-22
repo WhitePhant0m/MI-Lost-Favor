@@ -1,17 +1,17 @@
-filename = 'LibX-1.21.1-6.0.9.jar'
+filename = 'LibX-1.21.1-6.0.10.jar'
 name = 'LibX'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'LibX-1.21.1-6.0.9.jar'
+x-prismlauncher-release-type = 'alpha'
+x-prismlauncher-version-number = 'LibX-1.21.1-6.0.10.jar'
 
 [download]
-hash = '06a144a41aa7affca17f30a28c0e9effdddc3f4e'
+hash = '370d422e76364e641faaf69fb480b519486e51d0'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7446147
+file-id = 7781079
 project-id = 412525
