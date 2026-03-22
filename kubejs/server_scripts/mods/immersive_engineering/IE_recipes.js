@@ -255,7 +255,7 @@ ServerEvents.recipes(event => {
             S: { tag: "c:plates/iron" },
             s: { item: "immersiveengineering:sheetmetal_aluminum" }
         },
-        outputItems: [[{ id: "kubejs:radio_tower_block" }, 6]],
+        outputItems: [[{ id: "milf:radio_tower_block" }, 6]],
     })
 
     milfShaped(event, {
@@ -263,9 +263,9 @@ ServerEvents.recipes(event => {
             'BBB'
         ],
         key: {
-            B: { item: "kubejs:radio_tower_block" },
+            B: { item: "milf:radio_tower_block" },
         },
-        outputItems: [[{ id: "kubejs:radio_tower_slab" }, 6]],
+        outputItems: [[{ id: "milf:radio_tower_slab" }, 6]],
     })
 
     milfShaped(event, {
