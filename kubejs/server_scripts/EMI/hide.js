@@ -22,6 +22,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         'modern_industrialization:electric_furnace',
         'modern_industrialization:steel_furnace',
         'modern_industrialization:bronze_furnace',
+        'extended_industrialization:large_steam_furnace',
+        'extended_industrialization:large_electric_furnace',
         'ytech:tin_plate',
         'ytech:lead_plate',
         'ytech:copper_plate',

@@ -16,6 +16,9 @@ const milfShaped = (/**@type {$RecipesKubeEvent_}*/ event, args) => {
         pattern: args.pattern,
         result: Object.assign({},args.outputItems[0][0], {count: args.outputItems[0][1] || 1}),
     }
+    if(args.replace){
+        recipe.replace = args.replace
+    }
     if(!args.compatOff){
         let itemInputs = []
         let amounts = args.pattern.join("")

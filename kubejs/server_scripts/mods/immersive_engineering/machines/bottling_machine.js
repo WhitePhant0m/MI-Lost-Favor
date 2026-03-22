@@ -30,6 +30,34 @@ const ieBottlingMachineCraft = (event, args) => {
 
 ServerEvents.recipes(event => {
 
+    ieBottlingMachineCraft(event, {
+        outputItems:[
+            [{item:"modern_industrialization:plastic_plate"}],
+            [{item:"immersiveengineering:mold_plate"}, 1]
+        ],
+        inputFluids:[
+            [{fluid:"kubejs:liquid_plastic"}, 100]
+        ],
+        inputItems:[
+            [{item:"immersiveengineering:mold_plate"}, 1]
+        ],
+        compatOff:true
+    })
+
+    ieBottlingMachineCraft(event, {
+        outputItems:[
+            [{item:"kubejs:basic_machine_bit"}, 8],
+            [{item:"kubejs:bits_mold"}, 1]
+        ],
+        inputFluids:[
+            [{fluid:"kubejs:liquid_plastic"}, 1000]
+        ],
+        inputItems:[
+            [{item:"kubejs:bits_mold"}, 1]
+        ],
+        compatOff:true
+    })
+
     function bottling_recipe(inputs, fluid, outputs) {
         ieBottlingMachineCraft(event, {
             inputItems:inputs,

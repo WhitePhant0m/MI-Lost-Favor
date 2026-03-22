@@ -21,11 +21,26 @@ function yTechWorkspaceRecipe(/**@type {$RecipesKubeEvent_}*/ event, args){
         if(args.materialset){
             itemInputs.push(args.materialset.replaceWith)
         }
-        miMachineCraft(event, {
-            energy: 1, time: 200, machine: args.miCompatMachine || "modern_industrialization:assembler",
-            inputItems: itemInputs,
-            outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
-        })
+        if(args.miCompatMachine != "modern_industrialization:packer"){
+            miMachineCraft(event, {
+                energy: 1, time: 200, machine: args.miCompatMachine || "modern_industrialization:assembler",
+                inputItems: itemInputs,
+                outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
+            })
+        } else {
+            miMachineCraft(event, {
+                energy: 1, time: 200, machine: args.miCompatMachine || "modern_industrialization:assembler",
+                inputItems: itemInputs,
+                outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
+            })
+
+            miMachineCraft(event, {
+                energy: 1, time: 200, machine: "modern_industrialization:unpacker",
+                inputItems: [[{ item: recipe.result.id }, recipe.result.count]],
+                outputItems: itemInputs
+            })
+        }
+
     }
     if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
     if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
@@ -1318,13 +1333,14 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].workspaceCenter("S").workspaceCorners("R").workspaceSides("P")
         ],
         key: {
-            S: { item: "immersiveengineering:basic_engineering" },
+            S: { tag: "immersiveengineering:treated_wood" },
             R: { item: "modern_industrialization:steel_rod" },
             P: { item: "modern_industrialization:steel_plate" },
             C: { item: "modern_industrialization:analog_circuit" }
         },
         outputItems: [[{ id: "mi_tweaks:multiblock_packer_3000_safety_regulations_edition" }, 1]],
         tool: { item: "immersiveengineering:hammer" },
+        miCompatMachine:packer,
         removeRecipe: true
     })
 
@@ -1341,6 +1357,7 @@ ServerEvents.recipes(event => {
             C: { item: "extended_industrialization:steel_alloy_smelter" }
         },
         outputItems: [[{ id: "mi_tweaks:advanced_steam_alloy_smelter" }, 1]],
+        miCompatMachine:packer,
         tool: wrench,
         removeRecipe: true
     })
@@ -1358,6 +1375,7 @@ ServerEvents.recipes(event => {
             C: { item: "modern_industrialization:steam_blast_furnace" }
         },
         outputItems: [[{ id: "mi_tweaks:advanced_steam_blast_furnace" }, 1]],
+        miCompatMachine:packer,
         tool: wrench,
         removeRecipe: true
     })
@@ -1424,6 +1442,59 @@ ServerEvents.recipes(event => {
             c: { item: "modern_industrialization:analog_circuit" }
         },
         outputItems: [[{ id: "modern_industrialization:enigma_machine" }, 1]],
+        miCompatMachine:packer,
+        tool: { item: "immersiveengineering:hammer" },
+        removeRecipe: true
+    })
+
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W"),
+            ['   ','   ','   '].workspaceFull("I").workspaceSides("W").workspaceFront("L").workspaceCenter("c"),
+            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W")
+        ],
+        key: {
+            I: { item: "immersiveengineering:sheetmetal_steel" },
+            W: { item: "immersiveengineering:treated_wood_horizontal" },
+            L: { item: "immersiveengineering:logic_unit" },
+            c: { item: "immersiveengineering:component_electronic_adv" }
+        },
+        outputItems: [[{ id: "modern_industrialization:radio_transcriber" }, 1]],
+        miCompatMachine:packer,
+        tool: { item: "immersiveengineering:hammer" },
+        removeRecipe: true
+    })
+
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W"),
+            ['   ','   ','   '].workspaceFull("I").workspaceSides("W").workspaceFront(" ").workspaceCenter("c"),
+            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W")
+        ],
+        key: {
+            I: { item: "immersiveengineering:sheetmetal_aluminum" },
+            W: { item: "immersiveengineering:graphite_electrode" },
+            c: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "modern_industrialization:desalter" }, 1]],
+        miCompatMachine:packer,
+        tool: { item: "immersiveengineering:hammer" },
+        removeRecipe: true
+    })
+
+    yTechWorkspaceRecipe(event, {
+        pattern: [
+            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W"),
+            ['   ','   ','   '].workspaceFull("I").workspaceSides("W").workspaceFront(" ").workspaceCenter("c"),
+            ['   ','   ','   '].workspaceFull("I").workspaceCenter("W")
+        ],
+        key: {
+            I: { item: "immersiveengineering:sheetmetal_steel" },
+            W: { item: "immersiveengineering:sheetmetal_steel" },
+            c: { item: "modern_industrialization:analog_circuit" }
+        },
+        outputItems: [[{ id: "modern_industrialization:steam_cracker" }, 1]],
+        miCompatMachine:packer,
         tool: { item: "immersiveengineering:hammer" },
         removeRecipe: true
     })

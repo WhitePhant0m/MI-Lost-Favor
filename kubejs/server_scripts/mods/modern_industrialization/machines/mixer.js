@@ -73,4 +73,16 @@ ServerEvents.recipes(event => {
             [{item:"modern_industrialization:constantan_tiny_dust"}, 2]
         ]
     })    
+
+    miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
+        inputItems:[
+            [{item:"minecraft:clay_ball"}, 3],
+            [{item:"modern_industrialization:fire_clay_dust"}, 3],
+            [{item:"modern_industrialization:bauxite_dust"}, 1],
+            [{item:"modern_industrialization:iron_dust"}, 1]
+        ],
+        outputItems:[
+            [{item:"kubejs:cement"}, 8]
+        ]
+    })
 })

@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
             'immersiveengineering:wire_electrum',
             'immersiveengineering:wire_aluminum',
             'immersiveengineering:wire_steel',
-            'immersiveengineering:wire_lead',
+            'immersiveengineering:wire_lead'
         ]
     })
 
@@ -43,11 +43,6 @@ ServerEvents.recipes(event => {
         )
     });
 
-    event.replaceInput(
-            { output: "immersiveengineering:cloche" },
-            "immersiveengineering:component_iron",
-            "immersiveengineering:component_steel"
-        )
     event.replaceInput(
             { output: "immersiveengineering:toolbox" },
             "modern_industrialization:aluminum_plate",
@@ -84,38 +79,17 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
-            "QTQ",
-            "RWR",
-            "QTQ"
+            "WQW",
+            "QRQ",
+            "WQW"
         ],
         key: {
-            Q: { tag: "c:plates/iron" },
-            W: { tag: "c:gears/steel" },
-            R: { item: "modern_industrialization:rubber_sheet" },
-            T: { tag: "c:ingots/copper" },
+            Q: { item: "minecraft:redstone" },
+            W: { item: "modern_industrialization:iron_large_plate" },
+            R: { item: "modern_industrialization:analog_circuit" },
         },
-        outputItems: [[{ id: "immersiveengineering:component_iron" }, 2]],
-        removeRecipe:true,
-        compatOff:true
-
-    })
-
-    milfShaped(event, {
-        pattern: [
-            "QTQ",
-            "RWR",
-            "QTQ"
-        ],
-        key: {
-            Q: { tag: "c:plates/steel" },
-            W: { tag: "c:gears/steel" },
-            R: { item: "modern_industrialization:rubber_sheet" },
-            T: { tag: "c:ingots/bronze" },
-        },
-        outputItems: [[{ id: "immersiveengineering:component_steel" }, 2]],
-        removeRecipe:true,
-        compatOff:true
-
+        outputItems: [[{ id: "immersiveengineering:rs_engineering" }, 1]],
+        removeRecipe:true
     })
 
     milfShaped(event, {
@@ -125,12 +99,78 @@ ServerEvents.recipes(event => {
             "WQW"
         ],
         key: {
-            Q: { item: "minecraft:redstone" },
-            W: { item: "immersiveengineering:sheetmetal_iron" },
-            R: { item: "modern_industrialization:analog_circuit" },
+            Q: { item: "immersiveengineering:wirecoil_electrum" },
+            W: { item: "modern_industrialization:steel_large_plate" },
+            R: { item: "immersiveengineering:component_iron" },
         },
-        outputItems: [[{ id: "immersiveengineering:rs_engineering" }, 4]],
+        outputItems: [[{ id: "immersiveengineering:generator" }, 1]],
         removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WQW",
+            "QQQ",
+            "WQW"
+        ],
+        key: {
+            Q: { tag: "immersiveengineering:treated_wood" },
+            W: { item: "modern_industrialization:iron_large_plate" }
+        },
+        outputItems: [[{ id: "immersiveengineering:basic_engineering" }, 1]],
+        removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WQW",
+            "IRI",
+            "WQW"
+        ],
+        key: {
+            Q: { item: "modern_industrialization:steel_rod" },
+            I: { item: "modern_industrialization:iron_rod" },
+            W: { item: "modern_industrialization:steel_large_plate" },
+            R: { item: "immersiveengineering:component_steel" },
+        },
+        outputItems: [[{ id: "immersiveengineering:heavy_engineering" }, 1]],
+        removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WQW",
+            "IRI",
+            "WQW"
+        ],
+        key: {
+            Q: { item: "modern_industrialization:copper_rod" },
+            I: { item: "modern_industrialization:steel_rod" },
+            W: { item: "modern_industrialization:iron_large_plate" },
+            R: { item: "immersiveengineering:component_iron" },
+        },
+        outputItems: [[{ id: "immersiveengineering:light_engineering" }, 1]],
+        removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "SCS",
+            "PWP",
+            "SIS"
+        ],
+        key: {
+            S: { item: "modern_industrialization:steel_large_plate" },
+            C: { item: "immersiveengineering:component_steel" },
+            I: { item: "immersiveengineering:component_iron" },
+            P: { item: "modern_industrialization:constantan_plate" },
+            W: { type: "immersiveengineering:fluid_stack",
+                 amount: 1000,
+                 tag: "minecraft:water"}
+        },
+        outputItems: [[{ id: "immersiveengineering:radiator" }, 1]],
+        removeRecipe:true,
+        compatOff:true
     })
 
     milfShaped(event, {
@@ -145,6 +185,262 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "kubejs:blank_blueprint" }, 1]],
         removeRecipe:true
     })
+
+    milfShaped(event, {
+        pattern: [
+            "WWW",
+            "WBW",
+            "WWW"
+        ],
+        key: {
+            W: { item: "modern_industrialization:copper_wire" },
+            B: { item: "ytech:beeswax" }
+        },
+        outputItems: [[{ id: "immersiveengineering:wirecoil_copper" }, 8]],
+        removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WWW",
+            "WBW",
+            "WWW"
+        ],
+        key: {
+            W: { item: "modern_industrialization:electrum_wire" },
+            B: { item: "ytech:beeswax" }
+        },
+        outputItems: [[{ id: "immersiveengineering:wirecoil_electrum" }, 8]],
+        removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WSW",
+            "SBS",
+            "WSW"
+        ],
+        key: {
+            W: { item: "modern_industrialization:aluminum_wire" },
+            S: { item: "modern_industrialization:steel_wire" },
+            B: { item: "ytech:beeswax" }
+        },
+        outputItems: [[{ id: "immersiveengineering:wirecoil_steel" }, 4]],
+        removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "WRW",
+            "RrR",
+            "WRW"
+        ],
+        key: {
+            W: { item: "immersiveengineering:wirecoil_steel" },
+            R: { item: "minecraft:redstone" },
+            r: { item: "modern_industrialization:rubber_sheet" }
+        },
+        outputItems: [[{ id: "immersiveengineering:wirecoil_redstone" }, 4]],
+        removeRecipe:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            'ASA',
+            'SsS',
+            'ASA'
+        ],
+        key: {
+            A: { tag: "c:plates/aluminum" },
+            S: { tag: "c:plates/iron" },
+            s: { item: "immersiveengineering:sheetmetal_aluminum" }
+        },
+        outputItems: [[{ id: "kubejs:radio_tower_block" }, 6]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            'BBB'
+        ],
+        key: {
+            B: { item: "kubejs:radio_tower_block" },
+        },
+        outputItems: [[{ id: "kubejs:radio_tower_slab" }, 6]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "S S",
+            "MAL",
+            "ESC"
+        ],
+        key: {
+            A: { tag: "milf:accumulator" },
+            C: { item: "immersiveengineering:wirecoil_copper_ins" },
+            E: { item: "immersiveengineering:wirecoil_electrum_ins" },
+            S: { item: "ytech:leather_strips" },
+            M: { item: "immersiveengineering:connector_mv" },
+            L: { item: "immersiveengineering:connector_lv" }
+        },
+        outputItems: [[{ id: "immersiveengineering:powerpack" }, 1]],
+        removeRecipe:true,
+        compatOff:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "NIN",
+            "PCP",
+            "NIN"
+        ],
+        key: {
+            I: { item: "immersiveengineering:component_iron" },
+            C: { item: "immersiveengineering:coil_lv" },
+            P: { item: "modern_industrialization:steel_large_plate" },
+            N: { item: "modern_industrialization:electrum_nugget" }
+        },
+        outputItems: [[{ id: "immersiveengineering:dynamo" }, 1]],
+        removeRecipe:true,
+        compatOff:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "ANA",
+            "NCN",
+            "PPP"
+        ],
+        key: {
+            C: { item: "immersiveengineering:coil_lv" },
+            P: { item: "modern_industrialization:steel_ingot" },
+            N: { item: "modern_industrialization:constantan_plate" },
+            A: { item: "modern_industrialization:copper_nugget" }
+        },
+        outputItems: [[{ id: "immersiveengineering:thermoelectric_generator" }, 1]],
+        removeRecipe:true,
+        compatOff:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "GLG",
+            "GIG",
+            "BSB"
+        ],
+        key: {
+            I: { item: "immersiveengineering:component_iron" },
+            S: { item: "immersiveengineering:component_steel" },
+            B: { item: "immersiveengineering:basic_engineering" },
+            G: { item: "kubejs:steel_infused_glass" },
+            L: { item: "immersiveengineering:light_bulb"}
+        },
+        outputItems: [[{ id: "immersiveengineering:cloche" }, 1]],
+        removeRecipe:true,
+        compatOff:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " S ",
+            " C "
+        ],
+        key: {
+            S: { item: "modern_industrialization:steel_rod" },
+            C: { item: "immersiveengineering:concrete_bucket" },
+        },
+        replace: {
+            C: { item: "minecraft:bucket" },
+        },
+        outputItems: [[{ id: "kubejs:concrete_popsicle" }, 1]],
+        removeRecipe:true,
+        compatOff:true
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RDR",
+            "RDR"
+        ],
+        key: {
+            D: { item: "modern_industrialization:steel_double_ingot" },
+            R: { item: "modern_industrialization:steel_rod" },
+        },
+        outputItems: [[{ id: "xkdeco:hollow_steel_beam" }, 3]],
+        removeRecipe:true,
+    })
+
+    const sheetmetalMaterials = ["copper", "aluminum", "lead", "silver", "nickel", "uranium", "constantan", "electrum", "steel", "iron", "gold"]
+    sheetmetalMaterials.forEach(material => {
+        milfShaped(event, {
+            pattern: [
+                "BPB",
+                "P P",
+                "BPB"
+            ],
+            key: {
+                B: { item: ["iron", "gold"].includes(material) ? `minecraft:${material}_nugget` : `modern_industrialization:${material}_nugget` },
+                P: { item: `modern_industrialization:${material}_plate` },
+            },
+            outputItems: [[{ id: `immersiveengineering:sheetmetal_${material}` }, 6]],
+            removeRecipe:true,
+        })
+
+        milfShaped(event, {
+            pattern: [
+                "S",
+                "S"
+            ],
+            key: {
+                S: { item: `immersiveengineering:slab_sheetmetal_${material}` }
+            },
+            outputItems: [[{ id: `immersiveengineering:sheetmetal_${material}` }, 1]],
+        })
+    })
+
+    milfShaped(event, {
+        pattern: [
+            "RWR",
+            "WBW",
+            "RWR"
+        ],
+        key: {
+            W: { item: "immersiveengineering:wirecoil_redstone" },
+            R: { item: "modern_industrialization:rubber_sheet" },
+            B: { item: "immersiveengineering:rs_engineering" }
+        },
+        outputItems: [[{ id: "modern_industrialization:ie_energy_input_hatch" }, 1]],
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " C ",
+            "CPP",
+            " PP"
+        ],
+        key: {
+            P: { item: "modern_industrialization:aluminum_plate" },
+            C: { item: "modern_industrialization:aluminum_curved_plate" }
+        },
+        outputItems: [[{ id: "immersiveengineering:jerrycan" }, 1]],
+        removeRecipe:true,
+    })
+
+    milfShaped(event, {
+        pattern: [
+            " P ",
+            "GLG",
+            "WWW"
+        ],
+        key: {
+            P: { item: "modern_industrialization:aluminum_plate" },
+            G: { item: "kubejs:steel_infused_glass" },
+            L: { item: "immersiveengineering:light_bulb" },
+            W: { item: "modern_industrialization:copper_wire" }
+        },
+        outputItems: [[{ id: "immersiveengineering:electric_lantern" }, 1]],
+        removeRecipe:true,
+    })
+    
 
     //TODO: добавить всё что дробится и плавиться из руды или похожее на руду
     const ore_for_arc_furnace = [
@@ -192,7 +488,15 @@ KubeJSTweaks.beforeRecipes(event =>{
         "immersiveengineering:arcfurnace/raw_ore_uranium",
         "immersiveengineering:crusher/ore_quartz",
         "immersiveengineering:crusher/ore_lapis",
-        "immersiveengineering:crusher/red_sandstone"
+        "immersiveengineering:crusher/red_sandstone",
+        "immersiveengineering:mixer/concrete",
+        "immersiveengineering:arcfurnace/steel",
+        "immersiveengineering:cokeoven/charcoal",
+        "immersiveengineering:cokeoven/coke_block",
+        "immersiveengineering:cokeoven/coke",
+        "immersiveengineering:crafting/empty_shell",
+        "immersiveengineering:smelting/copper_ingot_from_dust",
+        "immersiveengineering:smelting/copper_ingot_from_dust_from_blasting"
     ]
 
     disableByRecipeID.forEach(id =>{

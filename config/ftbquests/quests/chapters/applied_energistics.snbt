@@ -75,19 +75,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["7460A2152BF3AEF2"]
-			id: "1F905B94015D7B5F"
-			shape: "octagon"
-			size: 2.0d
-			tasks: [{
-				id: "122C101864193BC7"
-				item: { count: 1, id: "modern_industrialization:enigma_machine" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 0.0d
-		}
-		{
 			id: "0DF683DDB7246117"
 			shape: "octagon"
 			tasks: [{
@@ -3337,6 +3324,23 @@
 			}]
 			x: -9.0d
 			y: 13.0d
+		}
+		{
+			dependencies: [
+				"7460A2152BF3AEF2"
+				"33EE86C92BFB3629"
+			]
+			dependency_requirement: "one_completed"
+			id: "1F905B94015D7B5F"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "122C101864193BC7"
+				item: { count: 1, id: "modern_industrialization:enigma_machine" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
 		}
 	]
 }

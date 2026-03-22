@@ -30,4 +30,16 @@ ServerEvents.recipes(event => {
         .itemIn('kubejs:old_notes', 0)
         .itemOut("kubejs:divine_blueprint") */
 
+
+    miMachineCraft(event, {energy:8, time:6000, machine:"modern_industrialization:enigma_machine",
+        inputItems:[
+            [{item:"kubejs:blank_blueprint"}, 1],
+            [{item:"kubejs:punched_card"}, 1],
+            [{item:"kubejs:punched_card"}, 1]
+        ],
+        outputItems:[[{
+            "components": { "immersiveengineering:blueprint": "MI components" },
+            "id": "immersiveengineering:blueprint"
+        }, 1]],
+    })
 })

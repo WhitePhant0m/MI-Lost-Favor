@@ -10,3 +10,16 @@ ServerEvents.recipes(event => {
     });
     
 })
+
+KubeJSTweaks.beforeRecipes(event =>{
+
+    const disableByRecipeID = [
+       "minecraft:nether_brick",
+    ]
+
+    disableByRecipeID.forEach(id =>{
+        event.disable(id)
+    })
+    
+
+})

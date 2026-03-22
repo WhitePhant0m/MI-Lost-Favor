@@ -107,6 +107,7 @@ createNewItem('meze_109', { itemType: "helmet", material: 'kubejs:meze', stackSi
 //#region Food
 createNewItem("steaming_iron_ingot", { food: { nutrition: 4, saturation: 0, alwaysEdible: true, eaten: "setOnFire", effects: [['minecraft:nausea', 200, 0, 1], ['minecraft:darkness', 100, 0, 1]] }, lang: { "en_us": "Steaming iron ingot", "ru_ru": "Жареный железный слиток" }})
 createNewItem("dirt_cake", { food: { nutrition: 1, saturation: 0, alwaysEdible: true, effects: [['minecraft:hunger', 200, 0, 1], ['minecraft:slowness', 200, 0, 1], ['minecraft:strength', 100, 0, 1]] }, lang: { "en_us": "Dirt cake", "ru_ru": "Торт из грязи" } })
+createNewItem("concrete_popsicle", { food: { nutrition: 1, saturation: 9, alwaysEdible: false, effects: [['minecraft:slowness', 100, 10, 1]] }, lang: { "en_us": "Concrete popsicle"}})
 createNewItem("uranium_sandwich", { food: { nutrition: 1, saturation: 20000, alwaysEdible: true, effects: [['minecraft:hunger', 200, 3, 1], ['minecraft:poison', 1000, 0, 1]] }, lang: { "en_us": "Uranium sandwich", "ru_ru": "Урановый бутерброд" }})
 
 global.getConfidence = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
@@ -183,7 +184,11 @@ createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
 
 createNewItem("bits_mold")
-//createNewFluid("plastic", {textureType:"thick", color:"0xFF0000"})
+createNewItem("cement")
+createNewFluid("liquid_plastic", {textureType:"thick", color: Number("0xFFFFFF")})
+createNewFluid("desalted_crude_oil", {textureType:"thick", color: Number("0x292520")})
+createNewFluid("high_sulfur_kerosene", {textureType:"thin", color: Number("0x735b3e")})
+
 
 createNewBlock("radio_tower_block", { hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower block", "ru_ru": "Блок радио вышки" } })
 createNewBlock("radio_tower_slab", { texturePath: 'custom_stuff:blocks/radio_tower_block', blockType: "slab", hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower slab", "ru_ru": "Плита радио вышки" } })

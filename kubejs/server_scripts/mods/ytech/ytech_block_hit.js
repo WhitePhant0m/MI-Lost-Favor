@@ -49,15 +49,14 @@ ServerEvents.recipes(event => {
     })
 
     ytechBlockHitCraft(event,{
-        inputItems:[[{item:"modern_industrialization:frostproof_machine_casing"}]],
-        outputItems:[[{id:"kubejs:basic_machine_bit"}, 12]],
-        block:{tag : "minecraft:anvil"},
-        reverseCompat:true
+        inputItems:[[{tag:"c:cobblestones"}]],
+        outputItems:[[{id:"ytech:pebble"}, 4]],
+        block:{tag : "c:stones"}
     })
 
     ytechBlockHitCraft(event,{
-        inputItems:[[{tag:"c:cobblestones"}]],
-        outputItems:[[{id:"ytech:pebble"}, 4]],
+        inputItems:[[{item:"minecraft:nether_bricks"}]],
+        outputItems:[[{id:"minecraft:nether_brick"}, 4]],
         block:{tag : "c:stones"}
     })
 

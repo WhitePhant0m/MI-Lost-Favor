@@ -37,6 +37,13 @@ ServerEvents.recipes(event => {
         if(!Array.isArray(rjson.item_inputs)){rjson.item_inputs = [rjson.item_inputs]}
         if(!Array.isArray(rjson.item_outputs)){rjson.item_outputs = [rjson.item_outputs]}
         crusher_mi((rjson.item_inputs)[0], rjson.item_outputs, rjson.duration * rjson.eu)
+        rjson.item_outputs.forEach(output =>{            
+            event.remove({ type: 'immersiveengineering:crusher', output:output?.item || `#${output?.tag}`})
+        })
+
+        rjson.item_inputs.forEach(input =>{            
+            event.remove({ type: 'immersiveengineering:crusher', input:input?.item ||  `#${input?.tag}`})
+        })
     })
 
 
@@ -65,10 +72,10 @@ ServerEvents.recipes(event => {
     })
 
     //wires
-    event.forEachRecipe({ type: 'modern_industrialization:wiremill', not : {output: "#kubejs:nocompat"}, output:"#c:wires"}, r => {
-        const rjson = JSON.parse(r.json)
-        press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_wire', (rjson.duration * rjson.eu))
-    })
+    // event.forEachRecipe({ type: 'modern_industrialization:wiremill', not : {output: "#kubejs:nocompat"}, output:"#c:wires"}, r => {
+    //     const rjson = JSON.parse(r.json)
+    //     press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_wire', (rjson.duration * rjson.eu))
+    // })
     //unpacker
     event.forEachRecipe({ type: 'modern_industrialization:unpacker', not : {output: "#kubejs:nocompat"}, output:["#c:ingots","#c:nuggets","#c:tiny_dusts"]}, r => {
         const rjson = JSON.parse(r.json)
