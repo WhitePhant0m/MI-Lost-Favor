@@ -2880,11 +2880,22 @@
 		}
 		{
 			id: "0CC9329A82A7454A"
+			rewards: [{
+				auto: "disabled"
+				icon: {
+					id: "apotheosis:boss_summoner"
+				}
+				id: "631ABDA3AFF1EE5B"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
-				id: "14F34CBC3CDCB2A6"
-				type: "checkmark"
+				advancement: "apotheosis:progression/haven"
+				criterion: ""
+				id: "554D4ADBC0FA424D"
+				type: "advancement"
 			}]
 			x: -11.0d
 			y: 6.0d

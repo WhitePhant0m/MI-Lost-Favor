@@ -2332,8 +2332,8 @@
 			id: "6D68EF9352B93B19"
 			shape: "heart"
 			tasks: [{
-				id: "72F3FAB696FEEF4B"
-				item: { count: 1, id: "kubejs:chunk_flag" }
+				id: "72DF38229F6EE950"
+				item: { count: 1, id: "milf:chunk_flag" }
 				type: "item"
 			}]
 			x: 8.5d

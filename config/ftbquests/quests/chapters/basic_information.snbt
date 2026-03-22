@@ -19,7 +19,7 @@
 		}
 		{
 			height: 2.0d
-			image: "quest_pics:textures/saetactually.png"
+			image: "milf:textures/saetactually.png"
 			rotation: 0.0d
 			width: 2.0d
 			x: 0.0d
@@ -27,7 +27,7 @@
 		}
 		{
 			height: 4.0d
-			image: "quest_pics:textures/saeta_pointing.png"
+			image: "milf:textures/saeta_pointing.png"
 			rotation: 0.0d
 			width: 2.0d
 			x: -1.0d
