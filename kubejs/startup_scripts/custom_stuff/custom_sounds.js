@@ -1,3 +1,4 @@
 StartupEvents.registry('sound_event', event => {
-    event.create('kubejs:wooo')
+    event.create('milf:wooo')
+    event.create('milf:metal_pipe')
 })
