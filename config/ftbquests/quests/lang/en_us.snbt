@@ -2469,9 +2469,9 @@
 		"Будьте осторожны, &bплатериевый самоцвет&r почти сразу же улетает вверх при выпадение, когда копаете руду - ставьте над ней блок или придумайте что-то умнее! "
 	]
 	quest.6E11ECC7B831480C.quest_desc: [
-		"Collect 12 unique eyes to activate the portal."
+		"Collect &l12 unique eyes&r to activate the portal."
 		"{@pagebreak}"
-		"Соберите 12 уникальных глаз для активации портала."
+		"Соберите &l12 уникальных глаз&r для активации портала."
 	]
 	quest.6E57514B8D09F6D8.quest_desc: [
 		"nearby pets teleport with you"

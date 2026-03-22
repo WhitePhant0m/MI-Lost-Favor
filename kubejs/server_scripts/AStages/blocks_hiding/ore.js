@@ -43,7 +43,7 @@ const ores = [
     { stage: "tier_2_access_ore", id: "ore_raw_uranium", origin: "modern_industrialization:raw_uranium_block", replace: "minecraft:stone" }
 ]
 ores.forEach(element => {
-    AStages.addRestrictionForOre(`astages/ore_${element.id}`, element.stage, element.origin, element.replace)
+    AStages.addRestrictionForOre(`astages/ore_${element.id}`, element.stage, element.origin, element.replace).setStageAllBlockStates(true)
 });
 
 const facing = [
@@ -82,6 +82,6 @@ ore_samples.forEach(element => {
             element.stage,
             Block.getBlock(`milf:${element.sample_name}_ore_sample`).defaultBlockState().setValue(BlockProperties.HORIZONTAL_FACING, facing.direction),
             element.rock_type
-        )
+        ).setStageAllBlockStates(true)
     })
 })
