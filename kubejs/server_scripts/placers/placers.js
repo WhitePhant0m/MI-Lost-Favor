@@ -297,7 +297,7 @@ function validateArea(event, bounds) {
 }
 
 function getTemplateData(event, blockMap) {
-    const templateName = blockMap == PLACER_BLOCKS_TO_ITEM_NAME_MAP ? event.block.getId().toString().slice(7, -7) : event.block.getId().toString().slice(7, -10)
+    const templateName = blockMap == PLACER_BLOCKS_TO_ITEM_NAME_MAP ? event.block.getId().toString().slice(5, -7) : event.block.getId().toString().slice(5, -10)
     const modName = blockMap[event.block.getId().toString()].split(':')[0]
     const template = NBT_HELPER.getNBTCompoundTag(modName, templateName, event.server.getResourceManager())
     return { modName:modName, template:template }
