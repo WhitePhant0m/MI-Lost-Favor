@@ -1,0 +1,14 @@
+{
+  "canning_machine": {
+    "category": "block",
+    "sounds": [
+      "mi_sound_addon:canning_machine"
+    ]
+  },
+  "tesla_tower": {
+    "category": "block",
+    "sounds": [
+      "mi_sound_addon:tesla_tower"
+    ]
+  }
+}
