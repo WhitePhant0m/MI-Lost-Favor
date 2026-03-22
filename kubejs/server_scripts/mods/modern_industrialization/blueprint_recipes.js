@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ "item": "immersiveengineering:component_iron" }, 2],
             [{ "item": "modern_industrialization:copper_drill_head" }, 1],
-            [{ "item": "kubejs:small_steel_fluid_container" }, 1],
+            [{ "item": "milf:small_steel_fluid_container" }, 1],
             [{ "item": "modern_industrialization:iron_large_plate" }, 4],
             [{ "item": "modern_industrialization:diamond_dust" }, 3]
         ],
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{ "item": "immersiveengineering:component_iron" }, 2],
             [{ "item": "modern_industrialization:copper_curved_plate" }, 4],
-            [{ "item": "kubejs:small_steel_fluid_container" }, 1],
+            [{ "item": "milf:small_steel_fluid_container" }, 1],
             [{ "item": "modern_industrialization:iron_large_plate" }, 4],
             [{ "item": "modern_industrialization:diamond_dust" }, 3],
             [{ "item": "modern_industrialization:rubber_sheet" }, 6]
@@ -78,10 +78,10 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:dusts/glowstone" }, 4],
             [{ "tag": "c:rods/steel" }, 2],
             [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
-            [{ "item": "kubejs:lens" }, 2],
+            [{ "item": "milf:lens" }, 2],
             [{ "item": "modern_industrialization:analog_circuit" }, 1],
         ],
-        outputItems: [[{ "item": "kubejs:rangefinder" }]],
+        outputItems: [[{ "item": "milf:rangefinder" }]],
         category: miComponents,
         removeRecipe: true
     })
@@ -152,11 +152,11 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:bolts/steel" }, 1],
             [{ "tag": "c:plates/aluminum" }, 2],
             [{ "item": "modern_industrialization:analog_circuit" }, 1],
-            [{ "item": "kubejs:cd" }, 1],
+            [{ "item": "milf:cd" }, 1],
             [{ "item": "modern_industrialization:motor" }, 1],
             [{ "item": "modern_industrialization:copper_fine_wire" }, 8],
         ],
-        outputItems: [[{ "item": "kubejs:cd_reader" }]],
+        outputItems: [[{ "item": "milf:cd_reader" }]],
         category: miComponents,
         removeRecipe: true
     })
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
             [{ "item": "modern_industrialization:steel_plate" }, 4],
             [{ "item": "modern_industrialization:steel_bolt" }, 32],
         ],
-        outputItems: [[{ "item": "kubejs:bits_mold" }]],
+        outputItems: [[{ "item": "milf:bits_mold" }]],
         category: miComponents,
         removeRecipe: true
     })

@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     })
 
     ieHydrotreaterRecipe(event, {
-        outputFluids:[[ {fluid :"kubejs:liquid_plastic"} , 100 ]],
+        outputFluids:[[ {fluid :"milf:liquid_plastic"} , 100 ]],
         inputFluids:[[ {fluid :"modern_industrialization:styrene"} , 90 ], [ {fluid :"modern_industrialization:butadiene"} , 10 ]],
         compatOff:true,
         time:30
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
     ieHydrotreaterRecipe(event, {
         outputItems:[[ { id: "modern_industrialization:sulfur_dust"}, 1]],
         outputFluids:[[ {fluid :"immersivepetroleum:kerosene"} , 100 ]],
-        inputFluids:[[ {fluid :"kubejs:high_sulfur_kerosene"} , 100 ], [ {fluid :"modern_industrialization:hydrogen"} , 20 ]],
+        inputFluids:[[ {fluid :"milf:high_sulfur_kerosene"} , 100 ], [ {fluid :"modern_industrialization:hydrogen"} , 20 ]],
         compatOff:true,
         time:30
     })

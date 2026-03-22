@@ -27,7 +27,7 @@ const cfmMicrowaveCraft = (event, args) => {
 
 ServerEvents.recipes(event => {
     cfmMicrowaveCraft(event, {
-        inputItems:[[{item: "kubejs:meze_109"}]],
-        outputItems:[[{id:"kubejs:meze_109", components:{enchantments:{levels:{"minecraft:punch":9}}, lore:[`{text:"Who said that headphones burn-in ain't real?"}`]}}]]
+        inputItems:[[{item: "milf:meze_109"}]],
+        outputItems:[[{id:"milf:meze_109", components:{enchantments:{levels:{"minecraft:punch":9}}, lore:[`{text:"Who said that headphones burn-in ain't real?"}`]}}]]
     })
 })

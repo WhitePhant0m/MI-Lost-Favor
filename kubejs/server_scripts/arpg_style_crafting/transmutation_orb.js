@@ -1,4 +1,4 @@
-ItemEvents.firstRightClicked("kubejs:transmutation_orb", event => {
+ItemEvents.firstRightClicked("milf:transmutation_orb", event => {
     if(!applyOrb(event,
         (item) => {
             let enchantmentsCount = item.enchantments.keySet().size()

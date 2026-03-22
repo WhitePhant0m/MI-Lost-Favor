@@ -6,10 +6,10 @@ ServerEvents.recipes(event => {
     var tier4bp = "Quantum Blueprint"
     var tier5bp = "Divine Blueprint"
 
-    var tier1token = "kubejs:mysterious_disk"
-    var tier2token = "kubejs:storage_disk"
-    var tier3token = "kubejs:automation_disk"
-    var tier4token = "kubejs:quantum_disk"
+    var tier1token = "milf:mysterious_disk"
+    var tier2token = "milf:storage_disk"
+    var tier3token = "milf:automation_disk"
+    var tier4token = "milf:quantum_disk"
 
     function blueprint_recipe(inputs, output, bpTier) {
         ieBlueprintCraft(event, {
@@ -128,14 +128,14 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:ingots/steel" }, 6],
             [{ "tag": "c:dusts/certus_quartz" }, 4]
         ],
-        { "item": "kubejs:cell_press" },
+        { "item": "milf:cell_press" },
         tier2bp
     );
 
     blueprint_recipe(
         [
             [{ "tag": "c:plates/aluminum" }, 2],
-            [{ "item": "kubejs:cell_half" }, 2],
+            [{ "item": "milf:cell_half" }, 2],
             [{ "tag": "c:bolts/aluminum" }, 8]
         ],
         { "item": "ae2:item_cell_housing" },
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
     blueprint_recipe(
         [
             [{ "tag": "c:plates/copper" }, 2],
-            [{ "item": "kubejs:cell_half" }, 2],
+            [{ "item": "milf:cell_half" }, 2],
             [{ "tag": "c:bolts/copper" }, 8]
         ],
         { "item": "ae2:fluid_cell_housing" },
@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:ingots/steel" }, 6],
             [{ "tag": "c:dusts/certus_quartz" }, 4]
         ],
-        { "item": "kubejs:core_press" },
+        { "item": "milf:core_press" },
         tier3bp
     );
     //#endregion

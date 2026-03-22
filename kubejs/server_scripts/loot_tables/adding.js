@@ -99,18 +99,18 @@ LootJS.modifiers(event => {
             pool.when(conditions => {
                 conditions.randomChance(0.1)
             })
-            pool.addEntry(LootEntry.of("kubejs:rune_of_piercing"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_armor"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_bloodshed"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_diversity"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_fishing"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_mining"))
+            pool.addEntry(LootEntry.of("milf:rune_of_piercing"))
+            pool.addEntry(LootEntry.of("milf:rune_of_armor"))
+            pool.addEntry(LootEntry.of("milf:rune_of_bloodshed"))
+            pool.addEntry(LootEntry.of("milf:rune_of_diversity"))
+            pool.addEntry(LootEntry.of("milf:rune_of_fishing"))
+            pool.addEntry(LootEntry.of("milf:rune_of_mining"))
             pool.addEntry(LootEntry.empty())
         }).pool((pool) => {
             pool.when(conditions => {
                 conditions.randomChance(0.05)
             })
-            pool.addEntry(LootEntry.of("kubejs:amber_visage"))
+            pool.addEntry(LootEntry.of("milf:amber_visage"))
             pool.addEntry(LootEntry.empty())
         })
     });
@@ -120,17 +120,17 @@ LootJS.modifiers(event => {
             pool.when(conditions => {
                 conditions.randomChance(0.2)
             })
-            pool.addEntry(LootEntry.of("kubejs:rune_of_piercing"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_armor"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_bloodshed"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_diversity"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_fishing"))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_mining"))
+            pool.addEntry(LootEntry.of("milf:rune_of_piercing"))
+            pool.addEntry(LootEntry.of("milf:rune_of_armor"))
+            pool.addEntry(LootEntry.of("milf:rune_of_bloodshed"))
+            pool.addEntry(LootEntry.of("milf:rune_of_diversity"))
+            pool.addEntry(LootEntry.of("milf:rune_of_fishing"))
+            pool.addEntry(LootEntry.of("milf:rune_of_mining"))
         }).pool((pool) => {
             pool.when(conditions => {
                 conditions.randomChance(0.1)
             })
-            pool.addEntry(LootEntry.of("kubejs:amber_visage"))
+            pool.addEntry(LootEntry.of("milf:amber_visage"))
         })
     });
 
@@ -139,25 +139,25 @@ LootJS.modifiers(event => {
             pool.when(conditions => {
                 conditions.randomChance(0.5)
             })
-            pool.addEntry(LootEntry.of("kubejs:rune_of_piercing", [1, 2]))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_armor", [1, 2]))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_bloodshed", [1, 2]))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_diversity", [1, 2]))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_fishing", [1, 2]))
-            pool.addEntry(LootEntry.of("kubejs:rune_of_mining", [1, 2]))
+            pool.addEntry(LootEntry.of("milf:rune_of_piercing", [1, 2]))
+            pool.addEntry(LootEntry.of("milf:rune_of_armor", [1, 2]))
+            pool.addEntry(LootEntry.of("milf:rune_of_bloodshed", [1, 2]))
+            pool.addEntry(LootEntry.of("milf:rune_of_diversity", [1, 2]))
+            pool.addEntry(LootEntry.of("milf:rune_of_fishing", [1, 2]))
+            pool.addEntry(LootEntry.of("milf:rune_of_mining", [1, 2]))
         }).pool((pool) => {
             pool.when(conditions => {
                 conditions.randomChance(0.3)
             })
-            pool.addEntry(LootEntry.of("kubejs:amber_visage"))
+            pool.addEntry(LootEntry.of("milf:amber_visage"))
         })
     });
 
-    event.addTableModifier("spectrum:chests/ruined_pedestal_stone").addLoot("kubejs:old_tablet")
-    event.addTableModifier("spectrum:chests/ruined_pedestal_deepslate").addLoot("kubejs:old_tablet")
-    event.addTableModifier("spectrum:chests/ancient_ruins_main").addLoot("kubejs:old_diary").setCount([1, 1])
-    event.addTableModifier("spectrum:chests/city_below/moonstone_temple_roof_ridge").addLoot("kubejs:holy_book_of_color").setCount([1, 1])
-    event.addTableModifier("spectrum:chests/excavation_site/hidden").addLoot("kubejs:old_notes").setCount([1, 1])
+    event.addTableModifier("spectrum:chests/ruined_pedestal_stone").addLoot("milf:old_tablet")
+    event.addTableModifier("spectrum:chests/ruined_pedestal_deepslate").addLoot("milf:old_tablet")
+    event.addTableModifier("spectrum:chests/ancient_ruins_main").addLoot("milf:old_diary").setCount([1, 1])
+    event.addTableModifier("spectrum:chests/city_below/moonstone_temple_roof_ridge").addLoot("milf:holy_book_of_color").setCount([1, 1])
+    event.addTableModifier("spectrum:chests/excavation_site/hidden").addLoot("milf:old_notes").setCount([1, 1])
 
     const blaze_core_bosses = [
         "companions:sacred_pontiff",
@@ -179,11 +179,11 @@ LootJS.modifiers(event => {
         "fdbosses:malkuth",
     ]
     blaze_core_bosses.forEach(boss => {
-        event.addEntityModifier(boss).addLoot("kubejs:blaze_core").matchMainHand("#c:tools/wrench").randomChance(0.5)
+        event.addEntityModifier(boss).addLoot("milf:blaze_core").matchMainHand("#c:tools/wrench").randomChance(0.5)
     });
 
     electronic_ender_core_bosses.forEach(boss => {
-        event.addEntityModifier(boss).addLoot("kubejs:electronic_ender_core").matchMainHand("#c:tools/wrench").randomChance(0.5)
+        event.addEntityModifier(boss).addLoot("milf:electronic_ender_core").matchMainHand("#c:tools/wrench").randomChance(0.5)
     });
 
 

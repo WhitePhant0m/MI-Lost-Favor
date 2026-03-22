@@ -108,8 +108,8 @@ ServerEvents.recipes(event => {
         ieCrusherCraft(event,{
             inputItems:[[{tag:`c:raw_materials/${ore}`}]],
             outputItems:[
-                [{item:`kubejs:crushed_${ore}`}, 2],
-                [{item:`kubejs:crushed_${ore}`}, 1, 0.5]
+                [{item:`milf:crushed_${ore}`}, 2],
+                [{item:`milf:crushed_${ore}`}, 1, 0.5]
             ],
             compatTier:"bronze"
         })
@@ -118,8 +118,8 @@ ServerEvents.recipes(event => {
         //         [{tag:`c:raw_materials/${ore}`}],
         //     ],
         //     outputItems:[
-        //         [{item:`kubejs:crushed_${ore}`}, 2],
-        //         [{item:`kubejs:crushed_${ore}`}, 1, 0.5]
+        //         [{item:`milf:crushed_${ore}`}, 2],
+        //         [{item:`milf:crushed_${ore}`}, 1, 0.5]
         //     ]
         // })
     })

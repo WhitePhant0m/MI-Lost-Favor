@@ -1990,7 +1990,7 @@
 			size: 6.0d
 			tasks: [{
 				id: "574885181485687C"
-				item: { count: 1, id: "kubejs:vial_of_liquid_confidence" }
+				item: { count: 1, id: "milf:vial_of_liquid_confidence" }
 				type: "item"
 			}]
 			x: -18.0d
@@ -3448,7 +3448,7 @@
 			id: "4D5DFD75A11BE595"
 			tasks: [{
 				id: "669F6E60FD5FA34F"
-				item: { count: 1, id: "kubejs:table_core" }
+				item: { count: 1, id: "milf:table_core" }
 				type: "item"
 			}]
 			x: -18.5d

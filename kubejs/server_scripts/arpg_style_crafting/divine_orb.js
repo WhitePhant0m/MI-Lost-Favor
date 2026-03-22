@@ -1,4 +1,4 @@
-ItemEvents.firstRightClicked("kubejs:divine_orb", event => {
+ItemEvents.firstRightClicked("milf:divine_orb", event => {
     if(!applyOrb(event,
         (item) => {
             let enchantmentsCount = item.enchantments.keySet().size()

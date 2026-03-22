@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
     /*
-    var tier1token = "kubejs:mysterious_disk"
-    var tier2token = "kubejs:storage_disk"
-    var tier3token = "kubejs:automation_disk"
-    var tier4token = "kubejs:quantum_disk"
+    var tier1token = "milf:mysterious_disk"
+    var tier2token = "milf:storage_disk"
+    var tier3token = "milf:automation_disk"
+    var tier4token = "milf:quantum_disk"
     */
 
     const T1_TOKEN = {tag:"mi_lost_favor:tier_1_recipes"}
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
             time: 200,
             machine: "modern_industrialization:assembler",
             inputItems: [
-                [{item: "kubejs:core_hull"}, 1],
+                [{item: "milf:core_hull"}, 1],
                 [{item: "ae2:quartz_glass"}, 4],
                 [{item: coreMaterial}, 1]
             ],
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "modern_industrialization:aluminum_plate"}, 2]
         ],
         inputFluids: [
@@ -355,7 +355,7 @@ ServerEvents.recipes(event => {
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "modern_industrialization:copper_plate"}, 2]
         ],
         inputFluids: [
@@ -373,7 +373,7 @@ ServerEvents.recipes(event => {
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "megacells:sky_steel_ingot"}, 4]
         ],
         inputFluids: [
@@ -391,7 +391,7 @@ ServerEvents.recipes(event => {
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "megacells:sky_bronze_ingot"}, 4]
         ],
         inputFluids: [
@@ -409,7 +409,7 @@ ServerEvents.recipes(event => {
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "modern_industrialization:gold_plate"}, 8]
         ],
         inputFluids: [
@@ -427,7 +427,7 @@ ServerEvents.recipes(event => {
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "modern_industrialization:titanium_plate"}, 8]
         ],
         inputFluids: [
@@ -445,7 +445,7 @@ ServerEvents.recipes(event => {
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "modern_industrialization:titanium_plate"}, 8],
             [{item: "ars_nouveau:source_gem"}, 4]
         ],
@@ -477,7 +477,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{item: "modern_industrialization:aluminum_large_plate"}, 4],
             [{item: "modern_industrialization:certus_quartz_rod"}, 16],
-            [{item: "kubejs:cell_half"}, 4],
+            [{item: "milf:cell_half"}, 4],
             [{item: "ae2:logic_processor"}, 4]
         ],
         outputItems: [
@@ -546,7 +546,7 @@ ServerEvents.recipes(event => {
         inputItems: [
             [{item: "modern_industrialization:aluminum_large_plate"}, 6],
             [{item: "modern_industrialization:certus_quartz_rod"}, 24],
-            [{item: "kubejs:cell_half"}, 10],
+            [{item: "milf:cell_half"}, 10],
             [{item: "modern_industrialization:rubber_sheet"}, 20],
             [{item: "ae2:fluix_glass_cable"}, 2],
             [{item: "ae2:logic_processor"}, 4]
@@ -614,7 +614,7 @@ ServerEvents.recipes(event => {
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "modern_industrialization:electrum_wire"}, 4],
             [{tag: "c:plates/gold"}, 2],
             [{item: "ae2:logic_processor"}, 1]
@@ -982,7 +982,7 @@ ServerEvents.recipes(event => {
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "modern_industrialization:aluminum_wire"}, 4],
             [{tag: "c:plates/diamond"}, 2],
             [{item: "ae2:calculation_processor"}, 1],
@@ -1301,7 +1301,7 @@ ServerEvents.recipes(event => {
         time: T3_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "ae2:quartz_glass"}, 2],
             [{tag: "c:gems/certus_quartz"}, 2],
             [{tag: "c:plates/aluminum"}, 2],
@@ -1651,7 +1651,7 @@ ServerEvents.recipes(event => {
         time: T4_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
-            [{item: "kubejs:cell_half"}, 2],
+            [{item: "milf:cell_half"}, 2],
             [{item: "advanced_ae:quantum_processor"}, 1],
             [{item: "ae2:wireless_receiver"}, 1],
             [{item: "modern_industrialization:superconductor_wire"}, 6]

@@ -1,3 +1,3 @@
 ServerEvents.tags('item', event => {
-    event.add("milf:runes", ['kubejs:rune_of_piercing', 'kubejs:rune_of_armor', 'kubejs:rune_of_bloodshed', 'kubejs:rune_of_diversity', 'kubejs:rune_of_fishing', 'kubejs:rune_of_mining'])
+    event.add("milf:runes", ['milf:rune_of_piercing', 'milf:rune_of_armor', 'milf:rune_of_bloodshed', 'milf:rune_of_diversity', 'milf:rune_of_fishing', 'milf:rune_of_mining'])
 })

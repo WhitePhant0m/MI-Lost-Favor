@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         inputItems:[
             [ { "item": "immersiveengineering:slag_gravel" }, 3 ],
             [ { "tag": "c:sands" }, 2 ],
-            [ { "item": "kubejs:cement" }, 4 ]
+            [ { "item": "milf:cement" }, 4 ]
         ],
         inputFluids:[[ {tag :"minecraft:water"} , 2000 ]],
         outputFluids:[[ {fluid :"immersiveengineering:concrete"} , 2000 ]],

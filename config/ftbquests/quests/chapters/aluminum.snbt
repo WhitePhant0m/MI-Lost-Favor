@@ -1133,14 +1133,14 @@
 				"310AF4455B97599C"
 			]
 			icon: {
-				id: "kubejs:basic_machine_bit"
+				id: "milf:basic_machine_bit"
 			}
 			id: "18173B817094E01A"
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
 				id: "36C1F8BACC377F2F"
-				item: { count: 1, id: "kubejs:basic_machine_bit" }
+				item: { count: 1, id: "milf:basic_machine_bit" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -1266,19 +1266,19 @@
 		{
 			dependencies: ["18E53205B7AD93FE"]
 			icon: {
-				id: "kubejs:rangefinder"
+				id: "milf:rangefinder"
 			}
 			id: "785815350A561989"
 			shape: "diamond"
 			tasks: [
 				{
 					id: "7DFC27B44824378F"
-					item: { count: 1, id: "kubejs:rangefinder" }
+					item: { count: 1, id: "milf:rangefinder" }
 					type: "item"
 				}
 				{
 					id: "1AC5657094669789"
-					item: { count: 1, id: "kubejs:lens" }
+					item: { count: 1, id: "milf:lens" }
 					type: "item"
 				}
 			]
@@ -1288,19 +1288,19 @@
 		{
 			dependencies: ["61A1D4E5159C9719"]
 			icon: {
-				id: "kubejs:cd_reader"
+				id: "milf:cd_reader"
 			}
 			id: "2EBBC9631162D303"
 			shape: "diamond"
 			tasks: [
 				{
 					id: "77DCF87E54E6FD8E"
-					item: { count: 1, id: "kubejs:cd_reader" }
+					item: { count: 1, id: "milf:cd_reader" }
 					type: "item"
 				}
 				{
 					id: "5CA84412A44AFBC7"
-					item: { count: 1, id: "kubejs:cd" }
+					item: { count: 1, id: "milf:cd" }
 					type: "item"
 				}
 			]
@@ -1329,7 +1329,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "0679DB72589B158F"
-				item: { count: 1, id: "kubejs:tempered_glass" }
+				item: { count: 1, id: "milf:tempered_glass" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -1482,7 +1482,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "589DC3D797FA18F3"
-				item: { count: 1, id: "kubejs:bits_mold" }
+				item: { count: 1, id: "milf:bits_mold" }
 				type: "item"
 			}]
 			x: 2.0d

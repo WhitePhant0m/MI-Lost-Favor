@@ -1,42 +1,4 @@
 ServerEvents.recipes(event => {
-    //json
-    /*
-   event.custom({
-    "type": "extendedae:crystal_assembler",
-    "input_fluid": {
-        "amount": 100,
-        "ingredient": {
-        "fluid": "minecraft:water"
-        }
-    },
-    "input_items": [
-        {
-        "amount": 4,
-        "ingredient": {
-            "item": "ae2:charged_certus_quartz_crystal"
-        }
-        },
-        {
-        "amount": 4,
-        "ingredient": {
-            "tag": "c:dusts/coal"
-        }
-        },
-        {
-        "amount": 4,
-        "ingredient": {
-            "tag": "c:gems/quartz"
-        }
-        }
-    ],
-    "output": {
-        "count": 8,
-        "id": "kubejs:meze_109"
-    }
-    })
-
-    */
-
     let craft_removal_list = [
         "extendedae:entro_crystal"
     ]

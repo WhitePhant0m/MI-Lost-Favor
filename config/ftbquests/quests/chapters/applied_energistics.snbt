@@ -53,7 +53,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "7292D65510F249C1"
-				item: { count: 1, id: "kubejs:blueprint_pack" }
+				item: { count: 1, id: "milf:blueprint_pack" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -68,7 +68,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "4C337A427EE4CFB0"
-				item: { count: 1, id: "kubejs:mysterious_blueprint" }
+				item: { count: 1, id: "milf:mysterious_blueprint" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -79,7 +79,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "1D0EC8F759AF3144"
-				item: { count: 1, id: "kubejs:disk_from_space" }
+				item: { count: 1, id: "milf:disk_from_space" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -176,7 +176,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "75F1C10044C7767F"
-				item: { count: 1, id: "kubejs:old_tablet" }
+				item: { count: 1, id: "milf:old_tablet" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -187,7 +187,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "5D4DEE6E6618592A"
-				item: { count: 1, id: "kubejs:old_diary" }
+				item: { count: 1, id: "milf:old_diary" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -198,7 +198,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "5C5F4560A5A93CEE"
-				item: { count: 1, id: "kubejs:holy_book_of_color" }
+				item: { count: 1, id: "milf:holy_book_of_color" }
 				type: "item"
 			}]
 			x: -3.0d
@@ -214,7 +214,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "37B8B72E0F07A7D8"
-				item: { count: 1, id: "kubejs:storage_blueprint" }
+				item: { count: 1, id: "milf:storage_blueprint" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -230,7 +230,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "7AFF12C846C0F4ED"
-				item: { count: 1, id: "kubejs:automation_blueprint" }
+				item: { count: 1, id: "milf:automation_blueprint" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -246,7 +246,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "5DDAB10E73CE61D6"
-				item: { count: 1, id: "kubejs:quantum_blueprint" }
+				item: { count: 1, id: "milf:quantum_blueprint" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -261,7 +261,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "40411DD0F5AA3D28"
-				item: { count: 1, id: "kubejs:divine_blueprint" }
+				item: { count: 1, id: "milf:divine_blueprint" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -1430,7 +1430,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "7DEF8508FDF60C88"
-				item: { count: 1, id: "kubejs:mysterious_disk" }
+				item: { count: 1, id: "milf:mysterious_disk" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -1442,7 +1442,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "45D9787E715645A9"
-				item: { count: 1, id: "kubejs:storage_disk" }
+				item: { count: 1, id: "milf:storage_disk" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -1454,7 +1454,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "3E3B02D7087F1ABD"
-				item: { count: 1, id: "kubejs:automation_disk" }
+				item: { count: 1, id: "milf:automation_disk" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -1466,7 +1466,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "57FD3401482B8514"
-				item: { count: 1, id: "kubejs:quantum_disk" }
+				item: { count: 1, id: "milf:quantum_disk" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -1475,19 +1475,19 @@
 		{
 			dependencies: ["0AB4145A720562AD"]
 			icon: {
-				id: "kubejs:cell_press"
+				id: "milf:cell_press"
 			}
 			id: "241DC7E11E0BCAE9"
 			shape: "diamond"
 			tasks: [
 				{
 					id: "4F8D12D02202651C"
-					item: { count: 1, id: "kubejs:cell_half" }
+					item: { count: 1, id: "milf:cell_half" }
 					type: "item"
 				}
 				{
 					id: "32B1B23E0D13053E"
-					item: { count: 1, id: "kubejs:cell_press" }
+					item: { count: 1, id: "milf:cell_press" }
 					type: "item"
 				}
 			]
@@ -1654,19 +1654,19 @@
 		{
 			dependencies: ["2536DFBDF534E43B"]
 			icon: {
-				id: "kubejs:core_hull"
+				id: "milf:core_hull"
 			}
 			id: "4D9F06B8C97DC29E"
 			shape: "diamond"
 			tasks: [
 				{
 					id: "67F5D45758CA7B53"
-					item: { count: 1, id: "kubejs:core_hull" }
+					item: { count: 1, id: "milf:core_hull" }
 					type: "item"
 				}
 				{
 					id: "4005E4BFDEB26B26"
-					item: { count: 1, id: "kubejs:core_press" }
+					item: { count: 1, id: "milf:core_press" }
 					type: "item"
 				}
 			]
@@ -2861,7 +2861,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "62E8FE2FCB8E3B78"
-				item: { count: 1, id: "kubejs:symbiote_membrane" }
+				item: { count: 1, id: "milf:symbiote_membrane" }
 				type: "item"
 			}]
 			x: -5.0d
@@ -2896,7 +2896,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "4F88FA2652137DDE"
-				item: { count: 1, id: "kubejs:thermophilic_dermis" }
+				item: { count: 1, id: "milf:thermophilic_dermis" }
 				type: "item"
 			}]
 			x: -9.0d
@@ -2908,7 +2908,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "53E9369DF7BB6821"
-				item: { count: 1, id: "kubejs:bioactive_coating" }
+				item: { count: 1, id: "milf:bioactive_coating" }
 				type: "item"
 			}]
 			x: -9.0d
@@ -3013,7 +3013,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "5CB3BBA2F495BDBE"
-				item: { count: 1, id: "kubejs:goo_coated_blank_blueprint" }
+				item: { count: 1, id: "milf:goo_coated_blank_blueprint" }
 				type: "item"
 			}]
 			x: -6.5d

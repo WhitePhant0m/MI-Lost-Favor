@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
             D: { item: "minecraft:blue_dye" },
             P: { item: "minecraft:paper" }
         },
-        outputItems: [[{ id: "kubejs:blank_blueprint" }, 1]],
+        outputItems: [[{ id: "milf:blank_blueprint" }, 1]],
         removeRecipe:true
     })
 
@@ -331,7 +331,7 @@ ServerEvents.recipes(event => {
             I: { item: "immersiveengineering:component_iron" },
             S: { item: "immersiveengineering:component_steel" },
             B: { item: "immersiveengineering:basic_engineering" },
-            G: { item: "kubejs:steel_infused_glass" },
+            G: { item: "milf:steel_infused_glass" },
             L: { item: "immersiveengineering:light_bulb"}
         },
         outputItems: [[{ id: "immersiveengineering:cloche" }, 1]],
@@ -351,7 +351,7 @@ ServerEvents.recipes(event => {
         replace: {
             C: { item: "minecraft:bucket" },
         },
-        outputItems: [[{ id: "kubejs:concrete_popsicle" }, 1]],
+        outputItems: [[{ id: "milf:concrete_popsicle" }, 1]],
         removeRecipe:true,
         compatOff:true
     })
@@ -433,7 +433,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             P: { item: "modern_industrialization:aluminum_plate" },
-            G: { item: "kubejs:steel_infused_glass" },
+            G: { item: "milf:steel_infused_glass" },
             L: { item: "immersiveengineering:light_bulb" },
             W: { item: "modern_industrialization:copper_wire" }
         },

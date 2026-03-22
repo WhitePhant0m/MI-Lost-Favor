@@ -22,9 +22,9 @@ ItemEvents.modifyTooltips(event => {
         const raw = args.items ?? args.item;
         const items = Array.isArray(raw) ? raw : [raw];
 
-        const hint = Text.translate("kubejs.press_button").color("#f5c25b")
+        const hint = Text.translate("milf.press_button").color("#f5c25b")
             .append(Text.of("Shift ").bold().color("#ffb319"))
-            .append(Text.translate("kubejs.for_details").color("#f5c25b"));
+            .append(Text.translate("milf.for_details").color("#f5c25b"));
 
         const details = Text.translate(args.text).color(args.color);
 
@@ -37,8 +37,8 @@ ItemEvents.modifyTooltips(event => {
     const simpleTooltips = [
         {name: "devices:devices_pouch", tooltip: "milf.money_pouch.tooltip", color: "#f5c25b"},
         {name: "ars_elemental:curio_bag", tooltip: "milf.curio_bag.tooltip", color: "#f5c25b"},
-        {name: "kubejs:blaze_core", tooltip: "milf.how_to_get_blaze_core.tooltip", color: "#645D89"},
-        {name: "kubejs:electronic_ender_core", tooltip: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89"},
+        {name: "milf:blaze_core", tooltip: "milf.how_to_get_blaze_core.tooltip", color: "#645D89"},
+        {name: "milf:electronic_ender_core", tooltip: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89"},
     ]
 
     simpleTooltips.forEach(element => {
@@ -48,9 +48,9 @@ ItemEvents.modifyTooltips(event => {
     });
 
 
-    simpleShiftText({ item: "kubejs:orb_of_the_forest", text: "kubejs.orb_of_the_forest.tooltip", color: "#1CC433" })
-    simpleShiftText({ item: "kubejs:amber_visage", text: "kubejs.amber_visage.tooltip", color: "#5ca5e0" })
-    simpleShiftText({ items: ["minecraft:lantern", "minecraft:soul_lantern"], text: "kubejs.beltborne_lanterns.tooltip", color: "#43B747" });
+    simpleShiftText({ item: "milf:orb_of_the_forest", text: "milf.orb_of_the_forest.tooltip", color: "#1CC433" })
+    simpleShiftText({ item: "milf:amber_visage", text: "milf.amber_visage.tooltip", color: "#5ca5e0" })
+    simpleShiftText({ items: ["minecraft:lantern", "minecraft:soul_lantern"], text: "milf.beltborne_lanterns.tooltip", color: "#43B747" });
 
     const seeds_tooltip = [
         'rusticdelight:cotton_seeds',
@@ -78,7 +78,7 @@ ItemEvents.modifyTooltips(event => {
         event.add(seed, Text.translate("milf.how_to_seed.tooltip").color("#43BD24"));
     });
 
-    const orbs = ['kubejs:transmutation_orb', 'kubejs:orb_of_annulment', 'kubejs:orb_of_alchemy', 'kubejs:orb_of_regret', 'kubejs:regal_orb', 'kubejs:orb_of_corruption', 'kubejs:divine_orb', 'kubejs:orb_of_chance', "kubejs:orb_of_the_forest"]
+    const orbs = ['milf:transmutation_orb', 'milf:orb_of_annulment', 'milf:orb_of_alchemy', 'milf:orb_of_regret', 'milf:regal_orb', 'milf:orb_of_corruption', 'milf:divine_orb', 'milf:orb_of_chance', "milf:orb_of_the_forest"]
 
     orbs.forEach(orb => {
         event.add(orb, Text.translatable(`milf.orbcraft.tooltip.${orb.slice(7)}`))

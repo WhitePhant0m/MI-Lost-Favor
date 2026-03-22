@@ -36,14 +36,14 @@ ServerEvents.recipes(event => {
 
     ytechBlockHitCraft(event,{
         inputItems:[[{item:"modern_industrialization:bronze_machine_casing"}]],
-        outputItems:[[{id:"kubejs:bronze_machine_bit"}, 12]],
+        outputItems:[[{id:"milf:bronze_machine_bit"}, 12]],
         block:{tag : "minecraft:anvil"},
         reverseCompat:true
     })
 
     ytechBlockHitCraft(event,{
         inputItems:[[{item:"modern_industrialization:steel_machine_casing"}]],
-        outputItems:[[{id:"kubejs:steel_machine_bit"}, 12]],
+        outputItems:[[{id:"milf:steel_machine_bit"}, 12]],
         block:{tag : "minecraft:anvil"},
         reverseCompat:true
     })

@@ -1,5 +1,5 @@
 
-ItemEvents.firstRightClicked("kubejs:orb_of_the_forest", event => {
+ItemEvents.firstRightClicked("milf:orb_of_the_forest", event => {
     //apothic_enchanting:chainsaw
     if(!applyOrb(event,
         (item) => { 

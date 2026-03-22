@@ -43,10 +43,10 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"spectrum:vegetal"}, 64],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
-            [{item:"kubejs:storage_blueprint"}, 1],
+            [{item:"milf:storage_blueprint"}, 1],
         ],
         outputItems:[
-            [{item:"kubejs:bioactive_coating"}, 1]
+            [{item:"milf:bioactive_coating"}, 1]
         ],
         removeRecipe:true,
     })
@@ -55,10 +55,10 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"spectrum:stratine_gem"}, 1],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
-            [{item:"kubejs:automation_blueprint"}, 1],
+            [{item:"milf:automation_blueprint"}, 1],
         ],
         outputItems:[
-            [{item:"kubejs:thermophilic_dermis"}, 1]
+            [{item:"milf:thermophilic_dermis"}, 1]
         ],
         removeRecipe:true,
     })
@@ -67,10 +67,10 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"spectrum:aether_vestiges"}, 1],
             [{item:"modern_industrialization:rubber_sheet"}, 1],
-            [{item:"kubejs:divine_blueprint"}, 1],
+            [{item:"milf:divine_blueprint"}, 1],
         ],
         outputItems:[
-            [{item:"kubejs:symbiote_membrane"}, 1]
+            [{item:"milf:symbiote_membrane"}, 1]
         ],
         removeRecipe:true,
     })
@@ -78,11 +78,11 @@ ServerEvents.recipes(event => {
     miMachineCraft(event, {energy:16, time:12000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
             [{item:"justdirethings:gooblock_tier3"}, 1],
-            [{item:"kubejs:blank_blueprint"}, 1],
+            [{item:"milf:blank_blueprint"}, 1],
             [{item:"spectrum:onyx_powder"}, 16],
         ],
         outputItems:[
-            [{item:"kubejs:goo_coated_blank_blueprint"}, 1]
+            [{item:"milf:goo_coated_blank_blueprint"}, 1]
         ],
         removeRecipe:true,
     })
@@ -97,7 +97,7 @@ MIRecipeEvents.customCondition(event => {
     coatings.forEach(coating =>{
         event.register(`milf:microbial_fabricator_${coating}`,
                 (context, recipe) => {
-                    if(context.level.getBlock(context.blockEntity.blockPos).entityData.upgradesItemStack.id == `kubejs:${coating}`){
+                    if(context.level.getBlock(context.blockEntity.blockPos).entityData.upgradesItemStack.id == `milf:${coating}`){
                         return true
                     } 
                     return false

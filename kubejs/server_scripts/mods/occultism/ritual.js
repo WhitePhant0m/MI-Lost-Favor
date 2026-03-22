@@ -13,10 +13,10 @@ ServerEvents.recipes(event => {
     //     ],
     //     '#c:chests',
     //     'occultism:craft_foliot'
-    // ).dummy("kubejs:craft_curio_bag")
+    // ).dummy("milf:craft_curio_bag")
 
     event.recipes.occultism.ritual(
-        'kubejs:vial_of_liquid_confidence',
+        'milf:vial_of_liquid_confidence',
         [
             "occultism:afrit_essence",
             "paganbless:wican_ward",
@@ -31,6 +31,6 @@ ServerEvents.recipes(event => {
         'toxony:toxin_flask',
         'occultism:craft_afrit',
         180
-    ).dummy("kubejs:craft_vial_of_liquid_confidence")
+    ).dummy("milf:craft_vial_of_liquid_confidence")
 
 });

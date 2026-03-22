@@ -12,7 +12,7 @@ let $HashMap = Java.loadClass("java.util.HashMap")
 let $Rotation = Java.loadClass("net.minecraft.world.level.block.Rotation")
 
 
-ItemEvents.firstRightClicked("kubejs:nbt_pen", event => {
+ItemEvents.firstRightClicked("milf:nbt_pen", event => {
     if(!event.getTarget()?.block.getPos()) return
     let blockpos = event.getTarget().block.getPos()
     switch (nbtPenMode) {

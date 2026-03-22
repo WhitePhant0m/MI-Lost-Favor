@@ -42,11 +42,11 @@ ServerEvents.recipes(event => {
 
     aeInWorldRecipe(event,{
         inputItems:[
-            [{ "item": "kubejs:quantum_blueprint" }, 1],
+            [{ "item": "milf:quantum_blueprint" }, 1],
             [{ "item": "forbidden_arcanus:divine_pact" }, 1],
             [{ "item": "spectrum:moonstone_core" }, 1],
         ],
-        outputItems:[[{id:"kubejs:divine_blueprint"}]],
+        outputItems:[[{id:"milf:divine_blueprint"}]],
         inputFluids: [[{fluid : "justdirethings:refined_t3_fluid_source"}]],
         removeRecipe:true
     })

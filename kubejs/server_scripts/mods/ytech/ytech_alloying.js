@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             [{tag: "c:dusts/bronze"}]
         ],
         outputItems:[
-            [{id:"kubejs:bronze_glass"},2]
+            [{id:"milf:bronze_glass"},2]
         ],
         minTemp: 1000
     })
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
             [{tag: "c:dusts/steel"}]
         ],
         outputItems:[
-            [{id:"kubejs:steel_infused_glass"},2]
+            [{id:"milf:steel_infused_glass"},2]
         ],
         minTemp: 1200
     })

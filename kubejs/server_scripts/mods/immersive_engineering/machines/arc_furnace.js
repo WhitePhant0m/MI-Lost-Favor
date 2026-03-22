@@ -46,8 +46,8 @@ ServerEvents.recipes(event => {
         outputItems:[
             [{"item": "ae2:controller"}, 1],
             [{"item": "ae2:terminal"}, 1],
-            [{"item": "kubejs:blueprint_pack"}, 1],
-            [{"item": "kubejs:disk_from_space"}, 1],
+            [{"item": "milf:blueprint_pack"}, 1],
+            [{"item": "milf:disk_from_space"}, 1],
 
         ],
         slag:[
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
             [{"tag": "c:dusts/lead"}, 2],
         ],
         outputItems:[
-            [{"item": "kubejs:tempered_glass"}, 8]
+            [{"item": "milf:tempered_glass"}, 8]
         ],
         slag:true
     })
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
             [{"item": "minecraft:netherite_block"}, 4]
         ],
         outputItems:[
-            [{"item": "kubejs:meze_109"}, 1]
+            [{"item": "milf:meze_109"}, 1]
         ],
         slag:[
             [{"item": "spectrum:skeleton_horse_head"}, 4]

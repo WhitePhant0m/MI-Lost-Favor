@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
             P: { item: "modern_industrialization:iron_plate" },
             H: { tag: "c:hammers" }
         },
-        outputItems: [[{ id: "kubejs:orb_of_the_forest" }, 1]],
+        outputItems: [[{ id: "milf:orb_of_the_forest" }, 1]],
         compatOff: true
     })
 })

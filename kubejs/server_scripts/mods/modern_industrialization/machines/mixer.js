@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
             [{tag:"c:dusts/aluminum"}],
         ],
         outputItems:[
-            [{item:"kubejs:cd"}]
+            [{item:"milf:cd"}]
         ]
     })
 
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
             [{item:"architects_palette:algal_blend"}, 2],
         ],
         outputItems:[
-            [{item:"kubejs:fire_clay_ball"}, 4]
+            [{item:"milf:fire_clay_ball"}, 4]
         ],
         removeRecipe: true
     })
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
             [{item:"modern_industrialization:iron_dust"}, 1]
         ],
         outputItems:[
-            [{item:"kubejs:cement"}, 8]
+            [{item:"milf:cement"}, 8]
         ]
     })
 })

@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
             [{item:"modern_industrialization:tin_cable"}, 4],
             [{item:"modern_industrialization:portable_storage_unit"}],
             [{item:"modern_industrialization:frostproof_machine_casing"}],
-            [{item:"kubejs:tempered_glass"}],
+            [{item:"milf:tempered_glass"}],
         ],
         outputItems:[
             [{item:"modern_industrialization:basic_machine_hull"}]
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             [{item:"modern_industrialization:cupronickel_wire_magnetic"}, 8],
             [{item:"modern_industrialization:portable_storage_unit"}],
             [{item:"modern_industrialization:heatproof_machine_casing"}],
-            [{item:"kubejs:tempered_glass"}],
+            [{item:"milf:tempered_glass"}],
         ],
         outputItems:[
             [{item:"modern_industrialization:electric_blast_furnace"}]

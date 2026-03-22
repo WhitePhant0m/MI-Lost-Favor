@@ -2,10 +2,10 @@ ServerEvents.recipes(event => {
 
     //ae stuff
     /*
-    var tier1token = "kubejs:mysterious_disk"
-    var tier2token = "kubejs:storage_disk"
-    var tier3token = "kubejs:automation_disk"
-    var tier4token = "kubejs:quantum_disk"
+    var tier1token = "milf:mysterious_disk"
+    var tier2token = "milf:storage_disk"
+    var tier3token = "milf:automation_disk"
+    var tier4token = "milf:quantum_disk"
     */
 
     var tier1token = "#mi_lost_favor:tier_1_recipes"
@@ -23,12 +23,12 @@ ServerEvents.recipes(event => {
     //tier 2
     ae_press_recipes ("ae2:silicon_press", "#c:ingots/silicon", "ae2:printed_silicon", tier3token)
     ae_press_recipes ("ae2:logic_processor_press", "#c:ingots/gold", "ae2:printed_logic_processor", tier3token)
-    ae_press_recipes ("kubejs:cell_press", "#c:plates/iron", "kubejs:cell_half", tier3token)
+    ae_press_recipes ("milf:cell_press", "#c:plates/iron", "milf:cell_half", tier3token)
 
     //tier 3
     ae_press_recipes ("ae2:calculation_processor_press", "#c:gems/certus_quartz", "ae2:printed_calculation_processor", tier3token)
     ae_press_recipes ("ae2:engineering_processor_press", "#c:ingots/aluminum", "ae2:printed_engineering_processor", tier3token)
-    ae_press_recipes ("kubejs:core_press", "#c:plates/iron", "kubejs:core_hull", tier3token)
+    ae_press_recipes ("milf:core_press", "#c:plates/iron", "milf:core_hull", tier3token)
 
     //tier 4
     ae_press_recipes ("advanced_ae:quantum_processor_press", "advanced_ae:quantum_alloy", "advanced_ae:printed_quantum_processor", tier4token)
@@ -86,10 +86,10 @@ ServerEvents.recipes(event => {
 
     miMachineCraft(event, {energy:4, time:100, machine:"modern_industrialization:packer",
         outputItems:[
-            [{item:"kubejs:unfired_fire_clay_brick"}]
+            [{item:"milf:unfired_fire_clay_brick"}]
         ],
         inputItems:[
-            [{item:"kubejs:fire_clay_ball"}, 1]
+            [{item:"milf:fire_clay_ball"}, 1]
         ]
     })
 

@@ -6,8 +6,8 @@ ServerEvents.recipes(event => {
             "FFF"
         ],
         key: {
-            B: {item:"kubejs:blank_blueprint"},
-            F: {item:"kubejs:steel_machine_bit"}
+            B: {item:"milf:blank_blueprint"},
+            F: {item:"milf:steel_machine_bit"}
         },
         outputItems:[[{"components": {"immersiveengineering:blueprint": "Aircraft components"},"id": "immersiveengineering:blueprint"}, 1]]
     })
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             " H "
         ],
         key: {
-            B: {item:"kubejs:blank_blueprint"},
+            B: {item:"milf:blank_blueprint"},
             H: {item:"immersive_aircraft:hull"},
             S: {item:"immersive_aircraft:sail"},
             P: {item:"immersive_aircraft:propeller"}
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
             "SBS"
         ],
         key: {
-            B: {item:"kubejs:blank_blueprint"},
+            B: {item:"milf:blank_blueprint"},
             S: {item:"immersive_aircraft:industrial_gears"},
         },
         outputItems:[[{"components": {"immersiveengineering:blueprint": "Aircraft upgrades"},"id": "immersiveengineering:blueprint"}, 1]]

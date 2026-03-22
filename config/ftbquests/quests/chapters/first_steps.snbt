@@ -411,7 +411,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "74D5E88A58A4A32C"
-				item: { count: 1, id: "kubejs:crushed_copper" }
+				item: { count: 1, id: "milf:crushed_copper" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -1413,7 +1413,7 @@
 			id: "2CD99913BD466928"
 			tasks: [{
 				id: "00D58870AC2A3DBC"
-				item: { count: 1, id: "kubejs:crushed_iron" }
+				item: { count: 1, id: "milf:crushed_iron" }
 				type: "item"
 			}]
 			x: 13.0d
@@ -1425,7 +1425,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "45CBA590746024BC"
-				item: { count: 1, id: "kubejs:crushed_tin" }
+				item: { count: 1, id: "milf:crushed_tin" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -1537,13 +1537,13 @@
 				{
 					count: 16L
 					id: "42DC2CCFD80ADE9C"
-					item: { count: 1, id: "kubejs:fire_clay_ball" }
+					item: { count: 1, id: "milf:fire_clay_ball" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "643CA63DED5E5718"
-					item: { count: 1, id: "kubejs:unfired_fire_clay_brick" }
+					item: { count: 1, id: "milf:unfired_fire_clay_brick" }
 					type: "item"
 				}
 				{
@@ -2102,7 +2102,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "43623C106593F7D4"
-				item: { count: 1, id: "kubejs:needle" }
+				item: { count: 1, id: "milf:needle" }
 				type: "item"
 			}]
 			x: 15.5d
@@ -2495,7 +2495,7 @@
 			shape: "pentagon"
 			tasks: [{
 				id: "73923797A83C95C0"
-				item: { count: 1, id: "kubejs:orb_of_the_forest" }
+				item: { count: 1, id: "milf:orb_of_the_forest" }
 				type: "item"
 			}]
 			x: 16.5d

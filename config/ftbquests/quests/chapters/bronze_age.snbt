@@ -60,7 +60,7 @@
 				"34EEB03ED7EEE16F"
 			]
 			icon: {
-				id: "kubejs:bronze_machine_bit"
+				id: "milf:bronze_machine_bit"
 			}
 			id: "590167B593FE267A"
 			rewards: [
@@ -95,7 +95,7 @@
 			tasks: [
 				{
 					id: "2C30858936ECEBA9"
-					item: { count: 1, id: "kubejs:bronze_machine_bit" }
+					item: { count: 1, id: "milf:bronze_machine_bit" }
 					type: "item"
 				}
 				{
@@ -105,12 +105,12 @@
 				}
 				{
 					id: "13E5231D7A1227A4"
-					item: { count: 1, id: "kubejs:bronze_glass" }
+					item: { count: 1, id: "milf:bronze_glass" }
 					type: "item"
 				}
 				{
 					id: "5380531495340BBD"
-					item: { count: 1, id: "kubejs:small_copper_fluid_container" }
+					item: { count: 1, id: "milf:small_copper_fluid_container" }
 					type: "item"
 				}
 			]
@@ -1593,7 +1593,7 @@
 			dependencies: ["2B815502453269AF"]
 			dependency_requirement: "one_completed"
 			icon: {
-				id: "kubejs:steel_machine_bit"
+				id: "milf:steel_machine_bit"
 			}
 			id: "65DB2546A83972B8"
 			shape: "square"
@@ -1601,17 +1601,17 @@
 			tasks: [
 				{
 					id: "17139F795F5201F7"
-					item: { count: 1, id: "kubejs:steel_machine_bit" }
+					item: { count: 1, id: "milf:steel_machine_bit" }
 					type: "item"
 				}
 				{
 					id: "3F01535F6347CFA5"
-					item: { count: 1, id: "kubejs:small_steel_fluid_container" }
+					item: { count: 1, id: "milf:small_steel_fluid_container" }
 					type: "item"
 				}
 				{
 					id: "28CA8FE75D300503"
-					item: { count: 1, id: "kubejs:steel_infused_glass" }
+					item: { count: 1, id: "milf:steel_infused_glass" }
 					type: "item"
 				}
 			]
@@ -1672,7 +1672,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["11DDFA1D0917DD5B"]
 			icon: {
 				id: "immersiveengineering:tank"
 			}
@@ -3975,7 +3974,7 @@
 				id: "4136BE96E4B88C40"
 				item: {
 					count: 1
-					id: "kubejs:concrete_popsicle"
+					id: "milf:concrete_popsicle"
 				}
 				type: "item"
 			}]
@@ -4525,7 +4524,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "07DD94FD0BA4F623"
-				item: { count: 1, id: "kubejs:liquid_plastic_bucket" }
+				item: { count: 1, id: "milf:liquid_plastic_bucket" }
 				type: "item"
 			}]
 			x: -21.0d
@@ -4548,7 +4547,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "43C1E2EC6A35D7AA"
-				item: { count: 1, id: "kubejs:cement" }
+				item: { count: 1, id: "milf:cement" }
 				type: "item"
 			}]
 			x: -12.5d
@@ -4688,7 +4687,7 @@
 			shape: "heart"
 			tasks: [{
 				id: "4F80275B86B69931"
-				item: { count: 1, id: "kubejs:concrete_popsicle" }
+				item: { count: 1, id: "milf:concrete_popsicle" }
 				type: "item"
 			}]
 			x: -15.0d
@@ -4729,7 +4728,7 @@
 			shape: "square"
 			tasks: [{
 				id: "3076A57FCB29CBD7"
-				item: { count: 1, id: "kubejs:desalted_crude_oil_bucket" }
+				item: { count: 1, id: "milf:desalted_crude_oil_bucket" }
 				type: "item"
 			}]
 			x: -18.5d
@@ -4922,7 +4921,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "3E1AF8AD272DE5E9"
-				item: { count: 1, id: "kubejs:high_sulfur_kerosene_bucket" }
+				item: { count: 1, id: "milf:high_sulfur_kerosene_bucket" }
 				type: "item"
 			}]
 			x: -16.5d
@@ -5204,7 +5203,7 @@
 			shape: "diamond"
 			tasks: [{
 				id: "7CD3C2B46825E748"
-				item: { count: 1, id: "kubejs:punched_card" }
+				item: { count: 1, id: "milf:punched_card" }
 				type: "item"
 			}]
 			x: -27.5d

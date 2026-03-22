@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    event.forEachRecipe({ type: 'modern_industrialization:coke_oven', not : {output: "#kubejs:nocompat"}}, r => {
+    event.forEachRecipe({ type: 'modern_industrialization:coke_oven', not : {output: "#milf:nocompat"}}, r => {
         const rjson = JSON.parse(r.json)
         miMachineCraft(event, {
             machine:"modern_industrialization:electric_coke_oven",

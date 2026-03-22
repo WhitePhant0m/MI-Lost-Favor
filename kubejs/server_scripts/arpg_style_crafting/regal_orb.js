@@ -1,4 +1,4 @@
-ItemEvents.firstRightClicked("kubejs:regal_orb", event => {
+ItemEvents.firstRightClicked("milf:regal_orb", event => {
     if(!applyOrb(event,
         (item) => {
             let enchantmentsCount = item.enchantments.keySet().size()

@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
             type: "immersiveengineering:metal_press",
             energy: 3200,
             input: {
-                basePredicate:{item: "kubejs:blank_blueprint"},
+                basePredicate:{item: "milf:blank_blueprint"},
                 count: 1
             },
             mold: blueprint,
@@ -118,13 +118,13 @@ ServerEvents.recipes(event => {
         });
     }
 
-    aePressBlueprintRecipe("kubejs:mysterious_blueprint", tier1bp, '#84b9ff')
-    aePressBlueprintRecipe("kubejs:storage_blueprint", tier2bp, '#fff678')
-    aePressBlueprintRecipe("kubejs:automation_blueprint", tier3bp, '#8de8ff')
-    aePressBlueprintRecipe("kubejs:quantum_blueprint", tier4bp, '#c795ff')
-    //aePressBlueprintRecipe("kubejs:divine_blueprint", tier5bp, '#abffc0')
+    aePressBlueprintRecipe("milf:mysterious_blueprint", tier1bp, '#84b9ff')
+    aePressBlueprintRecipe("milf:storage_blueprint", tier2bp, '#fff678')
+    aePressBlueprintRecipe("milf:automation_blueprint", tier3bp, '#8de8ff')
+    aePressBlueprintRecipe("milf:quantum_blueprint", tier4bp, '#c795ff')
+    //aePressBlueprintRecipe("milf:divine_blueprint", tier5bp, '#abffc0')
 
-    pressBlueprintRecipeWithInput("kubejs:divine_blueprint", "kubejs:goo_coated_blank_blueprint", tier5bp, '#abffc0', tier5bp)
+    pressBlueprintRecipeWithInput("milf:divine_blueprint", "milf:goo_coated_blank_blueprint", tier5bp, '#abffc0', tier5bp)
 
     pressBlueprintRecipe("modern_industrialization:guidebook", "MI tools", '#ccac7c', "MI Tools Blueprint")
 
@@ -140,8 +140,8 @@ ServerEvents.recipes(event => {
     aePressRecipe([{"item": "megacells:sky_steel_ingot"}, 2], [{id :"megacells:printed_accumulation_processor"}, 1], "megacells:accumulation_processor_press", 3200);
 
     //custom stuff
-    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"kubejs:cell_half"}, 1], "kubejs:cell_press", 3200);
-    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"kubejs:core_hull"}, 1], "kubejs:core_press", 3200);
+    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:cell_half"}, 1], "milf:cell_press", 3200);
+    aePressRecipe([{"tag": "c:plates/iron"}, 2], [{id :"milf:core_hull"}, 1], "milf:core_press", 3200);
 
     iePressCraft(event, {
         inputItems:[[{"tag": "minecraft:logs"}, 3]],

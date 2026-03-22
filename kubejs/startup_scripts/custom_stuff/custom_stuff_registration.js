@@ -17,11 +17,11 @@ const activeMachineShapeProperty  = $IntegerProperty.create("machine_shape", 0, 
 function createNewItem(id, args) {
     args = args || {}
     StartupEvents.registry('item', event => {
-        let item = args.itemType ? event.create(id, args.itemType) : event.create(id)
-        item.texture(args.texturePath || `custom_stuff:item/${id}`)
+        let item = args.itemType ? event.create("milf:" + id, args.itemType) : event.create("milf:" + id)
+        item.texture(args.texturePath || `milf:item/${id}`)
         itemBuilder(item, args)
     })
-    global.langCustomStuff[`item.kubejs.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+    global.langCustomStuff[`item.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
 
 function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
@@ -82,11 +82,11 @@ function createNewBlock(id, args) {
 function createNewFluid(id, args) {
     args = args || {}
     StartupEvents.registry('fluid', event => {
-        let fluid = args.textureType ? event.create(id, args.textureType) : event.create(id)
+        let fluid = args.textureType ? event.create("milf:" + id, args.textureType) : event.create("milf:" + id)
         args.color && fluid.tint.apply(fluid, [args.color])
         itemBuilder(fluid.bucketItem, args)
     })
-    global.langCustomStuff[`item.kubejs.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+    global.langCustomStuff[`fluid.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
 
 function idToName(id) {
@@ -101,7 +101,7 @@ global.setOnFire = ctx => {
 //#region Easter eggs
 createNewBlock("saeta_plush", { blockType: "cardinal", renderType: "cutout", notSolid: true, waterlogged: true, soundType: "wool", stackSize: 1, rarity: "epic", box: [4, 0, 4, 12, 12, 12] })
 createNewBlock("kisuny_plush", { blockType: "cardinal", renderType: "cutout", notSolid: true, waterlogged: true, soundType: "wool", stackSize: 1, rarity: "epic", box: [4, 0, 4, 12, 12, 12] })
-createNewItem('meze_109', { itemType: "helmet", material: 'kubejs:meze', stackSize: 1, rarity: 'epic' })
+createNewItem("meze_109", { itemType: "helmet", material: 'milf:meze', stackSize: 1, rarity: 'epic' })
 //#endregion
 
 //#region Food
@@ -176,8 +176,8 @@ createNewItem('tempered_glass', { stackSize: 8, lang: { "en_us": "Tempered glass
 createNewItem('bronze_machine_bit', { stackSize: 32, lang: { "en_us": "Bronze machine bit", "ru_ru": "Бронзовый фрагмент механизма" } })
 createNewItem('steel_machine_bit', { stackSize: 32, lang: { "en_us": "Steel machine bit", "ru_ru": "Стальной фрагмент механизма" } })
 createNewItem('basic_machine_bit', { stackSize: 32, lang: { "en_us": "Basic machine bit", "ru_ru": "Базовый фрагмент механизма" } })
-createNewItem('small_copper_fluid_container', { texturePath: 'custom_stuff:item/copper_fluid_container', lang: { "en_us": "Small copper fluid container", "ru_ru": "Небольшой медный контейнер для жидкости" } })
-createNewItem('small_steel_fluid_container', { texturePath: 'custom_stuff:item/steel_fluid_container', lang: { "en_us": "Small steel fluid container", "ru_ru": "Небольшой стальной контейнер для жидкости" } })
+createNewItem('small_copper_fluid_container', { texturePath: 'milf:item/copper_fluid_container', lang: { "en_us": "Small copper fluid container", "ru_ru": "Небольшой медный контейнер для жидкости" } })
+createNewItem('small_steel_fluid_container', { texturePath: 'milf:item/steel_fluid_container', lang: { "en_us": "Small steel fluid container", "ru_ru": "Небольшой стальной контейнер для жидкости" } })
 createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дальномер" } })
 createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
@@ -200,7 +200,7 @@ createNewBlock("radio_tower_slab", { texturePath: 'milf:block/radio_tower_block'
 createNewItem('old_diary', { stackSize: 1, lang: { "en_us": "Old diary", "ru_ru": "Старый дневник" } })
 createNewItem('old_tablet', { stackSize: 1, lang: { "en_us": "Old tablet", "ru_ru": "Старая табличка" } })
 createNewItem('disk_from_space', { stackSize: 1, lang: { "en_us": "Disk from space", "ru_ru": "Внеземной диск" } })
-createNewItem('holy_book_of_color', { texturePath: 'custom_stuff:item/color_holy_book', stackSize: 1, lang: { "en_us": "Holy book of color", "ru_ru": "Священная книга цвета" } })
+createNewItem('holy_book_of_color', { texturePath: 'milf:item/color_holy_book', stackSize: 1, lang: { "en_us": "Holy book of color", "ru_ru": "Священная книга цвета" } })
 createNewItem('old_notes', { stackSize: 1, lang: { "en_us": "Old notes", "ru_ru": "Старые заметки" } })
 
 createNewItem('punched_card', { stackSize: 1, lang: { "en_us": "Punched card", "ru_ru": "Перфокарта" } })
@@ -223,16 +223,16 @@ createNewItem('cell_half', { lang: { "en_us": "Cell half", "ru_ru": "Часть 
 createNewItem('cell_press', { stackSize: 16, lang: { "en_us": "Cell press", "ru_ru": "Пресс для ячейки" } })
 
 //MI automation tokens (disks)
-createNewItem('mysterious_disk', { texturePath: 'custom_stuff:item/automation_disk_t1', stackSize: 8, lang: { "en_us": "Mysterious disk", "ru_ru": "Таинственный диск" } })
-createNewItem('storage_disk', { texturePath: 'custom_stuff:item/automation_disk_t2', stackSize: 8, lang: { "en_us": "Storage disk", "ru_ru": "Диск Хранения данных" } })
-createNewItem('automation_disk', { texturePath: 'custom_stuff:item/automation_disk_t3', stackSize: 8, lang: { "en_us": "Automation disk", "ru_ru": "Диск автоматизации" } })
-createNewItem('quantum_disk', { texturePath: 'custom_stuff:item/automation_disk_t4', stackSize: 8, lang: { "en_us": "Quantum disk", "ru_ru": "Квантовый диск" } })
+createNewItem('mysterious_disk', { texturePath: 'milf:item/automation_disk_t1', stackSize: 8, lang: { "en_us": "Mysterious disk", "ru_ru": "Таинственный диск" } })
+createNewItem('storage_disk', { texturePath: 'milf:item/automation_disk_t2', stackSize: 8, lang: { "en_us": "Storage disk", "ru_ru": "Диск Хранения данных" } })
+createNewItem('automation_disk', { texturePath: 'milf:item/automation_disk_t3', stackSize: 8, lang: { "en_us": "Automation disk", "ru_ru": "Диск автоматизации" } })
+createNewItem('quantum_disk', { texturePath: 'milf:item/automation_disk_t4', stackSize: 8, lang: { "en_us": "Quantum disk", "ru_ru": "Квантовый диск" } })
 
 //Blueprints
 createNewItem('blueprint_pack', { stackSize: 4, lang: { "en_us": "Blueprint pack", "ru_ru": "Набор чертежей" } })
-createNewItem('mysterious_blueprint', { texturePath: 'custom_stuff:item/blueprint_t1', stackSize: 1, lang: { "en_us": "Mysterious blueprint", "ru_ru": "Таинственный чертёж" } })
-createNewItem('storage_blueprint', { texturePath: 'custom_stuff:item/blueprint_t2', stackSize: 1, lang: { "en_us": "Storage blueprint", "ru_ru": "Чертёж хранения" } })
-createNewItem('automation_blueprint', { texturePath: 'custom_stuff:item/blueprint_t3', stackSize: 1, lang: { "en_us": "Automation blueprint", "ru_ru": "Чертёж автоматизации" } })
-createNewItem('quantum_blueprint', { texturePath: 'custom_stuff:item/blueprint_t4', stackSize: 1, lang: { "en_us": "Quantum blueprint", "ru_ru": "Квантовый чертёж" } })
-createNewItem('divine_blueprint', { texturePath: 'custom_stuff:item/blueprint_t5', stackSize: 1, lang: { "en_us": "Divine blueprint", "ru_ru": "Божественный чертёж" } })
+createNewItem('mysterious_blueprint', { texturePath: 'milf:item/blueprint_t1', stackSize: 1, lang: { "en_us": "Mysterious blueprint", "ru_ru": "Таинственный чертёж" } })
+createNewItem('storage_blueprint', { texturePath: 'milf:item/blueprint_t2', stackSize: 1, lang: { "en_us": "Storage blueprint", "ru_ru": "Чертёж хранения" } })
+createNewItem('automation_blueprint', { texturePath: 'milf:item/blueprint_t3', stackSize: 1, lang: { "en_us": "Automation blueprint", "ru_ru": "Чертёж автоматизации" } })
+createNewItem('quantum_blueprint', { texturePath: 'milf:item/blueprint_t4', stackSize: 1, lang: { "en_us": "Quantum blueprint", "ru_ru": "Квантовый чертёж" } })
+createNewItem('divine_blueprint', { texturePath: 'milf:item/blueprint_t5', stackSize: 1, lang: { "en_us": "Divine blueprint", "ru_ru": "Божественный чертёж" } })
 //#endregion

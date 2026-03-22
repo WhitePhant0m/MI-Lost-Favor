@@ -17,12 +17,12 @@ ServerEvents.recipes(event => {
     })
 
     const runes = [
-        'kubejs:rune_of_piercing',
-        'kubejs:rune_of_armor',
-        'kubejs:rune_of_bloodshed',
-        'kubejs:rune_of_diversity',
-        'kubejs:rune_of_fishing',
-        'kubejs:rune_of_mining'
+        'milf:rune_of_piercing',
+        'milf:rune_of_armor',
+        'milf:rune_of_bloodshed',
+        'milf:rune_of_diversity',
+        'milf:rune_of_fishing',
+        'milf:rune_of_mining'
     ]
 
 
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
             'q  '
         ],
         key: {
-            q: 'kubejs:rune_of_diversity',
+            q: 'milf:rune_of_diversity',
             w: 'minecraft:book'
         },
         result: {
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
             'e w'
         ],
         key: {
-            q: 'kubejs:rune_of_fishing',
+            q: 'milf:rune_of_fishing',
             w: 'minecraft:book',
             e: "minecraft:stick"
         },
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
             ' e '
         ],
         key: {
-            q: 'kubejs:rune_of_mining',
+            q: 'milf:rune_of_mining',
             w: 'minecraft:book',
             e: "minecraft:stick"
         },
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
             ' ew'
         ],
         key: {
-            q: 'kubejs:rune_of_piercing',
+            q: 'milf:rune_of_piercing',
             w: 'minecraft:book',
             e: "minecraft:stick"
         },
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
             ' q '
         ],
         key: {
-            q: 'kubejs:rune_of_bloodshed',
+            q: 'milf:rune_of_bloodshed',
             w: 'minecraft:book'
         },
         result: {
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
             '   '
         ],
         key: {
-            q: 'kubejs:rune_of_armor',
+            q: 'milf:rune_of_armor',
             w: 'minecraft:book'
         },
         result: {
@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
             'www'
         ],
         key: {
-            q: 'kubejs:rune_of_armor',
+            q: 'milf:rune_of_armor',
             w: 'minecraft:book'
         },
         result: {
@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
             'w w'
         ],
         key: {
-            q: 'kubejs:rune_of_armor',
+            q: 'milf:rune_of_armor',
             w: 'minecraft:book'
         },
         result: {
@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
             '   '
         ],
         key: {
-            q: 'kubejs:rune_of_armor',
+            q: 'milf:rune_of_armor',
             w: 'minecraft:book'
         },
         result: {

@@ -51,26 +51,26 @@ function yTechWorkspaceRecipe(/**@type {$RecipesKubeEvent_}*/ event, args){
 
 const WORKSPACE_MATERIALSETS = {
     BRONZE_BITS:{
-        key:{M:{item:'kubejs:bronze_machine_bit'}},
+        key:{M:{item:'milf:bronze_machine_bit'}},
         replaceWith: [{item:"modern_industrialization:bronze_machine_casing"}, 1]
     },
 
     STEEL_UPGRADE:{
-        key:{M:{item:'kubejs:steel_machine_bit'}, P:{item:"immersiveengineering:fluid_pipe"}, G:{item:'kubejs:steel_infused_glass'}},
+        key:{M:{item:'milf:steel_machine_bit'}, P:{item:"immersiveengineering:fluid_pipe"}, G:{item:'milf:steel_infused_glass'}},
         replaceWith: [{item:"modern_industrialization:steel_upgrade"}, 1]
     },
     STEEL_BITS:{
-        key:{M:{item:'kubejs:steel_machine_bit'}},
+        key:{M:{item:'milf:steel_machine_bit'}},
         replaceWith: [{item:"modern_industrialization:steel_machine_casing"}, 1]
     },
 
     BASIC:{
-        key:{M:{item:'kubejs:basic_machine_bit'}, B:{item:"modern_industrialization:portable_storage_unit"}, G:{item:'kubejs:tempered_glass'}, C:{item:'modern_industrialization:tin_cable'}},
+        key:{M:{item:'milf:basic_machine_bit'}, B:{item:"modern_industrialization:portable_storage_unit"}, G:{item:'milf:tempered_glass'}, C:{item:'modern_industrialization:tin_cable'}},
         replaceWith: [{item:"modern_industrialization:basic_machine_hull"}, 1]
     },
 
     BASIC_BITS:{
-        key:{M:{item:'kubejs:basic_machine_bit'}},
+        key:{M:{item:'milf:basic_machine_bit'}},
         replaceWith: [{item:"modern_industrialization:frostproof_machine_casing"}, 1]
     }
 }
@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
             ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        key: { G: { item: "kubejs:bronze_glass" } },
+        key: { G: { item: "milf:bronze_glass" } },
         outputItems: [[{ id: "modern_industrialization:bronze_tank" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
         tool: wrench,
@@ -190,8 +190,8 @@ ServerEvents.recipes(event => {
             S: { item: "ytech:primitive_smelter" },
             C: { item: "ytech:reinforced_brick_chimney" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:bronze_mi_furnace" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -247,8 +247,8 @@ ServerEvents.recipes(event => {
             g: { tag: "c:gears/copper" },
             r: { tag: "c:rods/copper" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:bronze_macerator" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -268,8 +268,8 @@ ServerEvents.recipes(event => {
             r: { tag: "c:rods/copper" },
             h: { item: "modern_industrialization:forge_hammer" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:bronze_compressor" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -289,8 +289,8 @@ ServerEvents.recipes(event => {
             r: { tag: "c:gears/copper" },
             h: { item: "modern_industrialization:copper_blade" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:bronze_cutting_machine" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -310,8 +310,8 @@ ServerEvents.recipes(event => {
             r: { tag: "c:rods/copper" },
             h: { item: "minecraft:composter" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "extended_industrialization:bronze_composter" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -332,8 +332,8 @@ ServerEvents.recipes(event => {
             h: { item: "modern_industrialization:copper_rotor" },
             g: { tag: "c:gears/copper" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:bronze_water_pump" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -354,8 +354,8 @@ ServerEvents.recipes(event => {
             h: { item: "modern_industrialization:copper_rotor" },
             g: { tag: "c:gears/copper" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:bronze_mixer" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -375,8 +375,8 @@ ServerEvents.recipes(event => {
             s: { tag: "c:plates/silver" },
             B: { item: "modern_industrialization:fire_clay_bricks" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "extended_industrialization:bronze_solar_boiler" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -397,8 +397,8 @@ ServerEvents.recipes(event => {
             h: { item: "minecraft:furnace" },
             B: { item: "modern_industrialization:fire_clay_bricks" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:bronze_boiler" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -419,8 +419,8 @@ ServerEvents.recipes(event => {
             h: { item: "minecraft:composter" },
             m: { item: "ytech:copper_mesh" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "extended_industrialization:bronze_waste_collector" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -440,8 +440,8 @@ ServerEvents.recipes(event => {
             r: { tag: "c:rods/copper" },
             g: { tag: "c:gears/copper" },
             P: { item: "moderndynamics:fluid_pipe" },
-            G: { item: "kubejs:bronze_glass" },
-            F: { item: "kubejs:small_copper_fluid_container" }
+            G: { item: "milf:bronze_glass" },
+            F: { item: "milf:small_copper_fluid_container" }
         },
         outputItems: [[{ id: "extended_industrialization:bronze_bending_machine" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BRONZE_BITS,
@@ -660,8 +660,8 @@ ServerEvents.recipes(event => {
             R: { item: "modern_industrialization:tin_rotor" },
             g: { item: "modern_industrialization:bronze_gear" },
             P: { item: "immersiveengineering:fluid_pipe" },
-            G: { item: "kubejs:steel_infused_glass" },
-            F: { item: "kubejs:small_steel_fluid_container" }
+            G: { item: "milf:steel_infused_glass" },
+            F: { item: "milf:small_steel_fluid_container" }
         },
         outputItems: [[{ id: "extended_industrialization:steel_honey_extractor" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
@@ -681,8 +681,8 @@ ServerEvents.recipes(event => {
             R: { item: "modern_industrialization:bronze_rotor" },
             g: { item: "modern_industrialization:bronze_gear" },
             P: { item: "immersiveengineering:fluid_pipe" },
-            G: { item: "kubejs:steel_infused_glass" },
-            F: { item: "kubejs:small_steel_fluid_container" }
+            G: { item: "milf:steel_infused_glass" },
+            F: { item: "milf:small_steel_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:steel_wiremill" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
@@ -702,8 +702,8 @@ ServerEvents.recipes(event => {
             w: { item: "modern_industrialization:cupronickel_wire" },
             A: { item: "ytech:primitive_alloy_smelter" },
             P: { item: "immersiveengineering:fluid_pipe" },
-            G: { item: "kubejs:steel_infused_glass" },
-            F: { item: "kubejs:small_steel_fluid_container" }
+            G: { item: "milf:steel_infused_glass" },
+            F: { item: "milf:small_steel_fluid_container" }
         },
         outputItems: [[{ id: "extended_industrialization:steel_alloy_smelter" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
@@ -723,8 +723,8 @@ ServerEvents.recipes(event => {
             g: { item: "modern_industrialization:bronze_gear" },
             p: { item: "minecraft:piston" },
             P: { item: "immersiveengineering:fluid_pipe" },
-            G: { item: "kubejs:steel_infused_glass" },
-            F: { item: "kubejs:small_steel_fluid_container" }
+            G: { item: "milf:steel_infused_glass" },
+            F: { item: "milf:small_steel_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:steel_packer" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
@@ -744,8 +744,8 @@ ServerEvents.recipes(event => {
             g: { item: "modern_industrialization:bronze_gear" },
             p: { item: "minecraft:sticky_piston" },
             P: { item: "immersiveengineering:fluid_pipe" },
-            G: { item: "kubejs:steel_infused_glass" },
-            F: { item: "kubejs:small_steel_fluid_container" }
+            G: { item: "milf:steel_infused_glass" },
+            F: { item: "milf:small_steel_fluid_container" }
         },
         outputItems: [[{ id: "modern_industrialization:steel_unpacker" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
@@ -761,7 +761,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
             ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        key: { G: { item: "kubejs:steel_infused_glass" } },
+        key: { G: { item: "milf:steel_infused_glass" } },
         outputItems: [[{ id: "modern_industrialization:steel_tank" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.STEEL_BITS,
         tool: wrench,
@@ -944,7 +944,7 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].workspaceFull("M").workspaceSides("G").workspaceCenter(" "),
             ['   ','   ','   '].workspaceFull("M").workspaceCenter("G")
         ],
-        key: { G: { item: "kubejs:tempered_glass" } },
+        key: { G: { item: "milf:tempered_glass" } },
         outputItems: [[{ id: "modern_industrialization:aluminum_tank" }, 1]],
         materialset: WORKSPACE_MATERIALSETS.BASIC_BITS,
         tool: wrench,
@@ -994,9 +994,9 @@ ServerEvents.recipes(event => {
             ['   ','   ','   '].workspaceCorners("M").workspacePlus("C").workspaceCenter("B")
         ],
         key: {
-            D: { item: "kubejs:cd_reader" },
+            D: { item: "milf:cd_reader" },
             A: { item: "modern_industrialization:robot_arm" },
-            I: { item: "kubejs:rangefinder" },
+            I: { item: "milf:rangefinder" },
             W: { item: "modern_industrialization:conveyor" },
             c: { item: "modern_industrialization:analog_circuit" }
         },
@@ -1511,7 +1511,7 @@ ServerEvents.recipes(event => {
             G: { item: "minecraft:glass" }
         },
         outputItems: [[{ id: "transmog:transmogrification_table" }, 1]],
-        tool: { item: "kubejs:amber_visage" },
+        tool: { item: "milf:amber_visage" },
         removeRecipe: true,
         compatOff: true
     })

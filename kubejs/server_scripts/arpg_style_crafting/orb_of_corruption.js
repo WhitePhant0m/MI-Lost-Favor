@@ -1,4 +1,4 @@
-ItemEvents.firstRightClicked("kubejs:orb_of_corruption", event => {
+ItemEvents.firstRightClicked("milf:orb_of_corruption", event => {
     if(!applyOrb(event,
         (item) => {
             let {enchantments} = getAllEnchantments(item)

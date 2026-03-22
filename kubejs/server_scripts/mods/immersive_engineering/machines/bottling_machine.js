@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
             [{item:"immersiveengineering:mold_plate"}, 1]
         ],
         inputFluids:[
-            [{fluid:"kubejs:liquid_plastic"}, 100]
+            [{fluid:"milf:liquid_plastic"}, 100]
         ],
         inputItems:[
             [{item:"immersiveengineering:mold_plate"}, 1]
@@ -46,14 +46,14 @@ ServerEvents.recipes(event => {
 
     ieBottlingMachineCraft(event, {
         outputItems:[
-            [{item:"kubejs:basic_machine_bit"}, 8],
-            [{item:"kubejs:bits_mold"}, 1]
+            [{item:"milf:basic_machine_bit"}, 8],
+            [{item:"milf:bits_mold"}, 1]
         ],
         inputFluids:[
-            [{fluid:"kubejs:liquid_plastic"}, 1000]
+            [{fluid:"milf:liquid_plastic"}, 1000]
         ],
         inputItems:[
-            [{item:"kubejs:bits_mold"}, 1]
+            [{item:"milf:bits_mold"}, 1]
         ],
         compatOff:true
     })
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         [
             [ { "item": "ae2:quartz_glass" }, 4 ],
             [ { "item": "ae2:calculation_processor" }, 2 ],
-            [ { "item": "kubejs:core_hull" }, 1 ]
+            [ { "item": "milf:core_hull" }, 1 ]
         ],
         [ "modern_industrialization:polyethylene", 500 ],
         [
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
         [
             [ { "item": "ae2:quartz_glass" }, 4 ],
             [ { "item": "ae2:engineering_processor" }, 2 ],
-            [ { "item": "kubejs:core_hull" }, 1 ]
+            [ { "item": "milf:core_hull" }, 1 ]
         ],
         [ "modern_industrialization:polyethylene", 500 ],
         [

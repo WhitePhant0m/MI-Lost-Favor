@@ -22,11 +22,11 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.how_to_get_electronice_ender_core.tooltip', 'Можно получить с шансом 50% если убить ключом: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')
 
     event.add('milf.cannot.mine.block', 'Вы не можете добыть блок на данный момент')
-    event.add('kubejs.press_button', 'Зажми ')
-    event.add('kubejs.for_details', 'для подробной информации')
-    event.add('kubejs.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
-    event.add('kubejs.orb_of_the_forest.tooltip', 'Для применения сферы к топору держите сферу в основной руке, а любой топор — во второй и нажмите ПКМ')
-    event.add('kubejs.beltborne_lanterns.tooltip', 'Нажмите CTRL + B, держа фонарь — он прикрепится к твоему поясу. Нужно вернуть его в руки? Нажмите CTRL + B снова')
+    event.add('milf.press_button', 'Зажми ')
+    event.add('milf.for_details', 'для подробной информации')
+    event.add('milf.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
+    event.add('milf.orb_of_the_forest.tooltip', 'Для применения сферы к топору держите сферу в основной руке, а любой топор — во второй и нажмите ПКМ')
+    event.add('milf.beltborne_lanterns.tooltip', 'Нажмите CTRL + B, держа фонарь — он прикрепится к твоему поясу. Нужно вернуть его в руки? Нажмите CTRL + B снова')
     event.add('milf.money_pouch.tooltip', 'Можно открыть с помощью радиального меню, находясь в слоте для безделушек.')
     event.add('milf.curio_bag.tooltip', 'Можно открыть с помощью радиального меню если мешок на панели быстрого доступа или в слоте для безделушек')
 

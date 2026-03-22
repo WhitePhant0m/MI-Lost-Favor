@@ -1,9 +1,9 @@
 ServerEvents.recipes(event => {
 
-    var tier1token = "kubejs:mysterious_disk"
-    var tier2token = "kubejs:storage_disk"
-    var tier3token = "kubejs:automation_disk"
-    var tier4token = "kubejs:quantum_disk"
+    var tier1token = "milf:mysterious_disk"
+    var tier2token = "milf:storage_disk"
+    var tier3token = "milf:automation_disk"
+    var tier4token = "milf:quantum_disk"
 
 
     function inscriber_recipe(output,bottom,middle,top){
@@ -20,10 +20,10 @@ ServerEvents.recipes(event => {
         event.custom(recipe)
     }
 
-    inscriber_recipe([{"id": tier1token}],{"item": "kubejs:storage_blueprint"},{"item": "kubejs:cd"},{"tag": "c:dusts/certus_quartz"})
-    inscriber_recipe([{"id": tier2token}],{"item": "kubejs:automation_blueprint"},{"item": "kubejs:cd"},{"tag": "c:dusts/fluix"})
-    inscriber_recipe([{"id": tier3token}],{"item": "kubejs:quantum_blueprint"},{"item": "kubejs:cd"},{"tag": "c:dusts/shattered_singularity"})
-    inscriber_recipe([{"id": tier4token}],{"item": "kubejs:divine_blueprint"},{"item": "kubejs:cd"},{"tag": "c:dusts/entro"})
+    inscriber_recipe([{"id": tier1token}],{"item": "milf:storage_blueprint"},{"item": "milf:cd"},{"tag": "c:dusts/certus_quartz"})
+    inscriber_recipe([{"id": tier2token}],{"item": "milf:automation_blueprint"},{"item": "milf:cd"},{"tag": "c:dusts/fluix"})
+    inscriber_recipe([{"id": tier3token}],{"item": "milf:quantum_blueprint"},{"item": "milf:cd"},{"tag": "c:dusts/shattered_singularity"})
+    inscriber_recipe([{"id": tier4token}],{"item": "milf:divine_blueprint"},{"item": "milf:cd"},{"tag": "c:dusts/entro"})
 
 
 })

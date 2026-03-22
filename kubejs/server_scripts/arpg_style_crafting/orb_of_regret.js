@@ -1,4 +1,4 @@
-ItemEvents.firstRightClicked("kubejs:orb_of_regret", event => {
+ItemEvents.firstRightClicked("milf:orb_of_regret", event => {
 
     let {enchantments, enchantmentsCount, randomEnchantment} = getAllEnchantments(event.player.getOffHandItem())
 

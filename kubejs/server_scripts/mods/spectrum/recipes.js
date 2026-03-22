@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         main: {
             "item": "enchanted:attuned_stone_charged"
         },
-        result: "kubejs:table_core"
+        result: "milf:table_core"
     })
 
     const pedestalBasicCraft = (output, gem) => {
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
             q: '#minecraft:planks',
             w: 'minecraft:tuff',
             e: gem,
-            r: "kubejs:table_core",
+            r: "milf:table_core",
         })
     }
     pedestalBasicCraft('spectrum:pedestal_basic_topaz', 'spectrum:topaz_shard')
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
             q: 'spectrum:shimmerstone_gem',
             w: 'spectrum:onyx_shard',
             e: "minecraft:obsidian",
-            r: "kubejs:onyx_table_core"
+            r: "milf:onyx_table_core"
         },
         result: {
             "id": "spectrum:pedestal_onyx",
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
             q: 'spectrum:bismuth_flake',
             w: 'spectrum:polished_onyx',
             e: "spectrum:moonstone_shard",
-            r: "kubejs:moonstone_table_core"
+            r: "milf:moonstone_table_core"
         },
         result: {
             "id": "spectrum:pedestal_moonstone",

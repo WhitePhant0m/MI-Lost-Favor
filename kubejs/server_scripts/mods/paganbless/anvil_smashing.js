@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/copper" }, 2],
             [{ "tag": "c:bolts/copper" }, 4],
         ],
-        [{ "id": 'kubejs:small_copper_fluid_container' }, 1]
+        [{ "id": 'milf:small_copper_fluid_container' }, 1]
     )
 
     anvil_recipe(
@@ -188,14 +188,14 @@ ServerEvents.recipes(event => {
             [{ "tag": "c:plates/steel" }, 2],
             [{ "tag": "c:bolts/steel" }, 4],
         ],
-        [{ "id": 'kubejs:small_steel_fluid_container' }, 1]
+        [{ "id": 'milf:small_steel_fluid_container' }, 1]
     )
 
     anvil_recipe(
         [
             [{ "item": "immersiveengineering:fluid_pipe" }, 5],
-            [{ "item": "kubejs:steel_infused_glass" }, 1],
-            [{ "item": "kubejs:steel_machine_bit" }, 12],
+            [{ "item": "milf:steel_infused_glass" }, 1],
+            [{ "item": "milf:steel_machine_bit" }, 12],
         ],
         [{ "id": 'modern_industrialization:steel_upgrade' }, 1]
     )
@@ -212,7 +212,7 @@ ServerEvents.recipes(event => {
     //#endregion
 
     //spectrum compat
-    event.forEachRecipe({ type: 'spectrum:anvil_crushing', not : {output: "#kubejs:nocompat"}}, r => {
+    event.forEachRecipe({ type: 'spectrum:anvil_crushing', not : {output: "#milf:nocompat"}}, r => {
         const rjson = JSON.parse(r.json)
         if (rjson.result.id.split(":")[0] == "ae2") return
         if (Array.isArray(rjson.ingredient)) {

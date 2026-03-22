@@ -22,7 +22,7 @@ const ytechSmeltingCraft = (event, args) => {
 /* ServerEvents.recipes(event => {
     ytechSmeltingCraft(event, {
         inputItems:[
-            [{item: "kubejs:crushed_tin"}],
+            [{item: "milf:crushed_tin"}],
         ],
         outputItems:[
             [{id:"modern_industrialization:tin_ingot"}]

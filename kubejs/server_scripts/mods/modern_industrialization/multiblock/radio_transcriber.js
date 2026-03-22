@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
             [{tag:"c:paper"}, 1],
             [{ item: "immersiveengineering:manual" }, 1, 0]
         ],
-        outputItems:[[{ item: "kubejs:punched_card" }, 1]],
+        outputItems:[[{ item: "milf:punched_card" }, 1]],
     })
 
 })

@@ -25,10 +25,10 @@ ServerEvents.recipes(event => {
         outputItems:[
             [ { "id": "immersivepetroleum:bitumen" }, 1 , 0.07]
         ],
-        inputFluids:[[ {fluid :"kubejs:desalted_crude_oil"} , 100 ]],
+        inputFluids:[[ {fluid :"milf:desalted_crude_oil"} , 100 ]],
         outputFluids:[
             [ {fluid :"modern_industrialization:sulfuric_naphtha"} , 30 ], 
-            [ {fluid :"kubejs:high_sulfur_kerosene"} , 10 ],
+            [ {fluid :"milf:high_sulfur_kerosene"} , 10 ],
             [ {fluid :"immersivepetroleum:diesel_sulfur"} , 15 ],
             [ {fluid :"modern_industrialization:sulfuric_heavy_fuel"} , 40 ],
             [ {fluid :"modern_industrialization:lubricant"} , 5 ]
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
         inputFluids:[[ {fluid :"modern_industrialization:sulfuric_light_fuel"} , 100 ]],
         outputFluids:[
             [ {fluid :"modern_industrialization:sulfuric_naphtha"} , 50 ], 
-            [ {fluid :"kubejs:high_sulfur_kerosene"} , 20 ],
+            [ {fluid :"milf:high_sulfur_kerosene"} , 20 ],
             [ {fluid :"immersivepetroleum:diesel_sulfur"} , 30 ]
         ],
         compatOff:true,

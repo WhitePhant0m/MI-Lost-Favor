@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
             [{fluid:"minecraft:water"}, 50]
         ],
         outputFluids:[
-            [{fluid:"kubejs:desalted_crude_oil"}, 1000]
+            [{fluid:"milf:desalted_crude_oil"}, 1000]
         ],
         outputItems:[
             [{item:"minecraft:sand"}, 1, 0.25],

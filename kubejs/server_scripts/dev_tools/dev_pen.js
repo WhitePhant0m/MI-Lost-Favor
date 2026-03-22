@@ -1,7 +1,7 @@
 let mode = 0
 let aabb = AABB.CUBE
 
-ItemEvents.firstRightClicked("kubejs:dev_pen", event => {
+ItemEvents.firstRightClicked("milf:dev_pen", event => {
     if(!event.getTarget()?.block.getPos()) return
     let blockpos = event.getTarget().block.getPos()
     switch (mode) {

@@ -72,12 +72,6 @@
 			y: 25.5d
 		}
 		{
-			id: "3EC3028B3D4878BE"
-			linked_quest: "62C5B9FB001E26A5"
-			x: 8.0d
-			y: 25.5d
-		}
-		{
 			id: "1E228499A8B2C2D0"
 			linked_quest: "7737F36A9E69FB4C"
 			x: -3.0d

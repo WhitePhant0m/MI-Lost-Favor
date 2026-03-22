@@ -1,41 +1,41 @@
 ServerEvents.recipes(event => {
 
     event.recipes.modern_industrialization.enigma_machine(42, 100)
-        .itemIn('kubejs:blueprint_pack', 0)
+        .itemIn('milf:blueprint_pack', 0)
         .itemIn('spectrum:guidebook', 0)
-        .itemIn('kubejs:disk_from_space', 0)
-        .itemOut("kubejs:mysterious_blueprint")
+        .itemIn('milf:disk_from_space', 0)
+        .itemOut("milf:mysterious_blueprint")
 
     event.recipes.modern_industrialization.enigma_machine(42, 100)
-        .itemIn('kubejs:blueprint_pack', 0)
-        .itemIn('kubejs:mysterious_blueprint', 0)
-        .itemIn('kubejs:old_tablet', 0)
-        .itemOut("kubejs:storage_blueprint")
+        .itemIn('milf:blueprint_pack', 0)
+        .itemIn('milf:mysterious_blueprint', 0)
+        .itemIn('milf:old_tablet', 0)
+        .itemOut("milf:storage_blueprint")
 
     event.recipes.modern_industrialization.enigma_machine(42, 1000)
-        .itemIn('kubejs:blueprint_pack', 0)
-        .itemIn('kubejs:storage_blueprint', 0)
-        .itemIn('kubejs:old_diary', 0)
-        .itemOut("kubejs:automation_blueprint")
+        .itemIn('milf:blueprint_pack', 0)
+        .itemIn('milf:storage_blueprint', 0)
+        .itemIn('milf:old_diary', 0)
+        .itemOut("milf:automation_blueprint")
 
     event.recipes.modern_industrialization.enigma_machine(42, 1000)
-        .itemIn('kubejs:blueprint_pack', 0)
-        .itemIn('kubejs:automation_blueprint', 0)
-        .itemIn('kubejs:holy_book_of_color', 0)
-        .itemOut("kubejs:quantum_blueprint")
+        .itemIn('milf:blueprint_pack', 0)
+        .itemIn('milf:automation_blueprint', 0)
+        .itemIn('milf:holy_book_of_color', 0)
+        .itemOut("milf:quantum_blueprint")
 
 /*     event.recipes.modern_industrialization.enigma_machine(42, 10000)
-        .itemIn('kubejs:blueprint_pack', 0)
-        .itemIn('kubejs:quantum_blueprint', 0)
-        .itemIn('kubejs:old_notes', 0)
-        .itemOut("kubejs:divine_blueprint") */
+        .itemIn('milf:blueprint_pack', 0)
+        .itemIn('milf:quantum_blueprint', 0)
+        .itemIn('milf:old_notes', 0)
+        .itemOut("milf:divine_blueprint") */
 
 
     miMachineCraft(event, {energy:8, time:6000, machine:"modern_industrialization:enigma_machine",
         inputItems:[
-            [{item:"kubejs:blank_blueprint"}, 1],
-            [{item:"kubejs:punched_card"}, 1],
-            [{item:"kubejs:punched_card"}, 1]
+            [{item:"milf:blank_blueprint"}, 1],
+            [{item:"milf:punched_card"}, 1],
+            [{item:"milf:punched_card"}, 1]
         ],
         outputItems:[[{
             "components": { "immersiveengineering:blueprint": "MI components" },

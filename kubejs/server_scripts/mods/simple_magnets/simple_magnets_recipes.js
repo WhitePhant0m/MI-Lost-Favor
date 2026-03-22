@@ -10,11 +10,11 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod: 'simplemagnets'}, 'minecraft:gold_ingot', 'modern_industrialization:gold_plate')
 
     event.recipes.modern_industrialization.polarizer(8, 400)
-        .itemIn('kubejs:demagnetized_magnet_part')
-        .itemOut('kubejs:magnet_part')
+        .itemIn('milf:demagnetized_magnet_part')
+        .itemOut('milf:magnet_part')
 
     event.recipes.modern_industrialization.assembler(8, 200)
-        .itemIn('2x kubejs:magnet_part')
+        .itemIn('2x milf:magnet_part')
         .itemIn('6x minecraft:red_dye')
         .itemIn('6x minecraft:blue_dye')
         .itemIn('6x immersiveengineering:wirecoil_redstone')
@@ -26,6 +26,6 @@ ServerEvents.recipes(event => {
         .itemIn('2x modern_industrialization:nickel_ingot')
         .itemIn('modern_industrialization:aluminum_ingot')
         .itemIn('minecraft:iron_ingot')
-        .itemOut('kubejs:demagnetized_magnet_part')
+        .itemOut('milf:demagnetized_magnet_part')
 
 });

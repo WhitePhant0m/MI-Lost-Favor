@@ -33,6 +33,6 @@ const cfmGrillCraft = (event, args) => {
 ServerEvents.recipes(event => {
     cfmGrillCraft(event, {
         inputItems:[[{item: "minecraft:iron_ingot"}]],
-        outputItems:[[{id:"kubejs:steaming_iron_ingot"}]]
+        outputItems:[[{id:"milf:steaming_iron_ingot"}]]
     })
 })

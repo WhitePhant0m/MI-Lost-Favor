@@ -1,6 +1,6 @@
 StartupEvents.registry('armor_material', event => {
 
-    event.create("meze")
+    event.create("milf:meze")
     .defense({
         helmet: 3,
         chestplate: 1,

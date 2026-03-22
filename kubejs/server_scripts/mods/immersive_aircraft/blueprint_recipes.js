@@ -195,7 +195,7 @@ ServerEvents.recipes(event =>{
 
     blueprint_recipe(
         [
-            [{ "item": "kubejs:small_copper_fluid_container" }, 1],
+            [{ "item": "milf:small_copper_fluid_container" }, 1],
             [{ "item": "modern_industrialization:steel_rod" }, 4],
             [{ "item": "modern_industrialization:steel_bolt" }, 8],
             [{ "item": "modern_industrialization:copper_curved_plate" }, 4],
@@ -360,7 +360,7 @@ ServerEvents.recipes(event =>{
             [{ "item": "immersive_aircraft:engine" }, 2],
             [{ "item": "modern_industrialization:copper_curved_plate" }, 12],
             [{ "item": "modern_industrialization:steel_plate" }, 16],
-            [{ "item": "kubejs:steel_infused_glass" }, 12]
+            [{ "item": "milf:steel_infused_glass" }, 12]
         ],
         { "item": "immersive_machinery:copperfin" }, aircrafts
     );

@@ -1,4 +1,4 @@
-ItemEvents.firstRightClicked("kubejs:orb_of_chance", event => {
+ItemEvents.firstRightClicked("milf:orb_of_chance", event => {
     
     let {enchantments, totalLVL, randomEnchantment} = getAllEnchantmentsWithCondition(event.player.getOffHandItem(), (enchantment, level) => {return level >= 3 && level < (enchantment.value().getMaxLevel() + 2)})
 
