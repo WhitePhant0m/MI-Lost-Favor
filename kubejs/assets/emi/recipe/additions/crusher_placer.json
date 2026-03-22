@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:crusher_placer",
-		"remainder": "item:kubejs:crusher_empty_box"
+		"id": "milf:crusher_placer",
+		"remainder": "item:milf:crusher_empty_box"
 	},
 	"right": {
 		"type": "item",

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:hydrotreater_placer",
-		"remainder": "item:kubejs:hydrotreater_empty_box"
+		"id": "milf:hydrotreater_placer",
+		"remainder": "item:milf:hydrotreater_empty_box"
 	},
 	"right": {
 		"type": "item",

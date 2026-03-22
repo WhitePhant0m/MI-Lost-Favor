@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:squeezer_placer",
-		"remainder": "item:kubejs:squeezer_empty_box"
+		"id": "milf:squeezer_placer",
+		"remainder": "item:milf:squeezer_empty_box"
 	},
 	"right": {
 		"type": "item",

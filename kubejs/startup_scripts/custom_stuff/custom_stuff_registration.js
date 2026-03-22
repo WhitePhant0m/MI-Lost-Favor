@@ -50,8 +50,8 @@ function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
 function createNewBlock(id, args) {
     args = args || {}
     StartupEvents.registry('block', event => {
-        const block = args.blockType ? event.create(id, args.blockType) : event.create(id)
-        block.texture(args.texturePath || `custom_stuff:blocks/${id}`)
+        const block = args.blockType ? event.create("milf:" + id, args.blockType) : event.create("milf:" + id)
+        block.texture(args.texturePath || `milf:block/${id}`)
         args.soundType && block.soundType(args.soundType)
         args.requiresTool && block.requiresTool(true)
         args.hardness && block.hardness(args.hardness)
@@ -76,7 +76,7 @@ function createNewBlock(id, args) {
             itemBuilder(item, args)
         })
     })
-    global.langCustomStuff[`block.kubejs.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
+    global.langCustomStuff[`block.milf.${id}`] = Object.assign({ "en_us": idToName(id) }, args.lang)
 }
 
 function createNewFluid(id, args) {
@@ -186,7 +186,7 @@ createNewItem("bits_mold")
 //createNewFluid("plastic", {textureType:"thick", color:"0xFF0000"})
 
 createNewBlock("radio_tower_block", { hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower block", "ru_ru": "Блок радио вышки" } })
-createNewBlock("radio_tower_slab", { texturePath: 'custom_stuff:blocks/radio_tower_block', blockType: "slab", hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower slab", "ru_ru": "Плита радио вышки" } })
+createNewBlock("radio_tower_slab", { texturePath: 'milf:block/radio_tower_block', blockType: "slab", hardness: 1, soundType: "chain", requiresTool: true, tagBlock: 'minecraft:mineable/pickaxe', lang: { "en_us": "Radio tower slab", "ru_ru": "Плита радио вышки" } })
 
 //#endregion
 

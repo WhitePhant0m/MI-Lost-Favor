@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:tesla_tower_shape_1_placer",
-		"remainder": "item:kubejs:tesla_tower_shape_1_empty_box"
+		"id": "milf:tesla_tower_shape_1_placer",
+		"remainder": "item:milf:tesla_tower_shape_1_empty_box"
 	},
 	"right": {
 		"type": "item",

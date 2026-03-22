@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:electric_blast_furnace_cupronickel_placer",
-		"remainder": "item:kubejs:electric_blast_furnace_cupronickel_empty_box"
+		"id": "milf:electric_blast_furnace_cupronickel_placer",
+		"remainder": "item:milf:electric_blast_furnace_cupronickel_empty_box"
 	},
 	"right": {
 		"type": "item",

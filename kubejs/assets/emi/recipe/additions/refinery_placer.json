@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:refinery_placer",
-		"remainder": "item:kubejs:refinery_empty_box"
+		"id": "milf:refinery_placer",
+		"remainder": "item:milf:refinery_empty_box"
 	},
 	"right": {
 		"type": "item",

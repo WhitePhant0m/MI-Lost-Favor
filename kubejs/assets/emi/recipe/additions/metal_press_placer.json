@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:metal_press_placer",
-		"remainder": "item:kubejs:metal_press_empty_box"
+		"id": "milf:metal_press_placer",
+		"remainder": "item:milf:metal_press_empty_box"
 	},
 	"right": {
 		"type": "item",

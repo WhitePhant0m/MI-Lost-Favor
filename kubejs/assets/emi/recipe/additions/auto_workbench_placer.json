@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:auto_workbench_placer",
-		"remainder": "item:kubejs:auto_workbench_empty_box"
+		"id": "milf:auto_workbench_placer",
+		"remainder": "item:milf:auto_workbench_empty_box"
 	},
 	"right": {
 		"type": "item",

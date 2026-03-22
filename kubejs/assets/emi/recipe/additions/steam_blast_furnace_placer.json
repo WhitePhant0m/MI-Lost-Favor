@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:steam_blast_furnace_placer",
-		"remainder": "item:kubejs:steam_blast_furnace_empty_box"
+		"id": "milf:steam_blast_furnace_placer",
+		"remainder": "item:milf:steam_blast_furnace_empty_box"
 	},
 	"right": {
 		"type": "item",

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:electric_quarry_placer",
-		"remainder": "item:kubejs:electric_quarry_empty_box"
+		"id": "milf:electric_quarry_placer",
+		"remainder": "item:milf:electric_quarry_empty_box"
 	},
 	"right": {
 		"type": "item",

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:coke_oven_placer",
-		"remainder": "item:kubejs:coke_oven_empty_box"
+		"id": "milf:coke_oven_placer",
+		"remainder": "item:milf:coke_oven_empty_box"
 	},
 	"right": {
 		"type": "item",

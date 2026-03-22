@@ -551,10 +551,10 @@ multiblocksForPlacers.forEach(template => {
         tagBlock: "milf:placers",
         property: (template.activeMachineShape == undefined ? enabledProperty : [enabledProperty, activeMachineShapeProperty]),
         defaultState: (template.activeMachineShape == undefined ? { cycle: enabledProperty } : { cycle: enabledProperty , setProperty:{property:activeMachineShapeProperty, value:template.activeMachineShape}}),
-        parentModel: "kubejs:block/box_closed",
+        parentModel: "milf:block/box_closed",
         lang: template.langPlacers
     })
-    global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime[`kubejs:${nameString}_placer`] = `${template.mod}:${itemName}`
+    global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime[`milf:${nameString}_placer`] = `${template.mod}:${itemName}`
     createNewBlock(`${nameString}_empty_box`, {
         blockType: "cardinal",
         defaultCutout: true,
@@ -563,59 +563,9 @@ multiblocksForPlacers.forEach(template => {
         tagBlock: "milf:empty_box",
         property: (template.activeMachineShape == undefined ? enabledProperty : [enabledProperty, activeMachineShapeProperty]),
         defaultState: (template.activeMachineShape == undefined ? { cycle: enabledProperty } : { cycle: enabledProperty , setProperty:{property:activeMachineShapeProperty, value:template.activeMachineShape}}),
-        parentModel: "kubejs:block/box_open",
+        parentModel: "milf:block/box_open",
         noDrops: true,
         lang: template.langBoxes
     })
-    global.AnotherDefinitelyUniqueNameForBoxes[`kubejs:${nameString}_empty_box`] = `${template.mod}:${itemName}`
+    global.AnotherDefinitelyUniqueNameForBoxes[`milf:${nameString}_empty_box`] = `${template.mod}:${itemName}`
 });
-
-//JSONs shenanigans
-// ore_list.forEach(ore => {
-//     const blockstatesJsonPath = `kubejs/assets/kubejs/blockstates/${ore.itemName}_ore_sample.json`;
-//     const blockstatesJson = {"variants": {"": []}}
-
-//     for(let i = 1; i <=6; i++){
-//         let modelsJsonPath = `kubejs/assets/kubejs/models/block/ore_samples/${ore.itemName}_ore_sample_${i}.json`
-//         let modelsJson = {
-//             "parent": `kubejs:block/ore_sample_${i}`,
-//             "textures": {
-//                 "ore": `${ore.directory}:block/${ore.itemName}_ore`,
-//             }
-//         }
-//         if(ore.uniqueBase){modelsJson.textures["0"] = ore.uniqueBase}
-//         if(ore.uniqueOre){modelsJson.textures["ore"] = ore.uniqueOre}
-//         JsonIO.write(modelsJsonPath, JSON.stringify(modelsJson, null, 2))
-//         blockstatesJson.variants[""].push(
-//                 {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`,"weight":1},
-//                 {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 90,"weight":1},
-//                 {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 180,"weight":1},
-//                 {"model": `kubejs:block/ore_samples/${ore.itemName}_ore_sample_${i}`, "y": 270,"weight":1},
-//         )
-//     }
-//     JsonIO.write(blockstatesJsonPath, JSON.stringify(blockstatesJson, null, 2))
-// })
-
-// multiblocksForPlacers.forEach(name => {
-//     const [nameString, itemName] = Array.isArray(name.name) ? [name.name[0], name.name[1]] : [name.name, name.name]
-//     const emiJsonPath = `kubejs/assets/emi/recipe/additions/${nameString}_placer.json`;
-//     const left = {
-//         "type": "item",
-//         "id": `kubejs:${nameString}_placer`,
-//         "remainder": `item:kubejs:${nameString}_empty_box`
-//     }
-//     const right = {
-//         "type": "item",
-//         "id": "immersiveengineering:hammer",
-//         "chance": 0
-//     }
-//     const Json = {
-//         "type": "emi:world_interaction",
-//         "left":left,
-//         "right":right,
-//         "output": `item:${name.mod}:${itemName}`
-//     }
-//     JsonIO.write(emiJsonPath, Json)
-// }) 
-/*
-*/

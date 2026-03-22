@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:enigma_machine_placer",
-		"remainder": "item:kubejs:enigma_machine_empty_box"
+		"id": "milf:enigma_machine_placer",
+		"remainder": "item:milf:enigma_machine_empty_box"
 	},
 	"right": {
 		"type": "item",

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:radio_transcriber_placer",
-		"remainder": "item:kubejs:radio_transcriber_empty_box"
+		"id": "milf:radio_transcriber_placer",
+		"remainder": "item:milf:radio_transcriber_empty_box"
 	},
 	"right": {
 		"type": "item",

@@ -64,16 +64,5 @@
       "toggle": false,
       "mode": "AUTO"
     }
-  },
-  {
-    "id": "key_19c9c304c19",
-    "title": "World Tier Select",
-    "icon": "apotheosis:boss_summoner",
-    "action": {
-      "type": "KEY",
-      "name": "key.apotheosis.open_world_tier_select",
-      "toggle": false,
-      "mode": "AUTO"
-    }
   }
 ]

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:lightning_rod_placer",
-		"remainder": "item:kubejs:lightning_rod_empty_box"
+		"id": "milf:lightning_rod_placer",
+		"remainder": "item:milf:lightning_rod_empty_box"
 	},
 	"right": {
 		"type": "item",

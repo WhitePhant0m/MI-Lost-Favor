@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:assembler_placer",
-		"remainder": "item:kubejs:assembler_empty_box"
+		"id": "milf:assembler_placer",
+		"remainder": "item:milf:assembler_empty_box"
 	},
 	"right": {
 		"type": "item",

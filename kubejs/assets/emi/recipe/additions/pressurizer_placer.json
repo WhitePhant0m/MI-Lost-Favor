@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:pressurizer_placer",
-		"remainder": "item:kubejs:pressurizer_empty_box"
+		"id": "milf:pressurizer_placer",
+		"remainder": "item:milf:pressurizer_empty_box"
 	},
 	"right": {
 		"type": "item",

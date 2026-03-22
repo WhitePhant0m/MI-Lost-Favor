@@ -1,9 +1,10 @@
 let $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
+const CHUNK_FLAG = "milf:chunk_flag"
 
-BlockEvents.rightClicked("kubejs:chunk_flag", event =>{
+BlockEvents.rightClicked(CHUNK_FLAG, event =>{
     if(event.getHand()=="OFF_HAND") event.cancel()
     const chunkManager = $FTBChunksAPI.getManager()
-    if (event.player.getMainHandItem().id == "kubejs:chunk_flag" && chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos))){
+    if (event.player.getMainHandItem().id == CHUNK_FLAG && chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos))){
         sendImmersiveMessage(Text.translatable("milf.flags.occupied").append(Component.of(chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos)).teamData.team.getName())), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
         let playerInventory = event.player.inventoryMenu
         event.server.scheduleInTicks(1, _ =>  playerInventory.broadcastFullState())
@@ -31,7 +32,7 @@ BlockEvents.rightClicked("kubejs:chunk_flag", event =>{
     }
 })
 
-BlockEvents.placed("kubejs:chunk_flag", event =>{
+BlockEvents.placed(CHUNK_FLAG, event =>{
     const chunkManager = $FTBChunksAPI.getManager()
     const blockChunkPos = new $ChunkPos(event.block.getPos())
 
@@ -49,7 +50,7 @@ BlockEvents.placed("kubejs:chunk_flag", event =>{
     sendImmersiveMessage(Text.translatable("milf.flags.claimed"), event.getPlayer(), Object.assign({}, DEFAULT_CHUNK_CLAIM_NOTIFICATION_STYLE, {background:{borderTopColor:color}}) , event.server)    
 })
 
-BlockEvents.broken("kubejs:chunk_flag", event =>{
+BlockEvents.broken(CHUNK_FLAG, event =>{
     const chunkManager = $FTBChunksAPI.getManager()
     event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:false}))
     if (chunkManager.getChunk($ChunkDimPos(event.level, event.block.pos))){

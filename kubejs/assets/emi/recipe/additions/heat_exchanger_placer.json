@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:heat_exchanger_placer",
-		"remainder": "item:kubejs:heat_exchanger_empty_box"
+		"id": "milf:heat_exchanger_placer",
+		"remainder": "item:milf:heat_exchanger_empty_box"
 	},
 	"right": {
 		"type": "item",

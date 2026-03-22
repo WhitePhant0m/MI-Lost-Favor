@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:derrick_placer",
-		"remainder": "item:kubejs:derrick_empty_box"
+		"id": "milf:derrick_placer",
+		"remainder": "item:milf:derrick_empty_box"
 	},
 	"right": {
 		"type": "item",

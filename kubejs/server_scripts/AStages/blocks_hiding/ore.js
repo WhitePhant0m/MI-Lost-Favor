@@ -80,7 +80,7 @@ ore_samples.forEach(element => {
         AStages.addRestrictionForOre(
             `astages/samples/${element.sample_name}_sample_${facing.id}`,
             element.stage,
-            Block.getBlock(`kubejs:${element.sample_name}_ore_sample`).defaultBlockState().setValue(BlockProperties.HORIZONTAL_FACING, facing.direction),
+            Block.getBlock(`milf:${element.sample_name}_ore_sample`).defaultBlockState().setValue(BlockProperties.HORIZONTAL_FACING, facing.direction),
             element.rock_type
         )
     })

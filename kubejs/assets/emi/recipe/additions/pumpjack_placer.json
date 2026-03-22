@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:pumpjack_placer",
-		"remainder": "item:kubejs:pumpjack_empty_box"
+		"id": "milf:pumpjack_placer",
+		"remainder": "item:milf:pumpjack_empty_box"
 	},
 	"right": {
 		"type": "item",

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:chunk_loader_placer",
-		"remainder": "item:kubejs:chunk_loader_empty_box"
+		"id": "milf:chunk_loader_placer",
+		"remainder": "item:milf:chunk_loader_empty_box"
 	},
 	"right": {
 		"type": "item",

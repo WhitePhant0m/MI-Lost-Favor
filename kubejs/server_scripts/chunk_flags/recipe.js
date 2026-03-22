@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
             P: {item:"labels:label"},
             S: {tag:"c:wood_sticks"}
         },
-        outputItems:[[{"id": "kubejs:chunk_flag"}, 1]],
+        outputItems:[[{"id": "milf:chunk_flag"}, 1]],
         removeRecipe:true
     })
 

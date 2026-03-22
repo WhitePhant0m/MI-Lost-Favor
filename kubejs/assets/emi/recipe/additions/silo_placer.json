@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:silo_placer",
-		"remainder": "item:kubejs:silo_empty_box"
+		"id": "milf:silo_placer",
+		"remainder": "item:milf:silo_empty_box"
 	},
 	"right": {
 		"type": "item",

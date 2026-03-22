@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:large_electric_macerator_placer",
-		"remainder": "item:kubejs:large_electric_macerator_empty_box"
+		"id": "milf:large_electric_macerator_placer",
+		"remainder": "item:milf:large_electric_macerator_empty_box"
 	},
 	"right": {
 		"type": "item",

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:distillationtower_placer",
-		"remainder": "item:kubejs:distillationtower_empty_box"
+		"id": "milf:distillationtower_placer",
+		"remainder": "item:milf:distillationtower_empty_box"
 	},
 	"right": {
 		"type": "item",

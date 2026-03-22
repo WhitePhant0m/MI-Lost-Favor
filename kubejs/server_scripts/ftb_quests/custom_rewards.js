@@ -119,6 +119,7 @@ const radial_menu_buttons = [
     { quest_id: '472BCEE94E93C2FF', action_name: 'Open Trinket Pouch', key_name: 'key.ars_elemental.open_pouch', icon: "ars_elemental:curio_bag" },
     { quest_id: '0C6E1695C7D921E2', action_name: 'Open Backpack', key_name: 'key.sophisticatedbackpacks.open_backpack', icon: "sophisticatedbackpacks:backpack" },
     { quest_id: '0A58BA17068FCA2C', action_name: 'Toggle Sail', key_name: 'key.smallships.ship_sail', icon: "smallships:sail" },
+    { quest_id: '631ABDA3AFF1EE5B', action_name: 'World Tier Select', key_name: 'key.apotheosis.open_world_tier_select', icon: "apotheosis:boss_summoner" },
 ]
 
 radial_menu_buttons.forEach(element => {

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:dragon_egg_energy_siphon_placer",
-		"remainder": "item:kubejs:dragon_egg_energy_siphon_empty_box"
+		"id": "milf:dragon_egg_energy_siphon_placer",
+		"remainder": "item:milf:dragon_egg_energy_siphon_empty_box"
 	},
 	"right": {
 		"type": "item",

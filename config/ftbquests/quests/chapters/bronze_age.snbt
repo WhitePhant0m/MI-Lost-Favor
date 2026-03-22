@@ -344,7 +344,7 @@
 				id: "706916E7485006F8"
 				item: {
 					count: 1
-					id: "kubejs:coke_oven_placer"
+					id: "milf:coke_oven_placer"
 				}
 				type: "item"
 			}]
@@ -395,7 +395,7 @@
 				id: "34CA2A4D809FE50E"
 				item: {
 					count: 1
-					id: "kubejs:steam_blast_furnace_placer"
+					id: "milf:steam_blast_furnace_placer"
 				}
 				type: "item"
 			}]
@@ -518,7 +518,7 @@
 				id: "5E523EA36C0D069D"
 				item: {
 					count: 1
-					id: "kubejs:excavator_full_placer"
+					id: "milf:excavator_full_placer"
 				}
 				type: "item"
 			}]
@@ -741,7 +741,7 @@
 				id: "2020C03083CEDAEE"
 				item: {
 					count: 1
-					id: "kubejs:metal_press_placer"
+					id: "milf:metal_press_placer"
 				}
 				type: "item"
 			}]
@@ -873,7 +873,7 @@
 				id: "2AFBDF87645D17A6"
 				item: {
 					count: 1
-					id: "kubejs:crusher_placer"
+					id: "milf:crusher_placer"
 				}
 				type: "item"
 			}]
@@ -953,7 +953,7 @@
 				id: "2C58E2D3310C768D"
 				item: {
 					count: 1
-					id: "kubejs:refinery_placer"
+					id: "milf:refinery_placer"
 				}
 				type: "item"
 			}]
@@ -1027,7 +1027,7 @@
 				id: "3628C5AEF93903FA"
 				item: {
 					count: 1
-					id: "kubejs:fermenter_placer"
+					id: "milf:fermenter_placer"
 				}
 				type: "item"
 			}]
@@ -1101,7 +1101,7 @@
 				id: "599114D212F5CB4D"
 				item: {
 					count: 1
-					id: "kubejs:squeezer_placer"
+					id: "milf:squeezer_placer"
 				}
 				type: "item"
 			}]
@@ -1453,7 +1453,7 @@
 				id: "5DDCCD2238CD5C91"
 				item: {
 					count: 1
-					id: "kubejs:bottling_machine_placer"
+					id: "milf:bottling_machine_placer"
 				}
 				type: "item"
 			}]
@@ -1745,7 +1745,7 @@
 				id: "349A1C2A7899CAED"
 				item: {
 					count: 1
-					id: "kubejs:sheetmetal_tank_placer"
+					id: "milf:sheetmetal_tank_placer"
 				}
 				type: "item"
 			}]
@@ -2003,7 +2003,7 @@
 				id: "77FF02A4B5F6A9E9"
 				item: {
 					count: 1
-					id: "kubejs:large_steam_macerator_placer"
+					id: "milf:large_steam_macerator_placer"
 				}
 				type: "item"
 			}]
@@ -2034,7 +2034,7 @@
 				id: "6FB2FBC8EC1B9BC3"
 				item: {
 					count: 1
-					id: "kubejs:advanced_large_steam_furnace_placer"
+					id: "milf:advanced_large_steam_furnace_placer"
 				}
 				type: "item"
 			}]
@@ -3056,7 +3056,7 @@
 				id: "2AA9EBDCCF1C7719"
 				item: {
 					count: 1
-					id: "kubejs:large_steam_boiler_placer"
+					id: "milf:large_steam_boiler_placer"
 				}
 				type: "item"
 			}]
@@ -3798,14 +3798,14 @@
 					id: "477411EB25669240"
 					item: {
 						count: 1
-						id: "kubejs:saeta_plush"
+						id: "milf:saeta_plush"
 					}
 					type: "item"
 				}
 				{
 					auto: "enabled"
 					icon: {
-						id: "kubejs:vacuum_freezer_placer"
+						id: "milf:vacuum_freezer_placer"
 					}
 					id: "5BA06D58446F6FDD"
 					type: "custom"
@@ -3814,7 +3814,7 @@
 					id: "0FE29634A114BEAD"
 					item: {
 						count: 1
-						id: "kubejs:multiblock_packer_3000_safety_regulations_edition_placer"
+						id: "milf:multiblock_packer_3000_safety_regulations_edition_placer"
 					}
 					type: "item"
 				}
@@ -4468,7 +4468,7 @@
 				id: "7627C51F970E6FB7"
 				item: {
 					count: 1
-					id: "kubejs:advanced_steam_blast_furnace_placer"
+					id: "milf:advanced_steam_blast_furnace_placer"
 				}
 				type: "item"
 			}]
@@ -4511,7 +4511,7 @@
 				id: "72EDEEC561C9CB9B"
 				item: {
 					count: 1
-					id: "kubejs:advanced_steam_alloy_smelter_placer"
+					id: "milf:advanced_steam_alloy_smelter_placer"
 				}
 				type: "item"
 			}]
@@ -4715,7 +4715,7 @@
 		{
 			dependencies: ["582F02F8A2F308E7"]
 			icon: {
-				id: "kubejs:saeta_plush"
+				id: "milf:saeta_plush"
 			}
 			id: "68EFB14826CB715C"
 			rewards: [{

@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:large_diesel_generator_placer",
-		"remainder": "item:kubejs:large_diesel_generator_empty_box"
+		"id": "milf:large_diesel_generator_placer",
+		"remainder": "item:milf:large_diesel_generator_empty_box"
 	},
 	"right": {
 		"type": "item",

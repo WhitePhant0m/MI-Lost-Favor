@@ -2,8 +2,8 @@
 	"type": "emi:world_interaction",
 	"left": {
 		"type": "item",
-		"id": "kubejs:multiblock_packer_3000_safety_regulations_edition_placer",
-		"remainder": "item:kubejs:multiblock_packer_3000_safety_regulations_edition_empty_box"
+		"id": "milf:multiblock_packer_3000_safety_regulations_edition_placer",
+		"remainder": "item:milf:multiblock_packer_3000_safety_regulations_edition_empty_box"
 	},
 	"right": {
 		"type": "item",
