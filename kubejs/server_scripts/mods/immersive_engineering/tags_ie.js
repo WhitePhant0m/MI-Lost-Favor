@@ -29,6 +29,8 @@ ServerEvents.tags('item', event => {
 
     event.add('c:rods/treated_wood','immersiveengineering:stick_treated')
 
+    event.add('milf:accumulator', ['immersiveengineering:capacitor_mv', 'immersiveengineering:capacitor_lv', 'immersiveengineering:capacitor_hv'])
+
 })
 
 ServerEvents.tags('block', event => {
@@ -58,10 +60,11 @@ ServerEvents.tags('block', event => {
 })
 
 // Remove & add tags from IE fluids
-// ServerEvents.tags('fluid', event => {
+ServerEvents.tags('fluid', event => {
 
-//     event.removeAllTagsFrom([
-//         'immersiveengineering:ethanol',
-//         'immersiveengineering:biodiesel'
-//     ])
-// })
+    event.removeAllTagsFrom([
+        // 'immersiveengineering:ethanol',
+        // 'immersiveengineering:biodiesel',
+        'immersiveengineering:creosote'
+    ])
+})

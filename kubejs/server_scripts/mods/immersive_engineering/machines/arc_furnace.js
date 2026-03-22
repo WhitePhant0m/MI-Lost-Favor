@@ -35,18 +35,6 @@ const ieArcFurnaceCraft = (event, args) => {
 
 ServerEvents.recipes(event => {
 
-    ieArcFurnaceCraft(event,{
-        inputItems:[
-            [{tag: "c:ores/aluminum"}, 1]
-        ],
-        outputItems:[
-            [{item: "modern_industrialization:aluminum_ingot"}, 1],
-            [{item: "modern_industrialization:aluminum_ingot"}, 1, 0.5]
-
-        ],
-        slag:true
-    })
-
     //#region ae stuff
     //ae starter pack
     ieArcFurnaceCraft(event,{
@@ -109,6 +97,17 @@ ServerEvents.recipes(event => {
         ],
         outputItems:[
             [{"item": "kubejs:tempered_glass"}, 8]
+        ],
+        slag:true
+    })
+
+    ieArcFurnaceCraft(event,{
+        inputItems:[
+            [{"item": "minecraft:iron_ingot"}, 3],
+            [{"item": "modern_industrialization:coke_dust"}, 1]
+        ],
+        outputItems:[
+            [{"item": "modern_industrialization:steel_ingot"}, 3]
         ],
         slag:true
     })

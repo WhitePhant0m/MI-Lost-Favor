@@ -42,13 +42,12 @@ ItemEvents.firstRightClicked("kubejs:dev_pen", event => {
                 if(key == "minecraft:air") continue
                 keyBlockMap[value] = key
             }
-            console.log(cube.toString())
-            console.log(JSON.stringify(keyBlockMap))
-            event.player.tell(Text.info("Shape arrays").clickCopy(cube.toString()).hover('Click to copy shape arrays'))
-            event.player.tell(Text.info("Shape keys").clickCopy(JSON.stringify(keyBlockMap)).hover('Click to copy key:id map'))
+            console.log(cube.join(',\n'))
+            console.log(JSON.stringify(keyBlockMap, null, 1))
+            event.player.tell(Text.info("Shape arrays").clickCopy(cube.join(',\n')).hover('Click to copy shape arrays'))
+            event.player.tell(Text.info("Shape keys").clickCopy(JSON.stringify(keyBlockMap, null, 1)).hover('Click to copy key:id map'))
             break;
     }
     mode++
     mode %= 3
 })
-

@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             B: {item:"kubejs:blank_blueprint"},
-            F: {item:"immersiveengineering:hemp_fabric"}
+            F: {item:"kubejs:steel_machine_bit"}
         },
         outputItems:[[{"components": {"immersiveengineering:blueprint": "Aircraft components"},"id": "immersiveengineering:blueprint"}, 1]]
     })

@@ -239,10 +239,31 @@ function getRelativeBlockProperties(blockProperties, structureData, blockID){
         multiblockslave:String(blockProperties.multiblockslave).slice(1, -1) === "true" ? true : false
     }
 
-    if (String(blockProperties.east).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("east", facing)] = true}
-    if (String(blockProperties.west).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("west", facing)] = true}
-    if (String(blockProperties.south).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("south", facing)] = true}
-    if (String(blockProperties.north).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("north", facing)] = true}
+    if(blockProperties.east){
+        let property = JSON.parse(blockProperties.east)
+        relativeProperties[directionRelativeTo("east", facing)] = property
+    }
+    if(blockProperties.west){
+        let property = JSON.parse(blockProperties.west)
+        relativeProperties[directionRelativeTo("west", facing)] = property
+    }
+    if(blockProperties.south){
+        let property = JSON.parse(blockProperties.south)
+        relativeProperties[directionRelativeTo("south", facing)] = property
+    }
+    if(blockProperties.north){
+        let property = JSON.parse(blockProperties.north)
+        relativeProperties[directionRelativeTo("north", facing)] = property
+    }
+    if(blockProperties.up){
+        let property = JSON.parse(blockProperties.up)
+        relativeProperties["up"] = property
+    }
+
+    // if (String(blockProperties.east).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("east", facing)] = true}
+    // if (String(blockProperties.west).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("west", facing)] = true}
+    // if (String(blockProperties.south).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("south", facing)] = true}
+    // if (String(blockProperties.north).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("north", facing)] = true}
 
     if (String(blockProperties.hanging).slice(1, -1) === "true") {relativeProperties.hanging = true}
     if (blockProperties.orientation) {relativeProperties.orientation = String(blockProperties.orientation).slice(1, -1)}

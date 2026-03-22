@@ -1,9 +1,12 @@
 MIMachineEvents.registerCasings(event => {
     event.registerBlockImitation("treated_wood_casing", "immersiveengineering:basic_engineering");
     event.registerBlockImitation("sheetmetal_steel_casing", "immersiveengineering:sheetmetal_steel");
+    event.registerBlockImitation("sheetmetal_aluminum_casing", "immersiveengineering:sheetmetal_aluminum");
+
     event.registerBlockImitation("fire_clay_bricks", "modern_industrialization:fire_clay_bricks");
     event.registerBlockImitation("blast_brick", "immersiveengineering:blastbrick");
     event.registerBlockImitation("steel_plated_bricks", "extended_industrialization:steel_plated_bricks");
+
     event.registerBlockImitation("bioresistant_machine_casing", "modern_industrialization:bioresistant_machine_casing");
     event.registerBlockImitation("bioactive_machine_casing", "modern_industrialization:bioactive_machine_casing");
     event.registerBlockImitation("biointensive_machine_casing", "modern_industrialization:biointensive_machine_casing");
@@ -325,22 +328,20 @@ registerMIMachine('enigma_machine', {itemsIn: true, itemsOut: true, casing: 'tre
 
 registerMIMachine('radio_transcriber', {itemsIn: true, itemsOut: true, casing: 'treated_wood_casing',
     shape: [
-        ['  SSMMMSS  ','           ','           ','           ','           ','           '],
-        [' SMMPPPMMS ','           ','           ','           ','           ','           '],
-        ['SMPPPPPPPMS','    SsS    ','           ','           ','           ','           '],
-        ['SMPPPPPPPMS','   sMHMs   ','    BEB    ','    wsw    ','           ','           '],
-        ['MPPPMMMPPPM','  SM   MS  ','   B   B   ','   w   w   ','           ','           '],
-        ['MPPPMMMPPPM','  sI   Os  ','   L   L   ','   s   s   ','           ','     T     '],
-        ['MPPPMMMPPPM','  SM   MS  ','   B   B   ','   w   w   ','           ','           '],
-        ['SMPPPPPPPMS','   s   s   ','           ','     B     ','           ','           '],
-        ['SMPPPPPPPMS','           ','           ','    B#B    ','    wtw    ','           '],
-        [' SMMPPPMMS ','           ','           ','           ','           ','           '],
-        ['  SSMMMSS  ','           ','           ','           ','           ','           '],
+        ['           ','           ','           ','           ','           '],
+        ['           ','           ','           ','           ','           '],
+        ['    sss    ','           ','           ','           ','           '],
+        ['   sMHMs   ','    BOB    ','    wsw    ','           ','           '],
+        ['  sM   Ms  ','   B   B   ','   w   w   ','           ','           '],
+        ['  sH   Hs  ','   L   L   ','   s   s   ','           ','     T     '],
+        ['  sM   Ms  ','   B   B   ','   w   w   ','           ','           '],
+        ['   s   s   ','           ','     B     ','           ','           '],
+        ['           ','           ','    E#I    ','    wtw    ','           '],
+        ['           ','           ','           ','           ','           '],
+        ['           ','           ','           ','           ','           '],
     ],
     shapeKeys: {
         M: "immersiveengineering:sheetmetal_steel",
-        P: "immersiveengineering:treated_wood_horizontal",
-        S: "immersiveengineering:slab_sheetmetal_steel",
         s: "immersiveengineering:slab_storage_steel",
         T: "immersiveengineering:radio_tower",
         B: "xkdeco:hollow_steel_beam",
@@ -371,6 +372,75 @@ registerPowerlessMIMachine('multiblock_packer_3000_safety_regulations_edition', 
     itemInputSlots: [[20, 35, 2, 2], [74, 35, 2, 2], [20, 89, 2, 2], [74, 89, 2, 2]],
     itemOutputSlots: [[56, 71, 1, 1]],
     mainCasing:'treated_wood_casing', mainOverlays: 'multiblock_packer', frontOverlay: true
+})
+
+registerMIMachine('steam_cracker', {itemsOut: true, fluidsIn:true, fluidsOut:true, casing: 'sheetmetal_steel_casing',
+    shape: [['A         A', 'A   a a   A', 'A   a a   A', 'AaaaaaaaaaA', 'Aa a a a aA', 'ABBBBBBBBBA', '           ', '           ', '           ', '           ', '  ABBBBBA  ', '           ', '           ', '           ', '  ABBBBBA  ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           '],
+            [' bCCCcCCCb ', ' b  aDa  b ', ' bdddEdddb ', 'abbbbbbbbba', 'aaeaeaeaeaa', 'BDe e e eDB', ' Ae e e eA ', ' AeaeaeaeA ', ' AbabababA ', ' ADaaaaaDA ', ' ADDBBBDDA ', ' AD     DA ', ' AFa   aFA ', ' ADaaaaaDA ', ' ADDBBBDDA ', '  DD   DD  ', '  ff   ff  ', '           ', '  BBBBBBB  ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           '],
+            [' CDDfffDDC ', '  DGaaaGD  ', ' d       d ', 'abbbbbbbbba', ' eegegegee ', 'BeeHeHeHeeB', ' eeHeHeHee ', ' eegegegee ', ' bbbbbbbbb ', ' DeeeaeeeD ', 'ADeeeBeeeDA', ' Deee eeeD ', ' Feee eeeF ', ' DeeeaeeeD ', 'ADeeeBeeeDA', ' Deee eeeD ', ' feee eeef ', '  eee eee  ', ' BeeeBeeeB ', '  eee eee  ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           '],
+            [' CDDfffDDC ', '  GD a DG  ', ' d       d ', 'abbeebeebba', 'aag     gaa', 'B H     H B', '  H     H  ', ' ag     ga ', ' abeebeeba ', ' ae eae ea ', 'BDe eBe eDB', '  e e e e  ', ' ae e e ea ', ' ae eae ea ', 'BDe eBe eDB', ' De e e eD ', ' fe e e ef ', '  e e e e  ', ' Beee eeeB ', '  eee eee  ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           '],
+            [' CffhhhffC ', 'aaa  a  aaa', 'ad       da', 'abbebbbebba', ' ee     ee ', 'Bee     eeB', ' ee     ee ', ' ee     ee ', ' bbebbbebb ', ' aeeeaeeea ', 'BBeeeBeeeBB', '  eee eee  ', '  eee eee  ', ' aeeeaeeea ', 'BBeeeBeeeBB', '  eeeAeee  ', '  eeeAeee  ', '  eeeAeee  ', ' BeeeAeeeB ', '  eeeAeee  ', '     A     ', '     A     ', '     A     ', '    BAB    ', '           ', '           ', '           ', '           '],
+            [' cffhhhffc ', ' DaaaaaaaD ', ' E   a   E ', 'abbbbabbbba', 'aag  a  gaa', 'B H  a  H B', '  H  a  H  ', ' ag  a  ga ', ' abbbabbba ', ' aaaaaaaaa ', 'BBBBBaBBBBB', '     a     ', '     a     ', ' aaaaaaaaa ', 'BBBBBaBBBBB', '    AaA    ', '    AaA    ', '    AaA    ', ' BB AaA BB ', '    AaA    ', '    AaA    ', '    AaA    ', '    AaA    ', '    AaA    ', '     a     ', '     a     ', '     a     ', '     a     '],
+            [' CffhhhffC ', 'aaa  a  aaa', 'ad       da', 'abbebbbebba', ' ee     ee ', 'Bee     eeB', ' ee     ee ', ' ee     ee ', ' bbebbbebb ', ' aeeeaeeea ', 'BBeeeBeeeBB', '  eee eee  ', '  eee eee  ', ' aeeeaeeea ', 'BBeeeBeeeBB', '  eeeAeee  ', '  eeeAeee  ', '  eeeAeee  ', ' BeeeAeeeB ', '  eeeAeee  ', '     A     ', '     A     ', '     A     ', '    BAB    ', '           ', '           ', '           ', '           '],
+            [' CDDfffDDC ', '  GD a DG  ', ' d       d ', 'abbeebeebba', 'aag     gaa', 'B H     H B', '  H     H  ', ' ag     ga ', ' abeebeeba ', ' ae eae ea ', 'BDe eBe eDB', '  e e e e  ', ' ae e e ea ', ' ae eae ea ', 'BDe eBe eDB', ' De e e eD ', ' fe e e ef ', '  e e e e  ', ' Beee eeeB ', '  eee eee  ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           '],
+            [' CDDfffDDC ', '  DGaaaGD  ', ' d       d ', 'abbbbbbbbba', ' eegegegee ', 'BeeHeHeHeeB', ' eeHeHeHee ', ' eegegegee ', ' bbbbbbbbb ', ' DeeeaeeeD ', 'ADeeeBeeeDA', ' Deee eeeD ', ' Feee eeeF ', ' DeeeaeeeD ', 'ADeeeBeeeDA', ' Deee eeeD ', ' feee eeef ', '  eee eee  ', ' BeeeBeeeB ', '  eee eee  ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           '],
+            [' bCCCcCCCb ', ' b  a#a  b ', ' bdddEdddb ', 'abbbbbbbbba', 'aaeaeaeaeaa', 'BDe e e eDB', ' Ae e e eA ', ' AeaeaeaeA ', ' AbabababA ', ' ADaaaaaDA ', ' ADDBBBDDA ', ' AD     DA ', ' AFa   aFA ', ' ADaaaaaDA ', ' ADDBBBDDA ', '  DD   DD  ', '  ff   ff  ', '           ', '  BBBBBBB  ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           '],
+            ['A         A', 'A   a a   A', 'A   a a   A', 'AaaaaaaaaaA', 'Aa a a a aA', 'ABBBBBBBBBA', '           ', '           ', '           ', '           ', '  ABBBBBA  ', '           ', '           ', '           ', '  ABBBBBA  ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ', '           ']],
+    shapeKeys: {"A": "immersiveengineering:steel_scaffolding_grate_top",
+                "a": "immersiveengineering:fluid_pipe",
+                "B": "immersiveengineering:slab_steel_scaffolding_grate_top",
+                "b": "immersiveengineering:concrete_tile",
+                "C": "immersiveengineering:steel_scaffolding_standard",
+                "c": {id:"immersiveengineering:sheetmetal_steel", hatches:["item_output"]},
+                "D": "immersiveengineering:sheetmetal_steel",
+                "d": "xkdeco:hollow_steel_beam",
+                "E": {id:"immersiveengineering:sheetmetal_steel", hatches:["energy_input"]},
+                "e": "immersiveengineering:sheetmetal_aluminum",
+                "F": {id:"immersiveengineering:sheetmetal_steel", hatches:["fluid_output"]},
+                "f": "immersiveengineering:slab_storage_steel",
+                "G": {id:"immersiveengineering:sheetmetal_steel", hatches:["fluid_input"]},
+                "g": "immersiveengineering:radiator",
+                "H": "immersiveengineering:light_engineering",
+                "h": "immersiveengineering:heavy_engineering"},
+    pBar: {x: 77, y: 73, name: 'arrow'},
+    itemOutputSlots: [[102, 115, 2, 1]],
+    fluidInputSlots:[[36, 75,2,1]],
+    fluidOutputSlots: [[102, 55, 2, 3]],
+    mainCasing:'sheetmetal_steel_casing', mainOverlays: 'coke_oven', frontOverlay: true
+})
+
+registerMIMachine('desalter', {itemsOut: true, fluidsIn:true, fluidsOut:true, casing: 'sheetmetal_aluminum_casing',
+    shape: [[' AAAAA ', '       ', '       ', '       ', '       ', '       ', '       '],
+            ['AAAAAAA', '  aaa  ', '  aBa  ', '  aba  ', ' CCCCC ', '       ', '       '],
+            ['AAaaaAA', ' a C a ', ' a   a ', ' a   a ', ' CaaaC ', '  ccc  ', '  DDD  '],
+            ['AAaaaAA', ' a C d ', ' a   a ', ' E   b ', ' CaaaC ', '  ccc  ', '  D D  '],
+            ['AAaaaAA', ' a C a ', ' a   a ', ' a   a ', ' CaaaC ', '  ccc  ', '  D D  '],
+            ['AAaaaAA', ' a C d ', ' a   a ', ' E   b ', ' CaaaC ', '  ccc  ', '  D D  '],
+            ['AAaaaAA', ' a C a ', ' a   a ', ' a   a ', ' CaaaC ', '  ccc  ', '  D D  '],
+            ['AAaaaAA', ' a C d ', ' a   a ', ' E   b ', ' CaaaC ', '  ccc  ', '  D D  '],
+            ['AAaaaAA', ' a C a ', ' a   a ', ' a   a ', ' Caaac ', '  cccc ', '  D DD '],
+            ['AAeeeAA', ' e C eF', ' e   eF', ' e   eF', ' CeeeeF', '  ccceF', '  D    '],
+            ['AAaaaAA', ' a C a ', ' a   a ', ' a   a ', ' Caaac ', '  cccc ', '  D DD '],
+            ['AAAAAAA', '  aba  ', '  a#a  ', '  aGa  ', ' Cggg  ', '  ggg  ', '  DDD  '],
+            [' AAAAA ', ' CCC   ', ' C     ', ' C     ', ' C     ', '       ', '       ']],
+    shapeKeys: {"A": "immersiveengineering:slab_concrete",
+                "a": "immersiveengineering:sheetmetal_aluminum",
+                "B": {id:"immersiveengineering:sheetmetal_aluminum", hatches:["fluid_output"]},
+                "b": "immersiveengineering:fluid_sorter",
+                "C": "immersiveengineering:fluid_pipe",
+                "c": "immersiveengineering:steel_scaffolding_grate_top",
+                "D": "immersiveengineering:steel_fence",
+                "d": {id:"immersiveengineering:sheetmetal_aluminum", hatches:["item_output"]},
+                "E": {id:"immersiveengineering:sheetmetal_aluminum", hatches:["fluid_input"]},
+                "e": "immersiveengineering:sheetmetal_steel",
+                "F": "immersiveengineering:metal_ladder_none",
+                "G": {id:"immersiveengineering:sheetmetal_aluminum", hatches:["energy_input"]},
+                "g": "xkdeco:hollow_steel_beam"},
+    pBar: {x: 77, y: 53, name: 'arrow'},
+    itemOutputSlots: [[61, 80, 3, 1]],
+    fluidInputSlots:[[36, 55,1,1], [79, 35, 1, 1]],
+    fluidOutputSlots: [[122, 55, 1, 1]],
+    mainCasing:'sheetmetal_aluminum_casing', mainOverlays: 'coke_oven', frontOverlay: true
 })
 
 registerMIMachine('electric_coke_oven', {itemsIn: true, itemsOut: true, fluidsIn:true, fluidsOut:true, casing: 'heatproof_machine_casing',

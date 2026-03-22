@@ -311,7 +311,7 @@ const multiblocksForPlacers = [
         langBoxes: {"en_us": `Vacuum Freezer ${en_usEmptyBox}`},
         mod:"modern_industrialization"
     },
-
+    //#custom stuff
     {
         name: ['enigma_machine', 'enigma_machine'],
         langPlacers: {"en_us": `Enigma Machine ${en_usPlacer}`},
@@ -322,6 +322,18 @@ const multiblocksForPlacers = [
         name: ['radio_transcriber', 'radio_transcriber'],
         langPlacers: {"en_us": `Radio Transcriber ${en_usPlacer}`},
         langBoxes: {"en_us": `Radio Transcriber ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['steam_cracker', 'steam_cracker'],
+        langPlacers: {"en_us": `Steam Cracker ${en_usPlacer}`},
+        langBoxes: {"en_us": `Steam Cracker ${en_usEmptyBox}`},
+        mod:"modern_industrialization"
+    },
+    {
+        name: ['desalter', 'desalter'],
+        langPlacers: {"en_us": `Desalter ${en_usPlacer}`},
+        langBoxes: {"en_us": `Desalter ${en_usEmptyBox}`},
         mod:"modern_industrialization"
     },
     //#endregion
@@ -341,12 +353,12 @@ const multiblocksForPlacers = [
         activeMachineShape: 0
     },
     {
-        name:"bioactive_chamber_shape_1",
+        name:["bioactive_chamber_shape_1", "bioactive_chamber"],
         mod:"mi_tweaks",
         activeMachineShape: 1
     },
     {
-        name:"bioactive_chamber_shape_2",
+        name:["bioactive_chamber_shape_2", "bioactive_chamber"],
         mod:"mi_tweaks",
         activeMachineShape: 2
     },

@@ -181,8 +181,6 @@ ServerEvents.recipes(event => {
         removeRecipe:true,
         compatOff:true
     })
-
-
     milfShaped(event, {
         pattern: [
             'ASA',
@@ -205,7 +203,6 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "milf:radio_tower_slab" }, 6]],
     })
-
     milfShaped(event, {
         pattern: [
             ' PC',
@@ -233,25 +230,6 @@ ServerEvents.recipes(event => {
             C: { item: "modern_industrialization:heatproof_machine_casing" }
         },
         outputItems: [[{ id: "modern_industrialization:invar_machine_casing_pipe" }, 2]],
-    })
-
-    milfShaped(event, {
-        pattern: [
-            "rir",
-            "ddd",
-            "ppp"
-        ],
-        key: {
-            i: { tag: "c:ingots/aluminum" },
-            d: { tag: "c:dyes/blue" },
-            r: { tag: "c:rods/aluminum" },
-            p: { tag: "c:paper" }
-        },
-        outputItems: [[{
-            "components": { "immersiveengineering:blueprint": "MI components" },
-            "id": "immersiveengineering:blueprint"
-        }, 1]],
-        compatOff: true
     })
 
     event.replaceOutput(
