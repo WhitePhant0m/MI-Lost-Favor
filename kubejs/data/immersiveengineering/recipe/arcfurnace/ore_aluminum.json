@@ -1,7 +1,7 @@
 {
   "type": "immersiveengineering:arc_furnace",
   "additives": [],
-  "energy": 640000,
+  "energy": 102400,
   "input": {
     "item": "modern_industrialization:bauxite_block"
   },
@@ -16,5 +16,5 @@
   "slag": {
     "tag": "c:slag"
   },
-  "time": 300
+  "time": 100
 }

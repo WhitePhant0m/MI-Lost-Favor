@@ -15,8 +15,7 @@ const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
         type: "immersiveengineering:crusher",
         input: args.inputItems[0][0],
         secondaries: [],
-        energy: args.energy || 102400,
-        time: args.time || 200
+        energy: args.energy || 3200,
     }
     args.outputItems.forEach((out, index) => {
         (index == 0) ? recipe.result = {basePredicate:out[0], count:out[1] ?? 1} : recipe.secondaries.push({output:out[0], count:out[1] || 1, chance:out[2]})
@@ -53,7 +52,7 @@ ServerEvents.recipes(event => {
             [{item: "minecraft:sand"}, 2],
             [{item: "modern_industrialization:saltpeter_dust"}, 1, 0.5]
         ],
-        compatTier:"electric",
+        compatTier:"steel",
     })
 
     ieCrusherCraft(event,{
@@ -62,7 +61,7 @@ ServerEvents.recipes(event => {
             [{item: "minecraft:red_sand"}, 2],
             [{item: "modern_industrialization:saltpeter_dust"}, 1, 0.5]
         ],
-        compatTier:"electric",
+        compatTier:"steel",
     })
 
     ieCrusherCraft(event,{
@@ -75,6 +74,11 @@ ServerEvents.recipes(event => {
         inputItems:[[{"item": "advanced_ae:shattered_singularity"}]],
         outputItems:[[{item: "advanced_ae:quantum_infused_dust"}, 2]],
         compatOff:true
+    })
+
+    ieCrusherCraft(event,{
+        inputItems:[[{"item": "modern_industrialization:fire_clay_brick"}]],
+        outputItems:[[{item: "modern_industrialization:fire_clay_dust"}, 1]],
     })
 
     let spectrumPowderTypes = ["spectrum:topaz_powder", "spectrum:amethyst_powder", "spectrum:citrine_powder", "spectrum:onyx_powder", "spectrum:moonstone_powder", "spectrum:quitoxic_powder"]
