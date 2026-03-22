@@ -1494,15 +1494,6 @@
 		"{@pagebreak}"
 		"Олово, пригодное для плавки"
 	]
-	quest.3F3D4E142EEE7C6B.quest_desc: [
-		"When dealing with Mandrakes, Banshees and other loud creatures, protection for your ears is essential."
-		""
-		"&lEarmuffs&r can dampen deafening sounds, rendering them bearable."
-		"{@pagebreak}"
-		"Когда вы имеете дело с мандрагорой, баньши и другими громкими существами, защита ушей просто необходима."
-		""
-		"&lНаушники&r могут приглушить оглушительные звуки, сделав их более терпимыми."
-	]
 	quest.3F70D40267927529.quest_desc: [
 		"After reviewing my old studies, I managed to obtain some recipe for making specialty blends for consumption. Maybe I'll try some a little each day. Although not a leaf more. This is a rather dangerous game."
 		"{@pagebreak}"
@@ -2562,11 +2553,7 @@
 		""
 		"Так же мне не следует пытаться прививать материалы, о которых я мало что знаю. Сначала мне нужно полностью изучить как растение так и свойство. В противном случае операция провалится еще до того, как начнётся, и все мои усилия будут сведены на нет. Далее я описал все возможные варианты превращений."
 	]
-	quest.715BBA6DCDA1C2F1.quest_desc: [
-		"Dropped by tall and short grass."
-		"{@pagebreak}"
-		"Выпадает из травы."
-	]
+	quest.715BBA6DCDA1C2F1.quest_desc: [""]
 	quest.7162B15B452A8B2E.quest_desc: [
 		"An attuned stone is a diamond which has been infused with magical energy."
 		""

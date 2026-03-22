@@ -59,8 +59,6 @@ ItemEvents.modifyTooltips(event => {
         'fruitsdelight:lemon_seeds',
         'fruitsdelight:hamimelon_seeds',
         'enchanted:water_artichoke_seeds',
-        'enchanted:belladonna_seeds',
-        'enchanted:mandrake_seeds',
         'enchanted:snowbell_seeds',
         'minecraft:wheat_seeds',
         'minecraft:pumpkin_seeds',

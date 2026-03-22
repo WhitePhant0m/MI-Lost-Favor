@@ -1057,7 +1057,10 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["0D25CAEE5110F2AE"]
+			dependencies: [
+				"0D25CAEE5110F2AE"
+				"51E3EA7E70ECE842"
+			]
 			id: "67C0B671FD134FC2"
 			tasks: [{
 				id: "5C66DDE11E0A0ED2"
@@ -2177,6 +2180,7 @@
 		{
 			dependencies: ["26E6571980D85436"]
 			id: "319E9DCC31DD5E11"
+			optional: true
 			tasks: [{
 				id: "67D8A1A7607035EC"
 				item: { components: { "hexerei:book": { book: "hexerei:book_of_colors", bookmarks: [ { color: "white", id: "", index: 0 }, { color: "white", id: "", index: 1 }, { color: "white", id: "", index: 2 }, { color: "white", id: "", index: 3 }, { color: "white", id: "", index: 4 }, { color: "white", id: "", index: 5 }, { color: "white", id: "", index: 6 }, { color: "white", id: "", index: 7 }, { color: "white", id: "", index: 8 }, { color: "white", id: "", index: 9 }, { color: "white", id: "", index: 10 }, { color: "white", id: "", index: 11 }, { color: "white", id: "", index: 12 }, { color: "white", id: "", index: 13 }, { color: "white", id: "", index: 14 }, { color: "white", id: "", index: 15 }, { color: "white", id: "", index: 16 }, { color: "white", id: "", index: 17 }, { color: "white", id: "", index: 18 }, { color: "white", id: "", index: 19 } ], chapter: 0, opened: 0b, page: 0, uuid: [I; 1779040318, -49593144, -1927477659, -1740535917 ] } }, count: 1, id: "hexerei:book_of_colors" }
@@ -2188,6 +2192,7 @@
 		{
 			dependencies: ["26E6571980D85436"]
 			id: "19A49B12170A525F"
+			optional: true
 			tasks: [{
 				id: "671D4EBCA2C7F442"
 				item: { components: { "hexerei:book": { book: "hexerei:notebook", bookmarks: [ { color: "white", id: "", index: 0 }, { color: "white", id: "", index: 1 }, { color: "white", id: "", index: 2 }, { color: "white", id: "", index: 3 }, { color: "white", id: "", index: 4 }, { color: "white", id: "", index: 5 }, { color: "white", id: "", index: 6 }, { color: "white", id: "", index: 7 }, { color: "white", id: "", index: 8 }, { color: "white", id: "", index: 9 }, { color: "white", id: "", index: 10 }, { color: "white", id: "", index: 11 }, { color: "white", id: "", index: 12 }, { color: "white", id: "", index: 13 }, { color: "white", id: "", index: 14 }, { color: "white", id: "", index: 15 }, { color: "white", id: "", index: 16 }, { color: "white", id: "", index: 17 }, { color: "white", id: "", index: 18 }, { color: "white", id: "", index: 19 } ], chapter: 0, opened: 0b, page: 0, uuid: [I; 344582520, 984108583, -2010483782, 1618757505 ] } }, count: 1, id: "hexerei:notebook" }
@@ -2199,6 +2204,7 @@
 		{
 			dependencies: ["319E9DCC31DD5E11"]
 			id: "524DE508084F97B2"
+			optional: true
 			tasks: [{
 				id: "15D71E3104BD7CCA"
 				item: { count: 1, id: "hexerei:book_canvas" }
@@ -2212,6 +2218,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "601E130974910962"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "3A0DAF1B719F9578"
@@ -2226,6 +2233,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "7C5F23F3067032FF"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "18DF32EC8A346CBD"
@@ -2240,6 +2248,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "09D83BB32728E07C"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "0EF782FDFD178CD2"
@@ -2254,6 +2263,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "755C5C101E08EDF6"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "48473E5B1249DD41"
@@ -2268,6 +2278,7 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "144CD038830C0164"
+			optional: true
 			shape: "diamond"
 			tasks: [{
 				id: "7DD953DB853F8F24"
@@ -2616,17 +2627,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["715BBA6DCDA1C2F1"]
-			id: "3F3D4E142EEE7C6B"
-			tasks: [{
-				id: "08D6F2D7AD50E165"
-				item: { count: 1, id: "enchanted:earmuffs" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: -2.0d
-		}
-		{
 			dependencies: ["5645E4DA993EDC3D"]
 			id: "43141E73595BA04F"
 			tasks: [{
@@ -2668,16 +2668,6 @@
 				{
 					id: "344749AE23CABCC3"
 					item: { count: 1, id: "enchanted:water_artichoke_seeds" }
-					type: "item"
-				}
-				{
-					id: "2F20B499B925BE1E"
-					item: { count: 1, id: "enchanted:belladonna_seeds" }
-					type: "item"
-				}
-				{
-					id: "3CF8089ACA16817F"
-					item: { count: 1, id: "enchanted:mandrake_seeds" }
 					type: "item"
 				}
 				{

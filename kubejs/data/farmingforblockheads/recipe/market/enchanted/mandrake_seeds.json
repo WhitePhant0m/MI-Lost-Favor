@@ -3,6 +3,6 @@
     "category": "farmingforblockheads:seeds",
     "preset": "enchanted:seeds",
     "result": {
-        "item": "enchanted:mandrake_seeds"
+        "item": "hexerei:mandrake_plant"
     }
 }

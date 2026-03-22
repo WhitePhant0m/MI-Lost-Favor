@@ -1,0 +1,23 @@
+{
+  "type": "enchanted:kettle",
+  "cook_colour": "1A4723",
+  "final_colour": "3E804E",
+  "ingredients": [
+    {
+      "count": 1,
+      "id": "hexerei:mandrake_root"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:exhale_of_the_horned_one"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "id": "enchanted:mutandis"
+  }
+}

@@ -43,14 +43,14 @@ ServerEvents.recipes(event => {
         fluid: "minecraft:lava",
         fluidAmount: 1000,
         ingredients: [
-            { "tag": "paganbless:herbs" },
-            { "tag": "paganbless:herbs" },
+            { "tag": "hexerei:flower_biproduct" },
+            { "tag": "hexerei:flower_biproduct" },
             { "tag": "c:cobblestones/deepslate" },
             { "tag": "c:cobblestones/deepslate" },
             { "tag": "c:cobblestones/deepslate" },
             { "tag": "c:cobblestones/deepslate" },
             { "tag": "c:cobblestones/deepslate" },
-            { "tag": "paganbless:herbs" },
+            { "tag": "hexerei:flower_biproduct" },
         ],
         output: "paganbless:rune_slab_inert",
         removeRecipe: true
@@ -61,13 +61,13 @@ ServerEvents.recipes(event => {
         fluidAmount: 500,
         ingredients: [
             { "item": "minecraft:glass_bottle" },
-            { "tag": "paganbless:herbs" },
+            { "tag": "hexerei:flower_biproduct" },
             { "item": "paganbless:essence_of_the_forest" },
             { "item": "paganbless:cinnabar" },
             { "item": "minecraft:amethyst_shard" },
             { "item": "paganbless:cinnabar" },
             { "item": "paganbless:essence_of_the_forest" },
-            { "tag": "paganbless:herbs" }
+            { "tag": "hexerei:flower_biproduct" }
         ],
         output: "paganbless:runic_charge",
         removeRecipe: true

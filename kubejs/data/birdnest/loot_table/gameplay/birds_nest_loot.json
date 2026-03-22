@@ -339,26 +339,7 @@
 				},
 				{
 					"type": "item",
-					"name": "enchanted:belladonna_seeds",
-					"functions": [
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
-						}
-					],
-					"conditions": [
-						{
-							"condition": "random_chance",
-							"chance": 0.50
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "enchanted:mandrake_seeds",
+					"name": "hexerei:mandrake_plant",
 					"functions": [
 						{
 							"function": "set_count",

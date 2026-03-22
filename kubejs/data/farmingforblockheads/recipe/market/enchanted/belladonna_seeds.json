@@ -3,6 +3,6 @@
     "category": "farmingforblockheads:seeds",
     "preset": "enchanted:seeds",
     "result": {
-        "item": "enchanted:belladonna_seeds"
+        "item": "hexerei:belladonna_plant"
     }
 }

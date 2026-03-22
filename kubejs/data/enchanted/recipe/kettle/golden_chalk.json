@@ -1,0 +1,24 @@
+{
+  "type": "enchanted:kettle",
+  "cook_colour": "594000",
+  "final_colour": "C29B00",
+  "ingredients": [
+    {
+      "count": 1,
+      "id": "hexerei:mandrake_root"
+    },
+    {
+      "count": 1,
+      "id": "minecraft:gold_nugget"
+    },
+    {
+      "count": 1,
+      "id": "enchanted:ritual_chalk"
+    }
+  ],
+  "power": 3000,
+  "result": {
+    "count": 1,
+    "id": "enchanted:golden_chalk"
+  }
+}

@@ -202,6 +202,21 @@ RecipeViewerEvents.removeEntries('item', event => {
         /immersiveengineering:ore_.*/,
         /immersiveengineering:deepslate_ore_.*/,
         "roots:flour",
+        'roots:silver_nugget', 
+        'roots:deepslate_silver_ore', 
+        'roots:silver_ore',
+        'paganbless:herb_pouch',
+        'paganbless:belladonna',
+        'paganbless:mandrake_root',
+        'paganbless:mandrake_root_plant',
+        'paganbless:belladonna_plant',
+        'enchanted:belladonna_flower',
+        'enchanted:belladonna_seeds',
+        'paganbless:hags_taper_plant',
+        'paganbless:hag_taper',
+        'paganbless:mugwort',
+        'paganbless:mugwort_plant',
+        'paganbless:imbuing_cauldron',
     ]
 
     list.forEach(item => {
