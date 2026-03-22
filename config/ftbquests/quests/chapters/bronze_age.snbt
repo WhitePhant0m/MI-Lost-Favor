@@ -1668,54 +1668,8 @@
 				item: { count: 1, id: "immersiveengineering:blueprint_shelf" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.5d
-		}
-		{
-			icon: {
-				id: "immersiveengineering:tank"
-			}
-			id: "4EF8906CE102966A"
-			rewards: [{
-				id: "349A1C2A7899CAED"
-				item: {
-					count: 1
-					id: "milf:sheetmetal_tank_placer"
-				}
-				type: "item"
-			}]
-			shape: "rsquare"
-			tasks: [
-				{
-					id: "390F3D9699D1CD10"
-					item: { count: 1, id: "immersiveengineering:tank" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2CE4EF50654F89B8"
-					observe_type: 0
-					timer: 0L
-					to_observe: "immersiveengineering:tank"
-					type: "observation"
-				}
-				{
-					count: 34L
-					id: "64431511AC9BE255"
-					item: { count: 1, id: "immersiveengineering:sheetmetal_iron" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "355DAC6E6AEE26B6"
-					item: { count: 1, id: "immersiveengineering:treated_fence" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -5.0d
-			y: 5.0d
+			x: -3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
