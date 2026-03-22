@@ -4102,36 +4102,75 @@
 				"4BE84E1BFBC425E0"
 				"22D0955A9CBE9EC3"
 			]
+			icon: {
+				id: "immersivepetroleum:distillation_tower"
+			}
 			id: "0B58EA0D81A92FF5"
-			tasks: [{
-				id: "00F0E2BAA3F55C07"
-				item: { count: 1, id: "immersivepetroleum:distillation_tower" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "00F0E2BAA3F55C07"
+					item: { count: 1, id: "immersivepetroleum:distillation_tower" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3CC5FD7B12C5F791"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersivepetroleum:distillation_tower"
+					type: "observation"
+				}
+			]
 			x: -17.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["0D667A432FB71068"]
+			icon: {
+				id: "immersivepetroleum:pumpjack"
+			}
 			id: "7E40FBDF9AA89DDC"
 			shape: "pentagon"
-			tasks: [{
-				id: "29C714656063AF10"
-				item: { count: 1, id: "immersivepetroleum:pumpjack" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "29C714656063AF10"
+					item: { count: 1, id: "immersivepetroleum:pumpjack" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4E0A03281FFF2760"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersivepetroleum:pumpjack"
+					type: "observation"
+				}
+			]
 			x: -14.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["14E14704351DD25A"]
+			icon: {
+				id: "immersivepetroleum:coker_unit"
+			}
 			id: "2096E5CDEB9973EA"
 			shape: "diamond"
-			tasks: [{
-				id: "67CA13425920E192"
-				item: { count: 1, id: "immersivepetroleum:coker_unit" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "67CA13425920E192"
+					item: { count: 1, id: "immersivepetroleum:coker_unit" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4D00C3DE973CE349"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersivepetroleum:coker_unit"
+					type: "observation"
+				}
+			]
 			x: -19.5d
 			y: 8.5d
 		}
@@ -4144,13 +4183,26 @@
 				"14424BCEB61D6D9F"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				id: "immersivepetroleum:hydrotreater"
+			}
 			id: "4C77B21F00672741"
 			shape: "rsquare"
-			tasks: [{
-				id: "59A8AEDBDD6A7198"
-				item: { count: 1, id: "immersivepetroleum:hydrotreater" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "59A8AEDBDD6A7198"
+					item: { count: 1, id: "immersivepetroleum:hydrotreater" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "64D5646BFA6BA450"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersivepetroleum:hydrotreater"
+					type: "observation"
+				}
+			]
 			x: -17.5d
 			y: 10.5d
 		}
@@ -4159,15 +4211,28 @@
 				"381149C8E59FDD27"
 				"589DCFCE3920A7A5"
 			]
+			icon: {
+				id: "immersivepetroleum:derrick"
+			}
 			icon_scale: 2.0d
 			id: "0D667A432FB71068"
 			shape: "octagon"
 			size: 2.0d
-			tasks: [{
-				id: "55013E7A494F7B32"
-				item: { count: 1, id: "immersivepetroleum:derrick" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "55013E7A494F7B32"
+					item: { count: 1, id: "immersivepetroleum:derrick" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E1752C05EE7F89C"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersivepetroleum:derrick"
+					type: "observation"
+				}
+			]
 			x: -14.0d
 			y: 6.5d
 		}
@@ -4486,12 +4551,25 @@
 		}
 		{
 			dependencies: ["44E1A2D20FA728BB"]
+			icon: {
+				id: "immersiveengineering:mixer"
+			}
 			id: "3A8ED6AD87B0CCB3"
-			tasks: [{
-				id: "6932957D5B6AAA7E"
-				item: { count: 1, id: "immersiveengineering:mixer" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6932957D5B6AAA7E"
+					item: { count: 1, id: "immersiveengineering:mixer" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "443B2DFFE44B0A64"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:mixer"
+					type: "observation"
+				}
+			]
 			x: -14.0d
 			y: 3.5d
 		}
@@ -4920,14 +4998,27 @@
 				"5E95B84E4620ED3E"
 				"500B36DA5E65AC1D"
 			]
+			icon: {
+				id: "immersiveengineering:radio_tower"
+			}
 			id: "133B214DA65F4335"
 			shape: "octagon"
 			size: 2.0d
-			tasks: [{
-				id: "668505FA49317EBB"
-				item: { count: 1, id: "immersiveengineering:radio_tower" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "668505FA49317EBB"
+					item: { count: 1, id: "immersiveengineering:radio_tower" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "452C5D016E812016"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:radio_tower"
+					type: "observation"
+				}
+			]
 			x: -22.5d
 			y: 6.5d
 		}
