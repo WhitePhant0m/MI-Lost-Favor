@@ -7,8 +7,19 @@ ServerEvents.recipes(event => {
         "occultism:silver_nugget",
         "roots:raw_silver",
         "roots:copper_nugget",
+        "roots:flour",
     ]})
-    event.remove({id: "roots:copper_ingot_from_nuggets"})
+
+    const removeById = [
+        "roots:bread_from_flour",
+        "roots:bread_from_smoking",
+        "roots:bread_from_campfire_cooking",
+        "roots:copper_ingot_from_nuggets",
+    ]
+
+    removeById.forEach(element => {
+        event.remove({id: element})
+    });
     
 
 })

@@ -199,6 +199,7 @@ RecipeViewerEvents.removeEntries('item', event => {
         /immersiveengineering:slab_storage_.*/,
         /immersiveengineering:ore_.*/,
         /immersiveengineering:deepslate_ore_.*/,
+        "roots:flour",
     ]
 
     list.forEach(item => {

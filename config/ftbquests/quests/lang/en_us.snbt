@@ -138,6 +138,34 @@
 		"{@pagebreak}"
 		"Нужно же где-то брать &4э&r&6н&r&eе&r&2р&r&bг&r&9и&r&5ю&r, верно?"
 	]
+	quest.038B188E6A6D3409.quest_desc: [
+		"Pyre crafting is the default source for all of the elemental herbs and a number of others."
+		""
+		"Rituals are performed by adding the relevant items to a pyre and then lighting it."
+		""
+		"Pyres can be lit using Fire Starters."
+		""
+		"If a pyre has previously performed a ritual (or craft), it will attempt to refill its inventory according to that recipe from any container directly below the pyre."
+		""
+		"If a pyre has ingredients to start the previous ritual (or craft) once the current one ends, it will automatically re-light itself and begin anew."
+		""
+		"Some rituals require specific conditions. Again, these can be viewed in EMI. They vary from pillars (a specific number of runestone or runed obsidian with chiseled runestone (or runed obsidian) above) to specific blocks, such as a source of water or a mature crop."
+		""
+		""
+		"{@pagebreak}"
+		""
+		"Изготовление костра — это основной способ получения всех элементарных трав и ряда других растений."
+		""
+		"Ритуалы проводятся путем добавления необходимых предметов на костёр и его последующего поджигания."
+		""
+		"Костры можно разжигать с помощью средств для розжига."
+		""
+		"Если костёр ранее использовался для проведения ритуала (или изготовления предмета), он попытается пополнить свой инвентарь в соответствии с этой рецептурой, взяв предметы из любого контейнера, расположенного непосредственно под ним."
+		""
+		"Если на костре есть все необходимое для начала предыдущего ритуала (или крафта) сразу после завершения текущего, он автоматически зажжется заново и начнёт сначала."
+		""
+		"Некоторые ритуалы требуют определённых условий. Их также можно посмотреть в EMI. Они варьируются от столбов (определённое количество рунических камней или обсидиана с высеченными рунами, над которым установлен рунический камень (или обсидиан с рунами)) до определённых объектов, таких как источник воды или созревший урожай."
+	]
 	quest.03FD9E737AD73A39.quest_desc: [
 		"The &#FEECD6Titrartion Barrel&r allows you to create &#9BB8EDalcoholic beverages&r and many other &#FEECD6dishes&r. There is one &nnuance&r - fermentation processes take &l&#FEECD6real hours&r or even &#FEECD6&ldays&r&r&r&r."
 		""
@@ -354,6 +382,11 @@
 		"Модернизации имеют &lтип&r, только лучшая модернизация в рамках типа будет засчитана."
 	]
 	quest.0E83A5E1B38BC5EF.quest_desc: ["тикает растение - даёт сурс"]
+	quest.0EA21DF34EFFEE11.quest_desc: [
+		"This ritual randomly generates and plants flowers based on the roots:ritual/blooming/eligible_flowers tag."
+		""
+		"By placing ritual pedestals nearby, any item on them that is also contained within the roots:ritual/blooming/eligible_pedestal_flowers will be generated instead."
+	]
 	quest.0EC6045881A3898D.quest_desc: ["Wild pig"]
 	quest.0F3DBB0D6EEF427E.quest_subtitle: "elevator in water"
 	quest.0F4825A153097924.quest_desc: [
@@ -458,7 +491,45 @@
 		""
 		"Эндер-Раздатчик работает только тогда, когда вы находитесь онлайн."
 	]
+	quest.149C708A13FF689E.quest_desc: [
+		"Heals nearby players and eligible entities (non-players)."
+		""
+		"{@pagebreak}"
+		""
+		"Исцеляет находящихся поблизости игроков и соответствующие объекты (неигровые персонажи)."
+	]
 	quest.14A425365D35DE37.quest_desc: ["хранит 1к~ уровней, поднимает опыт вокруг себя, можно менять радиус подъёма опыта"]
+	quest.14A95144323CCF2A.quest_desc: [
+		"This ritual converts the area around the pyre into a frozen wasteland."
+		""
+		"• Snow layers build up on the ground"
+		"• Snow golems are randomly created"
+		"• Snow golems are healed"
+		"• Entities on fire are extinguished"
+		"• Fires are extinguished"
+		"• Lava is converted to basalt"
+		"• Water is converted to ice"
+		"• Full layers of snow are converted to snow blocks"
+		"• Snow blocks are rarely converted to powdered snow"
+		"• Ice blocks are randomly converted to blue or packed ice"
+		"• Nearby farmland is moisturized"
+		""
+		"{@pagebreak}"
+		""
+		"Этот ритуал превращает территорию вокруг костра в замерзшую пустошь."
+		""
+		"• На земле образуются слои снега"
+		"• Случайным образом появляются снеговики"
+		"• Снеговики восстанавливаются"
+		"• Горящие объекты тушатся"
+		"• Пожары тушатся"
+		"• Лава превращается в базальт"
+		"• Вода превращается в лед"
+		"• Целые слои снега превращаются в снежные глыбы"
+		"• Снежные глыбы редко превращаются в пушистый снег"
+		"• Ледяные глыбы случайным образом превращаются в голубой лед или уплотнённый лед"
+		"• Близлежащие грядки увлажняются"
+	]
 	quest.14BA9A5CAC394A27.quest_desc: ["Allows the plant on which it is used to fully grow with only one compared to the Bone Meal. You can also make Magical Farm Land with it."]
 	quest.14D2170A0424A902.quest_desc: [
 		"Toxic paste is extremely unstable. But its volatility will be the highlight of my next alchemical instrument! Potions are too refined, too narrow. By creating a flask that yields greater capacity and putting a little bit of the paste inside, I can make a much more efficient and possibly renewable potion container."
@@ -482,6 +553,13 @@
 		"One &#FEECD6Ink Flask&r can have only &#9BB8EDone ink type&r. Ink Assortment can contain all types at once, but has less storage space."
 		"{@pagebreak}"
 		"Одна &#FEECD6баночка&r вмещает только &#9BB8ED1 тип&r краски, палитра вмещает больше типов, но в ней &#FEECD6не так много места&r как в баночках!"
+	]
+	quest.1559BA118477A8E7.quest_desc: [
+		""
+		""
+		"{@pagebreak}"
+		""
+		"Позволяет дробить разные предметы и создавать спеллы для посоха"
 	]
 	quest.16219C02EDE3F680.quest_desc: ["Получает сурс из сурс джаров и превращает его в жидкий сурс, далее с ним можно много приколов делать, например генератор сурс стоуна лава + ликвид сурс "]
 	quest.1664E9D5D87BDF33.quest_desc: [
@@ -644,6 +722,7 @@
 		"{@pagebreak}"
 		"Более продвинутая станция для создания зелий. Также может создавать некоторые другие жидкости."
 	]
+	quest.1DA5D5A871BCE97B.quest_desc: [""]
 	quest.1E136FE5D9294481.quest_desc: [
 		"Every &dmagician&r should have a &dmagic furnace&r."
 		""
@@ -746,6 +825,35 @@
 	]
 	quest.2141539997D6480F.quest_subtitle: "ADHD edition"
 	quest.2141539997D6480F.title: "<pend>Hi wrld"
+	quest.21F6AC561F759982.quest_desc: [
+		"The primary method of casting spells in Roots 4 is using the staff."
+		""
+		"Once you have crafted a staff, you can access the Spell Library using the default key binding \"K\". This key binding may be changed from the default, but will be displayed in the staff's tooltip."
+		""
+		"The spell library will display the 5 slots in your held staff, as well as all of the available spells."
+		""
+		"In the library pane, spells you have not learned will be transparent."
+		""
+		"Clicking on a slot in either the staff or the library will \"select\" that slot, highlighting it in gold. Clicking on another slot will perform an operation:"
+		""
+		"• If you have an empty spell slot selected, and you select a spell from the library that you know, that spell will be inserted into that slot."
+		"• If you have an empty slot selected, or a spell in the staff selected, and you select another slot in the staff, they will be swapped"
+		""
+		"{@pagebreak}"
+		""
+		"Основной способ применения заклинаний в Roots 4 — использование посоха."
+		""
+		"После изготовления посоха вы сможете открыть библиотеку заклинаний, нажав клавишу «K» (по умолчанию). Эту клавишу можно изменить, но она будет отображаться в подсказке к посоху."
+		""
+		"В библиотеке заклинаний отобразятся 5 слотов вашего посоха, а также все доступные заклинания."
+		""
+		"На панели библиотеки заклинания, которые вы ещё не выучили, будут прозрачными."
+		""
+		"При нажатии на слот на посохе или в библиотеке этот слот будет «выбран» и подсвечен золотым цветом. При нажатии на другой слот будет выполнена соответствующая операция:"
+		""
+		"• Если вы выбрали пустое ячейку заклинания и выбрали из библиотеки заклинание, которое вы знаете, это заклинание будет помещено в эту ячейку."
+		"• Если вы выбрали пустую ячейку или заклинание в списке, а затем выбрали другую ячейку в списке, они поменяются местами."
+	]
 	quest.223D9E832411A590.quest_desc: [
 		"Yeah, it's a &#FEECD6sponge&r. A &#ff6600Lava Sponge&r. Any more questions...?"
 		"{@pagebreak}"
@@ -760,6 +868,19 @@
 		"All crafts on the pedestal can be triggered with either a &#FEECD6paintbrush&r or a &#FEC6DFredstone signal&r, whichever is more convenient."
 		"{@pagebreak}"
 		"Все крафты на пьедесталах можно запускать &#FEECD6кисточкой&r, либо же &#FEC6DFредстоун сигналом&r, кому как удобнее."
+	]
+	quest.2271D13A27298492.quest_desc: [
+		"Elemental crops grow best on their matching elemental soil."
+		""
+		"On normal farmland, dewgonia must be waterlogged to grow."
+		""
+		"When harvested on normal farmland, elemental crops will always drop one with a chance to drop a second."
+		""
+		"On default (\"plain\") elemental soil or non-matching elemental soil, elemental crops will always drop two with a chance to drop a third."
+		""
+		"On matching elemental soil, elemental crops will always drop three with a chance to drop a fourth."
+		""
+		"Additional elemental crops will drop based on fortune."
 	]
 	quest.22867AA942456658.quest_desc: [
 		"It has been noted that the book on this table consumes quite a lot of FPS, so keep that in mind!"
@@ -873,6 +994,13 @@
 		"Всех &#FEECD6заинтересовавшихся&r приглашаем в книжку &#9BB8EDSpectrum&r'a, расписывать тут такую механику не видим смысла!"
 	]
 	quest.29F05931D0564717.quest_desc: [""]
+	quest.29FA10735AAE30F5.quest_desc: [
+		"This ritual creates meteors that fall from the sky, damaging entities."
+		""
+		"{@pagebreak}"
+		""
+		"Этот ритуал вызывает появление метеоров, падающих с неба и наносящих урон существам."
+	]
 	quest.2A60D184399CE876.quest_desc: [
 		"A &#FEECD6Bottomless Bundle&r&r allows you to store a &l&#FEECD6huge&r&r amount of items of a single type, very handy in mines!"
 		"{@pagebreak}"
@@ -1060,6 +1188,13 @@
 		"Эти грибы выглядят мрачно, но их &lкора&r такая аппетитная"
 	]
 	quest.30FA92F29B6D0477.quest_desc: ["Same effect as Aqua Affinity, but it allows you to have a normal breaking block speed while moving"]
+	quest.31094A802FB1E77B.quest_desc: [
+		"Sprouts can be tempted and bred with aubergine."
+		""
+		"After creating a baby sprout, both parents will offer a gift and will show a gift box above their heads."
+		""
+		"Gifts can be acquired from sprouts by right-clicking them with an empty hand."
+	]
 	quest.316DB511541398F4.quest_desc: [
 		"Amalgam spawns in Deeper Down dungeons."
 		""
@@ -1225,6 +1360,20 @@
 		"[ \"Предшественник сундука и ваше первое(\", { \"text\": \"или не совсем первое?\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1E4A4AD1899325D3\" } }, \") надежное хранилище, может хранить до 9 стаков предметов.\" ]"
 	]
 	quest.38AAF5DFC8A1F13D.quest_subtitle: "How To Tame a Kindling"
+	quest.395C0E6A6E356175.quest_desc: ["Forces nearby entities away from the location of the pyre."]
+	quest.39C5A110C0B7D9F4.quest_desc: [
+		"Clears the weather."
+		""
+		"Uses NeoForge's time options to speed up the night and slow down the day. By default, the night passes twice as fast."
+		""
+		"By default, the length of a day is increased by 60%."
+		"{@pagebreak}"
+		"Очищает погоду."
+		""
+		"Использует настройки времени NeoForge для ускорения ночи и замедления дня. По умолчанию ночь проходит в два раза быстрее."
+		""
+		"По умолчанию продолжительность дня увеличивается на 60 %."
+	]
 	quest.39C79097C7355375.quest_desc: ["The Crimson Stone is all about Souls. When used it the Hephaestus Forge it will half the Souls essence cost and when used in the Clibano it will increase the burn duration of inputted Souls (Soon). Crimson Stones can be found in Pillager Outpost loot chests (18% chance)."]
 	quest.3A47A5B107C19092.quest_desc: [
 		"Fancy, queen-sized patch of fiber"
@@ -1406,11 +1555,23 @@
 		"{@pagebreak}"
 		"Отключает спавн мобов в области"
 	]
+	quest.41FEB988E280DC1E.quest_desc: [
+		"This charm will play a warning sound from the location of a mob the moment that it targets you. It will also cause the edges of the screen to turn red before fading. It will also cause the mob to glow for a few seconds afterwards."
+		""
+		"{@pagebreak}"
+		""
+		"Этот талисман будет воспроизводить предупреждающий звук в том месте, где находится моб, в тот момент, когда он нацелится на вас. Кроме того, края экрана станут красными, а затем постепенно поблекнут. Также моб будет светиться в течение нескольких секунд после этого."
+	]
 	quest.4287B0D38E0C2A7A.quest_subtitle: "Entangled block"
 	quest.428850B1426EB3D4.quest_desc: ["Wild cow"]
 	quest.42B6798C0C2BD9E5.quest_desc: [
 		"All the bronze machines use steam to operate"
 		"Automatically outputs steam from the top"
+	]
+	quest.42FCAB41979BE539.quest_desc: [
+		"Speeds up the rate at which converting zombie villagers convert and extinguishes them if they are on fire."
+		"{@pagebreak}"
+		"Ускоряет процесс превращения зомби-жителей и тушит их, если они загорелись."
 	]
 	quest.430423172DB205F2.quest_subtitle: "Nitor?!"
 	quest.430D38FF55DB4445.quest_desc: [" Use it to apply a new Soulbound item modifier."]
@@ -1431,6 +1592,15 @@
 		"Это практически &#C6BCE9магия креатива&r!"
 		""
 		"Генератор частиц позволяет &#FEECD6создавать&r большинство частиц из &#CAE4C8Minecraft&r'a, невероятные спецэффекты для любой &#9BB8EDпостройки&r!"
+	]
+	quest.432C57213EF0FB16.quest_desc: [
+		"Generates creeping grove moss which can be harvested by hand or automatically. Requires either an adjacent block of creeping grove moss, or that the block below is adjacent to a water source block."
+		""
+		"Automation can be achieved by placing a knife (or multiple knives) into a dispenser facing the only \"air\" spot near a source of water. With any clock, the knife will harvest the moss and either spawn the grove moss above the dispenser, or, if the block above the dispenser is a container, it will place the grove moss in that container."
+		"{@pagebreak}"
+		"Генерирует ползучий рощаный мох, который можно собирать вручную или автоматически. Требуется либо соседний блок ползучего рощаного мха, либо чтобы блок, расположенный ниже, примыкал к блоку с источником воды."
+		""
+		"Автоматизацию можно реализовать, поместив нож (или несколько ножей) в диспенсер, обращенный к единственному «воздушному» месту рядом с источником воды. При срабатывании любого таймера нож соберёт мох и либо выложит его над диспенсером, либо, если блок над диспенсером является контейнером, поместит мох в этот контейнер."
 	]
 	quest.433D4543F6EF194F.quest_desc: ["chunk loader"]
 	quest.437828558F9D018E.quest_desc: [
@@ -1530,6 +1700,7 @@
 		""
 		"Furthermore, their uses are currently unlimited. In a future update, we intend to add a renewable way of acquiring them. Once this happens, they will receive a use limit."
 	]
+	quest.479B28D4CD3B3232.quest_desc: ["Destroys a nearby, mature wildroot crop and grows a wildwood tree in its place."]
 	quest.47ECA2AA01DBE0C5.quest_desc: [""]
 	quest.4821B8BFF0FEE06B.quest_desc: [
 		"Skulls can increase both the capacity and recharge rate of an altar, with varying effectiveness."
@@ -1668,6 +1839,15 @@
 		"P.S. Для открытия крафта улучшите свой старый пьедестал!"
 	]
 	quest.4E062C1AFC3440ED.quest_desc: ["Use corrupt soul on oak sapling or dead bush"]
+	quest.4E24C28A924453B8.quest_desc: [
+		"Grove crafting recipes require you to place the relevant ingredients on pedestals."
+		""
+		"Grove pedestals can contain one item and can be filled by a hopper or other similar methods. Wildwood pedestals can contain a full stack of an item."
+		""
+		"Once a valid recipe is found, the resulting item will display above the grove crafter."
+		""
+		"The grove crafter will attempt to place the results of crafts into adjacent containers. If none are found, the items will be spawned in the world."
+	]
 	quest.4E56E1DDA10FCFE6.quest_desc: [
 		"The Coille Slat grants growth to plants and can be obtained by using the Emerald Ritual"
 		"{@pagebreak}"
@@ -1721,6 +1901,7 @@
 		"Перед улучшением алтаря убедитесь что у вас есть все блоки для его улучшения, некоторые необходимо создать в предыдущем алтаре!"
 	]
 	quest.516F8BD76AA0DE20.quest_subtitle: "Generates naturally in deserts and badlands"
+	quest.52B1F8552C7A6F69.quest_desc: ["Once placed, you will need to use the Grove Suppliation ritual to activate the grove stone."]
 	quest.52DE3396BBC36B30.quest_desc: [
 		"Crystal Apothecary automatically collects gemstone clusters. Anything - &6Topaz&r, &5Amethyst&r, &bCertus Quartz&r etc. It doesn't even need to be loaded!"
 		"{@pagebreak}"
@@ -1751,6 +1932,13 @@
 		"Ручной колодец. Производит разное количество воды в разных биомах. Может быть подключен к системе акведуков."
 	]
 	quest.5554B53144E7F2C5.quest_desc: ["Right-click on a fully grown crop to replant it with the power of worm-friendship!"]
+	quest.556305C2A39D9127.quest_desc: [
+		"Gathers item entities within its radius and attempts to store them in an adjacent container (excluding the container directly below the pyre)."
+		""
+		"{@pagebreak}"
+		""
+		"Собирает объекты-предметы в пределах своего радиуса действия и пытается поместить их в ближайший контейнер (за исключением контейнера, расположенного непосредственно под костром)"
+	]
 	quest.55756CD3B1F8F89F.quest_desc: ["It totally makes sense that you can squeeze information out of books ´꒳`"]
 	quest.55816F492AF21D36.quest_desc: [
 		"You can collect an already drawn ritual by dropping the talisman and redstone into the circle, activating the ritual, and then placing it anywhere you want."
@@ -2355,6 +2543,11 @@
 		""
 		"In this modpack, only rare and very filling food will give you extra hearts! (Oh, and weird ones too, just to fulfill the sincere desire of your gourmet needs.)"
 	]
+	quest.70D78019E763835E.quest_desc: [
+		"This ritual randomly generates drops for eligible creatures without harming them."
+		"{@pagebreak}"
+		"Этот ритуал случайным образом генерирует дроп для подходящих существ, не нанося им вреда"
+	]
 	quest.7145CB4C825D9D77.quest_desc: ["Clavis transforms the traditional loot system: every loot chest is now locked and can be opened through a simple yet engaging mini-game. The better you perform, the richer your reward - up to nearly double the loot for a perfect result."]
 	quest.714992905CA44375.quest_desc: [
 		"My catalogue of ingredients, although plentiful, can be limiting in its color. I do not have enough ingredients to expand my ideas, my vision! But I know how I can get more. It may seem like these are all the flowers and herbs the world has to offer, but I know simple plant life can be so much more complex. I will imbue these plants, strip them down to their genetical make-up, and create new plants. COMPLETELY REMADE BY MY HAND."
@@ -2494,6 +2687,7 @@
 		"Это сложное устройство похоже на своего двоюродного брата - арбалет. Однако благодаря обширным исследованиям и инженерным разработкам мне удалось свести его к одноручному арбалету, который может сделать два дополнительных выстрела, прежде чем его нужно будет заряжать."
 	]
 	quest.7787ABAA319FB651.quest_desc: ["Breaks and pickups blocks, can be enchanted with any pickaxe enchantment"]
+	quest.784B1F10177C5B24.quest_desc: ["Jump boost 3 when stand on it"]
 	quest.787735496233A905.quest_desc: ["When drunk it will grant 35 Aureal to the player. It can also be used to input Aureal into the Hephaestus Forge."]
 	quest.7930264A840C4BDB.quest_desc: [
 		"One of the most important blocks for further progression. Learn more about how to use it by reading the Spectrum book!"
@@ -2570,6 +2764,7 @@
 	reward.472BCEE94E93C2FF.title: "Radial Menu Button"
 	reward.4B224C18E7C6EE21.title: "Back Slot"
 	reward.4BA1212AF4BD3432.title: "Augmenting Table Access"
+	reward.4D0EBC927D8AD01D.title: "Xaeromap Access"
 	reward.5BA06D58446F6FDD.title: "Unlimited supply of boxes"
 	reward.670CBE4973B6F390.title: "New interactions: chest looting, villagers, spawners, wandering trader and mobs"
 	reward.679412F522B788D9.title: "Trinket hands slot"
@@ -2593,6 +2788,7 @@
 	task.068F277A6EC195B3.title: "Ore veins?"
 	task.0690302B69EE721E.title: "Any #pastel:colored_saplings"
 	task.06C366B476A6A584.title: "Ronaza's Contract"
+	task.07E0F2DBA99D84B7.title: "Any #roots:short_grass"
 	task.08346CF6BB01116A.title: "Any #milf:notched_polished_block"
 	task.08836B7AEB5DF9AF.title: "Energy generation"
 	task.08DD73E0742DA0F8.title: "Any #milf:notched_polished_block"
@@ -2619,6 +2815,7 @@
 	task.17EBE6D06902A269.title: "Any #milf:basic_gemstone_shards"
 	task.1858B5DCA97FF142.title: "Any #ars_nouveau:horn_food"
 	task.18C4718ECA8EC691.title: "Any #milf:item_bowl"
+	task.19CD073D34E00456.title: "Any #roots:knives"
 	task.1AE53C37C664CA3B.title: "Clavis"
 	task.1B1769A882258EBC.title: "Any #justaraftmod:rafts"
 	task.1DB3762470DC4D9D.title: "Any #milf:chiseled_base_blocks"
@@ -2653,6 +2850,7 @@
 	task.34A589CCA978ACEF.title: "Any #pastel:shimmerstone_lights"
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.37BF27F02B385E1D.title: "BUT HOW DO YOU MAKE BEER?!"
+	task.37F1D31D1CFE5331.title: "Any #c:feathers"
 	task.3A29E8F35850BD56.title: "Elevator"
 	task.3A5AE59EDDEBE0BA.title: "Any #minecraft:boats"
 	task.3AC7749433FF53D8.title: "Abras' Conjure"
@@ -2706,6 +2904,7 @@
 	task.6719AA6DDAB0F823.title: "Any #minecraft:anvil"
 	task.68DA7E9C5CC5E0FB.title: "Uphyxes Inverted Tower"
 	task.690983E33893CB82.title: "Any #milf:polished_slabs"
+	task.6A8E2906E1200A0A.title: "Any #minecraft:small_flowers"
 	task.6A98FF8B055D914F.title: "Any #milf:colored_spore_blossom"
 	task.6B073DC5E1960334.title: "Odus' Open Convocation"
 	task.6C76C1D379AC2926.title: "Horseman"
