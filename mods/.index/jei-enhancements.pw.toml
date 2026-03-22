@@ -1,0 +1,17 @@
+filename = 'jei_enhancements-1.0.0.jar'
+name = 'JEI Enhancements'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'jei_enhancements-1.0.0.jar'
+
+[download]
+hash = '6effee489a48a577301e807fe41ff010877f0f0c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7437065
+project-id = 1424337
