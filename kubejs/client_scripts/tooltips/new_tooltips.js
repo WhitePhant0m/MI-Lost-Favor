@@ -1,23 +1,8 @@
+// There's too much clutter here; we'll have to reorganize everything in the future to make it more read-friendly.
+
 ItemEvents.modifyTooltips(event => {
-
-    const wip_tooltip = [
-        /enderstorage:.*/, 
-        /tesseract:.*/,
-        /angelring:.*/,
-        /tempad:.*/,
-        /chunkloaders:.*/,
-        /hostilenetworks:.*/,
-        /hostile_neural_industrialization:.*/,
-        /fluxnetworks:.*/,
-        /tankstorage:.*/,
-        /bankstorage:.*/,
-        /buildinggadgets2:.*/,
-        /replication:.*/,
-    ]
-    wip_tooltip.forEach(element => {
-        event.add(element, Text.of(textAnimatorString("[Work in progress]", "glitch")).color("#CC4D4D"))
-    });
-
+    //#region simple shift text
+    // tooltip: "hold SHIFT for more information" displaying a simple lang code when the SHIFT key is pressed
     let simpleShiftText = (args) => {
         const raw = args.items ?? args.item;
         const items = Array.isArray(raw) ? raw : [raw];
@@ -34,24 +19,29 @@ ItemEvents.modifyTooltips(event => {
         });
     };
 
-    const simpleTooltips = [
-        {name: "devices:devices_pouch", tooltip: "milf.money_pouch.tooltip", color: "#f5c25b"},
-        {name: "ars_elemental:curio_bag", tooltip: "milf.curio_bag.tooltip", color: "#f5c25b"},
-        {name: "milf:blaze_core", tooltip: "milf.how_to_get_blaze_core.tooltip", color: "#645D89"},
-        {name: "milf:electronic_ender_core", tooltip: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89"},
-    ]
-
-    simpleTooltips.forEach(element => {
-        event.modify(element.name, tooltip => {
-            tooltip.add(Text.translate(element.tooltip).color(element.color));
-        });
-    });
-
-
-    simpleShiftText({ item: "milf:orb_of_the_forest", text: "milf.orb_of_the_forest.tooltip", color: "#1CC433" })
     simpleShiftText({ item: "milf:amber_visage", text: "milf.amber_visage.tooltip", color: "#5ca5e0" })
+    simpleShiftText({ item: "ars_elemental:curio_bag", text: "milf.curio_bag.tooltip", color: "#f5c25b" })
+    simpleShiftText({ item: "milf:blaze_core", text: "milf.how_to_get_blaze_core.tooltip", color: "#645D89" })
+    simpleShiftText({ item: "milf:electronic_ender_core", text: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89" })
     simpleShiftText({ items: ["minecraft:lantern", "minecraft:soul_lantern"], text: "milf.beltborne_lanterns.tooltip", color: "#43B747" });
+    //#region
 
+    //#region various changes
+
+    // very cursed item, when insert text in 2-line - text appears explaining how to use the item, without the tooltip, this text is not displayed 🤯 
+    event.modify("devices:magical_pouch", tooltip => { 
+        tooltip.insert(3, Text.translate("milf.money_pouch.tooltip").color("#f5c25b")) 
+    })
+
+    event.modify("devices:devices_pouch", tooltip => { 
+        tooltip.removeLine(2)
+        tooltip.insert(2, Text.translate("milf.money_pouch.tooltip").color("#f5c25b")) 
+    })
+    
+
+    //#region
+
+    //#region Seeds
     const seeds_tooltip = [
         'rusticdelight:cotton_seeds',
         'rusticdelight:bell_pepper_seeds',
@@ -69,16 +59,44 @@ ItemEvents.modifyTooltips(event => {
         'hexerei:sage_seed',
         'farmersdelight:cabbage_seeds',
         'farmersdelight:tomato_seeds',
-        'enchanted:wolfsbane_seeds'
+        'enchanted:wolfsbane_seeds',
+        'hexerei:belladonna_plant',
+        'hexerei:mandrake_plant',
     ];
 
     seeds_tooltip.forEach(seed => {
         event.add(seed, Text.translate("milf.how_to_seed.tooltip").color("#43BD24"));
     });
+    //#region
 
+    //#region Orbs
     const orbs = ['milf:transmutation_orb', 'milf:orb_of_annulment', 'milf:orb_of_alchemy', 'milf:orb_of_regret', 'milf:regal_orb', 'milf:orb_of_corruption', 'milf:divine_orb', 'milf:orb_of_chance', "milf:orb_of_the_forest"]
 
     orbs.forEach(orb => {
-        event.add(orb, Text.translatable(`milf.orbcraft.tooltip.${orb.slice(7)}`))
+        event.add(orb, Text.translatable(`milf.orbcraft.tooltip.${orb.slice(5)}`))
     })
+    simpleShiftText({ item: "milf:orb_of_the_forest", text: "milf.orb_of_the_forest.tooltip", color: "#1CC433" })
+
+    //#region
+
+    //#region WIP items tooltip
+    const wip_tooltip = [
+        /enderstorage:.*/,
+        /tesseract:.*/,
+        /angelring:.*/,
+        /tempad:.*/,
+        /chunkloaders:.*/,
+        /hostilenetworks:.*/,
+        /hostile_neural_industrialization:.*/,
+        /fluxnetworks:.*/,
+        /tankstorage:.*/,
+        /bankstorage:.*/,
+        /buildinggadgets2:.*/,
+        /replication:.*/,
+    ]
+    wip_tooltip.forEach(element => {
+        event.add(element, Text.of(textAnimatorString("[Work in progress]", "glitch")).color("#CC4D4D"))
+    });
+    //#region
+
 })

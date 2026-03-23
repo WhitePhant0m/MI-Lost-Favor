@@ -16,10 +16,10 @@
     },
     {
       "type": "goblintraders:basic",
-      "experience": 10,
+      "experience": 20,
       "offer_item": {
         "count": 6,
-        "id": "minecraft:emerald"
+        "id": "devices:silver_coin"
       },
       "payment_item": {
         "count": 1,
@@ -31,8 +31,8 @@
       "experience": 10,
       "max_trades": 4,
       "offer_item": {
-        "count": 8,
-        "id": "minecraft:emerald"
+        "count": 16,
+        "id": "devices:silver_coin"
       },
       "payment_item": {
         "count": 1,
@@ -123,8 +123,8 @@
       "experience": 4,
       "max_trades": 20,
       "offer_item": {
-        "count": 1,
-        "id": "minecraft:emerald"
+        "count": 2,
+        "id": "devices:silver_coin"
       },
       "payment_item": {
         "count": 2,

@@ -27,8 +27,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.amber_visage.tooltip', 'Используется как топливо в Transmogrification Table для изменения внешнего вида предметов, не влияя на их функциональность')
     event.add('milf.orb_of_the_forest.tooltip', 'Для применения сферы к топору держите сферу в основной руке, а любой топор — во второй и нажмите ПКМ')
     event.add('milf.beltborne_lanterns.tooltip', 'Нажмите CTRL + B, держа фонарь — он прикрепится к твоему поясу. Нужно вернуть его в руки? Нажмите CTRL + B снова')
-    event.add('milf.money_pouch.tooltip', 'Можно открыть с помощью радиального меню, находясь в слоте для безделушек.')
-    event.add('milf.curio_bag.tooltip', 'Можно открыть с помощью радиального меню если мешок на панели быстрого доступа или в слоте для безделушек')
+    event.add('milf.money_pouch.tooltip', `Можно открыть с помощью ${textAnimatorString("радиального меню", "wave", {a:0.2})}, находясь в слоте для безделушек.`)
+    event.add('milf.curio_bag.tooltip', `Можно открыть с помощью ${textAnimatorString("радиального меню", "wave", {a:0.2})} если мешок на панели быстрого доступа или в слоте для безделушек`)
 
     event.add('milf.placers.notification1', `Не хватает места, чтобы ${textAnimatorString("это", "bounce")} разместить`)
     event.add('milf.placers.notification2', `Сначала необходимо выбрать ${textAnimatorString("правильное направление", "glitch")}`)

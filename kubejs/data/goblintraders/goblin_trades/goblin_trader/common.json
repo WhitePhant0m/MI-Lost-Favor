@@ -6,8 +6,8 @@
       "experience": 4,
       "max_trades": 24,
       "offer_item": {
-        "count": 1,
-        "id": "minecraft:emerald"
+        "count": 2,
+        "id": "devices:silver_coin"
       },
       "payment_item": {
         "count": 8,
@@ -84,8 +84,8 @@
       "experience": 4,
       "max_trades": 128,
       "offer_item": {
-        "count": 1,
-        "id": "minecraft:emerald"
+        "count": 2,
+        "id": "devices:silver_coin"
       },
       "payment_item": {
         "count": {
