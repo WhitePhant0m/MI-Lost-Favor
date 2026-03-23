@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         }
         let inputItems = []
         Object.entries(blocksCount).forEach(([blockID, count]) => {
-            if(blockID == "immersiveengineering:fluid_pump") {
+            if(blockID == "immersiveengineering:fluid_pump" || blockID == "immersiveengineering:tesla_coil") {
                 inputItems.push([{item:blockID}, count / 2])
                 return
             }

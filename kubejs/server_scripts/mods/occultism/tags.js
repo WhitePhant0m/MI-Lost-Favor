@@ -14,6 +14,7 @@ ServerEvents.tags('item', event => {
         'occultism:iron_dust',
         'occultism:lapis_dust',
         'occultism:emerald_dust',
+        "occultism:netherite_dust"
     ]
     removeItemTags.forEach(item => {
         event.removeAllTagsFrom(item)

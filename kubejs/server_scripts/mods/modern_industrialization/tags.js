@@ -3,7 +3,8 @@ ServerEvents.tags('item', event => {
         'modern_industrialization:netherite_hammer', 
         'modern_industrialization:steel_hammer', 
         'modern_industrialization:diamond_hammer', 
-        'modern_industrialization:iron_hammer'
+        'modern_industrialization:iron_hammer',
+        "extended_industrialization:netherite_dust"
     ])
 
     const modIngredient = Ingredient.of(`@modern_industrialization`)

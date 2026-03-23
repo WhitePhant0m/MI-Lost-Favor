@@ -34,25 +34,30 @@ ServerEvents.recipes(event => {
     });
     
     // Adding recipes that have been deleted 
-    event.recipes.modern_industrialization.mi_furnace(2, 200)
-    .itemIn("minecraft:raw_copper")
-    .itemOut("minecraft:copper_ingot")
+    miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
+        inputItems:[[{item:"minecraft:raw_copper"}, 1]],
+        outputItems:[[{item:"minecraft:copper_ingot"}, 1]]
+    })
 
-    event.recipes.modern_industrialization.mi_furnace(2, 200)
-    .itemIn("minecraft:raw_iron")
-    .itemOut("minecraft:iron_ingot")
+    miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
+        inputItems:[[{item:"minecraft:raw_iron"}, 1]],
+        outputItems:[[{item:"minecraft:iron_ingot"}, 1]]
+    })
 
-    event.recipes.modern_industrialization.mi_furnace(2, 200)
-    .itemIn("minecraft:raw_gold")
-    .itemOut("minecraft:gold_ingot")
+    miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
+        inputItems:[[{item:"minecraft:raw_gold"}, 1]],
+        outputItems:[[{item:"minecraft:gold_ingot"}, 1]]
+    })
 
-    event.recipes.modern_industrialization.mi_furnace(2, 200)
-    .itemIn("minecraft:sand")
-    .itemOut("minecraft:glass")
+    miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
+        inputItems:[[{tag:"c:sands"}, 1]],
+        outputItems:[[{item:"minecraft:glass"}, 1]]
+    })
 
-    event.recipes.modern_industrialization.mi_furnace(2, 200)
-    .itemIn("#c:cobblestones")
-    .itemOut("minecraft:stone")
+    miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:mi_furnace",
+        inputItems:[[{tag:"c:cobblestones"}, 1]],
+        outputItems:[[{item:"minecraft:stone"}, 1]]
+    })
 
     const minecraft_metals_for_furnace = ['copper', 'gold', 'iron'];
     const MI_metals_for_furnace = ['antimony', 'lead', 'tin', 'nickel'];
