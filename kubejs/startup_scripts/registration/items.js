@@ -75,7 +75,6 @@ createNewItem('old_diary', { stackSize: 1, lang: { "en_us": "Old diary", "ru_ru"
 createNewItem('old_tablet', { stackSize: 1, lang: { "en_us": "Old tablet", "ru_ru": "Старая табличка" } })
 createNewItem('disk_from_space', { stackSize: 1, lang: { "en_us": "Disk from space", "ru_ru": "Внеземной диск" } })
 createNewItem('holy_book_of_color', { texturePath: 'milf:item/color_holy_book', stackSize: 1, lang: { "en_us": "Holy book of color", "ru_ru": "Священная книга цвета" } })
-createNewItem('old_notes', { stackSize: 1, lang: { "en_us": "Old notes", "ru_ru": "Старые заметки" } })
 
 createNewItem('punched_card', { stackSize: 1, lang: { "en_us": "Punched card", "ru_ru": "Перфокарта" } })
 createNewItem('blank_blueprint', { stackSize: 63, lang: { "en_us": "Blank blueprint", "ru_ru": "Пустой чертеж" } })
