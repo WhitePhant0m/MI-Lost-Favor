@@ -81,7 +81,6 @@ ItemEvents.modifyTooltips(event => {
 
     //#region WIP items tooltip
     const wip_tooltip = [
-        /enderstorage:.*/,
         /tesseract:.*/,
         /angelring:.*/,
         /tempad:.*/,

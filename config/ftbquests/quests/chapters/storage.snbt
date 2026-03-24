@@ -231,38 +231,26 @@
 			x: 4.0d
 			y: 4.0d
 		}
+		{
+			id: "058FA9676927C41B"
+			linked_quest: "66BCBB720F988351"
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			id: "239EC8D189FD2A2A"
+			linked_quest: "16B66B5BC8A015C9"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "52C35865C2BD82E8"
+			linked_quest: "50A4B989CE0B80CE"
+			x: 3.0d
+			y: 1.0d
+		}
 	]
 	quests: [
-		{
-			id: "4662FC44B4EFEC79"
-			tasks: [{
-				id: "2838F34ABBC2E928"
-				item: { count: 1, id: "enderstorage:ender_chest" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: 8.5d
-		}
-		{
-			id: "0349E72B18624688"
-			tasks: [{
-				id: "6B90C2BB156E9157"
-				item: { count: 1, id: "minecraft:ender_chest" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: 10.5d
-		}
-		{
-			id: "41DC5055E7C853FB"
-			tasks: [{
-				id: "2106D23223F87FCB"
-				item: { count: 1, id: "enderstorage:ender_pouch" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: 7.5d
-		}
 		{
 			id: "437AFCB618DB0351"
 			tasks: [{
@@ -402,16 +390,6 @@
 			}]
 			x: 8.0d
 			y: 13.0d
-		}
-		{
-			id: "6171C6DA47DC94CB"
-			tasks: [{
-				id: "5CD1C70DA289898A"
-				item: { count: 1, id: "enderstorage:ender_tank" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: 9.5d
 		}
 		{
 			id: "7189776839551466"
