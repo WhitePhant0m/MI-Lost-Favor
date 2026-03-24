@@ -4,8 +4,10 @@ ServerEvents.recipes(event => {
         inputItems:[
             [{item:"modern_industrialization:tin_cable"}, 4],
             [{item:"modern_industrialization:portable_storage_unit"}],
-            [{item:"modern_industrialization:frostproof_machine_casing"}],
             [{item:"milf:tempered_glass"}],
+        ],
+        inputFluids:[
+            [{fluid:"milf:liquid_plastic"}, 1000],
         ],
         outputItems:[
             [{item:"modern_industrialization:basic_machine_hull"}]

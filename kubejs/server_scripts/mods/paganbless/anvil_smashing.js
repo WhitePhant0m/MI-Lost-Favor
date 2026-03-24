@@ -193,9 +193,9 @@ ServerEvents.recipes(event => {
 
     anvil_recipe(
         [
-            [{ "item": "immersiveengineering:fluid_pipe" }, 5],
+            [{ "item": "immersiveengineering:fluid_pipe" }, 6],
             [{ "item": "milf:steel_infused_glass" }, 1],
-            [{ "item": "milf:steel_machine_bit" }, 12],
+            [{ "item": "milf:steel_machine_bit" }, 10],
         ],
         [{ "id": 'modern_industrialization:steel_upgrade' }, 1]
     )

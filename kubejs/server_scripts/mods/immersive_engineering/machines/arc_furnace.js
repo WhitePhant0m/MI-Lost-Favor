@@ -90,13 +90,13 @@ ServerEvents.recipes(event => {
     //tempered_glass
     ieArcFurnaceCraft(event,{
         inputItems:[
-            [{"tag": "c:sands"}, 2],
-            [{"tag": "c:dusts/aluminum"}, 4],
+            [{"tag": "c:sands"}, 3],
+            [{"tag": "c:dusts/aluminum"}, 3],
             [{"tag": "c:dusts/quartz"}, 2],
             [{"tag": "c:dusts/lead"}, 2],
         ],
         outputItems:[
-            [{"item": "milf:tempered_glass"}, 8]
+            [{"item": "milf:tempered_glass"}, 3]
         ],
         slag:true
     })

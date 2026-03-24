@@ -232,6 +232,118 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "modern_industrialization:invar_machine_casing_pipe" }, 2]],
     })
 
+
+    const tanksAndBarrelsMI = [
+        ["modern_industrialization:bronze_machine_casing", "milf:bronze_glass", "bronze"],
+        ["modern_industrialization:steel_machine_casing", "milf:steel_infused_glass", "steel"],
+        ["modern_industrialization:frostproof_machine_casing", "milf:tempered_glass", "aluminum"],
+        ["modern_industrialization:clean_stainless_steel_machine_casing", "milf:tempered_glass", "stainless_steel"],
+        ["modern_industrialization:solid_titanium_machine_casing", "milf:tempered_glass", "titanium"]
+    ]
+    
+    tanksAndBarrelsMI.forEach(entry => {
+        yTechShaped(event, {
+            pattern: [
+                "GGG",
+                "@B#",
+                "GGG"
+            ],
+            key: {
+                G: { item: entry[1] },
+                B: { item: entry[0] },
+                "@": { tag: "c:files" },
+                "#": { tag: "milf:hammers" },
+            },
+            outputItems: [[{ id: `modern_industrialization:${entry[2]}_tank` }, 1]],
+            removeRecipe: true
+        })
+
+        milfShaped(event, {
+            pattern: [
+                "bGb",
+                "GBG",
+                "bGb"
+            ],
+            key: {
+                G: { item: "labels:label" },
+                B: { item: entry[0] },
+                b: { item: `modern_industrialization:${entry[2]}_bolt` }
+            },
+            outputItems: [[{ id: `modern_industrialization:${entry[2]}_barrel` }, 1]],
+            removeRecipe: true
+        })
+    })
+
+    const hatchesMI = [
+        ['milf:steel_machine_bit',"steel"],
+        ['milf:bronze_machine_bit',"bronze"]
+    ]
+    
+    hatchesMI.forEach(entry =>{
+        milfShaped(event, {
+            pattern: [
+                "BPB",
+                "POP",
+                "BPB"
+            ],
+            key: {
+                B: { item: entry[0] },
+                P: { item: "moderndynamics:item_pipe" },
+                O: { item: "moderndynamics:extractor" }
+            },
+            outputItems: [[{ id: `modern_industrialization:${entry[1]}_item_output_hatch` }, 1]],
+            removeRecipe: true
+        })
+
+        milfShaped(event, {
+            pattern: [
+                "BPB",
+                "POP",
+                "BPB"
+            ],
+            key: {
+                B: { item: entry[0] },
+                P: { item: "moderndynamics:item_pipe" },
+                O: { item: "moderndynamics:attractor" }
+            },
+            outputItems: [[{ id: `modern_industrialization:${entry[1]}_item_input_hatch` }, 1]],
+            removeRecipe: true
+        })
+
+        milfShaped(event, {
+            pattern: [
+                "BPB",
+                "POP",
+                "BPB"
+            ],
+            key: {
+                B: { item: entry[0] },
+                P: { item: "moderndynamics:fluid_pipe" },
+                O: { item: "moderndynamics:extractor" }
+            },
+            outputItems: [[{ id: `modern_industrialization:${entry[1]}_fluid_output_hatch` }, 1]],
+            removeRecipe: true,
+            
+        })
+
+        milfShaped(event, {
+            pattern: [
+                "BPB",
+                "POP",
+                "BPB"
+            ],
+            key: {
+                B: { item: entry[0] },
+                P: { item: "moderndynamics:fluid_pipe" },
+                O: { item: "moderndynamics:attractor" }
+            },
+            outputItems: [[{ id: `modern_industrialization:${entry[1]}_fluid_input_hatch` }, 1]],
+            removeRecipe: true
+        })
+    })
+
+
+
     event.replaceOutput(
         { output: 'modern_industrialization:steel_block' },
         'modern_industrialization:steel_block',
@@ -349,7 +461,7 @@ ServerEvents.recipes(event => {
 
 })
 
-KubeJSTweaks.beforeRecipes(event => {
+KubeJSTweaks.beforeRecipes(event => {    
 
     const disableByRecipeID = [
         /modern_industrialization:materials\/.*\/craft\/ring/,
@@ -363,6 +475,12 @@ KubeJSTweaks.beforeRecipes(event => {
         `modern_industrialization:vanilla_recipes/macerator/red_sandstone_to_sand`,
         "modern_industrialization:vanilla_recipes/lignite_torch",
         "modern_industrialization:vanilla_recipes/torch",
+        "modern_industrialization:materials/iron/craft/tank",
+        "modern_industrialization:materials/iron/assembler/tank",
+        "modern_industrialization:materials/iron/craft/barrel",
+        "modern_industrialization:materials/iron/assembler/barrel",
+        "modern_industrialization:steam_age/steel/quarry_asbl",
+        "modern_industrialization:assembler_generated/steam_age/steel/quarry",
 
         "modern_industrialization:alloy/mixer/cupronickel/tiny_dust",
         "modern_industrialization:materials/mixer/fire_clay_dust",
@@ -374,7 +492,6 @@ KubeJSTweaks.beforeRecipes(event => {
     disableByRecipeID.forEach(id => {
         event.disable(id)
     })
-
 
     const oresToChange = ['iron', 'gold', 'copper', 'tin', 'lead']
     oresToChange.forEach(ore => {
@@ -392,5 +509,4 @@ KubeJSTweaks.beforeRecipes(event => {
     event.getEntry("modern_industrialization:materials/macerator/lead_crushed_to_dust").forEach(entry => {
         entry.fromPath("item_inputs").ifPresent(input => input.second.asJsonObject.add("tag", `c:crushed_ores/lead`))
     })
-
 })

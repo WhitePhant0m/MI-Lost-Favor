@@ -19,7 +19,7 @@ const ytechBlockHitCraft = (event, args) => {
         //console.log(args.outputItems[0][0].id.slice(1));
         
         if(args.outputItems[0][0].id.slice(-4) == "_bit") {            
-            args.outputItems[0][1] = args.outputItems[0][1] * 1.5
+            args.outputItems[0][1] = 10
         }
         iePressCraft(event, {energy:3200,
             inputItems:args.inputItems,
@@ -36,14 +36,14 @@ ServerEvents.recipes(event => {
 
     ytechBlockHitCraft(event,{
         inputItems:[[{item:"modern_industrialization:bronze_machine_casing"}]],
-        outputItems:[[{id:"milf:bronze_machine_bit"}, 12]],
+        outputItems:[[{id:"milf:bronze_machine_bit"}, 7]],
         block:{tag : "minecraft:anvil"},
         reverseCompat:true
     })
 
     ytechBlockHitCraft(event,{
         inputItems:[[{item:"modern_industrialization:steel_machine_casing"}]],
-        outputItems:[[{id:"milf:steel_machine_bit"}, 12]],
+        outputItems:[[{id:"milf:steel_machine_bit"}, 7]],
         block:{tag : "minecraft:anvil"},
         reverseCompat:true
     })
