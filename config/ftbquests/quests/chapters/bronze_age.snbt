@@ -2944,7 +2944,7 @@
 				type: "item"
 			}]
 			x: -12.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4F16E1AF399E74E4"]
@@ -3051,8 +3051,8 @@
 				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: 0.5d
+			x: -12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["65DB2546A83972B8"]
@@ -3962,8 +3962,8 @@
 				item: { count: 1, id: "travelertoolbelt:gold_belt" }
 				type: "item"
 			}]
-			x: -15.0d
-			y: 0.5d
+			x: -16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["582F02F8A2F308E7"]
@@ -4976,7 +4976,7 @@
 				}
 			]
 			x: -16.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -5189,7 +5189,7 @@
 				type: "item"
 			}]
 			x: -12.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -5240,7 +5240,7 @@
 				type: "item"
 			}]
 			x: -16.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["634C79DD71F19927"]
@@ -5253,6 +5253,30 @@
 			}]
 			x: -27.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["0BCD76587F2DB00F"]
+			id: "5EBF48809F0A806A"
+			shape: "octagon"
+			tasks: [{
+				id: "387BFE9085B15324"
+				item: { count: 1, id: "modern_industrialization:aluminum_tank" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BCD76587F2DB00F"]
+			id: "38DCF86BC7B68C30"
+			shape: "octagon"
+			tasks: [{
+				id: "44FF14410009AE83"
+				item: { count: 1, id: "modern_industrialization:aluminum_barrel" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 0.0d
 		}
 	]
 }

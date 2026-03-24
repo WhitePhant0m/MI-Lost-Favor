@@ -60,6 +60,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         'modern_industrialization:steel_hammer',
         'modern_industrialization:diamond_hammer',
         'modern_industrialization:iron_hammer',
+        "modern_industrialization:iron_barrel",
+        "modern_industrialization:iron_tank",
         'ytech:cassiterite_gravel_deposit',
         'ytech:golden_gravel_deposit',
         'ytech:nether_iron_ore',

@@ -1,14 +1,21 @@
 /**
- * Minecraft shaped recipe
- *  - `args`:
- *      - `key` : 
- *      - `pattern` : 
- *      - `outputItems` : 
- *      - --------
- *      - `removeRecipe`: Boolean - if true: removes all other default recipes with this outputs
- *      - `compatOff`: Boolean - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
-*/
-const milfShaped = (/**@type {$RecipesKubeEvent_}*/ event, args) => {
+ * @typedef {Object} MilfShapedArgs
+ * @property {Object.<string, any>} key
+ * @property {string[]} pattern
+ * @property {Array<[{id: string}, number]>} outputItems
+ * @property {Object} [replace]
+ * @property {boolean} [compatOff] - if true : function will NOT add compatible mi recipe, if not specified then recipe WILL be added
+ * @property {boolean} [removeRecipe] - if true: removes all other default recipes with this output
+ * @property {string} [removeRecipeType] - removes all other recipes with this output of the specified type
+ */
+
+/**
+ * @param {$RecipesKubeEvent_} event
+ * @param {MilfShapedArgs} args
+ * @returns {void}
+ */
+
+function milfShaped(event, args){
     let recipe = {
         type: "minecraft:crafting_shaped",
         category: "misc",
