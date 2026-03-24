@@ -88,8 +88,6 @@ ItemEvents.modifyTooltips(event => {
         /hostilenetworks:.*/,
         /hostile_neural_industrialization:.*/,
         /fluxnetworks:.*/,
-        /tankstorage:.*/,
-        /bankstorage:.*/,
         /buildinggadgets2:.*/,
         /replication:.*/,
     ]

@@ -219,6 +219,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         'paganbless:mugwort',
         'paganbless:mugwort_plant',
         'paganbless:imbuing_cauldron',
+        'tankstorage:tank_link',
+        'bankstorage:bank_link',
     ]
 
     list.forEach(item => {
