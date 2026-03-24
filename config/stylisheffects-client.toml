@@ -61,7 +61,7 @@
 		#Screen side to render status effects on.
 		#Default Value: LEFT
 		#Allowed Values: LEFT, RIGHT
-		screen_side = "LEFT"
+		screen_side = "RIGHT"
 		#Effect renderer to be used.
 		#This setting might not be respected when not enough screen space is available. To force this setting disable "allow_fallback".
 		#Default Value: gui_compact_widget
