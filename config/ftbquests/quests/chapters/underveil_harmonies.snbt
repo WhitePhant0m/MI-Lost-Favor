@@ -10827,8 +10827,8 @@
 				item: { count: 1, id: "apotheosis:reforging_table" }
 				type: "item"
 			}]
-			x: 24.5d
-			y: -30.5d
+			x: 25.0d
+			y: -31.0d
 		}
 		{
 			dependencies: [
@@ -10864,6 +10864,46 @@
 			}]
 			x: 28.0d
 			y: -29.5d
+		}
+		{
+			dependencies: [
+				"6E426E8D686AD908"
+				"75278EEF96A6C8F0"
+			]
+			icon: {
+				id: "advanced_ae:reaction_chamber"
+			}
+			id: "6DCE76F4CC875612"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "62F9AA14B7E5D8C1"
+					item: { count: 1, id: "advanced_ae:reaction_chamber" }
+					type: "item"
+				}
+				{
+					id: "24DC7A0922494B86"
+					item: { count: 1, id: "advanced_ae:quantum_alloy" }
+					type: "item"
+				}
+			]
+			x: 25.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3E6F9ACF7C710FA4"
+				"33E06E15F2B5C635"
+			]
+			id: "1D16519FE894BC16"
+			shape: "heart"
+			tasks: [{
+				id: "14AE7E0A3EB77E7F"
+				item: { count: 1, id: "tesseract:tesseract" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: -31.0d
 		}
 	]
 }

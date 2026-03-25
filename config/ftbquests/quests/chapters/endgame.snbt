@@ -66,5 +66,15 @@
 			x: 4.5d
 			y: 0.0d
 		}
+		{
+			id: "33E06E15F2B5C635"
+			tasks: [{
+				id: "42789D089B970DF9"
+				item: { count: 1, id: "modern_industrialization:singularity" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
 	]
 }
