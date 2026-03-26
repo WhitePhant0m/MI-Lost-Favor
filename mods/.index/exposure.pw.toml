@@ -1,17 +1,17 @@
-filename = 'exposure-neoforge-1.21.1-1.9.14.jar'
+filename = 'exposure-neoforge-1.21.1-1.9.15.jar'
 name = 'Exposure'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Exposure - NeoForge 1.21.1 - 1.9.14'
+x-prismlauncher-version-number = 'Exposure - NeoForge 1.21.1 - 1.9.15'
 
 [download]
-hash = 'db03f4d015e69154a5f3861148f46065a9aecc6c'
+hash = '0d04c6df8cb1780512f19fe5ac8c250150f3d8a2'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7709964
+file-id = 7812900
 project-id = 871755

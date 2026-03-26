@@ -1,17 +1,17 @@
-filename = 'polytone-1.21-3.6.4-neoforge.jar'
+filename = 'polytone-1.21-3.6.5-neoforge.jar'
 name = 'Polytone'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'polytone-1.21-3.6.4-neoforge.jar'
+x-prismlauncher-version-number = 'polytone-1.21-3.6.5-neoforge.jar'
 
 [download]
-hash = '876d3b6e6ce69782149e73dac6c61c98be2e2485'
+hash = '3876e88cab5e741396a930bfaf9c433e592c841b'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7526016
+file-id = 7810346
 project-id = 958094
