@@ -1,0 +1,28 @@
+{
+    "entity": "cataclysm:netherite_monstrosity",
+    "name": {
+        "translate": "entity.cataclysm.netherite_monstrosity",
+        "color": "#945B00"
+    },
+    "display": {
+        "scale": 0.2
+    },
+    "sim_cost": 2560,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.netherite_monstrosity",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:monstrous_horn",
+            "count": 2
+        },
+        {
+            "id": "cataclysm:lava_power_cell",
+            "count": 32
+        }
+    ]
+}

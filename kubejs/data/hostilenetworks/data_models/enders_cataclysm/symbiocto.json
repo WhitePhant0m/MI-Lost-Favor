@@ -1,0 +1,28 @@
+{
+    "entity": "cataclysm:symbiocto",
+    "name": {
+        "translate": "entity.cataclysm.symbiocto",
+        "color": "#54261A"
+    },
+    "display": {
+        "scale": 1
+    },
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.symbiocto",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:lacrima",
+            "count": 4
+        },
+        {
+            "id": "minecraft:ink_sac",
+            "count": 6
+        }
+    ]
+}

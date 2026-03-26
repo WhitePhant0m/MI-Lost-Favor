@@ -1,0 +1,32 @@
+{
+    "entity": "cataclysm:aptrgangr",
+    "name": {
+        "translate": "entity.cataclysm.aptrgangr",
+        "color": "#A0FFFF"
+    },
+    "display": {
+        "scale": 0.4
+    },
+    "sim_cost": 320,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.aptrgangr",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:black_steel_ingot",
+            "count": 8
+        },
+        {
+            "id": "minecraft:bone",
+            "count": 32
+        },
+        {
+            "id": "minecraft:rotten_flesh",
+            "count": 32
+        }
+    ]
+}

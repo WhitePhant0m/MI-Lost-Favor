@@ -1,0 +1,24 @@
+{
+    "entity": "cataclysm:coral_golem",
+    "name": {
+        "translate": "entity.cataclysm.coral_golem",
+        "color": "#A21DA2"
+    },
+    "display": {
+        "scale": 0.4
+    },
+    "sim_cost": 288,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.coral_golem_cataclysm",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:crystallized_coral_fragments",
+            "count": 1
+        }
+    ]
+}

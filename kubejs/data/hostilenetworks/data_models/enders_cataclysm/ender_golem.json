@@ -1,0 +1,24 @@
+{
+    "entity": "cataclysm:ender_golem",
+    "name": {
+        "translate": "entity.cataclysm.ender_golem",
+        "color": "#640ce8"
+    },
+    "display": {
+        "scale": 0.42
+    },
+    "sim_cost": 288,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.kobolediator",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:void_core",
+            "count": 1
+        }
+    ]
+}

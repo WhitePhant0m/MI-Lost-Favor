@@ -1,0 +1,21 @@
+{
+    "entity": "minecraft:vindicator",
+    "name": {
+        "translate": "entity.minecraft.vindicator",
+        "color": "#484C46"
+    },
+    "sim_cost": 160,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.vindicator",
+    "fabricator_drops": [
+        {
+            "id": "minecraft:emerald",
+            "count": 8
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "entity": "cataclysm:maledictus",
+    "name": {
+        "translate": "entity.cataclysm.maledictus",
+        "color": "#2A7664"
+    },
+    "display": {
+        "scale": 0.7
+    },
+    "sim_cost": 2560,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.maledictus",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:cursium_ingot",
+            "count": 8
+        }
+    ]
+}

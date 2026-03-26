@@ -108,7 +108,116 @@ ClientEvents.lang('en_us', event => {
     event.add('ritual.occultism.craft_vial_of_liquid_confidence.finished', "Ritual completed successfully: Craft Vial Of Liquid Confidence.")
     event.add('ritual.occultism.craft_vial_of_liquid_confidence.interrupted', "Interruption in the ritual: Craft Vial Of Liquid Confidence.")
     //#endregion
- 
+    
+
+    //#region hostile networks
+
+    // 36 characters on line 1 before it clips into the drop stats
+    // 48 characters on other lines before it spills out of the UI
+    // 4 lines before it leaves the UI
+
+    //Ars Nouveau
+    event.add('custom.trivia.drygmy', "A friendly forest spirit.")
+    event.add('custom.trivia.starbuncle', "Squirrels infused with Star Magic\nsometimes transform into Starbuncles.")
+    event.add('custom.trivia.whirlisprig', "A friendly forest spirit\nthat loves to hover around the place.")
+    event.add('custom.trivia.wilden_chimera', "A pack of Wildens that have combined into one.\n\nDoesn't seem to be made with alchemy,\nbut you never know...")
+    event.add('custom.trivia.wilden_guardian', "A strong forest beast,\ninfused with magic through unknown means.\n\nThis variant has tough shell, lined with spikes.")
+    event.add('custom.trivia.wilden_hunter', "A strong forest beast,\ninfused with magic through unknown means.\n\nThis variant tends to prefer close combat.")
+    event.add('custom.trivia.wilden_stalker', "A strong forest beast,\ninfused with magic through unknown means.\n\nThis variant has wings, which makes attacks more agile.")
+
+    //Bosses of Mass Destruction
+    event.add('custom.trivia.nether_gauntlet', "A hand with an eye on it,\nhell-bent on slaying you.\n\nSeems oddly familiar, somehow...")
+    event.add('custom.trivia.night_lich', "Doesn't guard a twilight tower,\nbut still wants you dead.")
+    event.add('custom.trivia.obsidilith', "A tall obsidian tower,\nemanating a menacing aura...")
+    event.add('custom.trivia.void_blossom', "A flower of power,\ndetermined to kill you where you stand.\n\nNo bulbs need to be broken to summon it.")
+    //Ender Zoology 
+    event.add('custom.trivia.concussion_creeper', "This variant of the Creeper\nis not an inverse architect,\nbut rather a concussive blow to the head.")
+    event.add('custom.trivia.enderminy', "Technology has sadly regressed,\nand now prevents you from\ntransforming into one of these.")
+    event.add('custom.trivia.fallen_knight', "Zombies in advanced stages of decay\nbecome Fallen, and those skilled in combat\nbecome Fallen Knights.")
+    event.add('custom.trivia.infested_zombie', "Infested by enderic forces,\nthis Zombie now bears Books and Ender Shards,\nattempting to remedy its mutation by any means.")
+    event.add('custom.trivia.owl', "I heard that Owls are a hoot at night.")
+    event.add('custom.trivia.wither_cat', "When Wither Witches take a liking to a Cat,\nthey will convert it with their dark magic.\n*Evil loaf!*")
+    event.add('custom.trivia.wither_witch', "Like the regular Witch,\nWither Witches employ a variety of spells\nto hinder your progress.\nOften enters battle with their feline friends.")
+    //Eternal Starlight
+    event.add('custom.trivia.aurora_deer', "Native to Permafrost Starlight Forests,\nthese Deer don't taste quite like you'd expect.")
+    event.add('custom.trivia.crystallized_moth', "A multi-colored moth,\npartially composed of magical crystals.")
+    event.add('custom.trivia.ent', "A diminutive forest dweller,\nunique to the Starlight Realm.\nSmaller than its Overworldian counterparts\ndue to the lack of sunlight.")
+    event.add('custom.trivia.freeze', "A distant relative of the Breeze, this\nfloating construct employs ice to slay its foes.")
+    event.add('custom.trivia.gatekeeper', "Sworn to guard the Starlight Gateway,\nthis Gatekeeper only lets victorious challengers pass.\n\n...and it seems like you've come out on top.")
+    event.add('custom.trivia.grimstone_golem', "Golems constructed out of Grimstone\nare protective, yet diminutive.")
+    event.add('custom.trivia.lonestar_skeleton', "Wandering through the twisting caves\nof the Starlight Realm takes a toll on all,\nand a few unlucky souls\nget converted into this shell.")
+    event.add("custom.trivia.luminaris", "These lunar fish mainly inhabit the Abyss,\nbut may occasional swim to a nearby Starlight Sea.\n\nThey use their horns during mating rituals.");
+    event.add("custom.trivia.luminofish", "These lunar fish mainly inhabit the Abyss,\nbut may occasional swim to a nearby Starlight Sea.\nTheir sensory organs are positioned\nabove their head to keep a look out for predators.");
+    event.add("custom.trivia.lunar_monstrosity", "Twisted by the fallout of the Great Starlight War,\nthis floral aberration has taken up residence\nin the Cursed Garden, consuming the souls of all\nunfortunate enough to cross its roots.");
+    event.add("custom.trivia.nightfall_spider", "These Spiders share their omnipresent\ninhabitation with the regular variety -\nbut they're more aggressive than you'd think.");
+    event.add("custom.trivia.ratlin", "A giant rodent,\nnative to the Starlight Realm.\nIt looks so soft...");
+    event.add("custom.trivia.rookfish", "A strange sub-species of the Squid,\nwhich seems to be shaped like a tower.\nAs for why, it is unknown.");
+    event.add("custom.trivia.tower_squid", "A strange sub-species of the Squid,\nwhich seems to be shaped like a tower.\nAs for why, it is unknown.");
+    event.add("custom.trivia.starfire_bird", "A crimson red flying fowl.\nNot the most useful of species...");
+    event.add("custom.trivia.starlight_golem", "One of the last remnants of\nthe Great Starlight War, these Golems\nspring to life when detecting an intruder.");
+    event.add("custom.trivia.tangled", "When a Lunar Monstrosity consumes one's soul,\nit begins converting it into a Tangled.\nPart man and part plant, it is\nforced to protect the Garden by its floristic master.");
+    event.add("custom.trivia.tangled_hatred", "Extensions of a Lunar Monstrosity's will,\nthese vines will flail about the place\nin an attempt to stop trespassers.\nAttack their roots to dispatch them.");
+    event.add("custom.trivia.thirst_walker", "Eternally damned\nto wander the Crystallized Desert,\nthese mere husks of men\ncan never sate their dehydration.");
+    event.add("custom.trivia.yeti", "Rolling around Permafrost Starlight Forests,\nthese small Yetis are quite playful.\nDo they guard a Snowy Hill, a Mansion, or a Needle?\nIf it's the latter, do they snowboard at all?");
+    // Friends & Foes
+    event.add("custom.trivia.copper_golem", "This diminutive cousin of the Iron Golem\nwill accomplish whatever menial task you assign to it.");
+    event.add("custom.trivia.crab_friend", "Found on Beaches, the humble Crab\nyields claws with reach-altering properties when slain.");
+    event.add("custom.trivia.glare", "These floating clumps of moss and leaves seek out well-lit areas.\nGlow Berries are their favorite foods.");
+    event.add("custom.trivia.iceologer", "A distant relative of the Evoker,\nthe Iceologer deploys its frosty force\nagainst all who encroach upon its domain.");
+    event.add("custom.trivia.illusioner", "A relative of the Evoker,\nthis master of illusionary magic\nis sure to confused and befuddle everyone.");
+    event.add("custom.trivia.tuff_golem", "This diminutive cousin of the Iron Golem\ndisplays anything you give it - just ensure it doesn't wander away from its post.");
+    event.add("custom.trivia.wildfire", "Master of all Blazes, the Wildfire\nis incredibly tough for unprepared adventurers.\n\nEnsure you can resist its firey wrath.");
+
+    // cataclysm
+    event.add("custom.trivia.amethyst_crab", "When giant crabs encounter an\nAmethyst Geode, a few of them get too curious\nand transform into an ambulatory Geode.");
+    event.add("custom.trivia.ancient_remnant", "Ancient remains of a long-dead dinosaur,\nreanimated by unknown magic.");
+    event.add("custom.trivia.aptrgangr", "The undead leader of the Draugrs,\nAptrgangr wields his oversized battleaxe with great dexterity.");
+    event.add("custom.trivia.cindaria", "A strange fighter,\nevokative of a Jelllyfish.");
+    event.add("custom.trivia.clawdian", "Some crustaceans\nevolve past the peak of crabhood,\nforming their own warrior caste in the process.");
+    event.add("custom.trivia.coral_golem_cataclysm", "Guardians of Coral Reefs,\nthese Golems are even deadlier than iron ones\ndue to their sharp coral protrusions.");
+    event.add("custom.trivia.coralssus", "A veteran Coral Golem.\nNot as sharp, but still deadlier.");
+    event.add("custom.trivia.deepling", "Strange residents of aquatic dungeons.\nLittle is known about them.");
+    event.add("custom.trivia.draugr", "Rarely, a Viking who perishes\ndoes not go to Valhalla or Hel -\ninstead, they are doomed to wander the Earth\nas an undead warrior.\nTheir search for peace in the afterlife is neverending.");
+    event.add("custom.trivia.drowned_host", "The unwilling host of a Symbiocto.\nIt's best to put them out of their misery before\ntheir anguished cries dominate your psyche.");
+    event.add("custom.trivia.elite_draugr", "A veteran Viking spirit,\nhardened by decades of battle.");
+    event.add("custom.trivia.endermaptera", "These bothersome beetles\nare native to the End.\nAs with all ankle-biters,\nthe only good bug is a dead bug.");
+    event.add("custom.trivia.hippocamtus", "Guardians of a sunken treasure,\nonce thought to be lost forever.");
+    event.add("custom.trivia.ignis", "Ruler of the fiery realm of the Nether,\nIgnis is a challenging adversary.\nEnsure you're as close to fireproof\nas one can be before taking on his challenge.");
+    event.add("custom.trivia.ignited_berserker", "Cousin to the Blaze,\nthis armored adversary will defend\nits domain to the death.");
+    event.add("custom.trivia.ignited_revenant", "Cousin to the Blaze,\nthis reinforced warrior will offer quite the fight\nto defend its fortified abode.\nIt kind of reminds you of something...");
+    event.add("custom.trivia.kobolediator", "A Kobold Gladiator's skeleton.\nWatch out for its giant sword.");
+    event.add("custom.trivia.koboleton", "A swift, skeletal Kobold.\nTry to re-kill it before it stabs you to death.");
+    event.add("custom.trivia.lionfish_cataclysm", "A deep sea hunter,\nLionfish will venomize their prey before eating it.");
+    event.add("custom.trivia.maledictus", "A ghostly king who's sworn\nto kill you where you stand -\nbut is his fury righteous, or vindictive?");
+    event.add("custom.trivia.netherite_monstrosity", "Guardian of all that is hellish,\nthis amalgamation of Netherite and will\nis bound to destroy all\nwho are foolish enough to challenge it.");
+    event.add("custom.trivia.royal_draugr", "A royal Viking spirit who possessed great wealth in life.");
+    event.add("custom.trivia.scylla", "A monstrous warrior,\ndead-set on eradicating you.");
+    event.add("custom.trivia.symbiocto", "Some Octopodes desire control,\nand will find a host to overtake.\n\nUsually, it's crabs that do this...");
+    event.add("custom.trivia.the_harbinger", "An advanced form of the Wither,\nmade far deadlier with several augmentations.");
+    event.add("custom.trivia.the_prowler", "This mechanical monstrosity\nis hellbent on hunting you down.\n\nHunt it before it hunts you.");
+    event.add("custom.trivia.the_watcher", "An autonomous scanner,\ndispatched to spy on you.\n\nWill defend itself if needed.");
+    event.add("custom.trivia.urchinkin", "Evil urchins that seek to destroy you.");
+    event.add("custom.trivia.wadjet", "The remains of\nan ancient serpentine warrior,\nsworn to defend its master.");
+
+    // occultism
+    event.add("custom.trivia.afrit", "A wandering spirit,\nripe for exploitation.");
+    event.add("custom.trivia.possessed_endermite", "Even enderic creatures aren't immune\nto the influence of the occult.");
+
+    //minecraft
+    event.add("custom.trivia.bee", "Floating about the forest,\nBees work tirelessly to produce Honeycombs\nyou can centrifuge into a variety of items.\nWait a minute, that's not quite right...");
+    event.add("custom.trivia.salmon", "Regularly migrates upstream to lay its eggs.");
+    event.add("custom.trivia.llama", "Often found in Savanna‌s,\nLlamas are known for their hostility to all who dare touch them.");
+    event.add("custom.trivia.pufferfish", "An annoying inhabitant of the Ocean.\nDispatch before it becomes bothersome.");
+    event.add("custom.trivia.sniffer", "Meanders around, searching for food\n- or maybe something else entirely?");
+    event.add("custom.trivia.tropical_fish", "Like a fish, but more tropical-y.");
+    event.add("custom.trivia.turtle", "Wearing this may make you turtly enough for the turtle club.\n(or make you some kind of ninja, perchance?)");
+    event.add("custom.trivia.pillager", "The archers of the raider tribes\nthat wanders the Overworld,\nsearching for their next target.");
+    event.add("custom.trivia.ravager", "An incredibly strong battle beast,\ndeployed only during the raids on villages\ncursed by calloused adventurers.");
+    event.add("custom.trivia.vindicator", "The front-line fighter of the\nraider tribes that wanders the Overworld,\nsearching for their next target.\n\nBe wary of their powerful swings.");
+    
+
+    
+    //#endregion
 })
 
 function textAnimatorString(text, type, params){

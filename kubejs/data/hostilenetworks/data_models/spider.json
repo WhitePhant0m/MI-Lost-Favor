@@ -1,0 +1,34 @@
+{
+    "entity": "minecraft:spider",
+    "variants": [
+        "minecraft:cave_spider",
+		"occultism:possessed_spider",
+		"occultism:possessed_cave_spider"
+    ],
+    "name": {
+        "translate": "entity.minecraft.spider",
+        "color": "#322B26"
+    },
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.spider",
+    "fabricator_drops": [
+        {
+            "id": "minecraft:string",
+            "count": 32
+        },
+        {
+            "id": "minecraft:spider_eye",
+            "count": 16
+        },
+        {
+            "id": "minecraft:cobweb",
+            "count": 4
+        }
+    ]
+}

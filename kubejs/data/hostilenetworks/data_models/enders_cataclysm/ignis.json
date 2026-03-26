@@ -1,0 +1,24 @@
+{
+    "entity": "cataclysm:ignis",
+    "name": {
+        "translate": "entity.cataclysm.ignis",
+        "color": "#945B00"
+    },
+    "display": {
+        "scale": 0.3
+    },
+    "sim_cost": 2560,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.ignis",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:ignitium_ingot",
+            "count": 8
+        }
+    ]
+}

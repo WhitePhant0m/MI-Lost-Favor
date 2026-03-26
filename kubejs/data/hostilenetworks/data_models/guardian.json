@@ -1,0 +1,28 @@
+{
+    "entity": "minecraft:guardian",
+    "variants": [
+		"occultism:possessed_guardian"
+	],
+    "name": {
+        "translate": "entity.minecraft.guardian",
+        "color": "#6A9583"
+    },
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.guardian",
+    "fabricator_drops": [
+        {
+            "id": "minecraft:cod",
+            "count": 24
+        },
+        {
+            "id": "minecraft:prismarine_crystals",
+            "count": 16
+        }
+    ]
+}

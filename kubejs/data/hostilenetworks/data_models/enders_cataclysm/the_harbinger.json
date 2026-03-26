@@ -1,0 +1,24 @@
+{
+    "entity": "cataclysm:the_harbinger",
+    "name": {
+        "translate": "entity.cataclysm.the_harbinger",
+        "color": "#F33149"
+    },
+    "display": {
+        "scale": 0.4
+    },
+    "sim_cost": 2560,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.the_harbinger",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:witherite_block",
+            "count": 1
+        }
+    ]
+}

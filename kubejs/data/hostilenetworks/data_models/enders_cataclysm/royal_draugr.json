@@ -1,0 +1,32 @@
+{
+    "entity": "cataclysm:royal_draugr",
+    "name": {
+        "translate": "entity.cataclysm.royal_draugr",
+        "color": "#9F854D"
+    },
+    "display": {
+        "scale": 0.85
+    },
+    "sim_cost": 192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.royal_draugr",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:black_steel_ingot",
+            "count": 4
+        },
+        {
+            "id": "minecraft:bone",
+            "count": 64
+        },
+        {
+            "id": "minecraft:rotten_flesh",
+            "count": 64
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "entity": "minecraft:pillager",
+    "name": {
+        "translate": "entity.minecraft.pillager",
+        "color": "#484C46"
+    },
+    "sim_cost": 160,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.pillager",
+    "fabricator_drops": [
+        {
+            "id": "minecraft:emerald",
+            "count": 8
+        }
+    ]
+}

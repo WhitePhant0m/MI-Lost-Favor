@@ -1,0 +1,28 @@
+{
+    "entity": "cataclysm:amethyst_crab",
+    "name": {
+        "translate": "entity.cataclysm.amethyst_crab",
+        "color": "#3C284F"
+    },
+    "display": {
+        "scale": 0.4
+    },
+    "sim_cost": 164,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.amethyst_crab",
+    "fabricator_drops": [
+        {
+            "id": "cataclysm:amethyst_crab_meat",
+            "count": 32
+        },
+        {
+            "id": "cataclysm:amethyst_crab_shell",
+            "count": 8
+        }
+    ]
+}

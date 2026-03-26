@@ -1,0 +1,30 @@
+{
+    "entity": "cataclysm:deepling",
+    "variants": [
+        "cataclysm:deepling_angler",
+        "cataclysm:deepling_brute",
+        "cataclysm:deepling_priest",
+        "cataclysm:deepling_warlock"
+    ],
+    "name": {
+        "translate": "entity.cataclysm.deepling",
+        "color": "#172431"
+    },
+    "display": {
+        "scale": 0.78
+    },
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "id": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.deepling",
+    "fabricator_drops": [
+        {
+            "id": "minecraft:nautilus_shell",
+            "count": 4
+        }
+    ]
+}
