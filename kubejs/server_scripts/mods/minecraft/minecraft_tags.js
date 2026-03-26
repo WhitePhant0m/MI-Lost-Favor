@@ -15,3 +15,8 @@ ServerEvents.tags('item', event => {
         'minecraft:music_disc_11'
     ])
 })
+
+
+ServerEvents.tags('block', event => {
+    event.removeAll('minecraft:enderman_holdable')
+})
