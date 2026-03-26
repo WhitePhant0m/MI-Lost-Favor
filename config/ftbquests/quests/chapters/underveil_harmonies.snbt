@@ -8266,17 +8266,6 @@
 			y: -32.0d
 		}
 		{
-			dependencies: ["3476E6DF114A1001"]
-			id: "39F711F07EE7128C"
-			tasks: [{
-				id: "3B40C90D6D73BDFC"
-				item: { count: 1, id: "ars_nouveau:ritual_brazier" }
-				type: "item"
-			}]
-			x: -11.0d
-			y: -35.5d
-		}
-		{
 			dependencies: ["308098E9634265F0"]
 			id: "241278FFCD08C640"
 			tasks: [{
@@ -10873,16 +10862,16 @@
 			icon: {
 				id: "advanced_ae:reaction_chamber"
 			}
-			id: "6DCE76F4CC875612"
+			id: "044E49EE69BDF1F0"
 			shape: "diamond"
 			tasks: [
 				{
-					id: "62F9AA14B7E5D8C1"
+					id: "717E57E4D41B5E29"
 					item: { count: 1, id: "advanced_ae:reaction_chamber" }
 					type: "item"
 				}
 				{
-					id: "24DC7A0922494B86"
+					id: "3BF2F6395A0B306F"
 					item: { count: 1, id: "advanced_ae:quantum_alloy" }
 					type: "item"
 				}
@@ -10894,6 +10883,7 @@
 			dependencies: [
 				"3E6F9ACF7C710FA4"
 				"33E06E15F2B5C635"
+				"6DCE76F4CC875612"
 			]
 			id: "1D16519FE894BC16"
 			shape: "heart"

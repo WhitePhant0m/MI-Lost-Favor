@@ -3151,5 +3151,15 @@
 			x: -6.5d
 			y: 30.0d
 		}
+		{
+			id: "08E88C970DB33574"
+			tasks: [{
+				id: "1E9F25BBC261FE0C"
+				item: { count: 1, id: "eternal_starlight:moonring_bow" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 36.0d
+		}
 	]
 }
