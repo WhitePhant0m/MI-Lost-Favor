@@ -1,3 +1,4 @@
+//requires: roots
 ServerEvents.recipes(event => {
 
     event.remove({output: [

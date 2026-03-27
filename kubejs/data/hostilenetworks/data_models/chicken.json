@@ -1,8 +1,6 @@
 {
     "entity": "minecraft:chicken",
-    "variants": [
-		"roots:duck"
-	],
+    "variants": [],
     "name": {
 		"translate": "entity.minecraft.chicken",
 		"color": "#F0EAD6"

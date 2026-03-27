@@ -1,3 +1,4 @@
+//requires: roots
 ServerEvents.tags('item', event => {
     event.removeAllTagsFrom([
         'roots:silver_nugget', 
