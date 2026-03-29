@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     })
     event.remove({ output: "ars_nouveau:ritual_brazier" })
     event.replaceInput({ output: "ars_additions:wayfinder" }, "minecraft:amethyst_shard", "enchanted:attuned_stone")
-    
+
     const rituals = [
         { id: "ars_nouveau:ritual_burrowing", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
         { id: "ars_nouveau:ritual_challenge", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
@@ -63,7 +63,10 @@ ServerEvents.recipes(event => {
         { id: "ars_nouveau:ritual_harvest", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
         { id: "ars_nouveau:ritual_awakening", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
         { id: "ars_nouveau:ritual_conjure_island_desert", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_wilden_summon", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
+        {
+            id: "ars_nouveau:ritual_wilden_summon", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4,
+            addition_ingredients: [{ "item": "ars_nouveau:source_gem_block" }]
+        },
     ]
 
     // item -> item

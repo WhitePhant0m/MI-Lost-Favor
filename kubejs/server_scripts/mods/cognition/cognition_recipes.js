@@ -6,7 +6,8 @@ ServerEvents.recipes(event => {
             "minecraft:quartz",
             "minecraft:lapis_lazuli",
             [{ "item": "spectrum:topaz_powder" }, { "item": "spectrum:citrine_powder" }, { "item": "spectrum:amethyst_powder" }],
-            [{ "item": "minecraft:soul_sand" }, { "item": "minecraft:soul_soil" }]
+            [{ "item": "minecraft:soul_sand" }, { "item": "minecraft:soul_soil" }],
+            "spectrum:shimmerstone_gem"
         ]).id("milf:cognitive_flux");
 
 });

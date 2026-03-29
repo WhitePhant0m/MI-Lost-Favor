@@ -187,13 +187,10 @@ RecipeViewerEvents.removeEntries('item', event => {
         "occultism:silver_block",
         "occultism:silver_nugget",
         "occultism:raw_silver",
-        "roots:silver_ingot",
-        "roots:silver_block",
-        "roots:raw_silver_block",
+        
         "occultism:silver_nugget",
-        "roots:raw_silver",
+        
         "malum:copper_nugget",
-        "roots:copper_nugget",
         /immersiveengineering:storage_.*/,
         /immersiveengineering:dust_.*/,
         /immersiveengineering:raw_.*/,
@@ -203,10 +200,17 @@ RecipeViewerEvents.removeEntries('item', event => {
         /immersiveengineering:slab_storage_.*/,
         /immersiveengineering:ore_.*/,
         /immersiveengineering:deepslate_ore_.*/,
-        "roots:flour",
-        'roots:silver_nugget', 
-        'roots:deepslate_silver_ore', 
-        'roots:silver_ore',
+        // mod has been temporarily removed
+        // "roots:flour",
+        // 'roots:silver_nugget', 
+        // 'roots:deepslate_silver_ore', 
+        // 'roots:silver_ore',
+        // "roots:copper_nugget",
+        // "roots:raw_silver",
+        // "roots:silver_ingot",
+        // "roots:silver_block",
+        // "roots:raw_silver_block",
+
         'paganbless:herb_pouch',
         'paganbless:belladonna',
         'paganbless:mandrake_root',
@@ -221,6 +225,14 @@ RecipeViewerEvents.removeEntries('item', event => {
         'paganbless:imbuing_cauldron',
         'tankstorage:tank_link',
         'bankstorage:bank_link',
+        'ars_additions:handy_haversack',
+        "waystones:return_scroll",
+        "waystones:blank_scroll",
+        "waystones:warp_scroll",
+        "ars_nouveau:mycelial_sourcelink",
+        "ars_nouveau:agronomic_sourcelink",
+        "ars_nouveau:vitalic_sourcelink",
+        "ars_nouveau:alchemical_sourcelink",
     ]
 
     list.forEach(item => {

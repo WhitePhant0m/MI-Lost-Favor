@@ -83,6 +83,8 @@ function createNewFluid(id, args) {
     args = args || {}
     StartupEvents.registry('fluid', event => {
         let fluid = args.textureType ? event.create("milf:" + id, args.textureType) : event.create("milf:" + id)
+        args.stillTexture && fluid.stillTexture(args.stillTexture)
+        args.flowingTexture && fluid.flowingTexture(args.flowingTexture)
         args.color && fluid.tint.apply(fluid, [args.color])
         itemBuilder(fluid.bucketItem, args)
     })

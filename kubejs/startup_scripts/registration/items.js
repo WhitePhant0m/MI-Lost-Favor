@@ -90,6 +90,9 @@ createNewItem('core_press', { stackSize: 16, lang: { "en_us": "Core press", "ru_
 
 createNewItem('cell_half', { lang: { "en_us": "Cell half", "ru_ru": "Часть ячейки" } })
 createNewItem('cell_press', { stackSize: 16, lang: { "en_us": "Cell press", "ru_ru": "Пресс для ячейки" } })
+createNewItem('glyph_frame_t1', { lang: { "en_us": "Glyph Frame T1", "ru_ru": "Рамка для глифов T1" } })
+createNewItem('glyph_frame_t2', { lang: { "en_us": "Glyph Frame T2", "ru_ru": "Рамка для глифов T2" } })
+createNewItem('glyph_frame_t3', { lang: { "en_us": "Glyph Frame T3", "ru_ru": "Рамка для глифов T3" } })
 
 createNewItem('mysterious_disk', { texturePath: 'milf:item/automation_disk_t1', stackSize: 8, lang: { "en_us": "Mysterious disk", "ru_ru": "Таинственный диск" } })
 createNewItem('storage_disk', { texturePath: 'milf:item/automation_disk_t2', stackSize: 8, lang: { "en_us": "Storage disk", "ru_ru": "Диск Хранения данных" } })

@@ -37,6 +37,44 @@ ServerEvents.recipes(event => {
         },
         result: "milf:table_core"
     })
+    customAlchemicalForgeCraft(event, {
+        affinities: [
+            "toxony:heat",
+            "toxony:soul",
+            "toxony:decay"
+        ],
+        auxiliary: [
+            {
+                "item": "spectrum:onyx_block"
+            },
+            {
+                "item": "occultism:demonic_meat"
+            }
+        ],
+        main: {
+            "item": "enchanted:attuned_stone_charged"
+        },
+        result: "milf:onyx_table_core"
+    })
+    customAlchemicalForgeCraft(event, {
+        affinities: [
+            "toxony:heat",
+            "toxony:soul",
+            "toxony:decay"
+        ],
+        auxiliary: [
+            {
+                "item": "spectrum:moonstone_block"
+            },
+            {
+                "item": "occultism:dragonyst_dust"
+            }
+        ],
+        main: {
+            "item": "enchanted:attuned_stone_charged"
+        },
+        result: "milf:moonstone_table_core"
+    })
 
     const pedestalBasicCraft = (output, gem) => {
         event.shaped(output, [

@@ -21,6 +21,7 @@ ItemEvents.modifyTooltips(event => {
 
     simpleShiftText({ item: "milf:amber_visage", text: "milf.amber_visage.tooltip", color: "#5ca5e0" })
     simpleShiftText({ item: "ars_elemental:curio_bag", text: "milf.curio_bag.tooltip", color: "#f5c25b" })
+    simpleShiftText({ item: "ars_elemental:caster_bag", text: "milf.curio_bag.tooltip", color: "#f5c25b" })
     simpleShiftText({ item: "milf:blaze_core", text: "milf.how_to_get_blaze_core.tooltip", color: "#645D89" })
     simpleShiftText({ item: "milf:electronic_ender_core", text: "milf.how_to_get_electronice_ender_core.tooltip", color: "#645D89" })
     simpleShiftText({ items: ["minecraft:lantern", "minecraft:soul_lantern"], text: "milf.beltborne_lanterns.tooltip", color: "#43B747" });
