@@ -353,7 +353,15 @@
 		""
 		"Модернизации имеют &lтип&r, только лучшая модернизация в рамках типа будет засчитана."
 	]
-	quest.0E83A5E1B38BC5EF.quest_desc: ["тикает растение - даёт сурс"]
+	quest.0EBE4702C54278F6.quest_desc: [
+		"It has far more storage space!"
+		""
+		"&lBefore upgrading, empty your Trinkets Pouch&r"
+		"{@pagebreak}"
+		"Имеет куда большую вместительность!"
+		""
+		"&lПеред улучшением опустошите свой Trinkets Pouch&r"
+	]
 	quest.0EC6045881A3898D.quest_desc: ["Wild pig"]
 	quest.0F3DBB0D6EEF427E.quest_subtitle: "elevator in water"
 	quest.0F4825A153097924.quest_desc: [
@@ -532,7 +540,6 @@
 		"{@pagebreak}"
 		"Используется для измельчения предметов, чтобы сделать их менее целыми."
 	]
-	quest.1821E5AE238E165E.quest_desc: ["Преобразовывает разнообразные жидкости в сурс, *По хорошему добавить только пар -> сурс и удалить другие генераторы сурса*"]
 	quest.18238251518B54D5.quest_desc: ["123"]
 	quest.18238251518B54D5.title: "Chimmera Familiar"
 	quest.188484018F12E3B9.quest_desc: [
@@ -1307,6 +1314,15 @@
 		""
 		"используйте в разнообразных структурах чтобы пометить их на карте и быстро найти нужную!"
 	]
+	quest.3D25B3BBFD462747.quest_desc: [
+		"A very handy pouch that can be opened via the radial menu and can be placed in the trinket slot!"
+		""
+		"It is also used to make a backpack."
+		"{@pagebreak}"
+		"Очень удобный мешок, который можно открывать используя радиальное меню, можно надеть в слот безделушек!"
+		""
+		"Так же используется для создания рюкзака."
+	]
 	quest.3D661614AB8A295E.quest_desc: [
 		"The Cresent Moon Enhancer reduces the Aureal cost of rituals when used in the Hephaestus Forge. Depending on the time of the day the reduced amount differs between 10% during the night and 1% during the day. "
 		""
@@ -1640,7 +1656,6 @@
 		"{@pagebreak}"
 		"Установите &#FEECD6бутылочку&r рядом с &#CAE4C8листьями&r и немного &#9BB8EDподождите&r, бактерии начнут съедать &#CAE4C8листву&r и оставлять процессы своей &#FEECD6жизнидейстельности&r прямо в этих же &#CAE4C8листях&r, возможно вы сможете использовать это в &#9BB8EDсвоих целях&r!"
 	]
-	quest.4C5DF2EA2602D2A9.quest_desc: ["Click with spell book for Gluph crafting"]
 	quest.4CD83E3F1602127A.quest_desc: [
 		"Enter the preservation ruins."
 		"{@pagebreak}"
@@ -1768,7 +1783,6 @@
 		"{@pagebreak}"
 		"Эта сетка может улавливать основные ресурсы, такие как песок, гравий, глина и рыбу."
 	]
-	quest.5750E25528ABB85C.quest_desc: [""]
 	quest.57A91C641FE38999.quest_desc: [""]
 	quest.58111B4CAD89BCCE.quest_desc: [
 		"&#FEECD6Create&r your first &4c&r&6o&r&el&r&2o&r&br&r&9e&r&5d&r sapling!"
@@ -1789,7 +1803,13 @@
 		"{@pagebreak}"
 		"В данже была найдена засохшая нефритовая луковица, возможно у вас выйдет оживить её?"
 	]
-	quest.58DE851CD9578153.quest_desc: ["позволяет шарить глифы за опыт, чем больше глифово - тратит больше опыта"]
+	quest.58DE851CD9578153.quest_desc: [
+		"allows you to share knowledge of glyphs in exchange for experience"
+		""
+		"the more glyphs there are, the more experience is required to share them."
+		"{@pagebreak}"
+		"позволяет передавать знания о глифах за опыт, чем больше глифово - тем боле опыта потребутеся для передачи."
+	]
 	quest.58E8A03E6BB037C5.quest_desc: ["Applies the Glowing effect to all entities near the player when it's in your inventory."]
 	quest.58FC7BE00AECD484.quest_subtitle: "Crack the bone!"
 	quest.590167B593FE267A.quest_desc: [""]
@@ -2109,7 +2129,6 @@
 		"{@pagebreak}"
 		"Полноценный иммунитет от огня и немного больше"
 	]
-	quest.678DD52529698DE4.quest_desc: ["Нужно кормить зельями даёт сурс"]
 	quest.6823D5F00B44B271.quest_desc: [
 		"Used to... mold brick-looking stuff"
 		"{@pagebreak}"
@@ -2241,7 +2260,6 @@
 		""
 		"Мы также добавили квесты только для некоторых фамильяров; о других вы можете прочитать в книге."
 	]
-	quest.6B56735FE657E8D0.quest_desc: ["даёт сурс за еду либо кидать либо класть на платформу. Вокруг 3х3 будет превращать землю в мицелий и выращивать грибы"]
 	quest.6C7B55F12C222907.quest_desc: [
 		"It's a &#FEECD6shovel&r, a &#9BB8EDpickaxe&r, an &#C7E2E9axe&r, and a &#CAE4C8hoe&r &nall in one&r. It's like a Swiss tool!"
 		"{@pagebreak}"
@@ -2464,7 +2482,6 @@
 	]
 	quest.757ED58D0C1CED21.quest_desc: ["Press \"Y\" on an item in your inventory (or in EMI) to highlight similar items in nearby chests"]
 	quest.7591497746DA17AC.quest_desc: ["Just for endgame tier 5 pedestal without crafts for now"]
-	quest.760015A8E61B210A.quest_desc: ["Виталик за тики роста животных/размножение/убийство даёт сурс "]
 	quest.7635ED9379E95573.quest_desc: ["Even grass could become quite strong when you weave it properly"]
 	quest.76A00C0FCE2D91E1.quest_desc: [
 		"The distillery allows witches to separate materials into their components by utilising differences in boiling and condensing points."
@@ -2525,7 +2542,6 @@
 		"{@pagebreak}"
 		"Кровать для дневного сна."
 	]
-	quest.7DAD1DF3B7F87944.quest_desc: ["The item is too powerful; we need to consider what its crafting recipe will be."]
 	quest.7E277FEC22A1924D.quest_desc: ["Spawner Scrap drops when breaking a Spawner"]
 	quest.7E9470BDDB0600F0.quest_desc: [
 		"11 без"
@@ -2542,6 +2558,11 @@
 		"Yellow Fertilizer can be applied to farmland to prevent trampling of crops"
 		"{@pagebreak}"
 		"«Желтое удобрение» можно использовать на почве для предотвращения вытаптывания посевов"
+	]
+	quest.7F2A3447D994B25E.quest_desc: [
+		"&lThere's only one way to make liquid source!&r"
+		""
+		"1 Ethereal Source -> 2 liquid source "
 	]
 	reward.094072146D87AD84.title: "Pouch slot"
 	reward.0A58BA17068FCA2C.title: "New Radial Menu Button"
@@ -2685,7 +2706,7 @@
 	task.55A9AB2E43857E14.title: "Any #minecraft:beds"
 	task.5681B6E38A2DC015.title: "Harvest with ease"
 	task.56EE6B7B03B03D4D.title: "Tomes"
-	task.5733CBC7B63AE4B4.title: "source generation"
+	task.5733CBC7B63AE4B4.title: "source manipulation"
 	task.5811DD77B7904989.title: "AE2WTlib"
 	task.583D11B3732CE886.title: "TrashSlot"
 	task.587A56D8D8AFA800.title: "Any #malum:runewood_logs"

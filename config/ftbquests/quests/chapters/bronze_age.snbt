@@ -5278,5 +5278,53 @@
 			x: -13.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["2B815502453269AF"]
+			id: "3B81DBB9804BD9CE"
+			shape: "heart"
+			tasks: [{
+				id: "108CD81F825AA79A"
+				item: { count: 1, id: "bankstorage:bank_2" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B815502453269AF"]
+			id: "669A264E5501BA93"
+			shape: "heart"
+			tasks: [{
+				id: "45B33952B1E32E3D"
+				item: { count: 1, id: "tankstorage:tank_2" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0BCD76587F2DB00F"]
+			id: "14412618D3C7B873"
+			shape: "heart"
+			tasks: [{
+				id: "7CC80DAF4380432B"
+				item: { count: 1, id: "tankstorage:tank_3" }
+				type: "item"
+			}]
+			x: -13.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0BCD76587F2DB00F"]
+			id: "196F5E47A551A77C"
+			shape: "heart"
+			tasks: [{
+				id: "79258E0164599858"
+				item: { count: 1, id: "bankstorage:bank_3" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: 1.5d
+		}
 	]
 }

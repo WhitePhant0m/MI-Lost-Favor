@@ -3161,5 +3161,214 @@
 			x: 4.0d
 			y: 36.0d
 		}
+		{
+			id: "2B11B2E89E669236"
+			shape: "diamond"
+			tasks: [{
+				id: "5BE9533D93C7483F"
+				item: { components: { "relics:data": { abilities: { abilities: { absorption: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { absorbing: { initialValue: 118.88679d }, cooldown: { initialValue: 54.06938d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:cloak_of_concealment" }
+				type: "item"
+			}]
+			x: -31.0d
+			y: 32.0d
+		}
+		{
+			id: "04A8470989869FEB"
+			shape: "diamond"
+			tasks: [{
+				id: "7A88DB3D33FCA988"
+				item: { components: { "relics:data": { abilities: { abilities: { pyroclastic: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.28382d }, count: { initialValue: 2.2618d } } }, resistance: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:flaming_bracer" }
+				type: "item"
+			}]
+			x: -33.0d
+			y: 32.0d
+		}
+		{
+			id: "67FF1FE4434DBE29"
+			shape: "diamond"
+			tasks: [{
+				id: "1C910A486BAB4BA5"
+				item: { components: { "relics:data": { abilities: { abilities: { spectral: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { consumption: { initialValue: 71.23007d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:ring_of_the_spectral_walker" }
+				type: "item"
+			}]
+			x: -32.0d
+			y: 32.0d
+		}
+		{
+			id: "7963AB8477DF0A70"
+			shape: "diamond"
+			tasks: [{
+				id: "23015F4B6109BEFE"
+				item: { components: { "relics:data": { abilities: { abilities: { stasis: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 24.68783d }, duration: { initialValue: 5.77371d }, levitation: { initialValue: 2.17234d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:quantum_bubble" }
+				type: "item"
+			}]
+			x: -32.5d
+			y: 33.5d
+		}
+		{
+			id: "58FA68693C900DBF"
+			shape: "diamond"
+			tasks: [{
+				id: "4DE85B157E70EC82"
+				item: { components: { "ars_nouveau:spell_caster": { spells: { 0: { color: { b: 180, g: 25, id: "ars_nouveau:constant", r: 255 }, name: "", particleTimeline: { }, recipe: [ ], sound: { } } } }, "relics:data": { abilities: { abilities: { repulse: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 19.68418d }, count: { initialValue: 2.22999d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:emblem_of_defense" }
+				type: "item"
+			}]
+			x: -32.0d
+			y: 34.0d
+		}
+		{
+			id: "4238F1E85552A5DE"
+			shape: "diamond"
+			tasks: [{
+				id: "5B948201599C747D"
+				item: { components: { "ars_nouveau:spell_caster": { spells: { 0: { color: { b: 180, g: 25, id: "ars_nouveau:constant", r: 255 }, name: "", particleTimeline: { }, recipe: [ ], sound: { } } } }, "relics:data": { abilities: { abilities: { effort: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 22.58969d }, count: { initialValue: 2.7434d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:emblem_of_assault" }
+				type: "item"
+			}]
+			x: -31.5d
+			y: 33.5d
+		}
+		{
+			id: "543AAD00CC818357"
+			shape: "diamond"
+			tasks: [{
+				id: "4D67E253A8A8BF2D"
+				item: { components: { "relics:data": { abilities: { abilities: { empower: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { capacity: { initialValue: 58.41522d }, regeneration: { initialValue: 1.1072d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:mana_ring" }
+				type: "item"
+			}]
+			x: -31.0d
+			y: 33.0d
+		}
+		{
+			id: "1C237483F13BFD20"
+			shape: "diamond"
+			tasks: [{
+				id: "0DF31CE974890294"
+				item: { components: { "relics:data": { abilities: { abilities: { multicasted: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.1773d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:archmage_glove" }
+				type: "item"
+			}]
+			x: -31.5d
+			y: 30.5d
+		}
+		{
+			id: "1A94B13A267AB037"
+			shape: "diamond"
+			tasks: [{
+				id: "3925D40ECB77518F"
+				item: { components: { "relics:data": { abilities: { abilities: { thrift: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.14265d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:ring_of_thrift" }
+				type: "item"
+			}]
+			x: -31.0d
+			y: 31.0d
+		}
+		{
+			id: "2BD3F5E6E5C859BC"
+			shape: "diamond"
+			tasks: [{
+				id: "6BDCA4B1136E0827"
+				item: { components: { "relics:data": { abilities: { abilities: { petals: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { duration: { initialValue: 4.00202d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:whirlisprig_petals" }
+				type: "item"
+			}]
+			x: -30.5d
+			y: 31.5d
+		}
+		{
+			id: "05555AF47A849C89"
+			shape: "diamond"
+			tasks: [{
+				id: "360CF247C224D6DA"
+				item: { components: { "relics:data": { abilities: { abilities: { spikes: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 3.48741d }, threshold: { initialValue: 0.21805d }, time: { initialValue: 8.09386d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:spiked_cloak" }
+				type: "item"
+			}]
+			x: -30.0d
+			y: 32.0d
+		}
+		{
+			id: "6C8A819932F2077C"
+			shape: "diamond"
+			tasks: [{
+				id: "347E1654584C7F13"
+				item: { components: { "relics:data": { abilities: { abilities: { summoner: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { damage: { initialValue: 1.70633d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:horn_of_the_wild_hunter" }
+				type: "item"
+			}]
+			x: -30.5d
+			y: 32.5d
+		}
+		{
+			id: "748408E4BB8C53D3"
+			shape: "diamond"
+			tasks: [{
+				id: "31595EA09D14A184"
+				item: { components: { "relics:data": { abilities: { abilities: { wings: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { charges: { initialValue: 2.89108d }, strength: { initialValue: 2.42282d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:wing_of_the_wild_stalker" }
+				type: "item"
+			}]
+			x: -33.0d
+			y: 33.0d
+		}
+		{
+			id: "3FAB8150B4564B1C"
+			shape: "diamond"
+			tasks: [{
+				id: "47B097B02CFDF40E"
+				item: { components: { "relics:data": { abilities: { abilities: { broom: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { boost: { initialValue: 0.80332d }, health: { initialValue: 10.32006d }, height: { initialValue: 16.52115d }, manacost: { initialValue: 60.50925d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:whirling_broom" }
+				type: "item"
+			}]
+			x: -33.5d
+			y: 32.5d
+		}
+		{
+			id: "2BCFD09BC67C70D6"
+			shape: "diamond"
+			tasks: [{
+				id: "5F159F7D2A44E531"
+				item: { components: { "relics:data": { abilities: { abilities: { striker: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.47122d }, cooldown: { initialValue: 19.03285d }, count: { initialValue: 4.64602d }, damage: { initialValue: 4.59893d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:ballistarian_bracer" }
+				type: "item"
+			}]
+			x: -34.0d
+			y: 32.0d
+		}
+		{
+			id: "3A83CD2B1F96F3B6"
+			shape: "diamond"
+			tasks: [{
+				id: "187ED649A4137DE9"
+				item: { components: { "relics:data": { abilities: { abilities: { hibernation: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { cooldown: { initialValue: 54.28271d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:ring_of_last_will" }
+				type: "item"
+			}]
+			x: -33.5d
+			y: 31.5d
+		}
+		{
+			id: "55B8C4C418C3F578"
+			shape: "diamond"
+			tasks: [{
+				id: "7E60DFFAAFD97840"
+				item: { components: { "relics:data": { abilities: { abilities: { illusion: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.14154d }, duration: { initialValue: 9.98229d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:illusionists_mantle" }
+				type: "item"
+			}]
+			x: -33.0d
+			y: 31.0d
+		}
+		{
+			id: "7B5B649215624217"
+			shape: "diamond"
+			tasks: [{
+				id: "75DDCBE1B33A2373"
+				item: { components: { "relics:charge": 3, "relics:data": { abilities: { abilities: { designer: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { count: { initialValue: 2.41626d }, distance: { initialValue: 18.7298d }, periodicity: { initialValue: 15.90625d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } }, "relics:time": 0 }, count: 1, id: "reliquified_ars_nouveau:architects_staff" }
+				type: "item"
+			}]
+			x: -32.5d
+			y: 30.5d
+		}
+		{
+			id: "5E5A4C08E42AE67D"
+			shape: "diamond"
+			tasks: [{
+				id: "7656D50859ABEEA4"
+				item: { components: { "ars_nouveau:spell_caster": { spells: { 0: { color: { b: 180, g: 25, id: "ars_nouveau:constant", r: 255 }, name: "", particleTimeline: { }, recipe: [ ], sound: { } } } }, "relics:data": { abilities: { abilities: { devotion: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { count: { initialValue: 1.0283d }, periodicity: { initialValue: 29.87573d }, size: { initialValue: 2.09847d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "reliquified_ars_nouveau:emblem_of_devotion" }
+				type: "item"
+			}]
+			x: -32.0d
+			y: 30.0d
+		}
 	]
 }

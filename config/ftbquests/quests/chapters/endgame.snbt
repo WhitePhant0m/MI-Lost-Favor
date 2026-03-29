@@ -73,8 +73,84 @@
 				item: { count: 1, id: "modern_industrialization:singularity" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["770950EA63E81E72"]
+			id: "534D238F15C03CEB"
+			tasks: [{
+				id: "2093122B939512E0"
+				item: { count: 1, id: "bankstorage:bank_5" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["770950EA63E81E72"]
+			id: "3323B394C0450AD6"
+			tasks: [{
+				id: "74E100D686FB54AA"
+				item: { count: 1, id: "tankstorage:tank_5" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			id: "770950EA63E81E72"
+			tasks: [{
+				id: "3DF3CC09FF5691D5"
+				item: { count: 1, id: "modern_industrialization:titanium_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["1B6B111F04DC9771"]
+			id: "75B4898C0F538D7E"
+			tasks: [{
+				id: "4D580CCBB79A553E"
+				item: { count: 1, id: "bankstorage:bank_6" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B6B111F04DC9771"]
+			id: "379FD5EF89A0B9D6"
+			tasks: [{
+				id: "18F30FF0E05A88D8"
+				item: { count: 1, id: "tankstorage:tank_6" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["33E06E15F2B5C635"]
+			id: "60C3D62004B7DD66"
+			tasks: [{
+				id: "442C051BA7864CA9"
+				item: { count: 1, id: "bankstorage:bank_7" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["33E06E15F2B5C635"]
+			id: "6392532F8B6C091F"
+			tasks: [{
+				id: "34AA00B8732F4C40"
+				item: { count: 1, id: "tankstorage:tank_7" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
 		}
 	]
 }

@@ -22,12 +22,6 @@
 			y: 0.0d
 		}
 		{
-			id: "2689AD57838683A0"
-			linked_quest: "527B9A1647C48702"
-			x: 2.0d
-			y: -1.0d
-		}
-		{
 			id: "2083E8E3BB850540"
 			linked_quest: "05C4AA05CA0E6F80"
 			x: 2.0d
@@ -208,12 +202,6 @@
 			y: 9.5d
 		}
 		{
-			id: "0611F2F1299C42DA"
-			linked_quest: "7DAD1DF3B7F87944"
-			x: 2.0d
-			y: 5.0d
-		}
-		{
 			id: "7402352E07E1602D"
 			linked_quest: "0EBE4702C54278F6"
 			x: 4.0d
@@ -249,157 +237,105 @@
 			x: 3.0d
 			y: 1.0d
 		}
-	]
-	quests: [
 		{
-			id: "437AFCB618DB0351"
-			tasks: [{
-				id: "66343FCBA5CA8377"
-				item: { count: 1, id: "bankstorage:bank_1" }
-				type: "item"
-			}]
+			id: "1C8F39C201506375"
+			linked_quest: "3D25B3BBFD462747"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			id: "304D3D3C8C623E1D"
+			linked_quest: "437AFCB618DB0351"
 			x: 3.0d
 			y: 6.0d
 		}
 		{
-			id: "3B81DBB9804BD9CE"
-			tasks: [{
-				id: "108CD81F825AA79A"
-				item: { count: 1, id: "bankstorage:bank_2" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 6.0d
-		}
-		{
-			id: "196F5E47A551A77C"
-			tasks: [{
-				id: "79258E0164599858"
-				item: { count: 1, id: "bankstorage:bank_3" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: 6.0d
-		}
-		{
-			id: "2F56E2D73EDAF28B"
-			tasks: [{
-				id: "60FD5FB33E52F9DD"
-				item: { count: 1, id: "bankstorage:bank_4" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: 6.0d
-		}
-		{
-			id: "534D238F15C03CEB"
-			tasks: [{
-				id: "2093122B939512E0"
-				item: { count: 1, id: "bankstorage:bank_5" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: 6.0d
-		}
-		{
-			id: "75B4898C0F538D7E"
-			tasks: [{
-				id: "4D580CCBB79A553E"
-				item: { count: 1, id: "bankstorage:bank_6" }
-				type: "item"
-			}]
-			x: 8.0d
-			y: 6.0d
-		}
-		{
-			id: "60C3D62004B7DD66"
-			tasks: [{
-				id: "442C051BA7864CA9"
-				item: { count: 1, id: "bankstorage:bank_7" }
-				type: "item"
-			}]
-			x: 9.0d
-			y: 6.0d
-		}
-		{
-			id: "1DE92D9727F8D39A"
-			tasks: [{
-				id: "691908E05FFA4374"
-				item: { count: 1, id: "tankstorage:tank_1" }
-				type: "item"
-			}]
+			id: "25EDFE637401934A"
+			linked_quest: "1DE92D9727F8D39A"
 			x: 3.0d
 			y: 13.0d
 		}
 		{
-			id: "669A264E5501BA93"
-			tasks: [{
-				id: "45B33952B1E32E3D"
-				item: { count: 1, id: "tankstorage:tank_2" }
-				type: "item"
-			}]
+			id: "08B9FE712E05300E"
+			linked_quest: "3B81DBB9804BD9CE"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			id: "7DB5397AA8ABADBC"
+			linked_quest: "669A264E5501BA93"
 			x: 4.0d
 			y: 13.0d
 		}
 		{
-			id: "14412618D3C7B873"
-			tasks: [{
-				id: "7CC80DAF4380432B"
-				item: { count: 1, id: "tankstorage:tank_3" }
-				type: "item"
-			}]
+			id: "0EA8F61A0B0BF09B"
+			linked_quest: "14412618D3C7B873"
 			x: 5.0d
 			y: 13.0d
 		}
 		{
-			id: "70DE3C8E1263E278"
-			tasks: [{
-				id: "658A1ADE9F6CFD21"
-				item: { count: 1, id: "tankstorage:tank_4" }
-				type: "item"
-			}]
+			id: "5FA802638B102BC5"
+			linked_quest: "196F5E47A551A77C"
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			id: "72F402DAF4876D32"
+			linked_quest: "70DE3C8E1263E278"
 			x: 6.0d
 			y: 13.0d
 		}
 		{
-			id: "3323B394C0450AD6"
-			tasks: [{
-				id: "74E100D686FB54AA"
-				item: { count: 1, id: "tankstorage:tank_5" }
-				type: "item"
-			}]
+			id: "35174E4436B681CA"
+			linked_quest: "2F56E2D73EDAF28B"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "0E1F053C296C83FC"
+			linked_quest: "3323B394C0450AD6"
 			x: 7.0d
 			y: 13.0d
 		}
 		{
-			id: "379FD5EF89A0B9D6"
-			tasks: [{
-				id: "18F30FF0E05A88D8"
-				item: { count: 1, id: "tankstorage:tank_6" }
-				type: "item"
-			}]
+			id: "507C34293860C6AB"
+			linked_quest: "534D238F15C03CEB"
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			id: "06AFF25E52CF8A92"
+			linked_quest: "75B4898C0F538D7E"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			id: "56B1A9D4456801B8"
+			linked_quest: "379FD5EF89A0B9D6"
 			x: 8.0d
 			y: 13.0d
 		}
 		{
-			id: "6392532F8B6C091F"
-			tasks: [{
-				id: "34AA00B8732F4C40"
-				item: { count: 1, id: "tankstorage:tank_7" }
-				type: "item"
-			}]
+			id: "48C7FD7549E96ED9"
+			linked_quest: "6392532F8B6C091F"
 			x: 9.0d
 			y: 13.0d
 		}
 		{
-			id: "7189776839551466"
-			tasks: [{
-				id: "2623396FB6F14D0A"
-				item: { count: 1, id: "minecraft:bundle" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.0d
+			id: "7350CF691BF33970"
+			linked_quest: "60C3D62004B7DD66"
+			x: 9.0d
+			y: 6.0d
 		}
 	]
+	quests: [{
+		id: "7189776839551466"
+		tasks: [{
+			id: "2623396FB6F14D0A"
+			item: { count: 1, id: "minecraft:bundle" }
+			type: "item"
+		}]
+		x: 2.0d
+		y: 4.0d
+	}]
 }

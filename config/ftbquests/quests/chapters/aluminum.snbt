@@ -1465,5 +1465,29 @@
 			x: 2.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["6BC434A6B44D825B"]
+			id: "70DE3C8E1263E278"
+			shape: "heart"
+			tasks: [{
+				id: "658A1ADE9F6CFD21"
+				item: { count: 1, id: "tankstorage:tank_4" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["6BC434A6B44D825B"]
+			id: "2F56E2D73EDAF28B"
+			shape: "heart"
+			tasks: [{
+				id: "60FD5FB33E52F9DD"
+				item: { count: 1, id: "bankstorage:bank_4" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -19.5d
+		}
 	]
 }
