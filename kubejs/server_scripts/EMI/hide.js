@@ -233,6 +233,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         "ars_nouveau:agronomic_sourcelink",
         "ars_nouveau:vitalic_sourcelink",
         "ars_nouveau:alchemical_sourcelink",
+        "ars_additions:nexus_warp_scroll",
+        "ars_additions:warp_nexus",
     ]
 
     list.forEach(item => {
