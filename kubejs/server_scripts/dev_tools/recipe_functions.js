@@ -10,7 +10,7 @@
  */
 
 /**
- * @param {$RecipesKubeEvent_} event
+ * @param {import("dev.latvian.mods.kubejs.recipe.RecipesKubeEvent").$RecipesKubeEvent$$Original} event
  * @param {MilfShapedArgs} args
  * @returns {void}
  */
@@ -29,9 +29,16 @@ function milfShaped(event, args){
     if(!args.compatOff){
         let itemInputs = []
         let amounts = args.pattern.join("")
+        
         Object.entries(args.key).forEach(m =>{
             let regex = new RegExp(m[0],'g')
-            itemInputs.push([m[1], (amounts.match(regex) || []).length])
+            if(args.replace && Object.keys(args.replace).includes(m[0]) && m[1].item == args.replace[m[0]].item){
+                //console.log(m[1]);
+                
+                itemInputs.push([m[1], (amounts.match(regex) || []).length, 0])
+            } else {
+                itemInputs.push([m[1], (amounts.match(regex) || []).length])
+            }
             //itemInputs.push((amounts.match(regex) || []).length + "x " + m[1])
         })
         miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
@@ -44,7 +51,7 @@ function milfShaped(event, args){
     event.custom(recipe)
 }
 
-const milfSmelting = (/**@type {$RecipesKubeEvent_}*/ event, args) => {
+function milfSmelting(/**@type {$RecipesKubeEvent_}*/ event, args){
     let recipe = {
         type: "minecraft:smelting",
         category: "misc",

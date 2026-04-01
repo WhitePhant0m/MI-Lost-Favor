@@ -3,22 +3,10 @@ let $RegisterGuiLayersEvent = Java.loadClass("net.neoforged.neoforge.client.even
 let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type");
 
 NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
-	event.registerBelowAll(ID.kjs("placers_tooltips"), (gui, delta) => global.renderBlockTooltips(gui, delta))
+	event.registerBelowAll("milf:placers_tooltips", (gui, delta) => global.renderPlacerTooltips(gui, delta))
 })
 
-function textAnimatorString(text, type){
-    return `<${type}>${text}</${type}>`
-}
 
-function textAnimatorStringForEach(text, type){
-	let newText = ""
-	for(let char of text){
-		newText += textAnimatorString(char, type)
-	}
-    return newText
-}
-
-const tooltipHeight = 44
 
 /**@type {Object} */ const placerBlocks = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime
 /**@type {Object} */ const boxBlocks = global.AnotherDefinitelyUniqueNameForBoxes
@@ -27,7 +15,7 @@ const tooltipHeight = 44
  * @param {$GuiGraphics_} guiGraphics
  * @param {$DeltaTracker_} deltaTracker
  */
-global.renderBlockTooltips = (guiGraphics, deltaTracker) => {
+global.renderPlacerTooltips = (guiGraphics, deltaTracker) => {
 	if (!Client || Client.hitResult.type != $HitResult$Type.BLOCK) return
 	if (!Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:placers") && !Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:empty_box")) return
 	let $TooltipRenderUtil = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil")
@@ -45,6 +33,7 @@ global.renderBlockTooltips = (guiGraphics, deltaTracker) => {
 		$ClientTooltipComponent.create(Component.info(Component.translatable(`milf.empty_box.gui2_1`).append(Component.keybind("key.sneak").append(Component.translatable(`milf.empty_box.gui2_2`)))).visualOrderText),
 		$ClientTooltipComponent.create(Component.info(Component.translatable(`milf.empty_box.gui3_1`).append(Component.red(Component.translatable(`milf.empty_box.gui3_2`))).append(Component.translatable("milf.empty_box.gui3_3"))).visualOrderText),
 	]
+	let tooltipHeight = 44
 	let maxWidth = 0
 	clientTooltipComponents.forEach(c => {
 		const w = c.getWidth(Client.font)

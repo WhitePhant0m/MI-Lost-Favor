@@ -8,8 +8,18 @@ ServerEvents.recipes(event => {
     `minecraft:${item}_ingot`,
     `modern_industrialization:${item}_plate`
     )
-    });
+    })
 
+})
 
+KubeJSTweaks.beforeRecipes(event => {    
+
+    const disableByRecipeID = [
+        /moderndynamics:cable.*/
+    ]
+
+    disableByRecipeID.forEach(id => {
+        event.disable(id)
+    })
 
 })

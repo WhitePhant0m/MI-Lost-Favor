@@ -68,9 +68,11 @@ createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дал�
 createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
+createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader"} })
 
 createNewItem("bits_mold")
 createNewItem("cement")
+
 createNewItem('old_diary', { stackSize: 1, lang: { "en_us": "Old diary", "ru_ru": "Старый дневник" } })
 createNewItem('old_tablet', { stackSize: 1, lang: { "en_us": "Old tablet", "ru_ru": "Старая табличка" } })
 createNewItem('disk_from_space', { stackSize: 1, lang: { "en_us": "Disk from space", "ru_ru": "Внеземной диск" } })

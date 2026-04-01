@@ -5326,5 +5326,17 @@
 			x: -14.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["471DDD3117695AB5"]
+			id: "590C55E7230D6C5E"
+			shape: "diamond"
+			tasks: [{
+				id: "369F5A22AE6A4799"
+				item: { count: 1, id: "milf:mi_upgrader" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
 	]
 }

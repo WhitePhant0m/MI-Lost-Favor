@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
                 G: { item: entry[1] },
                 B: { item: entry[0] },
                 "@": { tag: "c:files" },
-                "#": { tag: "milf:hammers" },
+                "#": { tag: "c:hammers" },
             },
             outputItems: [[{ id: `modern_industrialization:${entry[2]}_tank` }, 1]],
             removeRecipe: true

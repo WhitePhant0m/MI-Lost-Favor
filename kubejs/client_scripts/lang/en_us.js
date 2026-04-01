@@ -32,6 +32,8 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.money_pouch.tooltip', `Can be opened with ${textAnimatorString("radial menu", "wave", {a:0.2})} while in the curio slot`)
     event.add('milf.curio_bag.tooltip', `Can be opened with ${textAnimatorString("radial menu", "wave", {a:0.2})} while in the hotbar or in a curio slot`)
 
+    event.add('milf.mi_upgrade_notification_1', `Requires `)
+    event.add('milf.mi_upgrade_notification_2', ` to upgrade!`)
 
     event.add('milf.placers.notification1', `Not enough space to place ${textAnimatorString("this", "bounce")} one`)
     event.add('milf.placers.notification2', `You have to choose a ${textAnimatorString("valid direction", "glitch")} first`)

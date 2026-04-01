@@ -73,6 +73,27 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+        outputItems:[
+            [{item:"modern_industrialization:configurable_tank"}]
+        ],
+        inputItems:[
+            [{item:"modern_industrialization:analog_circuit"}],
+            [{item:"modern_industrialization:pump"}, 2],
+            [{item:"modern_industrialization:aluminum_tank"}],
+        ],
+        removeRecipe:true
+    })
+
+    miMachineCraft(event, {energy:8, time:300, machine:"modern_industrialization:packer",
+        outputItems:[
+            [{item:"modern_industrialization:silicon_ingot"}]
+        ],
+        inputItems:[
+            [{item:"ae2:silicon"}, 2],
+        ]
+    })
+
     miMachineCraft(event, {energy:4, time:300, machine:"modern_industrialization:packer",
         outputItems:[
             [{item:"modern_industrialization:fire_clay_bricks"}]

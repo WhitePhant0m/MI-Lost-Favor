@@ -45,6 +45,10 @@ function itemBuilder(/**@type {$ItemBuilder_} */ item, args) {
         item.finishUsing((itemstack, level, entity) => args.use.finishUsing ? args.use.finishUsing(itemstack, level, entity) : itemstack)
         args.use.releaseUsing && item.releaseUsing((itemstack, level, entity, tick) =>args.use.releaseUsing(itemstack, level, entity, tick))
     }
+    if(args.itemProperties){
+        let properties = item.createItemProperties()
+        args.itemProperties.craftRemainder && properties.craftRemainder(args.itemProperties.craftRemainder)
+    }
 }
 
 function createNewBlock(id, args) {
@@ -93,6 +97,18 @@ function createNewFluid(id, args) {
 
 function idToName(id) {
     return id.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+}
+
+function textAnimatorString(text, type){
+    return `<${type}>${text}</${type}>`
+}
+
+function textAnimatorStringForEach(text, type){
+	let newText = ""
+	for(let char of text){
+		newText += textAnimatorString(char, type)
+	}
+    return newText
 }
 
 global.setOnFire = ctx => {

@@ -10,8 +10,6 @@ ServerEvents.tags('item', event => {
     var tier3recipe = "mi_lost_favor:tier_3_recipes"
     var tier4recipe = "mi_lost_favor:tier_4_recipes"
 
-    event.add('c:ingots/silicon', 'ae2:silicon')  //maybe add additional recipe for silicon ingot? Dunno for now
-
     event.add(tier1recipe, tier1token)
     event.add(tier1recipe, tier2token)
     event.add(tier1recipe, tier3token)
