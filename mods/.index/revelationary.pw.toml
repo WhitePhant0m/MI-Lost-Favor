@@ -1,17 +1,17 @@
-filename = 'revelationary-neoforge-1.4.0+1.21.1.jar'
+filename = 'revelationary-neoforge-1.4.1+1.21.1.jar'
 name = 'Revelationary'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'neoforge-1.4.0+1.21.1'
+x-prismlauncher-version-number = 'neoforge-1.4.1+1.21.1'
 
 [download]
-hash = 'c2b99dfd8176269200b5c34da206882284c3fc65'
+hash = '7e54917c6bdf638719c25f4901876ad2929bfd18'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 6728488
+file-id = 7827351
 project-id = 656526

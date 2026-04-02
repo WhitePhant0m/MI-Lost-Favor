@@ -1,17 +1,17 @@
-filename = 'spectrum-1.11.0-1.21.1-neo.jar'
+filename = 'spectrum-1.11.3-1.21.1-neo.jar'
 name = 'Spectrum'
 side = 'server'
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.11.0-1.21.1-neo'
+x-prismlauncher-version-number = '1.11.3-1.21.1-neo'
 
 [download]
-hash = '2dbbb501bcbc1a78e2dfbb31ce0e853142554bfd'
+hash = 'db83ffd3b931eb6dc2e1d7fc73c05a2a46ffb3f3'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7777082
+file-id = 7857859
 project-id = 556967

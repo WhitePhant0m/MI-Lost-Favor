@@ -1,4 +1,4 @@
-filename = 'Structory_1.21.x_v1.3.14.jar'
+filename = 'Structory_26.1_v1.3.16.jar'
 name = 'Structory'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
@@ -14,17 +14,18 @@ x-prismlauncher-mc-versions = [
     '1.21.6',
     '1.21.7',
     '1.21.8',
-    '1.21.9'
+    '1.21.9',
+    '26.1'
 ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'v1.3.14 ~ Mod'
+x-prismlauncher-version-number = 'v1.3.16 ~ Mod'
 
 [download]
-hash = 'dd7943c8498c151347936d4963005a7d2901f328'
+hash = 'ee48f145a3a09fdb3f492576cbc21ed26abc74bb'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7375532
+file-id = 7850172
 project-id = 636540

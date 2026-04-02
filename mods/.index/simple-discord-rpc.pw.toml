@@ -1,4 +1,4 @@
-filename = 'SimpleRPC-4.1.0.jar'
+filename = 'SimpleRPC-4.1.0+hotfix.1.jar'
 name = 'Simple RPC'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge', 'forge', 'quilt', 'fabric' ]
@@ -22,14 +22,14 @@ x-prismlauncher-mc-versions = [
     '26.1'
 ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '[1.18.2 - 26.1] Simple RPC Universal 4.1.0'
+x-prismlauncher-version-number = '[1.18.2 - 26.1] Simple RPC Universal 4.1.0+hotfix.1'
 
 [download]
-hash = '505ecbcfce41ba7423bdb2059ab270f6780efe2a'
+hash = '68cad6db795edc2be4f1c567909b931eefd91b36'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7810926
+file-id = 7817789
 project-id = 411816
