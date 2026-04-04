@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:clay"
+    },
+    {
+      "tag": "ytech:patterns/hoe_head"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "milf:unfired_hoe_head_mold"
+  }
+}

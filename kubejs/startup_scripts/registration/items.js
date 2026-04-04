@@ -107,3 +107,16 @@ createNewItem('storage_blueprint', { texturePath: 'milf:item/blueprint_t2', stac
 createNewItem('automation_blueprint', { texturePath: 'milf:item/blueprint_t3', stackSize: 1, lang: { "en_us": "Automation blueprint", "ru_ru": "Чертёж автоматизации" } })
 createNewItem('quantum_blueprint', { texturePath: 'milf:item/blueprint_t4', stackSize: 1, lang: { "en_us": "Quantum blueprint", "ru_ru": "Квантовый чертёж" } })
 createNewItem('divine_blueprint', { texturePath: 'milf:item/blueprint_t5', stackSize: 1, lang: { "en_us": "Divine blueprint", "ru_ru": "Божественный чертёж" } })
+
+createNewItem('unfired_shovel_head_mold', { lang: { "en_us": "Unfired shovel Head Mold", "ru_ru": "Необожженная форма лопаты" } })
+createNewItem('shovel_head_sand_mold', { lang: { "en_us": "Shovel Head sand mold", "ru_ru": "Форма лопаты из песка" } })
+createNewItem('shovel_head_clay_mold', {maxDamage: 16, lang: { "en_us": "Shovel Head clay mold", "ru_ru": "Форма лопаты из глины" } })
+createNewItem('shovel_head_pattern', { lang: { "en_us": "Shovel Head Pattern", "ru_ru": "Шаблон лопаты" } })
+createNewItem('bronze_shovel_head_part', { lang: { "en_us": "Bronze Shovel Head Part", "ru_ru": "Часть лопаты из бронзы" } })
+
+createNewItem('unfired_hoe_head_mold', { lang: { "en_us": "Unfired Hoe Head Mold", "ru_ru": "Необожженная форма мотыги" } })
+createNewItem('hoe_head_sand_mold', { lang: { "en_us": "Hoe Head Sand Mold", "ru_ru": "Форма мотыги из песка" } })
+createNewItem('hoe_head_clay_mold', { maxDamage: 16, lang: { "en_us": "Hoe Head Clay Mold", "ru_ru": "Форма мотыги из глины" } })
+createNewItem('hoe_head_pattern', { lang: { "en_us": "Hoe Head Pattern", "ru_ru": "Шаблон мотыги" } })
+createNewItem('bronze_hoe_head_part', { lang: { "en_us": "Bronze Hoe Head Part", "ru_ru": "Часть мотыги из бронзы" } })
+

@@ -73,6 +73,21 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:diamond_pickaxe" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
+    
+    yTechShaped(event, {
+        pattern: [
+            "ddd",
+            " s#",
+            " s ",
+        ],
+        key: {
+            "#": { "tag": "c:hammers" },
+            "s": { "item": "minecraft:stick" },
+            "d": { "item": "modern_industrialization:gold_plate" },
+        },
+        outputItems: [[{ id: "minecraft:golden_pickaxe" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
 
     yTechShaped(event, {
         pattern: [
@@ -103,6 +118,21 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:diamond_sword" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
+    
+    yTechShaped(event, {
+        pattern: [
+            "d  ",
+            "d  ",
+            "s# ",
+        ],
+        key: {
+            "#": { "tag": "c:hammers" },
+            "s": { "item": "minecraft:stick" },
+            "d": { "item": "modern_industrialization:gold_plate" },
+        },
+        outputItems: [[{ id: "minecraft:golden_sword" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
 
     yTechShaped(event, {
         pattern: [
@@ -116,6 +146,21 @@ ServerEvents.recipes(event => {
             "d": { "item": "modern_industrialization:diamond_plate" },
         },
         outputItems: [[{ id: "minecraft:diamond_axe" }, 1]],
+        removeRecipeType: "minecraft:crafting_shaped"
+    })
+    
+    yTechShaped(event, {
+        pattern: [
+            "dd#",
+            "ds ",
+            " s ",
+        ],
+        key: {
+            "#": { "tag": "c:hammers" },
+            "s": { "item": "minecraft:stick" },
+            "d": { "item": "modern_industrialization:gold_plate" },
+        },
+        outputItems: [[{ id: "minecraft:golden_axe" }, 1]],
         removeRecipeType: "minecraft:crafting_shaped"
     })
 

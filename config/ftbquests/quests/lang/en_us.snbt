@@ -208,7 +208,12 @@
 		"Наконец, после смешивания ядовитых веществ мне остается только взять лупу и поработать с веществом. При достаточном количестве поисков я могу обнаружить совершенно новую аффинность, связанную с этим ингредиентом. Из-за природы материала этот неэффективный метод — лучшее, что я могу сделать, если хочу создать совершенно новую аффинность."
 	]
 	quest.07B3FFC9267C5861.quest_desc: ["The Maledictus Pact Enhancer allows the creation of cursed items in the Hephaestus Forge. It can be found as loot in bastion treasure rooms with a chance of 18% per chest. "]
-	quest.07E78D29C898CE55.quest_desc: ["Wild sheep"]
+	quest.07E78D29C898CE55.quest_desc: [
+		"Wild sheep"
+		""
+		""
+		"{image:milf:textures/quest_pic/mouflon.png width:200 height:200 align:center}"
+	]
 	quest.08136C156A331A52.quest_desc: [
 		"A convenient way to store food. A lot of food. LMB to change mode, RMB with the closed one to change selected food, RMB with the opened one to eat said food. To put food in the box, RMB on the box with food."
 		"{@pagebreak}"
@@ -362,7 +367,12 @@
 		""
 		"&lПеред улучшением опустошите свой Trinkets Pouch&r"
 	]
-	quest.0EC6045881A3898D.quest_desc: ["Wild pig"]
+	quest.0EC6045881A3898D.quest_desc: [
+		"Wild pig"
+		""
+		""
+		"{image:milf:textures/quest_pic/wild_boar.png width:200 height:200 align:center}"
+	]
 	quest.0F3DBB0D6EEF427E.quest_subtitle: "elevator in water"
 	quest.0F4825A153097924.quest_desc: [
 		"&#FEECD6Enchantment Canvas&r helps you remove &#C6BCE9enchantments&r from an item and reapply them if needed. "
@@ -1414,7 +1424,12 @@
 		"Отключает спавн мобов в области"
 	]
 	quest.4287B0D38E0C2A7A.quest_subtitle: "Entangled block"
-	quest.428850B1426EB3D4.quest_desc: ["Wild cow"]
+	quest.428850B1426EB3D4.quest_desc: [
+		"Wild cow"
+		""
+		""
+		"{image:milf:textures/quest_pic/aurochs.png width:100 height:100 align:center}"
+	]
 	quest.42B6798C0C2BD9E5.quest_desc: [
 		"All the bronze machines use steam to operate"
 		"Automatically outputs steam from the top"
@@ -1767,7 +1782,12 @@
 		""
 		"Стоимость: 2000 МЭ"
 	]
-	quest.55B031B4D7E5DEE3.quest_desc: ["Wild chicken"]
+	quest.55B031B4D7E5DEE3.quest_desc: [
+		"Wild chicken"
+		""
+		""
+		"{image:milf:textures/quest_pic/fowl.png width:100 height:100 align:center}"
+	]
 	quest.5643AEC296D95BE9.quest_desc: ["Slowness and weakness."]
 	quest.56956E24B043B41A.quest_desc: [
 		"&mUse an axe for the combat instead, as it's more powerful. But shh, I didn't tell you that&r"
@@ -2458,12 +2478,17 @@
 		"It is important that the deer model has antlers. There are deer without antlers!"
 		""
 		"Deer have been spotted in the vicinity of taiga, savannahs, forests, plains, and badlands!"
+		""
+		""
+		"{image:milf:textures/quest_pic/deer.png width:100 height:100 align:center}"
 		"{@pagebreak}"
 		"Выпадает из оленя. Если посмотреть под определенным углом, он немного напоминает половину кирки..."
 		""
 		"Важно, необходимо чтобы на модели оленя были рога, бывают олени без рогов!"
 		""
 		"Оленей замечали в окрестностях тайги, саванн, лесов, равнин и бесплодных земель!"
+		""
+		"{image:milf:textures/quest_pic/deer.png width:100 height:100 align:center}"
 	]
 	quest.745BE9DA293006D1.quest_desc: [
 		"Bundle's lil bro, look at it, so cute ❤"

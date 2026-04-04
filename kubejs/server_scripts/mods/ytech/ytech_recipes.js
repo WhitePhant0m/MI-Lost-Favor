@@ -38,9 +38,9 @@ const yTechShaped = (/**@type {$RecipesKubeEvent_}*/ event, args) => {
     event.custom(recipe)
 }
 
-function yTechShapeless(/**@type {$RecipesKubeEvent_}*/ event, args){
+function yTechShapeless(/**@type {$RecipesKubeEvent_}*/ event, args) {
     let ingredients = []
-    args.inputItems.forEach(item => {ingredients.push(Object.assign({}, item[0], { count: item[1] || 1 }))})
+    args.inputItems.forEach(item => { ingredients.push(Object.assign({}, item[0], { count: item[1] || 1 })) })
     let recipe = {
         type: "ytech:remaining_shapeless_crafting",
         category: args.category || "misc",
@@ -75,28 +75,143 @@ ServerEvents.recipes(event => {
             'ytech:raw_galena_block',
             'ytech:raw_cassiterite_block',
             "ytech:crushed_iron",
-            'ytech:copper_helmet', 
-            'ytech:copper_chestplate', 
-            'ytech:copper_leggings', 
-            'ytech:copper_boots', 
-            'ytech:bronze_helmet', 
-            'ytech:bronze_chestplate', 
-            'ytech:bronze_leggings', 
+            'ytech:copper_helmet',
+            'ytech:copper_chestplate',
+            'ytech:copper_leggings',
+            'ytech:copper_boots',
+            'ytech:bronze_helmet',
+            'ytech:bronze_chestplate',
+            'ytech:bronze_leggings',
             'ytech:bronze_boots',
             'ytech:bread_dough',
             'ytech:flour',
+            'ytech:copper_pickaxe_head_part',
+            'ytech:copper_axe_head_part',
+            'ytech:copper_sword_blade_part',
+            'ytech:tin_axe_head_part',
+            'ytech:tin_pickaxe_head_part',
+            'ytech:tin_sword_blade_part',
+            'ytech:gold_axe_head_part',
+            'ytech:gold_pickaxe_head_part',
+            'ytech:gold_sword_blade_part',
+            'ytech:lead_axe_head_part',
+            'ytech:lead_pickaxe_head_part',
+            'ytech:lead_sword_blade_part',
+            'ytech:lead_pickaxe',
+            'ytech:tin_pickaxe',
+            'ytech:copper_pickaxe',
+            'ytech:copper_axe',
+            'ytech:lead_axe',
+            'ytech:tin_axe',
+            'ytech:copper_sword',
+            'ytech:lead_sword',
+            'ytech:tin_sword',
+            'ytech:tin_shovel',
+            'ytech:lead_shovel',
+            'ytech:copper_shovel',
+            'ytech:tin_shears',
+            'ytech:lead_shears',
+            'ytech:golden_shears',
+            'ytech:copper_shears',
+
+            'ytech:tin_mortar_and_pestle',
+            'ytech:lead_mortar_and_pestle',
+            'ytech:iron_mortar_and_pestle',
+            'ytech:copper_mortar_and_pestle',
+            'ytech:golden_mortar_and_pestle',
+            'ytech:tin_knife',
+            'ytech:lead_knife',
+            'ytech:iron_knife',
+            'ytech:golden_knife',
+            'ytech:copper_knife',
+            'ytech:copper_hoe',
+            'ytech:lead_hoe',
+            'ytech:tin_hoe',
+            'ytech:tin_hammer',
+            'ytech:lead_hammer',
+            'ytech:iron_hammer',
+            'ytech:golden_hammer',
+            'ytech:copper_hammer',
+            'ytech:tin_file',
+            'ytech:lead_file',
+            'ytech:iron_file',
+            'ytech:golden_file',
+            'ytech:copper_file',
+            'ytech:tin_hammer_head_part',
+            'ytech:lead_hammer_head_part',
+            'ytech:gold_hammer_head_part',
+            'ytech:copper_hammer_head_part',
+            'ytech:copper_saw',
+            'ytech:golden_saw',
+            'ytech:iron_saw',
+            'ytech:lead_saw',
+            'ytech:tin_saw',
 
 
         ]
     })
 
     const removing_by_recipe_id = [
-        "ytech:bronze_ingot_from_alloying"
+        "ytech:bronze_ingot_from_alloying",
+        "minecraft:golden_pickaxe",
+        "minecraft:golden_sword",
+        "minecraft:golden_axe",
     ]
 
     removing_by_recipe_id.forEach(id => {
         event.remove({ id: id })
     });
+
+    yTechShaped(event, {
+        pattern: [
+            ' EH',
+            '   ',
+            '   '
+        ],
+        key: {
+            E: { tag: "c:knives" },
+            H: { tag: "ytech:beeswaxes" }
+        },
+        outputItems: [[{ id: "milf:hoe_head_pattern" }, 1]],
+        compatOff: true
+    })
+
+    yTechShaped(event, {
+        pattern: [
+            ' E ',
+            '  H',
+            '   '
+        ],
+        key: {
+            E: { tag: "c:knives" },
+            H: { tag: "ytech:beeswaxes" }
+        },
+        outputItems: [[{ id: "milf:shovel_head_pattern" }, 1]],
+        compatOff: true
+    })
+
+    yTechShapeless(event, {
+        outputItems: [[{ "id": "ytech:bronze_hoe" }, 1]],
+        inputItems: [
+            [{ "item": "minecraft:stick" }, 1],
+            [{ "tag": "ytech:parts/hoe_heads/bronze" }, 1],
+            [{ "tag": "c:hammers" }, 1],
+        ],
+        category: "equipment",
+        removeRecipe: true
+    })
+    yTechShapeless(event, {
+        outputItems: [[{ "id": "ytech:bronze_shovel" }, 1]],
+        inputItems: [
+            [{ "item": "minecraft:stick" }, 1],
+            [{ "tag": "ytech:parts/shovel_heads/bronze" }, 1],
+            [{ "tag": "c:hammers" }, 1],
+        ],
+        category: "equipment",
+        removeRecipe: true
+
+    })
+
 
     event.recipes.ytech.hammering("heavy_weighted_pressure_plate", "iron_block")
         .tool("#c:hammers");;

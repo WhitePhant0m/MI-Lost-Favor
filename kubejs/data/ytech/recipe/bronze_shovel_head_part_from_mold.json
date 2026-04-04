@@ -1,0 +1,16 @@
+{
+  "type": "ytech:smelting",
+  "ingredient": {
+    "tag": "c:ingots/bronze"
+  },
+  "inputCount": 1,
+  "minTemp": 913,
+  "mold": {
+    "tag": "ytech:molds/shovel_head"
+  },
+  "result": {
+    "count": 1,
+    "id": "milf:bronze_shovel_head_part"
+  },
+  "smeltingTime": 600
+}
