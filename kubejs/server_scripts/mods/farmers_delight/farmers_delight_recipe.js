@@ -33,6 +33,11 @@ ServerEvents.recipes(event => {
         'minecraft:wheat',
         'ytech:water_clay_bucket'
     ]).keepIngredient('ytech:water_clay_bucket').id('milf:wheat_dough_from_water_clay_bucket')
+    
+    event.shapeless('farmersdelight:wheat_dough', [
+        'minecraft:wheat',
+        'minecraft:water_bucket'
+    ]).keepIngredient('minecraft:water_bucket').id('milf:wheat_dough_from_water_bucket')
 
 
 })
