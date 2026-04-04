@@ -4,7 +4,8 @@ let $Matrix4f = Java.loadClass("org.joml.Matrix4f")
 let $Vector3f = Java.loadClass("org.joml.Vector3f")
 let $Vector4f = Java.loadClass("org.joml.Vector4f")
 let $AABB = Java.loadClass("net.minecraft.world.phys.AABB")
-let $RenderSystem = Java.loadClass("com.mojang.blaze3d.systems.RenderSystem")
+let $RenderSystem = Platform.isClientEnvironment() ? Java.loadClass("com.mojang.blaze3d.systems.RenderSystem") : null
+// let $RenderSystem = Java.loadClass("com.mojang.blaze3d.systems.RenderSystem")
 let $Axis = Java.loadClass("com.mojang.math.Axis")
 /** @type {typeof import("net.minecraft.world.item.ItemStack").$ItemStack } */
 let $ItemStack  = Java.loadClass("net.minecraft.world.item.ItemStack")
