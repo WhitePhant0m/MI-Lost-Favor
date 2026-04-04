@@ -30,6 +30,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.orb_of_the_forest.tooltip', 'To apply this orb to an axe, hold the orb in your main hand and any axe in your off hand and click RMB')
     event.add('milf.beltborne_lanterns.tooltip', 'Press CTRL + B while holding a lantern — it snaps onto your belt. Need it back in your hands? Press CTRL + B again')
     event.add('milf.money_pouch.tooltip', `Can be opened with ${textAnimatorString("radial menu", "wave", {a:0.2})} while in the curio slot`)
+    event.add('milf.mi_pipe_recolor.tooltip', `You can change the color using ${textAnimatorString("Chisel", "wave", {a:0.2})}`)
     event.add('milf.curio_bag.tooltip', `Can be opened with ${textAnimatorString("radial menu", "wave", {a:0.2})} while in the hotbar or in a curio slot`)
 
     event.add('milf.mi_upgrade_notification_1', `Requires `)

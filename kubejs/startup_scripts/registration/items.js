@@ -1,7 +1,7 @@
 createNewItem("meze_109", { itemType: "helmet", material: 'milf:meze', stackSize: 1, rarity: 'epic' })
 createNewItem("steaming_iron_ingot", { food: { nutrition: 4, saturation: 0, alwaysEdible: true, eaten: "setOnFire", effects: [['minecraft:nausea', 200, 0, 1], ['minecraft:darkness', 100, 0, 1]] }, lang: { "en_us": "Steaming iron ingot", "ru_ru": "Жареный железный слиток" }})
 createNewItem("dirt_cake", { food: { nutrition: 1, saturation: 0, alwaysEdible: true, effects: [['minecraft:hunger', 200, 0, 1], ['minecraft:slowness', 200, 0, 1], ['minecraft:strength', 100, 0, 1]] }, lang: { "en_us": "Dirt cake", "ru_ru": "Торт из грязи" } })
-createNewItem("concrete_popsicle", { food: { nutrition: 1, saturation: 9, alwaysEdible: false, effects: [['minecraft:slowness', 100, 10, 1]] }, lang: { "en_us": "Concrete popsicle"}})
+createNewItem("concrete_popsicle", { food: { nutrition: 1, saturation: 9, alwaysEdible: false, effects: [['minecraft:slowness', 100, 10, 1]] }, lang: { "en_us": "Concrete popsicle", "ru_ru": "Бетонное мороженое" }})
 createNewItem("uranium_sandwich", { food: { nutrition: 1, saturation: 20000, alwaysEdible: true, effects: [['minecraft:hunger', 200, 3, 1], ['minecraft:poison', 1000, 0, 1]] }, lang: { "en_us": "Uranium sandwich", "ru_ru": "Урановый бутерброд" }})
 
 global.getConfidence = (/**@type {$FoodEatenKubeEvent_}*/ ctx) => {
@@ -26,15 +26,15 @@ createNewItem('moonstone_table_core', {rarity: 'rare', lang: { "ru_ru": "Лун�
 createNewItem('dev_pen')
 createNewItem('nbt_pen')
 
-createNewItem('transmutation_orb', {use:{animation:"block"}})
-createNewItem('regal_orb', {use:{animation:"block"}})
-createNewItem('divine_orb', {use:{animation:"block"}})
-createNewItem('orb_of_alchemy', {use:{animation:"block"}})
-createNewItem('orb_of_chance', {use:{animation:"block"}})
-createNewItem('orb_of_annulment', {use:{animation:"block"}})
-createNewItem('orb_of_regret', {use:{animation:"block"}})
-createNewItem('orb_of_corruption', {use:{animation:"block"}})
-createNewItem('orb_of_the_forest', {use:{animation:"block"}})
+createNewItem('transmutation_orb', {use:{animation:"block"}, lang: { "en_us": "Transmutation Orb", "ru_ru": "Сфера Трансмутации" }})
+createNewItem('regal_orb', {use:{animation:"block"}, lang: { "en_us": "Regal Orb", "ru_ru": "Королевская Сфера" }})
+createNewItem('divine_orb', {use:{animation:"block"}, lang: { "en_us": "Divine Orb", "ru_ru": "Божественная Сфера" }})
+createNewItem('orb_of_alchemy', {use:{animation:"block"}, lang: { "en_us": "Orb of Alchemy", "ru_ru": "Сфера Алхимии" }})
+createNewItem('orb_of_chance', {use:{animation:"block"}, lang: { "en_us": "Orb of Chance", "ru_ru": "Сфера Удачи" }})
+createNewItem('orb_of_annulment', {use:{animation:"block"}, lang: { "en_us": "Orb of Annulment", "ru_ru": "Сфера Аннулирования" }})
+createNewItem('orb_of_regret', {use:{animation:"block"}, lang: { "en_us": "Orb of Regret", "ru_ru": "Сфера Сожаления" }})
+createNewItem('orb_of_corruption', {use:{animation:"block"}, lang: { "en_us": "Orb of Corruption", "ru_ru": "Сфера Порчи" }})
+createNewItem('orb_of_the_forest', {use:{animation:"block"}, lang: { "en_us": "Orb of the Forest", "ru_ru": "Сфера Леса" }})
 
 createNewItem('rune_of_piercing', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Piercing", "ru_ru": "Руна Пронзания" }})
 createNewItem('rune_of_armor', {stackSize: 16, rarity: 'rare', lang : { "en_us": "Rune of Armor", "ru_ru": "Руна Брони" }})
@@ -68,14 +68,14 @@ createNewItem('rangefinder', { lang: { "en_us": "Rangefinder", "ru_ru": "Дал�
 createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Привод" } })
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
-createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader"} })
-createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:15 })
-createNewItem('pet_rock', { stackSize: 1})
+createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader", "ru_ru": "Улучшатель MI" } })
+createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:15, lang: { "en_us": "Pet Rock on a Leash", "ru_ru": "Питомец Камень на Поводке" } })
+createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": "Питомец Камень" } })
 
 
 
-createNewItem("bits_mold")
-createNewItem("cement")
+createNewItem("bits_mold", { lang: { "en_us": "Bits Mold", "ru_ru": "Форма для фрагментов" } })
+createNewItem("cement", { lang: { "en_us": "Cement", "ru_ru": "Цемент" } })
 
 createNewItem('old_diary', { stackSize: 1, lang: { "en_us": "Old diary", "ru_ru": "Старый дневник" } })
 createNewItem('old_tablet', { stackSize: 1, lang: { "en_us": "Old tablet", "ru_ru": "Старая табличка" } })
@@ -85,11 +85,11 @@ createNewItem('holy_book_of_color', { texturePath: 'milf:item/color_holy_book', 
 createNewItem('punched_card', { stackSize: 1, lang: { "en_us": "Punched card", "ru_ru": "Перфокарта" } })
 createNewItem('blank_blueprint', { stackSize: 63, lang: { "en_us": "Blank blueprint", "ru_ru": "Пустой чертеж" } })
 
-createNewItem('bioactive_coating', { stackSize: 1 })
-createNewItem('thermophilic_dermis', { stackSize: 1 })
-createNewItem('symbiote_membrane', { stackSize: 1 })
+createNewItem('bioactive_coating', { stackSize: 1, lang: { "en_us": "Bioactive Coating", "ru_ru": "Биоактивное покрытие" } })
+createNewItem('thermophilic_dermis', { stackSize: 1, lang: { "en_us": "Thermophilic Dermis", "ru_ru": "Термофильный покров" } })
+createNewItem('symbiote_membrane', { stackSize: 1, lang: { "en_us": "Symbiote Membrane", "ru_ru": "Мембрана симбионта" } })
 
-createNewItem('goo_coated_blank_blueprint', { stackSize: 1 })
+createNewItem('goo_coated_blank_blueprint', { stackSize: 1, lang: { "en_us": "Goo-Coated Blank Blueprint", "ru_ru": "Пустой чертёж в слизи" } })
 
 createNewItem('core_hull', { lang: { "en_us": "Core hull", "ru_ru": "Основа ядра" } })
 createNewItem('core_press', { stackSize: 16, lang: { "en_us": "Core press", "ru_ru": "Пресс для ядра" } })
