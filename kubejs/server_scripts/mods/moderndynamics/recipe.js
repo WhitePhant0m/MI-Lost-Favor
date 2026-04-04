@@ -4,10 +4,10 @@ ServerEvents.recipes(event => {
 
     replaceItems.forEach(item => {
         event.replaceInput(
-    { input:`minecraft:${item}_ingot`, mod: "moderndynamics"},
-    `minecraft:${item}_ingot`,
-    `modern_industrialization:${item}_plate`
-    )
+            { input: `minecraft:${item}_ingot`, mod: "moderndynamics" },
+            `minecraft:${item}_ingot`,
+            `modern_industrialization:${item}_plate`
+        )
     })
 
 })

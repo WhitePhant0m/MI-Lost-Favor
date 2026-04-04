@@ -18,9 +18,7 @@ NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
 global.renderPlacerTooltips = (guiGraphics, deltaTracker) => {
 	if (!Client || Client.hitResult.type != $HitResult$Type.BLOCK) return
 	if (!Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:placers") && !Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:empty_box")) return
-	let $TooltipRenderUtil = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil")
-	let $ClientTooltipComponent = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent")
-	let $DefaultTooltipPositioner = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE
+
 	const block = Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block
 	const clientTooltipComponents = block.hasTag("milf:placers") ? [
 		$ClientTooltipComponent.create(block.name.visualOrderText),

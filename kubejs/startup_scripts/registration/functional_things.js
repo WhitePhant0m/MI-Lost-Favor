@@ -533,6 +533,8 @@ const ore_list = [
     { lang: { "en_us": `Uranium ${en_usOreSample}`, "ru_ru": `Урановый ${ru_ruOreSample}` }, itemName: "uranium", directory: "modern_industrialization" },
 ]
 
+global.oresWithSamples = ore_list
+
 global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime || {}
 global.AnotherDefinitelyUniqueNameForBoxes = global.AnotherDefinitelyUniqueNameForBoxes || {}
 

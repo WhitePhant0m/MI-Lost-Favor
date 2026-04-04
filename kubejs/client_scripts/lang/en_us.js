@@ -35,6 +35,18 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.mi_upgrade_notification_1', `Requires `)
     event.add('milf.mi_upgrade_notification_2', ` to upgrade!`)
 
+    event.add('milf.pet_rock.notification1', `Looking around...`)
+    event.add('milf.pet_rock.notification2', `In search of rocks...`)
+    event.add('milf.pet_rock.notification3', `Eating gravel...`)
+    event.add('milf.pet_rock.notification4', `Seducing the worms...`)
+    event.add('milf.pet_rock.notification5', `Petting the stones...`)
+
+    event.add('milf.pet_rock.notification1.f', `...To find nothing`)
+    event.add('milf.pet_rock.notification2.f', `...But there are none`)
+    event.add('milf.pet_rock.notification3.f', `...To no avail`)
+    event.add('milf.pet_rock.notification4.f', `...For them to scatter`)
+    event.add('milf.pet_rock.notification5.f', `...Just for fun`)
+
     event.add('milf.placers.notification1', `Not enough space to place ${textAnimatorString("this", "bounce")} one`)
     event.add('milf.placers.notification2', `You have to choose a ${textAnimatorString("valid direction", "glitch")} first`)
     event.add('milf.placers.notification3', `Structure has to be ${textAnimatorString("EXACTLY", "shake")} the same`)

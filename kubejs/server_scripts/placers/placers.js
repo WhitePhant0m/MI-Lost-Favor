@@ -104,7 +104,7 @@ BlockEvents.rightClicked(BOX_BLOCKS, event => {
     }
 })
 
-function handlePreview(/**@type {$BlockRightClickedKubeEvent_} */ event, template, playerStructureData, blockStructureData){
+function handlePreview(/**@type {import("dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent").$BlockRightClickedKubeEvent$$Original} */ event, template, playerStructureData, blockStructureData){
     if (event.player.isCrouching()) {
         if(event.block.getProperties().enabled == "true") {
             let { boxPos } = blockStructureData
@@ -198,6 +198,17 @@ function handlePreviewFailure(event, playerStructureData, blockStructureData){
         event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
     removePreview(event, playerStructureData)
     removePreview(event, blockStructureData, true)
+    // event.player.sendData("placers", {
+    //     xMin:playerStructureData.bounds.xMin,
+    //     yMin:playerStructureData.bounds.yMin,
+    //     zMin:playerStructureData.bounds.zMin,
+    //     xMax:playerStructureData.bounds.xMax,
+    //     yMax:playerStructureData.bounds.yMax,
+    //     zMax:playerStructureData.bounds.zMax,
+    //     posX:playerStructureData.bounds.posX,
+    //     posY:playerStructureData.bounds.posY,
+    //     posZ:playerStructureData.bounds.posZ
+    // })
     event.cancel()
 }
 

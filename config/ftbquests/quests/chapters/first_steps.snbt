@@ -2581,5 +2581,32 @@
 			x: 0.0d
 			y: 0.5d
 		}
+		{
+			dependencies: [
+				"273D51DE9AFC6B5A"
+				"5A23E325ABD115A1"
+			]
+			id: "324569702E4DFDBD"
+			shape: "heart"
+			tasks: [{
+				id: "43CC338B8D862BD2"
+				item: { count: 1, id: "milf:pet_rock_on_a_leash" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["273D51DE9AFC6B5A"]
+			id: "5A23E325ABD115A1"
+			shape: "heart"
+			tasks: [{
+				id: "42FDA323B5414894"
+				item: { count: 1, id: "milf:pet_rock" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
 	]
 }

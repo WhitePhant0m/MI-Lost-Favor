@@ -10,6 +10,10 @@ let $Axis = Java.loadClass("com.mojang.math.Axis")
 /** @type {typeof import("net.minecraft.world.item.ItemStack").$ItemStack } */
 let $ItemStack  = Java.loadClass("net.minecraft.world.item.ItemStack")
 
+let $TooltipRenderUtil = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil") : null
+let $ClientTooltipComponent = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent") : null
+let $DefaultTooltipPositioner = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE : null
+
 NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
     event.registerBelowAll("milf:upgrades_tooltips", (gui, delta) => global.renderUpgradesTooltips(gui, delta))
 })
@@ -50,10 +54,6 @@ global.renderUpgradesTooltips = (guiGraphics, deltaTracker) => {
     if (!Client || Client.hitResult.type != $HitResult$Type.BLOCK) return
     if (Client.player.mainHandItem.id != "milf:mi_upgrader") return
     if (!Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos).blockState.block.hasTag("milf:upgradable")) return
-
-    let $TooltipRenderUtil = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil")
-    let $ClientTooltipComponent = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent")
-    let $DefaultTooltipPositioner = Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE
 
     let blockPos = (/** @type {$BlockHitResult_} */(Client.hitResult)).blockPos
     let level = Client.level
