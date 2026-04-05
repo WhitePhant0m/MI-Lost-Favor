@@ -27,6 +27,15 @@ ItemEvents.modifyTooltips(event => {
     simpleShiftText({ items: ["minecraft:lantern", "minecraft:soul_lantern"], text: "milf.beltborne_lanterns.tooltip", color: "#43B747" });
     event.add("#modern_industrialization:item_pipes", Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2"));
     event.add("#modern_industrialization:fluid_pipes", Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2"));
+    event.add("#modern_industrialization:me_wires", Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2"));
+    const ae2_recolor_tooltip = Text.translate("milf.mi_pipe_recolor.tooltip").color("#8F19A2");
+    const ae2_cable_types = ["glass_cable", "smart_cable", "covered_cable", "covered_dense_cable", "smart_dense_cable"];
+    ae2_cable_types.forEach(type => {
+        event.add(`ae2:fluix_${type}`, ae2_recolor_tooltip);
+        global.dyeColors.forEach(color => {
+            event.add(`ae2:${color.name}_${type}`, ae2_recolor_tooltip);
+        });
+    });
     //#region
 
     //#region various changes
