@@ -12,7 +12,7 @@
 		image: "ftbchunks:textures/minimap_info.png"
 		rotation: 0.0d
 		width: 2.0d
-		x: -23.5d
+		x: -22.0d
 		y: 5.5d
 	}]
 	order_index: 0
@@ -40,16 +40,16 @@
 			id: "3E22A03BE28D9F5A"
 			linked_quest: "1F905B94015D7B5F"
 			shape: "diamond"
-			x: -28.0d
+			x: -24.0d
 			y: 4.5d
 		}
 		{
 			id: "67DD1FC4F9F8CDD4"
 			linked_quest: "4083E911C6B0B990"
 			shape: "octagon"
-			size: 3.0d
-			x: -26.0d
-			y: 2.5d
+			size: 2.0d
+			x: -24.0d
+			y: 2.0d
 		}
 		{
 			id: "7E8B2782E3BE8E90"
@@ -57,6 +57,13 @@
 			shape: "diamond"
 			x: 13.5d
 			y: -1.0d
+		}
+		{
+			id: "3F81B0FCDA7F8A4E"
+			linked_quest: "591843445BE8DF11"
+			shape: "rsquare"
+			x: -22.0d
+			y: 2.5d
 		}
 	]
 	quests: [
@@ -712,7 +719,7 @@
 					type: "item"
 				}
 			]
-			x: -13.5d
+			x: -14.0d
 			y: 12.0d
 		}
 		{
@@ -4138,7 +4145,7 @@
 				id: "immersivepetroleum:pumpjack"
 			}
 			id: "7E40FBDF9AA89DDC"
-			shape: "pentagon"
+			shape: "diamond"
 			tasks: [
 				{
 					id: "29C714656063AF10"
@@ -4154,11 +4161,11 @@
 					type: "observation"
 				}
 			]
-			x: -14.0d
-			y: 8.0d
+			x: -15.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["14E14704351DD25A"]
+			dependencies: ["6AA181FB6AD6AD6B"]
 			icon: {
 				id: "immersivepetroleum:coker_unit"
 			}
@@ -4180,7 +4187,7 @@
 				}
 			]
 			x: -19.5d
-			y: 8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -4247,14 +4254,14 @@
 		{
 			dependencies: ["56E2969603D8D354"]
 			id: "4FD1DB6D7DC3F71A"
-			shape: "heart"
+			shape: "diamond"
 			tasks: [{
 				id: "1D7A5B5097519B16"
 				item: { count: 1, id: "immersivepetroleum:oiltank" }
 				type: "item"
 			}]
 			x: -15.5d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -4281,7 +4288,7 @@
 				item: { count: 1, id: "milf:radio_tower_block" }
 				type: "item"
 			}]
-			x: -18.5d
+			x: -21.0d
 			y: 2.5d
 		}
 		{
@@ -4299,13 +4306,13 @@
 		{
 			dependencies: ["0D667A432FB71068"]
 			id: "56E2969603D8D354"
-			shape: "square"
+			shape: "diamond"
 			tasks: [{
 				id: "01B3ED8936704219"
 				item: { count: 1, id: "immersivepetroleum:crudeoil_bucket" }
 				type: "item"
 			}]
-			x: -16.5d
+			x: -16.0d
 			y: 6.5d
 		}
 		{
@@ -4418,7 +4425,7 @@
 				item: { count: 1, id: "immersiveengineering:concrete" }
 				type: "item"
 			}]
-			x: -20.5d
+			x: -21.0d
 			y: 4.5d
 		}
 		{
@@ -4517,6 +4524,7 @@
 			dependencies: [
 				"0B58EA0D81A92FF5"
 				"38EA0B2D7FE370C5"
+				"14E14704351DD25A"
 			]
 			dependency_requirement: "one_completed"
 			id: "1BB44702E84D19E0"
@@ -4527,7 +4535,7 @@
 				type: "item"
 			}]
 			x: -18.5d
-			y: 9.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["0B58EA0D81A92FF5"]
@@ -4538,7 +4546,7 @@
 				item: { count: 1, id: "modern_industrialization:lubricant_bucket" }
 				type: "item"
 			}]
-			x: -16.0d
+			x: -15.5d
 			y: 8.0d
 		}
 		{
@@ -4765,17 +4773,21 @@
 		{
 			dependencies: ["52D2DDE678718DC4"]
 			id: "22D0955A9CBE9EC3"
-			shape: "square"
+			shape: "diamond"
 			tasks: [{
 				id: "3076A57FCB29CBD7"
 				item: { count: 1, id: "milf:desalted_crude_oil_bucket" }
 				type: "item"
 			}]
-			x: -18.5d
+			x: -19.0d
 			y: 6.5d
 		}
 		{
-			dependencies: ["0B58EA0D81A92FF5"]
+			dependencies: [
+				"0B58EA0D81A92FF5"
+				"2096E5CDEB9973EA"
+			]
+			dependency_requirement: "one_completed"
 			id: "14E14704351DD25A"
 			shape: "diamond"
 			tasks: [{
@@ -4783,8 +4795,8 @@
 				item: { count: 1, id: "modern_industrialization:sulfuric_heavy_fuel_bucket" }
 				type: "item"
 			}]
-			x: -19.0d
-			y: 8.0d
+			x: -17.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -4793,26 +4805,26 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "0FDB5B363219B347"
-			shape: "pentagon"
+			shape: "octagon"
 			tasks: [{
 				id: "5E47067407DD04E9"
 				item: { count: 1, id: "modern_industrialization:sulfuric_naphtha_bucket" }
 				type: "item"
 			}]
 			x: -17.5d
-			y: 9.0d
+			y: 9.5d
 		}
 		{
-			dependencies: ["2096E5CDEB9973EA"]
+			dependencies: ["14E14704351DD25A"]
 			id: "38EA0B2D7FE370C5"
-			shape: "diamond"
+			shape: "pentagon"
 			tasks: [{
 				id: "5B741BAEF53453C1"
 				item: { count: 1, id: "modern_industrialization:sulfuric_light_fuel_bucket" }
 				type: "item"
 			}]
-			x: -20.0d
-			y: 9.0d
+			x: -17.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -4862,7 +4874,7 @@
 				item: { count: 1, id: "modern_industrialization:ethylene_bucket" }
 				type: "item"
 			}]
-			x: -19.5d
+			x: -20.0d
 			y: 14.5d
 		}
 		{
@@ -4910,7 +4922,7 @@
 				item: { count: 1, id: "modern_industrialization:hydrogen_bucket" }
 				type: "item"
 			}]
-			x: -15.5d
+			x: -15.0d
 			y: 14.5d
 		}
 		{
@@ -4938,7 +4950,7 @@
 				type: "item"
 			}]
 			x: -21.0d
-			y: 16.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["4C77B21F00672741"]
@@ -4956,6 +4968,7 @@
 			dependencies: [
 				"0B58EA0D81A92FF5"
 				"38EA0B2D7FE370C5"
+				"14E14704351DD25A"
 			]
 			id: "14424BCEB61D6D9F"
 			shape: "rsquare"
@@ -4965,7 +4978,7 @@
 				type: "item"
 			}]
 			x: -16.5d
-			y: 9.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -5027,7 +5040,7 @@
 					type: "observation"
 				}
 			]
-			x: -22.5d
+			x: -21.0d
 			y: 6.5d
 		}
 		{
@@ -5054,7 +5067,7 @@
 				item: { count: 1, id: "immersiveengineering:high_power_biodiesel_bucket" }
 				type: "item"
 			}]
-			x: -13.5d
+			x: -14.0d
 			y: 13.0d
 		}
 		{
@@ -5211,8 +5224,8 @@
 				item: { count: 1, id: "immersivepetroleum:lubricant_bucket" }
 				type: "item"
 			}]
-			x: -15.0d
-			y: 9.0d
+			x: -15.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["453172705D4F7A93"]
@@ -5223,20 +5236,20 @@
 				item: { count: 1, id: "immersivepetroleum:oil_can" }
 				type: "item"
 			}]
-			x: -14.5d
+			x: -14.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["0273F026683813F4"]
 			id: "1DC37BADF3C774E0"
-			shape: "octagon"
+			shape: "pentagon"
 			tasks: [{
 				id: "5E11571C3312C0DF"
 				item: { count: 1, id: "immersivepetroleum:auto_lubricator" }
 				type: "item"
 			}]
-			x: -13.0d
-			y: 9.5d
+			x: -14.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0BCD76587F2DB00F"]
@@ -5259,7 +5272,7 @@
 				item: { count: 1, id: "milf:punched_card" }
 				type: "item"
 			}]
-			x: -27.5d
+			x: -24.5d
 			y: 5.0d
 		}
 		{
@@ -5345,6 +5358,42 @@
 			}]
 			x: -4.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["0B58EA0D81A92FF5"]
+			id: "6AA181FB6AD6AD6B"
+			shape: "diamond"
+			tasks: [{
+				id: "17F89B328E535364"
+				item: { count: 1, id: "immersivepetroleum:bitumen" }
+				type: "item"
+			}]
+			x: -19.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6AA181FB6AD6AD6B"]
+			id: "2AB34BAD711EA0C4"
+			shape: "pentagon"
+			tasks: [{
+				id: "224EF72C48278237"
+				item: { count: 1, id: "immersivepetroleum:asphalt" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2096E5CDEB9973EA"]
+			id: "68532CC7D26AA930"
+			shape: "diamond"
+			tasks: [{
+				id: "2CABEC2D6E20FF8C"
+				item: { count: 1, id: "immersivepetroleum:petcoke" }
+				type: "item"
+			}]
+			x: -21.0d
+			y: 9.5d
 		}
 	]
 }
