@@ -51,6 +51,13 @@
 			x: -26.0d
 			y: 2.5d
 		}
+		{
+			id: "7E8B2782E3BE8E90"
+			linked_quest: "70FAA49F0C768E38"
+			shape: "diamond"
+			x: 13.5d
+			y: -1.0d
+		}
 	]
 	quests: [
 		{

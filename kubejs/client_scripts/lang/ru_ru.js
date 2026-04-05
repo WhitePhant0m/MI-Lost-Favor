@@ -103,6 +103,12 @@ ClientEvents.lang('ru_ru', event => {
     event.add('desc.immersiveengineering.info.mineral.brindleyite', "Бриндлейит")
     event.add('desc.immersiveengineering.info.mineral.hematite', "Гематит")
 
+    event.add("rite.milf.archwood_broom", "Ритуал Формирования")
+    event.add("rite.milf.naturescompass", "Ритуал Формирования")
+    event.add("rite.milf.willow_broom", "Ритуал Формирования")
+    event.add("rite.milf.witch_hazel_broom", "Ритуал Формирования")
+    event.add("rite.milf.mahogany_broom", "Ритуал Формирования")
+
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "Вы чувствуете себя немного лучше после того, как съели что-то, кроме фруктов и овощей.")
     event.add("milf.food.poison_1", "Вы съели слишком много фруктов и овощей и теперь чувствуете себя плохо!")

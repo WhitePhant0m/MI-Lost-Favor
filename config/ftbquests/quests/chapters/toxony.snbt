@@ -1727,23 +1727,12 @@
 			dependencies: ["54E38F55D7A23664"]
 			id: "7C082F9CC1474254"
 			shape: "diamond"
-			tasks: [
-				{
-					id: "6A450BF11772DD17"
-					item: { count: 1, id: "magnumtorch:diamond_magnum_torch" }
-					type: "item"
-				}
-				{
-					id: "6DB27C8811207858"
-					item: { count: 1, id: "magnumtorch:emerald_magnum_torch" }
-					type: "item"
-				}
-				{
-					id: "35267213DDB430E2"
-					item: { count: 1, id: "magnumtorch:amethyst_magnum_torch" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6DB27C8811207858"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(magnumtorch:torches)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				optional_task: true
+				type: "item"
+			}]
 			x: 1.0d
 			y: 3.5d
 		}
@@ -1921,7 +1910,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["2518CA7E57223D3A"]
+			dependencies: [
+				"2518CA7E57223D3A"
+				"680568A4CDE87E3A"
+			]
 			id: "70FAA49F0C768E38"
 			shape: "diamond"
 			tasks: [{

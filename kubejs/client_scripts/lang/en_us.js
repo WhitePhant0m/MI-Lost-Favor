@@ -103,6 +103,12 @@ ClientEvents.lang('en_us', event => {
 
     event.add('rei_categories.modern_industrialization.blast_furnace', "Steam Blast Furnace")
 
+    event.add("rite.milf.archwood_broom", "Ritual of Formation")
+    event.add("rite.milf.naturescompass", "Ritual of Formation")
+    event.add("rite.milf.willow_broom", "Ritual of Formation")
+    event.add("rite.milf.witch_hazel_broom", "Ritual of Formation")
+    event.add("rite.milf.mahogany_broom", "Ritual of Formation")
+
     //#region Food tweak
     event.add("milf.food.feel_bit_better", "You feel a bit better after eating something other than fruits and vegetables.")
     event.add("milf.food.poison_1", "You have eaten too many fruits and vegetables and are now poisoned!")

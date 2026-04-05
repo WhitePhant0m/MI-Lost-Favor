@@ -437,9 +437,13 @@
 	quest.127F92D0F2CC923C.quest_desc: [
 		"Using a wrench, you can rotate any machine by right-clicking. You can rotate the output side by sneaking while you shift-click."
 		""
+		"&lWith the wrench in your hand, you can also see how to build a particular multi-block! To do this, place the main block of the multi-block.&r"
+		""
 		"Note that breaking a machine with the wrench will not drop it. Use a pickaxe for that!"
 		"{@pagebreak}"
 		"С помощью гаечного ключа можно поворачивать любую машину, щелкнув по ней ПКМ. Вы можете повернуть \"выход\" машины, используя шифт-клик."
+		""
+		"&lДержа ключ в руке вы так же можете посмотреть как строить тот или иной мультиблок! Для этого установите основной блок мультиблока.&r"
 		""
 		"Обратите внимание, что разбивая машину гаечным ключом, вы не сможете ее получить. Для этого используйте кирку!"
 	]
@@ -2757,6 +2761,7 @@
 	task.6B073DC5E1960334.title: "Odus' Open Convocation"
 	task.6C76C1D379AC2926.title: "Horseman"
 	task.6DA0FB55995165C0.title: "Armor Quick Swap"
+	task.6DB27C8811207858.title: "Any #magnumtorch:torches"
 	task.6E241CA073F70AD3.title: "Xeovrenth Adjure"
 	task.6E27CA7959D2DC61.title: "Any #pastel:bedrock_equipment"
 	task.6F9CD690878AEB29.title: "Any #toxony:scalpels"
