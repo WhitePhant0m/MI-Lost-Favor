@@ -15,7 +15,7 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.saturation', `You have lost your ${textAnimatorString("saturation", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})}...`)
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
-    event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest')
+    event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest or bought in a market')
     event.add('milf.how_to_get_blaze_core.tooltip', 'You have a 50% chance of obtaining if you kill with the any wrench: Sacred Pontiff, Lord Pumpking, The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')
     event.add('milf.how_to_get_electronice_ender_core.tooltip', 'You have a 50% chance of obtaining if you kill with the wrench: Nether Gauntlet, Night Lich, Obsidilith, Void Blossom, Geburah, Chesed, Malkuth')
     event.add('milf.stage.minecraft_mobs', `You started hearing ${textAnimatorString("strange noises", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} at night...`)
