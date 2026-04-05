@@ -47,6 +47,7 @@ const born_in_chaos_mobs = [
     { id: "skeleton_demoman", mob: "born_in_chaos_v1:skeleton_demoman" },
     { id: "spirit_guide_assistant", mob: "born_in_chaos_v1:spirit_guide_assistant" },
     { id: "zombie_lumberjack", mob: "born_in_chaos_v1:zombie_lumberjack" },
+    {id:"corpse_fly", mob: "born_in_chaos_v1:corpse_fly"},
 ]
 
 mobRestriction("born_in_chaos_v1", born_in_chaos_mobs)
