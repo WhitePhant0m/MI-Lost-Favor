@@ -1,7 +1,7 @@
 {
     "type": "apotheosis:attribute",
     "modifier": {
-        "attribute": "minecraft:attack_damage",
+        "attribute": "minecraft:generic.attack_damage",
         "operation": "add_value",
         "value": 24.0
     },
