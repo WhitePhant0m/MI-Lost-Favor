@@ -35,7 +35,17 @@ KubeJSTweaks.beforeRecipes(event => {
 
     const disableByRecipeID = [
         "occultism:blasting/netherite_ingot_from_dust",
-        "occultism:smelting/netherite_ingot_from_dust"
+        "occultism:blasting/iron_ingot_from_dust",
+        "occultism:blasting/gold_ingot_from_dust",
+        "occultism:blasting/copper_ingot_from_dust",
+
+        "occultism:smelting/netherite_ingot_from_dust",
+        "occultism:smelting/silver_ingot_from_ore",
+        "occultism:smelting/silver_ingot_from_dust",
+        "occultism:smelting/silver_ingot_from_raw",
+        "occultism:smelting/gold_ingot_from_dust",
+        "occultism:smelting/iron_ingot_from_dust",
+        "occultism:smelting/copper_ingot_from_dust"
     ]
 
     disableByRecipeID.forEach(id => {
