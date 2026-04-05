@@ -69,5 +69,23 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "immersive_aircraft:nether_engine" },
+            { "item": "modern_industrialization:steel_ingot" },
+            { "item": "modern_industrialization:steel_ingot" },
+            { "item": "modern_industrialization:steel_ingot" },
+            { "item": "modern_industrialization:steel_ingot" },
+            { "item": "modern_industrialization:steel_ingot" },
+            { "item": "modern_industrialization:steel_ingot" },
+            { "item": "modern_industrialization:steel_ingot" }
+        ],
+        output: "hexerei:broom_thruster_brush",
+        amount: 1,
+        heat: "heated"
+    })
+
 
 })
