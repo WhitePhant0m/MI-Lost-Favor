@@ -14,6 +14,7 @@ const PET_ROCK_NOTIF_LANG = [
 NetworkEvents.dataReceived('pet_rock', (event) => {
 
     let isAny = true
+    let font = Client.font
 
     if (event.data.ores == undefined){
         isAny = false
@@ -36,15 +37,15 @@ NetworkEvents.dataReceived('pet_rock', (event) => {
         })
         
         for (const [id, count] of Object.entries(oresJS)) {
-            let componentToAdd = $ClientTooltipComponent.create(Component.translatable(Item.getItem(id).getDescriptionId()).visualOrderText)
+            let componentToAdd = Component.translatable(Item.getItem(id).getDescriptionId())
             clientTooltipComponents.push(componentToAdd)
             componentToID[componentToAdd] = { id: id, count: count }
         }
 
         maxWidth = 0
-        clientTooltipComponents.forEach(c => {
-            const w = c.getWidth(Client.font)
-            if (w > maxWidth) maxWidth = w
+        clientTooltipComponents.forEach(component => {
+            const width = font.width(component)
+            if (width > maxWidth) maxWidth = width
         })
     }
 
@@ -125,13 +126,31 @@ NetworkEvents.dataReceived('pet_rock', (event) => {
                 let oreItem = Item.of(componentToID[component].id)
                 guiGraphics.renderFakeItem(oreItem, 0, 0)
                 guiGraphics.renderItemDecorations(Client.font, oreItem, 0, 0, String(componentToID[component].count))
-
                 pose.popPose()
 
                 pose.pushPose()
-                component.renderText(Client.font, 20 * SCALE, 8, pose.last().pose(), guiGraphics.bufferSource())
+                let wrappedLines = font.split(component, 120)
+                let addSpace = 0
+                switch (wrappedLines.size()) {
+                    case 1:
+                        addSpace = 8
+                        break;
+                    case 2:
+                        addSpace = 4
+                        break;
+                    default:
+                        addSpace = 0
+                        break;
+                }
+                let lineIndex = 0
+                wrappedLines.forEach(line =>{
+                    guiGraphics["drawString(net.minecraft.client.gui.Font,net.minecraft.util.FormattedCharSequence,float,float,int,boolean)"](font, line, 20 * SCALE, addSpace + lineIndex * 8, 0xFFFFFF, true)
+                    lineIndex++
+                })
+                //component.renderText(Client.font, 20 * SCALE, 8, pose.last().pose(), guiGraphics.bufferSource())
                 pose.popPose()
                 pose.popPose()
+
                 if (timePassed >= TIME - (randomDelay / 20) * 1000) {
                     return $Toast.Visibility.HIDE
                 }
