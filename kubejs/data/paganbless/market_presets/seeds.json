@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "payment": {
+    "ingredient": {
+      "item": "devices:bronze_coin"
+    },
+    "count": 5
+  }
+}
