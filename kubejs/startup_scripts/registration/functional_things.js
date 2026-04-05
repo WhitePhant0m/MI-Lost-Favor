@@ -399,14 +399,14 @@ const multiblocksForPlacers = [
     //#region extended_industrialization
     {
         name:"large_electric_macerator",
-        langPlacers: { "en_us": `Large Electric Macerator ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} большого электрического мацератора`},
-        langBoxes: { "en_us": `Large Electric Macerator ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} большого электрического мацератора`},
+        langPlacers: { "en_us": `Large Electric Macerator ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} большого электрического дробителя`},
+        langBoxes: { "en_us": `Large Electric Macerator ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} большого электрического дробителя`},
         mod:"extended_industrialization"
     },
     {
         name:"large_steam_macerator",
-        langPlacers: { "en_us": `Large Steam Macerator ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} большого парового мацератора`},
-        langBoxes: { "en_us": `Large Steam Macerator ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} большого парового мацератора`},
+        langPlacers: { "en_us": `Large Steam Macerator ${en_usPlacer}`, "ru_ru": `${ru_ruPlacer} большого парового дробителя`},
+        langBoxes: { "en_us": `Large Steam Macerator ${en_usEmptyBox}`, "ru_ru": `${ru_ruEmptyBox} большого парового дробителя`},
         mod:"extended_industrialization"
     },
 
