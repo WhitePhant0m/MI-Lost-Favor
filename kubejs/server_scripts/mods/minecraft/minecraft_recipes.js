@@ -24,6 +24,7 @@ ServerEvents.recipes(event => {
     })
 
     event.shapeless(Item.of("minecraft:flint"), ["minecraft:gravel", "minecraft:gravel", "minecraft:gravel"]);
+    event.shapeless("9x minecraft:redstone", ["minecraft:redstone_block"]);
 
     // same recipe only for MI compat
     global.dyeColors.forEach(color => {
