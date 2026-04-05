@@ -496,7 +496,13 @@ KubeJSTweaks.beforeRecipes(event =>{
         "immersiveengineering:cokeoven/coke",
         "immersiveengineering:crafting/empty_shell",
         "immersiveengineering:smelting/copper_ingot_from_dust",
-        "immersiveengineering:smelting/copper_ingot_from_dust_from_blasting"
+        "immersiveengineering:smelting/copper_ingot_from_dust_from_blasting",
+        "immersiveengineering:smelting/iron_ingot_from_dust",
+        "immersiveengineering:smelting/iron_ingot_from_dust_from_blasting",
+        "immersiveengineering:smelting/gold_ingot_from_dust",
+        "immersiveengineering:smelting/gold_ingot_from_dust_from_blasting",
+        "immersiveengineering:crafting/nugget_netherite_to_netherite_ingot"
+
     ]
 
     disableByRecipeID.forEach(id =>{
