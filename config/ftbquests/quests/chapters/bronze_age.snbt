@@ -108,6 +108,7 @@
 				{
 					id: "14D42635C6CEF543"
 					item: { count: 1, id: "minecraft:gunpowder" }
+					optional_task: true
 					type: "item"
 				}
 				{
