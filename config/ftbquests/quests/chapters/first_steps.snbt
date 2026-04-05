@@ -2608,5 +2608,27 @@
 			x: 3.5d
 			y: -4.5d
 		}
+		{
+			dependencies: ["273D51DE9AFC6B5A"]
+			id: "0CD9D93D8A93DE87"
+			rewards: [{
+				count: 20
+				id: "5255426E3A01817B"
+				item: {
+					count: 1
+					id: "minecraft:chain"
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			size: 0.7d
+			tasks: [{
+				id: "3692A13E4C6958CC"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(connectiblechains:catenary_items)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
 	]
 }

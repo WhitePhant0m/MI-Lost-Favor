@@ -302,6 +302,11 @@
 		"Я почти сделал это! Материал, который будет использоваться для раскрытия всего потенциала яда. Я приготовил это снадобье, чтобы подготовить окончательное создание высшего вещества! Но мне нужно еще раз войти в недра."
 	]
 	quest.0C7FBEEB6BB3499E.quest_desc: ["Adds items into system"]
+	quest.0CD9D93D8A93DE87.quest_desc: [
+		"In addition, various leads and chains can be used on fences/walls as decorations, and you can quickly move along these \"decorations\" using any pickaxe!"
+		"{@pagebreak}"
+		"Кроме того, разнообразные поводки и цепи можно использовать на заборах/каменных заборах в качестве декорации, а так же на этих \"декорациях\" Можно  быстро передвигаться используя любую кирку!"
+	]
 	quest.0CE37F75EAC4705E.quest_desc: [
 		"&lWither Skeleton Skull&r:"
 		"• +2x Power Capacity"
@@ -2690,6 +2695,7 @@
 	task.3460D0595D90DE40.title: "Any #milf:onyx_chiseled_block"
 	task.34A589CCA978ACEF.title: "Any #pastel:shimmerstone_lights"
 	task.34DF3E12B2DABA4D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
+	task.3692A13E4C6958CC.title: "Any #connectiblechains:catenary_items"
 	task.37BF27F02B385E1D.title: "BUT HOW DO YOU MAKE BEER?!"
 	task.37F1D31D1CFE5331.title: "Any #c:feathers"
 	task.3A29E8F35850BD56.title: "Elevator"
