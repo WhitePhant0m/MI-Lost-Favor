@@ -1,5 +1,3 @@
-let $RegisterGuiLayersEvent = Java.loadClass("net.neoforged.neoforge.client.event.RegisterGuiLayersEvent")
-let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type")
 let $Matrix4f = Java.loadClass("org.joml.Matrix4f")
 let $Vector3f = Java.loadClass("org.joml.Vector3f")
 let $Vector4f = Java.loadClass("org.joml.Vector4f")
@@ -9,10 +7,6 @@ let $RenderSystem = Platform.isClientEnvironment() ? Java.loadClass("com.mojang.
 let $Axis = Java.loadClass("com.mojang.math.Axis")
 /** @type {typeof import("net.minecraft.world.item.ItemStack").$ItemStack } */
 let $ItemStack  = Java.loadClass("net.minecraft.world.item.ItemStack")
-
-let $TooltipRenderUtil = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil") : null
-let $ClientTooltipComponent = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent") : null
-let $DefaultTooltipPositioner = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE : null
 
 NativeEvents.onEvent($RegisterGuiLayersEvent, event => {
     event.registerBelowAll("milf:upgrades_tooltips", (gui, delta) => global.renderUpgradesTooltips(gui, delta))

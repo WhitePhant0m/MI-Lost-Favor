@@ -1,3 +1,12 @@
+let $TooltipRenderUtil = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.TooltipRenderUtil") : null
+let $ClientTooltipComponent = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent") : null
+let $DefaultTooltipPositioner = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.client.gui.screens.inventory.tooltip.DefaultTooltipPositioner").INSTANCE : null
+
+let $ResourceLocation = Platform.isClientEnvironment() ? Java.loadClass("net.minecraft.resources.ResourceLocation") : null
+let $RegisterGuiLayersEvent = Java.loadClass("net.neoforged.neoforge.client.event.RegisterGuiLayersEvent")
+let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type")
+
+
 /**
  * @param {$Vector3f_} pos
  * @param {$GameRenderer_} gameRenderer
@@ -52,4 +61,8 @@ function toPolar(point1, point2){
     let angle = Math.atan2(dy, dx)
 
     return {length:length , angle:angle}
+}
+
+function easeInOutCubic(x) {
+    return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2
 }
