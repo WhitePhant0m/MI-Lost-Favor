@@ -1424,6 +1424,7 @@
 			tasks: [{
 				id: "31B6458C04F2A1E6"
 				item: { components: { "immersiveengineering:blueprint": "MI components" }, count: 1, id: "immersiveengineering:blueprint" }
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: 2.0d
