@@ -69,7 +69,7 @@ createNewItem('cd_reader', { lang: { "en_us": "CD Reader", "ru_ru": "CD-Прив
 createNewItem('cd', { stackSize: 8, lang: { "en_us": "CD", "ru_ru": "CD" } })
 createNewItem('lens', { lang: { "en_us": "Lens", "ru_ru": "Линза" } })
 createNewItem('mi_upgrader', { stackSize: 1, lang: { "en_us": "MI Upgrader", "ru_ru": "Улучшатель MI" } })
-createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:15, lang: { "en_us": "Pet Rock on a Leash", "ru_ru": "Питомец Камень на Поводке" } })
+createNewItem('pet_rock_on_a_leash', { stackSize: 1, maxDamage:25, lang: { "en_us": "Pet Rock on a Leash", "ru_ru": "Питомец Камень на Поводке" } })
 createNewItem('pet_rock', { stackSize: 1, lang: { "en_us": "Pet Rock", "ru_ru": "Питомец Камень" } })
 
 
