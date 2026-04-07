@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
             Q: { item: "minecraft:crying_obsidian" },
             W: { item: "minecraft:obsidian" },
             E: { item: "modern_industrialization:diamond_plate" },
-            R: { tag: "apotheosis:tomes" },
+            R: { item: "minecraft:book" },
         },
         outputItems: [[{ id: "minecraft:enchanting_table" }]],
         removeRecipe:true
