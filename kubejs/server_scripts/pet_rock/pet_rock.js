@@ -5,7 +5,12 @@ const oreIds = global.oresWithSamples.reduce((acc, ore) => {
     acc[normalOre] = itemName.charAt(0).toUpperCase() + itemName.slice(1)
     acc[deepslateOre] = itemName.charAt(0).toUpperCase() + itemName.slice(1)
     return acc
-}, {})
+}, {"minecraft:waxed_weathered_cut_copper_stairs" : "test",
+    "xkdeco:mimic/arts_and_crafts/light_blue_polished_soapstone_wall" : "test",
+    "chipped:vertical_disordered_crying_obsidian_bricks" : "test",
+    "framedblocks:framed_ext_inner_double_corner_slope_panel": "test",
+    "framedblocks:framed_flat_ext_inner_double_slope_panel_corner" : "test"
+})
 
 
 

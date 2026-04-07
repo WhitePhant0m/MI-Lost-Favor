@@ -23,11 +23,11 @@ function ieDistillationRecipe(event, args){
 ServerEvents.recipes(event => {
     ieDistillationRecipe(event, {
         outputItems:[
-            [ { "id": "immersivepetroleum:bitumen" }, 1 , 0.07]
+            [ { "id": "immersivepetroleum:bitumen" }, 1 , 0.1]
         ],
         inputFluids:[[ {fluid :"milf:desalted_crude_oil"} , 100 ]],
         outputFluids:[
-            [ {fluid :"modern_industrialization:sulfuric_naphtha"} , 30 ], 
+            [ {fluid :"modern_industrialization:sulfuric_naphtha"} , 20 ], 
             [ {fluid :"milf:high_sulfur_kerosene"} , 10 ],
             [ {fluid :"immersivepetroleum:diesel_sulfur"} , 15 ],
             [ {fluid :"modern_industrialization:sulfuric_heavy_fuel"} , 40 ],
@@ -36,17 +36,30 @@ ServerEvents.recipes(event => {
         compatOff:true,
         time:1
     })
-})
 
-ServerEvents.recipes(event => {
     ieDistillationRecipe(event, {
-        inputFluids:[[ {fluid :"modern_industrialization:sulfuric_light_fuel"} , 100 ]],
-        outputFluids:[
-            [ {fluid :"modern_industrialization:sulfuric_naphtha"} , 50 ], 
-            [ {fluid :"milf:high_sulfur_kerosene"} , 20 ],
-            [ {fluid :"immersivepetroleum:diesel_sulfur"} , 30 ]
+        inputFluids: [[{ fluid: "modern_industrialization:sulfuric_light_fuel" }, 100]],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:sulfuric_naphtha" }, 50],
+            [{ fluid: "milf:high_sulfur_kerosene" }, 20],
+            [{ fluid: "immersivepetroleum:diesel_sulfur" }, 30]
         ],
-        compatOff:true,
-        time:1
+        compatOff: true,
+        time: 5
+    })
+
+    ieDistillationRecipe(event, {
+        inputFluids: [[{ fluid: "modern_industrialization:sulfuric_heavy_fuel" }, 100]],
+        outputFluids: [
+            [{ fluid: "modern_industrialization:sulfuric_light_fuel" }, 60],
+            [{ fluid: "milf:high_sulfur_kerosene" }, 15],
+            [{ fluid: "immersivepetroleum:diesel_sulfur" }, 10]
+        ],
+        outputItems: [
+            [{ "id": "immersivepetroleum:bitumen" }, 1, 0.17]
+        ],
+        compatOff: true,
+        time: 3
     })
 })
+

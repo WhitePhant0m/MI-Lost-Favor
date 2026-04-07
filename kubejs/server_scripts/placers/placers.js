@@ -95,7 +95,7 @@ BlockEvents.rightClicked(BOX_BLOCKS, event => {
     if (checkStructure(event, template, modName, structureDataRelativeToBlock)) {
         event.block.set(event.block.id.toString().slice(0,-10) + "_placer", Object.assign({}, event.block.getProperties(), {enabled:false}))
         BlockPos.betweenClosedStream(new BlockPos(blockPosRelativeStart), new BlockPos(blockPosRelativeStart.offset(Vec3itoBlockPos(structureVec3iRotated)).offset(Vec3itoBlockPos(rotateVec3i(new Vec3i(-1,-1,-1), angleRad))))).forEach(pos => {
-            event.level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3)
+            event.level.setBlock(pos, Blocks.AIR.defaultBlockState(), 18)
         })
         event.server.runCommandSilent(`playsound block.bamboo.break block @p ${boxPos.x} ${boxPos.y} ${boxPos.z}`)
         particleFrameFromBounds(PARTICLES.dispersed, bounds, event)
