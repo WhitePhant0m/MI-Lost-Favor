@@ -296,6 +296,8 @@ RecipeViewerEvents.removeEntries('item', event => {
         'ytech:iron_saw', 
         'ytech:lead_saw', 
         'ytech:tin_saw',
+        "enchanted:mandrake_root",
+        "enchanted:mandrake_seeds",
     ]
 
     list.forEach(item => {
