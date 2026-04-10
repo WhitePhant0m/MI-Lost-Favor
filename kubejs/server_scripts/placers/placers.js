@@ -97,19 +97,33 @@ BlockEvents.rightClicked(BOX_BLOCKS, event => {
         BlockPos.betweenClosedStream(new BlockPos(blockPosRelativeStart), new BlockPos(blockPosRelativeStart.offset(Vec3itoBlockPos(structureVec3iRotated)).offset(Vec3itoBlockPos(rotateVec3i(new Vec3i(-1,-1,-1), angleRad))))).forEach(pos => {
             event.level.setBlock(pos, Blocks.AIR.defaultBlockState(), 18)
         })
-        event.server.runCommandSilent(`playsound block.bamboo.break block @p ${boxPos.x} ${boxPos.y} ${boxPos.z}`)
+
+        milfPlaySound(event, "minecraft:block.bamboo.break", { pos: new BlockPos(boxPos.x, boxPos.y, boxPos.z) })
+
+        //event.server.runCommandSilent(`playsound block.bamboo.break block @p ${boxPos.x} ${boxPos.y} ${boxPos.z}`)
         particleFrameFromBounds(PARTICLES.dispersed, bounds, event)
     } else {
         event.cancel()
     }
 })
 
+BlockEvents.broken(PLACER_BLOCKS, event => {
+    const { template } = getTemplateData(event, PLACER_BLOCKS_TO_ITEM_NAME_MAP)
+
+    const blockFacing = event.block.getProperties().facing
+    const blockPos = event.block.getPos()
+
+    const structureDataRelativeToBlock = getStructureRelativeData(template, blockFacing, blockPos)
+    if (event.block.getProperties().enabled == "true") removePreview(event, template, structureDataRelativeToBlock)
+})
+
 function handlePreview(/**@type {import("dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent").$BlockRightClickedKubeEvent$$Original} */ event, template, playerStructureData, blockStructureData){
     if (event.player.isCrouching()) {
         if(event.block.getProperties().enabled == "true") {
             let { boxPos } = blockStructureData
-            removePreview(event, blockStructureData)
-            event.server.runCommandSilent(`playsound block.bamboo.break block @p ${boxPos.x} ${boxPos.y} ${boxPos.z}`)
+            removePreview(event, template, blockStructureData)
+            milfPlaySound(event, "minecraft:block.bamboo.break", { pos: new BlockPos(boxPos.x, boxPos.y, boxPos.z) })
+            //event.server.runCommandSilent(`playsound block.bamboo.break block @p ${boxPos.x} ${boxPos.y} ${boxPos.z}`)
         }
         event.cancel()
         return
@@ -121,7 +135,7 @@ function handlePreview(/**@type {import("dev.latvian.mods.kubejs.block.BlockRigh
     event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {facing:event.player.getHorizontalFacing()}))
     const canPlace = validateArea(event, playerStructureData.bounds)
     if (!canPlace) {
-        handlePreviewFailure(event, playerStructureData, blockStructureData)
+        handlePreviewFailure(event, template, playerStructureData, blockStructureData)
         event.cancel()
         return
     }
@@ -134,10 +148,10 @@ function handlePlacement(event, template, modName, playerStructureData, blockStr
         sendImmersiveMessage(Component.translatable("milf.placers.notification2"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
         event.cancel()
     }
-    removePreview(event, blockStructureData, true)
+    removePreview(event, template, blockStructureData, true)
     const canPlace = validateArea(event, blockStructureData.bounds)
     if (!canPlace) {
-        handlePreviewFailure(event, playerStructureData, blockStructureData)
+        handlePreviewFailure(event, template, playerStructureData, blockStructureData)
         event.cancel()
         return
     }
@@ -148,7 +162,8 @@ function handlePlacement(event, template, modName, playerStructureData, blockStr
 function placeStructure(/**@type {import("dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent").$BlockRightClickedKubeEvent$$Original} */ event, template, modName, blockStructureData){
     const { blockPosRelativeStart, facing } = blockStructureData
     event.block.set(event.block.id.toString().slice(0,-7) + "_empty_box", Object.assign({}, event.block.getProperties(), {enabled:false}))
-    event.server.runCommandSilent(`playsound block.anvil.land block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
+    milfPlaySound(event, "minecraft:block.anvil.land", { pos: new BlockPos(blockStructureData.boxPos.x, blockStructureData.boxPos.y, blockStructureData.boxPos.z) })
+    //event.server.runCommandSilent(`playsound block.anvil.land block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
     for ( let blockNumber in  template.blocks) {
         let {blockID,  rotatedVec3i, relativeBlockProperties} = getTemplateBlockData(template, blockStructureData, blockNumber)
         if (blockID != AIR_ID) {
@@ -192,12 +207,13 @@ function placeStructure(/**@type {import("dev.latvian.mods.kubejs.block.BlockRig
     }
 }
 
-function handlePreviewFailure(event, playerStructureData, blockStructureData){
-    event.server.runCommandSilent(`playsound block.chain.break block @p ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posY}`)
+function handlePreviewFailure(event, template, playerStructureData, blockStructureData){
+    milfPlaySound(event, "minecraft:block.chain.break", { pos: new BlockPos(playerStructureData.boxPos.x, playerStructureData.boxPos.y, playerStructureData.boxPos.z) })
+    //event.server.runCommandSilent(`playsound block.chain.break block @p ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posY}`)
     sendImmersiveMessage(Component.translatable("milf.placers.notification1"), 
         event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
-    removePreview(event, playerStructureData)
-    removePreview(event, blockStructureData, true)
+    removePreview(event, template, playerStructureData)
+    removePreview(event, template, blockStructureData, true)
     // event.player.sendData("placers", {
     //     xMin:playerStructureData.bounds.xMin,
     //     yMin:playerStructureData.bounds.yMin,
@@ -214,13 +230,26 @@ function handlePreviewFailure(event, playerStructureData, blockStructureData){
 
 function updatePreview(event, template, playerStructureData, blockStructureData){
     const { blockPosRelativeStart, bounds } = playerStructureData
-    if(event.block.getProperties().enabled == "true") removePreview(event, blockStructureData)
+    if (event.block.getProperties().enabled == "true") removePreview(event, template, blockStructureData)
     event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:true}))
-    event.server.runCommandSilent(`playsound block.bamboo.hit block @p ${playerStructureData.boxPos.x} ${playerStructureData.boxPos.y} ${playerStructureData.boxPos.z}`)
+    milfPlaySound(event, "minecraft:block.bamboo.hit", { pos: new BlockPos(playerStructureData.boxPos.x, playerStructureData.boxPos.y, playerStructureData.boxPos.z) })
+    //event.server.runCommandSilent(`playsound block.bamboo.hit block @p ${playerStructureData.boxPos.x} ${playerStructureData.boxPos.y} ${playerStructureData.boxPos.z}`)
+    let blocksToRenderData = []
     for ( let blockNumber in  template.blocks) {
         let {blockID,  rotatedVec3i, relativeBlockProperties} = getTemplateBlockData(template, playerStructureData, blockNumber)
-        if (blockID != AIR_ID) event.server.runCommandSilent(`summon block_display ${blockPosRelativeStart.offset(rotatedVec3i).getX()} ${blockPosRelativeStart.offset(rotatedVec3i).getY() + 0.5} ${blockPosRelativeStart.offset(rotatedVec3i).getZ()} {interpolation_duration:15,teleport_duration:25,Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(relativeBlockProperties)}}}`)
-    }
+        if (blockID != AIR_ID) {
+            let blockPosToAdd = blockPosRelativeStart.offset(rotatedVec3i)
+            //event.server.runCommandSilent(`summon block_display ${blockPosRelativeStart.offset(rotatedVec3i).getX()} ${blockPosRelativeStart.offset(rotatedVec3i).getY() + 0.5} ${blockPosRelativeStart.offset(rotatedVec3i).getZ()} {interpolation_duration:15,teleport_duration:25,Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(relativeBlockProperties)}}}`)
+            blocksToRenderData.push({ blockPos: { x: blockPosToAdd.getX(), y: blockPosToAdd.getY(), z: blockPosToAdd.getZ() }, id: blockID, properties: relativeBlockProperties})
+        }
+    }    
+    let boxPos = playerStructureData.boxPos
+    event.player.sendData("placers_render", {
+        blocks: blocksToRenderData,
+        boxPos: {x: boxPos.x, y: boxPos.y, z:boxPos.z}
+    })
+
+
     particleFrameFromBounds(PARTICLES.placed, bounds, event)
 }
 
@@ -244,12 +273,18 @@ function getRelativeBlockProperties(blockProperties, structureData, blockID){
         return {}
     }
     const { facing } = structureData
-    let relativeProperties = {
-        facing:`${blockID != "immersiveengineering:fluid_pump" ? directionRelativeTo(String(blockProperties.facing).slice(1, -1), facing) : "north" || ""}`,
-        type:`${String(blockProperties.type).slice(1, -1) || ""}`,
-        multiblockslave:String(blockProperties.multiblockslave).slice(1, -1) === "true" ? true : false
-    }
+    let relativeProperties = { }
 
+    if(blockProperties.facing){
+        relativeProperties.facing = `${blockID != "immersiveengineering:fluid_pump" ? directionRelativeTo(String(blockProperties.facing).slice(1, -1), facing) : "north" || ""}`
+    }
+    
+    if (blockProperties.contains("type")){
+        relativeProperties.type = String(blockProperties.type).slice(1, -1)
+    }
+    if (blockProperties.multiblockslave){
+        relativeProperties.multiblockslave = String(blockProperties.multiblockslave).slice(1, -1) === "true" ? true : false
+    }
     if(blockProperties.east){
         let property = JSON.parse(blockProperties.east)
         relativeProperties[directionRelativeTo("east", facing)] = property
@@ -282,12 +317,24 @@ function getRelativeBlockProperties(blockProperties, structureData, blockID){
     return relativeProperties
 }
 
-function removePreview(event, structureData, withoutParticles) {
-    const { bounds } = structureData
+function removePreview(event, template, structureData, withoutParticles) {
+    const { blockPosRelativeStart, bounds } = structureData
     event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:false}))
-    event.server.runCommandSilent(
-        `kill @e[type=block_display,x=${bounds.sizeX < 0 ? bounds.posX+0.5 : bounds.posX-0.5},y=${bounds.posY-1},z=${bounds.sizeZ < 0 ? bounds.posZ+0.5 : bounds.posZ-0.5},dx=${bounds.sizeX},dy=${bounds.sizeY},dz=${bounds.sizeZ}]`
-    )
+    // event.server.runCommandSilent(
+    //     `kill @e[type=block_display,x=${bounds.sizeX < 0 ? bounds.posX+0.5 : bounds.posX-0.5},y=${bounds.posY-1},z=${bounds.sizeZ < 0 ? bounds.posZ+0.5 : bounds.posZ-0.5},dx=${bounds.sizeX},dy=${bounds.sizeY},dz=${bounds.sizeZ}]`
+    // )
+    // let blocksToRemoveData = []
+    // for (let blockNumber in template.blocks) {
+    //     let { blockID, rotatedVec3i, relativeBlockProperties } = getTemplateBlockData(template, structureData, blockNumber)
+    //     if (blockID != AIR_ID) {
+    //         let blockPosToAdd = blockPosRelativeStart.offset(rotatedVec3i)
+    //         blocksToRemoveData.push({ blockPos: { x: blockPosToAdd.getX(), y: blockPosToAdd.getY(), z: blockPosToAdd.getZ() }, id: blockID, properties: relativeBlockProperties })
+    //     }
+    // }
+    let boxPos = structureData.boxPos
+    event.player.sendData("placers_remove_render", {
+        boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z }
+    })
     if (!withoutParticles) particleFrameFromBounds(PARTICLES.dispersed, bounds, event)
 }
 
@@ -362,7 +409,8 @@ function checkStructure(event, template, modName, blockStructureData){
         return canRemove
     } else {
         sendImmersiveMessage(Component.translatable("milf.placers.notification3"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
-        event.server.runCommandSilent(`playsound block.chain.break block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
+        milfPlaySound(event, "minecraft:block.chain.break", { pos: new BlockPos(blockStructureData.boxPos.x, blockStructureData.boxPos.y, blockStructureData.boxPos.z) })
+        //event.server.runCommandSilent(`playsound block.chain.break block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
         return canRemove
     }
 
@@ -429,13 +477,3 @@ function directionRelativeTo(direction, to){
     if (direction === "down" || direction === "up") return direction
     return ANGLE_TO_FACING[(ANGLE_TO_FACING[direction] + ANGLE_TO_FACING[to]) % 360]
 }
-
-BlockEvents.broken(PLACER_BLOCKS, event => {
-    const { template } = getTemplateData(event, PLACER_BLOCKS_TO_ITEM_NAME_MAP)
-
-    const blockFacing = event.block.getProperties().facing
-    const blockPos = event.block.getPos()
-
-    const structureDataRelativeToBlock = getStructureRelativeData(template, blockFacing, blockPos)
-    if(event.block.getProperties().enabled == "true") removePreview(event, structureDataRelativeToBlock)
-})

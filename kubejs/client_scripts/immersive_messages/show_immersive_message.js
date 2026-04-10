@@ -17,6 +17,7 @@ NetworkEvents.dataReceived('immersive_message', (event) => {
 
 function I_HATE_COMPOUND_TAGS(/**@type {import("net.minecraft.nbt.CompoundTag").$CompoundTag$$Original}*/ stupidFreakingCompoundTag){
     let prettyJSObject = {}
+    if (stupidFreakingCompoundTag.isEmpty()) return prettyJSObject
     for(let [key,  value] of Object.entries(stupidFreakingCompoundTag)){
         if(key == "content"){
             //console.log(value);
