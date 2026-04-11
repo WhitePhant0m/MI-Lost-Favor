@@ -37,5 +37,18 @@ ServerEvents.recipes(event => {
             "count": 1
         }
     })
+    customShrineRecipe(event, {
+        time: 220,
+        experience: 8.0,
+        fluid: "modern_industrialization:liquid_air",
+        ingredients: [
+            { "item": "artifacts:cross_necklace", count: 1 },
+            { "item": "justdirethings:celestigem", count: 18 }
+        ],
+        result: {
+            "id": "forbidden_arcanus:divine_pact",
+            "count": 1
+        }
+    })
 
 })
