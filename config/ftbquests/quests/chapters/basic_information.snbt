@@ -270,22 +270,6 @@
 			dependencies: ["2B7F14733C000C22"]
 			icon: {
 				components: {
-					"ftbquests:icon": "minecraft:textures/painting/fighters.png"
-				}
-				id: "ftbquests:custom_icon"
-			}
-			id: "3DF8DAC78B7B164A"
-			tasks: [{
-				id: "1FA40B43BF41A3BE"
-				type: "checkmark"
-			}]
-			x: -3.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["2B7F14733C000C22"]
-			icon: {
-				components: {
 					"ftbquests:icon": "morerelics:item/moodworm_joyful"
 				}
 				id: "ftbquests:custom_icon"
@@ -448,8 +432,8 @@
 				id: "6319A7E878B57B90"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 5.5d
+			x: -3.5d
+			y: 2.0d
 		}
 	]
 }

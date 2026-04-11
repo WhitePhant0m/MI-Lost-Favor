@@ -1359,7 +1359,6 @@
 		""
 		"Когда моб умирает, будучи пораженным ядом, с него могут выпасть особые предметы. Однако меч слишком груб для их извлечения. Чтобы аккуратно извлечь эти ценные ингредиенты, их нужно умертвить скальпелем."
 	]
-	quest.3DF8DAC78B7B164A.quest_desc: ["Only Fight or Flight adds a simple system similar to open-world sandbox rpgs where players cannot place blocks in the middle of a fight!"]
 	quest.3E6BADA7B5D3F004.quest_subtitle: "Just mark for \"More red\" mod"
 	quest.3EA2FDD972EB4226.quest_desc: [
 		"If some nasty bacteria is threatening your kitchen or your life, you can use this to clean the mess. Well, stop the mess from expanding, at least..."
