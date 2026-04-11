@@ -957,22 +957,54 @@
 		{
 			dependencies: ["706F320EC1610C95"]
 			id: "12B6583EBB5ABE2B"
-			tasks: [{
-				id: "51AF3A829EB9E75F"
-				item: { count: 1, id: "paganbless:hanging_rue" }
+			rewards: [{
+				count: 12
+				id: "2DC2B39414570560"
+				item: {
+					count: 1
+					id: "paganbless:rue"
+				}
 				type: "item"
 			}]
+			tasks: [
+				{
+					id: "51AF3A829EB9E75F"
+					item: { count: 1, id: "paganbless:hanging_rue" }
+					type: "item"
+				}
+				{
+					id: "31F2D1EC290789A3"
+					item: { count: 1, id: "paganbless:rue" }
+					type: "item"
+				}
+			]
 			x: -7.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["706F320EC1610C95"]
 			id: "622021F7AABFC549"
-			tasks: [{
-				id: "6D116378762F5EAE"
-				item: { count: 1, id: "paganbless:hanging_lavender" }
+			rewards: [{
+				count: 12
+				id: "1ED6995EDC641A26"
+				item: {
+					count: 1
+					id: "paganbless:lavender"
+				}
 				type: "item"
 			}]
+			tasks: [
+				{
+					id: "6D116378762F5EAE"
+					item: { count: 1, id: "paganbless:hanging_lavender" }
+					type: "item"
+				}
+				{
+					id: "2744264803429D01"
+					item: { count: 1, id: "paganbless:lavender" }
+					type: "item"
+				}
+			]
 			x: -7.0d
 			y: -1.0d
 		}

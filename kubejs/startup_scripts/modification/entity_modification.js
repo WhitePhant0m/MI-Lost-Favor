@@ -1,4 +1,5 @@
 const listsWithMultipliers = [
+    //t2
     {
         list: mythsandlegends_mobs, multipliers: {
             'minecraft:generic.max_health': 2,
@@ -14,14 +15,159 @@ const listsWithMultipliers = [
         }
     },
     {
+        list: mowziesmobs_mobs, multipliers: {
+            'minecraft:generic.max_health': 2,
+            'minecraft:generic.attack_damage': 1.2,
+            'minecraft:generic.armor': 1.2,
+        }
+    },
+    //t3
+    {
         list: cataclysm_mobs, multipliers: {
             'minecraft:generic.max_health': 3,
             'minecraft:generic.attack_damage': 2,
             'minecraft:generic.armor': 2,
         }
     },
+    {
+        list: netherskeletons_mobs, multipliers: {
+            'minecraft:generic.max_health': 3,
+            'minecraft:generic.attack_damage': 2,
+            'minecraft:generic.armor': 2,
+        }
+    },
+    {
+        list: rottencreatures_mobs, multipliers: {
+            'minecraft:generic.max_health': 3,
+            'minecraft:generic.attack_damage': 2,
+            'minecraft:generic.armor': 2,
+        }
+    },
+    {
+        list: enderzoology_mobs, multipliers: {
+            'minecraft:generic.max_health': 3,
+            'minecraft:generic.attack_damage': 2,
+            'minecraft:generic.armor': 2,
+        }
+    },
+    //t4
+    {
+        list: grimoireofgaia_mobs, multipliers: {
+            'minecraft:generic.max_health': 4,
+            'minecraft:generic.attack_damage': 3,
+            'minecraft:generic.armor': 4,
+        }
+    },
+    {
+        list: born_in_chaos_mobs, multipliers: {
+            'minecraft:generic.max_health': 4,
+            'minecraft:generic.attack_damage': 3,
+            'minecraft:generic.armor': 4,
+        }
+    },
 ];
 
+
+//t2
+const monsterplus_mobs = [
+    "monsterplus:abyssologer",
+    "monsterplus:ancient_hero",
+    "monsterplus:ancient_hero_skull",
+    "monsterplus:crystal_zombie",
+    "monsterplus:demon_eye",
+    "monsterplus:desert_acolyte",
+    "monsterplus:desert_sorceress",
+    "monsterplus:ender_eye",
+    "monsterplus:glow_skeleton",
+    "monsterplus:lava_squid",
+    "monsterplus:mother_lava_squid",
+    "monsterplus:opalescent_eye",
+    "monsterplus:overgrown_skeleton",
+    "monsterplus:soul",
+    "monsterplus:spectral_skeleton",
+    "monsterplus:spectral_skull",
+    "monsterplus:swamp_zombie",
+    "monsterplus:wisp",
+];
+
+//t2
+const mowziesmobs_mobs = [
+    "mowziesmobs:umvuthana",
+    "mowziesmobs:umvuthana_raptor",
+    "mowziesmobs:naga",
+];
+
+//t2
+const mythsandlegends_mobs = [
+    "mythsandlegends:abaddon",
+    "mythsandlegends:alp",
+    "mythsandlegends:black_charro",
+    "mythsandlegends:candle_keeper",
+    "mythsandlegends:condemned",
+    "mythsandlegends:gargoyle",
+    "mythsandlegends:karakondjul",
+    "mythsandlegends:lampad",
+    "mythsandlegends:possessed_armor",
+    "mythsandlegends:possessed_armor_archer",
+    "mythsandlegends:possessed_armor_inquisitor",
+    "mythsandlegends:scorched_sentinel",
+    "mythsandlegends:warborn_aegis",
+    "mythsandlegends:imp",
+    "mythsandlegends:imp_clone",
+];
+
+//t3
+const cataclysm_mobs = [
+    "cataclysm:koboleton",
+    "cataclysm:deepling_angler",
+    "cataclysm:lionfish",
+    "cataclysm:deepling_brute",
+    "cataclysm:deepling",
+];
+
+//t3
+const netherskeletons_mobs = [
+    "netherskeletons:basalt_skeleton",
+    "netherskeletons:charred_skeleton",
+    "netherskeletons:crimson_skeleton",
+    "netherskeletons:crying_obby_skeleton",
+    "netherskeletons:netherborn_skeleton",
+    "netherskeletons:skelly_ghast",
+    "netherskeletons:skelly_piglin",
+    "netherskeletons:soul_skeleton",
+    "netherskeletons:warped_skeleton",
+];
+
+//t3
+const rottencreatures_mobs = [
+    "rottencreatures:burned",
+    "rottencreatures:dead_beard",
+    "rottencreatures:frostbitten",
+    "rottencreatures:glacial_hunter",
+    "rottencreatures:hunter_wolf",
+    "rottencreatures:immortal",
+    "rottencreatures:mummy",
+    "rottencreatures:scarab",
+    "rottencreatures:skeleton_lackey",
+    "rottencreatures:swampy",
+    "rottencreatures:undead_miner",
+    "rottencreatures:zap",
+    "rottencreatures:zombie_lackey",
+];
+
+//t3
+const enderzoology_mobs = [
+    "enderzoology:concussion_creeper",
+    "enderzoology:dire_wolf",
+    "enderzoology:enderminy",
+    "enderzoology:fallen_knight",
+    "enderzoology:infested_zombie",
+    "enderzoology:owl",
+    "enderzoology:wither_cat",
+    "enderzoology:wither_witch",
+];
+
+//t4
 const born_in_chaos_mobs = [
     "born_in_chaos_v1:decrepit_skeleton",
     "born_in_chaos_v1:baby_skeleton",
@@ -40,7 +186,6 @@ const born_in_chaos_mobs = [
     "born_in_chaos_v1:zombie_bruiser",
     "born_in_chaos_v1:fallen_chaos_knight",
     "born_in_chaos_v1:maggot",
-    "born_in_chaos_v1:corpse_fly",
     "born_in_chaos_v1:bloody_gadfly",
     "born_in_chaos_v1:swarmer",
     "born_in_chaos_v1:firelight",
@@ -61,7 +206,6 @@ const born_in_chaos_mobs = [
     "born_in_chaos_v1:pumpkin_spirit",
     "born_in_chaos_v1:seared_spirit",
     "born_in_chaos_v1:krampus",
-    "born_in_chaos_v1:krampus_henchman",
     "born_in_chaos_v1:mr_pumpkin",
     "born_in_chaos_v1:sir_pumpkinhead",
     "born_in_chaos_v1:senor_pumpkin",
@@ -75,66 +219,7 @@ const born_in_chaos_mobs = [
     "born_in_chaos_v1:zombie_lumberjack",
 ];
 
-const cataclysm_mobs = [
-    "cataclysm:koboleton",
-    "cataclysm:deepling_angler",
-    "cataclysm:lionfish",
-    "cataclysm:deepling_brute",
-    "cataclysm:deepling",
-];
-
-const creeper_overhaul_mobs = [
-    "creeperoverhaul:badlands_creeper",
-    "creeperoverhaul:bamboo_creeper",
-    "creeperoverhaul:beach_creeper",
-    "creeperoverhaul:birch_creeper",
-    "creeperoverhaul:cave_creeper",
-    "creeperoverhaul:dark_oak_creeper",
-    "creeperoverhaul:desert_creeper",
-    "creeperoverhaul:dripstone_creeper",
-    "creeperoverhaul:hills_creeper",
-    "creeperoverhaul:jungle_creeper",
-    "creeperoverhaul:mushroom_creeper",
-    "creeperoverhaul:ocean_creeper",
-    "creeperoverhaul:savannah_creeper",
-    "creeperoverhaul:snowy_creeper",
-    "creeperoverhaul:spruce_creeper",
-    "creeperoverhaul:swamp_creeper",
-];
-
-const enderman_overhaul_mobs = [
-    "endermanoverhaul:badlands_enderman",
-    "endermanoverhaul:cave_enderman",
-    "endermanoverhaul:coral_enderman",
-    "endermanoverhaul:crimson_forest_enderman",
-    "endermanoverhaul:dark_oak_enderman",
-    "endermanoverhaul:desert_enderman",
-    "endermanoverhaul:end_enderman",
-    "endermanoverhaul:end_islands_enderman",
-    "endermanoverhaul:flower_fields_enderman",
-    "endermanoverhaul:ice_spikes_enderman",
-    "endermanoverhaul:mushroom_fields_enderman",
-    "endermanoverhaul:nether_wastes_enderman",
-    "endermanoverhaul:savanna_enderman",
-    "endermanoverhaul:snowy_enderman",
-    "endermanoverhaul:soulsand_valley_enderman",
-    "endermanoverhaul:swamp_enderman",
-    "endermanoverhaul:warped_forest_enderman",
-    "endermanoverhaul:windswept_hills_enderman",
-];
-
-const enderzoology_mobs = [
-    "enderzoology:concussion_creeper",
-    "enderzoology:dire_wolf",
-    "enderzoology:enderminy",
-    "enderzoology:fallen_knight",
-    "enderzoology:fallen_mount",
-    "enderzoology:infested_zombie",
-    "enderzoology:owl",
-    "enderzoology:wither_cat",
-    "enderzoology:wither_witch",
-];
-
+//t4
 const grimoireofgaia_mobs = [
     "grimoireofgaia:ant",
     "grimoireofgaia:ant_hill",
@@ -202,78 +287,8 @@ const grimoireofgaia_mobs = [
     "grimoireofgaia:centaur",
 ];
 
-const monsterplus_mobs = [
-    "monsterplus:abyssologer",
-    "monsterplus:ancient_hero",
-    "monsterplus:ancient_hero_skull",
-    "monsterplus:crystal_zombie",
-    "monsterplus:demon_eye",
-    "monsterplus:desert_acolyte",
-    "monsterplus:desert_sorceress",
-    "monsterplus:ender_eye",
-    "monsterplus:glow_skeleton",
-    "monsterplus:lava_squid",
-    "monsterplus:mother_lava_squid",
-    "monsterplus:opalescent_eye",
-    "monsterplus:overgrown_skeleton",
-    "monsterplus:soul",
-    "monsterplus:spectral_skeleton",
-    "monsterplus:spectral_skull",
-    "monsterplus:swamp_zombie",
-    "monsterplus:wisp",
-];
 
-const mowziesmobs_mobs = [
-    "mowziesmobs:umvuthana",
-    "mowziesmobs:umvuthana_raptor",
-    "mowziesmobs:naga",
-];
 
-const mythsandlegends_mobs = [
-    "mythsandlegends:abaddon",
-    "mythsandlegends:alp",
-    "mythsandlegends:black_charro",
-    "mythsandlegends:candle_keeper",
-    "mythsandlegends:condemned",
-    "mythsandlegends:gargoyle",
-    "mythsandlegends:karakondjul",
-    "mythsandlegends:lampad",
-    "mythsandlegends:possessed_armor",
-    "mythsandlegends:possessed_armor_archer",
-    "mythsandlegends:possessed_armor_inquisitor",
-    "mythsandlegends:scorched_sentinel",
-    "mythsandlegends:warborn_aegis",
-    "mythsandlegends:imp",
-    "mythsandlegends:imp_clone",
-];
-
-const netherskeletons_mobs = [
-    "netherskeletons:basalt_skeleton",
-    "netherskeletons:charred_skeleton",
-    "netherskeletons:crimson_skeleton",
-    "netherskeletons:crying_obby_skeleton",
-    "netherskeletons:netherborn_skeleton",
-    "netherskeletons:skelly_ghast",
-    "netherskeletons:skelly_piglin",
-    "netherskeletons:soul_skeleton",
-    "netherskeletons:warped_skeleton",
-];
-
-const rottencreatures_mobs = [
-    "rottencreatures:burned",
-    "rottencreatures:dead_beard",
-    "rottencreatures:frostbitten",
-    "rottencreatures:glacial_hunter",
-    "rottencreatures:hunter_wolf",
-    "rottencreatures:immortal",
-    "rottencreatures:mummy",
-    "rottencreatures:scarab",
-    "rottencreatures:skeleton_lackey",
-    "rottencreatures:swampy",
-    "rottencreatures:undead_miner",
-    "rottencreatures:zap",
-    "rottencreatures:zombie_lackey",
-];
 
 
 // born_in_chaos_mobs
@@ -286,7 +301,7 @@ const rottencreatures_mobs = [
 // mowziesmobs_mobs
 // mythsandlegends_mobs
 // netherskeletons_mobs
-//  rottencreatures_mobs
+// rottencreatures_mobs
 EntityJSEvents.attributes(function (event) {
     let mobToMultipliers = {};
 

@@ -37,6 +37,7 @@ const born_in_chaos_mobs = [
     { id: "pumpkin_spirit", mob: "born_in_chaos_v1:pumpkin_spirit" },
     { id: "seared_spirit", mob: "born_in_chaos_v1:seared_spirit" },
     { id: "krampus", mob: "born_in_chaos_v1:krampus" },
+    { id: "krampus", mob: "born_in_chaos_v1:krampus_henchman" },
     { id: "mr_pumpkin", mob: "born_in_chaos_v1:mr_pumpkin" },
     { id: "senor_pumpkin", mob: "born_in_chaos_v1:senor_pumpkin" },
     { id: "lord_pumpkinhead", mob: "born_in_chaos_v1:lord_pumpkinhead" },

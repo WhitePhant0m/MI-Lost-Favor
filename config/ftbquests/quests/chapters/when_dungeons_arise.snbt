@@ -14,86 +14,86 @@
 		{
 			id: "4AB9F489DA828DFE"
 			linked_quest: "3311BAD6D1B590DE"
-			x: 5.0d
-			y: 25.5d
+			x: -1.5d
+			y: 21.0d
 		}
 		{
 			id: "018AC95FDF256807"
 			linked_quest: "02A736963A8815BE"
-			x: 6.0d
-			y: 25.5d
+			x: -0.5d
+			y: 21.0d
 		}
 		{
 			id: "05E9F1661B42FDD3"
 			linked_quest: "118F1F53D1353A5B"
-			x: 6.0d
-			y: 24.5d
+			x: -0.5d
+			y: 20.0d
 		}
 		{
 			id: "483F5A45FE3A2843"
 			linked_quest: "51C0876E925B1FF1"
-			x: 6.0d
-			y: 23.5d
+			x: -0.5d
+			y: 19.0d
 		}
 		{
 			id: "3F6EF53203FE88E1"
 			linked_quest: "52A28BD429FE5F3C"
-			x: 7.0d
-			y: 25.5d
+			x: 0.5d
+			y: 21.0d
 		}
 		{
 			id: "565D376C3C65A288"
 			linked_quest: "400E4777C506724C"
-			x: 8.0d
-			y: 24.5d
+			x: 1.5d
+			y: 20.0d
 		}
 		{
 			id: "680E1E03F0AB7C71"
 			linked_quest: "6388891962FA9721"
-			x: 10.0d
-			y: 25.5d
+			x: 3.5d
+			y: 21.0d
 		}
 		{
 			id: "00872690310295CD"
 			linked_quest: "09D1CCA04959E0ED"
-			x: 10.0d
-			y: 23.5d
+			x: 3.5d
+			y: 19.0d
 		}
 		{
 			id: "623BFF8AD2B7A386"
 			linked_quest: "5B7D16976F48364A"
-			x: 11.0d
-			y: 25.5d
+			x: 4.5d
+			y: 21.0d
 		}
 		{
 			id: "408EB970203A9597"
 			linked_quest: "0987D26A943A7B60"
-			x: 16.0d
-			y: 25.5d
+			x: 9.5d
+			y: 21.0d
 		}
 		{
 			id: "1E228499A8B2C2D0"
 			linked_quest: "7737F36A9E69FB4C"
-			x: -3.0d
-			y: 36.0d
+			x: 1.0d
+			y: 30.5d
 		}
 		{
 			id: "4BB6383E80A76659"
 			linked_quest: "37F8E4788207721E"
-			x: -2.0d
-			y: 36.0d
+			x: 2.0d
+			y: 30.5d
 		}
 		{
 			id: "23F79255316AB58E"
 			linked_quest: "1D2A38BF3DA1F6BD"
-			x: -4.0d
-			y: 36.0d
+			x: 0.0d
+			y: 30.5d
 		}
 		{
 			id: "1D621ED9C7F881C5"
 			linked_quest: "12AC008BBADAE6BD"
-			x: -4.0d
-			y: 37.0d
+			x: 0.0d
+			y: 31.5d
 		}
 	]
 	quests: [
@@ -1340,6 +1340,14 @@
 				id: "mowziesmobs:sol_visage"
 			}
 			id: "78B154D7DC8F7464"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "mowziesmobs:captured_grottol"
+				}
+				id: "50FF5C99CD671DD3"
+				type: "custom"
+			}]
 			tasks: [{
 				entity: "mowziesmobs:umvuthi"
 				id: "6B086A9EC79AC60B"
@@ -1579,6 +1587,14 @@
 					team_reward: false
 					type: "custom"
 				}
+				{
+					auto: "enabled"
+					icon: {
+						id: "cataclysm:koboleton_bone"
+					}
+					id: "224D85127D80FED8"
+					type: "custom"
+				}
 			]
 			tasks: [{
 				advancement: "apotheosis:progression/ascent"
@@ -1643,6 +1659,14 @@
 					}
 					id: "4C184C19BA719B4F"
 					team_reward: false
+					type: "custom"
+				}
+				{
+					auto: "enabled"
+					icon: {
+						id: "born_in_chaos_v1:eternal_candy"
+					}
+					id: "16B46238FC936637"
 					type: "custom"
 				}
 			]
@@ -1720,8 +1744,8 @@
 				item: { count: 1, id: "endrem:black_eye" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: 8.0d
+			y: 9.0d
 		}
 		{
 			id: "5E17A54BC0DC94C6"
@@ -1731,8 +1755,8 @@
 				item: { count: 1, id: "endrem:cold_eye" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.5d
+			x: 9.5d
+			y: 8.5d
 		}
 		{
 			id: "6B54A081A72E8605"
@@ -1742,8 +1766,8 @@
 				item: { count: 1, id: "endrem:corrupted_eye" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 10.0d
+			y: 8.0d
 		}
 		{
 			id: "64668A2DCC727071"
@@ -1753,8 +1777,8 @@
 				item: { count: 1, id: "endrem:cryptic_eye" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.0d
+			x: 11.0d
+			y: 8.0d
 		}
 		{
 			id: "3353B2935C6B0BC9"
@@ -1764,8 +1788,8 @@
 				item: { count: 1, id: "endrem:cursed_eye" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 7.0d
+			x: 12.0d
+			y: 10.0d
 		}
 		{
 			id: "3DB07D9EB21FE788"
@@ -1775,8 +1799,8 @@
 				item: { count: 1, id: "endrem:evil_eye" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 5.5d
+			x: 11.5d
+			y: 8.5d
 		}
 		{
 			id: "6D80B7B958E66DCC"
@@ -1786,8 +1810,8 @@
 				item: { count: 1, id: "endrem:exotic_eye" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.0d
+			x: 12.0d
+			y: 11.0d
 		}
 		{
 			id: "47869A4625D3C5CD"
@@ -1797,8 +1821,8 @@
 				item: { count: 1, id: "endrem:guardian_eye" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.0d
+			x: 9.0d
+			y: 8.0d
 		}
 		{
 			id: "6BD505CB5F3FC5CB"
@@ -1808,8 +1832,8 @@
 				item: { count: 1, id: "endrem:lost_eye" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
+			x: 12.0d
+			y: 9.0d
 		}
 		{
 			id: "0B6C43D4E60C596E"
@@ -1819,8 +1843,8 @@
 				item: { count: 1, id: "endrem:magical_eye" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 7.5d
+			x: 11.5d
+			y: 10.5d
 		}
 		{
 			id: "78F3829CADF4E3D0"
@@ -1830,8 +1854,8 @@
 				item: { count: 1, id: "endrem:nether_eye" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.5d
+			x: 8.5d
+			y: 8.5d
 		}
 		{
 			id: "2CAF18925DB5AAEA"
@@ -1841,8 +1865,8 @@
 				item: { count: 1, id: "endrem:old_eye" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 9.0d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			id: "6ECBD883A491B450"
@@ -1852,8 +1876,8 @@
 				item: { count: 1, id: "endrem:rogue_eye" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.0d
+			x: 11.0d
+			y: 12.0d
 		}
 		{
 			id: "6EC86F6DFD014125"
@@ -1863,8 +1887,8 @@
 				item: { count: 1, id: "endrem:undead_eye" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 5.5d
+			x: 10.5d
+			y: 8.5d
 		}
 		{
 			id: "1AB38B4C36829D74"
@@ -1874,8 +1898,8 @@
 				item: { count: 1, id: "endrem:witch_eye" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 8.5d
+			x: 11.5d
+			y: 11.5d
 		}
 		{
 			id: "275DDDBD9D1BFB6B"
@@ -1885,8 +1909,8 @@
 				item: { count: 1, id: "endrem:wither_eye" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 6.5d
+			x: 11.5d
+			y: 9.5d
 		}
 		{
 			id: "7CBD2AF5059D33AD"
@@ -1896,8 +1920,8 @@
 				item: { count: 1, id: "endrem:fishing_eye" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 6.5d
+			x: 8.5d
+			y: 9.5d
 		}
 		{
 			id: "32C69BC16480E736"
@@ -1907,8 +1931,8 @@
 				item: { count: 1, id: "endrem:potato_eye" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 7.5d
+			x: 8.5d
+			y: 10.5d
 		}
 		{
 			id: "2A1AF1457E32F93C"
@@ -1918,8 +1942,8 @@
 				item: { count: 1, id: "endrem:trial_eye" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.0d
+			x: 8.0d
+			y: 11.0d
 		}
 		{
 			id: "70F4C4891CB043CC"
@@ -1929,8 +1953,8 @@
 				item: { count: 1, id: "endrem:sculk_eye" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 8.5d
+			x: 8.5d
+			y: 11.5d
 		}
 		{
 			id: "2C68F3A0742EE34F"
@@ -1940,8 +1964,8 @@
 				item: { count: 1, id: "endrem:blossom_eye" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.0d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3BB0FE129E37B19E"]
@@ -2107,8 +2131,8 @@
 				id: "608727F73B6EDF0F"
 				type: "checkmark"
 			}]
-			x: 2.0d
-			y: 7.0d
+			x: 10.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6E11ECC7B831480C"]
@@ -2128,8 +2152,8 @@
 				item: { count: 1, id: "recall_potion:end_potion" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 8.5d
+			x: 10.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["2B815502453269AF"]
@@ -2160,8 +2184,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 23.5d
+			x: 0.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["2B815502453269AF"]
@@ -2191,8 +2215,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 24.5d
+			x: 0.5d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -2221,8 +2245,8 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
-			y: 24.5d
+			x: 7.5d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -2241,8 +2265,8 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
-			y: 23.5d
+			x: 7.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["2B815502453269AF"]
@@ -2273,8 +2297,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 25.5d
+			x: 2.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["60F83295651EE0CF"]
@@ -2304,8 +2328,8 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
-			y: 24.5d
+			x: 3.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["60F83295651EE0CF"]
@@ -2325,8 +2349,8 @@
 					type: "item"
 				}
 			]
-			x: 11.0d
-			y: 24.5d
+			x: 4.5d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -2355,8 +2379,8 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
-			y: 25.5d
+			x: 6.5d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -2385,8 +2409,8 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
-			y: 25.5d
+			x: 7.5d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -2421,8 +2445,8 @@
 					type: "item"
 				}
 			]
-			x: 15.0d
-			y: 25.5d
+			x: 8.5d
+			y: 21.0d
 		}
 		{
 			icon: {
@@ -2441,8 +2465,8 @@
 					type: "item"
 				}
 			]
-			x: 15.0d
-			y: 24.5d
+			x: 8.5d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -2471,8 +2495,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 24.5d
+			x: 5.5d
+			y: 20.0d
 		}
 		{
 			icon: {
@@ -2496,8 +2520,8 @@
 					type: "item"
 				}
 			]
-			x: 11.0d
-			y: 23.5d
+			x: 4.5d
+			y: 19.0d
 		}
 		{
 			icon: {
@@ -2521,8 +2545,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 23.5d
+			x: 5.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["0CC9329A82A7454A"]
@@ -2530,6 +2554,14 @@
 				id: "mythsandlegends:umbras_whisper"
 			}
 			id: "6D3B47471BD99C33"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					id: "mythsandlegends:cursed_core"
+				}
+				id: "69335E0ACAA9C440"
+				type: "custom"
+			}]
 			tasks: [
 				{
 					entity: "mythsandlegends:black_charro"
@@ -2548,10 +2580,11 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -14.0d
 			y: 9.0d
 		}
 		{
+			dependencies: ["6D3B47471BD99C33"]
 			icon: {
 				id: "mythsandlegends:gargoyle_torso"
 			}
@@ -2562,8 +2595,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -11.0d
-			y: 2.5d
+			x: -15.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["779A518117286DCF"]
@@ -2573,8 +2606,8 @@
 				item: { count: 1, id: "mythsandlegends:stone_sanctum_table" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 0.5d
+			x: -16.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["69876AF147198368"]
@@ -2611,8 +2644,8 @@
 					type: "item"
 				}
 			]
-			x: -11.0d
-			y: 1.5d
+			x: -16.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["0148634AF45EAFC7"]
@@ -2622,8 +2655,8 @@
 				item: { count: 1, id: "mythsandlegends:gargoyle_effigy" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: -0.5d
+			x: -16.0d
+			y: 9.5d
 		}
 		{
 			id: "7C4731645AB0DE12"
@@ -2666,74 +2699,81 @@
 			y: 22.0d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "7F3F2EF3588115FD"
 			tasks: [{
 				id: "75AC3173FBDEC7B4"
 				item: { count: 1, id: "mythsandlegends:stony_shield" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 28.5d
+			x: 1.0d
+			y: 22.5d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "447C3D2FD4A46D52"
 			tasks: [{
 				id: "41F72AB8CCBF5A3D"
 				item: { count: 1, id: "minecraft:shield" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 28.5d
+			x: 2.0d
+			y: 22.5d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "586E4E113D555270"
 			tasks: [{
 				id: "3C199C77A2F64375"
 				item: { count: 1, id: "cataclysm:azure_sea_shield" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 28.5d
+			x: 3.0d
+			y: 22.5d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "36FE21FD27173902"
 			tasks: [{
 				id: "35CB585708DB2A9E"
 				item: { count: 1, id: "endermanoverhaul:corrupted_shield" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 28.5d
+			x: 4.0d
+			y: 22.5d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "6CB0501561F1358F"
 			tasks: [{
 				id: "5FA1537D59925EB5"
 				item: { count: 1, id: "eternal_starlight:glacite_shield" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 28.5d
+			x: 5.0d
+			y: 22.5d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "2EAB289A2D70B5CD"
 			tasks: [{
 				id: "3D5497D883E45F6F"
 				item: { count: 1, id: "eternal_starlight:flowglaze_shield" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 28.5d
+			x: 6.0d
+			y: 22.5d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "79D9660EC456083B"
 			tasks: [{
 				id: "0D8AAE0CA4F9DD1C"
 				item: { count: 1, id: "immersiveengineering:shield" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: 28.5d
+			x: 7.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["3BB0FE129E37B19E"]
@@ -2772,7 +2812,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -14.0d
+			x: -12.0d
 			y: 9.0d
 		}
 		{
@@ -2882,8 +2922,8 @@
 				item: { count: 1, id: "cataclysm:bloom_stone_pauldrons" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 25.5d
+			x: 5.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["30056F7174102B2E"]
@@ -3035,74 +3075,81 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "02A01D16B4F38869"
 			tasks: [{
 				id: "0EA76AE328242758"
 				item: { count: 1, id: "simplybows:vine_bow/vine_bow" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 36.0d
+			x: 3.0d
+			y: 30.5d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "55B5FF63A7C15F26"
 			tasks: [{
 				id: "2D66AB1BC69A338E"
 				item: { count: 1, id: "simplybows:ice_bow/ice_bow" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 35.5d
+			x: 3.5d
+			y: 30.0d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "2707DC8C94D6F2CB"
 			tasks: [{
 				id: "27022695158F2C78"
 				item: { count: 1, id: "simplybows:bubble_bow/bubble_bow" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 36.0d
+			x: 4.0d
+			y: 30.5d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "4C57D972FA96E59B"
 			tasks: [{
 				id: "3E4BDC43069A1E95"
 				item: { count: 1, id: "simplybows:bee_bow/bee_bow" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 36.5d
+			x: 3.5d
+			y: 31.0d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "5CF0E67A54766585"
 			tasks: [{
 				id: "16045D231DD681FC"
 				item: { count: 1, id: "simplybows:blossom_bow/blossom_bow" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 35.5d
+			x: 4.5d
+			y: 30.0d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "58ABAA09FCDBD57A"
 			tasks: [{
 				id: "3A4A17CCA551C06F"
 				item: { count: 1, id: "simplybows:earth_bow/earth_bow" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 36.5d
+			x: 4.5d
+			y: 31.0d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "638C45577A5F75C1"
 			tasks: [{
 				id: "057BF2CE37D83A57"
 				item: { count: 1, id: "simplybows:echo_bow/echo_bow" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 36.0d
+			x: 5.0d
+			y: 30.5d
 		}
 		{
 			dependencies: [
@@ -3122,8 +3169,8 @@
 				item: { count: 1, id: "simplybows:upgrades/enchanted_bow_string" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 38.0d
+			x: 2.0d
+			y: 32.5d
 		}
 		{
 			dependencies: [
@@ -3143,8 +3190,8 @@
 				item: { count: 1, id: "simplybows:upgrades/reinforced_bow_frame" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 38.0d
+			x: 6.0d
+			y: 32.5d
 		}
 		{
 			dependencies: [
@@ -3164,8 +3211,8 @@
 				item: { count: 1, id: "simplybows:upgrades/rune_etching_pain" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 39.0d
+			x: 2.5d
+			y: 33.5d
 		}
 		{
 			dependencies: [
@@ -3185,8 +3232,8 @@
 				item: { count: 1, id: "simplybows:upgrades/rune_etching_bounty" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 39.5d
+			x: 3.5d
+			y: 34.0d
 		}
 		{
 			dependencies: [
@@ -3206,8 +3253,8 @@
 				item: { count: 1, id: "simplybows:upgrades/rune_etching_chaos" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 39.5d
+			x: 4.5d
+			y: 34.0d
 		}
 		{
 			dependencies: [
@@ -3227,8 +3274,8 @@
 				item: { count: 1, id: "simplybows:upgrades/rune_etching_grace" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 39.0d
+			x: 5.5d
+			y: 33.5d
 		}
 		{
 			id: "0953CAFB782A7D01"
@@ -3237,8 +3284,8 @@
 				item: { count: 1, id: "minecraft:bow" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 36.0d
+			x: -5.0d
+			y: 30.5d
 		}
 		{
 			id: "66FBCC5E29C338D1"
@@ -3247,8 +3294,8 @@
 				item: { count: 1, id: "minecraft:crossbow" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: 36.0d
+			x: -4.0d
+			y: 30.5d
 		}
 		{
 			id: "5EFAAFAAAE454EEB"
@@ -3257,8 +3304,8 @@
 				item: { count: 1, id: "royalvariations:royal_bow" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: 36.0d
+			x: -3.0d
+			y: 30.5d
 		}
 		{
 			dependencies: ["176AB140A797FE9B"]
@@ -3268,8 +3315,8 @@
 				item: { components: { "minecraft:enchantments": { levels: { "minecraft:power": 6 } } }, count: 1, id: "spectrum:bedrock_bow" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 36.0d
+			x: -2.0d
+			y: 30.5d
 		}
 		{
 			dependencies: ["176AB140A797FE9B"]
@@ -3279,8 +3326,8 @@
 				item: { components: { "minecraft:enchantments": { levels: { "minecraft:quick_charge": 4 } } }, count: 1, id: "spectrum:bedrock_crossbow" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 36.0d
+			x: -1.0d
+			y: 30.5d
 		}
 		{
 			id: "309D0179B980CF6A"
@@ -3288,18 +3335,19 @@
 				id: "701E2CCC21092BDF"
 				type: "checkmark"
 			}]
-			x: -6.5d
-			y: 30.0d
+			x: 4.0d
+			y: 27.0d
 		}
 		{
+			dependencies: ["309D0179B980CF6A"]
 			id: "08E88C970DB33574"
 			tasks: [{
 				id: "1E9F25BBC261FE0C"
 				item: { count: 1, id: "eternal_starlight:moonring_bow" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 36.0d
+			x: 6.0d
+			y: 30.5d
 		}
 		{
 			id: "2B11B2E89E669236"
@@ -3519,8 +3567,8 @@
 				item: { count: 1, id: "minecraft:enchanting_table" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 11.5d
+			x: 1.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2BAF1070D316E4A4"]
@@ -3532,8 +3580,8 @@
 				item: { count: 1, id: "minecraft:bookshelf" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 14.0d
+			x: 1.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -3543,8 +3591,8 @@
 				item: { count: 1, id: "apothic_enchanting:hellshelf" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 15.5d
+			x: 2.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["4FD896F49FCD93CD"]
@@ -3554,8 +3602,8 @@
 				item: { count: 1, id: "apothic_enchanting:infused_hellshelf" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 16.5d
+			x: 2.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -3565,8 +3613,8 @@
 				item: { count: 1, id: "apothic_enchanting:sightshelf" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 19.0d
+			x: 3.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -3576,8 +3624,8 @@
 				item: { count: 1, id: "apothic_enchanting:glowing_hellshelf" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 19.5d
+			x: 2.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["69DEB3E3786D81B3"]
@@ -3587,8 +3635,8 @@
 				item: { count: 1, id: "apothic_enchanting:blazing_hellshelf" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 19.0d
+			x: 1.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -3598,8 +3646,8 @@
 				item: { count: 1, id: "apothic_enchanting:seashelf" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 13.0d
+			x: -2.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0EB065FD617CB39A"]
@@ -3609,8 +3657,8 @@
 				item: { count: 1, id: "apothic_enchanting:infused_seashelf" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 13.0d
+			x: -3.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -3620,8 +3668,8 @@
 				item: { count: 1, id: "apothic_enchanting:filtering_shelf" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 13.0d
+			x: -6.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -3631,8 +3679,8 @@
 				item: { count: 1, id: "apothic_enchanting:heart_seashelf" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 14.0d
+			x: -5.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["65E85CBAE5600143"]
@@ -3642,8 +3690,8 @@
 				item: { count: 1, id: "apothic_enchanting:crystal_seashelf" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 12.0d
+			x: -5.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -3653,8 +3701,8 @@
 				item: { count: 1, id: "apothic_enchanting:dormant_deepshelf" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 15.5d
+			x: -0.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6E69C1E11989DC47"]
@@ -3664,8 +3712,8 @@
 				item: { count: 1, id: "apothic_enchanting:deepshelf" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 16.5d
+			x: -0.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["5856F34DE4934B24"]
@@ -3675,8 +3723,8 @@
 				item: { count: 1, id: "apothic_enchanting:treasure_shelf" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 19.0d
+			x: -0.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5856F34DE4934B24"]
@@ -3686,8 +3734,8 @@
 				item: { count: 1, id: "apothic_enchanting:soul_touched_deepshelf" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 18.5d
+			x: -1.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["5856F34DE4934B24"]
@@ -3697,8 +3745,8 @@
 				item: { count: 1, id: "apothic_enchanting:echoing_deepshelf" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 18.5d
+			x: 0.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["716BC68F5F2693D0"]
@@ -3708,8 +3756,8 @@
 				item: { count: 1, id: "apothic_enchanting:echoing_sculkshelf" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 19.5d
+			x: 0.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["2DEC7F525C4670EE"]
@@ -3719,8 +3767,8 @@
 				item: { count: 1, id: "apothic_enchanting:soul_touched_sculkshelf" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 19.5d
+			x: -1.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -3730,8 +3778,8 @@
 				item: { count: 1, id: "apothic_enchanting:geode_shelf" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.5d
+			x: -1.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -3741,8 +3789,8 @@
 				item: { count: 1, id: "apothic_enchanting:stoneshelf" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -3752,8 +3800,8 @@
 				item: { count: 1, id: "apothic_enchanting:melonshelf" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 12.5d
+			x: 3.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -3763,8 +3811,8 @@
 				item: { count: 1, id: "apothic_enchanting:beeshelf" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 12.0d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5E639A3B6E268A89"]
@@ -3774,8 +3822,8 @@
 				item: { count: 1, id: "apothic_enchanting:endshelf" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 13.0d
+			x: 4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4410D695EA7BFB2A"]
@@ -3785,8 +3833,8 @@
 				item: { count: 1, id: "apothic_enchanting:pearl_endshelf" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 12.5d
+			x: 5.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["4410D695EA7BFB2A"]
@@ -3796,8 +3844,8 @@
 				item: { count: 1, id: "apothic_enchanting:draconic_endshelf" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 13.5d
+			x: 5.5d
+			y: 9.5d
 		}
 	]
 }

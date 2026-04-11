@@ -29,6 +29,46 @@ FTBQuestsEvents.customReward('4178A18CA2E5A74F', event => {
     defaultMilestoneNotification(event, stage)
 });
 
+// reward for killing black charro (journeys chapter)
+FTBQuestsEvents.customReward('5850A10FBFAD8FE7', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+
+    const stage = "mythsandlegends_mobs"
+    addStagesToTeamMembers(event, stage)
+    defaultMilestoneNotification(event, stage)
+});
+
+// reward for killing umvuthi, the sunbird (journeys chapter)
+FTBQuestsEvents.customReward('50FF5C99CD671DD3', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+
+    const stage = "mowziesmobs_mobs"
+    addStagesToTeamMembers(event, stage)
+    defaultMilestoneNotification(event, stage)
+});
+
+// reward for killing vanilla bosses (journeys chapter)
+FTBQuestsEvents.customReward('224D85127D80FED8', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+
+    const stages = ["cataclysm_mobs", "netherskeletons_mobs", "rottencreatures_mobs", "enderzoology_mobs"]
+    addStagesToTeamMembers(event, stages)
+    defaultMilestoneNotification(event, stages)
+});
+
+// reward for killing bomd and fdbosses bosses (journeys chapter)
+FTBQuestsEvents.customReward('16B46238FC936637', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+
+    const stages = ["grimoireofgaia_mobs", "born_in_chaos_v1_mobs"]
+    addStagesToTeamMembers(event, stages)
+    defaultMilestoneNotification(event, stages)
+});
+
 // reward for Crafting Table
 FTBQuestsEvents.customReward('0E7A91DD8F37AF4D', event => {
     const stage = "saturation"
