@@ -1,0 +1,17 @@
+filename = 'phantoms_utilities-0.3.1.jar'
+name = "Phantom's Utilities"
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'phantoms_utilities-0.3.1.jar'
+
+[download]
+hash = 'd6cc61eb36428c95717bf1a120258ac347cc0dd5'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7906807
+project-id = 1181116
