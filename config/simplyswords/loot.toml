@@ -4,13 +4,13 @@ enableLootDrops = true
 enableLootInVillages = false
 standardLootTableWeight = 0.1
 rareLootTableWeight = 0.2
-runicLootTableWeight = 0.1
-uniqueLootTableWeight = 0.05
+runicLootTableWeight = 0.5
+uniqueLootTableWeight = 0.2
 enableContainedRemnants = true
 disabledUniqueWeaponLoot = [  ]
 
 [uniqueLootTableOptions]
-"minecraft:entities/wither" = 1.0
+"minecraft:entities/wither" = 5.0
 "minecraft:entities/ender_dragon" = 15.0
 "minecraft:chests/ruined_portal" = 0.0
 "minecraft:chests/village/village_armorer" = 0.0
