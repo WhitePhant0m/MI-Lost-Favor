@@ -30,7 +30,7 @@ FTBQuestsEvents.customReward('4178A18CA2E5A74F', event => {
 });
 
 // reward for killing black charro (journeys chapter)
-FTBQuestsEvents.customReward('5850A10FBFAD8FE7', event => {
+FTBQuestsEvents.customReward('69335E0ACAA9C440', event => {
     let player = event.entity;
     let player_name = player.profile.name
 
