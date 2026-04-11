@@ -22,17 +22,6 @@
     }
   },
   {
-    "id": "key_19c9c2f26ad",
-    "title": "Open Chronicle",
-    "icon": "rpgtimeline:chronicle_world_first",
-    "action": {
-      "type": "KEY",
-      "name": "key.rpgtimeline.open_chronicle",
-      "toggle": false,
-      "mode": "AUTO"
-    }
-  },
-  {
     "id": "key_19c9c36d757",
     "title": "Toggled Reacharound Placement",
     "icon": "minecraft:scaffolding",
