@@ -34,6 +34,22 @@
     },
     {
       "type": "goblintraders:basic",
+      "experience": 50,
+      "max_trades": 60,
+      "offer_item": {
+        "count": 2,
+        "id": "clavis:lock_pick"
+      },
+      "payment_item": {
+        "count": {
+          "max": 30,
+          "min": 10
+        },
+        "id": "devices:silver_coin"
+      }
+    },
+    {
+      "type": "goblintraders:basic",
       "experience": 100,
       "max_trades": 1,
       "offer_item": {
