@@ -1,5 +1,4 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "diverse_content"
@@ -428,6 +427,16 @@
 			}]
 			x: -16.0d
 			y: -5.0d
+		}
+		{
+			id: "68771994A16E5B8C"
+			tasks: [{
+				id: "3CB2AB925D21FA7B"
+				item: { count: 1, id: "phantoms_utilities:spray_can" }
+				type: "item"
+			}]
+			x: -40.0d
+			y: 1.5d
 		}
 	]
 }

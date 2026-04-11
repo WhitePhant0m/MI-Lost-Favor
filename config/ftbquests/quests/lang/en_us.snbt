@@ -546,7 +546,7 @@
 		""
 		"As this modpack is progress dependent, we introduced quite a number of restrictions, as well as simplifications to the gameplay! "
 		""
-		"You don't need to worry about food for the first couple of quests so that you can smoothly settle somewhere and prepare yourself for the dangers of this cruel world. The same reasoning stands behind the lack of naturally spawned monsters around you, wicked bastards are lurking around in the dungeons, waiting for the opportunity to strike at the first unwary wanderer that happens to stumble across their domain, so be cautious. "
+		"No hostile monsters spawn around you(Almost), wicked bastards are lurking around in the dungeons, waiting for the opportunity to strike at the first unwary wanderer that happens to stumble across their domain, so be cautious. "
 		""
 		"Maps are essential to not get lost here, so you'll have an opportunity to make a scribbled one quite early, but the proper one will require the tech knowledge you don't possess as of the time being, but worry not, as it will come to you eventually."
 		""
@@ -756,8 +756,6 @@
 	]
 	quest.20B05A54BEFA8EDC.quest_subtitle: "Tree Capitator?!"
 	quest.2141539997D6480F.quest_desc: [
-		"Hunger - none."
-		""
 		"Mobs - gone."
 		""
 		"Dungeons - scary."
@@ -2123,6 +2121,11 @@
 		"{@pagebreak}"
 		"Используя оккультизм и ритуал Possessed Endermite вы можете призвать Чешуйницу Края из которой может выпасть End Stone, для крафта фиолетового мелка."
 	]
+	quest.650A8D7F596AC191.quest_desc: [
+		"Cycle the trades of every villager that hasn't been traded before without needing to wait for working hours or replacing the workstation block over and over again."
+		""
+		"Sometimes the Cycle button isn't available; in that case, you can use the &l«C» shortcut key&r"
+	]
 	quest.650EB42A35DC8763.quest_desc: [
 		"Allows exchanging one block for another. Can change multiple connected blocks simultaneously. Handy when dealing with EBF coils!  "
 		"{@pagebreak}"
@@ -2167,6 +2170,19 @@
 		"Copper suitable for smelter"
 		"{@pagebreak}"
 		"Медь, пригодная для плавки"
+	]
+	quest.68771994A16E5B8C.quest_desc: [
+		"allows the recolor various blocks like AE2 cables, wool, terracotta, concrete etc. with a single item. Doesn't use dye beyond the initial crafting recipe. Infinite durability."
+		""
+		"• Shift and scroll on the item to select the color. Right click on blocks to recolor them according to the selected color. "
+		"• Shift and right click to batch recolor blocks of the same type and color connected to eachother."
+		""
+		"{@pagebreak}"
+		""
+		"позволяет перекрашивать различные блоки, такие как кабели AE2, шерсть, терракоту, бетон и т.д., с помощью одного предмета. Не расходует краску после изготовления. Бесконечный срок службы."
+		""
+		"• Нажмите Shift и крутите колесико мыши чтобы выбрать цвет. Щелкните правой кнопкой мыши по блокам, чтобы перекрасить их в выбранный цвет."
+		"• Нажмите Shift, а затем щелкните правой кнопкой мыши, чтобы перекрасить целую пачку блоков соединенных между собой одним типом и цветом."
 	]
 	quest.68B64BBF3CC18E1C.quest_subtitle: "[Right-click] on a block to summon a loyal Gargoyle guardian."
 	quest.68C1714F3E9B2CA2.quest_desc: ["Drops from a poisoned wolf."]
@@ -2750,6 +2766,7 @@
 	task.608727F73B6EDF0F.title: "The End?!"
 	task.62C0B2D1C395761B.title: "Зачем эта вкладка?"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
+	task.6319A7E878B57B90.title: "Trade Cycling"
 	task.64E7E65976B570B4.title: "Posuc's Convication"
 	task.651818A1418ADDFB.title: "Any #minecraft:saplings"
 	task.65741180CA3C4BD1.title: "Any #milf:gold_storage"
