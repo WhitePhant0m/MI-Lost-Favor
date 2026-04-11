@@ -99,6 +99,8 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.flags.unclaimed', "Chunk unclaimed")
     event.add('milf.flags.occupied', "Chunk already claimed by: ")
 
+    event.add("jade.theme.jade.dark_original", "Dark (original)")
+
     event.add('gateways.basic/deer', "Deer Gateway")
 
     event.add('rei_categories.modern_industrialization.blast_furnace', "Steam Blast Furnace")
