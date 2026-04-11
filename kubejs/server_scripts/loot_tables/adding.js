@@ -1,4 +1,5 @@
-LootJS.modifiers(event => {
+LootJS.modifiers(event => {    
+
 
     const structuresLootTable = {
         common: [
@@ -93,6 +94,16 @@ LootJS.modifiers(event => {
             'underground_bunkers:chests/underground_bunker/underground_bunker_supply'
         ]
     }
+
+    // devices loot addons for ALL chest loot tables
+    const devicesLootTiers = { tier1: 0.4, tier2: 0.2, tier3: 0.1 }
+
+    Object.entries(devicesLootTiers).forEach(([tier, chance]) => {
+        event.addTableModifier(LootType.CHEST).pool(pool => {
+            pool.when(c => c.randomChance(chance))
+            pool.addEntry(LootEntry.reference(`devices:loot_addons/chest/${tier}`))
+        })
+    })
 
     structuresLootTable.common.forEach(table => {
         event.addTableModifier(table).pool((pool) => {
