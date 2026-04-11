@@ -1,0 +1,28 @@
+{
+    "entity": "goblintraders:goblin_trader",
+    "name": {
+        "translate": "entity.goblintraders.goblin_trader",
+        "color": "#18b532"
+    },
+    "display": {
+        "scale": 1.5
+    },
+    "sim_cost": 2560,
+    "input": {
+        "item": "devices:silver_coin"
+    },
+    "base_drop": {
+        "id": "clavis:lock_pick"
+    },
+	"trivia": "custom.trivia.goblin_trader",
+    "fabricator_drops": [
+        {
+            "id": "devices:bronze_coin",
+            "count": 18
+        },
+        {
+            "id": "devices:silver_coin",
+            "count": 2
+        }
+    ]
+}
