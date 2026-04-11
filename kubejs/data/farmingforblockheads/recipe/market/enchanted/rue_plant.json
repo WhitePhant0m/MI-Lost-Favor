@@ -1,7 +1,7 @@
 {
     "type": "farmingforblockheads:market",
     "category": "farmingforblockheads:seeds",
-    "preset": "paganbless:seeds",
+    "preset": "paganbless:plant",
     "result": {
         "item": "paganbless:rue_plant"
     }
