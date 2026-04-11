@@ -5,7 +5,7 @@ preventDespawnIfNamed = false
 [goblinTrader]
 	# The chance out of one hundred that the trader will spawn in the over world
 	# Valid range: 1 to 100 (inclusive)
-	traderSpawnChance = 10
+	traderSpawnChance = 50
 	# The amount of ticks to wait before trying to spawn a trader again if the spawn failed
 	# Valid range: 1 to 2147483647 (inclusive)
 	spawnInterval = 10000
@@ -89,7 +89,7 @@ preventDespawnIfNamed = false
 [veinGoblinTrader]
 	# The chance out of one hundred that the trader will spawn in the over world
 	# Valid range: 1 to 100 (inclusive)
-	traderSpawnChance = 10
+	traderSpawnChance = 50
 	# The amount of ticks to wait before trying to spawn a trader again if the spawn failed
 	# Valid range: 1 to 2147483647 (inclusive)
 	spawnInterval = 10000
@@ -101,7 +101,7 @@ preventDespawnIfNamed = false
 	traderDespawnDelay = 24000
 	# The minimum level the trader can spawn
 	# Valid range: -64 to 320 (inclusive)
-	traderMinSpawnLevel = 0
+	traderMinSpawnLevel = -64
 	# The maximum level the trader can spawn
 	# Valid range: -64 to 320 (inclusive)
 	traderMaxSpawnLevel = 320
