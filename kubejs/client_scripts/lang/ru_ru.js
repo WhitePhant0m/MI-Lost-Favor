@@ -13,6 +13,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.monsterplus_mobs', `Вы начали слышать ${textAnimatorString("крики мертвых", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} ночью`)
     event.add('milf.stage.mowziesmobs_mobs', `новые ${textAnimatorString("опасности", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} появились на вашем пути`)
     event.add('milf.stage.mythsandlegends_mobs', `Мифические существа ${textAnimatorString("могут вас услышать", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} ночью, будьте осторожны!`)
+    event.add('milf.stage.cataclysm_mobs', `Что-то древнее шевелится в ${textAnimatorString("тёмных глубинах", "grad", {from:"#1A4FFF", to:"#0A1A7A", f:0.5})}...`)
+    event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${textAnimatorString("существами, которым нет числа", "grad", {from:"#9B59B6", to:"#E8D5FF", f:0.5})}`)
     event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${textAnimatorString("новыми рудами", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.saturation', `Вы потеряли свое ${textAnimatorString("насыщение", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})}...`)
