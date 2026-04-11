@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "paganbless:rune_slab_inert",
+    "paganbless:rune_slab_amethyst",
+    "paganbless:rune_slab_cinnabar",
+    "paganbless:rune_slab_diamond",
+    "paganbless:rune_slab_emerald",
+    "paganbless:rune_slab_quartz",
+    "paganbless:rune_slab_lapis"
+  ]
+}
