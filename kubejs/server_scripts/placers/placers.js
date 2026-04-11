@@ -110,29 +110,31 @@ BlockEvents.rightClicked(BOX_BLOCKS, event => {
 BlockEvents.broken(PLACER_BLOCKS, event => {
     const { template } = getTemplateData(event, PLACER_BLOCKS_TO_ITEM_NAME_MAP)
 
-    const blockFacing = event.block.getProperties().facing
+    const blockProperties = event.block.getProperties()
+    const blockFacing = blockProperties.facing
     const blockPos = event.block.getPos()
 
     const structureDataRelativeToBlock = getStructureRelativeData(template, blockFacing, blockPos)
-    if (event.block.getProperties().enabled == "true") removePreview(event, template, structureDataRelativeToBlock)
+    if (blockProperties.enabled == "true") removePreview(event, structureDataRelativeToBlock)
 })
 
 function handlePreview(/**@type {import("dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent").$BlockRightClickedKubeEvent$$Original} */ event, template, playerStructureData, blockStructureData){
+    const blockProperties = event.block.getProperties()
     if (event.player.isCrouching()) {
-        if(event.block.getProperties().enabled == "true") {
+        if (blockProperties.enabled == "true") {
             let { boxPos } = blockStructureData
-            removePreview(event, template, blockStructureData)
+            removePreview(event, blockStructureData)
             milfPlaySound(event, "minecraft:block.bamboo.break", { pos: new BlockPos(boxPos.x, boxPos.y, boxPos.z) })
             //event.server.runCommandSilent(`playsound block.bamboo.break block @p ${boxPos.x} ${boxPos.y} ${boxPos.z}`)
         }
         event.cancel()
         return
     }
-    if(event.block.getProperties().enabled == "true" && event.block.getProperties().facing == event.player.getHorizontalFacing()) {
+    if (blockProperties.enabled == "true" && blockProperties.facing == event.player.getHorizontalFacing()) {
         event.cancel()
         return
     }
-    event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {facing:event.player.getHorizontalFacing()}))
+    event.block.set(event.block.id, Object.assign({}, blockProperties, {facing:event.player.getHorizontalFacing()}))
     const canPlace = validateArea(event, playerStructureData.bounds)
     if (!canPlace) {
         handlePreviewFailure(event, template, playerStructureData, blockStructureData)
@@ -148,7 +150,7 @@ function handlePlacement(event, template, modName, playerStructureData, blockStr
         sendImmersiveMessage(Component.translatable("milf.placers.notification2"), event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
         event.cancel()
     }
-    removePreview(event, template, blockStructureData, true)
+    removePreview(event, blockStructureData, true)
     const canPlace = validateArea(event, blockStructureData.bounds)
     if (!canPlace) {
         handlePreviewFailure(event, template, playerStructureData, blockStructureData)
@@ -165,7 +167,7 @@ function placeStructure(/**@type {import("dev.latvian.mods.kubejs.block.BlockRig
     milfPlaySound(event, "minecraft:block.anvil.land", { pos: new BlockPos(blockStructureData.boxPos.x, blockStructureData.boxPos.y, blockStructureData.boxPos.z) })
     //event.server.runCommandSilent(`playsound block.anvil.land block @p ${blockStructureData.boxPos.x} ${blockStructureData.boxPos.y} ${blockStructureData.boxPos.z}`)
     for ( let blockNumber in  template.blocks) {
-        let {blockID,  rotatedVec3i, relativeBlockProperties} = getTemplateBlockData(template, blockStructureData, blockNumber)
+        let {blockID,  relativePosOffset: rotatedVec3i, relativeBlockProperties} = getTemplateBlockData(template, blockStructureData, blockNumber)
         if (blockID != AIR_ID) {
             let block = Block.withProperties(blockID, relativeBlockProperties)
 
@@ -212,8 +214,8 @@ function handlePreviewFailure(event, template, playerStructureData, blockStructu
     //event.server.runCommandSilent(`playsound block.chain.break block @p ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posX} ${playerStructureData.bounds.posY}`)
     sendImmersiveMessage(Component.translatable("milf.placers.notification1"), 
         event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
-    removePreview(event, template, playerStructureData)
-    removePreview(event, template, blockStructureData, true)
+    removePreview(event, playerStructureData)
+    removePreview(event, blockStructureData, true)
     // event.player.sendData("placers", {
     //     xMin:playerStructureData.bounds.xMin,
     //     yMin:playerStructureData.bounds.yMin,
@@ -230,20 +232,48 @@ function handlePreviewFailure(event, template, playerStructureData, blockStructu
 
 function updatePreview(event, template, playerStructureData, blockStructureData){
     const { blockPosRelativeStart, bounds } = playerStructureData
-    if (event.block.getProperties().enabled == "true") removePreview(event, template, blockStructureData)
+    if (event.block.getProperties().enabled == "true") removePreview(event, blockStructureData)
     event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:true}))
     milfPlaySound(event, "minecraft:block.bamboo.hit", { pos: new BlockPos(playerStructureData.boxPos.x, playerStructureData.boxPos.y, playerStructureData.boxPos.z) })
-    //event.server.runCommandSilent(`playsound block.bamboo.hit block @p ${playerStructureData.boxPos.x} ${playerStructureData.boxPos.y} ${playerStructureData.boxPos.z}`)
+
     let blocksToRenderData = []
-    for ( let blockNumber in  template.blocks) {
-        let {blockID,  rotatedVec3i, relativeBlockProperties} = getTemplateBlockData(template, playerStructureData, blockNumber)
+    let hashedBlocks = {}
+    
+    for ( let blockNumber in template.blocks) {
+        let state = template.blocks.getCompound(blockNumber).state
+        let hashToCheck = `${template.palette.getCompound(state).getString("Name").hashCode()}:${template.palette.getCompound(state).getCompound("Properties").hashCode()}`
+        
+        let blockID, offset, relativeBlockProperties
+
+        if (hashedBlocks[hashToCheck]){
+            let data = hashedBlocks[hashToCheck]
+            let pos = template.blocks.getCompound(blockNumber).pos
+            // let vec3iPos = Vec3i(pos[0], pos[1], pos[2])
+            // rotatedVec3i = Vec3itoBlockPos( rotateVec3i(vec3iPos, playerStructureData.angleRad) )
+
+            offset = rotateBlockPos(BlockPos(pos[0], pos[1], pos[2]), playerStructureData.angleDeg)
+
+            blockID = data.blockID
+            relativeBlockProperties = data.relativeBlockProperties
+
+        } else {
+            let data = getTemplateBlockData(template, playerStructureData, blockNumber)
+            blockID = data.blockID
+            offset = Vec3itoBlockPos( data.relativePosOffset )
+            relativeBlockProperties = data.relativeBlockProperties
+            hashedBlocks[hashToCheck] = { blockID: blockID, relativeBlockProperties:relativeBlockProperties}
+        }        
+        
         if (blockID != AIR_ID) {
-            let blockPosToAdd = blockPosRelativeStart.offset(rotatedVec3i)
+            
+            let blockPosToAdd = blockPosRelativeStart.offset(offset)
+            
             //event.server.runCommandSilent(`summon block_display ${blockPosRelativeStart.offset(rotatedVec3i).getX()} ${blockPosRelativeStart.offset(rotatedVec3i).getY() + 0.5} ${blockPosRelativeStart.offset(rotatedVec3i).getZ()} {interpolation_duration:15,teleport_duration:25,Glowing:1b,view_range:0.3f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.001f,1.001f,1.001f]},block_state:{Name:"${blockID}",Properties:${JSON.stringify(relativeBlockProperties)}}}`)
             blocksToRenderData.push({ blockPos: { x: blockPosToAdd.getX(), y: blockPosToAdd.getY(), z: blockPosToAdd.getZ() }, id: blockID, properties: relativeBlockProperties})
         }
-    }    
+    }
     let boxPos = playerStructureData.boxPos
+    
     event.player.sendData("placers_render", {
         blocks: blocksToRenderData,
         boxPos: {x: boxPos.x, y: boxPos.y, z:boxPos.z}
@@ -254,37 +284,36 @@ function updatePreview(event, template, playerStructureData, blockStructureData)
 }
 
 function getTemplateBlockData(template, structureData, blockNumber){
-    let pos = template.blocks.getCompound(blockNumber).pos;
-    let vec3iPos = Vec3i(pos[0],pos[1],pos[2])
-    let rotatedVec3i = rotateVec3i(vec3iPos, structureData.angleRad)
+    let pos = template.blocks.getCompound(blockNumber).pos
+    let offset = rotateBlockPos(BlockPos(pos[0], pos[1], pos[2]), structureData.angleDeg)
+    // let vec3iPos = Vec3i(pos[0],pos[1],pos[2])
+    // let rotatedVec3i = rotateVec3i(vec3iPos, structureData.angleRad)
     let state = template.blocks.getCompound(blockNumber).state
     let blockID = template.palette.getCompound(state).getString("Name")
     let blockProperties = template.palette.getCompound(state).getCompound("Properties")
     let relativeBlockProperties = getRelativeBlockProperties(blockProperties, structureData, blockID)
     return {
-        blockID : blockID,
-        rotatedVec3i : Vec3itoBlockPos(rotatedVec3i),
-        relativeBlockProperties : relativeBlockProperties
+        blockID: blockID,
+        relativePosOffset: offset,
+        relativeBlockProperties: relativeBlockProperties,
+        hash: `${ blockID.hashCode() }:${ blockProperties.hashCode() }`
     }
 }
 
-function getRelativeBlockProperties(blockProperties, structureData, blockID){
-    if (!blockProperties) {
-        return {}
-    }
+function getRelativeBlockProperties( /**@type {$CompoundTag_} */blockProperties, structureData, blockID){
+    if (blockProperties.isEmpty()) { return {} }
     const { facing } = structureData
-    let relativeProperties = { }
+    let relativeProperties = { }    
 
-    if(blockProperties.facing){
-        relativeProperties.facing = `${blockID != "immersiveengineering:fluid_pump" ? directionRelativeTo(String(blockProperties.facing).slice(1, -1), facing) : "north" || ""}`
+    if (blockProperties.contains("facing")){
+        relativeProperties.facing = `${blockID != "immersiveengineering:fluid_pump" ? directionRelativeTo(blockProperties.getString("facing"), facing) : "north"}`
     }
     
-    if (blockProperties.contains("type")){
-        relativeProperties.type = String(blockProperties.type).slice(1, -1)
-    }
-    if (blockProperties.multiblockslave){
-        relativeProperties.multiblockslave = String(blockProperties.multiblockslave).slice(1, -1) === "true" ? true : false
-    }
+    if (blockProperties.contains("type")) { relativeProperties.type = blockProperties.getString("type") }
+    if (blockProperties.contains("multiblockslave")) { relativeProperties.multiblockslave = blockProperties.getString("multiblockslave") == "true" }
+    if (blockProperties.contains("hanging")) { relativeProperties.hanging = blockProperties.getString("hanging") == "true" }
+    if (blockProperties.contains("orientation")) { relativeProperties.orientation = blockProperties.getString("orientation") }
+
     if(blockProperties.east){
         let property = JSON.parse(blockProperties.east)
         relativeProperties[directionRelativeTo("east", facing)] = property
@@ -304,53 +333,45 @@ function getRelativeBlockProperties(blockProperties, structureData, blockID){
     if(blockProperties.up){
         let property = JSON.parse(blockProperties.up)
         relativeProperties["up"] = property
-    }
-
-    // if (String(blockProperties.east).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("east", facing)] = true}
-    // if (String(blockProperties.west).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("west", facing)] = true}
-    // if (String(blockProperties.south).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("south", facing)] = true}
-    // if (String(blockProperties.north).slice(1, -1) === "true") {relativeProperties[directionRelativeTo("north", facing)] = true}
-
-    if (String(blockProperties.hanging).slice(1, -1) === "true") {relativeProperties.hanging = true}
-    if (blockProperties.orientation) {relativeProperties.orientation = String(blockProperties.orientation).slice(1, -1)}
+    }    
     
     return relativeProperties
 }
 
-function removePreview(event, template, structureData, withoutParticles) {
-    const { blockPosRelativeStart, bounds } = structureData
+function removePreview(event, structureData, withoutParticles) {
+    const { bounds, boxPos } = structureData
     event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:false}))
-    // event.server.runCommandSilent(
-    //     `kill @e[type=block_display,x=${bounds.sizeX < 0 ? bounds.posX+0.5 : bounds.posX-0.5},y=${bounds.posY-1},z=${bounds.sizeZ < 0 ? bounds.posZ+0.5 : bounds.posZ-0.5},dx=${bounds.sizeX},dy=${bounds.sizeY},dz=${bounds.sizeZ}]`
-    // )
-    // let blocksToRemoveData = []
-    // for (let blockNumber in template.blocks) {
-    //     let { blockID, rotatedVec3i, relativeBlockProperties } = getTemplateBlockData(template, structureData, blockNumber)
-    //     if (blockID != AIR_ID) {
-    //         let blockPosToAdd = blockPosRelativeStart.offset(rotatedVec3i)
-    //         blocksToRemoveData.push({ blockPos: { x: blockPosToAdd.getX(), y: blockPosToAdd.getY(), z: blockPosToAdd.getZ() }, id: blockID, properties: relativeBlockProperties })
-    //     }
-    // }
-    let boxPos = structureData.boxPos
-    event.player.sendData("placers_remove_render", {
-        boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z }
-    })
+    event.player.sendData("placers_remove_render", { boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z } })
     if (!withoutParticles) particleFrameFromBounds(PARTICLES.dispersed, bounds, event)
 }
 
-function validateArea(event, bounds) {
-    const { xMin, xMax, zMin, zMax, yMin, yMax, posX, posY, posZ} = bounds;
+function validateArea(/**@type {import("dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent").$BlockRightClickedKubeEvent$$Original} */ event, bounds) {
+    const { xMin, xMax, zMin, zMax, yMin, yMax, posX, posY, posZ} = bounds
+
+    
+    let aabb = AABB.of(xMin, yMin, zMin, xMax, yMax, zMax)
+    aabb = aabb.move(posX, posY, posZ)
+
     let valid = true
-    for(let xa = xMin; xa <= xMax; xa++) {
-        for(let ya = yMin; ya <= yMax; ya++) {
-            for(let za = zMin; za <= zMax; za++) {
-                if(event.level.getBlock(posX + xa, posY + ya, posZ + za) !== AIR_ID) {
-                    event.getLevel().spawnParticles(PARTICLES.error, false, posX + xa + 0.5, posY + ya + 0.5, posZ + za + 0.5, 0.2, 0.2, 0.2, 1, 0)
-                    valid = false
-                }
-            }
+
+    BlockPos.betweenClosedStream(aabb).forEach(blockPos => {
+
+        if (event.level.getBlock(blockPos) != AIR_ID) {
+            event.getLevel().spawnParticles(PARTICLES.error, false, blockPos.x + 0.5, blockPos.y + 0.5, blockPos.z + 0.5, 0.2, 0.2, 0.2, 1, 0)
+            valid = false            
         }
-    }
+    })
+
+    // for(let xa = xMin; xa <= xMax; xa++) {
+    //     for(let ya = yMin; ya <= yMax; ya++) {
+    //         for(let za = zMin; za <= zMax; za++) {
+    //             if(event.level.getBlock(posX + xa, posY + ya, posZ + za) !== AIR_ID) {
+    //                 event.getLevel().spawnParticles(PARTICLES.error, false, posX + xa + 0.5, posY + ya + 0.5, posZ + za + 0.5, 0.2, 0.2, 0.2, 1, 0)
+    //                 valid = false
+    //             }
+    //         }
+    //     }
+    // }
     return valid
 }
 
@@ -376,7 +397,8 @@ function getStructureRelativeData(template, facing, /**@type {$BlockPos_} */ blo
         structureVec3iRotated:structureVec3iRotated,
         blockPosRelativeStart:blockPosRelativeStart,
         bounds: calculateBounds(structureVec3iRotated, blockPosRelativeStart),
-        boxPos: {x:blockPos.getX(), y:blockPos.getY(), z:blockPos.getZ()}
+        boxPos: {x:blockPos.getX(), y:blockPos.getY(), z:blockPos.getZ()},
+        angleDeg: angle
     }
 }
 
@@ -396,7 +418,7 @@ function checkStructure(event, template, modName, blockStructureData){
     let canRemove = true
     const { blockPosRelativeStart } = blockStructureData
     for ( let blockNumber in  template.blocks) {
-        let {blockID,  rotatedVec3i, relativeBlockProperties} = getTemplateBlockData(template, blockStructureData, blockNumber)
+        let {blockID,  relativePosOffset: rotatedVec3i, relativeBlockProperties} = getTemplateBlockData(template, blockStructureData, blockNumber)
 
         let nbtBlock = Block.withProperties(blockID, relativeBlockProperties)
         let realBlock = event.getLevel().getBlock(blockPosRelativeStart.offset(rotatedVec3i)).getBlockState()   
@@ -418,8 +440,20 @@ function checkStructure(event, template, modName, blockStructureData){
 
 
 /**@returns {$Vec3i_} */ 
-function rotateVec3i(vec3i, angle){
-    return Vec3i(Math.round(vec3i.getX() * Math.cos(angle) + vec3i.getZ() * Math.sin(angle)), vec3i.getY(), Math.round(-vec3i.getX() * Math.sin(angle) + vec3i.getZ() * Math.cos(angle)))
+function rotateVec3i(vec3i, angleRad){
+    return Vec3i(Math.round(vec3i.getX() * Math.cos(angleRad) + vec3i.getZ() * Math.sin(angleRad)), vec3i.getY(), Math.round(-vec3i.getX() * Math.sin(angleRad) + vec3i.getZ() * Math.cos(angleRad)))
+}
+
+function rotateBlockPos(blockPos, angleDeg) {
+    const quarter = (angleDeg / 90) % 90
+    const x = blockPos.x, y = blockPos.y, z = blockPos.z
+
+    switch (quarter) {
+        case 0: return BlockPos(x, y, z)
+        case 1: return BlockPos(z, y, -x)
+        case 2: return BlockPos(-x, y, -z)
+        case 3: return BlockPos(-z, y, x)
+    }
 }
 
 function Vec3itoBlockPos(/**@type {$Vec3i_} */ vec3i){

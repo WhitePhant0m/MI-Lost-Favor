@@ -19,11 +19,16 @@ let $BlockColors = Java.loadClass("net.minecraft.client.color.block.BlockColors"
 let $Matrix4f = Java.loadClass("org.joml.Matrix4f")
 let $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
 let $FogShape = Java.loadClass("com.mojang.blaze3d.shaders.FogShape")
+let $CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
 
 
 let placersToRender = new Map()
 let placersData = new Map()
 
+const DIRECTIONS = $Direction.values()
+const RENDER_TYPE_TRANSLUCENT = $RenderType.translucent()
+const OVERLAY_NO_OVERLAY = $OverlayTexture.NO_OVERLAY
+const MODEL_DATA_EMPTY = $ModelData.EMPTY
 
 NetworkEvents.dataReceived('placers_render', (event) => {
 
@@ -116,7 +121,7 @@ function getVertexBuffer(structureToAdd) {
 
     let translucentModels = []
 
-    for (const [key, data] of structureToAdd) {
+    for (const data of structureToAdd.values()) {
         let { blockPos, blockState } = data
         addQuadsToBuffer(blockPos, blockState)
     }
@@ -143,24 +148,52 @@ function getVertexBuffer(structureToAdd) {
 
         let model = modelManager.getBlockModelShaper().getBlockModel(blockState)        
 
-        let modelData = model.getModelData(level, blockPos, blockState, $ModelData.EMPTY)
+        let modelData = model.getModelData(level, blockPos, blockState, MODEL_DATA_EMPTY)
 
-        if (blockState.hasBlockEntity()){
+        handleEntities()
+        function handleEntities(){
+            if (blockState.hasBlockEntity()) {
 
-            let block = blockState.getBlock()
-            let blockEntityInstance = block.blockEntityInstance
+                let block = blockState.getBlock()
+                let blockEntityInstance = block.blockEntityInstance
 
-            if (blockEntityInstance){
-                blockEntityInstance.orientation.facingDirection = Client.player.getNearestViewDirection().getOpposite()
-                modelData = blockEntityInstance.getModelData()
+                if (blockEntityInstance) {
+                    blockEntityInstance.orientation.facingDirection = Client.player.getNearestViewDirection().getOpposite()
+                    modelData = blockEntityInstance.getModelData()
+                    return
+                }
+
+                // let entity = block.newBlockEntity(blockPos, blockState)
+                // if (entity.sideConfig){
+
+                //     entity.sideConfig["put(java.lang.Object,boolean)"](Direction.WEST, false)
+                //     let compoundTag = new $CompoundTag()
+                //     compoundTag.putByte("connections", 3)
+                //     console.log(compoundTag);
+                //     console.log(entity);
+
+                //     console.log(entity.sideConfig);
+                    
+                    
+                //     entity.level = Client.level
+                //     //entity.writeCustomNBT(compoundTag, false, Client.level.registryAccess())
+                //     console.log(entity.updateConnectionByte(Direction.WEST));
+                //     console.log(entity.getAvailableConnectionByte());
+                    
+                //     console.log(entity.level);
+                    
+                //     modelData = entity.getModelData()
+                //     console.log(modelData.getProperties());
+                    
+                // }
+
             }
-
         }
 
         let renderTypeSet = model.getRenderTypes(blockState, randomSource, modelData)
-        let renderTypeForModel = renderTypeSet.empty ? $RenderType.translucent() : renderTypeSet.asList().first
+        let renderTypeForModel = renderTypeSet.empty ? RENDER_TYPE_TRANSLUCENT : renderTypeSet.asList().first
 
-        if (renderTypeForModel == $RenderType.translucent() && !isTranslucent) {
+        if (renderTypeForModel == RENDER_TYPE_TRANSLUCENT && !isTranslucent) {
             translucentModels.push({ blockPos:blockPos, blockState:blockState })
             return
         }
@@ -170,7 +203,7 @@ function getVertexBuffer(structureToAdd) {
         tempPoseStack.translate(blockPos.getX(), blockPos.getY(), blockPos.getZ())
         let pose = tempPoseStack.last()
 
-        for (let dir of $Direction.values()) {
+        for (let dir of DIRECTIONS) {
 
             let quads = model.getQuads(blockState, dir, randomSource, modelData, renderTypeForModel)
             for (let quad of quads) {
@@ -181,7 +214,7 @@ function getVertexBuffer(structureToAdd) {
                 let lightmapCoords = smoothQuadLighter.getComputedLightmap()
 
                 bufferBuilder.putBulkData(pose, quad, [baseBrightness[0], baseBrightness[1], baseBrightness[2], baseBrightness[3]],
-                    1, 1, 1, 1, [lightmapCoords[0], lightmapCoords[1], lightmapCoords[2], lightmapCoords[3]], $OverlayTexture.NO_OVERLAY, false)
+                    1, 1, 1, 1, [lightmapCoords[0], lightmapCoords[1], lightmapCoords[2], lightmapCoords[3]], OVERLAY_NO_OVERLAY, false)
 
                 // let shade = Client.level.getShade(quad.getDirection(), quad.isShade())
                 // let light = $LevelRenderer.getLightColor(Client.level, blockPos)
@@ -202,7 +235,7 @@ function getVertexBuffer(structureToAdd) {
             let lightmapCoords = smoothQuadLighter.getComputedLightmap()
 
             bufferBuilder.putBulkData(pose, quad, [baseBrightness[0], baseBrightness[1], baseBrightness[2], baseBrightness[3]],
-                1, 1, 1, 1, [lightmapCoords[0], lightmapCoords[1], lightmapCoords[2], lightmapCoords[3]], $OverlayTexture.NO_OVERLAY, false)
+                1, 1, 1, 1, [lightmapCoords[0], lightmapCoords[1], lightmapCoords[2], lightmapCoords[3]], OVERLAY_NO_OVERLAY, false)
 
             // let shade = Client.level.getShade(quad.getDirection(), quad.isShade())
             // let light = $LevelRenderer.getLightColor(Client.level, blockPos)
@@ -219,10 +252,11 @@ function getVertexBuffer(structureToAdd) {
 }
 
 let placersRenderType = $RenderType.translucent() 
+const AFTER_TRANSLUCENT_BLOCKS_STAGE = $Stage.AFTER_TRANSLUCENT_BLOCKS
 
 NativeEvents.onEvent("net.neoforged.neoforge.client.event.RenderLevelStageEvent", event => {
 
-    if (placersToRender.size == 0 || event.getStage() != $Stage.AFTER_TRANSLUCENT_BLOCKS) return
+    if (placersToRender.size == 0 || event.getStage() != AFTER_TRANSLUCENT_BLOCKS_STAGE) return
 
     let placersShader = $GameRenderer.getPositionColorTexLightmapShader()
     //let placersShader = $GameRenderer.getRendertypeSolidShader()
