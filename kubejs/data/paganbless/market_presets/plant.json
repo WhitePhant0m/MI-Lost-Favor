@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "payment": {
+    "ingredient": {
+      "item": "devices:orichalcum_coin"
+    },
+    "count": 5
+  }
+}
