@@ -13,6 +13,8 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.monsterplus_mobs', `You began to hear the ${textAnimatorString("cries of the dead", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} at night`)
     event.add('milf.stage.mythsandlegends_mobs', `Mythical creatures ${textAnimatorString("can hear you", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} at night, be careful`)
     event.add('milf.stage.mowziesmobs_mobs', `New ${textAnimatorString("dangers", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} have appeared on your path`)
+    event.add('milf.stage.cataclysm_mobs', `Something ancient stirs in the ${textAnimatorString("darkened depths", "grad", {from:"#1A4FFF", to:"#0A1A7A", f:0.5})}...`)
+    event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${textAnimatorString("creatures beyond count", "grad", {from:"#9B59B6", to:"#E8D5FF", f:0.5})}`)
     event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${textAnimatorString("new ores", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
     event.add('milf.stage.saturation', `You have lost your ${textAnimatorString("saturation", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})}...`)

@@ -56,7 +56,7 @@ FTBQuestsEvents.customReward('224D85127D80FED8', event => {
 
     const stages = ["cataclysm_mobs", "netherskeletons_mobs", "rottencreatures_mobs", "enderzoology_mobs"]
     addStagesToTeamMembers(event, stages)
-    defaultMilestoneNotification(event, stages)
+    defaultMilestoneNotification(event, stages[0])
 });
 
 // reward for killing bomd and fdbosses bosses (journeys chapter)
@@ -66,7 +66,7 @@ FTBQuestsEvents.customReward('16B46238FC936637', event => {
 
     const stages = ["grimoireofgaia_mobs", "born_in_chaos_v1_mobs"]
     addStagesToTeamMembers(event, stages)
-    defaultMilestoneNotification(event, stages)
+    defaultMilestoneNotification(event, stages[0])
 });
 
 // reward for Crafting Table

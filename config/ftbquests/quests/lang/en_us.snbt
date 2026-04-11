@@ -2406,6 +2406,12 @@
 		"You can also buy from Wandering Trader"
 	]
 	quest.70A0A078B94FF034.quest_desc: [
+		"This chapter provides an easy way to find almost all the necessary utility items, or to read about what they’re used for."
+		""
+		"Often, a copy of the quest is included here; you can find the original quest by using the quest’s dependency buttons - it’s really handy!"
+		"{image:milf:textures/quest_pic/dependencies_tip.png width:496 height:292 align:center fit:true}"
+		"{@pagebreak}"
+		""
 		"Вкладка подразумевает легкий способ найти практически все необходимые утилитарные предметы, или прочитать зачем он нужен."
 		""
 		"Зачастую здесь копия квеста, оригинальный квест можно найти используя кнопки зависимостей этого квеста, это правда очень удобно!"
@@ -2800,7 +2806,7 @@
 	task.5D063D32D1C6BB2C.title: "Any #ytech:aqueducts"
 	task.5EC8E0E987CF862A.title: "More plants"
 	task.608727F73B6EDF0F.title: "The End?!"
-	task.62C0B2D1C395761B.title: "Зачем эта вкладка?"
+	task.62C0B2D1C395761B.title: "Why is this chapter here? [WIP]"
 	task.62D92EAF1C74E303.title: "Any #comforts:hammocks"
 	task.6319A7E878B57B90.title: "Trade Cycling"
 	task.64E7E65976B570B4.title: "Posuc's Convication"
