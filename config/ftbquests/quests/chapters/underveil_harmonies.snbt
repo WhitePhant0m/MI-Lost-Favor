@@ -1155,6 +1155,17 @@
 			]
 			hide_dependency_lines: true
 			id: "3FA9E1B3ACE5D820"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "malum:slot/empty_rune_slot"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1F1063A9E62215F0"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -1169,6 +1180,17 @@
 			dependencies: ["3FA9E1B3ACE5D820"]
 			hide_dependency_lines: true
 			id: "3C9367DF1315BA94"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "malum:slot/empty_brooch_slot"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "764351AE4ACC7FEA"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3E706844B28B6B92"
@@ -3252,7 +3274,7 @@
 				item: { count: 1, id: "spectrum:bottle_of_decay_away" }
 				type: "item"
 			}]
-			x: 43.0d
+			x: 42.5d
 			y: -50.0d
 		}
 		{
@@ -3261,6 +3283,41 @@
 				"1C223281C108DA0A"
 			]
 			id: "24103CFEEA1D14CE"
+			rewards: [
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "spectrum:slot/pin"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "12D16D8D384FB0D8"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_ring_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "7CEACC8595E86D03"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "spectrum:slot/feet"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "331CC21E0A6E3F3F"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -3403,7 +3460,7 @@
 					type: "item"
 				}
 			]
-			x: 45.0d
+			x: 45.5d
 			y: -50.0d
 		}
 		{
@@ -3504,6 +3561,17 @@
 		{
 			dependencies: ["126C6EE35C263E3A"]
 			id: "249ACC9E7BD295E5"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "curios:slot/empty_belt_slot"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "3F447B6AF92AB2A6"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "6F75306FF32664F2"
@@ -3632,7 +3700,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(milf:azure_dike_trinkets)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 42.0d
+			x: 41.5d
 			y: -50.0d
 		}
 		{
@@ -3655,7 +3723,7 @@
 				item: { count: 1, id: "spectrum:upgrade_efficiency" }
 				type: "item"
 			}]
-			x: 44.0d
+			x: 44.5d
 			y: -50.0d
 		}
 		{
@@ -3915,7 +3983,7 @@
 				id: "3748DE7A1137764C"
 				type: "advancement"
 			}]
-			x: 42.0d
+			x: 41.5d
 			y: -51.5d
 		}
 		{
@@ -3951,7 +4019,7 @@
 				item: { count: 1, id: "spectrum:germinated_jade_vine_bulb" }
 				type: "item"
 			}]
-			x: 42.0d
+			x: 41.5d
 			y: -53.0d
 		}
 		{
@@ -3974,7 +4042,7 @@
 					type: "item"
 				}
 			]
-			x: 42.0d
+			x: 41.5d
 			y: -54.5d
 		}
 		{
@@ -3986,7 +4054,7 @@
 				item: { count: 1, id: "spectrum:moonstruck_nectar" }
 				type: "item"
 			}]
-			x: 42.0d
+			x: 41.5d
 			y: -56.0d
 		}
 		{
@@ -7646,6 +7714,17 @@
 		{
 			dependencies: ["3734BC43E4C8B17C"]
 			id: "6DD09F8CD0139D53"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "curios:slot/an_focus_slot"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "084C079A765DC32C"
+				team_reward: false
+				type: "custom"
+			}]
 			tasks: [{
 				id: "20B585B902CDDFBD"
 				item: { count: 1, id: "ars_elemental:mark_of_mastery" }
@@ -9746,6 +9825,28 @@
 			}]
 			x: 66.0d
 			y: -111.0d
+		}
+		{
+			dependencies: ["4081617269AD644A"]
+			id: "48F2E7A801E8EB8A"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "spectrum:slot/palette"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "40AC6BC01A9ED62B"
+				team_reward: false
+				type: "custom"
+			}]
+			tasks: [{
+				id: "28D13A828302D982"
+				item: { count: 1, id: "spectrum:pigment_palette" }
+				type: "item"
+			}]
+			x: 43.5d
+			y: -50.0d
 		}
 	]
 }

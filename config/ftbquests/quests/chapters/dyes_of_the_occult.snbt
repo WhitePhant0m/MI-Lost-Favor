@@ -661,6 +661,17 @@
 		{
 			dependencies: ["64FE8C0AC725C0D2"]
 			id: "67FF2E201D719DEA"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "curios:slot/empty_head_slot"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "79B3DCBD3C3D36DB"
+				team_reward: false
+				type: "custom"
+			}]
 			tasks: [{
 				id: "132F0B62BC820686"
 				item: { count: 1, id: "occultism:otherworld_goggles" }
@@ -2752,6 +2763,17 @@
 		{
 			dependencies: ["73DAABF80C068AA2"]
 			id: "5CB6405F0B7F4D6A"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "spectrum:slot/face"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "0E39813C84812910"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "24CBD65954DABF9E"

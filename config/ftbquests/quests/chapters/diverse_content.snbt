@@ -438,5 +438,26 @@
 			x: -40.0d
 			y: 1.5d
 		}
+		{
+			id: "07ED244BED2A7802"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "hostilenetworks:item/deep_learner"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "70FAD5B8BC6CD8CC"
+				team_reward: false
+				type: "custom"
+			}]
+			tasks: [{
+				id: "194FFC9F44216F2A"
+				item: { count: 1, id: "hostilenetworks:deep_learner" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.5d
+		}
 	]
 }

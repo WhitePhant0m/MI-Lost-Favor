@@ -1490,5 +1490,28 @@
 			x: 3.5d
 			y: -19.5d
 		}
+		{
+			dependencies: ["7D5A74D4B9B10E94"]
+			id: "5B8848BCB4B2D4F3"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "curios:slot/empty_shoulders_slot"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "66F76B515E0CC819"
+				team_reward: false
+				type: "custom"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "42D833A282C7A815"
+				item: { count: 1, id: "extended_industrialization:robot_auto_feeder" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
 	]
 }

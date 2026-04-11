@@ -1504,6 +1504,41 @@
 				"78B154D7DC8F7464"
 			]
 			id: "6A1DA8ABA8F13FC2"
+			rewards: [
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_body_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "5B2F20AA1D77D9D7"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_charm_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "19B52AC9AC1571C5"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_ring_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "2C80D8BA9B69917E"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			tasks: [{
 				advancement: "apotheosis:progression/frontier"
 				criterion: ""
@@ -1521,6 +1556,30 @@
 				"623F3162F415D0FC"
 			]
 			id: "3BB0FE129E37B19E"
+			rewards: [
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_bracelet_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "43989D93EEEBE7E7"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_charm_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "797984527B88CB21"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			tasks: [{
 				advancement: "apotheosis:progression/ascent"
 				criterion: ""
@@ -1541,6 +1600,52 @@
 				"3056F19142720FB0"
 			]
 			id: "3D5FB6D17EC9693F"
+			rewards: [
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_hands_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "20BA335B5255AB60"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_ring_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "4489C7C10E7A49EF"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "cataclysm:item/empty_ring_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "20BD33A01D4A91E7"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "spectrum:slot/feet"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "4C184C19BA719B4F"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			tasks: [{
 				advancement: "apotheosis:progression/summit"
 				criterion: ""
@@ -1563,6 +1668,41 @@
 				"2A8C0D9B2C194AD2"
 			]
 			id: "10DF8F26503CA411"
+			rewards: [
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_charm_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "6C1E7006967265FC"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_hands_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "116FEA5302E15B7D"
+					team_reward: false
+					type: "custom"
+				}
+				{
+					icon: {
+						components: {
+							"ftbquests:icon": "curios:slot/empty_ring_slot"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "5BD3DB1BBF7C043E"
+					team_reward: false
+					type: "custom"
+				}
+			]
 			tasks: [{
 				advancement: "apotheosis:progression/pinnacle"
 				criterion: ""

@@ -2193,6 +2193,17 @@
 				"1910D126987020E0"
 			]
 			id: "3589BA27A7CE2D1B"
+			rewards: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "advanced_ae:item/adv_pattern_encoder_curio"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "184E78B18B597C06"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "699B21A3959B3378"

@@ -26,12 +26,12 @@
 			y: -2.5d
 		}
 		{
-			height: 10.0d
-			image: "milf:textures/quest_pic/banner.png"
+			height: 12.0d
+			image: "milf:textures/quest_pic/welcome_chapter.png"
 			rotation: 0.0d
-			width: 50.0d
+			width: 25.0d
 			x: 0.0d
-			y: -7.5d
+			y: -10.5d
 		}
 	]
 	order_index: 0
@@ -437,6 +437,12 @@
 		}
 		{
 			dependencies: ["2B7F14733C000C22"]
+			icon: {
+				components: {
+					"ftbquests:icon": "relics:textures/gui/description/general/badges/ability/cyclical.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "650A8D7F596AC191"
 			tasks: [{
 				id: "6319A7E878B57B90"
