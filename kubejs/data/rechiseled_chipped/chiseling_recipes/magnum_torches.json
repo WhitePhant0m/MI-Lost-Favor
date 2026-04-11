@@ -1,0 +1,9 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    { "item": "magnumtorch:emerald_magnum_torch" },
+    { "item": "magnumtorch:diamond_magnum_torch" },
+    { "item": "magnumtorch:amethyst_magnum_torch" }
+  ],
+  "overwrite": false
+}

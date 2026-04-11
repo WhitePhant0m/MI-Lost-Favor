@@ -32,7 +32,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.orb_of_the_forest.tooltip', 'Для применения сферы к топору держите сферу в основной руке, а любой топор — во второй и нажмите ПКМ')
     event.add('milf.beltborne_lanterns.tooltip', 'Нажмите CTRL + B, держа фонарь — он прикрепится к твоему поясу. Нужно вернуть его в руки? Нажмите CTRL + B снова')
     event.add('milf.money_pouch.tooltip', `Можно открыть с помощью ${textAnimatorString("радиального меню", "wave", {a:0.2})}, находясь в слоте для безделушек.`)
-    event.add('milf.mi_pipe_recolor.tooltip', 'Можно поменять цвет используя Chisel')
+    event.add('milf.mi_pipe_recolor.tooltip', 'Можно поменять тип используя Chisel')
     event.add('milf.curio_bag.tooltip', `Можно открыть с помощью ${textAnimatorString("радиального меню", "wave", {a:0.2})} если мешок на панели быстрого доступа или в слоте для безделушек`)
 
     event.add('milf.mi_upgrade_notification_1', `Требуется `)
@@ -221,6 +221,10 @@ ClientEvents.lang('ru_ru', event => {
     event.add("custom.trivia.pillager", "Лучники разбойничьих племён,\nбродящих по Верхнему Миру\nв поисках следующей жертвы.")
     event.add("custom.trivia.ravager", "Невероятно сильный боевой зверь,\nиспользуемый только во время набегов на деревни,\nпроклятые чёрствыми авантюристами.")
     event.add("custom.trivia.vindicator", "Боец переднего края\nразбойничьих племён, бродящих по Верхнему Миру\nв поисках следующей жертвы.\n\nОпасайтесь их мощных ударов.")
+
+    //goblintraders
+    event.add("custom.trivia.vein_goblin_trader", "Загадочный торговец, обитающий в глубинах Нижнего мира,\nищущий возможность обменять редкие и ценные материалы.");
+    event.add("custom.trivia.goblin_trader", "Загадочный торговец, обитающий в глубинах мира,\nищущий возможность обменять редкие и ценные материалы.");
 
     //#endregion
 
