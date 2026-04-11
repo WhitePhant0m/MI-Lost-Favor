@@ -143,6 +143,21 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "clavis:lock_pick",
+          "weight": 5,
+          "functions": [{ "function": "minecraft:set_count", "count": { "min": 2, "max": 7 } }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "minecraft:item",
           "name": "devices:bronze_coin",
           "weight": 2,
