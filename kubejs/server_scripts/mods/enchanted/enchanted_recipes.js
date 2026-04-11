@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
 
+    event.remove({id: "enchanted:distilling/demon_heart_diamond_vapour"})
+
     customMixingCauldron(event, {
         fluid: "minecraft:water",
         fluidAmount: 1000,
