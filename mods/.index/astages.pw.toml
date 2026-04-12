@@ -1,17 +1,17 @@
-filename = 'astages-2.0.1-1.21.1.jar'
+filename = 'astages-2.0.2-1.21.1.jar'
 name = 'AStages'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'astages-2.0.1-1.21.1'
+x-prismlauncher-version-number = 'astages-2.0.2-1.21.1'
 
 [download]
-hash = '7f3d1995fd032f0075d719d6e579a27ab36f4a28'
+hash = '9de0f5a100fc2ea52c117c2ed5b4cc6579066aff'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7901268
+file-id = 7917558
 project-id = 1120180
