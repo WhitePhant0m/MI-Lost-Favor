@@ -164,6 +164,33 @@ LootJS.modifiers(event => {
         })
     });
 
+    // CreeperOverhaul creepers drop creeper_heart when killed with arthana (same as vanilla creeper)
+    const creeperOverhaulCreepers = [
+        "creeperoverhaul:badlands_creeper",
+        "creeperoverhaul:bamboo_creeper",
+        "creeperoverhaul:beach_creeper",
+        "creeperoverhaul:birch_creeper",
+        "creeperoverhaul:cave_creeper",
+        "creeperoverhaul:dark_oak_creeper",
+        "creeperoverhaul:desert_creeper",
+        "creeperoverhaul:dripstone_creeper",
+        "creeperoverhaul:hills_creeper",
+        "creeperoverhaul:jungle_creeper",
+        "creeperoverhaul:mushroom_creeper",
+        "creeperoverhaul:ocean_creeper",
+        "creeperoverhaul:savannah_creeper",
+        "creeperoverhaul:snowy_creeper",
+        "creeperoverhaul:spruce_creeper",
+        "creeperoverhaul:swamp_creeper",
+    ]
+
+    creeperOverhaulCreepers.forEach(creeper => {
+        event.addEntityModifier(creeper).pool(pool => {
+            pool.when(c => c.matchMainHand("enchanted:arthana").randomChanceWithEnchantment("minecraft:looting", [0.2, 0.4, 0.6, 0.8, 1.0, 1.0, 1.0, 1.0, 1.0]))
+            pool.addEntry(LootEntry.of("enchanted:creeper_heart"))
+        })
+    })
+
     event.addTableModifier("spectrum:chests/ruined_pedestal_stone").addLoot("milf:old_tablet")
     event.addTableModifier("spectrum:chests/ruined_pedestal_deepslate").addLoot("milf:old_tablet")
     event.addTableModifier("spectrum:chests/ancient_ruins_main").addLoot("milf:old_diary").setCount([1, 1])
