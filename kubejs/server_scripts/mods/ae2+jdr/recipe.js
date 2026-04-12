@@ -7,7 +7,8 @@ ServerEvents.recipes(event => {
         "extendedae:quartz_blend",
         "ae2:quartz_glass",
         "ae2:quartz_vibrant_glass",
-        "extendedae:caner"
+        "extendedae:caner",
+        "justdirethings:paradoxmachine"
     ]
 
     //default recipes removal
