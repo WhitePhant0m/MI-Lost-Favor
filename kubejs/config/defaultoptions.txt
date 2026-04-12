@@ -53,3 +53,7 @@ key_key.sophisticatedbackpacks.open_backpack:key.keyboard.unknown
 key_key.simplytooltips.capture_gif:key.keyboard.unknown
 key_key.rpgtimeline.open_chronicle:key.keyboard.unknown
 key_key.smallships.ship_sail:key.keyboard.unknown
+key_key.nbtedit.shortcut:key.keyboard.unknown
+key_key.bridgingmod.toggle_bridging:key.keyboard.unknown
+key_gui.xaero_open_settings:key.keyboard.unknown
+key_gui.xaero_open_map:key.keyboard.unknown
