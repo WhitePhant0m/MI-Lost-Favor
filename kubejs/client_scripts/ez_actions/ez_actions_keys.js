@@ -24,6 +24,18 @@ function addEzAction(player, args) {
     args = args || {}
     let argsJS = I_HATE_COMPOUND_TAGS(args)
 
+    const parentId = argsJS.parentId || null
+    const path = parentId ? $menuPath.of(parentId) : $menuPath.root()
+
+    try {
+        var ezExisting = $EzActionAPI.menuRead().list(path)
+        for (var ezI = 0; ezI < ezExisting.size(); ezI++) {
+            if (ezExisting.get(ezI).title() === argsJS.action_name) return
+        }
+    } catch(e) {
+        console.error(`[EzActions] check failed: ${e}`)
+    }
+
     let json = JSON.stringify({
         "type": "KEY",
         "name": argsJS.key_name,
@@ -31,7 +43,7 @@ function addEzAction(player, args) {
         "mode": "AUTO"
     })
 
-    $EzActionAPI.addAction(argsJS.parentId || null, argsJS.action_name, null, $ClickActionKey.deserialize(json), $IconSpec.item(argsJS.icon), true);
+    $EzActionAPI.addAction(parentId, argsJS.action_name, null, $ClickActionKey.deserialize(json), $IconSpec.item(argsJS.icon), true);
 }
 
 function addEzBundle(player, args) {
