@@ -306,6 +306,22 @@ ServerEvents.recipes(event => {
                 { "key": "ytech:shell_beads" },
             ]
         },
+        {
+            id: "spectrum:pedestal_ruins_stone", name: "pedestal_ruins_stone", augments: [
+                { "key": "minecraft:stone" },
+                { "key": "spectrum:light_blue_pigment" },
+                { "key": "spectrum:magenta_pigment" },
+                { "key": "spectrum:lime_pigment" },
+            ]
+        },
+        {
+            id: "spectrum:pedestal_ruins_deepslate", name: "pedestal_ruins_deepslate", augments: [
+                { "key": "minecraft:deepslate" },
+                { "key": "spectrum:light_blue_pigment" },
+                { "key": "spectrum:magenta_pigment" },
+                { "key": "spectrum:lime_pigment" },
+            ]
+        },
     ]
 
     locate_structure_list.forEach(structure => {
