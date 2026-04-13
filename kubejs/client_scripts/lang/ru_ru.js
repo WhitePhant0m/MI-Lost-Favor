@@ -17,7 +17,6 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${textAnimatorString("существами, которым нет числа", "grad", {from:"#9B59B6", to:"#E8D5FF", f:0.5})}`)
     event.add('milf.stage.tier_1_access_ore', `Шахты были благословлены ${textAnimatorString("новыми рудами", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
-    event.add('milf.stage.saturation', `Вы потеряли свое ${textAnimatorString("насыщение", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})}...`)
     event.add('milf.stage.xaeromap', 'Разблокированы: мини-карта, радар, метки')
     event.add('milf.stage.minecraft_mobs', `Вы начали слышать ${textAnimatorString("странные звуки", "grad", {from:"#ED1A1A", to:"#B62651", f:0.5})} ночью...`)
     event.add('milf.stage.early_items', `Этот мир больше не ${textAnimatorString("отвергает", "glitch")} вас...`)

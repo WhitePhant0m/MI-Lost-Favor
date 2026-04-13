@@ -17,7 +17,6 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.stage.grimoireofgaia_mobs', `The world now teems with ${textAnimatorString("creatures beyond count", "grad", {from:"#9B59B6", to:"#E8D5FF", f:0.5})}`)
     event.add('milf.stage.tier_1_access_ore', `The mines have been blessed with ${textAnimatorString("new ores", "grad", {from:"#55A2FA", to:"#8DDBFF", f:0.5})}...`)
     event.add('milf.stage.tier_2_access_ore', 'Unlocked: iridium / platinum / titanium / tungsten / uranium ore')
-    event.add('milf.stage.saturation', `You have lost your ${textAnimatorString("saturation", "grad", {from:"#E4C549", to:"#FDE49A", f:0.5})}...`)
     event.add('milf.stage.xaeromap', 'Unlocked: mini-map, radar, waypoints')
     event.add('milf.how_to_seed.tooltip', 'Can be found in a bird\'s nest or bought in a market')
     event.add('milf.how_to_get_blaze_core.tooltip', 'You have a 50% chance of obtaining if you kill with the any wrench: Sacred Pontiff, Lord Pumpking, The Black Charro, Umvuthi, Frostmaw, Ferrous Wroughtnaut, Amethyst Crab')

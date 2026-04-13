@@ -69,12 +69,6 @@ FTBQuestsEvents.customReward('16B46238FC936637', event => {
     defaultMilestoneNotification(event, stages[0])
 });
 
-// reward for Crafting Table
-FTBQuestsEvents.customReward('0E7A91DD8F37AF4D', event => {
-    const stage = "saturation"
-    addStagesToTeamMembers(event, stage)
-    defaultMilestoneNotification(event, stage)
-});
 
 // reward for Iron Bloom
 FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {

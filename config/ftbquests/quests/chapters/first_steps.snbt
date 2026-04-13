@@ -168,15 +168,6 @@
 		{
 			dependencies: ["5634B70F205A9FB4"]
 			id: "6E680C846961BFE3"
-			rewards: [{
-				auto: "enabled"
-				icon: {
-					id: "minecraft:rotten_flesh"
-				}
-				id: "0E7A91DD8F37AF4D"
-				team_reward: false
-				type: "custom"
-			}]
 			shape: "octagon"
 			tasks: [
 				{
@@ -1997,10 +1988,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"2A45037810AC863C"
-				"4D19F9C67E2C134E"
-			]
+			dependencies: ["2A45037810AC863C"]
 			id: "68A22BD457DE7363"
 			shape: "octagon"
 			tasks: [{
