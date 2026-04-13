@@ -7,7 +7,7 @@ forgeEnergyPerEu = 10
 # Range: 1 ~ 1024
 baseItemPipeTransfer = 16
 #Grant guidebook the first time a player joins the server.
-spawnWithGuideBook = true
+spawnWithGuideBook = false
 #Grant guidebook when a player respawns after death.
 respawnWithGuideBook = false
 
