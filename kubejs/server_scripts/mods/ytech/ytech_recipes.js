@@ -164,9 +164,9 @@ ServerEvents.recipes(event => {
 
     yTechShaped(event, {
         pattern: [
-            ' EH',
+            ' E ',
             '   ',
-            '   '
+            '  H'
         ],
         key: {
             E: { tag: "c:knives" },
@@ -179,8 +179,8 @@ ServerEvents.recipes(event => {
     yTechShaped(event, {
         pattern: [
             ' E ',
-            '  H',
-            '   '
+            '   ',
+            ' H '
         ],
         key: {
             E: { tag: "c:knives" },
