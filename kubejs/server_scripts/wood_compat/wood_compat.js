@@ -351,5 +351,76 @@ ServerEvents.recipes(event => {
         });
     });
 
+    const logsToTagsTypes = ["ytech:remaining_shaped_crafting", "ytech:remaining_shapeless_crafting", "ytech:chopping"]
+
+    logsToTagsTypes.forEach(type => {
+        event.forEachRecipe({
+            mod: "minecraft",
+            type: type,
+            output:
+                [
+                    "#minecraft:planks"
+                ]
+        }, recipe => {
+
+            const originalJson = JSON.parse(recipe.json)
+
+            if (originalJson.ingredients) {
+                originalJson.ingredients = (originalJson.ingredients || [])
+                    .map(i =>{ 
+                        if (!i.item) return i
+                        if (i.item.includes("_log")) {
+                            return { tag: i.item + "s" }
+                        }
+                        if (i.item.includes("bamboo_block")) {
+                            return { tag: i.item + "s" }
+                        }
+                        if (i.item.includes("_stem")) {
+                            return { tag: i.item + "s" }
+                        }
+                    })
+            }
+
+            event.remove({ id: recipe.getId(), type: type })
+            event.custom(originalJson)
+        })
+
+        event.forEachRecipe({
+            mod: "ytech",
+            type: type,
+            output:
+                [
+                    "#minecraft:planks"
+                ]
+        }, recipe => {
+
+            const originalJson = JSON.parse(recipe.json)
+
+            if (originalJson.ingredients) {
+                originalJson.ingredients = (originalJson.ingredients || [])
+                    .map(i => {
+                        if (!i.item) return i
+                        if (i.item.includes("_log")) {
+                            return { tag: i.item + "s" }
+                        }
+                        if (i.item.includes("bamboo_block")){
+                            return { tag: i.item + "s" }
+                        }
+                        if (i.item.includes("_stem")) {
+                            return { tag: i.item + "s" }
+                        }
+                        
+                    })
+            }
+
+            if (originalJson.ingredient) {
+                originalJson.ingredient = { tag: originalJson.ingredient.item + "s"}
+            }
+
+            event.remove({ id: recipe.getId(), type: type })
+            event.custom(originalJson)
+        })
+    })
+
 
 });
