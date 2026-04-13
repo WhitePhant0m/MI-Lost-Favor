@@ -398,6 +398,7 @@
 		"{@pagebreak}"
 		"Всех &#FEECD6заинтересовавшихся&r приглашаем в книжку &#9BB8EDSpectrum&r'a, расписывать тут такую механику не видим смысла!"
 	]
+	quest.10DF8F26503CA411.title: "World Tier: Pinnacle"
 	quest.10EDC166831C6721.quest_desc: [
 		"With even greater potential in material, I can enhance both the capacity and the duration of the flask even further. Now I can keep the effect for triple the normal length. This power is UNBELIEVABLE!"
 		"{@pagebreak}"
@@ -1308,6 +1309,7 @@
 		""
 		"This enhancer is currently not obtainable in survival."
 	]
+	quest.3BB0FE129E37B19E.title: "World Tier: Ascent"
 	quest.3BB8C6DBB6FE9970.quest_desc: [
 		"To obtain the &l&0mid&5night &5shard&r, you need to suffocate a living creature in the &l&5mid&0night &l&5so&0lu&5ti&0on&r."
 		"{@pagebreak}"
@@ -1347,6 +1349,7 @@
 		""
 		"Так же используется для создания рюкзака."
 	]
+	quest.3D5FB6D17EC9693F.title: "World Tier: Summit"
 	quest.3D661614AB8A295E.quest_desc: [
 		"The Cresent Moon Enhancer reduces the Aureal cost of rituals when used in the Hephaestus Forge. Depending on the time of the day the reduced amount differs between 10% during the night and 1% during the day. "
 		""
@@ -2297,6 +2300,7 @@
 		""
 		"Can be used together with a Oil Pot Sash. Pots will dig ore in an area like grenades. The ores will have Fortune II applied to them."
 	]
+	quest.6A1DA8ABA8F13FC2.title: "World Tier: Frontier"
 	quest.6AADBAB610C068F2.quest_desc: ["на метле можно уместить  2 игрока, можно красить имеет 9 слотов"]
 	quest.6B3078F8DB055448.quest_desc: [
 		"This ritual also unlocks many new Possession Rituals that allow you to summon rare mobs and obtain their rare drops. For example, you can summon a Shalker without spending a ton of time searching for and opening the End portal to obtain Shalker Shell."

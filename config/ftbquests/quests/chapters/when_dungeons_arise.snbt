@@ -1511,6 +1511,9 @@
 				"6150509913ECC9FE"
 				"78B154D7DC8F7464"
 			]
+			icon: {
+				id: "minecraft:iron_sword"
+			}
 			id: "6A1DA8ABA8F13FC2"
 			rewards: [
 				{
@@ -1546,12 +1549,17 @@
 					team_reward: false
 					type: "custom"
 				}
+				{
+					advancement: "apotheosis:progression/frontier"
+					criterion: ""
+					id: "13F6CAC799CFFA43"
+					team_reward: false
+					type: "advancement"
+				}
 			]
 			tasks: [{
-				advancement: "apotheosis:progression/frontier"
-				criterion: ""
-				id: "05AD4594BDD7AF7F"
-				type: "advancement"
+				id: "5EC16429B09A0F43"
+				type: "checkmark"
 			}]
 			x: -11.0d
 			y: 11.5d
@@ -1563,6 +1571,9 @@
 				"1974F3873C7DD0EB"
 				"623F3162F415D0FC"
 			]
+			icon: {
+				id: "minecraft:blaze_powder"
+			}
 			id: "3BB0FE129E37B19E"
 			rewards: [
 				{
@@ -1595,12 +1606,17 @@
 					id: "224D85127D80FED8"
 					type: "custom"
 				}
+				{
+					advancement: "apotheosis:progression/ascent"
+					criterion: ""
+					id: "6FE7C59A1591F41F"
+					team_reward: false
+					type: "advancement"
+				}
 			]
 			tasks: [{
-				advancement: "apotheosis:progression/ascent"
-				criterion: ""
-				id: "310FDA29DDD8C2AB"
-				type: "advancement"
+				id: "1C1FCBB0D51B5346"
+				type: "checkmark"
 			}]
 			x: -11.0d
 			y: 15.5d
@@ -1615,6 +1631,9 @@
 				"6854389FAE6E5634"
 				"3056F19142720FB0"
 			]
+			icon: {
+				id: "minecraft:netherite_sword"
+			}
 			id: "3D5FB6D17EC9693F"
 			rewards: [
 				{
@@ -1669,12 +1688,17 @@
 					id: "16B46238FC936637"
 					type: "custom"
 				}
+				{
+					advancement: "apotheosis:progression/summit"
+					criterion: ""
+					id: "37BF15FD78F8AA7C"
+					team_reward: false
+					type: "advancement"
+				}
 			]
 			tasks: [{
-				advancement: "apotheosis:progression/summit"
-				criterion: ""
-				id: "467E61C60DD4055B"
-				type: "advancement"
+				id: "0149479D8F498A42"
+				type: "checkmark"
 			}]
 			x: -11.0d
 			y: 19.5d
@@ -1691,6 +1715,9 @@
 				"37151E848097297D"
 				"2A8C0D9B2C194AD2"
 			]
+			icon: {
+				id: "minecraft:end_crystal"
+			}
 			id: "10DF8F26503CA411"
 			rewards: [
 				{
@@ -1726,12 +1753,17 @@
 					team_reward: false
 					type: "custom"
 				}
+				{
+					advancement: "apotheosis:progression/pinnacle"
+					criterion: ""
+					id: "7C15821F8671FA11"
+					team_reward: false
+					type: "advancement"
+				}
 			]
 			tasks: [{
-				advancement: "apotheosis:progression/pinnacle"
-				criterion: ""
-				id: "4734F5F0BA739CF6"
-				type: "advancement"
+				id: "15524DB7F6CFD185"
+				type: "checkmark"
 			}]
 			x: -11.0d
 			y: 25.5d
