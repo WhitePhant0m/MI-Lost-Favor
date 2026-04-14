@@ -27,7 +27,7 @@
 				item: { count: 1, id: "minecraft:gravel" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -6.0d
 			y: -8.0d
 		}
 		{
@@ -39,7 +39,7 @@
 				item: { count: 1, id: "ytech:sharp_flint" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -7.0d
 		}
 		{
@@ -52,7 +52,7 @@
 				item: { count: 1, id: "ytech:grass_fibers" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: -8.0d
 		}
 		{
@@ -64,7 +64,7 @@
 				item: { count: 1, id: "ytech:grass_twine" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: -8.0d
 		}
 		{
@@ -76,7 +76,7 @@
 				item: { count: 1, id: "minecraft:stick" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: -8.5d
 		}
 		{
@@ -89,7 +89,7 @@
 				item: { count: 1, id: "ytech:pebble" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: -8.5d
 		}
 		{
@@ -101,7 +101,7 @@
 				item: { count: 1, id: "ytech:flint_axe" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: -7.0d
 		}
 		{
@@ -113,7 +113,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -7.0d
 		}
 		{
@@ -125,7 +125,7 @@
 				item: { count: 1, id: "ytech:crafting_workspace" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: -8.0d
 		}
 		{
@@ -150,7 +150,7 @@
 					type: "observation"
 				}
 			]
-			x: 3.0d
+			x: 4.0d
 			y: -8.0d
 		}
 		{
@@ -162,7 +162,7 @@
 				item: { count: 1, id: "minecraft:leather" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 7.0d
 			y: -8.0d
 		}
 		{
@@ -202,7 +202,7 @@
 				item: { count: 1, id: "ytech:fire_pit" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -9.0d
 		}
 		{
@@ -213,7 +213,7 @@
 				item: { count: 1, id: "ytech:antler_pickaxe" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -10.0d
 		}
 		{
@@ -228,7 +228,7 @@
 				item: { count: 1, id: "ytech:bone_needle" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -9.0d
 		}
 		{
@@ -260,7 +260,7 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
+			x: 5.5d
 			y: -10.0d
 		}
 		{
@@ -272,7 +272,7 @@
 				item: { count: 1, id: "ytech:basket" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -10.5d
 		}
 		{
@@ -381,7 +381,7 @@
 				item: { count: 1, id: "ytech:flint_knife" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: -9.0d
 		}
 		{
@@ -449,7 +449,7 @@
 					type: "observation"
 				}
 			]
-			x: 3.5d
+			x: 4.5d
 			y: -9.0d
 		}
 		{
@@ -476,7 +476,7 @@
 					type: "observation"
 				}
 			]
-			x: 4.5d
+			x: 5.5d
 			y: -7.0d
 		}
 		{
@@ -491,7 +491,7 @@
 				item: { count: 1, id: "ytech:twine_mesh" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -7.0d
 		}
 		{
@@ -540,7 +540,7 @@
 					type: "observation"
 				}
 			]
-			x: 4.0d
+			x: 5.0d
 			y: -6.0d
 		}
 		{
@@ -891,7 +891,7 @@
 				item: { count: 1, id: "ytech:chlorite_bracelet" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: -5.5d
 		}
 		{
@@ -903,7 +903,7 @@
 				item: { count: 1, id: "ytech:lion_man" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: -5.5d
 		}
 		{
@@ -915,7 +915,7 @@
 				item: { count: 1, id: "ytech:shell_beads" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -6.0d
 			y: -5.5d
 		}
 		{
@@ -927,7 +927,7 @@
 				item: { count: 1, id: "ytech:venus_of_hohle_fels" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.5d
 			y: -5.0d
 		}
 		{
@@ -939,7 +939,7 @@
 				item: { count: 1, id: "ytech:wild_horse" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: -5.0d
 		}
 		{
@@ -1125,7 +1125,7 @@
 				item: { components: { "map_atlases:empty_maps": { vanilla: 9 }, "map_atlases:map_collection": { vanilla: [I; 8, 16, 23, 29, 34, 38, 41, 43, 44 ] } }, count: 1, id: "map_atlases:atlas" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.5d
 			y: -11.0d
 		}
 		{
@@ -1137,7 +1137,7 @@
 				item: { count: 1, id: "eccentrictome:tome" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: -11.0d
 		}
 		{
@@ -1169,7 +1169,7 @@
 				item: { count: 1, id: "supplementaries:lunch_basket" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -11.5d
 		}
 		{
@@ -1220,7 +1220,7 @@
 				item: { count: 1, id: "minecraft:cobblestone" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: -10.0d
 		}
 		{
@@ -1232,7 +1232,7 @@
 				item: { count: 1, id: "minecraft:flint" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -5.5d
 			y: -7.5d
 		}
 		{
@@ -1526,7 +1526,7 @@
 					type: "observation"
 				}
 			]
-			x: 3.5d
+			x: 4.5d
 			y: -7.0d
 		}
 		{
@@ -1537,7 +1537,7 @@
 				item: { count: 1, id: "ytech:antler" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: -9.0d
 		}
 		{
@@ -1549,7 +1549,7 @@
 				item: { count: 1, id: "ytech:raw_hide" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.5d
 			y: -8.0d
 		}
 		{
@@ -1560,7 +1560,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -6.0d
 		}
 		{
@@ -1572,7 +1572,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:wooden_slabs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: -6.0d
 		}
 		{
@@ -1597,7 +1597,7 @@
 					type: "observation"
 				}
 			]
-			x: 3.0d
+			x: 4.0d
 			y: -6.0d
 		}
 		{
@@ -1897,7 +1897,7 @@
 				item: { count: 1, id: "travelertoolbelt:belt" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.5d
 			y: -10.0d
 		}
 		{
@@ -2108,8 +2108,8 @@
 				item: { count: 1, id: "birdnest:birds_nest" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -8.0d
+			x: -2.0d
+			y: -6.4d
 		}
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
@@ -2609,14 +2609,14 @@
 				type: "item"
 			}]
 			shape: "heart"
-			size: 0.7d
+			size: 1.0d
 			tasks: [{
 				id: "3692A13E4C6958CC"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(connectiblechains:catenary_items)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -3.5d
+			x: 4.5d
+			y: -5.0d
 		}
 	]
 }
