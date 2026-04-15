@@ -22,6 +22,13 @@ ServerEvents.recipes(event => {
         inputItems: [[{ item: "ytech:raw_hide" }, 1]],
         outputItems: [[{ item: "minecraft:leather" }, 1]]
     })
+
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
+        inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
+        inputItems: [[{ item: "modern_industrialization:iron_large_plate" }, 1]],
+        outputItems: [[{ item: "minecraft:iron_bars" }, 6]]
+    })
    
 })
 

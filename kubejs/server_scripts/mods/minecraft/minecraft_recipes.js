@@ -267,3 +267,15 @@ ServerEvents.recipes(event => {
     })
 
 })
+
+KubeJSTweaks.beforeRecipes(event => {    
+
+    const disableByRecipeID = [
+        "minecraft:iron_bars"
+    ]
+
+    disableByRecipeID.forEach(id => {
+        event.disable(id)
+    })
+
+})
