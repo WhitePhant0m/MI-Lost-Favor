@@ -1,3 +1,4 @@
+
 ServerEvents.tags('item', event => {
     event.removeAllTagsFrom([
         'modern_industrialization:netherite_hammer', 
@@ -8,12 +9,9 @@ ServerEvents.tags('item', event => {
     ])
 
     const modIngredient = Ingredient.of(`@modern_industrialization`)
-    const patternJavaClass = Java.loadClass("java.util.regex.Pattern")
-    const matcherJavaClass = Java.loadClass("java.util.regex.Matcher")
-
     const unTaggedParts = ["bolt", "wire", "curved_plate", "large_plate", "ring", "double_ingot"].join("|")
 
-    const pattern = patternJavaClass.compile(`^modern_industrialization:(?<material>.*)(?<![_:](me|fine))_(?<partName>${unTaggedParts})$`)
+    const pattern = $patternJavaClass.compile(`^modern_industrialization:(?<material>.*)(?<![_:](me|fine))_(?<partName>${unTaggedParts})$`)
     modIngredient.stacks.toList().forEach((itemStack) => {
         let matcher = pattern.matcher(itemStack.id)
         if (matcher.matches()){

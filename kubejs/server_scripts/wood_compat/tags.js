@@ -1,13 +1,13 @@
 //priority: 100
+let $patternJavaClass = Java.loadClass("java.util.regex.Pattern")
+let $matcherJavaClass = Java.loadClass("java.util.regex.Matcher")
 
 ServerEvents.tags('item', event => {
     const allItems = Ingredient.of(`*`)
-    const patternJavaClass = Java.loadClass("java.util.regex.Pattern")
-    const matcherJavaClass = Java.loadClass("java.util.regex.Matcher")
 
     const keyWords = ["log", "plank", "fence_gate"].join("|")
 
-    const pattern = patternJavaClass.compile(`^(?<modID>[^:]+):.*_(?<tagName>(${keyWords})s?)$`)
+    const pattern = $patternJavaClass.compile(`^(?<modID>[^:]+):.*_(?<tagName>(${keyWords})s?)$`)
     allItems.stacks.toList().forEach((itemStack) => {
         let matcher = pattern.matcher(itemStack.id)
         if (matcher.matches()){
