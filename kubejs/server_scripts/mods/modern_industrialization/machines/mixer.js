@@ -72,7 +72,31 @@ ServerEvents.recipes(event => {
         outputItems:[
             [{item:"modern_industrialization:constantan_tiny_dust"}, 2]
         ]
-    })    
+    })
+
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "modern_industrialization:nickel_tiny_dust" }],
+            [{ item: "modern_industrialization:copper_tiny_dust" }, 2],
+        ],
+        outputItems: [
+            [{ item: "modern_industrialization:cupronickel_tiny_dust" }, 3]
+        ],
+        removeRecipeType: "modern_industrialization:mixer"
+    })
+
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ item: "modern_industrialization:nickel_dust" }],
+            [{ item: "modern_industrialization:copper_dust" }, 2],
+        ],
+        outputItems: [
+            [{ item: "modern_industrialization:cupronickel_dust" }, 3]
+        ],
+        removeRecipeType: "modern_industrialization:mixer"
+    })   
 
     miMachineCraft(event, {energy:2, time:100, machine:"modern_industrialization:mixer",
         inputItems:[
