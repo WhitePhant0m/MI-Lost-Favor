@@ -13,6 +13,54 @@ const BOX_BLOCKS = Object.keys(global.AnotherDefinitelyUniqueNameForBoxes)
 const PLACER_BLOCKS_TO_ITEM_NAME_MAP = global.AnotherDefinitelyUniqueNameForPlacerBlocksThisTime
 const BOX_BLOCKS_TO_ITEM_NAME_MAP = global.AnotherDefinitelyUniqueNameForBoxes
 
+const BOX_TO_PLAYERS_MAP = {
+    map: {},
+
+    addPlayer(box, player){
+        if (!this.map[box]){
+            this.map[box] = []
+        }
+        this.map[box].push(player)
+    },
+
+    removePlayer(box, player){
+        const array = this.map[box]
+
+        if(!array) return false
+
+        const index = array.indexOf(player)
+
+        if(index == -1) return false
+
+        array.splice(index, 1)
+
+        if(array.length == 0){
+            delete this.map[box]
+        }
+
+        return true
+    },
+
+    getPlayers(box){
+        const array = this.map[box]
+        return array ? array.slice() : []
+    },
+
+    hasBox(box){
+        return this.map.hasOwnProperty(box)
+    },
+
+    deleteBox(box){
+        if(this.map[box]){
+            delete this.map[box]
+            return true
+        }
+        return false
+    }
+}
+
+
+
 const ANGLE_TO_FACING = {
     270:"east",0:"north",90:"west",180:"south",
     "east":270,"north":0,"west":90,"south":180
@@ -215,7 +263,7 @@ function handlePreviewFailure(event, template, playerStructureData, blockStructu
     sendImmersiveMessage(Component.translatable("milf.placers.notification1"), 
         event.getPlayer(), DEFAULT_WARN_NOTIFICATION_STYLE, event.server)
     removePreview(event, playerStructureData)
-    removePreview(event, blockStructureData, true)
+    //removePreview(event, blockStructureData, true)
     // event.player.sendData("placers", {
     //     xMin:playerStructureData.bounds.xMin,
     //     yMin:playerStructureData.bounds.yMin,
@@ -232,9 +280,17 @@ function handlePreviewFailure(event, template, playerStructureData, blockStructu
 
 function updatePreview(event, template, playerStructureData, blockStructureData){
     const { blockPosRelativeStart, bounds } = playerStructureData
-    if (event.block.getProperties().enabled == "true") removePreview(event, blockStructureData)
+
+    let boxPos = new BlockPos(playerStructureData.boxPos.x, playerStructureData.boxPos.y, playerStructureData.boxPos.z)
+    let boxPosHash = boxPos.hashCode()
+    milfPlaySound(event, "minecraft:block.bamboo.hit", { pos: boxPos })
+
+
+    let players = BOX_TO_PLAYERS_MAP.getPlayers(boxPosHash)
+    //if (event.block.getProperties().enabled == "true") removePreview(event, blockStructureData)
     event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:true}))
-    milfPlaySound(event, "minecraft:block.bamboo.hit", { pos: new BlockPos(playerStructureData.boxPos.x, playerStructureData.boxPos.y, playerStructureData.boxPos.z) })
+
+
 
     let blocksToRenderData = []
     let hashedBlocks = {}
@@ -272,15 +328,51 @@ function updatePreview(event, template, playerStructureData, blockStructureData)
             blocksToRenderData.push({ blockPos: { x: blockPosToAdd.getX(), y: blockPosToAdd.getY(), z: blockPosToAdd.getZ() }, id: blockID, properties: relativeBlockProperties})
         }
     }
-    let boxPos = playerStructureData.boxPos
-    
-    event.player.sendData("placers_render", {
-        blocks: blocksToRenderData,
-        boxPos: {x: boxPos.x, y: boxPos.y, z:boxPos.z}
+
+    let isNewPlayer = true
+    players.forEach(player =>{
+        if (player == event.player) {
+            isNewPlayer = false
+            return
+        }
     })
 
 
+    
+    if (isNewPlayer) BOX_TO_PLAYERS_MAP.addPlayer(boxPosHash, event.player)
+    
+    BOX_TO_PLAYERS_MAP.getPlayers(boxPosHash).forEach(player =>{
+        player.sendData("placers_render", {
+            blocks: blocksToRenderData,
+            boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z }
+        })
+    })
+    // console.log("UPDATE");
+    // console.log(BOX_TO_PLAYERS_MAP);
+    
+
     particleFrameFromBounds(PARTICLES.placed, bounds, event)
+}
+
+function removePreview(event, structureData, withoutParticles) {
+    const { bounds } = structureData
+
+    let boxPos = new BlockPos(structureData.boxPos.x, structureData.boxPos.y, structureData.boxPos.z)
+
+    let boxPosHash = boxPos.hashCode()
+    let players = BOX_TO_PLAYERS_MAP.getPlayers(boxPosHash)
+    BOX_TO_PLAYERS_MAP.deleteBox(boxPosHash)
+
+    event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), { enabled: false }))
+
+    players.forEach(player => {
+        player.sendData("placers_remove_render", { boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z } })
+    })
+
+    if (!withoutParticles) particleFrameFromBounds(PARTICLES.dispersed, bounds, event)
+
+    // console.log("REMOVE");
+    // console.log(BOX_TO_PLAYERS_MAP);
 }
 
 function getTemplateBlockData(template, structureData, blockNumber){
@@ -336,13 +428,6 @@ function getRelativeBlockProperties( /**@type {$CompoundTag_} */blockProperties,
     }    
     
     return relativeProperties
-}
-
-function removePreview(event, structureData, withoutParticles) {
-    const { bounds, boxPos } = structureData
-    event.block.set(event.block.id, Object.assign({}, event.block.getProperties(), {enabled:false}))
-    event.player.sendData("placers_remove_render", { boxPos: { x: boxPos.x, y: boxPos.y, z: boxPos.z } })
-    if (!withoutParticles) particleFrameFromBounds(PARTICLES.dispersed, bounds, event)
 }
 
 function validateArea(/**@type {import("dev.latvian.mods.kubejs.block.BlockRightClickedKubeEvent").$BlockRightClickedKubeEvent$$Original} */ event, bounds) {

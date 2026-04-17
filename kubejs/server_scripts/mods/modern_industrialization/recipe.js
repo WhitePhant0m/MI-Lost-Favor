@@ -61,7 +61,7 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
     })
     fluidsin.forEach((input) => { recipe.fluid_inputs.push(Object.assign({}, input[0], { amount: input[1] || 1000 }, { probability: input[2] })) })
     fluidsout.forEach((out) => { recipe.fluid_outputs.push(Object.assign({}, out[0], { amount: out[1] || 1000 }, { probability: out[2] })) })
-    let id = []
+    let id = args.recipeId
     if (args.removeRecipe) {
         outputs.forEach((out) => {
             event.remove({ output: out[0].item })
@@ -93,7 +93,26 @@ const miMachineCraft = (/**@type {$RecipesKubeEvent_} */event, args) => {
         })
     }
     // console.log(id);
-    id.length == 1 ? event.custom(recipe).id(id[0]) : event.custom(recipe)
+
+    if(args.ieCompat){
+        switch (args.machine) {
+            case "modern_industrialization:macerator":
+                ieCrusherCraft(event, {
+                    inputItems: args.inputItems,
+                    outputItems: args.outputItems,
+                    compatOff: true
+                })
+                break;
+        
+            default:
+                break;
+        }
+    }
+    if (id) {
+        event.custom(recipe).id(id)
+    } else {
+        event.custom(recipe)
+    }
     if (Object.keys(miMachinesCompat).some(key => key.includes(args.machine))) {
         args.machine = miMachinesCompat[args.machine]
         miMachineCraft(event, args)
@@ -486,7 +505,9 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:materials/mixer/fire_clay_dust",
         "modern_industrialization:electric_age/machine/assembler/replicator",
 
-        "extended_industrialization:vanilla_recipes/macerator/netherite_ingot_to_dust"
+        "extended_industrialization:vanilla_recipes/macerator/netherite_ingot_to_dust",
+
+        "modern_industrialization:materials/macerator/redstone_ore_to_crushed"
     ]
 
     disableByRecipeID.forEach(id => {

@@ -475,6 +475,23 @@ ServerEvents.recipes(event => {
         time: T2_TIME,
         machine: "modern_industrialization:assembler",
         inputItems: [
+            [{ item: "moderndynamics:item_pipe" }, 1],
+            [{ item: "modern_industrialization:advanced_item_output_hatch" }, 1],
+            [{ item: "modern_industrialization:advanced_item_input_hatch" }, 1],
+            [{ item: "ae2:fluix_crystal" }, 3]
+        ],
+        outputItems: [
+            [{ item: "ae2:storage_bus" }, 1]
+        ],
+        token: T1_TOKEN,
+        removeRecipe: true
+    });
+
+    miMachineCraft(event, {
+        energy: T2_ENERGY,
+        time: T2_TIME,
+        machine: "modern_industrialization:assembler",
+        inputItems: [
             [{item: "modern_industrialization:aluminum_large_plate"}, 4],
             [{item: "modern_industrialization:certus_quartz_rod"}, 16],
             [{item: "milf:cell_half"}, 4],

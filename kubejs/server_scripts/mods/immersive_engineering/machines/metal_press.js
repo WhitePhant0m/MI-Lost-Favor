@@ -148,7 +148,6 @@ ServerEvents.recipes(event => {
         outputItems:[[{id :"minecraft:chest"}, 1]],
         mold: {item : "modern_industrialization:steel_ring"},
         energy: 3200,
-        compatOff:true
     })
 
     iePressCraft(event, {
@@ -156,7 +155,13 @@ ServerEvents.recipes(event => {
         outputItems:[[{id :"minecraft:barrel"}, 1]],
         mold: {item : "modern_industrialization:steel_rod"},
         energy: 3200,
-        compatOff:true
+    })
+
+    iePressCraft(event, {
+        inputItems: [[{ "tag": "minecraft:planks" }, 9]],
+        outputItems: [[{ id: "minecraft:crafting_table" }, 1]],
+        mold: { item: "minecraft:leather" },
+        energy: 3200,
     })
 
 })

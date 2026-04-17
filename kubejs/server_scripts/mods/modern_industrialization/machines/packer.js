@@ -127,5 +127,11 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:packer",
+        inputItems: [[{ item: "immersiveengineering:ersatz_leather" }, 2]],
+        outputItems: [[{ item: "minecraft:leather" }]]
+    })
+
 
 })

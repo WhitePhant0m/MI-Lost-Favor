@@ -24,9 +24,11 @@ const ieBlueprintCraft = (event, args) => {
     }
     args.inputItems.forEach((input) => {recipe.inputs.push(Object.assign({},{"basePredicate": input[0]}, {count:input[1] || 1}))})
     if(!args.compatOff){
+        let token = args.blueprintCompatItem
         miMachineCraft(event, {energy:2, time:200, machine:"modern_industrialization:assembler",
             inputItems:args.inputItems,
-            outputItems:[[{item:recipe.result.id}, recipe.result.count]]
+            outputItems:[[{item:recipe.result.id}, recipe.result.count]],
+            token:token
         })
     }
     if(args.removeRecipe){event.remove({output: args.outputItems[0][0].item})}

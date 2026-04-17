@@ -303,7 +303,7 @@
 	]
 	quest.0C7FBEEB6BB3499E.quest_desc: ["Adds items into system"]
 	quest.0CD9D93D8A93DE87.quest_desc: [
-		"In addition, various leads and chains can be used on fences/walls as decorations, and you can quickly move along these \"decorations\" using any pickaxe!"
+		"Various leads and chains can be used on fences/walls by right clicking them and connecting two of them together so that you can quickly move along these connections using any pickaxe!"
 		"{@pagebreak}"
 		"Кроме того, разнообразные поводки и цепи можно использовать на заборах/каменных заборах в качестве декорации, а так же на этих \"декорациях\" Можно  быстро передвигаться используя любую кирку!"
 	]
@@ -1114,6 +1114,7 @@
 		""
 		"Эндер-Воронка работает только тогда, когда вы находитесь &#FEECD6онлайн&r."
 	]
+	quest.324569702E4DFDBD.quest_desc: ["And, of course, don't forget to walk with your cute little pet rock daily! It's quite playful when you let it roam freely, so don't let it loose without the leash. As the good rock that it is, it'll help you locate the precious little minerals around (that it's in no way jealous of and in no way wants them all gone ('◡')) by telling you the exact amount of the ores and their types in the opposite direction of the side of the block you'll rub it on in a <wiggle a=0.5 f=0.5>3x3x60</wiggle> space!"]
 	quest.3256F857783BB7AA.quest_desc: ["Takes items from system"]
 	quest.3311BAD6D1B590DE.quest_desc: [
 		"Better than nothing, and fancy furthermore, eh?"
@@ -1857,6 +1858,7 @@
 	quest.591843445BE8DF11.quest_subtitle: "Weird, haven't noticed it before..."
 	quest.5984DB66549B9040.quest_desc: ["Poison."]
 	quest.59871CEFCCF15140.quest_desc: ["minecraft:birch_forest"]
+	quest.5A23E325ABD115A1.quest_desc: ["The perfect companion for your digging sessions! Provides emotional support in the time of need and is passable as a chair when you need some structural support too! Don't forget to feed it with... something… It's not picky at all, and hydrate it at least once a day for it to grow into a strong and healthy boulder one day!"]
 	quest.5A4BB58AB11D4B81.quest_desc: [
 		"The witch's oven is a modified furnace used to collect byproducts and fumes made from burning materials."
 		""

@@ -41,7 +41,7 @@ function yTechWorkspaceRecipe(event, args){
         }
         if(args.miCompatMachine != "modern_industrialization:packer"){
             miMachineCraft(event, {
-                energy: 1, time: 200, machine: args.miCompatMachine || "modern_industrialization:assembler",
+                energy: 1, time: 200, machine: args.miCompatMachine || "modern_industrialization:not_so_multi_but_still_block_packer_2099_3x3x3_edition",
                 inputItems: itemInputs,
                 outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
             })
@@ -1310,7 +1310,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "transmog:transmogrification_table" }, 1]],
         tool: { item: "milf:amber_visage" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1397,7 +1396,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "minecraft:furnace" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1415,7 +1413,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:primitive_smelter" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1428,7 +1425,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:brick_chimney" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1446,7 +1442,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:primitive_alloy_smelter" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1462,7 +1457,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:reinforced_brick_chimney" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1480,7 +1474,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:aqueduct_valve" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1498,7 +1491,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:aqueduct_hydrator" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1516,7 +1508,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:aqueduct_fertilizer" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1534,7 +1525,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:potters_wheel" }, 1]],
         tool: { tag: "c:hammers" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1547,7 +1537,6 @@ ServerEvents.recipes(event => {
         outputItems: [[{ id: "ytech:wooden_box" }, 1]],
         tool: { item: "ytech:sharp_flint" },
         removeRecipe: true,
-        compatOff: true
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1594,7 +1583,6 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "ytech:oak_drying_rack" }, 1]],
         tool: { tag: "minecraft:axes" },
-        compatOff: true,
     })
 
     yTechWorkspaceRecipe(event, {
@@ -1609,7 +1597,6 @@ ServerEvents.recipes(event => {
         },
         outputItems: [[{ id: "ytech:oak_tanning_rack" }, 1]],
         tool: { tag: "minecraft:axes" },
-        compatOff: true,
     })
 
 })

@@ -30,6 +30,12 @@ ServerEvents.recipes(event => {
 
     let plankToSlab = {}
 
+    let hexereiWood = {
+        "hexerei:mahogany_logs": "hexerei:mahogany_planks",
+        "hexerei:willow_logs": "hexerei:willow_planks",
+        "hexerei:witch_hazel_logs": "hexerei:witch_hazel_planks"
+    }
+
 
     // const patternJavaClass = Java.loadClass("java.util.regex.Pattern")
     // const matcherJavaClass = Java.loadClass("java.util.regex.Matcher")
@@ -71,6 +77,40 @@ ServerEvents.recipes(event => {
             removeRecipeType:"modern_industrialization:cutting_machine",
         })
         
+    })
+
+    Object.entries(hexereiWood).forEach(([logTag, planks]) =>{
+        yTechShapeless(event, {
+            outputItems: [[{ id: planks }, 1]],
+            inputItems: [[{tag: logTag}], [{ tag: "minecraft:axes" }]],
+            category: "building",
+            removeRecipeType: "crafting_shapeless",
+            compatOff: true
+        })
+
+        yTechShapeless(event, {
+            outputItems: [[{ id: planks }, 3]],
+            inputItems: [[{ tag: logTag }], [{ tag: "c:saws" }]],
+            category: "building",
+            removeRecipeType: "crafting_shapeless",
+            compatOff: true
+        })
+
+        ytechChoppingCraft(event, {
+            inputItems: [[{ tag: logTag }]],
+            outputItems: [[{ id: planks }, 2]],
+            tool: { tag: "minecraft:axes" },
+            removeRecipeType: "ytech:chopping",
+            compatOff: true
+        })
+
+        miMachineCraft(event, {
+            energy: 2, time: 100, machine: "modern_industrialization:cutting_machine",
+            inputFluids: [[{ fluid: "modern_industrialization:lubricant" }, 1]],
+            inputItems: [[{ tag: logTag }]],
+            outputItems: [[{ item: planks }, 6]],
+            removeRecipeType: "modern_industrialization:cutting_machine",
+        })
     })
 
     event.forEachRecipe({type: 'minecraft:crafting_shaped', input: '#minecraft:planks', output: '#minecraft:slabs'}, recipe =>{

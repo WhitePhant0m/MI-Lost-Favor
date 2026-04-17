@@ -1,4 +1,5 @@
 ClientEvents.highlight(event =>{
+    if (!event.client.hitResult) return
     if (event.client.hitResult.type != $HitResult$Type.BLOCK) return
     let levelBlock = Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos)
     let block = levelBlock.blockState.block

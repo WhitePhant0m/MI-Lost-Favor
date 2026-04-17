@@ -38,6 +38,20 @@ ServerEvents.recipes(event => {
         custom_condition:"milf:microbial_fabricator_thermophilic_dermis"
     })
 
+    miMachineCraft(event, {
+        energy: 16, time: 10000, machine: "modern_industrialization:microbial_fabricator",
+        inputItems: [
+            [{ item: "spectrum:moonstruck_nectar" }, 1],
+            [{ item: "justdirethings:gooblock_tier3" }, 1],
+            [{ item: "spectrum:resonance_shard" }, 4],
+        ],
+        outputItems: [
+            [{ item: "justdirethings:gooblock_tier4" }, 1]
+        ],
+        removeRecipe: true,
+        custom_condition: "milf:microbial_fabricator_symbiote_membrane"
+    })
+
 
     miMachineCraft(event, {energy:16, time:4000, machine:"modern_industrialization:microbial_fabricator",
         inputItems:[
