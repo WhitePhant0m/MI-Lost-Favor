@@ -38,7 +38,12 @@
 		}
 	]
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [{
+		id: "452F13AE78D93298"
+		linked_quest: "3A3202170DDE2113"
+		x: 3.5d
+		y: -0.5d
+	}]
 	quests: [
 		{
 			dependencies: ["2F034200CEED692C"]
@@ -1614,18 +1619,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7E470E4F941A62BB"]
-			id: "3D08CD4C845EB608"
-			tasks: [{
-				id: "2E325894011D68F2"
-				item: { count: 1, id: "hexerei:pestle_and_mortar" }
-				type: "item"
-			}]
-			x: 2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["3D08CD4C845EB608"]
+			dependencies: ["3A3202170DDE2113"]
 			id: "78E2D79E9DD19B4E"
 			tasks: [{
 				id: "5521FFF3E0B02EDB"
@@ -1666,7 +1660,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["2BE901E1F516A6AE"]
+			dependencies: ["78E2D79E9DD19B4E"]
 			id: "2D60FDAC08E2108E"
 			tasks: [{
 				id: "1B23C57985B77F46"
@@ -2144,7 +2138,6 @@
 			dependencies: [
 				"242C2C5E9BD41EE5"
 				"26E6571980D85436"
-				"3D08CD4C845EB608"
 				"3C61CCD21782D84C"
 			]
 			hide_dependency_lines: true
