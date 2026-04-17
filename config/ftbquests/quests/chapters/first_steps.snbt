@@ -7,14 +7,6 @@
 		id: "minecraft:flint"
 	}
 	id: "1DE9AF77B4D50480"
-	images: [{
-		height: 1.0d
-		image: "morered:item/placeholder"
-		rotation: 0.0d
-		width: 1.0d
-		x: 17.0d
-		y: 4.5d
-	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -2347,7 +2339,7 @@
 				type: "item"
 			}]
 			x: 18.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6E680C846961BFE3"]
@@ -2528,7 +2520,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -2543,7 +2535,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["48B99FA38BEB132E"]
@@ -2617,6 +2609,81 @@
 			}]
 			x: 4.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			id: "25790982D97FF33B"
+			tasks: [{
+				id: "6B653CF5C310BDDE"
+				item: { count: 1, id: "animal_pen:animal_cage" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			id: "38077A8FBBA9C3A1"
+			tasks: [{
+				id: "7BB15DB577F61B9C"
+				item: { count: 1, id: "animal_pen:water_animal_container" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			id: "351FE7156FB415A0"
+			tasks: [{
+				id: "76B08436EC5A96C6"
+				item: { count: 1, id: "animal_pen:bird_catcher" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"38077A8FBBA9C3A1"
+				"51E3EA7E70ECE842"
+			]
+			id: "080CC80D28F2DBED"
+			tasks: [{
+				id: "7F6DA9647B7C209F"
+				item: { count: 1, id: "animal_pen:aquarium_block" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"25790982D97FF33B"
+				"51E3EA7E70ECE842"
+			]
+			id: "617E14880D9D75A0"
+			tasks: [{
+				id: "17F51111E6673E64"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(animal_pen:animal_pens)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"351FE7156FB415A0"
+				"51E3EA7E70ECE842"
+			]
+			id: "2CFF4A7767CD830E"
+			tasks: [{
+				id: "0499279911FFA20D"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(animal_pen:aviaries)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 5.0d
 		}
 	]
 }
