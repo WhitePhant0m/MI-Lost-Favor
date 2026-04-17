@@ -1,17 +1,17 @@
-filename = 'zipline-neoforge-1.21.1-1.0.3.jar'
+filename = 'zipline-neoforge-1.21.1-1.1.0.jar'
 name = 'Zipline'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Zipline NeoForge 1.21.1 - 1.0.3'
+x-prismlauncher-version-number = 'Zipline NeoForge 1.21.1 - 1.1.0'
 
 [download]
-hash = '6571acc7fc3abf4a16f85a8b37d1ff16751d97e7'
+hash = '90e8c295e4343579518f3a6c1199f86fa83d70f3'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7689701
+file-id = 7923337
 project-id = 1454717

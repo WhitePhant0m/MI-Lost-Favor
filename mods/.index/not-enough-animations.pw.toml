@@ -1,0 +1,17 @@
+filename = 'notenoughanimations-neoforge-1.12.1-mc1.21.1.jar'
+name = 'Not Enough Animations'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.12.1-1.21.1 - NeoForge'
+
+[download]
+hash = 'a580982b94a6f1305aa3771de19a66d490599018'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7900392
+project-id = 433760

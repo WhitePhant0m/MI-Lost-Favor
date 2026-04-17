@@ -255,10 +255,14 @@
 		"Allows water to be pumped from rivers into the aqueduct network!"
 		""
 		"In the future, you will have the opportunity to generate water infinitely!"
+		""
+		"&lDoes not consume water in biomes such as rivers and oceans&r"
 		"{@pagebreak}"
 		"Позволяет выкачивать воду из рек в систему акведуков!"
 		""
 		"В будущем у вас появится возможность генерировать воду бесконечно!"
+		""
+		"&lНе потребляет воду в таких биомах как: реки, океаны&r"
 	]
 	quest.0B05E1DBD3F26E44.quest_subtitle: "Efficient!"
 	quest.0B37EB64F02A743F.quest_desc: [

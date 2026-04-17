@@ -1,17 +1,17 @@
-filename = 'craftingstationjei-1.21.1-NeoForge-2.0.0.jar'
+filename = 'craftingstationjei-1.21.1-NeoForge-2.1.1.jar'
 name = 'Crafting Station'
 side = ''
 x-prismlauncher-loaders = [ 'neoforge' ]
 x-prismlauncher-mc-versions = [ '1.21.1' ]
 x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'craftingstationjei-1.21.1-NeoForge-2.0.0.jar'
+x-prismlauncher-version-number = 'craftingstationjei-1.21.1-NeoForge-2.1.1.jar'
 
 [download]
-hash = 'b671510fe7a27713bca62b539e3e2381a73679fa'
+hash = '5262f76ddb2ebb23241c60dc627efbf0cae9461c'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 url = ''
 
 [update.curseforge]
-file-id = 7875193
+file-id = 7932261
 project-id = 1127715
