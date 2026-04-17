@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     anvil_recipe(
         [
             [{ "item": "minecraft:amethyst_shard" }, 4],
-            [{ "item": "minecraft:echo_shard" }, 4],
+            [{ "item": "minecraft:echo_shard" }, 1],
             [{ "item": "enchanted:attuned_stone" }, 1],
         ],
         [{ "id": 'waystones:warp_stone' }, 1]
