@@ -3,7 +3,6 @@ LootJS.modifiers(event => {
         { item_name: "ars_nouveau:wilden_horn", except_loot_type: [LootType.ENTITY] },
         { item_name: "ars_nouveau:wilden_spike", except_loot_type: [LootType.ENTITY]},
         { item_name: "ars_nouveau:wilden_wing", except_loot_type: [LootType.ENTITY]},
-        { item_name: /artifacts:.*/ },
         { item_name: /ars_additions:.*/ },
         { item_name: "forbidden_arcanus:aureal_bottle" },
         { item_name: "ars_nouveau:source_gem" },
