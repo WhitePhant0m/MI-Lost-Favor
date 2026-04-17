@@ -1,6 +1,6 @@
 ClientEvents.highlight(event =>{
+    if (!event.client.hitResult) return
     if (event.client.hitResult.type != $HitResult$Type.BLOCK) return
-    if (!Client.level) return
     let levelBlock = Client.level.getBlock(/**@type {$BlockHitResult_} */(Client.hitResult).blockPos)
     let block = levelBlock.blockState.block
     if (!event.player.mainHandItem.isEmpty() && !event.player.mainHandItem.hasTag("milf:hammers")) return
