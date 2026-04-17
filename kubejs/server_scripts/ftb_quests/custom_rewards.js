@@ -79,7 +79,7 @@ FTBQuestsEvents.customReward('74E5C7C4B8A33E55', event => {
 
 // reward for Steel Ingot
 FTBQuestsEvents.customReward('670CBE4973B6F390', event => {
-    const stages = ["early_items", "blast_furnace", "mythsandlegends_mobs"]
+    const stages = ["early_items", "blast_furnace", "mythsandlegends_mobs", "royalvariations_mobs"]
     addStagesToTeamMembers(event, stages)
     defaultMilestoneNotification(event, stages[0])
 });
