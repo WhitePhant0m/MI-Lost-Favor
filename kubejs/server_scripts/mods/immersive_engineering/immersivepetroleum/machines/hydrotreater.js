@@ -9,7 +9,7 @@ function ieHydrotreaterRecipe(event, args){
     }
     if(args.outputItems) recipe.secondary_result = {output:Object.assign({}, args.outputItems[0][0], {count:args.outputItems[0][1] || 1})}
     if(!args.compatOff){
-        miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:distillation_tower",
+        miMachineCraft(event, {energy:8, time:100, machine:"modern_industrialization:chemical_reactor",
             outputItems:args.outputItems,
             inputFluids:args.inputFluids,
             outputFluids:args.outputFluids
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     ieHydrotreaterRecipe(event, {
         outputFluids:[[ {fluid :"milf:liquid_plastic"} , 100 ]],
         inputFluids:[[ {fluid :"modern_industrialization:styrene"} , 90 ], [ {fluid :"modern_industrialization:butadiene"} , 10 ]],
-        compatOff:true,
+        //compatOff:true,
         time:30
     })
 
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
         outputItems:[[ { id: "modern_industrialization:sulfur_dust"}, 1]],
         outputFluids:[[ {fluid :"immersivepetroleum:diesel"} , 100 ]],
         inputFluids:[[ {fluid :"immersivepetroleum:diesel_sulfur"} , 100 ], [ {fluid :"modern_industrialization:hydrogen"} , 20 ]],
-        compatOff:true,
+        //compatOff:true,
         time:30
     })
 
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
         outputItems:[[ { id: "modern_industrialization:sulfur_dust"}, 1]],
         outputFluids:[[ {fluid :"immersivepetroleum:kerosene"} , 100 ]],
         inputFluids:[[ {fluid :"milf:high_sulfur_kerosene"} , 100 ], [ {fluid :"modern_industrialization:hydrogen"} , 20 ]],
-        compatOff:true,
+        //compatOff:true,
         time:30
     })
 
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         outputItems:[[ { id: "immersivepetroleum:paraffin_wax"}, 1]],
         outputFluids:[[ {fluid :"immersivepetroleum:lubricant"} , 100 ]],
         inputFluids:[[ {fluid :"modern_industrialization:lubricant"} , 100 ], [ {fluid :"modern_industrialization:hydrogen"} , 20 ]],
-        compatOff:true,
+        //compatOff:true,
         time:30
     })
 })

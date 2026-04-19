@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     aeInWorldRecipe(event,{
         inputItems:[
             [{ "item": "milf:quantum_blueprint" }, 1],
-            [{ "item": "forbidden_arcanus:divine_pact" }, 1],
+            [{ "item": "extendedae:entro_shard" }, 1],
             [{ "item": "spectrum:moonstone_core" }, 1],
         ],
         outputItems:[[{id:"milf:divine_blueprint"}]],

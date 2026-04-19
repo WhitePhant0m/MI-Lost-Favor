@@ -1,4 +1,41 @@
-// Remove IE recipes
+function ieShapedFluid(event, args) {
+    let recipe = {
+        type: "immersiveengineering:shaped_fluid",
+        category: "misc",
+        key: args.key,
+        pattern: args.pattern,
+        result: Object.assign({}, args.outputItems[0][0], { count: args.outputItems[0][1] || 1 }),
+    }
+    if (!args.compatOff) {
+        let itemInputs = []
+        let fluidInputs = []
+        let amounts = args.pattern.join("")
+
+        Object.entries(args.key).forEach(m => {
+            let regex = new RegExp(m[0], 'g')
+            if (m[1].type) {
+                let tempObj = Object.assign({}, m[1]) 
+                delete tempObj.type
+                delete tempObj.amount
+                fluidInputs.push([tempObj, m[1].amount])
+            } else {
+                itemInputs.push([m[1], (amounts.match(regex) || []).length])
+            }
+            //itemInputs.push((amounts.match(regex) || []).length + "x " + m[1])
+        })
+        miMachineCraft(event, {
+            energy: 2, time: 200, machine: "modern_industrialization:assembler",
+            inputItems: itemInputs,
+            inputFluids: fluidInputs,
+            outputItems: [[{ item: recipe.result.id }, recipe.result.count]]
+        })
+    }
+    if (args.removeRecipe) { event.remove({ output: args.outputItems[0][0].id }) }
+    if (args.removeRecipeType) { event.remove({ output: args.outputItems[0][0].id, type: args.removeRecipeType }) }
+    event.custom(recipe)
+}
+
+
 ServerEvents.recipes(event => {
     // (`･Θ･´) - Some recipes are located in data because it is easier to change a recipe there and delete the previous recipe at the same time (overwrite)
     event.remove({
@@ -153,7 +190,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
-    milfShaped(event, {
+    ieShapedFluid(event, {
         pattern: [
             "SCS",
             "PWP",
@@ -169,8 +206,7 @@ ServerEvents.recipes(event => {
                  tag: "minecraft:water"}
         },
         outputItems: [[{ id: "immersiveengineering:radiator" }, 1]],
-        removeRecipe:true,
-        compatOff:true
+        removeRecipe:true
     })
 
     milfShaped(event, {

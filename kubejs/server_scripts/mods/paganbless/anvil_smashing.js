@@ -223,6 +223,30 @@ ServerEvents.recipes(event => {
             })
         }
         
-    })   
+    })
+
+    //mi compat
+
+    event.forEachRecipe({ type: 'paganbless:anvil_smashing', not: { output: "#milf:nocompat" }}, r => {
+        const rjson = JSON.parse(r.json)
+
+        if (rjson.result.id == "minecraft:redstone") return
+
+        const inputItems = rjson.ingredients.map(ingredient => {
+            let itemOrTagKey = Object.keys(ingredient).find(key => key != "count")
+            let itemOrTag = {}
+            itemOrTag[itemOrTagKey] = ingredient[itemOrTagKey]
+            
+            return [itemOrTag, ingredient.count]
+        })        
+
+        miMachineCraft(event, {
+            energy: 2, time: 200, machine: "modern_industrialization:packer",
+            inputItems: inputItems,
+            outputItems: [[{ item: rjson.result.id }, rjson.result.count]]
+        })
+        
+        //press_mi((rjson.item_inputs)[0], (rjson.item_outputs)[0], 'immersiveengineering:mold_unpacking', (rjson.duration * rjson.eu))
+    })
 
 })

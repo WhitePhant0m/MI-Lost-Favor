@@ -38,8 +38,8 @@ KubeJSTweaks.beforeRecipes(event =>{
 ServerEvents.recipes(event => {
 
     event.forEachRecipe({type: 'immersiveengineering:mineral_mix'}, recipe =>{
-        console.log(recipe);
-        console.log(recipe.getId());
+        //console.log(recipe);
+        //console.log(recipe.getId());
         
         
     })
