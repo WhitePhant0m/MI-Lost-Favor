@@ -7,6 +7,7 @@ PlayerEvents.loggedIn(event => {
     player.inventory.clear()
     player.give(Item.of('ftbquests:book', 1))
     player.give(Item.of('minecraft:lantern', 1))
+    player.give(Item.of("sophisticatedbackpacks:backpack", 1))
     player.tell(Text.translate("milf.text.first_join"))
     sendImmersiveMessage(
         Text.translate('milf.text.first_join'),
