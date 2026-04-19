@@ -51,6 +51,9 @@ ClientEvents.lang('en_us', event => {
     event.add('milf.pet_rock.notification4.f', `...For them to scatter`)
     event.add('milf.pet_rock.notification5.f', `...Just for fun`)
 
+    event.add('milf.mi_upgrader.tooltip', `RMB on the placed block with it to ${textAnimatorString("upgrade", "grad", { from: "#55A2FA", to: "#8DDBFF", f: 0.5 })} it. Preserves ${textAnimatorString("all", "wave", { a: 0.25, w: 0.25, f: 0.5 })} the content. Not consumed on use, even when used as a crafting ingredient.`)
+
+
     event.add('milf.placers.notification1', `Not enough space to place ${textAnimatorString("this", "bounce")} one`)
     event.add('milf.placers.notification2', `You have to choose a ${textAnimatorString("valid direction", "glitch")} first`)
     event.add('milf.placers.notification3', `Structure has to be ${textAnimatorString("EXACTLY", "shake")} the same`)

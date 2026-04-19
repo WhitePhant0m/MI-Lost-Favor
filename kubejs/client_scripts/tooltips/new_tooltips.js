@@ -82,6 +82,8 @@ ItemEvents.modifyTooltips(event => {
 
     //#region
 
+    event.add("milf:mi_upgrader", Text.translatable(`milf.mi_upgrader.tooltip`))
+
     //#region WIP items tooltip
     const wip_tooltip = [
         /angelring:.*/,
