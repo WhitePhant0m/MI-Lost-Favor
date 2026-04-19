@@ -200,28 +200,7 @@ ServerEvents.recipes(event => {
         removeRecipe:true,
         compatOff:true
     })
-    milfShaped(event, {
-        pattern: [
-            'ASA',
-            'S S',
-            'ASA'
-        ],
-        key: {
-            A: { tag: "c:plates/aluminum" },
-            S: { tag: "c:plates/stainless_steel" }
-        },
-        outputItems: [[{ id: "milf:radio_tower_block" }, 8]],
-    })
 
-    milfShaped(event, {
-        pattern: [
-            'BBB'
-        ],
-        key: {
-            B: { item: "milf:radio_tower_block" },
-        },
-        outputItems: [[{ id: "milf:radio_tower_slab" }, 6]],
-    })
     milfShaped(event, {
         pattern: [
             ' PC',
