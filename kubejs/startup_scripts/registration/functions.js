@@ -12,6 +12,7 @@ global.langCustomStuff = global.langCustomStuff || {}
 const enabledProperty = $BooleanProperty.create("enabled")
 //const activeMachineShapeProperty  = $EnumProperty.create("shape", "String",["0", "1", "2", "3", "4"])
 const activeMachineShapeProperty  = $IntegerProperty.create("machine_shape", 0, 5)
+const previewOffsetProperty = $IntegerProperty.create("preview_offset", 0, 5)
 
 
 function createNewItem(id, args) {

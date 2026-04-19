@@ -595,7 +595,7 @@ multiblocksForPlacers.forEach(template => {
         box: [2, 0, 1, 14, 9, 15, true],
         soundType: 'bamboo',
         tagBlock: "milf:placers",
-        property: (template.activeMachineShape == undefined ? enabledProperty : [enabledProperty, activeMachineShapeProperty]),
+        property: (template.activeMachineShape == undefined ? [enabledProperty, previewOffsetProperty] : [enabledProperty, activeMachineShapeProperty, previewOffsetProperty]),
         defaultState: (template.activeMachineShape == undefined ? { cycle: enabledProperty } : { cycle: enabledProperty , setProperty:{property:activeMachineShapeProperty, value:template.activeMachineShape}}),
         parentModel: "milf:block/box_closed",
         lang: template.langPlacers
@@ -607,7 +607,7 @@ multiblocksForPlacers.forEach(template => {
         box: [2, 0, 1, 14, 9, 15, true],
         soundType: 'bamboo',
         tagBlock: "milf:empty_box",
-        property: (template.activeMachineShape == undefined ? enabledProperty : [enabledProperty, activeMachineShapeProperty]),
+        property: (template.activeMachineShape == undefined ? [enabledProperty, previewOffsetProperty] : [enabledProperty, activeMachineShapeProperty, previewOffsetProperty]),
         defaultState: (template.activeMachineShape == undefined ? { cycle: enabledProperty } : { cycle: enabledProperty , setProperty:{property:activeMachineShapeProperty, value:template.activeMachineShape}}),
         parentModel: "milf:block/box_open",
         noDrops: true,
