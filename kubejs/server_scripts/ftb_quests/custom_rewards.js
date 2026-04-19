@@ -202,38 +202,3 @@ function addStagesToTeamMembers(event, stages) {
         }
     })
 }
-
-PlayerEvents.loggedIn(event => {
-    let teamManager = $FTBTeamsAPI.getManager()
-    //let uuid = event.getPlayer().getUuid()
-    //let playerList = event.server.getPlayerList()
-    //let team = teamManager.getTeamForPlayerID(uuid).get()
-    let team = teamManager.getTeamForPlayer(event.getPlayer()).get()
-    //let teamMembersUUIDS = team.getMembers()
-    let teamMembers = team.getOnlineMembers()
-    let teamStagesSet = new Set()
-
-    teamMembers.forEach(member => {
-        //let player = playerList.getPlayer(memberUUID)
-        let playerStages = AStages.getStagesFromPlayer(member)
-        for (const stage of playerStages) {
-            teamStagesSet.add(stage)
-        }
-    })
-    let playerStagesSet = new Set()
-    let playerStagesList = AStages.getStagesFromPlayer(event.getPlayer())
-
-    for (const stage of playerStagesList) {
-        playerStagesSet.add(stage)
-    }
-
-    teamStagesSet.forEach(stage => {
-        if (!playerStagesSet.has(stage)) {
-            AStages.addStageToPlayer(stage, event.getPlayer())
-            //console.log("New stage: " + stage);
-        } else {
-            //console.log("Stage: " + stage);
-        }
-    })
-
-})
