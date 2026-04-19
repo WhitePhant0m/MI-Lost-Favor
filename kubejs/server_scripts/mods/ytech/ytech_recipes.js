@@ -22,6 +22,7 @@ const yTechShaped = (/**@type {$RecipesKubeEvent_}*/ event, args) => {
         Object.entries(args.key).forEach(m => {
             let regex = new RegExp(m[0], 'g')
             if (m[0] == "#" || m[0] == "@") {
+                if (m[1].tag == "c:hammers" || m[1].tag == "c:saws") return                
                 itemInputs.push([m[1], (amounts.match(regex) || []).length, 0])
                 return
             }
