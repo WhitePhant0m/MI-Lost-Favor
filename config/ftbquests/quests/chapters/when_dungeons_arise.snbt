@@ -2853,27 +2853,12 @@
 				id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
 			}
 			id: "35A57388AA3AB5F4"
-			tasks: [
-				{
-					entity: "born_in_chaos_v1:lord_pumpkinhead_head"
-					icon: {
-						id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
-					}
-					id: "699936573EEC8053"
-					type: "kill"
-					value: 1L
-				}
-				{
-					icon: {
-						id: "born_in_chaos_v1:soulbane"
-					}
-					id: "351EE92DDBD307A7"
-					observe_type: 5
-					timer: 0L
-					to_observe: "born_in_chaos_v1:lord_pumpkinhead"
-					type: "observation"
-				}
-			]
+			tasks: [{
+				advancement: "born_in_chaos_v1:pumpkin_sir"
+				criterion: ""
+				id: "1B9DD4D47E6B3A39"
+				type: "advancement"
+			}]
 			x: -13.0d
 			y: 9.0d
 		}

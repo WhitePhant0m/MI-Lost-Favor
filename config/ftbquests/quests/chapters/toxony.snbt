@@ -937,25 +937,26 @@
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]
-			id: "2B388DAC1919D26C"
-			rewards: [{
-				id: "34C9083EBC91DE2E"
-				item: {
-					components: {
-						"modopedia:book": "enchanted:art_of_witchcraft"
-					}
-					count: 1
-					id: "modopedia:book"
+			icon: {
+				components: {
+					"modopedia:book": "enchanted:art_of_witchcraft"
 				}
-				team_reward: false
-				type: "item"
-			}]
+				id: "modopedia:book"
+			}
+			id: "2B388DAC1919D26C"
 			shape: "gear"
-			tasks: [{
-				id: "3EE28E2DE9A3B43D"
-				item: { count: 1, id: "paganbless:runic_charge" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3EE28E2DE9A3B43D"
+					item: { count: 1, id: "paganbless:runic_charge" }
+					type: "item"
+				}
+				{
+					id: "60D762F9030944DE"
+					item: { components: { "modopedia:book": "enchanted:art_of_witchcraft" }, count: 1, id: "modopedia:book" }
+					type: "item"
+				}
+			]
 			x: 6.0d
 			y: 0.0d
 		}
@@ -2501,7 +2502,7 @@
 			id: "5ECC8454B6CFAD89"
 			tasks: [{
 				id: "4601E85AAFA1EAD4"
-				item: { count: 1, id: "minecraft:light_gray_candle" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:candles)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 7.0d
