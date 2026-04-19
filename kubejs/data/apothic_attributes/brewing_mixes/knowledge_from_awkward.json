@@ -1,0 +1,9 @@
+{
+  "neoforge:conditions": [{ "type": "neoforge:false" }],
+  "mix_type": "potion",
+  "from": "minecraft:awkward",
+  "ingredient": {
+    "item": "minecraft:experience_bottle"
+  },
+  "to": "apothic_attributes:knowledge"
+}
