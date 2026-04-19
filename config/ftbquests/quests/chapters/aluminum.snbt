@@ -221,7 +221,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1535DAA84E3E8980"]
@@ -241,6 +241,7 @@
 				"5D07A5B2F5ECF337"
 			]
 			id: "106DA438AC3117F4"
+			shape: "rsquare"
 			tasks: [{
 				id: "58512C3FD567D153"
 				item: { count: 1, id: "modern_industrialization:advanced_large_steam_boiler" }
@@ -251,7 +252,6 @@
 		}
 		{
 			dependencies: ["12D33FAA9C537EF8"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "49B427B046D31CC9"
 			shape: "diamond"
@@ -260,8 +260,8 @@
 				item: { count: 1, id: "modern_industrialization:large_pump" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1535DAA84E3E8980"]
@@ -451,7 +451,6 @@
 		}
 		{
 			dependencies: ["12D33FAA9C537EF8"]
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "3EE89E67CCA4B991"
 			shape: "diamond"
@@ -460,8 +459,8 @@
 				item: { count: 1, id: "modern_industrialization:large_motor" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1535DAA84E3E8980"]
@@ -512,7 +511,7 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
+			x: 3.0d
 			y: -3.5d
 		}
 		{
@@ -531,7 +530,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 1.0d
 			y: -3.5d
 		}
 		{
@@ -850,7 +849,7 @@
 		{
 			dependencies: ["6BC434A6B44D825B"]
 			id: "29F80ACEADB93E95"
-			shape: "none"
+			shape: "circle"
 			tasks: [{
 				id: "77B76934EE778094"
 				item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }
@@ -1475,7 +1474,7 @@
 				item: { count: 1, id: "tankstorage:tank_4" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 3.0d
 			y: -18.5d
 		}
 		{
@@ -1487,11 +1486,11 @@
 				item: { count: 1, id: "bankstorage:bank_4" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -19.5d
+			x: 1.0d
+			y: -18.5d
 		}
 		{
-			dependencies: ["7D5A74D4B9B10E94"]
+			dependencies: ["12D33FAA9C537EF8"]
 			id: "5B8848BCB4B2D4F3"
 			rewards: [{
 				icon: {
@@ -1510,8 +1509,20 @@
 				item: { count: 1, id: "extended_industrialization:robot_auto_feeder" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12D33FAA9C537EF8"]
+			id: "34DC427BAEC84462"
+			shape: "diamond"
+			tasks: [{
+				id: "7275C9107121DF21"
+				item: { components: { "minecraft:custom_data": { wand_options: { } } }, count: 1, id: "constructionwand:diamond_wand" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
 		}
 	]
 }

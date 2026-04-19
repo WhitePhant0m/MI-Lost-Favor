@@ -3354,5 +3354,17 @@
 			x: -4.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["1957F336D5673B59"]
+			id: "486D30FE49A15E43"
+			shape: "diamond"
+			tasks: [{
+				id: "6473CC2C5CAA60E1"
+				item: { components: { "minecraft:custom_data": { wand_options: { } } }, count: 1, id: "constructionwand:infinity_wand" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
 	]
 }

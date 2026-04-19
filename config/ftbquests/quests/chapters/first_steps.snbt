@@ -2607,8 +2607,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(connectiblechains:catenary_items)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -5.0d
+			x: 6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["51E3EA7E70ECE842"]
@@ -2684,6 +2684,18 @@
 			}]
 			x: 19.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["5A23E325ABD115A1"]
+			id: "4626C980F543AB3E"
+			shape: "heart"
+			tasks: [{
+				id: "6FDA6B4199B7E137"
+				item: { components: { "minecraft:custom_data": { wand_options: { } } }, count: 1, id: "constructionwand:stone_wand" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
 		}
 	]
 }

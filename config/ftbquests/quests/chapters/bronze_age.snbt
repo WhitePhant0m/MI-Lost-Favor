@@ -790,6 +790,7 @@
 		{
 			dependencies: ["5D07A7818DC2BC1B"]
 			id: "2A770E2C788BFA02"
+			shape: "square"
 			tasks: [{
 				id: "4924B7E2695A16F2"
 				item: { count: 1, id: "modern_industrialization:creosote_bucket" }
@@ -1843,6 +1844,7 @@
 		{
 			dependencies: ["624A33C4995164C4"]
 			id: "69AA9D9D0E276932"
+			shape: "square"
 			tasks: [{
 				id: "6403FCA8E109CCB6"
 				item: { count: 1, id: "modern_industrialization:synthetic_oil_bucket" }
@@ -5425,6 +5427,18 @@
 			]
 			x: -22.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["2A770E2C788BFA02"]
+			id: "1CEAB423AA2813F7"
+			shape: "rsquare"
+			tasks: [{
+				id: "58E6B371F716CC54"
+				item: { components: { "minecraft:custom_data": { wand_options: { } } }, count: 1, id: "constructionwand:iron_wand" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
 		}
 	]
 }
