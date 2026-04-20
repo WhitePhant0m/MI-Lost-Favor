@@ -1,5 +1,3 @@
-let $HashSet = Java.loadClass("java.util.HashSet")
-let $String = Java.loadClass("java.lang.String")
 
 const TEAM_STAGES_KEY = "milf_team_stages"
 
@@ -40,6 +38,7 @@ function syncTeamStages(player){
     
 
     team.getExtraData().putString(TEAM_STAGES_KEY, $String["join(java.lang.CharSequence,java.lang.Iterable)"](",", teamStagesSet))
+    team.markDirty()
 }
 
 function getAllTeamStages(player){
