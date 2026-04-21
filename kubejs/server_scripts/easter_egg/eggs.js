@@ -1,3 +1,5 @@
+let $Block = Java.loadClass("net.minecraft.world.level.block.Block")
+
 BlockEvents.rightClicked("grimoireofgaia:deco_garden_gnome", event => {
     const player = event.entity;
     const server = player.server;
@@ -26,6 +28,19 @@ BlockEvents.rightClicked(['milf:kisuny_plush', 'milf:saeta_plush'], event => {
     
 
 });
+
+BlockEvents.rightClicked("immersiveengineering:concrete", event => {
+    if (event.getHand() == "OFF_HAND") return
+    if (!event.player.mainHandItem.is(Item.of("modern_industrialization:steel_rod"))) return
+    let {level, block} = event
+    let item = event.player.mainHandItem
+    item.count--
+    level.setBlockAndUpdate(block.pos, Blocks.AIR.defaultBlockState())
+    $Block.popResource(level, block.pos, Item.of("milf:concrete_popsicle"))
+
+    milfPlaySound(event, "minecraft:entity.bee.sting")
+    
+})
 
 const PIPE_ITEMS = [
     'immersiveengineering:stick_iron',

@@ -1,3 +1,4 @@
+// priority: 90
 let $HitResult$Type = Java.loadClass("net.minecraft.world.phys.HitResult$Type")
 
 ClientEvents.highlight(event =>{
