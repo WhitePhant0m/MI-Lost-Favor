@@ -107,6 +107,10 @@ ClientEvents.lang('en_us', event => {
 
     event.add("jade.theme.jade.dark_original", "Dark (original)")
 
+    event.add("curios.identifier.tool_belt", "Tool Belt")
+    event.add("curios.identifier.backpack", "Backpack")
+    event.add("curios.identifier.atlas", "Atlas")
+
     event.add('gateways.basic/deer', "Deer Gateway")
 
     event.add('rei_categories.modern_industrialization.blast_furnace', "Steam Blast Furnace")
