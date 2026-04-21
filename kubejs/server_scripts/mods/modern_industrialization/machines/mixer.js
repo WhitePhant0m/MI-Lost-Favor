@@ -109,4 +109,17 @@ ServerEvents.recipes(event => {
             [{item:"milf:cement"}, 8]
         ]
     })
+
+    miMachineCraft(event, {
+        energy: 2, time: 100, machine: "modern_industrialization:mixer",
+        inputItems: [
+            [{ tag: "minecraft:planks" }, 2],
+        ],
+        inputFluids: [
+            [{ fluid: "modern_industrialization:creosote" }, 250]
+        ],
+        outputItems: [
+            [{ item: "immersiveengineering:treated_wood_horizontal" }, 2]
+        ]
+    })
 })
