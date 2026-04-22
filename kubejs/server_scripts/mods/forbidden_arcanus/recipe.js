@@ -41,5 +41,24 @@ ServerEvents.recipes(event => {
         },
         advancement: "spectrum:create_onyx_shard"
     })
+    customPedestalCraft(event, {
+        tier: "simple", citrine: 12, topaz: 48, time: 600, experience: 8.0, yield_upgrades: true,
+        pattern: [
+            'rqr',
+            'rwr',
+            'rer'
+        ],
+        key: {
+            q: 'companions:relic_gold',
+            w: 'apothic_enchanting:prismatic_web',
+            e: 'minecraft:netherite_block',
+            r: 'forbidden_arcanus:obsidiansteel_ingot'
+        },
+        result: {
+            "id": "forbidden_arcanus:maledictus_pact",
+            "count": 1
+        },
+        advancement: "spectrum:craft_cmy_pedestal"
+    })
 
 });
