@@ -1,37 +1,39 @@
 {
-	"conditions": [
-		{
-			"type": "forge:mod_loaded",
-			"modid": "rottencreatures"
-		}
-	],
-    "entity": "rottencreatures:immortal",
-    "name": "entity.rottencreatures.immortal",
-    "name_color": "#073724",
-    "gui_scale": 1,
-    "gui_x_offset": 0,
-    "gui_y_offset": 0,
-    "gui_z_offset": 0,
-    "sim_cost": 128,
-    "input": {
-        "item": "hostilenetworks:prediction_matrix"
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rottencreatures"
+    }
+  ],
+  "entity": "rottencreatures:immortal",
+  "name": {
+    "translate": "entity.rottencreatures.immortal",
+    "color": "#073724"
+  },
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 128,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "custom.trivia.immortal",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:rotten_flesh",
+      "count": 32
     },
-    "base_drop": {
-        "item": "hostilenetworks:overworld_prediction"
+    {
+      "id": "minecraft:bone",
+      "count": 32
     },
-	"trivia": "custom.trivia.immortal",
-    "fabricator_drops": [
-        {
-            "item": "minecraft:rotten_flesh",
-            "count": 32
-        },
-        {
-            "item": "minecraft:bone",
-            "count": 32
-        },
-        {
-            "item": "rottencreatures:immortal_head",
-            "count": 4
-        }
-    ]
+    {
+      "id": "rottencreatures:immortal_head",
+      "count": 4
+    }
+  ]
 }
