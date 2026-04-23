@@ -12,6 +12,7 @@ ClientEvents.lang('ru_ru', event => {
     event.add('milf.stage.bronze_age', `Вы перешли в ${textAnimatorString("Бронзовую Эпоху", "grad", {from:"#CD7F32", to:"#F6BA7D", f:0.5})}`)
     event.add('milf.stage.monsterplus_mobs', `Вы начали слышать ${textAnimatorString("крики мертвых", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} ночью`)
     event.add('milf.stage.mowziesmobs_mobs', `новые ${textAnimatorString("опасности", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} появились на вашем пути`)
+    event.add('milf.stage.eidolon_mobs', `Вы чувствуете как по вашему телу пробежал ${textAnimatorString("холодок", "grad", {from:"#353DCA", to:"#52B5C4", f:0.5})}!`)
     event.add('milf.stage.mythsandlegends_mobs', `Мифические существа ${textAnimatorString("могут вас услышать", "grad", {from:"#F00B0B", to:"#7A0F0B", f:0.5})} ночью, будьте осторожны!`)
     event.add('milf.stage.cataclysm_mobs', `Что-то древнее шевелится в ${textAnimatorString("тёмных глубинах", "grad", {from:"#1A4FFF", to:"#0A1A7A", f:0.5})}...`)
     event.add('milf.stage.grimoireofgaia_mobs', `Мир кишит ${textAnimatorString("существами, которым нет числа", "grad", {from:"#9B59B6", to:"#E8D5FF", f:0.5})}`)
@@ -106,8 +107,11 @@ ClientEvents.lang('ru_ru', event => {
     event.add('desc.immersiveengineering.info.mineral.brindleyite', "Бриндлейит")
     event.add('desc.immersiveengineering.info.mineral.hematite', "Гематит")
 
+    event.add("curios.identifier.tool_belt", "Пояс")
+    event.add("curios.identifier.backpack", "Рюкзак")
+    event.add("curios.identifier.atlas", "Атлас")
+
     event.add("rite.milf.archwood_broom", "Ритуал Формирования")
-    event.add("rite.milf.naturescompass", "Ритуал Формирования")
     event.add("rite.milf.willow_broom", "Ритуал Формирования")
     event.add("rite.milf.witch_hazel_broom", "Ритуал Формирования")
     event.add("rite.milf.mahogany_broom", "Ритуал Формирования")

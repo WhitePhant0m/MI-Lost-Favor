@@ -1,0 +1,17 @@
+{
+  "type": "eidolon_repraised:ritual_brazier_summoning",
+  "count": 3,
+  "focus_items": [],
+  "output": "hexerei:crow",
+  "pedestal_items": [
+    {
+      "item": "eidolon_repraised:soul_shard"
+    },
+    {
+      "item": "minecraft:feather"
+    }
+  ],
+  "reagent": {
+    "item": "minecraft:beetroot_seeds"
+  }
+}

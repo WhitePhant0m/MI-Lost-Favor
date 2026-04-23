@@ -298,6 +298,23 @@ RecipeViewerEvents.removeEntries('item', event => {
         'ytech:tin_saw',
         "enchanted:mandrake_root",
         "enchanted:mandrake_seeds",
+        'eidolon_repraised:lead_ingot', 
+        'eidolon_repraised:raw_lead', 
+        'eidolon_repraised:lead_nugget', 
+        'eidolon_repraised:lead_ore', 
+        'eidolon_repraised:deep_lead_ore', 
+        'eidolon_repraised:lead_block', 
+        'eidolon_repraised:raw_lead_block', 
+        'eidolon_repraised:silver_ore', 
+        'eidolon_repraised:silver_ingot', 
+        'eidolon_repraised:raw_silver', 
+        'eidolon_repraised:silver_nugget', 
+        'eidolon_repraised:deep_silver_ore', 
+        'eidolon_repraised:silver_ore', 
+        'eidolon_repraised:silver_block', 
+        'eidolon_repraised:raw_silver_block',
+        'eidolon_repraised:sulfur',
+        'eidolon_repraised:soul_enchanter',
     ]
 
     list.forEach(item => {

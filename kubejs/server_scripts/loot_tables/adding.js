@@ -223,5 +223,10 @@ LootJS.modifiers(event => {
         event.addEntityModifier(boss).addLoot("milf:electronic_ender_core").matchMainHand("#c:tools/wrench").randomChance(0.5)
     });
 
+    event.addEntityModifier("hexerei:crow").addLoot("eidolon_repraised:raven_feather").applyEnchantmentBonus ("minecraft:looting", [0, 1])
+    
+
+
+
 
 })

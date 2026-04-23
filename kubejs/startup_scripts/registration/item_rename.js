@@ -124,3 +124,11 @@ addRename(
     types: ["Item"]
   }
 )
+
+addRename(
+  "eidolon_repraised:raven_feather",
+  {
+    langs: { "en_us": "Crow Feather", "ru_ru": "Перо ворона" },
+    types: ["Item"]
+  }
+)

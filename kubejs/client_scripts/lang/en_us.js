@@ -117,7 +117,6 @@ ClientEvents.lang('en_us', event => {
     event.add('rei_categories.modern_industrialization.blast_furnace', "Steam Blast Furnace")
 
     event.add("rite.milf.archwood_broom", "Ritual of Formation")
-    event.add("rite.milf.naturescompass", "Ritual of Formation")
     event.add("rite.milf.willow_broom", "Ritual of Formation")
     event.add("rite.milf.witch_hazel_broom", "Ritual of Formation")
     event.add("rite.milf.mahogany_broom", "Ritual of Formation")

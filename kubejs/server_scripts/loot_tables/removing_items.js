@@ -88,4 +88,7 @@ LootJS.modifiers(event => {
                 .removeLoot(item.item_name);
         });
     });
+
+    event.addEntityModifier("eidolon_repraised:raven").removeLoot("eidolon_repraised:raven_feather")
+
 })
