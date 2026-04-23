@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         experience: 8.0,
         fluid: "modern_industrialization:liquid_air",
         ingredients: [
-            { "item": "artifacts:cross_necklace", count: 1 },
+            { "item": "eidolon_repraised:holy_symbol", count: 1 },
             { "item": "justdirethings:celestigem", count: 18 }
         ],
         result: {
