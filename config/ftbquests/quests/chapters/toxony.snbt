@@ -4015,7 +4015,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["7162B15B452A8B2E"]
+			dependencies: ["1376283846993363"]
 			id: "7ED354CF6EFE61BC"
 			shape: "pentagon"
 			size: 1.0d
@@ -4024,40 +4024,13 @@
 				item: { count: 1, id: "ars_nouveau:dominion_wand" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -14.09621308112309d
-		}
-		{
-			dependencies: ["7ED354CF6EFE61BC"]
-			id: "4D13711C6EB6EDDB"
-			size: 1.0d
-			tasks: [{
-				id: "27FC8F442F596D0D"
-				item: { count: 1, id: "ars_additions:advanced_dominion_wand" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: -13.59621308112309d
-		}
-		{
-			dependencies: ["7ED354CF6EFE61BC"]
-			icon: {
-				id: "ars_controle:remote"
-			}
-			id: "539058B872DC7A4A"
-			size: 1.0d
-			tasks: [{
-				id: "7BAE63301732113A"
-				item: { count: 1, id: "ars_controle:remote" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: -14.59621308112309d
+			x: 1.5d
+			y: -28.0d
 		}
 		{
 			dependencies: [
 				"2B815502453269AF"
-				"7162B15B452A8B2E"
+				"1376283846993363"
 			]
 			id: "464B4BB86A9CF448"
 			rewards: [{
@@ -4074,8 +4047,8 @@
 				item: { count: 1, id: "ars_nouveau:storage_lectern" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -12.59621308112309d
+			x: 1.5d
+			y: -26.0d
 		}
 		{
 			dependencies: ["7E470E4F941A62BB"]

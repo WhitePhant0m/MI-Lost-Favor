@@ -900,6 +900,11 @@
 		"{@pagebreak}"
 		"Найдите заброшенный город в глубоких низинах"
 	]
+	quest.27D16535C7FE372B.quest_desc: [
+		"Brazier lets you perform a variety of useful rituals; one of these is searching for structures. You can press «U» to view all available rituals. In particular, note that you can search for the structures you need using the Locator ritual!"
+		"{@pagebreak}"
+		"Brazier позволяет проводить множество полезных ритуалов, один из таких - поиск структуры, вы можете нажать «U» и посмотреть все возможные ритуалы, в частности обратите внимание, что вы можете искать нужные вам структуры используя ритуал Locator!"
+	]
 	quest.27DF75B7564C37A4.quest_desc: [
 		"Place an attractor on an item pipe to allow it to pull from connected inventories. Place an attractor on a fluid pipe to increase the speed at which it pulls fluids from the network."
 		"{@pagebreak}"

@@ -2604,6 +2604,7 @@
 					id: "mythsandlegends:cursed_core"
 				}
 				id: "69335E0ACAA9C440"
+				team_reward: false
 				type: "custom"
 			}]
 			tasks: [

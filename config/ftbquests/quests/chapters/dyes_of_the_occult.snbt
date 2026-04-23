@@ -5699,29 +5699,6 @@
 			y: -10.5d
 		}
 		{
-			dependencies: ["4580B1AEAA36E6B4"]
-			id: "208F0C74C15F40B8"
-			tasks: [{
-				id: "77CFA433E8191674"
-				item: { count: 1, id: "ars_additions:warp_index" }
-				type: "item"
-			}]
-			x: -22.5d
-			y: -11.5d
-		}
-		{
-			dependencies: ["208F0C74C15F40B8"]
-			id: "31BB2F1B4F37A93D"
-			shape: "heart"
-			tasks: [{
-				id: "406D77B5597B2D7B"
-				item: { count: 1, id: "ars_additions:stabilized_warp_index" }
-				type: "item"
-			}]
-			x: -22.5d
-			y: -12.5d
-		}
-		{
 			dependencies: ["5B37B11A0B0A84E6"]
 			id: "4E0D64575495180A"
 			tasks: [{
