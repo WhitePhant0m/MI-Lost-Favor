@@ -1,41 +1,43 @@
 {
-	"conditions": [
-		{
-			"type": "forge:mod_loaded",
-			"modid": "rottencreatures"
-		}
-	],
-    "entity": "rottencreatures:glacial_hunter",
-    "name": "entity.rottencreatures.glacial_hunter",
-    "name_color": "#233440",
-    "gui_scale": 1,
-    "gui_x_offset": 0,
-    "gui_y_offset": 0,
-    "gui_z_offset": 0,
-    "sim_cost": 128,
-    "input": {
-        "item": "hostilenetworks:prediction_matrix"
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rottencreatures"
+    }
+  ],
+  "entity": "rottencreatures:glacial_hunter",
+  "name": {
+    "translate": "entity.rottencreatures.glacial_hunter",
+    "color": "#233440"
+  },
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 128,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "custom.trivia.glacial_hunter",
+  "fabricator_drops": [
+    {
+      "id": "minecraft:rotten_flesh",
+      "count": 64
     },
-    "base_drop": {
-        "item": "hostilenetworks:overworld_prediction"
+    {
+      "id": "minecraft:cod",
+      "count": 16
     },
-	"trivia": "custom.trivia.glacial_hunter",
-    "fabricator_drops": [
-        {
-            "item": "minecraft:rotten_flesh",
-            "count": 64
-        },
-        {
-            "item": "minecraft:cod",
-            "count": 16
-        },
-        {
-            "item": "minecraft:leather",
-            "count": 8
-        },
-        {
-            "item": "rottencreatures:glacial_hunter_head",
-            "count": 4
-        }
-    ]
+    {
+      "id": "minecraft:leather",
+      "count": 8
+    },
+    {
+      "id": "rottencreatures:glacial_hunter_head",
+      "count": 4
+    }
+  ]
 }

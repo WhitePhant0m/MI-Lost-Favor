@@ -1,49 +1,51 @@
 {
-	"conditions": [
-		{
-			"type": "forge:mod_loaded",
-			"modid": "rottencreatures"
-		}
-	],
-    "entity": "rottencreatures:frostbitten",
-    "name": "entity.rottencreatures.frostbitten",
-    "name_color": "#48586E",
-    "gui_scale": 1,
-    "gui_x_offset": 0,
-    "gui_y_offset": 0,
-    "gui_z_offset": 0,
-    "sim_cost": 128,
-    "input": {
-        "item": "hostilenetworks:prediction_matrix"
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "rottencreatures"
+    }
+  ],
+  "entity": "rottencreatures:frostbitten",
+  "name": {
+    "translate": "entity.rottencreatures.frostbitten",
+    "color": "#48586E"
+  },
+  "gui_scale": 1,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 128,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:overworld_prediction"
+  },
+  "trivia": "custom.trivia.frostbitten",
+  "fabricator_drops": [
+    {
+      "id": "rottencreatures:frozen_rotten_flesh",
+      "count": 64
     },
-    "base_drop": {
-        "item": "hostilenetworks:overworld_prediction"
+    {
+      "id": "minecraft:snowball",
+      "count": 16
     },
-	"trivia": "custom.trivia.frostbitten",
-    "fabricator_drops": [
-        {
-            "item": "rottencreatures:frozen_rotten_flesh",
-            "count": 64
-        },
-        {
-            "item": "minecraft:snowball",
-            "count": 16
-        },
-        {
-            "item": "minecraft:iron_ingot",
-            "count": 8
-        },
-        {
-            "item": "minecraft:carrot",
-            "count": 16
-        },
-        {
-            "item": "minecraft:potato",
-            "count": 16
-        },
-        {
-            "item": "rottencreatures:frostbitten_head",
-            "count": 4
-        }
-    ]
+    {
+      "id": "minecraft:iron_ingot",
+      "count": 8
+    },
+    {
+      "id": "minecraft:carrot",
+      "count": 16
+    },
+    {
+      "id": "minecraft:potato",
+      "count": 16
+    },
+    {
+      "id": "rottencreatures:frostbitten_head",
+      "count": 4
+    }
+  ]
 }

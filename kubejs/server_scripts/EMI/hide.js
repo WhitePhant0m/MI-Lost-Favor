@@ -325,7 +325,7 @@ RecipeViewerEvents.removeEntries('item', event => {
 RecipeViewerEvents.removeCategories(event => {
     event.remove([
         'modern_industrialization:bronze_furnace',
-        'hexeri:woodcutter',
+        'hexerei:woodcutter',
         'paganbless:cauldron_imbuing',
     ]);
 });
