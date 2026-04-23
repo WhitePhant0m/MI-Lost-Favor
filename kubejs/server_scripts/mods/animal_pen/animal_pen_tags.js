@@ -5,5 +5,6 @@ ServerEvents.tags("item", event => {
 });
 
 ServerEvents.tags("entity_type", event => {
-  event.add("animal_pen:animal_cage_pickable", ["spectrum:kindling", "spectrum:egg_laying_wooly_pig"]);
+  event.add("animal_pen:animal_cage_pickable", ["spectrum:kindling", "spectrum:egg_laying_wooly_pig", "minecraft:bat"]);
+  event.add("animal_pen:bird_catcher_pickable", ["minecraft:bat"]);
 });

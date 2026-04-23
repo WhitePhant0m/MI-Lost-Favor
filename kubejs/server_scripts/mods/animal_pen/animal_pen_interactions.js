@@ -80,7 +80,11 @@ ServerEvents.generateData("after_mods", e => {
       milking('animal_pen:animal_interactions/bucket/milk_bucket', 'minecraft:milk_bucket'),
       eggs('animal_pen:animal_interactions/bucket/egg', 'minecraft:egg', 'minecraft:bowl'),
       ambient('spectrum:entity.kindling.ambient')
-    ]
+    ],
+    "minecraft:bat": [
+      feeding('milf:larva'),
+      ambient('minecraft:entity.bat.ambientt')
+    ],
   };
 
   Object.entries(entities).forEach(([entity, interaction]) => {
