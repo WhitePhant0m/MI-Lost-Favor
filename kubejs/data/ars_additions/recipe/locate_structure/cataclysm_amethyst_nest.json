@@ -2,10 +2,13 @@
 	"type": "ars_additions:locate_structure",
 	"augments": [
 		{
-			"key": "occultism:amethyst_dust"
+			"item": "minecraft:amethyst_block"
 		},
 		{
-			"key": "spectrum:amethyst_powder"
+			"item": "minecraft:amethyst_block"
+		},
+		{
+			"item": "minecraft:amethyst_block"
 		}
 	],
 	"id": "ars_additions:cataclysm_amethyst_nest",

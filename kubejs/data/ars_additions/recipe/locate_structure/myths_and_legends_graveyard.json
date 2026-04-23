@@ -5,13 +5,7 @@
 			"key": "minecraft:skeleton_skull"
 		},
 		{
-			"key": "minecraft:wither_skeleton_skull"
-		},
-		{
 			"key": "minecraft:skeleton_skull"
-		},
-		{
-			"key": "minecraft:wither_skeleton_skull"
 		}
 	],
 	"id": "ars_additions:myths_and_legends_graveyard",

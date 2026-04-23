@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
             "id": "ars_nouveau:ritual_brazier",
             "count": 1
         },
-        advancement: "spectrum:create_onyx_shard",
+        advancement: "spectrum:place_pedestal",
         yield_upgrades: true
     })
     event.remove({ output: "ars_nouveau:ritual_brazier" })
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         { id: "ars_nouveau:ritual_moonfall", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
         { id: "ars_nouveau:ritual_flowering", pedestal_tier: "basic", topaz: 2, amethyst: 2, citrine: 2, onyx: 0, moonstone: 0 },
         {
-            id: "ars_additions:ritual_locate_structure", pedestal_tier: "advanced", topaz: 10, amethyst: 10, citrine: 10, onyx: 4, moonstone: 0,
+            id: "ars_additions:ritual_locate_structure", pedestal_tier: "basic", topaz: 10, amethyst: 10, citrine: 10, onyx: 0, moonstone: 0,
             addition_ingredients: [{ "item": "enchanted:ender_dew" }]
         },
         { id: "ars_nouveau:ritual_cloudshaping", pedestal_tier: "advanced", topaz: 10, amethyst: 10, citrine: 10, onyx: 2, moonstone: 0 },
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         { id: "ars_nouveau:ritual_binding", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
         { id: "ars_nouveau:ritual_containment", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
         { id: "ars_nouveau:ritual_harvest", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
-        { id: "ars_nouveau:ritual_awakening", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
+        // ritual_awakening - crafted via mixing cauldron instead
         { id: "ars_nouveau:ritual_conjure_island_desert", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4 },
         {
             id: "ars_nouveau:ritual_wilden_summon", pedestal_tier: "complex", topaz: 20, amethyst: 20, citrine: 20, onyx: 8, moonstone: 4,
@@ -69,11 +69,32 @@ ServerEvents.recipes(event => {
         },
     ]
 
+    customMixingCauldron(event, {
+        fluid: "minecraft:lava",
+        fluidAmount: 1000,
+        ingredients: [
+            { "item": "minecraft:stone" },
+            { "item": "paganbless:chopped_lavender" },
+            { "item": "enchanted:wool_of_bat" },
+            { "item": "enchanted:tongue_of_dog" },
+            { "item": "enchanted:creeper_heart" },
+            { "item": "enchanted:attuned_stone" },
+            { "item": "enchanted:water_artichoke" },
+            { "item": "paganbless:chopped_lavender" },
+        ],
+        output: "ars_nouveau:ritual_awakening",
+        removeRecipe: true
+    })
+
     // item -> item
     var replacementsItemToItem = {
         "ars_nouveau:mendosteen_pod": "paganbless:chopped_rue",
         "ars_nouveau:earth_essence": "enchanted:breath_of_the_goddess",
         "ars_nouveau:air_essence": "occultism:awakened_feather",
+        "ars_nouveau:red_archwood_sapling": "enchanted:tongue_of_dog",
+        "ars_nouveau:green_archwood_sapling": "enchanted:creeper_heart",
+        "ars_nouveau:blue_archwood_sapling": "enchanted:water_artichoke",
+        "ars_nouveau:purple_archwood_sapling": "enchanted:wool_of_bat",
     };
 
     // item -> tag
@@ -89,7 +110,7 @@ ServerEvents.recipes(event => {
     // tag -> item
     var replacementsTagToItem = {
         "c:storage_blocks/source": "occultism:spirit_attuned_crystal",
-        "c:gems/source": "occultism:spirit_attuned_gem",
+        "c:gems/source": "enchanted:attuned_stone",
     };
 
     // tag -> tag
@@ -194,7 +215,6 @@ ServerEvents.recipes(event => {
         },
         {
             id: "hellish_trials:nether_trial", name: "nether_trial", augments: [
-                { "key": "minecraft:breeze_rod" },
                 { "key": "enchanted:demonic_blood" },
                 { "key": "minecraft:netherite_scrap" },
             ]
@@ -257,15 +277,14 @@ ServerEvents.recipes(event => {
         {
             id: "mythsandlegends:graveyard", name: "myths_and_legends_graveyard", augments: [
                 { "key": "minecraft:skeleton_skull" },
-                { "key": "minecraft:wither_skeleton_skull" },
                 { "key": "minecraft:skeleton_skull" },
-                { "key": "minecraft:wither_skeleton_skull" }
             ]
         },
         {
             id: "cataclysm:amethyst_nest", name: "cataclysm_amethyst_nest", augments: [
-                { "key": "occultism:amethyst_dust" },
-                { "key": "spectrum:amethyst_powder" },
+                { "item": "minecraft:amethyst_block" },
+                { "item": "minecraft:amethyst_block" },
+                { "item": "minecraft:amethyst_block" },
             ]
         },
         {
