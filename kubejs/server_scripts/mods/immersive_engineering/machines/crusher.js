@@ -33,7 +33,6 @@ const ieCrusherCraft = (/**@type {$RecipesKubeEvent_} */ event, args) => {
                 miEnergy = 8
                 break
         }
-        let miArgs = 
         miMachineCraft(event, {energy:miEnergy, time:args.time || 200, machine:"modern_industrialization:macerator",
             inputItems:args.inputItems,
             outputItems:args.outputItems
@@ -67,13 +66,13 @@ ServerEvents.recipes(event => {
     ieCrusherCraft(event,{
         inputItems:[[{"item": "extendedae:entro_crystal"}]],
         outputItems:[[{item: "extendedae:entro_dust"}, 1]],
-        compatOff:true
+        compatTier: "electric",
     })
 
     ieCrusherCraft(event,{
         inputItems:[[{"item": "advanced_ae:shattered_singularity"}]],
         outputItems:[[{item: "advanced_ae:quantum_infused_dust"}, 2]],
-        compatOff:true
+        compatTier: "electric",
     })
 
     ieCrusherCraft(event,{

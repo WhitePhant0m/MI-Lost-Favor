@@ -45,6 +45,22 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    miMachineCraft(event, {
+        energy: 8, time: 200, machine: "modern_industrialization:assembler",
+        inputItems: [
+            [{ item: "modern_industrialization:electrum_cable" }, 4],
+            [{ item: "modern_industrialization:invar_large_plate" }, 12],
+            [{ item: "modern_industrialization:portable_storage_unit" }],
+            [{ item: "modern_industrialization:electronic_circuit" }],
+            [{ item: "modern_industrialization:cupronickel_wire_magnetic" }, 32],
+
+        ],
+        outputItems: [
+            [{ item: "mi_tweaks:large_electric_furnace" }]
+        ],
+        removeRecipe: true
+    })
+
     miMachineCraft(event, {energy:8, time:200, machine:"modern_industrialization:assembler",
         inputItems:[
             [{tag:"c:cobblestones"}, 8],
