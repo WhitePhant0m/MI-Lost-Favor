@@ -485,7 +485,8 @@ KubeJSTweaks.beforeRecipes(event => {
         "modern_industrialization:electric_age/machine/assembler/replicator",
 
         "extended_industrialization:vanilla_recipes/macerator/netherite_ingot_to_dust",
-
+        
+        "modern_industrialization:machines/machine_chainer/assembler",
         "modern_industrialization:materials/macerator/redstone_ore_to_crushed"
     ]
 

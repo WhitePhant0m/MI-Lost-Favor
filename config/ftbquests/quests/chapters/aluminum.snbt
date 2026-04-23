@@ -71,18 +71,6 @@
 		}
 		{
 			dependencies: ["1535DAA84E3E8980"]
-			id: "52FC37B95614B02B"
-			shape: "rsquare"
-			tasks: [{
-				id: "341D853D49D15289"
-				item: { count: 1, id: "extended_industrialization:large_electric_furnace" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["1535DAA84E3E8980"]
 			id: "356AAECAA18ED146"
 			shape: "rsquare"
 			tasks: [{
@@ -92,18 +80,6 @@
 			}]
 			x: 5.0d
 			y: -5.5d
-		}
-		{
-			dependencies: ["1535DAA84E3E8980"]
-			id: "1421BA67FAF23D62"
-			shape: "rsquare"
-			tasks: [{
-				id: "25F408EB34FB5B12"
-				item: { count: 1, id: "extended_industrialization:machine_chainer" }
-				type: "item"
-			}]
-			x: -1.0d
-			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -248,7 +224,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["12D33FAA9C537EF8"]
@@ -1523,6 +1499,30 @@
 			}]
 			x: 0.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["1535DAA84E3E8980"]
+			id: "3F8C4BDA1C09549A"
+			shape: "rsquare"
+			tasks: [{
+				id: "649639C81ADDB4DD"
+				item: { count: 1, id: "mi_tweaks:large_electric_furnace" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1535DAA84E3E8980"]
+			id: "03BA98612FA7B694"
+			shape: "rsquare"
+			tasks: [{
+				id: "689BED68DD2B4E65"
+				item: { count: 1, id: "modern_industrialization:electric_coke_oven" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
 		}
 	]
 }
