@@ -1,30 +1,18 @@
 ServerEvents.recipes(event => {
 
-    event.remove({ output: "crittersandcompanions:grappling_hook" })
-    event.custom(
-        {
-            "type": "enchanted:wheel",
-            "ingredients": [
-                {
-                    "count": 4,
-                    "id": "crittersandcompanions:silk"
-                },
-                {
-                    "count": 1,
-                    "id": "enchanted:whiff_of_magic"
-                },
-                {
-                    "count": 1,
-                    "id": "enchanted:flying_ointment"
-                }
-            ],
-            "power": 1000,
-            "result": {
-                "count": 1,
-                "id": "crittersandcompanions:grappling_hook"
-            }
-        }
-    )
-
+    customWorktable(event, {
+        pattern: [
+            " qq", 
+            " qq", 
+            "q  "
+        ],
+        reagents: ["w   "],
+        key: {
+            "q": { "item": "crittersandcompanions:silk" },
+            "w": { "item": "eidolon_repraised:holy_symbol" },
+        },
+        result: "crittersandcompanions:grappling_hook",
+        removeRecipe: true
+    })
 
 })
