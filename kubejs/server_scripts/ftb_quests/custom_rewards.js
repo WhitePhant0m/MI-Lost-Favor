@@ -28,6 +28,15 @@ FTBQuestsEvents.customReward('4178A18CA2E5A74F', event => {
     addStagesToTeamMembers(event, stage)
     defaultMilestoneNotification(event, stage)
 });
+// reward for Ars Ecclesia (root whispering chapter)
+FTBQuestsEvents.customReward('19304AD673874503', event => {
+    let player = event.entity;
+    let player_name = player.profile.name
+
+    const stage = "eidolon_mobs"
+    addStagesToTeamMembers(event, stage)
+    defaultMilestoneNotification(event, stage)
+});
 
 // reward for killing black charro (journeys chapter)
 FTBQuestsEvents.customReward('69335E0ACAA9C440', event => {
@@ -102,6 +111,18 @@ FTBQuestsEvents.customReward('7650FE6CA0220DA3', event => {
     addStagesToTeamMembers(event, stage)
 });
 
+// reward for void portal craft
+FTBQuestsEvents.customReward('0A8447D787E641E3', event => {
+    const stage = "void_access"
+    addStagesToTeamMembers(event, stage)
+});
+
+// reward for deeper down portal opening
+FTBQuestsEvents.customReward('015382CFC13FFB7A', event => {
+    const stage = "deeper_down_access"
+    addStagesToTeamMembers(event, stage)
+});
+
 // reward for 12 eyes
 FTBQuestsEvents.customReward('2BD4B3CA5BEDBA19', event => {
     const stage = "the_end_access"
@@ -123,15 +144,12 @@ simple_stage_rewards.forEach(element => {
 });
 
 
-
+//TODO: add back, belt, hands
 // ring, charm, feet, shoulders, bracelet, bundle, brooch, hands, back, head, pouch, face, 
 // necklace, an_focus, deep_learner, body, pin, belt, adv_pattern_encoder, pigment_palette
 const trinkets_slot_list_reward = [
-    { quest_id: '679412F522B788D9', trinket_slot: 'hands' },
     { quest_id: '73D93A782AD2E4AE', trinket_slot: 'bundle' },
     { quest_id: '094072146D87AD84', trinket_slot: 'pouch' },
-    { quest_id: '4B224C18E7C6EE21', trinket_slot: 'back' },
-    { quest_id: '0BDFBA35083D9976', trinket_slot: 'belt' },
     { quest_id: '3F447B6AF92AB2A6', trinket_slot: 'belt' },
     { quest_id: '0E39813C84812910', trinket_slot: 'face' },
     { quest_id: '79B3DCBD3C3D36DB', trinket_slot: 'head' },

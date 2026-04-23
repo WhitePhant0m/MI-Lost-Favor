@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
-        customWorktable(event, {
+    customWorktable(event, {
         pattern: [
-            " r ", 
-            "ewe", 
+            " r ",
+            "ewe",
             " e "
         ],
         reagents: ["tyty"],
