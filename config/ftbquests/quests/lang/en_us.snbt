@@ -6,6 +6,7 @@
 	chapter.207581C2CDE908B1.title: "<fade>Dyes of the Occult"
 	chapter.231570DE6A7FCD52.title: "Journeys \\& Gear"
 	chapter.389198189DCA1A49.title: "Utilities"
+	chapter.3ED5DF3804C2BE8A.title: "Stages"
 	chapter.4D6A3C5941C9908A.title: "endgame"
 	chapter.4E4F6FF3EEEB1E51.title: "basic information"
 	chapter.535EA14E4BC77614.title: "Applied Energistics"
@@ -397,6 +398,11 @@
 		"{@pagebreak}"
 		"Атамэ - быстрое и смертоносное оружие, и чтобы получить его силу, вам придется использовать Алмазный ритуал."
 	]
+	quest.0F9AA4AABC8BFBEB.quest_desc: [
+		"Give your Ars Ecclesia to the Witch!"
+		"{@pagebreak}"
+		"Отдай свою книгу(Ars Ecclesia) ведьме!"
+	]
 	quest.106F4D5B5D4A02F7.quest_desc: [
 		"Anyone &#FEECD6interested&r is invited to read the &l&#e4affaSpectrum&r&r guidebook, no point in copying the information to here!"
 		"{@pagebreak}"
@@ -466,6 +472,11 @@
 	]
 	quest.13134EE8E1631EBB.quest_desc: [""]
 	quest.1325489D5E635F06.quest_subtitle: "Banners can be repainted using souls"
+	quest.1376283846993363.quest_desc: [
+		"Once you've obtained your first Soul Shards, you'll be able to summon the mobs you need and kill them again and again!"
+		"{@pagebreak}"
+		"Как только вы получите свои первые Осколки души, вы сможете призывать нужных вам мобов и убивать их снова и снова!"
+	]
 	quest.137E20A86306BF4A.quest_desc: [
 		"&#b0620eNothing&r difficult, right? "
 		"{@pagebreak}"
@@ -538,6 +549,7 @@
 		"{@pagebreak}"
 		"Я усовершенствовал состав масла усталости с помощью токсина и получил смесь способную, при резком изменении внутренней энергии, взрываться газом со свойствами предшественника."
 	]
+	quest.1714360882474479.quest_subtitle: "New items interaction"
 	quest.172C44614A53FAAF.quest_desc: [
 		"Place an extractor on an item or fluid pipe to allow it to extract from adjacent inventories."
 		"{@pagebreak}"
@@ -570,6 +582,11 @@
 		"Used to crush items to make them less intact"
 		"{@pagebreak}"
 		"Используется для измельчения предметов, чтобы сделать их менее целыми."
+	]
+	quest.180D918E658AD837.quest_desc: [
+		"[ \"You can use the \", { \"text\": \"Animal Pen\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"617E14880D9D75A0\" } }, \" to get the amount of Tongue of Dog you need!\" ]"
+		"{@pagebreak}"
+		"[ \"Вы можете использовать \", { \"text\": \"клетку для животных\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"617E14880D9D75A0\" } }, \" чтобы получать необходимое количество Tongue of Dog!\" ]"
 	]
 	quest.18238251518B54D5.quest_desc: ["123"]
 	quest.18238251518B54D5.title: "Chimmera Familiar"
@@ -782,6 +799,17 @@
 	]
 	quest.2141539997D6480F.quest_subtitle: "ADHD edition"
 	quest.2141539997D6480F.title: "<pend>Hi wrld"
+	quest.21EC4B09DE3636B8.quest_desc: [
+		"Give your Ars Ecclesia to the village cleric!"
+		"{@pagebreak}"
+		"Отдай свою книгу(Ars Ecclesia) жителю-священнику!"
+	]
+	quest.22128FA939CC5229.quest_desc: [
+		"Kill the cow near the Goblet!"
+		"{@pagebreak}"
+		"Убей корову возле Чаши!"
+	]
+	quest.22128FA939CC5229.title: "Goblet with cow blood"
 	quest.223D9E832411A590.quest_desc: [
 		"Yeah, it's a &#FEECD6sponge&r. A &#ff6600Lava Sponge&r. Any more questions...?"
 		"{@pagebreak}"
@@ -1125,6 +1153,7 @@
 		"{@pagebreak}"
 		"Лучше, чем ничего, и к тому же роскошно, да?"
 	]
+	quest.336C43BDBE0A0995.quest_subtitle: "Nether Access"
 	quest.3375DE99A86D3CB4.quest_desc: [
 		"Item pipes will normally prefer the closest inventory. An inhibitor increases the length of a connection by 1000 for pathfinding purposes, which makes item pipes avoid that connection if possible."
 		"{@pagebreak}"
@@ -1251,6 +1280,7 @@
 		""
 		"Более подробнее о росте можно прочитать в книге!"
 	]
+	quest.37E81A0F2015DFE9.quest_subtitle: "Way to AE2"
 	quest.3844F342D000826A.quest_desc: [
 		"A copper mesh can catch tin, lead and copper."
 		"{@pagebreak}"
@@ -1262,6 +1292,11 @@
 		"[ \"Предшественник сундука и ваше первое(\", { \"text\": \"или не совсем первое?\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1E4A4AD1899325D3\" } }, \") надежное хранилище, может хранить до 9 стаков предметов.\" ]"
 	]
 	quest.38AAF5DFC8A1F13D.quest_subtitle: "How To Tame a Kindling"
+	quest.39553C7C57BEE887.quest_desc: [
+		"Hold down the right mouse button + Shift key on the \"warped fungus\" or \"crimson fungus\"!"
+		"{@pagebreak}"
+		"Зажми правую кнопку мыши и шифт на warped fungus или Crimson fungus!"
+	]
 	quest.39C79097C7355375.quest_desc: ["The Crimson Stone is all about Souls. When used it the Hephaestus Forge it will half the Souls essence cost and when used in the Clibano it will increase the burn duration of inputted Souls (Soon). Crimson Stones can be found in Pillager Outpost loot chests (18% chance)."]
 	quest.3A47A5B107C19092.quest_desc: [
 		"Fancy, queen-sized patch of fiber"
@@ -1319,6 +1354,11 @@
 		"To obtain the &l&0mid&5night &5shard&r, you need to suffocate a living creature in the &l&5mid&0night &l&5so&0lu&5ti&0on&r."
 		"{@pagebreak}"
 		"Чтобы получить &l&0полун&5очный &5оск&0ол&5ок&r, вам необходимо чтобы &l&5по&0лу&5ноч&0ный&r &l&5ра&0с&5тв&0ор&r убил живое существо!"
+	]
+	quest.3BC32840E2EB399A.quest_desc: [
+		"[ \"You can use the \", { \"text\": \"Aviary\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CFF4A7767CD830E\" } }, \" to get the amount of Wool of Bat you need!\" ]"
+		"{@pagebreak}"
+		"[ \"Вы можете использовать \", { \"text\": \"клетку\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"2CFF4A7767CD830E\" } }, \" чтобы получать необходимое количество Wool of Bat!\" ]"
 	]
 	quest.3C0AA6B0C3E4BFE5.quest_desc: [
 		"This pickaxe &#ECB4B4deletes&r all of the blocks it mines. Quite handy when you don't care about the blocks you are mining!"
@@ -1633,6 +1673,13 @@
 		""
 		"Этот &5прибор&r очень поможет мне в моих будущих исследованиях. Особенно когда я буду изучать &5древние ритуалы&r и &aсмеси ядов&r. Мне нужно следить за тем, чтобы не слишком увлекаться и постоянно держать устройство при себе, чтобы не выйти за рамки дозволенного. У меня есть ощущение, что этот прибор превратится из средства предосторожности в прекрасную перспективу на будущее."
 	]
+	quest.497D98E4037B0265.quest_desc: [
+		"This peculiar tool seems to disobey normal material properties."
+		"The harder a block is, the quicker this pick breaks it; the softer a block is, the more resistance it gives."
+		"{@pagebreak}"
+		"Этот необычный инструмент, похоже, не подчиняется обычным свойствам материалов."
+		"Чем тверже блок, тем быстрее эта киркой его разбивает; чем мягче блок, тем больше сопротивления он оказывает."
+	]
 	quest.498922D593321422.quest_desc: [
 		"Better furnace, but bigger!"
 		"{@pagebreak}"
@@ -1727,6 +1774,11 @@
 	]
 	quest.4F16E1AF399E74E4.quest_subtitle: "No more anvils ^o^"
 	quest.4F3E70AAD31A62A8.quest_desc: ["minecraft:swamp"]
+	quest.4FB0EC4D5EEA7EE6.quest_desc: [
+		"Hold down the right mouse button + Shift key on the Lily Pad!"
+		"{@pagebreak}"
+		"Зажми правую кнопку мыши и шифт на кувшинке!"
+	]
 	quest.500B0AF8A393CC5D.quest_desc: [
 		"The chicken nest collects eggs dropped by nearby chickens and stores them for later pickup."
 		""
@@ -1763,6 +1815,8 @@
 		"Перед улучшением алтаря убедитесь что у вас есть все блоки для его улучшения, некоторые необходимо создать в предыдущем алтаре!"
 	]
 	quest.516F8BD76AA0DE20.quest_subtitle: "Generates naturally in deserts and badlands"
+	quest.51BC2EDB324F7ECD.quest_subtitle: "New quest chapter"
+	quest.51E3EA7E70ECE842.quest_subtitle: "New ore"
 	quest.52DE3396BBC36B30.quest_desc: [
 		"Crystal Apothecary automatically collects gemstone clusters. Anything - &6Topaz&r, &5Amethyst&r, &bCertus Quartz&r etc. It doesn't even need to be loaded!"
 		"{@pagebreak}"
@@ -1877,6 +1931,15 @@
 	quest.5AB1A672225555B0.quest_desc: ["By pressing \"Shift + X\" on an item in your inventory, you can link said item in chat"]
 	quest.5AEBD2E96FA53366.quest_desc: ["The fiery modifier can be applied to all tool items (Pickaxes, Shovels, Axes, Hoes) and will automatically smelt all mined blocks if they have a smelting recipe. "]
 	quest.5AEEF8055EA6AE88.quest_desc: ["Use a Splash Aureal Bottle on a normal soul for getting"]
+	quest.5B306FE5EB74ADA8.quest_desc: [
+		"In Planter, you can grow specific plants such as the Mirecap Mushroom / the Flowering Oanna / Sildrian Seed / Sprig Of Avennian"
+		""
+		"Use an athame to gather plants"
+		"{@pagebreak}"
+		"В Planter можно выращивать специфические растения, такие как Mirecap Mushroom / Flowering Oanna / Sildrian Seed / Sprig Of Avennian"
+		""
+		"Для сбора растений используйте Athame"
+	]
 	quest.5B66EF3877866949.quest_desc: [
 		"This mod adds horse improvements you haven't thought you needed."
 		""
@@ -2356,6 +2419,7 @@
 		""
 		"&lYou can press F3 + G to enable chunk highlighting.&r"
 	]
+	quest.6D68EF9352B93B19.title: "Chunk Claiming"
 	quest.6DD0AB27900F46E3.quest_desc: [""]
 	quest.6DF1AD7EA7689F68.quest_desc: [
 		"Note that &bpaltaeria fragments&r will float away once they're mined! Place something above to catch them, or come up with something more clever. "
@@ -2367,6 +2431,7 @@
 		"{@pagebreak}"
 		"Соберите &l12 уникальных глаз&r для активации портала."
 	]
+	quest.6E11ECC7B831480C.quest_subtitle: "The End Access"
 	quest.6E57514B8D09F6D8.quest_desc: [
 		"nearby pets teleport with you"
 		""
@@ -2388,6 +2453,11 @@
 		"Each chimney provides +50° but the maximum number of Chimneys that can be installed is 4 Brick Chimneys and 4 reinforced Brick Chimneys."
 		"{@pagebreak}"
 		"Каждый chimney даёт +50°, но максимум можно поставить 4 обычных chimney и 4 укрепленных chimney."
+	]
+	quest.6EEC74AEC9DD96B8.quest_desc: [
+		"Increases the chance of dropping a mob's head when you kill it with this axe."
+		"{@pagebreak}"
+		"Повышает шанс получить голову моба если убить этим топором."
 	]
 	quest.6F85911351916741.quest_desc: ["An Edelwood Bucket can hold multiple fluids at once (4 buckets for water and 3buckets for lava). Can also hold stews and some small entities. The Edelwood Bucket will require the Permafrost enchantment in order to hold lava safely."]
 	quest.6FBA4C72D386837A.quest_desc: [
@@ -2412,6 +2482,17 @@
 		"А еще распишитесь *&#9BB8EDтут&r*, *&#9BB8EDздесь&r*, и предоставьте &#FEECD6фото паспорта&r!"
 	]
 	quest.704B2659E03B8728.quest_subtitle: "Kill Corrupt Lost Soul"
+	quest.706FE8A4CD20FDEF.quest_desc: [
+		"A square, a diamond, a circle—they don’t mean anything; they’re just decorations."
+		""
+		"The &lheart icon&r indicates that this quest is &lvery useful&r, and we highly recommend completing it!"
+		""
+		"{@pagebreak}"
+		""
+		"Квадрат, ромб, круг - ни на что не показывают, просто декорации."
+		""
+		"&lСердечко&r - показывает на то, что квест &lочень полезен&r и мы настоятельно рекомендуем выполнить его!"
+	]
 	quest.70798A5B74FDB203.quest_desc: [
 		"Grows in swamps."
 		""
@@ -2470,6 +2551,7 @@
 		"{@pagebreak}"
 		"[ \"не забудьте украсить свою базу \", { \"text\": \"флажками!\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6D68EF9352B93B19\" } }, \" \" ]"
 	]
+	quest.71DD1AE71C4E1B9F.quest_subtitle: "New mobs"
 	quest.71E39806A0B7D79D.quest_desc: [
 		"You can read about most rituals in the guidebook!"
 		"{@pagebreak}"
@@ -2618,6 +2700,15 @@
 		"Кровать для дневного сна."
 	]
 	quest.7E277FEC22A1924D.quest_desc: ["Spawner Scrap drops when breaking a Spawner"]
+	quest.7E931DB1E3794703.quest_desc: [
+		"[ \"You can use the \", { \"text\": \"Pentacle\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5C95E8450BEAD473\" } }, \" to get the amount of Creeper Heart you need!\" ]"
+		""
+		"Mod creepers drop hearts too"
+		"{@pagebreak}"
+		"[ \"Вы можете использовать \", { \"text\": \"пентаграмму\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5C95E8450BEAD473\" } }, \" чтобы получать необходимое количество Creeper Heart!\" ]"
+		""
+		"Из модовых-криперов так же падает сердце"
+	]
 	quest.7E9470BDDB0600F0.quest_desc: [
 		"11 без"
 		"35 с"
@@ -2639,10 +2730,11 @@
 		""
 		"1 Ethereal Source -> 2 liquid source "
 	]
+	reward.015382CFC13FFB7A.title: "Deeper Down Access"
 	reward.084C079A765DC32C.title: "Focus Trinket Slot"
 	reward.094072146D87AD84.title: "Pouch slot"
 	reward.0A58BA17068FCA2C.title: "New Radial Menu Button"
-	reward.0BDFBA35083D9976.title: "Belt Slot"
+	reward.0A8447D787E641E3.title: "Void Access"
 	reward.0C6E1695C7D921E2.title: "Radial Menu Button"
 	reward.0DC887212398806D.title: "New Quest Chapter"
 	reward.0E39813C84812910.title: "Face Trinket Slot"
@@ -2650,6 +2742,7 @@
 	reward.12D16D8D384FB0D8.title: "Pin Trinket Slot"
 	reward.16B46238FC936637.title: "<glitch>New dangers"
 	reward.184E78B18B597C06.title: "Pattern Encoder Trinket Slot"
+	reward.19304AD673874503.title: "New dangers"
 	reward.19B52AC9AC1571C5.title: "Сharm Trinket Slot"
 	reward.1F1063A9E62215F0.title: "Rune Trinket Slot"
 	reward.20BA335B5255AB60.title: "Hands Trinket Slot"
@@ -2667,7 +2760,6 @@
 	reward.43989D93EEEBE7E7.title: "Bracelet Trinket Slot"
 	reward.4489C7C10E7A49EF.title: "Ring Trinket Slot"
 	reward.472BCEE94E93C2FF.title: "Radial Menu Button"
-	reward.4B224C18E7C6EE21.title: "Back Slot"
 	reward.4BA1212AF4BD3432.title: "Augmenting Table Access"
 	reward.4C184C19BA719B4F.title: "Feet Trinket Slot"
 	reward.4D0EBC927D8AD01D.title: "Xaeromap Access"
@@ -2678,7 +2770,6 @@
 	reward.631ABDA3AFF1EE5B.title: "Radial Menu Button"
 	reward.66F76B515E0CC819.title: "Shoulders Trinket Slot"
 	reward.670CBE4973B6F390.title: "New interactions: villagers, spawners, wandering trader and new mobs"
-	reward.679412F522B788D9.title: "Trinket hands slot"
 	reward.69335E0ACAA9C440.title: "<glitch>New dangers"
 	reward.6C1E7006967265FC.title: "Charm Trinket Slot"
 	reward.6E3C09D7543B99D1.title: "Simple Reforging Table Accses"
@@ -2795,6 +2886,7 @@
 	task.46C57609C45C54C6.title: "Any #milf:fusion_shrine"
 	task.46CE431166A44610.title: "Oil pot"
 	task.46D24C3E78F3813B.title: "Any #milf:polished_base_blocks"
+	task.4954115A00FEC164.title: "Any #c:logs/archwood"
 	task.49AD79AA5693E79F.title: "Osorin's Unbound Calling"
 	task.49C1237D393FF8C9.title: "Any #smallships:ships"
 	task.4AA33BD44F51AF55.title: "Sevira's Permanent Confinement"
@@ -2810,6 +2902,7 @@
 	task.4F2B1C1396AE3947.title: "Any #minecraft:planks"
 	task.4FE41B7B9F6AAEE7.title: "!"
 	task.50145BF6C914A142.title: "Any #milf:gemstone_lamp"
+	task.5180AC955AE4C748.title: "Why do some quests come in different forms?"
 	task.55A9AB2E43857E14.title: "Any #minecraft:beds"
 	task.5681B6E38A2DC015.title: "Harvest with ease"
 	task.56EE6B7B03B03D4D.title: "Tomes"

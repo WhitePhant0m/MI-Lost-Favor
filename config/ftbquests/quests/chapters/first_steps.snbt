@@ -747,6 +747,9 @@
 		}
 		{
 			dependencies: ["51BC2EDB324F7ECD"]
+			icon: {
+				id: "modern_industrialization:bronze_ingot"
+			}
 			id: "51E3EA7E70ECE842"
 			rewards: [
 				{
@@ -1098,20 +1101,8 @@
 					}
 					type: "item"
 				}
-				{
-					auto: "disabled"
-					icon: {
-						components: {
-							"ftbquests:icon": "curios:slot/empty_hands_slot"
-						}
-						id: "ftbquests:custom_icon"
-					}
-					id: "679412F522B788D9"
-					team_reward: false
-					type: "custom"
-				}
 			]
-			shape: "none"
+			shape: "heart"
 			tasks: [{
 				id: "554FC37840711010"
 				item: { components: { "map_atlases:empty_maps": { vanilla: 9 }, "map_atlases:map_collection": { vanilla: [I; 8, 16, 23, 29, 34, 38, 41, 43, 44 ] } }, count: 1, id: "map_atlases:atlas" }
@@ -1123,7 +1114,7 @@
 		{
 			dependencies: ["19F4ECE3B256B396"]
 			id: "357CC2253FDA3DA1"
-			shape: "none"
+			shape: "heart"
 			tasks: [{
 				id: "3E3CB7FA5387ECAF"
 				item: { count: 1, id: "eccentrictome:tome" }
@@ -1155,7 +1146,7 @@
 		{
 			dependencies: ["745BE9DA293006D1"]
 			id: "08136C156A331A52"
-			shape: "none"
+			shape: "heart"
 			tasks: [{
 				id: "2E1197A8EBDFC468"
 				item: { count: 1, id: "supplementaries:lunch_basket" }
@@ -1698,7 +1689,7 @@
 		{
 			dependencies: ["2EEEC6F9C1EDBCB0"]
 			id: "0ACD0476CE4CAED1"
-			shape: "rsquare"
+			shape: "heart"
 			tasks: [
 				{
 					id: "5102040796ED0872"
@@ -1872,18 +1863,7 @@
 		{
 			dependencies: ["19F4ECE3B256B396"]
 			id: "23D5012F534D8098"
-			rewards: [{
-				icon: {
-					components: {
-						"ftbquests:icon": "curios:slot/empty_belt_slot"
-					}
-					id: "ftbquests:custom_icon"
-				}
-				id: "0BDFBA35083D9976"
-				team_reward: false
-				type: "custom"
-			}]
-			shape: "none"
+			shape: "heart"
 			tasks: [{
 				id: "45DD59F5FC6A169F"
 				item: { count: 1, id: "travelertoolbelt:belt" }
@@ -2088,7 +2068,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -9.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["30B7522161DC8B1B"]
@@ -2159,6 +2139,7 @@
 			dependencies: ["2EF484C39D617CD2"]
 			id: "6D68EF9352B93B19"
 			shape: "heart"
+			size: 1.5d
 			tasks: [{
 				id: "72DF38229F6EE950"
 				item: { count: 1, id: "milf:chunk_flag" }
@@ -2351,7 +2332,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: -9.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["6E680C846961BFE3"]
@@ -2363,7 +2344,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -10.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["71CC5CD5F8018F02"]
@@ -2611,81 +2592,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["51E3EA7E70ECE842"]
-			id: "25790982D97FF33B"
-			tasks: [{
-				id: "6B653CF5C310BDDE"
-				item: { count: 1, id: "animal_pen:animal_cage" }
-				type: "item"
-			}]
-			x: 18.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["51E3EA7E70ECE842"]
-			id: "38077A8FBBA9C3A1"
-			tasks: [{
-				id: "7BB15DB577F61B9C"
-				item: { count: 1, id: "animal_pen:water_animal_container" }
-				type: "item"
-			}]
-			x: 17.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["51E3EA7E70ECE842"]
-			id: "351FE7156FB415A0"
-			tasks: [{
-				id: "76B08436EC5A96C6"
-				item: { count: 1, id: "animal_pen:bird_catcher" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"38077A8FBBA9C3A1"
-				"51E3EA7E70ECE842"
-			]
-			id: "080CC80D28F2DBED"
-			tasks: [{
-				id: "7F6DA9647B7C209F"
-				item: { count: 1, id: "animal_pen:aquarium_block" }
-				type: "item"
-			}]
-			x: 17.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"25790982D97FF33B"
-				"51E3EA7E70ECE842"
-			]
-			id: "617E14880D9D75A0"
-			tasks: [{
-				id: "17F51111E6673E64"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(animal_pen:animal_pens)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 18.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"351FE7156FB415A0"
-				"51E3EA7E70ECE842"
-			]
-			id: "2CFF4A7767CD830E"
-			tasks: [{
-				id: "0499279911FFA20D"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(animal_pen:aviaries)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 19.5d
-			y: 5.0d
-		}
-		{
 			dependencies: ["5A23E325ABD115A1"]
 			id: "4626C980F543AB3E"
 			shape: "heart"
@@ -2696,6 +2602,78 @@
 			}]
 			x: 3.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			id: "351FE7156FB415A0"
+			shape: "heart"
+			tasks: [{
+				id: "76B08436EC5A96C6"
+				item: { count: 1, id: "animal_pen:bird_catcher" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			id: "25790982D97FF33B"
+			shape: "heart"
+			tasks: [{
+				id: "6B653CF5C310BDDE"
+				item: { count: 1, id: "animal_pen:animal_cage" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["51E3EA7E70ECE842"]
+			id: "38077A8FBBA9C3A1"
+			shape: "heart"
+			tasks: [{
+				id: "7BB15DB577F61B9C"
+				item: { count: 1, id: "animal_pen:water_animal_container" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["38077A8FBBA9C3A1"]
+			id: "080CC80D28F2DBED"
+			shape: "heart"
+			tasks: [{
+				id: "7F6DA9647B7C209F"
+				item: { count: 1, id: "animal_pen:aquarium_block" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25790982D97FF33B"]
+			id: "617E14880D9D75A0"
+			shape: "heart"
+			tasks: [{
+				id: "17F51111E6673E64"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(animal_pen:animal_pens)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["351FE7156FB415A0"]
+			id: "2CFF4A7767CD830E"
+			shape: "heart"
+			tasks: [{
+				id: "0499279911FFA20D"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(animal_pen:aviaries)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 4.5d
 		}
 	]
 }

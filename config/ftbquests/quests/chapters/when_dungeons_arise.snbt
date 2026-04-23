@@ -8,7 +8,7 @@
 		id: "minecraft:golden_sword"
 	}
 	id: "231570DE6A7FCD52"
-	order_index: 1
+	order_index: 2
 	progression_mode: "flexible"
 	quest_links: [
 		{
@@ -1336,6 +1336,7 @@
 		}
 		{
 			dependencies: ["0CC9329A82A7454A"]
+			hide_dependent_lines: true
 			icon: {
 				id: "mowziesmobs:sol_visage"
 			}
@@ -1354,7 +1355,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -11.0d
+			x: -8.0d
 			y: 9.0d
 		}
 		{
@@ -1365,8 +1366,8 @@
 				item: { count: 1, id: "mowziesmobs:sol_visage" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 10.0d
+			x: -6.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0CC9329A82A7454A"]
@@ -1604,6 +1605,7 @@
 						id: "cataclysm:koboleton_bone"
 					}
 					id: "224D85127D80FED8"
+					team_reward: false
 					type: "custom"
 				}
 				{
@@ -1686,6 +1688,7 @@
 						id: "born_in_chaos_v1:eternal_candy"
 					}
 					id: "16B46238FC936637"
+					team_reward: false
 					type: "custom"
 				}
 				{
@@ -1776,7 +1779,7 @@
 				item: { count: 1, id: "endrem:black_eye" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 9.5d
 			y: 9.0d
 		}
 		{
@@ -1787,7 +1790,7 @@
 				item: { count: 1, id: "endrem:cold_eye" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 11.0d
 			y: 8.5d
 		}
 		{
@@ -1798,7 +1801,7 @@
 				item: { count: 1, id: "endrem:corrupted_eye" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 11.5d
 			y: 8.0d
 		}
 		{
@@ -1809,7 +1812,7 @@
 				item: { count: 1, id: "endrem:cryptic_eye" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: 8.0d
 		}
 		{
@@ -1820,7 +1823,7 @@
 				item: { count: 1, id: "endrem:cursed_eye" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 10.0d
 		}
 		{
@@ -1831,7 +1834,7 @@
 				item: { count: 1, id: "endrem:evil_eye" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 8.5d
 		}
 		{
@@ -1842,7 +1845,7 @@
 				item: { count: 1, id: "endrem:exotic_eye" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 11.0d
 		}
 		{
@@ -1853,7 +1856,7 @@
 				item: { count: 1, id: "endrem:guardian_eye" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 10.5d
 			y: 8.0d
 		}
 		{
@@ -1864,7 +1867,7 @@
 				item: { count: 1, id: "endrem:lost_eye" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 9.0d
 		}
 		{
@@ -1875,7 +1878,7 @@
 				item: { count: 1, id: "endrem:magical_eye" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 10.5d
 		}
 		{
@@ -1886,7 +1889,7 @@
 				item: { count: 1, id: "endrem:nether_eye" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 10.0d
 			y: 8.5d
 		}
 		{
@@ -1897,7 +1900,7 @@
 				item: { count: 1, id: "endrem:old_eye" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 10.5d
 			y: 12.0d
 		}
 		{
@@ -1908,7 +1911,7 @@
 				item: { count: 1, id: "endrem:rogue_eye" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: 12.0d
 		}
 		{
@@ -1919,7 +1922,7 @@
 				item: { count: 1, id: "endrem:undead_eye" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 12.0d
 			y: 8.5d
 		}
 		{
@@ -1930,7 +1933,7 @@
 				item: { count: 1, id: "endrem:witch_eye" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 11.5d
 		}
 		{
@@ -1941,7 +1944,7 @@
 				item: { count: 1, id: "endrem:wither_eye" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 13.0d
 			y: 9.5d
 		}
 		{
@@ -1952,7 +1955,7 @@
 				item: { count: 1, id: "endrem:fishing_eye" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 10.0d
 			y: 9.5d
 		}
 		{
@@ -1963,7 +1966,7 @@
 				item: { count: 1, id: "endrem:potato_eye" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 10.0d
 			y: 10.5d
 		}
 		{
@@ -1974,7 +1977,7 @@
 				item: { count: 1, id: "endrem:trial_eye" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 9.5d
 			y: 11.0d
 		}
 		{
@@ -1985,7 +1988,7 @@
 				item: { count: 1, id: "endrem:sculk_eye" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 10.0d
 			y: 11.5d
 		}
 		{
@@ -1996,7 +1999,7 @@
 				item: { count: 1, id: "endrem:blossom_eye" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 9.5d
 			y: 10.0d
 		}
 		{
@@ -2137,10 +2140,17 @@
 				"6B54A081A72E8605"
 				"47869A4625D3C5CD"
 			]
+			icon: {
+				components: {
+					"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/the_end.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "6E11ECC7B831480C"
 			min_required_dependencies: 12
 			rewards: [
 				{
+					auto: "enabled"
 					icon: {
 						components: {
 							"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/the_end.png"
@@ -2148,6 +2158,7 @@
 						id: "ftbquests:custom_icon"
 					}
 					id: "2BD4B3CA5BEDBA19"
+					team_reward: false
 					type: "custom"
 				}
 				{
@@ -2163,7 +2174,7 @@
 				id: "608727F73B6EDF0F"
 				type: "checkmark"
 			}]
-			x: 10.0d
+			x: 11.5d
 			y: 10.0d
 		}
 		{
@@ -2184,7 +2195,7 @@
 				item: { count: 1, id: "recall_potion:end_potion" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 11.5d
 			y: 11.5d
 		}
 		{
@@ -2582,6 +2593,7 @@
 		}
 		{
 			dependencies: ["0CC9329A82A7454A"]
+			hide_dependent_lines: true
 			icon: {
 				id: "mythsandlegends:umbras_whisper"
 			}
@@ -3024,7 +3036,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -8.0d
+			x: -11.0d
 			y: 9.0d
 		}
 		{
@@ -3585,7 +3597,7 @@
 				item: { count: 1, id: "minecraft:enchanting_table" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: 7.5d
 		}
 		{
@@ -3598,7 +3610,7 @@
 				item: { count: 1, id: "minecraft:bookshelf" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: 10.0d
 		}
 		{
@@ -3609,7 +3621,7 @@
 				item: { count: 1, id: "apothic_enchanting:hellshelf" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: 11.5d
 		}
 		{
@@ -3620,7 +3632,7 @@
 				item: { count: 1, id: "apothic_enchanting:infused_hellshelf" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: 12.5d
 		}
 		{
@@ -3631,7 +3643,7 @@
 				item: { count: 1, id: "apothic_enchanting:sightshelf" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: 15.0d
 		}
 		{
@@ -3642,7 +3654,7 @@
 				item: { count: 1, id: "apothic_enchanting:glowing_hellshelf" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: 15.5d
 		}
 		{
@@ -3653,7 +3665,7 @@
 				item: { count: 1, id: "apothic_enchanting:blazing_hellshelf" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.0d
 			y: 15.0d
 		}
 		{
@@ -3664,7 +3676,7 @@
 				item: { count: 1, id: "apothic_enchanting:seashelf" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -0.5d
 			y: 9.0d
 		}
 		{
@@ -3675,7 +3687,7 @@
 				item: { count: 1, id: "apothic_enchanting:infused_seashelf" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.0d
 			y: 9.0d
 		}
 		{
@@ -3686,7 +3698,7 @@
 				item: { count: 1, id: "apothic_enchanting:filtering_shelf" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.5d
 			y: 9.0d
 		}
 		{
@@ -3697,7 +3709,7 @@
 				item: { count: 1, id: "apothic_enchanting:heart_seashelf" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.0d
 			y: 10.0d
 		}
 		{
@@ -3708,7 +3720,7 @@
 				item: { count: 1, id: "apothic_enchanting:crystal_seashelf" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -4.0d
 			y: 8.0d
 		}
 		{
@@ -3719,7 +3731,7 @@
 				item: { count: 1, id: "apothic_enchanting:dormant_deepshelf" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: 11.5d
 		}
 		{
@@ -3730,7 +3742,7 @@
 				item: { count: 1, id: "apothic_enchanting:deepshelf" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: 12.5d
 		}
 		{
@@ -3741,7 +3753,7 @@
 				item: { count: 1, id: "apothic_enchanting:treasure_shelf" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: 15.0d
 		}
 		{
@@ -3752,7 +3764,7 @@
 				item: { count: 1, id: "apothic_enchanting:soul_touched_deepshelf" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 14.5d
 		}
 		{
@@ -3763,7 +3775,7 @@
 				item: { count: 1, id: "apothic_enchanting:echoing_deepshelf" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 2.0d
 			y: 14.5d
 		}
 		{
@@ -3774,7 +3786,7 @@
 				item: { count: 1, id: "apothic_enchanting:echoing_sculkshelf" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 2.0d
 			y: 15.5d
 		}
 		{
@@ -3785,7 +3797,7 @@
 				item: { count: 1, id: "apothic_enchanting:soul_touched_sculkshelf" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 15.5d
 		}
 		{
@@ -3796,7 +3808,7 @@
 				item: { count: 1, id: "apothic_enchanting:geode_shelf" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: 0.5d
 			y: 8.5d
 		}
 		{
@@ -3807,7 +3819,7 @@
 				item: { count: 1, id: "apothic_enchanting:stoneshelf" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 8.0d
 		}
 		{
@@ -3818,7 +3830,7 @@
 				item: { count: 1, id: "apothic_enchanting:melonshelf" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.5d
 			y: 8.5d
 		}
 		{
@@ -3829,7 +3841,7 @@
 				item: { count: 1, id: "apothic_enchanting:beeshelf" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: 8.0d
 		}
 		{
@@ -3840,7 +3852,7 @@
 				item: { count: 1, id: "apothic_enchanting:endshelf" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: 9.0d
 		}
 		{
@@ -3851,7 +3863,7 @@
 				item: { count: 1, id: "apothic_enchanting:pearl_endshelf" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 7.0d
 			y: 8.5d
 		}
 		{
@@ -3862,7 +3874,7 @@
 				item: { count: 1, id: "apothic_enchanting:draconic_endshelf" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 7.0d
 			y: 9.5d
 		}
 	]

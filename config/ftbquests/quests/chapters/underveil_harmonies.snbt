@@ -4083,9 +4083,24 @@
 		{
 			dependencies: ["13A5CB86A2E90249"]
 			icon: {
-				id: "minecraft:bedrock"
+				components: {
+					"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/deeper_down.png"
+				}
+				id: "ftbquests:custom_icon"
 			}
 			id: "758BF8F1AA3DBAE6"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/deeper_down.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "015382CFC13FFB7A"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "gear"
 			tasks: [
 				{
@@ -5421,7 +5436,7 @@
 			]
 			hide_dependency_lines: true
 			id: "3EB4859B19E62501"
-			shape: "heart"
+			shape: "circle"
 			tasks: [{
 				id: "73043671DBF156ED"
 				item: { count: 1, id: "spectrum:resonant_lily" }
@@ -7143,22 +7158,6 @@
 				"4E984D0C4BB23055"
 			]
 			hide_dependency_lines: true
-			id: "7949FC6334CF055C"
-			shape: "gear"
-			tasks: [{
-				id: "4462DEF5023A30F2"
-				item: { count: 1, id: "ars_nouveau:ritual_awakening" }
-				type: "item"
-			}]
-			x: 66.0d
-			y: -115.0d
-		}
-		{
-			dependencies: [
-				"056505A2F0A197CB"
-				"4E984D0C4BB23055"
-			]
-			hide_dependency_lines: true
 			id: "48B71DD18943B80E"
 			shape: "diamond"
 			tasks: [{
@@ -8501,41 +8500,6 @@
 			y: -68.5d
 		}
 		{
-			dependencies: ["374D778AA6C127E6"]
-			id: "7ED354CF6EFE61BC"
-			shape: "pentagon"
-			size: 1.0d
-			tasks: [{
-				id: "04A04F68BEF32D16"
-				item: { count: 1, id: "ars_nouveau:dominion_wand" }
-				type: "item"
-			}]
-			x: 61.5d
-			y: -83.5d
-		}
-		{
-			dependencies: ["7949FC6334CF055C"]
-			icon: {
-				id: "ars_nouveau:bookwyrm_charm"
-			}
-			id: "4580B1AEAA36E6B4"
-			tasks: [
-				{
-					id: "308D3408F93D9441"
-					item: { count: 1, id: "ars_nouveau:bookwyrm_charm" }
-					type: "item"
-				}
-				{
-					id: "4FBD8E57313584E6"
-					item: { count: 1, id: "minecraft:writable_book" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 66.5d
-			y: -116.0d
-		}
-		{
 			dependencies: ["718AC2EDE439484F"]
 			id: "75B7541B0573DF1D"
 			tasks: [{
@@ -8703,17 +8667,6 @@
 			}]
 			x: 54.0d
 			y: -83.0d
-		}
-		{
-			dependencies: ["7949FC6334CF055C"]
-			id: "051773C85A4FB2DF"
-			tasks: [{
-				id: "3B0B51C7F422811F"
-				item: { count: 1, id: "ars_nouveau:amethyst_golem_charm" }
-				type: "item"
-			}]
-			x: 65.5d
-			y: -116.0d
 		}
 		{
 			dependencies: ["3946FA56BFBE4C4C"]
@@ -8961,17 +8914,6 @@
 			y: -84.5d
 		}
 		{
-			dependencies: ["4580B1AEAA36E6B4"]
-			id: "464B4BB86A9CF448"
-			tasks: [{
-				id: "3532E3B7E506A3B8"
-				item: { count: 1, id: "ars_nouveau:storage_lectern" }
-				type: "item"
-			}]
-			x: 66.5d
-			y: -117.0d
-		}
-		{
 			dependencies: ["6C96A82851CA6DF8"]
 			id: "46C4CB92B56E6E29"
 			tasks: [{
@@ -9160,41 +9102,6 @@
 			}]
 			x: 63.5d
 			y: -77.0d
-		}
-		{
-			dependencies: ["464B4BB86A9CF448"]
-			id: "208F0C74C15F40B8"
-			tasks: [{
-				id: "77CFA433E8191674"
-				item: { count: 1, id: "ars_additions:warp_index" }
-				type: "item"
-			}]
-			x: 66.5d
-			y: -118.0d
-		}
-		{
-			dependencies: ["208F0C74C15F40B8"]
-			id: "31BB2F1B4F37A93D"
-			shape: "heart"
-			tasks: [{
-				id: "406D77B5597B2D7B"
-				item: { count: 1, id: "ars_additions:stabilized_warp_index" }
-				type: "item"
-			}]
-			x: 66.5d
-			y: -119.0d
-		}
-		{
-			dependencies: ["7ED354CF6EFE61BC"]
-			id: "4D13711C6EB6EDDB"
-			shape: "octagon"
-			tasks: [{
-				id: "27FC8F442F596D0D"
-				item: { count: 1, id: "ars_additions:advanced_dominion_wand" }
-				type: "item"
-			}]
-			x: 61.0d
-			y: -84.5d
 		}
 		{
 			dependencies: ["62B24669E3352EAB"]
@@ -9431,18 +9338,6 @@
 			y: -92.0d
 		}
 		{
-			dependencies: ["7ED354CF6EFE61BC"]
-			id: "539058B872DC7A4A"
-			shape: "octagon"
-			tasks: [{
-				id: "7BAE63301732113A"
-				item: { count: 1, id: "ars_controle:remote" }
-				type: "item"
-			}]
-			x: 62.0d
-			y: -84.5d
-		}
-		{
 			dependencies: ["6C96A82851CA6DF8"]
 			id: "7974D49E6CAE39BF"
 			shape: "heart"
@@ -9663,31 +9558,6 @@
 			}]
 			x: 19.5d
 			y: -26.0d
-		}
-		{
-			dependencies: [
-				"6E426E8D686AD908"
-				"75278EEF96A6C8F0"
-			]
-			icon: {
-				id: "advanced_ae:reaction_chamber"
-			}
-			id: "044E49EE69BDF1F0"
-			shape: "diamond"
-			tasks: [
-				{
-					id: "717E57E4D41B5E29"
-					item: { count: 1, id: "advanced_ae:reaction_chamber" }
-					type: "item"
-				}
-				{
-					id: "3BF2F6395A0B306F"
-					item: { count: 1, id: "advanced_ae:quantum_alloy" }
-					type: "item"
-				}
-			]
-			x: 25.5d
-			y: 4.0d
 		}
 		{
 			dependencies: [

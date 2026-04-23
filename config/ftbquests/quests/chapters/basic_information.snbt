@@ -435,5 +435,24 @@
 			x: -3.5d
 			y: 2.0d
 		}
+		{
+			dependencies: ["2B7F14733C000C22"]
+			id: "706FE8A4CD20FDEF"
+			rewards: [{
+				id: "646F9FADB48BCCD2"
+				item: {
+					count: 1
+					id: "born_in_chaos_v1:chocolate_heart"
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "5180AC955AE4C748"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
 	]
 }

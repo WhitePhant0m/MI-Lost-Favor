@@ -1996,6 +1996,12 @@
 				"7951C1485B533CD1"
 				"4B801253049DAC2F"
 			]
+			icon: {
+				components: {
+					"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/starlight.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "40CC4CB2281C6FE1"
 			shape: "gear"
 			size: 6.0d
@@ -2035,7 +2041,7 @@
 				to_observe: "#forbidden_arcanus:runic_stones"
 				type: "observation"
 			}]
-			x: -16.5d
+			x: -17.0d
 			y: 33.5d
 		}
 		{
@@ -2052,7 +2058,7 @@
 				to_observe: "forbidden_arcanus:stella_arcanum"
 				type: "observation"
 			}]
-			x: -17.5d
+			x: -18.0d
 			y: 33.5d
 		}
 		{
@@ -2068,7 +2074,7 @@
 				to_observe: "#forbidden_arcanus:arcane_crystal_ores"
 				type: "observation"
 			}]
-			x: -18.5d
+			x: -19.0d
 			y: 33.5d
 		}
 		{
@@ -2487,7 +2493,7 @@
 				item: { count: 1, id: "forbidden_arcanus:corrupt_soul" }
 				type: "item"
 			}]
-			x: -19.5d
+			x: -20.0d
 			y: 33.5d
 		}
 		{
@@ -2571,7 +2577,7 @@
 				item: { count: 1, id: "forbidden_arcanus:magical_farmland" }
 				type: "item"
 			}]
-			x: -18.5d
+			x: -19.0d
 			y: 35.5d
 		}
 		{
@@ -2593,7 +2599,7 @@
 				item: { count: 1, id: "forbidden_arcanus:arcane_bone_meal" }
 				type: "item"
 			}]
-			x: -18.5d
+			x: -19.0d
 			y: 34.5d
 		}
 		{
@@ -2720,7 +2726,7 @@
 				id: "6D1B94115F98B076"
 				type: "advancement"
 			}]
-			x: -24.5d
+			x: -25.5d
 			y: 1.5d
 		}
 		{
@@ -2732,7 +2738,7 @@
 				id: "38E78F644B3C09BE"
 				type: "advancement"
 			}]
-			x: -24.5d
+			x: -25.5d
 			y: 0.0d
 		}
 		{
@@ -3454,7 +3460,25 @@
 		}
 		{
 			dependencies: ["4B801253049DAC2F"]
+			icon: {
+				components: {
+					"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/void.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "4DCB694F94371292"
+			rewards: [{
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/void.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "0A8447D787E641E3"
+				team_reward: false
+				type: "custom"
+			}]
 			shape: "heart"
 			tasks: [{
 				id: "7184282BD07F2E07"
@@ -3491,8 +3515,15 @@
 			dependencies: ["09A4E941382DDCB7"]
 			id: "5B37B11A0B0A84E6"
 			rewards: [{
-				auto: "invisible"
+				auto: "enabled"
+				icon: {
+					components: {
+						"ftbquests:icon": "forbidden_arcanus:item/corrupt_soul"
+					}
+					id: "ftbquests:custom_icon"
+				}
 				id: "3922C9ACA47723BA"
+				team_reward: false
 				type: "custom"
 			}]
 			shape: "square"
@@ -3642,7 +3673,7 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["4E984D0C4BB23055"]
@@ -3655,7 +3686,7 @@
 				type: "item"
 			}]
 			x: -21.3d
-			y: -0.7d
+			y: -8.2d
 		}
 		{
 			dependencies: ["4E984D0C4BB23055"]
@@ -3668,7 +3699,7 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: 1.05d
+			y: -6.45d
 		}
 		{
 			dependencies: ["4E984D0C4BB23055"]
@@ -3681,7 +3712,7 @@
 				type: "item"
 			}]
 			x: -21.3d
-			y: 0.7d
+			y: -6.8d
 		}
 		{
 			dependencies: ["4E984D0C4BB23055"]
@@ -3694,7 +3725,7 @@
 				type: "item"
 			}]
 			x: -22.7d
-			y: 0.7d
+			y: -6.8d
 		}
 		{
 			dependencies: ["4E984D0C4BB23055"]
@@ -3707,7 +3738,7 @@
 				type: "item"
 			}]
 			x: -22.7d
-			y: -0.7d
+			y: -8.2d
 		}
 		{
 			dependencies: ["4E984D0C4BB23055"]
@@ -3720,13 +3751,10 @@
 				type: "item"
 			}]
 			x: -22.0d
-			y: -1.05d
+			y: -8.55d
 		}
 		{
-			dependencies: [
-				"4B801253049DAC2F"
-				"4E984D0C4BB23055"
-			]
+			dependencies: ["4E984D0C4BB23055"]
 			id: "426F71334E75DDD0"
 			shape: "gear"
 			tasks: [{
@@ -3734,8 +3762,8 @@
 				item: { count: 1, id: "ars_additions:ritual_locate_structure" }
 				type: "item"
 			}]
-			x: -43.0d
-			y: 26.0d
+			x: -22.0d
+			y: -19.0d
 		}
 		{
 			dependencies: [
@@ -3776,8 +3804,8 @@
 				item: { count: 1, id: "ars_nouveau:ritual_animal_summon" }
 				type: "item"
 			}]
-			x: -44.0d
-			y: 23.0d
+			x: -43.5d
+			y: 22.5d
 		}
 		{
 			dependencies: [
@@ -3790,8 +3818,8 @@
 				item: { count: 1, id: "ars_elemental:ritual_attraction" }
 				type: "item"
 			}]
-			x: -42.0d
-			y: 23.0d
+			x: -42.5d
+			y: 22.5d
 		}
 		{
 			dependencies: [
@@ -3836,8 +3864,8 @@
 				structure: "bosses_of_mass_destruction:gauntlet_arena"
 				type: "structure"
 			}]
-			x: -44.0d
-			y: 25.0d
+			x: -23.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3854,8 +3882,8 @@
 				structure: "bosses_of_mass_destruction:lich_tower"
 				type: "structure"
 			}]
-			x: -44.5d
-			y: 25.5d
+			x: -23.5d
+			y: -19.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3872,8 +3900,8 @@
 				structure: "bosses_of_mass_destruction:obsidilith_arena"
 				type: "structure"
 			}]
-			x: -41.5d
-			y: 25.5d
+			x: -20.5d
+			y: -19.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3890,8 +3918,8 @@
 				structure: "bosses_of_mass_destruction:void_blossom"
 				type: "structure"
 			}]
-			x: -42.0d
-			y: 25.0d
+			x: -21.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3908,8 +3936,8 @@
 				structure: "takesapillage:bastille"
 				type: "structure"
 			}]
-			x: -43.5d
-			y: 24.5d
+			x: -22.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3926,8 +3954,8 @@
 				structure: "hellish_trials:nether_trial"
 				type: "structure"
 			}]
-			x: -42.5d
-			y: 24.5d
+			x: -21.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3944,8 +3972,8 @@
 				structure: "cataclysm:acropolis"
 				type: "structure"
 			}]
-			x: -44.0d
-			y: 27.0d
+			x: -23.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3962,8 +3990,8 @@
 				structure: "cataclysm:ancient_factory"
 				type: "structure"
 			}]
-			x: -44.0d
-			y: 26.0d
+			x: -23.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3980,8 +4008,8 @@
 				structure: "cataclysm:cursed_pyramid"
 				type: "structure"
 			}]
-			x: -43.5d
-			y: 27.5d
+			x: -22.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -3998,8 +4026,8 @@
 				structure: "cataclysm:frosted_prison"
 				type: "structure"
 			}]
-			x: -44.5d
-			y: 26.5d
+			x: -23.5d
+			y: -18.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4016,8 +4044,8 @@
 				structure: "cataclysm:sunken_city"
 				type: "structure"
 			}]
-			x: -41.5d
-			y: 26.5d
+			x: -20.5d
+			y: -18.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4034,8 +4062,8 @@
 				structure: "cataclysm:burning_arena"
 				type: "structure"
 			}]
-			x: -42.0d
-			y: 26.0d
+			x: -21.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4052,8 +4080,8 @@
 				structure: "cataclysm:soul_black_smith"
 				type: "structure"
 			}]
-			x: -42.0d
-			y: 27.0d
+			x: -21.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4070,8 +4098,8 @@
 				structure: "cataclysm:ruined_citadel"
 				type: "structure"
 			}]
-			x: -42.5d
-			y: 27.5d
+			x: -21.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4085,8 +4113,8 @@
 				structure: "fdbosses:chesed_arena"
 				type: "structure"
 			}]
-			x: -41.0d
-			y: 26.0d
+			x: -20.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4100,8 +4128,8 @@
 				structure: "fdbosses:geburah_arena"
 				type: "structure"
 			}]
-			x: -45.0d
-			y: 26.0d
+			x: -24.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4115,8 +4143,8 @@
 				structure: "fdbosses:malkuth_arena"
 				type: "structure"
 			}]
-			x: -43.0d
-			y: 28.0d
+			x: -22.0d
+			y: -21.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4133,8 +4161,8 @@
 				structure: "cataclysm:amethyst_nest"
 				type: "structure"
 			}]
-			x: -41.0d
-			y: 24.0d
+			x: -20.0d
+			y: -21.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4148,8 +4176,8 @@
 				structure: "born_in_chaos_v1:infernal_pumpkin"
 				type: "structure"
 			}]
-			x: -45.0d
-			y: 24.0d
+			x: -24.0d
+			y: -21.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4163,8 +4191,8 @@
 				structure: "companions:companions_monkey_temple"
 				type: "structure"
 			}]
-			x: -46.5d
-			y: 26.0d
+			x: -25.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4178,8 +4206,8 @@
 				structure: "mythsandlegends:graveyard"
 				type: "structure"
 			}]
-			x: -39.5d
-			y: 26.0d
+			x: -18.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4193,8 +4221,8 @@
 				structure: "mowziesmobs:frostmaw_spawn"
 				type: "structure"
 			}]
-			x: -45.0d
-			y: 28.0d
+			x: -24.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4211,8 +4239,8 @@
 				structure: "mowziesmobs:monastery"
 				type: "structure"
 			}]
-			x: -45.5d
-			y: 24.5d
+			x: -24.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4226,8 +4254,8 @@
 				structure: "mowziesmobs:umvuthana_grove"
 				type: "structure"
 			}]
-			x: -40.5d
-			y: 24.5d
+			x: -19.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4241,8 +4269,8 @@
 				structure: "mowziesmobs:wrought_chamber"
 				type: "structure"
 			}]
-			x: -43.5d
-			y: 29.5d
+			x: -22.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4259,8 +4287,8 @@
 				structure: "minecraft:monument"
 				type: "structure"
 			}]
-			x: -42.5d
-			y: 29.5d
+			x: -21.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["426F71334E75DDD0"]
@@ -4277,8 +4305,8 @@
 				structure: "minecraft:ancient_city"
 				type: "structure"
 			}]
-			x: -40.5d
-			y: 28.5d
+			x: -19.5d
+			y: -16.5d
 		}
 		{
 			dependencies: ["1EA565179E5C25AE"]
@@ -5615,6 +5643,94 @@
 			}]
 			x: -16.0d
 			y: 45.5d
+		}
+		{
+			dependencies: ["4E984D0C4BB23055"]
+			hide_dependency_lines: false
+			id: "7949FC6334CF055C"
+			shape: "gear"
+			tasks: [{
+				id: "4462DEF5023A30F2"
+				item: { count: 1, id: "ars_nouveau:ritual_awakening" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"7949FC6334CF055C"
+				"7ED354CF6EFE61BC"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "ars_nouveau:bookwyrm_charm"
+			}
+			id: "4580B1AEAA36E6B4"
+			tasks: [
+				{
+					id: "308D3408F93D9441"
+					item: { count: 1, id: "ars_nouveau:bookwyrm_charm" }
+					type: "item"
+				}
+				{
+					id: "4FBD8E57313584E6"
+					item: { count: 1, id: "minecraft:writable_book" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -22.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"7949FC6334CF055C"
+				"7ED354CF6EFE61BC"
+			]
+			hide_dependency_lines: true
+			id: "051773C85A4FB2DF"
+			tasks: [{
+				id: "0F0FB6E6867E3F43"
+				item: { count: 1, id: "ars_nouveau:amethyst_golem_charm" }
+				type: "item"
+			}]
+			x: -21.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["4580B1AEAA36E6B4"]
+			id: "208F0C74C15F40B8"
+			tasks: [{
+				id: "77CFA433E8191674"
+				item: { count: 1, id: "ars_additions:warp_index" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["208F0C74C15F40B8"]
+			id: "31BB2F1B4F37A93D"
+			shape: "heart"
+			tasks: [{
+				id: "406D77B5597B2D7B"
+				item: { count: 1, id: "ars_additions:stabilized_warp_index" }
+				type: "item"
+			}]
+			x: -22.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["5B37B11A0B0A84E6"]
+			id: "4E0D64575495180A"
+			tasks: [{
+				id: "4954115A00FEC164"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:logs/archwood)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: 33.5d
 		}
 	]
 }

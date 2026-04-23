@@ -7,7 +7,7 @@
 		id: "angelring:angel_ring"
 	}
 	id: "389198189DCA1A49"
-	order_index: 3
+	order_index: 4
 	quest_links: [
 		{
 			id: "689B85F6CDCD4945"
@@ -203,42 +203,6 @@
 				}
 			]
 			x: 2.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "79133CEA75420493"
-			tasks: [
-				{
-					id: "27EE0860FCA4F1DD"
-					item: { count: 1, id: "animal_pen:animal_pen_oak" }
-					type: "item"
-				}
-				{
-					id: "1AF6220615823291"
-					item: { count: 1, id: "animal_pen:aquarium_block" }
-					type: "item"
-				}
-			]
-			x: 8.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["3ACEAB25342B053C"]
-			id: "26572EF7E0D0AD56"
-			tasks: [
-				{
-					id: "1A3A9134FBA9625B"
-					item: { count: 1, id: "animal_pen:water_animal_container" }
-					type: "item"
-				}
-				{
-					id: "2BD3EA2B6A64C235"
-					item: { count: 1, id: "animal_pen:animal_cage" }
-					type: "item"
-				}
-			]
-			x: 8.0d
 			y: -6.5d
 		}
 		{
