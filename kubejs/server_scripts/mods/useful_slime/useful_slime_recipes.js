@@ -1,28 +1,79 @@
 ServerEvents.recipes(event => {
 
     const slime_armor = [
-        { output: "usefulslime:slime_helmet", input: "minecraft:leather_helmet" },
-        { output: "usefulslime:slime_chestplate", input: "minecraft:leather_chestplate" },
-        { output: "usefulslime:slime_leggings", input: "minecraft:leather_leggings" },
-        { output: "usefulslime:slime_boots", input: "minecraft:leather_boots" },
-        { output: "usefulslime:slime_sling", input: "supplementaries:slingshot" }
+        {
+            result: "usefulslime:slime_helmet",
+            pattern: [
+                "sas", 
+                "s s", 
+                "   "
+            ],
+            key: { 
+                "s": { "item": "minecraft:slime_ball" }, 
+                "a": { "item": "minecraft:leather_helmet" },
+                "q": { "item": "paganbless:essence_of_the_forest" },
+            }
+        },
+        {
+            result: "usefulslime:slime_chestplate",
+            pattern: [
+                "s s", 
+                "sas", 
+                "sss"
+            ],
+            key: { 
+                "s": { "item": "minecraft:slime_ball" }, 
+                "a": { "item": "minecraft:leather_chestplate" },
+                "q": { "item": "paganbless:essence_of_the_forest" },
+            }
+        },
+        {
+            result: "usefulslime:slime_leggings",
+            pattern: [
+                "sas",
+                "s s",
+                "s s"
+            ],
+            key: {
+                "s": { "item": "minecraft:slime_ball" },
+                "a": { "item": "minecraft:leather_leggings" },
+                "q": { "item": "paganbless:essence_of_the_forest" },
+            }
+        },
+        {
+            result: "usefulslime:slime_boots",
+            pattern: [
+                "   ", 
+                "s s", 
+                "sas"
+            ],
+            key: { 
+                "s": { "item": "minecraft:slime_ball" }, 
+                "a": { "item": "minecraft:leather_boots" },
+                "q": { "item": "paganbless:essence_of_the_forest" },
+            }
+        },
+        {
+            result: "usefulslime:slime_sling",
+            pattern: [
+                "s s", 
+                " a ", 
+                "s s"
+            ],
+            key: { 
+                "s": { "item": "minecraft:slime_ball" }, 
+                "a": { "item": "supplementaries:slingshot" },
+                "q": { "item": "paganbless:essence_of_the_forest" },
+            }
+        }
     ]
 
     slime_armor.forEach(element => {
-        customMixingCauldron(event, {
-            fluid: "minecraft:lava",
-            fluidAmount: 500,
-            ingredients: [
-                { "item": element.input },
-                { "item": "minecraft:slime_ball" },
-                { "item": "minecraft:slime_ball" },
-                { "item": "minecraft:slime_ball" },
-                { "item": "minecraft:slime_ball" },
-                { "item": "minecraft:slime_ball" },
-                { "item": "minecraft:slime_ball" },
-                { "item": "minecraft:slime_ball" },
-            ],
-            output: element.output,
+        customWorktable(event, {
+            pattern: element.pattern,
+            reagents: ["qqqq"],
+            key: element.key,
+            result: element.result,
             removeRecipe: true
         })
     });
