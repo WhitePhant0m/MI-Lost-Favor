@@ -1,11 +1,12 @@
 ServerEvents.tags('block', event => {
 
-    //TEST!!!
-    event.add('ars_nouveau:golem/budding', "spectrum:budding_topaz")
-    event.add('ars_nouveau:golem/cluster', "spectrum:topaz_cluster")
+    event.add('ars_nouveau:golem/budding', ["spectrum:budding_topaz", "spectrum:budding_citrine", "spectrum:budding_onyx", "spectrum:budding_moonstone"])
+    event.add('ars_nouveau:golem/cluster', ["spectrum:topaz_cluster", "spectrum:citrine_cluster", "spectrum:onyx_cluster", "spectrum:moonstone_cluster"])
+
+
 })
 ServerEvents.tags('item', event => {
-    event.add('ars_nouveau:golem/shard', "spectrum:topaz_shard")
+    event.add('ars_nouveau:golem/shard', ["spectrum:topaz_shard", "spectrum:citrine_shard", "spectrum:onyx_shard", "spectrum:moonstone_shard"])
 
     event.add("ars_nouveau:tier_1_glyphs", [
         'ars_nouveau:glyph_prestidigitation', 
