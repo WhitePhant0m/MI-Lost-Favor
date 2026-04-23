@@ -282,6 +282,20 @@ ServerEvents.recipes(event => {
 
     milfShaped(event, {
         pattern: [
+            "BBB",
+            "BGB",
+            "BBB"
+        ],
+        key: {
+            G: { item: "modern_industrialization:steel_gear" },
+            B: { item: "modern_industrialization:iron_bolt" },
+        },
+        outputItems: [[{ id: "immersiveengineering:sawblade" }, 1]],
+        removeRecipe: true
+    })
+
+    milfShaped(event, {
+        pattern: [
             'ASA',
             'SsS',
             'ASA'
