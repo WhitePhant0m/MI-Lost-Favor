@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
         ],
         key: {
             q: 'companions:relic_gold',
-            w: 'apothic_enchanting:prismatic_web',
+            w: 'eidolon_repraised:unholy_symbol',
             e: 'minecraft:netherite_block',
             r: 'forbidden_arcanus:obsidiansteel_ingot'
         },
