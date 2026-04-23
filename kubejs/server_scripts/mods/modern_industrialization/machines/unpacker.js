@@ -9,5 +9,15 @@ ServerEvents.recipes(event => {
         ]
     })
 
+    miMachineCraft(event, {
+        energy: 4, time: 100, machine: "modern_industrialization:unpacker",
+        outputItems: [
+            [{ item: "milf:larva" }, 1, 0.5]
+        ],
+        inputItems: [
+            [{ item: "minecraft:rotten_flesh" }, 1],
+        ]
+    })
+
 
 })

@@ -70,4 +70,11 @@ ServerEvents.recipes(event => {
         removeRecipe:true
     })
 
+    ytechChoppingCraft(event, {
+        inputItems: [[{ item: "architects_palette:rotten_flesh_block" }]],
+        outputItems: [[{ id: "milf:larva" }, 3]],
+        tool: { item: "minecraft:stick" },
+        compatOff:true
+    })
+
 })
