@@ -3653,6 +3653,12 @@
 		}
 		{
 			dependencies: ["55756CD3B1F8F89F"]
+			icon: {
+				components: {
+					"ftbquests:icon": "map_atlases:textures/gui/sprites/dimensions/the_nether.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "336C43BDBE0A0995"
 			rewards: [{
 				auto: "enabled"
