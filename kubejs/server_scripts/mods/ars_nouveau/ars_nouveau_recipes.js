@@ -320,4 +320,43 @@ ServerEvents.recipes(event => {
         },
         advancement: "spectrum:create_onyx_shard"
     })
+
+
+    customWorktable(event, {
+        pattern: [
+            " ye",
+            " wy",
+            "t  "
+        ],
+        reagents: ["u   "],
+        key: {
+            "w": { "item": "paganbless:black_thorn_staff" },
+            "e": { "item": "enchanted:attuned_stone" },
+            "t": { "item": "eidolon_repraised:arcane_gold_ingot" },
+            "y": { "item": "eidolon_repraised:gold_inlay" },
+            "u": { "item": "eidolon_repraised:soul_shard" },
+        },
+        result: "ars_nouveau:dominion_wand",
+        removeRecipe: true
+    })
+
+    customWorktable(event, {
+        pattern: [
+            "wyw",
+            " q ",
+            "ere"
+        ],
+        reagents: ["utut"],
+        key: {
+            "q": { "item": "minecraft:lectern" },
+            "w": { "item": "eidolon_repraised:arcane_gold_ingot" },
+            "e": { "item": "eidolon_repraised:gold_inlay" },
+            "r": { "item": "immersiveengineering:steel_fence" },
+            "y": { "item": "minecraft:heavy_weighted_pressure_plate" },
+            "t": { "item": "enchanted:attuned_stone" },
+            "u": { "item": "eidolon_repraised:soul_shard" },
+        },
+        result: "ars_nouveau:storage_lectern",
+        removeRecipe: true
+    })
 })
